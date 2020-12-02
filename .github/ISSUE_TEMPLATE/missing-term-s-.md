@@ -11,7 +11,11 @@ assignees: ''
 Please fill the information below for every term you want to add to this ontology:
 
 ---
-TermName: <insert term name>
-TermDescription: <insert free-text term description>
-[Optional]is-a: <optional, comma separated existing accession numbers>
+
+TermName: `<insert term name>`
+  
+TermDescription: `<insert free-text term description>`
+  
+[Optional]is-a: `<optional, comma separated existing accession numbers>`
+  
 ---
