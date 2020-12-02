@@ -2,7 +2,7 @@
 name: Import term(s)
 about: Use this issue template if you want to import terms from existing ontologies
 title: "[Import term(s)]"
-labels: ''
+labels: 'Status: Pending, Type: Import Term'
 assignees: ''
 
 ---
