@@ -23,4 +23,4 @@ synonym: "Experimental Randomisation"
 id: PSO:0000002
 name: Read Alignment Software
 def: "The software used for read alignment i.e http://edamontology.org/operation_3198 or http://purl.obolibrary.org/obo/OBI_0002478"
-comment: “ We might need to add the relationship with the class referenced above”
+comment : ""
