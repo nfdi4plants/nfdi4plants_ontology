@@ -2,7 +2,6 @@ format-version: 1.2
 data-version: init/2020-12-01
 saved-by: muehlhaus
 
-
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
@@ -189,5 +188,11 @@ comment: “”
 id: PSO:0000029
 name: Processed data file checksum
 def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum
+! comment: “For GEO this should be MD5 checksums”
+
+[Term] 
+id: PSO:0000030
+name: test
+def: "test” ! Checksum
 ! comment: “For GEO this should be MD5 checksums”
 
