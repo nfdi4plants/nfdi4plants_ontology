@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: init/2020-12-01
 saved-by: muehlhaus
-ontology: nfdi4pso
+
 
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
@@ -12,9 +12,11 @@ remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
 
+ontology: nfdi4pso
+
 [Term] 
 id: PSO:0000001
-name:  growth plot design
+name: growth plot design
 def: "A plan specification that states how treatments are allocated to the experimental units during an agronomic trial. It refers to the conceptual framework within which the experiment is conducted"
 alt_id: http://purl.obolibrary.org/obo/AGRO_00000343
 synonym: "Experimental Randomisation"
