@@ -190,4 +190,10 @@ name: Processed data file checksum
 def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum
 ! comment: “For GEO this should be MD5 checksums”
 
+[Term] 
+id: PSO:0000030
+name: test
+def: "test” ! Checksum
+! comment: “For GEO this should be MD5 checksums”
+
 
