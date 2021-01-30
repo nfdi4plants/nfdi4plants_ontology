@@ -1,4 +1,4 @@
-# nfdi4plants_ontoloy
+# nfdi4plants_ontology
 
 An intermediate ontology for plants used by DataPLANT to fill the ontology gap
 
