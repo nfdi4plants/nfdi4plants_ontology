@@ -190,3 +190,69 @@ name: Processed data file checksum
 def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum
 ! comment: “For GEO this should be MD5 checksums”
 
+[Term] 
+id: NFDI4PSO:0000030
+name: Organism
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."
+alt_id: http://purl.obolibrary.org/obo/OBI_0100026 
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000634
+
+[Term] 
+id: NFDI4PSO:0000031
+name: Genotype
+def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000513
+
+[Term] 
+id: NFDI4PSO:0000032
+name: Organism part
+def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000635
+
+[Term] 
+id: NFDI4PSO:0000033
+name: age
+def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000246
+
+[Term] 
+id: NFDI4PSO:0000034
+name: Time point
+def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000724
+
+[Term] 
+id: NFDI4PSO:0000035
+name: Library strategy
+def: "Sequencing technique intended for a next generation sequencing library."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0001973
+
+[Term] 
+id: NFDI4PSO:0000036
+name: Library Selection
+def: "The method used to select for or against, enrich, or screen the material being sequenced."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0001940
+
+[Term] 
+id: NFDI4PSO:0000037
+name: Library preparation kit
+def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0000085
+
+[Term] 
+id: NFDI4PSO:0000038
+name: Library preparation kit version
+def: "The version identifier of a packaged kit tailored for specific sequencing workflows."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0000149
+
+[Term] 
+id: NFDI4PSO:0000039
+name: Adapter sequence
+def: "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0000083
+
+[Term] 
+id: NFDI4PSO:0000040
+name: Next generation sequencing instrument model
+def: ""
+alt_id: http://www.ebi.ac.uk/efo/EFO_0003739 ! I would actually prefer to have this EFO term's children to select from. DB
