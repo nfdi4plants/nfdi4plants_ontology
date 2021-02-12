@@ -139,7 +139,7 @@ comment: “”
 id: NFDI4PSO:0000021
 name: Raw data file format
 def: "File format of the raw data file”
-comment: “This is a specialization of   https://ifb-elixirfr.github.io/edam-browser/#http://edamontology.org/format_1915"
+comment: “This is a specialization of https://ifb-elixirfr.github.io/edam-browser/#http://edamontology.org/format_1915"
 
 [Term] 
 id: NFDI4PSO:0000022
@@ -211,9 +211,9 @@ alt_id: http://www.ebi.ac.uk/efo/EFO_0000635
 
 [Term] 
 id: NFDI4PSO:0000033
-name: age
+name: Plant age
 def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)."
-alt_id: http://www.ebi.ac.uk/efo/EFO_0000246
+comment: “This is a specialization of http://www.ebi.ac.uk/efo/EFO_0000246"
 
 [Term] 
 id: NFDI4PSO:0000034
@@ -256,3 +256,13 @@ id: NFDI4PSO:0000040
 name: Next generation sequencing instrument model
 def: ""
 alt_id: http://www.ebi.ac.uk/efo/EFO_0003739 ! I would actually prefer to have this EFO term's children to select from. DB
+
+[Term] 
+id: NFDI4PSO:0000041
+name: Growth day length
+def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)"
+comment: “Adapted from http://purl.obolibrary.org/obo/PECO_0007078"
+
+
+
+
