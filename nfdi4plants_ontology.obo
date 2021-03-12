@@ -332,8 +332,11 @@ name: MS derivatization
 def: "Derivatization for metabolomics mass spectrometry."
 comment: “is_a http://purl.obolibrary.org/obo/CHMO_0001485"
 
-
-
+[Term] 
+id: NFDI4PSO:0000053
+name: Chromatography column type
+def: "Type of chromatography column (NFDI4PSO:0000048)"
+comment: “is_a http://purl.obolibrary.org/obo/CHMO_0001000"
 
 
 
