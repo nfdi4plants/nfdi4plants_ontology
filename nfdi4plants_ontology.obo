@@ -289,7 +289,7 @@ comment: “"
 
 [Term] 
 id: NFDI4PSO:0000046
-name: Chromatography instrument	model
+name: Chromatography instrument model
 def: "Company name, and instrument name or serial number of the chromatography instrument"
 comment: “Placeholder until there is a good ontology to pick the exact model (company and serial no) from. DB"
 comment: "similar to http://www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000048"
