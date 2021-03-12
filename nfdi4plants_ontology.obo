@@ -263,5 +263,11 @@ name: Growth day length
 def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)"
 comment: “Adapted from http://purl.obolibrary.org/obo/PECO_0007078"
 
+[Term] 
+id: NFDI4PSO:0000042
+name: Biological replicate
+def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')"
+comment: “Similar to http://purl.obolibrary.org/obo/MS_1001809"
+
 
 
