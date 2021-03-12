@@ -314,6 +314,19 @@ def: "Company name, and name or serial number of the chromatography guard column
 comment: “Placeholder until there is a good ontology to pick the exact model (company and serial no) from. DB"
 comment: "is_a http://purl.obolibrary.org/obo/OBI_0000614"
 
+[Term] 
+id: NFDI4PSO:0000050
+name: Extraction buffer
+def: "Chemical buffer, solvent or solution used to extract a component from a biological sample."
+comment: “related to http://purl.obolibrary.org/obo/OBI_0302884. DB"
+
+[Term] 
+id: NFDI4PSO:0000051
+name: Extraction buffer volume
+def: "Volume of the buffer (NFDI4PSO:0000050) used during extraction."
+comment: “Has unit 'microliter'"
+
+
 
 
 
