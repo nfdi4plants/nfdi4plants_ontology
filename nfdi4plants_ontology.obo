@@ -269,5 +269,35 @@ name: Biological replicate
 def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')"
 comment: “Similar to http://purl.obolibrary.org/obo/MS_1001809"
 
+[Term] 
+id: NFDI4PSO:0000043
+name: MS sample post-extraction
+def: "Specific to metabolomic mass spectrometry assays. Steps performed after sample extraction (e.g. dried in a vacuum concentrator, solid phase microextraction direct injection)"
+comment: “"
+
+[Term] 
+id: NFDI4PSO:0000044
+name: MS sample resuspension
+def: "Specific to metabolomic mass spectrometry assays. Resuspension after sample extraction (e.g. dried samples resuspended in pyridine, dried samples resuspended in acetonitrile)"
+comment: “"
+
+[Term] 
+id: NFDI4PSO:0000045
+name: MS sample type
+def: "Specific to metabolomic mass spectrometry assays. Type of sample (e.g. experimental sample, pooled sample, blank, medium blank, retention index, reference standard, quality control)"
+comment: “"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
