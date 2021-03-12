@@ -326,6 +326,13 @@ name: Extraction buffer volume
 def: "Volume of the buffer (NFDI4PSO:0000050) used during extraction."
 comment: “Has unit 'microliter'"
 
+[Term] 
+id: NFDI4PSO:0000052
+name: MS derivatization
+def: "Derivatization for metabolomics mass spectrometry."
+comment: “is_a http://purl.obolibrary.org/obo/CHMO_0001485"
+
+
 
 
 
