@@ -338,17 +338,54 @@ name: Chromatography column type
 def: "Type of chromatography column (NFDI4PSO:0000048)"
 comment: “is_a http://purl.obolibrary.org/obo/CHMO_0001000"
 
+[Term] 
+id: NFDI4PSO:0000054
+name: Extraction method
+def: "Method or kit that was used to extract DNA or RNA"
+comment: “More general than NFDI4PSO:0000014, because not everyone uses a kit for RNA/DNA extraction"
 
+[Term] 
+id: NFDI4PSO:0000055
+name: Library source
+def: "Type of source material that is being sequenced"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0001965
 
+[Term] 
+id: NFDI4PSO:0000056
+name: Library DNA amount
+def: "Amount of DNA (microgram) used as starting material for library construction"
+comment: “"
 
+[Term] 
+id: NFDI4PSO:0000057
+name: Next generation sequencing platform
+def: "Name of the company that produces next generation sequencing instruments"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0000071
 
+[Term] 
+id: NFDI4PSO:0000058
+name: Read length
+def: "Numbers of base pairs per read"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0000076
 
+[Term] 
+id: NFDI4PSO:0000059
+name: Sequence assembly method
+def: "Strategy that was used to assemble reads into contigs"
+comment: “Just two options should be possible: de-novo assembly or mapping"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0000090
 
+[Term] 
+id: NFDI4PSO:0000060
+name: Sequence assembly method version
+def: "The version of the sequence assembly algorithm (OBI_0001522)"
+comment: “"
 
-
-
-
-
+[Term] 
+id: NFDI4PSO:0000061
+name: Genome status
+def: "Status of the genome sequence that is uploaded""
+comment: “Just two options should be possible: full or partial"
 
 
 
