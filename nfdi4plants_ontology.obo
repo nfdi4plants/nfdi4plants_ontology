@@ -377,7 +377,7 @@ alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/o
 
 [Term] 
 id: NFDI4PSO:0000060
-name: Sequence assembly method version
+name: Sequence assembly algorithm version
 def: "The version of the sequence assembly algorithm (OBI_0001522)"
 comment: “"
 
