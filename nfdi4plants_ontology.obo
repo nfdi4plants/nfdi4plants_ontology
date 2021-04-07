@@ -254,7 +254,7 @@ alt_id: http://purl.obolibrary.org/obo/GENEPIO_0000083
 [Term] 
 id: NFDI4PSO:0000040
 name: Next generation sequencing instrument model
-def: ""
+def: "Model name or number of next generation sequencing instrument"
 alt_id: http://www.ebi.ac.uk/efo/EFO_0003739 ! I would actually prefer to have this EFO term's children to select from. DB
 
 [Term] 
