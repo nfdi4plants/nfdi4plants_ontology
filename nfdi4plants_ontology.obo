@@ -384,8 +384,13 @@ comment: “"
 [Term] 
 id: NFDI4PSO:0000061
 name: Genome status
-def: "Status of the genome sequence that is uploaded""
+def: "Status of the genome sequence that is uploaded"
 comment: “Just two options should be possible: full or partial"
+
+[Term] 
+id: NFDI4PSO:0000062
+name: RNA quality check
+def: "Measure of RNA quality after RNA extraction. Typically RNA integrity number (RIN) as provided by Agilent BioAnalyzer. Alternatively, RNA integrity checked via gel electrophoresis."
 
 
 
