@@ -392,6 +392,105 @@ id: NFDI4PSO:0000062
 name: RNA quality check
 def: "Measure of RNA quality after RNA extraction. Typically RNA integrity number (RIN) as provided by Agilent BioAnalyzer. Alternatively, RNA integrity checked via gel electrophoresis."
 
+[Term] 
+id: NFDI4PSO:0000063
+name: BioProject Accession Number
+def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345."
+alt_id: http://purl.obolibrary.org/obo/NCIT_C175890
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000064
+name: Sample type
+def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C70713
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000065
+name: Isolate
+def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C53471
+
+[Term] 
+id: NFDI4PSO:0000066
+name: Cultivar
+def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0005136
+comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
+
+[Term] 
+id: NFDI4PSO:0000067
+name: Ecotype
+def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler"
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000434
+comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0000434]"
+
+[Term] 
+id: NFDI4PSO:0000068
+name: Cell line
+def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [Definition Source: NCI][attribution: On-line Medical Dictionary]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C16403
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
+
+[Term] 
+id: NFDI4PSO:0000069
+name: Cell type
+def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C12508
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C12508]"
+
+[Term] 
+id: NFDI4PSO:0000070
+name: Developmental Stage
+def: "A general term that usually refers to named landmark events during development of an organism. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C43531
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C43531]"
+
+[Term] 
+id: NFDI4PSO:0000071
+name: Plant disease
+def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent."
+alt_id: http://purl.obolibrary.org/obo/PSO_0000013
+comment: “[Definition Source: http://purl.obolibrary.org/obo/PSO_0000013]"
+
+[Term] 
+id: NFDI4PSO:0000072
+name: Plant disease stage
+def: "Stage of plant disease (NFDI4PSO:0000071) at the time of sampling."
+
+[Term] 
+id: NFDI4PSO:0000073
+name: Phenotype
+def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C16977
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000074
+name: Geogaphic Area
+def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg "Canada: Vancouver" or "Germany: halfway down Zugspitze, Alps""
+alt_id: http://purl.obolibrary.org/obo/NCIT_C16632
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000075
+name: Sample Collection Date
+def: "The date on which the sample was collected"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C81286
+
+[Term] 
+id: NFDI4PSO:0000076
+name: Sample Collected By
+def: "Indicates the person, group, or institution who performed the collection act. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C45262
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
+
+
+	
+
+
+
 
 
 
