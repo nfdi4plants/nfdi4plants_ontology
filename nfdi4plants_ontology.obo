@@ -500,6 +500,7 @@ is_a: NFDI4PSO:9999990
 [Term]
 id: NFDI4PSO:9999992
 name: Test instance 2
+def: "TEST_Dominik instance"
 is_a: NFDI4PSO:9999990
 
 
