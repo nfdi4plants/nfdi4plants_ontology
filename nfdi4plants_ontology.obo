@@ -486,21 +486,5 @@ def: "Indicates the person, group, or institution who performed the collection a
 alt_id: http://purl.obolibrary.org/obo/NCIT_C45262
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
 
-[Term]
-id: NFDI4PSO:9999990
-name: TEST_Dominik Class with instances
-def: "TEST_Dominik"
-
-[Term]
-id: NFDI4PSO:9999991
-name: Test instance 1
-def: "TEST_Dominik instance"
-is_a: NFDI4PSO:9999990
-
-[Term]
-id: NFDI4PSO:9999992
-name: Test instance 2
-def: "TEST_Dominik instance"
-is_a: NFDI4PSO:9999990
 
 
