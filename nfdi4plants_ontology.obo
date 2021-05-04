@@ -495,12 +495,14 @@ def: "[TEST Dominik]"
 id: NFDI4PSO:9999991
 name: Test instance 1
 def: "[TEST Dominik] instance"
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: NFDI4PSO:9999990
 
 [Term]
 id: NFDI4PSO:9999992
 name: Test instance 2
 def: "[TEST Dominik] instance"
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
 is_a: NFDI4PSO:9999990
 
 
