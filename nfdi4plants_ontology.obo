@@ -1,0 +1,490 @@
+format-version: 1.2
+data-version: init/2020-12-01
+saved-by: muehlhaus
+
+property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
+
+default-namespace:NFDI4NFDI4PSO
+remark: coverage: Missing Terms for the DataPLANT end-point repository templates
+remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
+remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
+
+ontology: nfdi4pso
+
+[Term] 
+id: NFDI4PSO:0000001
+name: growth plot design
+def: "A plan specification that states how treatments are allocated to the experimental units during an agronomic trial. It refers to the conceptual framework within which the experiment is conducted"
+alt_id: http://purl.obolibrary.org/obo/AGRO_00000343
+synonym: "Experimental Randomisation"
+
+[Term] 
+id: NFDI4PSO:0000002
+name: Read Alignment Software
+def: "The software used for read alignment i.e http://edamontology.org/operation_3198 or http://purl.obolibrary.org/obo/OBI_0002478"
+comment: “ We might need to add the relationship with the class referenced above”
+
+[Term] 
+id: NFDI4PSO:0000003
+name: Read Alignment Software Version
+def: "The version of the read alignment software (NFDI4PSO:0000002).”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000004
+name: Read Alignment Software Parameters
+def: "The parameters of the read alignment software (NFDI4PSO:0000002).”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000005
+name: Humidity Day
+def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of http://www.ontobee.org/ontology/PECO?iri=http://purl.obolibrary.org/obo/PECO_0007197”
+comment: “”
+
+
+[Term] 
+id: NFDI4PSO:0000006
+name: Humidity Night
+def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of http://www.ontobee.org/ontology/PECO?iri=http://purl.obolibrary.org/obo/PECO_0007197”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000007
+name: Temperature Day
+def: "This term defines the air temperature at daytime, it is a specialised concept of http://www.ontobee.org/ontology/ENVO?iri=http://purl.obolibrary.org/obo/ENVO_09200001”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000008
+name: Temperature Night
+def: "This term defines the air temperature at nighttime, it is a specialised concept of http://www.ontobee.org/ontology/ENVO?iri=http://purl.obolibrary.org/obo/ENVO_09200001”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000009
+name: Sample Collection Method
+def: "Details of method to gather (e.g. scissors, scalpel) or pool the sample, tissue, organ”
+
+
+[Term] 
+id: NFDI4PSO:0000010
+name: Metabolism quenching method
+def: "Method used to stop the metabolism in the sample (e.g. shock-freeze in liquid nitrogen). May include the time passed since sample collection.”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000011
+name: Sample storage
+def: "The method used for sample storage. Should include the temperature of the sample. May include the medium (freezer or liquid nitrogen) and/or additional processing (freeze-drying) of the sample”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000012
+name: Bio entity
+def: "The biological entity (e.g. RNA, DNA, metabolites, proteins, lipids) to be extracted from a biosource targeted for assay / measurement.”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000013
+name: Biosource amount
+def: "The amount (typically in milligram) of material from which a bio entity (NFDI4PSO:0000012) is extracted.”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000014
+name: Extraction Kit
+def: "The name of the commercial kit used for extraction of a bio entity (NFDI4PSO:0000012). Should include the company name.”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000015
+name: Library layout
+def: "Determines the choice of DNA sequencing strategy, in which a single read is initiated from each end (paired-end) or one end (single-end) of DNA fragment”
+comment: “Adapted from http://purl.obolibrary.org/obo/NCIT_C150423"
+
+[Term] 
+id: NFDI4PSO:0000016
+name: Library RNA amount
+def: "Amount of RNA (typically microgram) used as starting material for library construction (http://purl.obolibrary.org/obo/GENEPIO_0001994)”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000017
+name: Base-calling Software 
+def: "The Base-calling Software used for base-calling process. i.e. http://edamontology.org/operation_3185 or http://purl.obolibrary.org/obo/OBI_0002468”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000018
+name: Base-calling Software Version
+def: "The version of the Base-calling Software (NFDI4PSO:0000017).”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000019
+name: Base-calling Software Parameters
+def: "The parameters of the Base-calling Software (NFDI4PSO:0000017).”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000020
+name: Library strand
+def: "Determines the read direction. Only applies to nucleotide sequencing in paired-end layout (NFDI4PSO:0000015)”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000021
+name: Raw data file format
+def: "File format of the raw data file”
+comment: “This is a specialization of https://ifb-elixirfr.github.io/edam-browser/#http://edamontology.org/format_1915"
+
+[Term] 
+id: NFDI4PSO:0000022
+name: Raw data file checksum
+def: "Checksum of the raw data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum
+! comment: “For GEO this should be MD5 checksums”
+! comment: “Raw data file in SWATE is Data File Name”
+
+[Term] 
+id: NFDI4PSO:0000023
+name: Data filtering software
+def: "Name of the software applied for data filtering”
+comment: “For RNA-seq data, this may be a read adapter trimming software (GENEPIO_0002096)”
+
+[Term] 
+id: NFDI4PSO:0000024
+name: Data filtering software version
+def: "The version of the data filtering software (NFDI4PSO:0000023).”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000025
+name: Data filtering Software Parameters
+def: "The parameters of the data filtering software (NFDI4PSO:0000023).”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000026
+name: Genome reference sequence
+def: "Name and version of the genome reference.”
+comment: “See also http://purl.obolibrary.org/obo/NCIT_C164388 and http://purl.obolibrary.org/obo/MS_1002644”
+
+[Term] 
+id: NFDI4PSO:0000027
+name: Processed data file format
+def: "File format of the processed data file”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000028
+name: Processed data file name
+def: "Name of the processed data file”
+comment: “”
+
+[Term] 
+id: NFDI4PSO:0000029
+name: Processed data file checksum
+def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum
+! comment: “For GEO this should be MD5 checksums”
+
+[Term] 
+id: NFDI4PSO:0000030
+name: Organism
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."
+alt_id: http://purl.obolibrary.org/obo/OBI_0100026 
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000634
+
+[Term] 
+id: NFDI4PSO:0000031
+name: Genotype
+def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000513
+
+[Term] 
+id: NFDI4PSO:0000032
+name: Organism part
+def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000635
+
+[Term] 
+id: NFDI4PSO:0000033
+name: Plant age
+def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)."
+comment: “This is a specialization of http://www.ebi.ac.uk/efo/EFO_0000246"
+
+[Term] 
+id: NFDI4PSO:0000034
+name: Time point
+def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000724
+
+[Term] 
+id: NFDI4PSO:0000035
+name: Library strategy
+def: "Sequencing technique intended for a next generation sequencing library."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0001973
+
+[Term] 
+id: NFDI4PSO:0000036
+name: Library Selection
+def: "The method used to select for or against, enrich, or screen the material being sequenced."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0001940
+
+[Term] 
+id: NFDI4PSO:0000037
+name: Library preparation kit
+def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0000085
+
+[Term] 
+id: NFDI4PSO:0000038
+name: Library preparation kit version
+def: "The version identifier of a packaged kit tailored for specific sequencing workflows."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0000149
+
+[Term] 
+id: NFDI4PSO:0000039
+name: Adapter sequence
+def: "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters."
+alt_id: http://purl.obolibrary.org/obo/GENEPIO_0000083
+
+[Term] 
+id: NFDI4PSO:0000040
+name: Next generation sequencing instrument model
+def: "Model name or number of next generation sequencing instrument"
+alt_id: http://www.ebi.ac.uk/efo/EFO_0003739 ! I would actually prefer to have this EFO term's children to select from. DB
+
+[Term] 
+id: NFDI4PSO:0000041
+name: Growth day length
+def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)"
+comment: “Adapted from http://purl.obolibrary.org/obo/PECO_0007078"
+
+[Term] 
+id: NFDI4PSO:0000042
+name: Biological replicate
+def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')"
+comment: “Similar to http://purl.obolibrary.org/obo/MS_1001809"
+
+[Term] 
+id: NFDI4PSO:0000043
+name: MS sample post-extraction
+def: "Specific to metabolomic mass spectrometry assays. Steps performed after sample extraction (e.g. dried in a vacuum concentrator, solid phase microextraction direct injection)"
+comment: “"
+
+[Term] 
+id: NFDI4PSO:0000044
+name: MS sample resuspension
+def: "Specific to metabolomic mass spectrometry assays. Resuspension after sample extraction (e.g. dried samples resuspended in pyridine, dried samples resuspended in acetonitrile)"
+comment: “"
+
+[Term] 
+id: NFDI4PSO:0000045
+name: MS sample type
+def: "Specific to metabolomic mass spectrometry assays. Type of sample (e.g. experimental sample, pooled sample, blank, medium blank, retention index, reference standard, quality control)"
+comment: “"
+
+[Term] 
+id: NFDI4PSO:0000046
+name: Chromatography instrument model
+def: "Company name, and instrument name or serial number of the chromatography instrument"
+comment: “Placeholder until there is a good ontology to pick the exact model (company and serial no) from. DB"
+comment: "similar to http://www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000048"
+
+[Term] 
+id: NFDI4PSO:0000047
+name: Chromatography autosampler model
+def: "Company name, and name or serial number of the chromatography autosampler model"
+comment: “Placeholder until there is a good ontology to pick the exact model (company and serial no) from. DB"
+comment: "of type http://purl.obolibrary.org/obo/OBI_0000555"
+
+[Term] 
+id: NFDI4PSO:0000048
+name: Chromatography column model
+def: "Company name, and name or serial number of the chromatography column"
+comment: “Placeholder until there is a good ontology to pick the exact model (company and serial no) from. DB"
+
+[Term] 
+id: NFDI4PSO:0000049
+name: Chromatography guard column model
+def: "Company name, and name or serial number of the chromatography guard column"
+comment: “Placeholder until there is a good ontology to pick the exact model (company and serial no) from. DB"
+comment: "is_a http://purl.obolibrary.org/obo/OBI_0000614"
+
+[Term] 
+id: NFDI4PSO:0000050
+name: Extraction buffer
+def: "Chemical buffer, solvent or solution used to extract a component from a biological sample."
+comment: “related to http://purl.obolibrary.org/obo/OBI_0302884. DB"
+
+[Term] 
+id: NFDI4PSO:0000051
+name: Extraction buffer volume
+def: "Volume of the buffer (NFDI4PSO:0000050) used during extraction."
+comment: “Has unit 'microliter'"
+
+[Term] 
+id: NFDI4PSO:0000052
+name: MS derivatization
+def: "Derivatization for metabolomics mass spectrometry."
+comment: “is_a http://purl.obolibrary.org/obo/CHMO_0001485"
+
+[Term] 
+id: NFDI4PSO:0000053
+name: Chromatography column type
+def: "Type of chromatography column (NFDI4PSO:0000048)"
+comment: “is_a http://purl.obolibrary.org/obo/CHMO_0001000"
+
+[Term] 
+id: NFDI4PSO:0000054
+name: Extraction method
+def: "Method or kit that was used to extract DNA or RNA"
+comment: “More general than NFDI4PSO:0000014, because not everyone uses a kit for RNA/DNA extraction"
+
+[Term] 
+id: NFDI4PSO:0000055
+name: Library source
+def: "Type of source material that is being sequenced"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0001965
+
+[Term] 
+id: NFDI4PSO:0000056
+name: Library DNA amount
+def: "Amount of DNA (microgram) used as starting material for library construction"
+comment: “"
+
+[Term] 
+id: NFDI4PSO:0000057
+name: Next generation sequencing platform
+def: "Name of the company that produces next generation sequencing instruments"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0000071
+
+[Term] 
+id: NFDI4PSO:0000058
+name: Read length
+def: "Numbers of base pairs per read"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0000076
+
+[Term] 
+id: NFDI4PSO:0000059
+name: Sequence assembly method
+def: "Strategy that was used to assemble reads into contigs"
+comment: “Just two options should be possible: de-novo assembly or mapping"
+alt_id: http://www.ontobee.org/ontology/GENEPIO?iri=http://purl.obolibrary.org/obo/GENEPIO_0000090
+
+[Term] 
+id: NFDI4PSO:0000060
+name: Sequence assembly algorithm version
+def: "The version of the sequence assembly algorithm (OBI_0001522)"
+comment: “"
+
+[Term] 
+id: NFDI4PSO:0000061
+name: Genome status
+def: "Status of the genome sequence that is uploaded"
+comment: “Just two options should be possible: full or partial"
+
+[Term] 
+id: NFDI4PSO:0000062
+name: RNA quality check
+def: "Measure of RNA quality after RNA extraction. Typically RNA integrity number (RIN) as provided by Agilent BioAnalyzer. Alternatively, RNA integrity checked via gel electrophoresis."
+
+[Term] 
+id: NFDI4PSO:0000063
+name: BioProject Accession Number
+def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345."
+alt_id: http://purl.obolibrary.org/obo/NCIT_C175890
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000064
+name: Sample type
+def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C70713
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000065
+name: Isolate
+def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C53471
+
+[Term] 
+id: NFDI4PSO:0000066
+name: Cultivar
+def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species."
+alt_id: http://www.ebi.ac.uk/efo/EFO_0005136
+comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
+
+[Term] 
+id: NFDI4PSO:0000067
+name: Ecotype
+def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler"
+alt_id: http://www.ebi.ac.uk/efo/EFO_0000434
+comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0000434]"
+
+[Term] 
+id: NFDI4PSO:0000068
+name: Cell line
+def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [Definition Source: NCI][attribution: On-line Medical Dictionary]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C16403
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
+
+[Term] 
+id: NFDI4PSO:0000069
+name: Cell type
+def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C12508
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C12508]"
+
+[Term] 
+id: NFDI4PSO:0000070
+name: Developmental Stage
+def: "A general term that usually refers to named landmark events during development of an organism. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C43531
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C43531]"
+
+[Term] 
+id: NFDI4PSO:0000071
+name: Plant disease
+def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent."
+alt_id: http://purl.obolibrary.org/obo/PSO_0000013
+comment: “[Definition Source: http://purl.obolibrary.org/obo/PSO_0000013]"
+
+[Term] 
+id: NFDI4PSO:0000072
+name: Plant disease stage
+def: "Stage of plant disease (NFDI4PSO:0000071) at the time of sampling."
+
+[Term] 
+id: NFDI4PSO:0000073
+name: Phenotype
+def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C16977
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000074
+name: Geogaphic Area
+def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg "Canada: Vancouver" or "Germany: halfway down Zugspitze, Alps""
+alt_id: http://purl.obolibrary.org/obo/NCIT_C16632
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000075
+name: Sample Collection Date
+def: "The date on which the sample was collected"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C81286
+
+[Term] 
+id: NFDI4PSO:0000076
+name: Sample Collected By
+def: "Indicates the person, group, or institution who performed the collection act. [Definition Source: NCI]"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C45262
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
+
+
+
