@@ -1,16 +1,13 @@
 format-version: 1.2
 data-version: init/2020-12-01
 saved-by: muehlhaus
-
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
-
 default-namespace:NFDI4NFDI4PSO
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
-
 ontology: nfdi4pso
 
 [Term] 
