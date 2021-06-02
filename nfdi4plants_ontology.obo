@@ -483,11 +483,4 @@ def: "Indicates the person, group, or institution who performed the collection a
 alt_id: http://purl.obolibrary.org/obo/NCIT_C45262
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
 
-[Term] 
-id: NFDI4PSO:0000077
-name: test term
-def: "This term was added for testing purposes"
-alt_id: http://purl.obolibrary.org/obo/NCIT_C45262
-comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
-
 
