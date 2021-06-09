@@ -489,5 +489,11 @@ name: Metabolite Assignment File
 def: "metabolite assignment file (MAF) as required by MetaboLights to describe metabolites analyzed during a metabolomics assay. Details see: https://www.ebi.ac.uk/metabolights/guides/MAF/Title"
 comment: “[Definition Source: https://www.ebi.ac.uk/metabolights/guides/MAF/Title"
 
+[Term] 
+id: NFDI4PSO:0000078
+name: BioSample Accession Number
+def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!"
+alt_id: http://purl.obolibrary.org/obo/NCIT_C175889
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 
 
