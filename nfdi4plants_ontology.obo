@@ -496,11 +496,3 @@ def: "BioSample accession as required by NCBI repositories. Typically of the for
 alt_id: http://purl.obolibrary.org/obo/NCIT_C175889
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 
-[Term]
-id: NFDI4PSO:0000079
-name: Test
-def: "Test"
-alt_id: http://purl.obolibrary.org/obo/NCIT_C175889
-comment: “Test"
-
-
