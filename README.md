@@ -25,7 +25,7 @@ Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ont
 
 ## To Dos
 
-- [] Write How-Tos
-- [] Agree on common preferences 
-  - [] For User details  
-  - [] For new entities
+- [ ] Write How-Tos
+- [ ] Agree on common preferences 
+  - [ ] For User details  
+  - [ ] For new entities
