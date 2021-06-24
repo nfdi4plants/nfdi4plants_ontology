@@ -10,7 +10,7 @@ Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ont
 
 
 
-# Adapting the ontolgy with Protégé (Desktop)
+# Editing the ontolgy with Protégé (Desktop)
 
 - Protégé (version ≤ 5.0?) can read obo files
 - Download and install Protégé https://protege.stanford.edu/products.php#desktop-protege
