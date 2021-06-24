@@ -15,7 +15,7 @@ id: NFDI4PSO:0000001
 name: growth plot design
 def: "A plan specification that states how treatments are allocated to the experimental units during an agronomic trial. It refers to the conceptual framework within which the experiment is conducted"
 alt_id: http://purl.obolibrary.org/obo/AGRO_00000343
-synonym: "Experimental Randomisation"
+synonym: "Experimental Randomisation" []
 
 [Term] 
 id: NFDI4PSO:0000002
@@ -466,7 +466,7 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 [Term] 
 id: NFDI4PSO:0000074
 name: Geogaphic Area
-def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg "Canada: Vancouver" or "Germany: halfway down Zugspitze, Alps""
+def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg 'Canada: Vancouver' or 'Germany: halfway down Zugspitze, Alps'
 alt_id: http://purl.obolibrary.org/obo/NCIT_C16632
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 
@@ -495,4 +495,3 @@ name: BioSample Accession Number
 def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!"
 alt_id: http://purl.obolibrary.org/obo/NCIT_C175889
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
-
