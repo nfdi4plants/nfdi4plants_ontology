@@ -495,3 +495,9 @@ name: BioSample Accession Number
 def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!"
 xref: http://purl.obolibrary.org/obo/NCIT_C175889
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+
+[Term] 
+id: NFDI4PSO:0000079
+name: Coffee cup test
+def: "Just a test"
+
