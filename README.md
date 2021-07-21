@@ -22,6 +22,10 @@ Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ont
 * Open, work on and save locally on the \*.obo in Protege
 * Commit and push back to github
 
+## ID Ranges (testing)
+-Hajira  (100 - 10000
+-Silke   (1001-2000)
+-Xiaoran (2001 - 3000)
 
 ## To Dos
 
