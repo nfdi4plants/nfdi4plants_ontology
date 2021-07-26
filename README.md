@@ -16,16 +16,14 @@ Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ont
 - Download and install Protégé https://protege.stanford.edu/products.php#desktop-protege
 - In Protégé: File -> Open from URL... -> https://raw.githubusercontent.com/nfdi4plants/nfdi4plants_ontology/main/nfdi4plants_ontology.obo
 
----- 
-
 * Clone this repo locally 
 * Open, work on and save locally on the \*.obo in Protege
 * Commit and push back to github
 
 ## ID Ranges (testing)
--Hajira  (100 - 10000
--Silke   (1001-2000)
--Xiaoran (2001 - 3000)
+- Hajira  (100 - 1000)  
+- Silke   (1001-2000)  
+- Xiaoran (2001 - 3000) 
 
 ## To Dos
 
@@ -33,3 +31,9 @@ Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ont
 - [ ] Agree on common preferences 
   - [ ] For User details  
   - [ ] For new entities
+
+## Notes 
+Current version of the obo flat file format (including terminologies `is_a`, `xref`, etc. 
+https://owlcollab.github.io/oboformat/doc/GO.format.obo-1_4.html
+
+
