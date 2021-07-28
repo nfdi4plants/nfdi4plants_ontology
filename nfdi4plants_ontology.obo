@@ -492,6 +492,7 @@ xref: http://purl.obolibrary.org/obo/NCIT_C175889
 [Term]
 id: NFDI4PSO:1000003
 name: RNA-Seq
+def: "Test definition to see wether this is the reason, SWATE won't show the is_a options...." 
 is_a: NFDI4PSO:0000035 ! Library strategy
 disjoint_from: NFDI4PSO:1000004 ! miRNA-Seq
 
