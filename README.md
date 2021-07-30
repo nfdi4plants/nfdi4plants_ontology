@@ -28,3 +28,7 @@ Current version of the obo flat file format (including terminologies `is_a`, `xr
 https://owlcollab.github.io/oboformat/doc/GO.format.obo-1_4.html
 
 
+
+## Dominik's first steps in Protege
+- adding instances for SWATE templates 
+https://uni-duesseldorf.sciebo.de/s/UmsTBzQhbBxg5qu
