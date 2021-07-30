@@ -488,3 +488,318 @@ def: "BioSample accession as required by NCBI repositories. Typically of the for
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: http://purl.obolibrary.org/obo/NCIT_C175889
 
+[Term]
+id: NFDI4PSO:1000003
+name: RNA-Seq
+def: "placeholder def for RNA-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000004
+name: miRNA-Seq
+def: "placeholder def for miRNA-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000005
+name: ncRNA-Seq
+def: "placeholder def for ncRNA-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000006
+name: RNA-Seq (size fractionation)
+def: "placeholder def for RNA-Seq (size fractionation)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000007
+name: RNA-Seq (CAGE)
+def: "placeholder def for RNA-Seq (CAGE)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000008
+name: RNA-Seq (RACE)
+def: "placeholder def for RNA-Seq (RACE)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000009
+name: ssRNA-seq
+def: "placeholder def for ssRNA-seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000010
+name: ChIP-Seq
+def: "placeholder def for ChIP-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000011
+name: MNase-Seq
+def: "placeholder def for MNase-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000012
+name: MBD-Seq
+def: "placeholder def for MBD-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000013
+name: MRE-Seq
+def: "placeholder def for MRE-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000014
+name: Bisulfite-Seq
+def: "placeholder def for Bisulfite-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000015
+name: Bisulfite-Seq (reduced representation)
+def: "placeholder def for Bisulfite-Seq (reduced representation)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000016
+name: MeDIP-Seq
+def: "placeholder def for MeDIP-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000017
+name: DNase-Hypersensitivity
+def: "placeholder def for DNase-Hypersensitivity" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000018
+name: Tn-Seq
+def: "placeholder def for Tn-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000019
+name: FAIRE-seq
+def: "placeholder def for FAIRE-seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000020
+name: SELEX
+def: "placeholder def for SELEX" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000021
+name: RIP-Seq
+def: "placeholder def for RIP-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000022
+name: ATAC-seq
+def: "placeholder def for ATAC-seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000023
+name: ChIA-PET
+def: "placeholder def for ChIA-PET" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000024
+name: Hi-C
+def: "placeholder def for Hi-C" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000025
+name: OTHER: specify
+def: "placeholder def for OTHER: specify" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: NFDI4PSO:1000001 "PROTOCOLS_library strategy" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000026
+name: fastq
+def: "placeholder def for fastq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000027
+name: bam
+def: "placeholder def for bam" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000028
+name: Illumina_native_qseq
+def: "placeholder def for Illumina_native_qseq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000029
+name: Illumina_native
+def: "placeholder def for Illumina_native" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000030
+name: SOLiD_native_csfasta
+def: "placeholder def for SOLiD_native_csfasta" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000031
+name: SOLiD_native_qual
+def: "placeholder def for SOLiD_native_qual" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000032
+name: sff
+def: "placeholder def for sff" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000033
+name: 454_native_seq
+def: "placeholder def for 454_native_seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000034
+name: 454_native_qual
+def: "placeholder def for 454_native_qual" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000035
+name: Helicos_native
+def: "placeholder def for Helicos_native" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000036
+name: srf
+def: "placeholder def for srf" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
+[Term]
+id: NFDI4PSO:1000037
+name: PacBio_HDF5
+def: "placeholder def for PacBio_HDF5" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: NFDI4PSO:1000001 "RAW FILES_file type" xsd:string
+property_value: NFDI4PSO:1000002 "GEO_RNASEQ" xsd:string
+
