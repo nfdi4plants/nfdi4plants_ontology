@@ -1,0 +1,1701 @@
+Date: 2021-07-30 15:48:02
+Ontology source: /Users/dominikbrilhaus/Library/Mobile%20Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/nfdi4plants_ontology.obo
+Worksheet source: /Users/dominikbrilhaus/Library/Mobile Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/ER_CVs.xlsx
+Transformation rules: /Users/dominikbrilhaus/Library/Mobile Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/cellfie_trafo_rule.json
+
+# Cell range: (SplitCVs!E2:E+) Comment: ""
+# Class: @E*(rdfs:label=@E*)
+#   SubClassOf: @B*
+#   Annotations:  definition @F*,
+# 	rdfs:comment "To be transformed to an instance. DB", 
+# 	NFDI4PSO_1000000 @D*, 
+# 	NFDI4PSO_1000001 @C*
+
+Class: RNA-Seq  # Generated from value "RNA-Seq" located at cell 'SplitCVs'!E2.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: miRNA-Seq  # Generated from value "miRNA-Seq" located at cell 'SplitCVs'!E3.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of miRNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ncRNA-Seq  # Generated from value "ncRNA-Seq" located at cell 'SplitCVs'!E4.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ncRNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RNA-Seq (size fractionation)  # Generated from value "RNA-Seq (size fractionation)" located at cell 'SplitCVs'!E5.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (size fractionation)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RNA-Seq (CAGE)  # Generated from value "RNA-Seq (CAGE)" located at cell 'SplitCVs'!E6.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (CAGE)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RNA-Seq (RACE)  # Generated from value "RNA-Seq (RACE)" located at cell 'SplitCVs'!E7.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (RACE)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ssRNA-seq  # Generated from value "ssRNA-seq" located at cell 'SplitCVs'!E8.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ssRNA-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ChIP-Seq  # Generated from value "ChIP-Seq" located at cell 'SplitCVs'!E9.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ChIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MNase-Seq  # Generated from value "MNase-Seq" located at cell 'SplitCVs'!E10.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MNase-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MBD-Seq  # Generated from value "MBD-Seq" located at cell 'SplitCVs'!E11.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MBD-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MRE-Seq  # Generated from value "MRE-Seq" located at cell 'SplitCVs'!E12.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MRE-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Bisulfite-Seq  # Generated from value "Bisulfite-Seq" located at cell 'SplitCVs'!E13.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Bisulfite-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Bisulfite-Seq (reduced representation)  # Generated from value "Bisulfite-Seq (reduced representation)" located at cell 'SplitCVs'!E14.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Bisulfite-Seq (reduced representation)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MeDIP-Seq  # Generated from value "MeDIP-Seq" located at cell 'SplitCVs'!E15.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MeDIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNase-Hypersensitivity  # Generated from value "DNase-Hypersensitivity" located at cell 'SplitCVs'!E16.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of DNase-Hypersensitivity",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Tn-Seq  # Generated from value "Tn-Seq" located at cell 'SplitCVs'!E17.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Tn-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: FAIRE-seq  # Generated from value "FAIRE-seq" located at cell 'SplitCVs'!E18.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of FAIRE-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: SELEX  # Generated from value "SELEX" located at cell 'SplitCVs'!E19.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of SELEX",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RIP-Seq  # Generated from value "RIP-Seq" located at cell 'SplitCVs'!E20.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ATAC-seq  # Generated from value "ATAC-seq" located at cell 'SplitCVs'!E21.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ATAC-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ChIA-PET  # Generated from value "ChIA-PET" located at cell 'SplitCVs'!E22.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ChIA-PET",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Hi-C  # Generated from value "Hi-C" located at cell 'SplitCVs'!E23.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Hi-C",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: OTHER: specify  # Generated from value "OTHER: specify" located at cell 'SplitCVs'!E24.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of OTHER: specify",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: fastq  # Generated from value "fastq" located at cell 'SplitCVs'!E25.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of fastq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: bam  # Generated from value "bam" located at cell 'SplitCVs'!E26.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of bam",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina_native_qseq  # Generated from value "Illumina_native_qseq" located at cell 'SplitCVs'!E27.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Illumina_native_qseq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina_native  # Generated from value "Illumina_native" located at cell 'SplitCVs'!E28.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Illumina_native",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: SOLiD_native_csfasta  # Generated from value "SOLiD_native_csfasta" located at cell 'SplitCVs'!E29.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of SOLiD_native_csfasta",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: SOLiD_native_qual  # Generated from value "SOLiD_native_qual" located at cell 'SplitCVs'!E30.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of SOLiD_native_qual",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: sff  # Generated from value "sff" located at cell 'SplitCVs'!E31.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of sff",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454_native_seq  # Generated from value "454_native_seq" located at cell 'SplitCVs'!E32.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of 454_native_seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454_native_qual  # Generated from value "454_native_qual" located at cell 'SplitCVs'!E33.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of 454_native_qual",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Helicos_native  # Generated from value "Helicos_native" located at cell 'SplitCVs'!E34.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Helicos_native",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: srf  # Generated from value "srf" located at cell 'SplitCVs'!E35.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of srf",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PacBio_HDF5  # Generated from value "PacBio_HDF5" located at cell 'SplitCVs'!E36.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of PacBio_HDF5",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina Genome Analyzer IIx  # Generated from value "Illumina Genome Analyzer IIx" located at cell 'SplitCVs'!E37.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina Genome Analyzer IIx",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 1000  # Generated from value "Illumina HiSeq 1000" located at cell 'SplitCVs'!E38.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 1000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 1500  # Generated from value "Illumina HiSeq 1500" located at cell 'SplitCVs'!E39.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 1500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 2000  # Generated from value "Illumina HiSeq 2000" located at cell 'SplitCVs'!E40.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 2000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 2500  # Generated from value "Illumina HiSeq 2500" located at cell 'SplitCVs'!E41.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 2500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 3000  # Generated from value "Illumina HiSeq 3000" located at cell 'SplitCVs'!E42.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 3000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 4000  # Generated from value "Illumina HiSeq 4000" located at cell 'SplitCVs'!E43.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 4000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina NextSeq 500  # Generated from value "Illumina NextSeq 500" located at cell 'SplitCVs'!E44.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NextSeq 500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina NextSeq 550  # Generated from value "Illumina NextSeq 550" located at cell 'SplitCVs'!E45.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NextSeq 550",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq X Ten  # Generated from value "Illumina HiSeq X Ten" located at cell 'SplitCVs'!E46.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq X Ten",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq X Five  # Generated from value "Illumina HiSeq X Five" located at cell 'SplitCVs'!E47.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq X Five",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina NovaSeq 6000  # Generated from value "Illumina NovaSeq 6000" located at cell 'SplitCVs'!E48.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NovaSeq 6000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina MiSeq  # Generated from value "Illumina MiSeq" located at cell 'SplitCVs'!E49.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina MiSeq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiScanSQ  # Generated from value "Illumina HiScanSQ" located at cell 'SplitCVs'!E50.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiScanSQ",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina MiniSeq  # Generated from value "Illumina MiniSeq" located at cell 'SplitCVs'!E51.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina MiniSeq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina iSeq 100  # Generated from value "Illumina iSeq 100" located at cell 'SplitCVs'!E52.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina iSeq 100",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: BGISEQ-500  # Generated from value "BGISEQ-500" located at cell 'SplitCVs'!E53.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of BGISEQ-500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNBSEQ-G400  # Generated from value "DNBSEQ-G400" located at cell 'SplitCVs'!E54.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-G400",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNBSEQ-T7  # Generated from value "DNBSEQ-T7" located at cell 'SplitCVs'!E55.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-T7",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNBSEQ-G50  # Generated from value "DNBSEQ-G50" located at cell 'SplitCVs'!E56.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-G50",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent PGM  # Generated from value "Ion Torrent PGM" located at cell 'SplitCVs'!E57.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent PGM",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent Proton  # Generated from value "Ion Torrent Proton" located at cell 'SplitCVs'!E58.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent Proton",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent S5  # Generated from value "Ion Torrent S5" located at cell 'SplitCVs'!E59.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent S5",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent S5 XL  # Generated from value "Ion Torrent S5 XL" located at cell 'SplitCVs'!E60.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent S5 XL",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PacBio RS  # Generated from value "PacBio RS" located at cell 'SplitCVs'!E61.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PacBio RS",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PacBio RS II  # Generated from value "PacBio RS II" located at cell 'SplitCVs'!E62.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PacBio RS II",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Sequel  # Generated from value "Sequel" located at cell 'SplitCVs'!E63.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Sequel",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Sequel II  # Generated from value "Sequel II" located at cell 'SplitCVs'!E64.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Sequel II",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD System 2.0  # Generated from value "AB SOLiD System 2.0" located at cell 'SplitCVs'!E65.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD System 2.0",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD System 3.0  # Generated from value "AB SOLiD System 3.0" located at cell 'SplitCVs'!E66.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD System 3.0",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD 3 Plus System  # Generated from value "AB SOLiD 3 Plus System" located at cell 'SplitCVs'!E67.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 3 Plus System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD 4 System  # Generated from value "AB SOLiD 4 System" located at cell 'SplitCVs'!E68.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 4 System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD 4hq System  # Generated from value "AB SOLiD 4hq System" located at cell 'SplitCVs'!E69.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 4hq System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD PI System  # Generated from value "AB SOLiD PI System" located at cell 'SplitCVs'!E70.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD PI System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB 5500 Genetic Analyzer  # Generated from value "AB 5500 Genetic Analyzer" located at cell 'SplitCVs'!E71.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500 Genetic Analyzer",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB 5500xl Genetic Analyzer  # Generated from value "AB 5500xl Genetic Analyzer" located at cell 'SplitCVs'!E72.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500xl Genetic Analyzer",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB 5500xl-W Genetic Analysis System  # Generated from value "AB 5500xl-W Genetic Analysis System" located at cell 'SplitCVs'!E73.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500xl-W Genetic Analysis System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS  # Generated from value "454 GS" located at cell 'SplitCVs'!E74.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS 20  # Generated from value "454 GS 20" located at cell 'SplitCVs'!E75.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS 20",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS FLX  # Generated from value "454 GS FLX" located at cell 'SplitCVs'!E76.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS FLX+  # Generated from value "454 GS FLX+" located at cell 'SplitCVs'!E77.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX+",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS Junior  # Generated from value "454 GS Junior" located at cell 'SplitCVs'!E78.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS Junior",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS FLX Titanium  # Generated from value "454 GS FLX Titanium" located at cell 'SplitCVs'!E79.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX Titanium",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Complete Genomics  # Generated from value "Complete Genomics" located at cell 'SplitCVs'!E80.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Complete Genomics",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Helicos HeliScope  # Generated from value "Helicos HeliScope" located at cell 'SplitCVs'!E81.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Helicos HeliScope",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: GridION  # Generated from value "GridION" located at cell 'SplitCVs'!E82.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of GridION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MinION  # Generated from value "MinION" located at cell 'SplitCVs'!E83.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of MinION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PromethION  # Generated from value "PromethION" located at cell 'SplitCVs'!E84.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PromethION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: single  # Generated from value "single" located at cell 'SplitCVs'!E85.
+   SubClassOf: Library layout
+   Annotations: definition "placeholder def of single",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_single or paired-end",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: paired-end  # Generated from value "paired-end" located at cell 'SplitCVs'!E86.
+   SubClassOf: Library layout
+   Annotations: definition "placeholder def of paired-end",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_single or paired-end",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: total RNA  # Generated from value "total RNA" located at cell 'SplitCVs'!E87.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of total RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: polyA RNA  # Generated from value "polyA RNA" located at cell 'SplitCVs'!E88.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of polyA RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: cytoplasmic RNA  # Generated from value "cytoplasmic RNA" located at cell 'SplitCVs'!E89.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of cytoplasmic RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: nuclear RNA  # Generated from value "nuclear RNA" located at cell 'SplitCVs'!E90.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of nuclear RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: genomic DNA  # Generated from value "genomic DNA" located at cell 'SplitCVs'!E91.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of genomic DNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: protein  # Generated from value "protein" located at cell 'SplitCVs'!E92.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of protein",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: other  # Generated from value "other" located at cell 'SplitCVs'!E93.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of other",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+
+===========================================================================================================
+Date: 2021-07-30 15:53:07
+Ontology source: /Users/dominikbrilhaus/Library/Mobile%20Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/nfdi4plants_ontology.obo
+Worksheet source: /Users/dominikbrilhaus/Library/Mobile Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/ER_CVs.xlsx
+Transformation rules: /Users/dominikbrilhaus/Library/Mobile Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/cellfie_trafo_rule.json
+
+# Cell range: (SplitCVs!E2:E+) Comment: ""
+# Class: @E*(rdfs:label=@E*)
+#   SubClassOf: @B*
+#   Annotations:  definition @F*,
+# 	rdfs:comment "To be transformed to an instance. DB", 
+# 	NFDI4PSO_1000000 @D*, 
+# 	NFDI4PSO_1000001 @C*
+
+Class: RNA-Seq  # Generated from value "RNA-Seq" located at cell 'SplitCVs'!E2.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: miRNA-Seq  # Generated from value "miRNA-Seq" located at cell 'SplitCVs'!E3.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of miRNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ncRNA-Seq  # Generated from value "ncRNA-Seq" located at cell 'SplitCVs'!E4.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ncRNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RNA-Seq (size fractionation)  # Generated from value "RNA-Seq (size fractionation)" located at cell 'SplitCVs'!E5.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (size fractionation)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RNA-Seq (CAGE)  # Generated from value "RNA-Seq (CAGE)" located at cell 'SplitCVs'!E6.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (CAGE)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RNA-Seq (RACE)  # Generated from value "RNA-Seq (RACE)" located at cell 'SplitCVs'!E7.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (RACE)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ssRNA-seq  # Generated from value "ssRNA-seq" located at cell 'SplitCVs'!E8.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ssRNA-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ChIP-Seq  # Generated from value "ChIP-Seq" located at cell 'SplitCVs'!E9.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ChIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MNase-Seq  # Generated from value "MNase-Seq" located at cell 'SplitCVs'!E10.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MNase-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MBD-Seq  # Generated from value "MBD-Seq" located at cell 'SplitCVs'!E11.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MBD-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MRE-Seq  # Generated from value "MRE-Seq" located at cell 'SplitCVs'!E12.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MRE-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Bisulfite-Seq  # Generated from value "Bisulfite-Seq" located at cell 'SplitCVs'!E13.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Bisulfite-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Bisulfite-Seq (reduced representation)  # Generated from value "Bisulfite-Seq (reduced representation)" located at cell 'SplitCVs'!E14.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Bisulfite-Seq (reduced representation)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MeDIP-Seq  # Generated from value "MeDIP-Seq" located at cell 'SplitCVs'!E15.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MeDIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNase-Hypersensitivity  # Generated from value "DNase-Hypersensitivity" located at cell 'SplitCVs'!E16.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of DNase-Hypersensitivity",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Tn-Seq  # Generated from value "Tn-Seq" located at cell 'SplitCVs'!E17.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Tn-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: FAIRE-seq  # Generated from value "FAIRE-seq" located at cell 'SplitCVs'!E18.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of FAIRE-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: SELEX  # Generated from value "SELEX" located at cell 'SplitCVs'!E19.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of SELEX",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: RIP-Seq  # Generated from value "RIP-Seq" located at cell 'SplitCVs'!E20.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ATAC-seq  # Generated from value "ATAC-seq" located at cell 'SplitCVs'!E21.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ATAC-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: ChIA-PET  # Generated from value "ChIA-PET" located at cell 'SplitCVs'!E22.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ChIA-PET",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Hi-C  # Generated from value "Hi-C" located at cell 'SplitCVs'!E23.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Hi-C",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: OTHER: specify  # Generated from value "OTHER: specify" located at cell 'SplitCVs'!E24.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of OTHER: specify",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "PROTOCOLS_library strategy",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: fastq  # Generated from value "fastq" located at cell 'SplitCVs'!E25.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of fastq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: bam  # Generated from value "bam" located at cell 'SplitCVs'!E26.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of bam",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina_native_qseq  # Generated from value "Illumina_native_qseq" located at cell 'SplitCVs'!E27.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Illumina_native_qseq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina_native  # Generated from value "Illumina_native" located at cell 'SplitCVs'!E28.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Illumina_native",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: SOLiD_native_csfasta  # Generated from value "SOLiD_native_csfasta" located at cell 'SplitCVs'!E29.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of SOLiD_native_csfasta",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: SOLiD_native_qual  # Generated from value "SOLiD_native_qual" located at cell 'SplitCVs'!E30.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of SOLiD_native_qual",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: sff  # Generated from value "sff" located at cell 'SplitCVs'!E31.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of sff",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454_native_seq  # Generated from value "454_native_seq" located at cell 'SplitCVs'!E32.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of 454_native_seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454_native_qual  # Generated from value "454_native_qual" located at cell 'SplitCVs'!E33.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of 454_native_qual",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Helicos_native  # Generated from value "Helicos_native" located at cell 'SplitCVs'!E34.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Helicos_native",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: srf  # Generated from value "srf" located at cell 'SplitCVs'!E35.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of srf",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PacBio_HDF5  # Generated from value "PacBio_HDF5" located at cell 'SplitCVs'!E36.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of PacBio_HDF5",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_file type",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina Genome Analyzer IIx  # Generated from value "Illumina Genome Analyzer IIx" located at cell 'SplitCVs'!E37.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina Genome Analyzer IIx",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 1000  # Generated from value "Illumina HiSeq 1000" located at cell 'SplitCVs'!E38.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 1000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 1500  # Generated from value "Illumina HiSeq 1500" located at cell 'SplitCVs'!E39.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 1500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 2000  # Generated from value "Illumina HiSeq 2000" located at cell 'SplitCVs'!E40.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 2000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 2500  # Generated from value "Illumina HiSeq 2500" located at cell 'SplitCVs'!E41.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 2500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 3000  # Generated from value "Illumina HiSeq 3000" located at cell 'SplitCVs'!E42.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 3000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq 4000  # Generated from value "Illumina HiSeq 4000" located at cell 'SplitCVs'!E43.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 4000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina NextSeq 500  # Generated from value "Illumina NextSeq 500" located at cell 'SplitCVs'!E44.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NextSeq 500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina NextSeq 550  # Generated from value "Illumina NextSeq 550" located at cell 'SplitCVs'!E45.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NextSeq 550",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq X Ten  # Generated from value "Illumina HiSeq X Ten" located at cell 'SplitCVs'!E46.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq X Ten",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiSeq X Five  # Generated from value "Illumina HiSeq X Five" located at cell 'SplitCVs'!E47.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq X Five",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina NovaSeq 6000  # Generated from value "Illumina NovaSeq 6000" located at cell 'SplitCVs'!E48.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NovaSeq 6000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina MiSeq  # Generated from value "Illumina MiSeq" located at cell 'SplitCVs'!E49.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina MiSeq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina HiScanSQ  # Generated from value "Illumina HiScanSQ" located at cell 'SplitCVs'!E50.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiScanSQ",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina MiniSeq  # Generated from value "Illumina MiniSeq" located at cell 'SplitCVs'!E51.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina MiniSeq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Illumina iSeq 100  # Generated from value "Illumina iSeq 100" located at cell 'SplitCVs'!E52.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina iSeq 100",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: BGISEQ-500  # Generated from value "BGISEQ-500" located at cell 'SplitCVs'!E53.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of BGISEQ-500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNBSEQ-G400  # Generated from value "DNBSEQ-G400" located at cell 'SplitCVs'!E54.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-G400",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNBSEQ-T7  # Generated from value "DNBSEQ-T7" located at cell 'SplitCVs'!E55.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-T7",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: DNBSEQ-G50  # Generated from value "DNBSEQ-G50" located at cell 'SplitCVs'!E56.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-G50",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent PGM  # Generated from value "Ion Torrent PGM" located at cell 'SplitCVs'!E57.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent PGM",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent Proton  # Generated from value "Ion Torrent Proton" located at cell 'SplitCVs'!E58.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent Proton",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent S5  # Generated from value "Ion Torrent S5" located at cell 'SplitCVs'!E59.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent S5",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Ion Torrent S5 XL  # Generated from value "Ion Torrent S5 XL" located at cell 'SplitCVs'!E60.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent S5 XL",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PacBio RS  # Generated from value "PacBio RS" located at cell 'SplitCVs'!E61.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PacBio RS",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PacBio RS II  # Generated from value "PacBio RS II" located at cell 'SplitCVs'!E62.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PacBio RS II",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Sequel  # Generated from value "Sequel" located at cell 'SplitCVs'!E63.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Sequel",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Sequel II  # Generated from value "Sequel II" located at cell 'SplitCVs'!E64.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Sequel II",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD System 2.0  # Generated from value "AB SOLiD System 2.0" located at cell 'SplitCVs'!E65.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD System 2.0",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD System 3.0  # Generated from value "AB SOLiD System 3.0" located at cell 'SplitCVs'!E66.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD System 3.0",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD 3 Plus System  # Generated from value "AB SOLiD 3 Plus System" located at cell 'SplitCVs'!E67.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 3 Plus System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD 4 System  # Generated from value "AB SOLiD 4 System" located at cell 'SplitCVs'!E68.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 4 System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD 4hq System  # Generated from value "AB SOLiD 4hq System" located at cell 'SplitCVs'!E69.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 4hq System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB SOLiD PI System  # Generated from value "AB SOLiD PI System" located at cell 'SplitCVs'!E70.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD PI System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB 5500 Genetic Analyzer  # Generated from value "AB 5500 Genetic Analyzer" located at cell 'SplitCVs'!E71.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500 Genetic Analyzer",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB 5500xl Genetic Analyzer  # Generated from value "AB 5500xl Genetic Analyzer" located at cell 'SplitCVs'!E72.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500xl Genetic Analyzer",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: AB 5500xl-W Genetic Analysis System  # Generated from value "AB 5500xl-W Genetic Analysis System" located at cell 'SplitCVs'!E73.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500xl-W Genetic Analysis System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS  # Generated from value "454 GS" located at cell 'SplitCVs'!E74.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS 20  # Generated from value "454 GS 20" located at cell 'SplitCVs'!E75.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS 20",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS FLX  # Generated from value "454 GS FLX" located at cell 'SplitCVs'!E76.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS FLX+  # Generated from value "454 GS FLX+" located at cell 'SplitCVs'!E77.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX+",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS Junior  # Generated from value "454 GS Junior" located at cell 'SplitCVs'!E78.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS Junior",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: 454 GS FLX Titanium  # Generated from value "454 GS FLX Titanium" located at cell 'SplitCVs'!E79.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX Titanium",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Complete Genomics  # Generated from value "Complete Genomics" located at cell 'SplitCVs'!E80.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Complete Genomics",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: Helicos HeliScope  # Generated from value "Helicos HeliScope" located at cell 'SplitCVs'!E81.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Helicos HeliScope",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: GridION  # Generated from value "GridION" located at cell 'SplitCVs'!E82.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of GridION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: MinION  # Generated from value "MinION" located at cell 'SplitCVs'!E83.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of MinION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: PromethION  # Generated from value "PromethION" located at cell 'SplitCVs'!E84.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PromethION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_instrument model",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: single  # Generated from value "single" located at cell 'SplitCVs'!E85.
+   SubClassOf: Library layout
+   Annotations: definition "placeholder def of single",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_single or paired-end",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: paired-end  # Generated from value "paired-end" located at cell 'SplitCVs'!E86.
+   SubClassOf: Library layout
+   Annotations: definition "placeholder def of paired-end",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "RAW FILES_single or paired-end",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: total RNA  # Generated from value "total RNA" located at cell 'SplitCVs'!E87.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of total RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: polyA RNA  # Generated from value "polyA RNA" located at cell 'SplitCVs'!E88.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of polyA RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: cytoplasmic RNA  # Generated from value "cytoplasmic RNA" located at cell 'SplitCVs'!E89.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of cytoplasmic RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: nuclear RNA  # Generated from value "nuclear RNA" located at cell 'SplitCVs'!E90.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of nuclear RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: genomic DNA  # Generated from value "genomic DNA" located at cell 'SplitCVs'!E91.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of genomic DNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: protein  # Generated from value "protein" located at cell 'SplitCVs'!E92.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of protein",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+Class: other  # Generated from value "other" located at cell 'SplitCVs'!E93.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of other",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO_1000000 "SAMPLES_molecule",
+         NFDI4PSO_1000001 "GEO_RNASEQ"
+
+===========================================================================================================
+Date: 2021-07-30 16:08:47
+Ontology source: /Users/dominikbrilhaus/Library/Mobile%20Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/nfdi4plants_ontology.obo
+Worksheet source: /Users/dominikbrilhaus/Library/Mobile Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/ER_CVs.xlsx
+Transformation rules: /Users/dominikbrilhaus/Library/Mobile Documents/com~apple~CloudDocs/00Work/nfdi4plants_ontology/cellfie_trafo_rule.json
+
+# Cell range: (SplitCVs!E2:E+) Comment: ""
+# Class: @E*(rdfs:label=@E*)
+#   SubClassOf: @B*
+#   Annotations:  definition @F*,
+# 	rdfs:comment "To be transformed to an instance. DB", 
+# 	NFDI4PSO:ER_TermCV @D*,
+# 	NFDI4PSO:requiredForER @C*
+
+Class: RNA-Seq  # Generated from value "RNA-Seq" located at cell 'SplitCVs'!E2.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: miRNA-Seq  # Generated from value "miRNA-Seq" located at cell 'SplitCVs'!E3.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of miRNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: ncRNA-Seq  # Generated from value "ncRNA-Seq" located at cell 'SplitCVs'!E4.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ncRNA-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: RNA-Seq (size fractionation)  # Generated from value "RNA-Seq (size fractionation)" located at cell 'SplitCVs'!E5.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (size fractionation)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: RNA-Seq (CAGE)  # Generated from value "RNA-Seq (CAGE)" located at cell 'SplitCVs'!E6.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (CAGE)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: RNA-Seq (RACE)  # Generated from value "RNA-Seq (RACE)" located at cell 'SplitCVs'!E7.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RNA-Seq (RACE)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: ssRNA-seq  # Generated from value "ssRNA-seq" located at cell 'SplitCVs'!E8.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ssRNA-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: ChIP-Seq  # Generated from value "ChIP-Seq" located at cell 'SplitCVs'!E9.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ChIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: MNase-Seq  # Generated from value "MNase-Seq" located at cell 'SplitCVs'!E10.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MNase-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: MBD-Seq  # Generated from value "MBD-Seq" located at cell 'SplitCVs'!E11.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MBD-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: MRE-Seq  # Generated from value "MRE-Seq" located at cell 'SplitCVs'!E12.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MRE-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Bisulfite-Seq  # Generated from value "Bisulfite-Seq" located at cell 'SplitCVs'!E13.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Bisulfite-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Bisulfite-Seq (reduced representation)  # Generated from value "Bisulfite-Seq (reduced representation)" located at cell 'SplitCVs'!E14.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Bisulfite-Seq (reduced representation)",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: MeDIP-Seq  # Generated from value "MeDIP-Seq" located at cell 'SplitCVs'!E15.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of MeDIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: DNase-Hypersensitivity  # Generated from value "DNase-Hypersensitivity" located at cell 'SplitCVs'!E16.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of DNase-Hypersensitivity",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Tn-Seq  # Generated from value "Tn-Seq" located at cell 'SplitCVs'!E17.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Tn-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: FAIRE-seq  # Generated from value "FAIRE-seq" located at cell 'SplitCVs'!E18.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of FAIRE-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: SELEX  # Generated from value "SELEX" located at cell 'SplitCVs'!E19.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of SELEX",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: RIP-Seq  # Generated from value "RIP-Seq" located at cell 'SplitCVs'!E20.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of RIP-Seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: ATAC-seq  # Generated from value "ATAC-seq" located at cell 'SplitCVs'!E21.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ATAC-seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: ChIA-PET  # Generated from value "ChIA-PET" located at cell 'SplitCVs'!E22.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of ChIA-PET",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Hi-C  # Generated from value "Hi-C" located at cell 'SplitCVs'!E23.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of Hi-C",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: OTHER: specify  # Generated from value "OTHER: specify" located at cell 'SplitCVs'!E24.
+   SubClassOf: Library strategy
+   Annotations: definition "placeholder def of OTHER: specify",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "PROTOCOLS_library strategy",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: fastq  # Generated from value "fastq" located at cell 'SplitCVs'!E25.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of fastq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: bam  # Generated from value "bam" located at cell 'SplitCVs'!E26.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of bam",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina_native_qseq  # Generated from value "Illumina_native_qseq" located at cell 'SplitCVs'!E27.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Illumina_native_qseq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina_native  # Generated from value "Illumina_native" located at cell 'SplitCVs'!E28.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Illumina_native",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: SOLiD_native_csfasta  # Generated from value "SOLiD_native_csfasta" located at cell 'SplitCVs'!E29.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of SOLiD_native_csfasta",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: SOLiD_native_qual  # Generated from value "SOLiD_native_qual" located at cell 'SplitCVs'!E30.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of SOLiD_native_qual",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: sff  # Generated from value "sff" located at cell 'SplitCVs'!E31.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of sff",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454_native_seq  # Generated from value "454_native_seq" located at cell 'SplitCVs'!E32.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of 454_native_seq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454_native_qual  # Generated from value "454_native_qual" located at cell 'SplitCVs'!E33.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of 454_native_qual",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Helicos_native  # Generated from value "Helicos_native" located at cell 'SplitCVs'!E34.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of Helicos_native",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: srf  # Generated from value "srf" located at cell 'SplitCVs'!E35.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of srf",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: PacBio_HDF5  # Generated from value "PacBio_HDF5" located at cell 'SplitCVs'!E36.
+   SubClassOf: Raw data file format
+   Annotations: definition "placeholder def of PacBio_HDF5",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_file type",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina Genome Analyzer IIx  # Generated from value "Illumina Genome Analyzer IIx" located at cell 'SplitCVs'!E37.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina Genome Analyzer IIx",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq 1000  # Generated from value "Illumina HiSeq 1000" located at cell 'SplitCVs'!E38.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 1000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq 1500  # Generated from value "Illumina HiSeq 1500" located at cell 'SplitCVs'!E39.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 1500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq 2000  # Generated from value "Illumina HiSeq 2000" located at cell 'SplitCVs'!E40.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 2000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq 2500  # Generated from value "Illumina HiSeq 2500" located at cell 'SplitCVs'!E41.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 2500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq 3000  # Generated from value "Illumina HiSeq 3000" located at cell 'SplitCVs'!E42.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 3000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq 4000  # Generated from value "Illumina HiSeq 4000" located at cell 'SplitCVs'!E43.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq 4000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina NextSeq 500  # Generated from value "Illumina NextSeq 500" located at cell 'SplitCVs'!E44.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NextSeq 500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina NextSeq 550  # Generated from value "Illumina NextSeq 550" located at cell 'SplitCVs'!E45.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NextSeq 550",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq X Ten  # Generated from value "Illumina HiSeq X Ten" located at cell 'SplitCVs'!E46.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq X Ten",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiSeq X Five  # Generated from value "Illumina HiSeq X Five" located at cell 'SplitCVs'!E47.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiSeq X Five",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina NovaSeq 6000  # Generated from value "Illumina NovaSeq 6000" located at cell 'SplitCVs'!E48.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina NovaSeq 6000",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina MiSeq  # Generated from value "Illumina MiSeq" located at cell 'SplitCVs'!E49.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina MiSeq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina HiScanSQ  # Generated from value "Illumina HiScanSQ" located at cell 'SplitCVs'!E50.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina HiScanSQ",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina MiniSeq  # Generated from value "Illumina MiniSeq" located at cell 'SplitCVs'!E51.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina MiniSeq",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Illumina iSeq 100  # Generated from value "Illumina iSeq 100" located at cell 'SplitCVs'!E52.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Illumina iSeq 100",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: BGISEQ-500  # Generated from value "BGISEQ-500" located at cell 'SplitCVs'!E53.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of BGISEQ-500",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: DNBSEQ-G400  # Generated from value "DNBSEQ-G400" located at cell 'SplitCVs'!E54.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-G400",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: DNBSEQ-T7  # Generated from value "DNBSEQ-T7" located at cell 'SplitCVs'!E55.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-T7",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: DNBSEQ-G50  # Generated from value "DNBSEQ-G50" located at cell 'SplitCVs'!E56.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of DNBSEQ-G50",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Ion Torrent PGM  # Generated from value "Ion Torrent PGM" located at cell 'SplitCVs'!E57.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent PGM",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Ion Torrent Proton  # Generated from value "Ion Torrent Proton" located at cell 'SplitCVs'!E58.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent Proton",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Ion Torrent S5  # Generated from value "Ion Torrent S5" located at cell 'SplitCVs'!E59.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent S5",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Ion Torrent S5 XL  # Generated from value "Ion Torrent S5 XL" located at cell 'SplitCVs'!E60.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Ion Torrent S5 XL",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: PacBio RS  # Generated from value "PacBio RS" located at cell 'SplitCVs'!E61.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PacBio RS",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: PacBio RS II  # Generated from value "PacBio RS II" located at cell 'SplitCVs'!E62.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PacBio RS II",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Sequel  # Generated from value "Sequel" located at cell 'SplitCVs'!E63.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Sequel",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Sequel II  # Generated from value "Sequel II" located at cell 'SplitCVs'!E64.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Sequel II",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB SOLiD System 2.0  # Generated from value "AB SOLiD System 2.0" located at cell 'SplitCVs'!E65.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD System 2.0",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB SOLiD System 3.0  # Generated from value "AB SOLiD System 3.0" located at cell 'SplitCVs'!E66.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD System 3.0",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB SOLiD 3 Plus System  # Generated from value "AB SOLiD 3 Plus System" located at cell 'SplitCVs'!E67.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 3 Plus System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB SOLiD 4 System  # Generated from value "AB SOLiD 4 System" located at cell 'SplitCVs'!E68.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 4 System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB SOLiD 4hq System  # Generated from value "AB SOLiD 4hq System" located at cell 'SplitCVs'!E69.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD 4hq System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB SOLiD PI System  # Generated from value "AB SOLiD PI System" located at cell 'SplitCVs'!E70.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB SOLiD PI System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB 5500 Genetic Analyzer  # Generated from value "AB 5500 Genetic Analyzer" located at cell 'SplitCVs'!E71.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500 Genetic Analyzer",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB 5500xl Genetic Analyzer  # Generated from value "AB 5500xl Genetic Analyzer" located at cell 'SplitCVs'!E72.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500xl Genetic Analyzer",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: AB 5500xl-W Genetic Analysis System  # Generated from value "AB 5500xl-W Genetic Analysis System" located at cell 'SplitCVs'!E73.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of AB 5500xl-W Genetic Analysis System",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454 GS  # Generated from value "454 GS" located at cell 'SplitCVs'!E74.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454 GS 20  # Generated from value "454 GS 20" located at cell 'SplitCVs'!E75.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS 20",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454 GS FLX  # Generated from value "454 GS FLX" located at cell 'SplitCVs'!E76.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454 GS FLX+  # Generated from value "454 GS FLX+" located at cell 'SplitCVs'!E77.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX+",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454 GS Junior  # Generated from value "454 GS Junior" located at cell 'SplitCVs'!E78.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS Junior",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: 454 GS FLX Titanium  # Generated from value "454 GS FLX Titanium" located at cell 'SplitCVs'!E79.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of 454 GS FLX Titanium",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Complete Genomics  # Generated from value "Complete Genomics" located at cell 'SplitCVs'!E80.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Complete Genomics",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: Helicos HeliScope  # Generated from value "Helicos HeliScope" located at cell 'SplitCVs'!E81.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of Helicos HeliScope",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: GridION  # Generated from value "GridION" located at cell 'SplitCVs'!E82.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of GridION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: MinION  # Generated from value "MinION" located at cell 'SplitCVs'!E83.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of MinION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: PromethION  # Generated from value "PromethION" located at cell 'SplitCVs'!E84.
+   SubClassOf: Next generation sequencing instrument model
+   Annotations: definition "placeholder def of PromethION",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_instrument model",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: single  # Generated from value "single" located at cell 'SplitCVs'!E85.
+   SubClassOf: Library layout
+   Annotations: definition "placeholder def of single",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_single or paired-end",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: paired-end  # Generated from value "paired-end" located at cell 'SplitCVs'!E86.
+   SubClassOf: Library layout
+   Annotations: definition "placeholder def of paired-end",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "RAW FILES_single or paired-end",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: total RNA  # Generated from value "total RNA" located at cell 'SplitCVs'!E87.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of total RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "SAMPLES_molecule",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: polyA RNA  # Generated from value "polyA RNA" located at cell 'SplitCVs'!E88.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of polyA RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "SAMPLES_molecule",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: cytoplasmic RNA  # Generated from value "cytoplasmic RNA" located at cell 'SplitCVs'!E89.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of cytoplasmic RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "SAMPLES_molecule",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: nuclear RNA  # Generated from value "nuclear RNA" located at cell 'SplitCVs'!E90.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of nuclear RNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "SAMPLES_molecule",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: genomic DNA  # Generated from value "genomic DNA" located at cell 'SplitCVs'!E91.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of genomic DNA",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "SAMPLES_molecule",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: protein  # Generated from value "protein" located at cell 'SplitCVs'!E92.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of protein",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "SAMPLES_molecule",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+Class: other  # Generated from value "other" located at cell 'SplitCVs'!E93.
+   SubClassOf: Bio entity
+   Annotations: definition "placeholder def of other",
+         rdfs:comment "To be transformed to an instance. DB",
+         NFDI4PSO:ER_TermCV "SAMPLES_molecule",
+         NFDI4PSO:requiredForER "GEO_RNASEQ"
+
+===========================================================================================================
