@@ -495,6 +495,18 @@ def: "A role played by a part of a molecular entity distinguishable by the obser
 xref: http://purl.obolibrary.org/obo/CHEBI_35209
 
 [Term]
+id: NFDI4PSO:0000080
+name: mobile phase
+def: "A fluid that percolates through or along the stationary bed in chromatography." []
+xref: http://purl.obolibrary.org/obo/CHMO_0000995
+
+[Term]
+id: NFDI4PSO:0000081
+name: elution
+def: "A process wherein one material is extracted from another by interaction with a solvent." []
+xref: http://purl.obolibrary.org/obo/CHMO_0002742
+
+[Term]
 id: NFDI4PSO:1000003
 name: RNA-Seq
 def: "placeholder def of RNA-Seq" []
