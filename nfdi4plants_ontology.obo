@@ -489,6 +489,12 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 xref: http://purl.obolibrary.org/obo/NCIT_C175889
 
 [Term]
+id: NFDI4PSO:0000079
+name: label
+def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
+xref: http://purl.obolibrary.org/obo/CHEBI_35209
+
+[Term]
 id: NFDI4PSO:1000003
 name: RNA-Seq
 def: "placeholder def of RNA-Seq" []
