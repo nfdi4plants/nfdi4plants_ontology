@@ -507,13 +507,22 @@ def: "A process wherein one material is extracted from another by interaction wi
 xref: http://purl.obolibrary.org/obo/CHMO_0002742
 
 [Term]
+id: NFDI4PSO:1000000
+name: _NotUse_TemplateTerm
+def: "This is a helper term, since I was unable to properly handle custom `property_value` tags with Protege... Dominik" []
+comment: "For property values that are not terms themselves, but literals/strings, add `xsd:string`"
+property_value: ER_target "Put name of ER here" xsd:string
+property_value: ER_target_term "Put name of ER target term for which this term should be selectable" xsd:string
+property_value: UserInstruction "This could be a place for detailed user instructions in SWATE templates" xsd:string
+
+[Term]
 id: NFDI4PSO:1000003
 name: RNA-Seq
 def: "placeholder def of RNA-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000004
@@ -521,8 +530,8 @@ name: miRNA-Seq
 def: "placeholder def of miRNA-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000005
@@ -530,8 +539,8 @@ name: ncRNA-Seq
 def: "placeholder def of ncRNA-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000006
@@ -539,8 +548,8 @@ name: RNA-Seq (size fractionation)
 def: "placeholder def of RNA-Seq (size fractionation)" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000007
@@ -548,8 +557,8 @@ name: RNA-Seq (CAGE)
 def: "placeholder def of RNA-Seq (CAGE)" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000008
@@ -557,8 +566,8 @@ name: RNA-Seq (RACE)
 def: "placeholder def of RNA-Seq (RACE)" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000009
@@ -566,8 +575,8 @@ name: ssRNA-seq
 def: "placeholder def of ssRNA-seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000010
@@ -575,8 +584,8 @@ name: ChIP-Seq
 def: "placeholder def of ChIP-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000011
@@ -584,8 +593,8 @@ name: MNase-Seq
 def: "placeholder def of MNase-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000012
@@ -593,8 +602,8 @@ name: MBD-Seq
 def: "placeholder def of MBD-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000013
@@ -602,8 +611,8 @@ name: MRE-Seq
 def: "placeholder def of MRE-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000014
@@ -611,8 +620,8 @@ name: Bisulfite-Seq
 def: "placeholder def of Bisulfite-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000015
@@ -620,8 +629,8 @@ name: Bisulfite-Seq (reduced representation)
 def: "placeholder def of Bisulfite-Seq (reduced representation)" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000016
@@ -629,8 +638,8 @@ name: MeDIP-Seq
 def: "placeholder def of MeDIP-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000017
@@ -638,8 +647,8 @@ name: DNase-Hypersensitivity
 def: "placeholder def of DNase-Hypersensitivity" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000018
@@ -647,8 +656,8 @@ name: Tn-Seq
 def: "placeholder def of Tn-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000019
@@ -656,8 +665,8 @@ name: FAIRE-seq
 def: "placeholder def of FAIRE-seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000020
@@ -665,8 +674,8 @@ name: SELEX
 def: "placeholder def of SELEX" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000021
@@ -674,8 +683,8 @@ name: RIP-Seq
 def: "placeholder def of RIP-Seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000022
@@ -683,8 +692,8 @@ name: ATAC-seq
 def: "placeholder def of ATAC-seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000023
@@ -692,8 +701,8 @@ name: ChIA-PET
 def: "placeholder def of ChIA-PET" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000024
@@ -701,8 +710,8 @@ name: Hi-C
 def: "placeholder def of Hi-C" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000025
@@ -710,8 +719,8 @@ name: OTHER: specify
 def: "placeholder def of OTHER: specify" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000035 ! Library strategy
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "PROTOCOLS_library strategy" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: NFDI4PSO:1000026
@@ -719,8 +728,8 @@ name: fastq
 def: "placeholder def of fastq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000027
@@ -728,8 +737,8 @@ name: bam
 def: "placeholder def of bam" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000028
@@ -737,8 +746,8 @@ name: Illumina_native_qseq
 def: "placeholder def of Illumina_native_qseq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000029
@@ -746,8 +755,8 @@ name: Illumina_native
 def: "placeholder def of Illumina_native" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000030
@@ -755,8 +764,8 @@ name: SOLiD_native_csfasta
 def: "placeholder def of SOLiD_native_csfasta" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000031
@@ -764,8 +773,8 @@ name: SOLiD_native_qual
 def: "placeholder def of SOLiD_native_qual" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000032
@@ -773,8 +782,8 @@ name: sff
 def: "placeholder def of sff" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000033
@@ -782,8 +791,8 @@ name: 454_native_seq
 def: "placeholder def of 454_native_seq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000034
@@ -791,8 +800,8 @@ name: 454_native_qual
 def: "placeholder def of 454_native_qual" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000035
@@ -800,8 +809,8 @@ name: Helicos_native
 def: "placeholder def of Helicos_native" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000036
@@ -809,8 +818,8 @@ name: srf
 def: "placeholder def of srf" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000037
@@ -818,8 +827,8 @@ name: PacBio_HDF5
 def: "placeholder def of PacBio_HDF5" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000021 ! Raw data file format
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_file type" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: NFDI4PSO:1000038
@@ -827,8 +836,8 @@ name: Illumina Genome Analyzer IIx
 def: "placeholder def of Illumina Genome Analyzer IIx" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000039
@@ -836,8 +845,8 @@ name: Illumina HiSeq 1000
 def: "placeholder def of Illumina HiSeq 1000" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000040
@@ -845,8 +854,8 @@ name: Illumina HiSeq 1500
 def: "placeholder def of Illumina HiSeq 1500" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000041
@@ -854,8 +863,8 @@ name: Illumina HiSeq 2000
 def: "placeholder def of Illumina HiSeq 2000" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000042
@@ -863,8 +872,8 @@ name: Illumina HiSeq 2500
 def: "placeholder def of Illumina HiSeq 2500" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000043
@@ -872,8 +881,8 @@ name: Illumina HiSeq 3000
 def: "placeholder def of Illumina HiSeq 3000" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000044
@@ -881,8 +890,8 @@ name: Illumina HiSeq 4000
 def: "placeholder def of Illumina HiSeq 4000" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000045
@@ -890,8 +899,8 @@ name: Illumina NextSeq 500
 def: "placeholder def of Illumina NextSeq 500" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000046
@@ -899,8 +908,8 @@ name: Illumina NextSeq 550
 def: "placeholder def of Illumina NextSeq 550" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000047
@@ -908,8 +917,8 @@ name: Illumina HiSeq X Ten
 def: "placeholder def of Illumina HiSeq X Ten" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000048
@@ -917,8 +926,8 @@ name: Illumina HiSeq X Five
 def: "placeholder def of Illumina HiSeq X Five" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000049
@@ -926,8 +935,8 @@ name: Illumina NovaSeq 6000
 def: "placeholder def of Illumina NovaSeq 6000" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000050
@@ -935,8 +944,8 @@ name: Illumina MiSeq
 def: "placeholder def of Illumina MiSeq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000051
@@ -944,8 +953,8 @@ name: Illumina HiScanSQ
 def: "placeholder def of Illumina HiScanSQ" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000052
@@ -953,8 +962,8 @@ name: Illumina MiniSeq
 def: "placeholder def of Illumina MiniSeq" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000053
@@ -962,8 +971,8 @@ name: Illumina iSeq 100
 def: "placeholder def of Illumina iSeq 100" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000054
@@ -971,8 +980,8 @@ name: BGISEQ-500
 def: "placeholder def of BGISEQ-500" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000055
@@ -980,8 +989,8 @@ name: DNBSEQ-G400
 def: "placeholder def of DNBSEQ-G400" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000056
@@ -989,8 +998,8 @@ name: DNBSEQ-T7
 def: "placeholder def of DNBSEQ-T7" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000057
@@ -998,8 +1007,8 @@ name: DNBSEQ-G50
 def: "placeholder def of DNBSEQ-G50" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000058
@@ -1007,8 +1016,8 @@ name: Ion Torrent PGM
 def: "placeholder def of Ion Torrent PGM" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000059
@@ -1016,8 +1025,8 @@ name: Ion Torrent Proton
 def: "placeholder def of Ion Torrent Proton" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000060
@@ -1025,8 +1034,8 @@ name: Ion Torrent S5
 def: "placeholder def of Ion Torrent S5" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000061
@@ -1034,8 +1043,8 @@ name: Ion Torrent S5 XL
 def: "placeholder def of Ion Torrent S5 XL" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000062
@@ -1043,8 +1052,8 @@ name: PacBio RS
 def: "placeholder def of PacBio RS" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000063
@@ -1052,8 +1061,8 @@ name: PacBio RS II
 def: "placeholder def of PacBio RS II" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000064
@@ -1061,8 +1070,8 @@ name: Sequel
 def: "placeholder def of Sequel" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000065
@@ -1070,8 +1079,8 @@ name: Sequel II
 def: "placeholder def of Sequel II" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000066
@@ -1079,8 +1088,8 @@ name: AB SOLiD System 2.0
 def: "placeholder def of AB SOLiD System 2.0" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000067
@@ -1088,8 +1097,8 @@ name: AB SOLiD System 3.0
 def: "placeholder def of AB SOLiD System 3.0" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000068
@@ -1097,8 +1106,8 @@ name: AB SOLiD 3 Plus System
 def: "placeholder def of AB SOLiD 3 Plus System" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000069
@@ -1106,8 +1115,8 @@ name: AB SOLiD 4 System
 def: "placeholder def of AB SOLiD 4 System" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000070
@@ -1115,8 +1124,8 @@ name: AB SOLiD 4hq System
 def: "placeholder def of AB SOLiD 4hq System" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000071
@@ -1124,8 +1133,8 @@ name: AB SOLiD PI System
 def: "placeholder def of AB SOLiD PI System" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000072
@@ -1133,8 +1142,8 @@ name: AB 5500 Genetic Analyzer
 def: "placeholder def of AB 5500 Genetic Analyzer" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000073
@@ -1142,8 +1151,8 @@ name: AB 5500xl Genetic Analyzer
 def: "placeholder def of AB 5500xl Genetic Analyzer" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000074
@@ -1151,8 +1160,8 @@ name: AB 5500xl-W Genetic Analysis System
 def: "placeholder def of AB 5500xl-W Genetic Analysis System" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000075
@@ -1160,8 +1169,8 @@ name: 454 GS
 def: "placeholder def of 454 GS" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000076
@@ -1169,8 +1178,8 @@ name: 454 GS 20
 def: "placeholder def of 454 GS 20" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000077
@@ -1178,8 +1187,8 @@ name: 454 GS FLX
 def: "placeholder def of 454 GS FLX" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000078
@@ -1187,8 +1196,8 @@ name: 454 GS FLX+
 def: "placeholder def of 454 GS FLX+" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000079
@@ -1196,8 +1205,8 @@ name: 454 GS Junior
 def: "placeholder def of 454 GS Junior" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000080
@@ -1205,8 +1214,8 @@ name: 454 GS FLX Titanium
 def: "placeholder def of 454 GS FLX Titanium" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000081
@@ -1214,8 +1223,8 @@ name: Complete Genomics
 def: "placeholder def of Complete Genomics" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000082
@@ -1223,8 +1232,8 @@ name: Helicos HeliScope
 def: "placeholder def of Helicos HeliScope" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000083
@@ -1232,8 +1241,8 @@ name: GridION
 def: "placeholder def of GridION" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000084
@@ -1241,8 +1250,8 @@ name: MinION
 def: "placeholder def of MinION" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000085
@@ -1250,8 +1259,8 @@ name: PromethION
 def: "placeholder def of PromethION" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_instrument model" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: NFDI4PSO:1000086
@@ -1259,8 +1268,8 @@ name: single
 def: "placeholder def of single" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000015 ! Library layout
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_single or paired-end" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
 [Term]
 id: NFDI4PSO:1000087
@@ -1268,8 +1277,8 @@ name: paired-end
 def: "placeholder def of paired-end" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000015 ! Library layout
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "RAW FILES_single or paired-end" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
 [Term]
 id: NFDI4PSO:1000088
@@ -1277,8 +1286,8 @@ name: total RNA
 def: "placeholder def of total RNA" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000012 ! Bio entity
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "SAMPLES_molecule" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: NFDI4PSO:1000089
@@ -1286,8 +1295,8 @@ name: polyA RNA
 def: "placeholder def of polyA RNA" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000012 ! Bio entity
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "SAMPLES_molecule" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: NFDI4PSO:1000090
@@ -1295,8 +1304,8 @@ name: cytoplasmic RNA
 def: "placeholder def of cytoplasmic RNA" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000012 ! Bio entity
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "SAMPLES_molecule" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: NFDI4PSO:1000091
@@ -1304,8 +1313,8 @@ name: nuclear RNA
 def: "placeholder def of nuclear RNA" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000012 ! Bio entity
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "SAMPLES_molecule" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: NFDI4PSO:1000092
@@ -1313,8 +1322,8 @@ name: genomic DNA
 def: "placeholder def of genomic DNA" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000012 ! Bio entity
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "SAMPLES_molecule" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: NFDI4PSO:1000093
@@ -1322,8 +1331,8 @@ name: protein
 def: "placeholder def of protein" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000012 ! Bio entity
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "SAMPLES_molecule" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: NFDI4PSO:1000094
@@ -1331,6 +1340,6 @@ name: other
 def: "placeholder def of other" []
 comment: To be transformed to an instance. DB
 is_a: NFDI4PSO:0000012 ! Bio entity
-property_value: NFDI4PSO:1000001 "GEO_RNASEQ" xsd:string
-property_value: NFDI4PSO:1000002 "SAMPLES_molecule" xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
