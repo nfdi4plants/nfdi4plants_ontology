@@ -144,7 +144,7 @@ def: "Checksum of the raw data file, it is a specialised concept of http://purl.
 [Term]
 id: NFDI4PSO:0000023
 name: Data filtering software
-def: "Name of the software applied for data filtering”" []
+def: "Name of the software applied for data filtering" []
 comment: “For RNA-seq data, this may be a read adapter trimming software (GENEPIO_0002096)”
 
 [Term]
@@ -347,7 +347,7 @@ comment: “"
 id: NFDI4PSO:0000057
 name: Next generation sequencing platform
 def: "Name of the company that produces next generation sequencing instruments" []
-xref: http://www.ontobee.org/ontology/GENEPIO?iri=http\://purl.obolibrary.org/obo/GENEPIO_0000071
+xref: http://purl.obolibrary.org/obo/GENEPIO_0000071
 
 [Term]
 id: NFDI4PSO:0000058
