@@ -2,12 +2,14 @@
 
 An intermediate ontology for plants used by DataPLANT to fill the ontology gap
 
-Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ontoloy/issues/new/choose) if you want to
+In order to cover new datatype or a new repository, some terms might be missing
 
-- Add missing terms
-- Import terms from existing ontologies
 - Add existing ontologies to the ontology database
-
+  - Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ontoloy/issues/new/choose) 
+- Import terms from existing ontologies
+  - Add the term to the nfdi4pso ontology with the xref to the original source
+- Add missing terms
+  - if the term is not found in any existing ontology, add it to the nfdi4pso ontology 
 
 ## ID Ranges (testing)
 - Hajira  (100 - 1000)  
