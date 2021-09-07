@@ -1379,3 +1379,10 @@ id: NFDI4PSO:1000100
 name: ER_GEO_MICROARRAY
 is_a: NFDI4PSO:1000096 ! ER_GEO
 
+[Term]
+id: NFDI4PSO:1000108
+name: RNASeq counts
+def: "Unnormalized values representing summarised read counts per genomic region (e.g. gene, transcript)." []
+comment: see also: http://edamontology.org/data_3917
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+
