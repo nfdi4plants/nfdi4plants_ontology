@@ -1,0 +1,287 @@
+format-version: 1.2
+data-version: 1.0
+ontology: http://purl.org/isatab
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.org/isatab#ARC_00000148>))\nDeclaration(Class(<http://purl.org/isatab#ARC_00000149>))\nDeclaration(Class(<http://purl.org/isatab#ARC_00000151>))\nDeclaration(Class(<http://purl.org/isatab#ARC_00000164>))\nDeclaration(Class(<http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d>))\nDeclaration(Class(<http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19>))\nDeclaration(Class(<http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4>))\nDeclaration(Class(<http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000159>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000160>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000161>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000162>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000163>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000165>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000166>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000167>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000168>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000169>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000173>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000174>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000175>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000176>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000177>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000178>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000179>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000180>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000185>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000186>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000187>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000188>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000189>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_00000190>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_090c5611_df3e_4662_8a12_c7df1094c4a5>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_9031efd6_cae4_4146_aa77_cb39b4c020e6>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_9c84b2c4_8ebd_43ad_8f94_7be545bf6fd7>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_a22c103c_e7c0_4ab3_9cb8_2963e0fb162d>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_c6d6f20f_226d_4876_8aa5_1456da329d50>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_ccfb9a10_49be_4e96_933e_39df2b4c9848>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_ed707938_92ef_4cd1_bee3_1919b04bfd42>))\nDeclaration(DataProperty(<http://purl.org/isatab#ARC_fc14e291_4713_4ac8_9507_1d1223f50f5b>))\n############################\n#   Data Properties\n############################\n\n# Data Property: <http://purl.org/isatab#ARC_00000159> (<http://purl.org/isatab#ARC_00000159>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000159> <http://purl.org/isatab#ARC_00000148>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000159> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000160> (<http://purl.org/isatab#ARC_00000160>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000160> <http://purl.org/isatab#ARC_00000148>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000160> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000161> (<http://purl.org/isatab#ARC_00000161>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000161> <http://purl.org/isatab#ARC_00000148>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000161> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000162> (<http://purl.org/isatab#ARC_00000162>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000162> <http://purl.org/isatab#ARC_00000148>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000162> xsd:dateTime)\n\n# Data Property: <http://purl.org/isatab#ARC_00000163> (<http://purl.org/isatab#ARC_00000163>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000163> <http://purl.org/isatab#ARC_00000148>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000163> xsd:dateTime)\n\n# Data Property: <http://purl.org/isatab#ARC_00000165> (<http://purl.org/isatab#ARC_00000165>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000165> <http://purl.org/isatab#ARC_00000164>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000165> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000166> (<http://purl.org/isatab#ARC_00000166>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000166> <http://purl.org/isatab#ARC_00000164>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000166> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000167> (<http://purl.org/isatab#ARC_00000167>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000167> <http://purl.org/isatab#ARC_00000164>)\n\n# Data Property: <http://purl.org/isatab#ARC_00000168> (<http://purl.org/isatab#ARC_00000168>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000168> <http://purl.org/isatab#ARC_00000164>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000168> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000169> (<http://purl.org/isatab#ARC_00000169>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000169> <http://purl.org/isatab#ARC_00000164>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000169> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000173> (<http://purl.org/isatab#ARC_00000173>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000173> <http://purl.org/isatab#ARC_00000151>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000173> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000174> (<http://purl.org/isatab#ARC_00000174>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000174> <http://purl.org/isatab#ARC_00000151>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000174> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000175> (<http://purl.org/isatab#ARC_00000175>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000175> <http://purl.org/isatab#ARC_00000151>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000175> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000176> (<http://purl.org/isatab#ARC_00000176>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000176> <http://purl.org/isatab#ARC_00000151>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000176> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000177> (<http://purl.org/isatab#ARC_00000177>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000177> <http://purl.org/isatab#ARC_00000151>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000177> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000178> (<http://purl.org/isatab#ARC_00000178>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000178> <http://purl.org/isatab#ARC_00000151>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000178> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000179> (<http://purl.org/isatab#ARC_00000179>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000179> <http://purl.org/isatab#ARC_00000151>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000179> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000180> (<http://purl.org/isatab#ARC_00000180>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000180> <http://purl.org/isatab#ARC_00000151>)\n\n# Data Property: <http://purl.org/isatab#ARC_00000185> (<http://purl.org/isatab#ARC_00000185>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000185> <http://purl.org/isatab#ARC_00000149>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000185> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000186> (<http://purl.org/isatab#ARC_00000186>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000186> <http://purl.org/isatab#ARC_00000149>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000186> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000187> (<http://purl.org/isatab#ARC_00000187>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000187> <http://purl.org/isatab#ARC_00000149>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000187> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_00000188> (<http://purl.org/isatab#ARC_00000188>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000188> <http://purl.org/isatab#ARC_00000149>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000188> xsd:dateTime)\n\n# Data Property: <http://purl.org/isatab#ARC_00000189> (<http://purl.org/isatab#ARC_00000189>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000189> <http://purl.org/isatab#ARC_00000149>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000189> xsd:dateTime)\n\n# Data Property: <http://purl.org/isatab#ARC_00000190> (<http://purl.org/isatab#ARC_00000190>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_00000190> <http://purl.org/isatab#ARC_00000149>)\nDataPropertyRange(<http://purl.org/isatab#ARC_00000190> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_090c5611_df3e_4662_8a12_c7df1094c4a5> (<http://purl.org/isatab#ARC_090c5611_df3e_4662_8a12_c7df1094c4a5>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_090c5611_df3e_4662_8a12_c7df1094c4a5> <http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72>)\nDataPropertyRange(<http://purl.org/isatab#ARC_090c5611_df3e_4662_8a12_c7df1094c4a5> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95> (<http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95> <http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4>)\n\n# Data Property: <http://purl.org/isatab#ARC_9031efd6_cae4_4146_aa77_cb39b4c020e6> (<http://purl.org/isatab#ARC_9031efd6_cae4_4146_aa77_cb39b4c020e6>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_9031efd6_cae4_4146_aa77_cb39b4c020e6> <http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d>)\nDataPropertyRange(<http://purl.org/isatab#ARC_9031efd6_cae4_4146_aa77_cb39b4c020e6> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_9c84b2c4_8ebd_43ad_8f94_7be545bf6fd7> (<http://purl.org/isatab#ARC_9c84b2c4_8ebd_43ad_8f94_7be545bf6fd7>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_9c84b2c4_8ebd_43ad_8f94_7be545bf6fd7> <http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d>)\nDataPropertyRange(<http://purl.org/isatab#ARC_9c84b2c4_8ebd_43ad_8f94_7be545bf6fd7> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_a22c103c_e7c0_4ab3_9cb8_2963e0fb162d> (<http://purl.org/isatab#ARC_a22c103c_e7c0_4ab3_9cb8_2963e0fb162d>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_a22c103c_e7c0_4ab3_9cb8_2963e0fb162d> <http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4>)\n\n# Data Property: <http://purl.org/isatab#ARC_c6d6f20f_226d_4876_8aa5_1456da329d50> (<http://purl.org/isatab#ARC_c6d6f20f_226d_4876_8aa5_1456da329d50>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_c6d6f20f_226d_4876_8aa5_1456da329d50> <http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72>)\nDataPropertyRange(<http://purl.org/isatab#ARC_c6d6f20f_226d_4876_8aa5_1456da329d50> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_ccfb9a10_49be_4e96_933e_39df2b4c9848> (<http://purl.org/isatab#ARC_ccfb9a10_49be_4e96_933e_39df2b4c9848>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_ccfb9a10_49be_4e96_933e_39df2b4c9848> <http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19>)\nDataPropertyRange(<http://purl.org/isatab#ARC_ccfb9a10_49be_4e96_933e_39df2b4c9848> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_ed707938_92ef_4cd1_bee3_1919b04bfd42> (<http://purl.org/isatab#ARC_ed707938_92ef_4cd1_bee3_1919b04bfd42>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_ed707938_92ef_4cd1_bee3_1919b04bfd42> <http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d>)\nDataPropertyRange(<http://purl.org/isatab#ARC_ed707938_92ef_4cd1_bee3_1919b04bfd42> xsd:string)\n\n# Data Property: <http://purl.org/isatab#ARC_fc14e291_4713_4ac8_9507_1d1223f50f5b> (<http://purl.org/isatab#ARC_fc14e291_4713_4ac8_9507_1d1223f50f5b>)\n\nDataPropertyDomain(<http://purl.org/isatab#ARC_fc14e291_4713_4ac8_9507_1d1223f50f5b> <http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d>)\nDataPropertyRange(<http://purl.org/isatab#ARC_fc14e291_4713_4ac8_9507_1d1223f50f5b> xsd:string)\n\n\n\n\n)
+
+[Term]
+id: ARC_00000148
+name: Investigation
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_00000149
+name: Study
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_00000150
+name: Assay
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_00000151
+name: Person
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_00000152
+name: Author
+is_a: ARC_00000151 ! Person
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_00000164
+name: Publication
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_00000172
+name: InvestigationContactPerson
+is_a: ARC_00000151 ! Person
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_00000181
+name: Role
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+
+[Term]
+id: ARC_07236174_291b_4650_9bcf_7c9e37070842
+name: ProtocolFile
+is_a: ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e ! File
+
+[Term]
+id: ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d
+name: Protocol
+
+[Term]
+id: ARC_09d727bb_b66d_4674_8c32_a921c18cb626
+name: Reagent
+is_a: ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72 ! Component
+
+[Term]
+id: ARC_150ddb19_822d_4447_8e4a_60e7a1561962
+name: StudyContactPerson
+is_a: ARC_00000151 ! Person
+
+[Term]
+id: ARC_19dc5aa4_db31_4dd9_93bc_8d60d9417895
+name: InvestigationFile
+is_a: ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e ! File
+
+[Term]
+id: ARC_1a2d506f_b67d_4f60_adb5_410418a287c8
+name: AssayMeasurementType
+
+[Term]
+id: ARC_2978af61_de2b_4965_938c_b1283754e59f
+name: FactorType
+
+[Term]
+id: ARC_2e0e142a_0a96_4544_9754_4f8e9a0380b6
+name: AssayFile
+is_a: ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e ! File
+
+[Term]
+id: ARC_5f541062_4052_403a_ac0c_f28306635d5a
+name: Sample
+
+[Term]
+id: ARC_692d810e_011a_4a04_809b_026cda018835
+name: Software
+is_a: ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72 ! Component
+
+[Term]
+id: ARC_7f1b89bf_9eec_4fdc_820a_f59234110e96
+name: Source
+
+[Term]
+id: ARC_8134df63_2f21_487e_ba9e_ea2fb4971952
+name: Instrument
+is_a: ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72 ! Component
+
+[Term]
+id: ARC_9c1f21b6_b1cf_47bd_a411_0257ccd3c6e7
+name: StudyFile
+is_a: ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e ! File
+
+[Term]
+id: ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e
+name: File
+
+[Term]
+id: ARC_c68a2f6a_45d3_43c2_b7c9_aecf452675fd
+name: AssayTechnologyType
+
+[Term]
+id: ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19
+name: Parameter
+
+[Term]
+id: ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4
+name: Factor
+
+[Term]
+id: ARC_e30984c1_3551_4c66_bed5_0932d24faaaa
+name: AssayTechnologyPlatform
+
+[Term]
+id: ARC_e749a227_d21e_4c2e_b3d7_e4081da5c18a
+name: StudyDesignType
+
+[Term]
+id: ARC_f762972f_55d4_4595_942c_755a6cb0801f
+name: AssayMaterial
+
+[Term]
+id: ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72
+name: Component
+
+[Typedef]
+id: ARC_00000170
+name: hasPublication
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+domain: ARC_00000151 ! Person
+range: ARC_00000164 ! Publication
+
+[Typedef]
+id: ARC_00000171
+name: hasAuthor
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+domain: ARC_00000164 ! Publication
+range: ARC_00000152 ! Author
+
+[Typedef]
+id: ARC_00000184
+name: hasRole
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+domain: ARC_00000151 ! Person
+range: ARC_00000181 ! Role
+
+[Typedef]
+id: ARC_00000191
+name: hasInvestigationContact
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0003-1476-2121
+domain: ARC_00000148 ! Investigation
+range: ARC_00000172 ! InvestigationContactPerson
+
+[Typedef]
+id: ARC_17e1817a_5cd9_472f_87cf_e068d6e9eb64
+name: hasMaterialSource
+domain: ARC_f762972f_55d4_4595_942c_755a6cb0801f ! AssayMaterial
+range: ARC_7f1b89bf_9eec_4fdc_820a_f59234110e96 ! Source
+
+[Typedef]
+id: ARC_2948d4e0_97cc_4fc6_8cf7_a099ad6a4c6e
+name: hasStudyFactor
+domain: ARC_00000149 ! Study
+range: ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4 ! Factor
+
+[Typedef]
+id: ARC_51a56451_16e0_49f7_bd56_fc2ef598f648
+name: usesProtocolComponent
+domain: ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d ! Protocol
+range: ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72 ! Component
+
+[Typedef]
+id: ARC_60e52a58_861d_44c8_b5a6_de4b715532bc
+name: hasMaterial
+domain: ARC_00000150 ! Assay
+range: ARC_f762972f_55d4_4595_942c_755a6cb0801f ! AssayMaterial
+
+[Typedef]
+id: ARC_677df8a4_7413_4dae_a1f9_74378a36d79d
+name: hasMaterialSample
+domain: ARC_f762972f_55d4_4595_942c_755a6cb0801f ! AssayMaterial
+range: ARC_5f541062_4052_403a_ac0c_f28306635d5a ! Sample
+
+[Typedef]
+id: ARC_6fb8f9f6_e1ea_43f4_90fa_64a5153bd3e5
+name: hasStudyPublication
+domain: ARC_00000149 ! Study
+range: ARC_00000164 ! Publication
+
+[Typedef]
+id: ARC_730238fd_70a7_4f3a_8b3f_4bfad6136890
+name: hasAssayMeasurement
+domain: ARC_00000150 ! Assay
+range: ARC_1a2d506f_b67d_4f60_adb5_410418a287c8 ! AssayMeasurementType
+
+[Typedef]
+id: ARC_7cc1b752_29bb_4fc4_80c4_4f3d39576143
+name: hasStudyProtocol
+domain: ARC_00000149 ! Study
+range: ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d ! Protocol
+
+[Typedef]
+id: ARC_819bc770_1bf5_467f_aa99_5462c54f7c76
+name: hasAssayTechnologyType
+domain: ARC_00000150 ! Assay
+range: ARC_c68a2f6a_45d3_43c2_b7c9_aecf452675fd ! AssayTechnologyType
+
+[Typedef]
+id: ARC_873beb64_99f4_4cd4_a550_7771d371f972
+name: hasStudyFile
+domain: ARC_00000149 ! Study
+range: ARC_9c1f21b6_b1cf_47bd_a411_0257ccd3c6e7 ! StudyFile
+
+[Typedef]
+id: ARC_9ab2d6e2_df05_43cc_8cb2_6b7cd8d4649c
+name: hasInvestigationPublication
+domain: ARC_00000148 ! Investigation
+range: ARC_00000164 ! Publication
+
+[Typedef]
+id: ARC_c074df6a_96b1_40c3_b7ff_27b22c80ef0b
+name: hasProtocolParameter
+domain: ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d ! Protocol
+range: ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19 ! Parameter
+
+[Typedef]
+id: ARC_c22bf82e_e59e_463d_ab7e_ebb454987f30
+name: hasStudy
+domain: ARC_00000148 ! Investigation
+range: ARC_00000149 ! Study
+
+[Typedef]
+id: ARC_c7ea6896_efb8_47a3_a1fb_fb2919d9c509
+name: hasAssay
+domain: ARC_00000149 ! Study
+range: ARC_00000150 ! Assay
+
+[Typedef]
+id: ARC_d18dcee7_af22_4fc0_92c1_18e38c2d4181
+name: hasDesignType
+domain: ARC_00000149 ! Study
+range: ARC_e749a227_d21e_4c2e_b3d7_e4081da5c18a ! StudyDesignType
+
+[Typedef]
+id: ARC_e4180db1_3896_4c87_89dc_60eab29f4784
+name: hasAssayTechnologyPlatform
+domain: ARC_00000150 ! Assay
+range: ARC_e30984c1_3551_4c66_bed5_0932d24faaaa ! AssayTechnologyPlatform
+
+[Typedef]
+id: ARC_e56fa29f_0458_42ed_91df_7351f90a4edf
+name: hasProtocolFile
+domain: ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d ! Protocol
+range: ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e ! File
+
+[Typedef]
+id: ARC_e60cbe09_8804_4502_a1d8_a2e13df72b8e
+name: hasFactorType
+domain: ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4 ! Factor
+range: ARC_2978af61_de2b_4965_938c_b1283754e59f ! FactorType
+
+[Typedef]
+id: ARC_f2bb39c6_c0e6_4aa6_b92e_79ed7a3e4bd6
+name: hasAssayFile
+domain: ARC_00000150 ! Assay
+range: ARC_2e0e142a_0a96_4544_9754_4f8e9a0380b6 ! AssayFile
+
+[Typedef]
+id: ARC_f3162b7e_49d9_4aba_9a36_392f80efb717
+name: hasInvestigationFile
+domain: ARC_00000148 ! Investigation
+range: ARC_19dc5aa4_db31_4dd9_93bc_8d60d9417895 ! InvestigationFile
+
