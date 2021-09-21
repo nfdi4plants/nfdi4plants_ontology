@@ -195,6 +195,16 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_bf16187e_d500_4945_abc5_54a5beba6fb2 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_bf16187e_d500_4945_abc5_54a5beba6fb2">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+        <rdfs:label xml:lang="en">comesFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/isatab#ARC_c074df6a_96b1_40c3_b7ff_27b22c80ef0b -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_c074df6a_96b1_40c3_b7ff_27b22c80ef0b">
@@ -569,11 +579,41 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_3e6bafd6_5da7_4187_a422_59c164c909d9 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_3e6bafd6_5da7_4187_a422_59c164c909d9">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasCellType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_4f5a91e3_21ae_4845_8f76_71991a31d27c -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_4f5a91e3_21ae_4845_8f76_71991a31d27c">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasAge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4"/>
         <rdfs:label xml:lang="en">FactorType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_826bf019_ffaa_4a8c_a129_02dd93882bf5 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_826bf019_ffaa_4a8c_a129_02dd93882bf5">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasPhenoType</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -584,6 +624,16 @@
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ProtocolDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_903a91a3_8ecf_4570_9c8a_81313f9ce326 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_903a91a3_8ecf_4570_9c8a_81313f9ce326">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasPart</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -603,6 +653,16 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_a22c103c_e7c0_4ab3_9cb8_2963e0fb162d">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4"/>
         <rdfs:label xml:lang="en">FactorName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_c3077373_431b_4a68_b0df_004aa7050198 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_c3077373_431b_4a68_b0df_004aa7050198">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasDevelopmentalStage</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -818,6 +878,14 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70">
+        <rdfs:label xml:lang="en">Organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab#ARC_7f1b89bf_9eec_4fdc_820a_f59234110e96 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_7f1b89bf_9eec_4fdc_820a_f59234110e96">
@@ -831,6 +899,15 @@
     <owl:Class rdf:about="http://purl.org/isatab#ARC_8134df63_2f21_487e_ba9e_ea2fb4971952">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72"/>
         <rdfs:label xml:lang="en">Instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_979cdd08_c7a5_422f_a5d0_926ac177b2af -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_979cdd08_c7a5_422f_a5d0_926ac177b2af">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+        <rdfs:label xml:lang="en">Specimen</rdfs:label>
     </owl:Class>
     
 
@@ -872,6 +949,14 @@
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4">
         <rdfs:label xml:lang="en">Factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83">
+        <rdfs:label xml:lang="en">BioSource</rdfs:label>
     </owl:Class>
     
 
