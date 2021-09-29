@@ -891,6 +891,87 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_3775bb47_466a_4c14_9245_275c98370b2a -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_3775bb47_466a_4c14_9245_275c98370b2a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+        <rdfs:label xml:lang="en">MetaboliteExtraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_3a080203_0a37_4785_97df_cf1dc9c3e3ed -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_3a080203_0a37_4785_97df_cf1dc9c3e3ed">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e"/>
+        <rdfs:label xml:lang="en">Metabolome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_3ff23cca_e657_4890_a60b_d6edd173ed4d -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_3ff23cca_e657_4890_a60b_d6edd173ed4d">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+        <rdfs:label xml:lang="en">DNAExtraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_41caad7a_1838_496e_98db_aeebd1830c0e -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_41caad7a_1838_496e_98db_aeebd1830c0e">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e"/>
+        <rdfs:label xml:lang="en">NucliecAcidSequencing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_48694cb6_5c0e_43e2_ae2d_ef4b2cd95239 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_48694cb6_5c0e_43e2_ae2d_ef4b2cd95239">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e"/>
+        <rdfs:label xml:lang="en">Proteome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_4d62842a_1a55_4a67_9e07_db332e651593 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_4d62842a_1a55_4a67_9e07_db332e651593">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+        <rdfs:label xml:lang="en">ProteinExtraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+        <rdfs:label xml:lang="en">ExtractionProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_50ace6ee_10f7_4872_9511_f5da968c4166 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_50ace6ee_10f7_4872_9511_f5da968c4166">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+        <rdfs:label xml:lang="en">GrowthProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+        <rdfs:label xml:lang="en">MeasurementPreparation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab#ARC_5f541062_4052_403a_ac0c_f28306635d5a -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_5f541062_4052_403a_ac0c_f28306635d5a">
@@ -967,6 +1048,15 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_c700e1e1_b718_4bab_8fab_402adce264f0 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_c700e1e1_b718_4bab_8fab_402adce264f0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b"/>
+        <rdfs:label xml:lang="en">NextGenerationSequencing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19">
@@ -991,6 +1081,15 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_df319fd2_273a_4ad2_8bc7_554d1d418e2d -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_df319fd2_273a_4ad2_8bc7_554d1d418e2d">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b"/>
+        <rdfs:label xml:lang="en">MassSpectrometry</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab#ARC_e30984c1_3551_4c66_bed5_0932d24faaaa -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_e30984c1_3551_4c66_bed5_0932d24faaaa">
@@ -1007,6 +1106,24 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_ea317314_e8c1_48d3_9f8e_3ec2d2f5aeaf -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_ea317314_e8c1_48d3_9f8e_3ec2d2f5aeaf">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+        <rdfs:label xml:lang="en">SamplingProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+        <rdfs:label xml:lang="en">MeasurementProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab#ARC_f762972f_55d4_4595_942c_755a6cb0801f -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_f762972f_55d4_4595_942c_755a6cb0801f">
@@ -1019,6 +1136,15 @@
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72">
         <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_fe636b6f_d150_4130_bca8_8daa00855b1c -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_fe636b6f_d150_4130_bca8_8daa00855b1c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+        <rdfs:label xml:lang="en">RNAExtraction</rdfs:label>
     </owl:Class>
     
 
