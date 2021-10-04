@@ -1379,11 +1379,4 @@ id: NFDI4PSO:1000100
 name: ER_GEO_MICROARRAY
 is_a: NFDI4PSO:1000096 ! ER_GEO
 
-[Term]
-id: NFDI4PSO:1000101
-name: test swobup and swate
-def: test
-
-
-
 
