@@ -13,9 +13,8 @@ property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" x
 [Term]
 id: NFDI4PSO:0000001
 name: growth plot design
-def: "A plan specification that states how treatments are allocated to the experimental units during an agronomic trial. It refers to the conceptual framework within which the experiment is conducted" []
+def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
 synonym: "Experimental Randomisation" RELATED []
-xref: http://purl.obolibrary.org/obo/AGRO_00000343
 disjoint_from: NFDI4PSO:0000002 ! Read Alignment Software
 
 [Term]
