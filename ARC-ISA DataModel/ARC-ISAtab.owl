@@ -85,69 +85,69 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_17e1817a_5cd9_472f_87cf_e068d6e9eb64 -->
+    <!-- http://purl.org/isatab#ARC_00000200 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_17e1817a_5cd9_472f_87cf_e068d6e9eb64">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_f762972f_55d4_4595_942c_755a6cb0801f"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_7f1b89bf_9eec_4fdc_820a_f59234110e96"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000200">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000201"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000202"/>
         <rdfs:label xml:lang="en">hasMaterialSource</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_2948d4e0_97cc_4fc6_8cf7_a099ad6a4c6e -->
+    <!-- http://purl.org/isatab#ARC_00000203 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_2948d4e0_97cc_4fc6_8cf7_a099ad6a4c6e">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000203">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000204"/>
         <rdfs:label xml:lang="en">hasStudyFactor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_4a1bb5be_5cfc_47ba_a956_9a22a020038c -->
+    <!-- http://purl.org/isatab#ARC_00000205 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_4a1bb5be_5cfc_47ba_a956_9a22a020038c">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000205">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:label xml:lang="en">hasSource</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_51a56451_16e0_49f7_bd56_fc2ef598f648 -->
+    <!-- http://purl.org/isatab#ARC_00000207 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_51a56451_16e0_49f7_bd56_fc2ef598f648">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000207">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000209"/>
         <rdfs:label xml:lang="en">usesProtocolComponent</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_60e52a58_861d_44c8_b5a6_de4b715532bc -->
+    <!-- http://purl.org/isatab#ARC_00000210 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_60e52a58_861d_44c8_b5a6_de4b715532bc">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000210">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000150"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_f762972f_55d4_4595_942c_755a6cb0801f"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000201"/>
         <rdfs:label xml:lang="en">hasMaterial</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_677df8a4_7413_4dae_a1f9_74378a36d79d -->
+    <!-- http://purl.org/isatab#ARC_00000211 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_677df8a4_7413_4dae_a1f9_74378a36d79d">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_f762972f_55d4_4595_942c_755a6cb0801f"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_5f541062_4052_403a_ac0c_f28306635d5a"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000211">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000201"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000212"/>
         <rdfs:label xml:lang="en">hasMaterialSample</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_6fb8f9f6_e1ea_43f4_90fa_64a5153bd3e5 -->
+    <!-- http://purl.org/isatab#ARC_00000213 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_6fb8f9f6_e1ea_43f4_90fa_64a5153bd3e5">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000213">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
         <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000164"/>
         <rdfs:label xml:lang="en">hasStudyPublication</rdfs:label>
@@ -155,49 +155,49 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_730238fd_70a7_4f3a_8b3f_4bfad6136890 -->
+    <!-- http://purl.org/isatab#ARC_00000214 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_730238fd_70a7_4f3a_8b3f_4bfad6136890">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000214">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000150"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_1a2d506f_b67d_4f60_adb5_410418a287c8"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000215"/>
         <rdfs:label xml:lang="en">hasAssayMeasurement</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_7cc1b752_29bb_4fc4_80c4_4f3d39576143 -->
+    <!-- http://purl.org/isatab#ARC_00000216 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_7cc1b752_29bb_4fc4_80c4_4f3d39576143">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000216">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:label xml:lang="en">hasStudyProtocol</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_819bc770_1bf5_467f_aa99_5462c54f7c76 -->
+    <!-- http://purl.org/isatab#ARC_00000217 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_819bc770_1bf5_467f_aa99_5462c54f7c76">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000217">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000150"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_c68a2f6a_45d3_43c2_b7c9_aecf452675fd"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000218"/>
         <rdfs:label xml:lang="en">hasAssayTechnologyType</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_873beb64_99f4_4cd4_a550_7771d371f972 -->
+    <!-- http://purl.org/isatab#ARC_00000219 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_873beb64_99f4_4cd4_a550_7771d371f972">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000219">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_9c1f21b6_b1cf_47bd_a411_0257ccd3c6e7"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000220"/>
         <rdfs:label xml:lang="en">hasStudyFile</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_9ab2d6e2_df05_43cc_8cb2_6b7cd8d4649c -->
+    <!-- http://purl.org/isatab#ARC_00000221 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_9ab2d6e2_df05_43cc_8cb2_6b7cd8d4649c">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000221">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000148"/>
         <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000164"/>
         <rdfs:label xml:lang="en">hasInvestigationPublication</rdfs:label>
@@ -205,29 +205,29 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_bf16187e_d500_4945_abc5_54a5beba6fb2 -->
+    <!-- http://purl.org/isatab#ARC_00000222 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_bf16187e_d500_4945_abc5_54a5beba6fb2">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000222">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000223"/>
         <rdfs:label xml:lang="en">comesFrom</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c074df6a_96b1_40c3_b7ff_27b22c80ef0b -->
+    <!-- http://purl.org/isatab#ARC_00000224 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_c074df6a_96b1_40c3_b7ff_27b22c80ef0b">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000224">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000225"/>
         <rdfs:label xml:lang="en">hasProtocolParameter</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c22bf82e_e59e_463d_ab7e_ebb454987f30 -->
+    <!-- http://purl.org/isatab#ARC_00000226 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_c22bf82e_e59e_463d_ab7e_ebb454987f30">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000226">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000148"/>
         <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000149"/>
         <rdfs:label xml:lang="en">hasStudy</rdfs:label>
@@ -235,9 +235,9 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_c7ea6896_efb8_47a3_a1fb_fb2919d9c509 -->
+    <!-- http://purl.org/isatab#ARC_00000227 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_c7ea6896_efb8_47a3_a1fb_fb2919d9c509">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000227">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
         <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000150"/>
         <rdfs:label xml:lang="en">hasAssay</rdfs:label>
@@ -245,61 +245,61 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_d18dcee7_af22_4fc0_92c1_18e38c2d4181 -->
+    <!-- http://purl.org/isatab#ARC_00000228 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_d18dcee7_af22_4fc0_92c1_18e38c2d4181">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000228">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_e749a227_d21e_4c2e_b3d7_e4081da5c18a"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000229"/>
         <rdfs:label xml:lang="en">hasDesignType</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_e4180db1_3896_4c87_89dc_60eab29f4784 -->
+    <!-- http://purl.org/isatab#ARC_00000230 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_e4180db1_3896_4c87_89dc_60eab29f4784">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000230">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000150"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_e30984c1_3551_4c66_bed5_0932d24faaaa"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000231"/>
         <rdfs:label xml:lang="en">hasAssayTechnologyPlatform</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_e56fa29f_0458_42ed_91df_7351f90a4edf -->
+    <!-- http://purl.org/isatab#ARC_00000232 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_e56fa29f_0458_42ed_91df_7351f90a4edf">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_07236174_291b_4650_9bcf_7c9e37070842"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000232">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000233"/>
         <rdfs:label xml:lang="en">hasProtocolFile</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_e60cbe09_8804_4502_a1d8_a2e13df72b8e -->
+    <!-- http://purl.org/isatab#ARC_00000234 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_e60cbe09_8804_4502_a1d8_a2e13df72b8e">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_2978af61_de2b_4965_938c_b1283754e59f"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000234">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000204"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000235"/>
         <rdfs:label xml:lang="en">hasFactorType</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_f2bb39c6_c0e6_4aa6_b92e_79ed7a3e4bd6 -->
+    <!-- http://purl.org/isatab#ARC_00000236 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_f2bb39c6_c0e6_4aa6_b92e_79ed7a3e4bd6">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000236">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000150"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_2e0e142a_0a96_4544_9754_4f8e9a0380b6"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000237"/>
         <rdfs:label xml:lang="en">hasAssayFile</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_f3162b7e_49d9_4aba_9a36_392f80efb717 -->
+    <!-- http://purl.org/isatab#ARC_00000238 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_f3162b7e_49d9_4aba_9a36_392f80efb717">
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000238">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000148"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_19dc5aa4_db31_4dd9_93bc_8d60d9417895"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000239"/>
         <rdfs:label xml:lang="en">hasInvestigationFile</rdfs:label>
     </owl:ObjectProperty>
     
@@ -579,158 +579,158 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_090c5611_df3e_4662_8a12_c7df1094c4a5 -->
+    <!-- http://purl.org/isatab#ARC_00000240 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_090c5611_df3e_4662_8a12_c7df1094c4a5">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000240">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000209"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ComponentType</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_3e6bafd6_5da7_4187_a422_59c164c909d9 -->
+    <!-- http://purl.org/isatab#ARC_00000241 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_3e6bafd6_5da7_4187_a422_59c164c909d9">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000241">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasCellType</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_4f5a91e3_21ae_4845_8f76_71991a31d27c -->
+    <!-- http://purl.org/isatab#ARC_00000242 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_4f5a91e3_21ae_4845_8f76_71991a31d27c">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000242">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000223"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasAge</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95 -->
+    <!-- http://purl.org/isatab#ARC_00000243 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_588f0799_88f2_4b95_8b83_221d9902bf95">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000243">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000204"/>
         <rdfs:label xml:lang="en">FactorType</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_5ce5736f_8f6d_4357_81d7_40c11206f228 -->
+    <!-- http://purl.org/isatab#ARC_00000244 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_5ce5736f_8f6d_4357_81d7_40c11206f228">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000244">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasSourceName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_6f29ed9f_8a12_48fd_8f58_ab93faa21b63 -->
+    <!-- http://purl.org/isatab#ARC_00000245 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_6f29ed9f_8a12_48fd_8f58_ab93faa21b63">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000245">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasSampleName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_826bf019_ffaa_4a8c_a129_02dd93882bf5 -->
+    <!-- http://purl.org/isatab#ARC_00000246 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_826bf019_ffaa_4a8c_a129_02dd93882bf5">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000246">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasPhenoType</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_9031efd6_cae4_4146_aa77_cb39b4c020e6 -->
+    <!-- http://purl.org/isatab#ARC_00000247 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_9031efd6_cae4_4146_aa77_cb39b4c020e6">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000247">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ProtocolDescription</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_903a91a3_8ecf_4570_9c8a_81313f9ce326 -->
+    <!-- http://purl.org/isatab#ARC_00000248 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_903a91a3_8ecf_4570_9c8a_81313f9ce326">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000248">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000223"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasPart</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_9c84b2c4_8ebd_43ad_8f94_7be545bf6fd7 -->
+    <!-- http://purl.org/isatab#ARC_00000249 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_9c84b2c4_8ebd_43ad_8f94_7be545bf6fd7">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000249">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ProtocolName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_a22c103c_e7c0_4ab3_9cb8_2963e0fb162d -->
+    <!-- http://purl.org/isatab#ARC_00000250 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_a22c103c_e7c0_4ab3_9cb8_2963e0fb162d">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000250">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000204"/>
         <rdfs:label xml:lang="en">FactorName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c3077373_431b_4a68_b0df_004aa7050198 -->
+    <!-- http://purl.org/isatab#ARC_00000251 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_c3077373_431b_4a68_b0df_004aa7050198">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000251">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000223"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasDevelopmentalStage</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c6d6f20f_226d_4876_8aa5_1456da329d50 -->
+    <!-- http://purl.org/isatab#ARC_00000252 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_c6d6f20f_226d_4876_8aa5_1456da329d50">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000252">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000209"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ComponentName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_ccfb9a10_49be_4e96_933e_39df2b4c9848 -->
+    <!-- http://purl.org/isatab#ARC_00000253 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_ccfb9a10_49be_4e96_933e_39df2b4c9848">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000253">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000225"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ParameterName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_ed707938_92ef_4cd1_bee3_1919b04bfd42 -->
+    <!-- http://purl.org/isatab#ARC_00000254 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_ed707938_92ef_4cd1_bee3_1919b04bfd42">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000254">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ProtocolURI</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/isatab#ARC_fc14e291_4713_4ac8_9507_1d1223f50f5b -->
+    <!-- http://purl.org/isatab#ARC_00000255 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_fc14e291_4713_4ac8_9507_1d1223f50f5b">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000255">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">ProtocolType</rdfs:label>
     </owl:DatatypeProperty>
@@ -822,328 +822,328 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_07236174_291b_4650_9bcf_7c9e37070842 -->
+    <!-- http://purl.org/isatab#ARC_00000233 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_07236174_291b_4650_9bcf_7c9e37070842">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000233">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
         <rdfs:label xml:lang="en">ProtocolFile</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d -->
+    <!-- http://purl.org/isatab#ARC_00000208 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000208">
         <rdfs:label xml:lang="en">Protocol</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_09d727bb_b66d_4674_8c32_a921c18cb626 -->
+    <!-- http://purl.org/isatab#ARC_00000257 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_09d727bb_b66d_4674_8c32_a921c18cb626">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000257">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000209"/>
         <rdfs:label xml:lang="en">Reagent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_150ddb19_822d_4447_8e4a_60e7a1561962 -->
+    <!-- http://purl.org/isatab#ARC_00000258 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_150ddb19_822d_4447_8e4a_60e7a1561962">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000258">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000151"/>
         <rdfs:label xml:lang="en">StudyContactPerson</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_19dc5aa4_db31_4dd9_93bc_8d60d9417895 -->
+    <!-- http://purl.org/isatab#ARC_00000239 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_19dc5aa4_db31_4dd9_93bc_8d60d9417895">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000239">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
         <rdfs:label xml:lang="en">InvestigationFile</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_1a2d506f_b67d_4f60_adb5_410418a287c8 -->
+    <!-- http://purl.org/isatab#ARC_00000215 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_1a2d506f_b67d_4f60_adb5_410418a287c8">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000215">
         <rdfs:label xml:lang="en">AssayMeasurementType</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_2978af61_de2b_4965_938c_b1283754e59f -->
+    <!-- http://purl.org/isatab#ARC_00000235 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_2978af61_de2b_4965_938c_b1283754e59f">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000235">
         <rdfs:label xml:lang="en">FactorType</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_2e0e142a_0a96_4544_9754_4f8e9a0380b6 -->
+    <!-- http://purl.org/isatab#ARC_00000237 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_2e0e142a_0a96_4544_9754_4f8e9a0380b6">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000237">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
         <rdfs:label xml:lang="en">AssayFile</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_3775bb47_466a_4c14_9245_275c98370b2a -->
+    <!-- http://purl.org/isatab#ARC_00000259 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_3775bb47_466a_4c14_9245_275c98370b2a">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000259">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000261"/>
         <rdfs:label xml:lang="en">MetaboliteExtraction</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_3a080203_0a37_4785_97df_cf1dc9c3e3ed -->
+    <!-- http://purl.org/isatab#ARC_00000260 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_3a080203_0a37_4785_97df_cf1dc9c3e3ed">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000260">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000262"/>
         <rdfs:label xml:lang="en">Metabolome</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_3ff23cca_e657_4890_a60b_d6edd173ed4d -->
+    <!-- http://purl.org/isatab#ARC_00000263 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_3ff23cca_e657_4890_a60b_d6edd173ed4d">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000263">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000261"/>
         <rdfs:label xml:lang="en">DNAExtraction</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_41caad7a_1838_496e_98db_aeebd1830c0e -->
+    <!-- http://purl.org/isatab#ARC_00000264 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_41caad7a_1838_496e_98db_aeebd1830c0e">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000264">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000262"/>
         <rdfs:label xml:lang="en">NucliecAcidSequencing</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_48694cb6_5c0e_43e2_ae2d_ef4b2cd95239 -->
+    <!-- http://purl.org/isatab#ARC_00000265 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_48694cb6_5c0e_43e2_ae2d_ef4b2cd95239">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000265">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000262"/>
         <rdfs:label xml:lang="en">Proteome</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_4d62842a_1a55_4a67_9e07_db332e651593 -->
+    <!-- http://purl.org/isatab#ARC_00000266 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_4d62842a_1a55_4a67_9e07_db332e651593">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000266">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000261"/>
         <rdfs:label xml:lang="en">ProteinExtraction</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396 -->
+    <!-- http://purl.org/isatab#ARC_00000261 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000261">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:label xml:lang="en">ExtractionProtocol</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_50ace6ee_10f7_4872_9511_f5da968c4166 -->
+    <!-- http://purl.org/isatab#ARC_00000267 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_50ace6ee_10f7_4872_9511_f5da968c4166">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000267">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:label xml:lang="en">GrowthProtocol</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e -->
+    <!-- http://purl.org/isatab#ARC_00000262 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_578431a8_3a56_4ac3_a0b5_55152358b48e">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000262">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:label xml:lang="en">MeasurementPreparation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_5f541062_4052_403a_ac0c_f28306635d5a -->
+    <!-- http://purl.org/isatab#ARC_00000212 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_5f541062_4052_403a_ac0c_f28306635d5a">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000212">
         <rdfs:label xml:lang="en">Sample</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_692d810e_011a_4a04_809b_026cda018835 -->
+    <!-- http://purl.org/isatab#ARC_00000268 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_692d810e_011a_4a04_809b_026cda018835">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000268">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000209"/>
         <rdfs:label xml:lang="en">Software</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70 -->
+    <!-- http://purl.org/isatab#ARC_00000223 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_6f81a5d3_6442_44cc_8398_035ce442ca70">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000223">
         <rdfs:label xml:lang="en">Organism</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_7f1b89bf_9eec_4fdc_820a_f59234110e96 -->
+    <!-- http://purl.org/isatab#ARC_00000202 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_7f1b89bf_9eec_4fdc_820a_f59234110e96">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000202">
         <rdfs:label xml:lang="en">Source</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_8134df63_2f21_487e_ba9e_ea2fb4971952 -->
+    <!-- http://purl.org/isatab#ARC_00000269 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_8134df63_2f21_487e_ba9e_ea2fb4971952">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000269">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000209"/>
         <rdfs:label xml:lang="en">Instrument</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_979cdd08_c7a5_422f_a5d0_926ac177b2af -->
+    <!-- http://purl.org/isatab#ARC_00000270 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_979cdd08_c7a5_422f_a5d0_926ac177b2af">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000270">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:label xml:lang="en">Specimen</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_9c1f21b6_b1cf_47bd_a411_0257ccd3c6e7 -->
+    <!-- http://purl.org/isatab#ARC_00000220 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_9c1f21b6_b1cf_47bd_a411_0257ccd3c6e7">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000220">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
         <rdfs:label xml:lang="en">StudyFile</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e -->
+    <!-- http://purl.org/isatab#ARC_00000256 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_c191a74d_aa86_4793_9ca0_bd9b97404d3e">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000256">
         <rdfs:label xml:lang="en">File</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c68a2f6a_45d3_43c2_b7c9_aecf452675fd -->
+    <!-- http://purl.org/isatab#ARC_00000218 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_c68a2f6a_45d3_43c2_b7c9_aecf452675fd">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000218">
         <rdfs:label xml:lang="en">AssayTechnologyType</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c700e1e1_b718_4bab_8fab_402adce264f0 -->
+    <!-- http://purl.org/isatab#ARC_00000271 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_c700e1e1_b718_4bab_8fab_402adce264f0">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000271">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000272"/>
         <rdfs:label xml:lang="en">NextGenerationSequencing</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19 -->
+    <!-- http://purl.org/isatab#ARC_00000225 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_c755af18_c6a9_444d_b44f_6334fd7bbf19">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000225">
         <rdfs:label xml:lang="en">Parameter</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4 -->
+    <!-- http://purl.org/isatab#ARC_00000204 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_c8f6da2b_99ba_4cd6_a5eb_b5a10178f2a4">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000204">
         <rdfs:label xml:lang="en">Factor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83 -->
+    <!-- http://purl.org/isatab#ARC_00000206 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_d67b1933_cea9_498d_973f_ffd685d8ae83">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000206">
         <rdfs:label xml:lang="en">BioSource</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_df319fd2_273a_4ad2_8bc7_554d1d418e2d -->
+    <!-- http://purl.org/isatab#ARC_00000273 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_df319fd2_273a_4ad2_8bc7_554d1d418e2d">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000273">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000272"/>
         <rdfs:label xml:lang="en">MassSpectrometry</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_e30984c1_3551_4c66_bed5_0932d24faaaa -->
+    <!-- http://purl.org/isatab#ARC_00000231 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_e30984c1_3551_4c66_bed5_0932d24faaaa">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000231">
         <rdfs:label xml:lang="en">AssayTechnologyPlatform</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_e749a227_d21e_4c2e_b3d7_e4081da5c18a -->
+    <!-- http://purl.org/isatab#ARC_00000229 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_e749a227_d21e_4c2e_b3d7_e4081da5c18a">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000229">
         <rdfs:label xml:lang="en">StudyDesignType</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_ea317314_e8c1_48d3_9f8e_3ec2d2f5aeaf -->
+    <!-- http://purl.org/isatab#ARC_00000274 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_ea317314_e8c1_48d3_9f8e_3ec2d2f5aeaf">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000274">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:label xml:lang="en">SamplingProtocol</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b -->
+    <!-- http://purl.org/isatab#ARC_00000272 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_ea664d52_1566_48b4_a84b_b37b6ae8264b">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_0939ab09_21b5_4cad_84e1_35d1247f0e0d"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000272">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
         <rdfs:label xml:lang="en">MeasurementProtocol</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_f762972f_55d4_4595_942c_755a6cb0801f -->
+    <!-- http://purl.org/isatab#ARC_00000201 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_f762972f_55d4_4595_942c_755a6cb0801f">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000201">
         <rdfs:label xml:lang="en">AssayMaterial</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72 -->
+    <!-- http://purl.org/isatab#ARC_00000209 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_f93c8298_4da4_4493_ba75_3e3e06a59d72">
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000209">
         <rdfs:label xml:lang="en">Component</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_fe636b6f_d150_4130_bca8_8daa00855b1c -->
+    <!-- http://purl.org/isatab#ARC_00000275 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_fe636b6f_d150_4130_bca8_8daa00855b1c">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_4f037074_6aba_46fb_a0dd_d00632cbe396"/>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000275">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000261"/>
         <rdfs:label xml:lang="en">RNAExtraction</rdfs:label>
     </owl:Class>
     
