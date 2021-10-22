@@ -2,11 +2,13 @@
 <rdf:RDF xmlns="http://purl.org/isatab#"
      xml:base="http://purl.org/isatab"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.org/isatab">
         <owl:versionIRI rdf:resource="http://purl.org/isatab/1.0"/>
     </owl:Ontology>
@@ -24,9 +26,51 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
@@ -748,6 +792,348 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PECO_0007049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007147"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in soil growth media with varying contents.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007049</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil environment treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007049</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil environment exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007049"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in soil growth media with varying contents.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007049"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in varying textures of soil growth media.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007050</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil texture treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007050</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil texture exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007050"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in varying textures of soil growth media.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007049"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in soil growth media of varying pH levels.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007058</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil pH environment treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007058</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil pH environment exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007058"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in soil growth media of varying pH levels.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007147"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in liquid growth media.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007067</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydroponic plant culture media treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soilless pant culture media (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007067</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydroponic plant culture media exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007067"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exposure involving growing plants in liquid growth media.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007147">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abiotic plant exposure (PECO:0007191) involving the use of a solid or liquid substrate for growing plants or tissue-cultured plant samples.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007147</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO_SF2_PECO:82</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO_GIT:81</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant growth medium treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007147</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant growth medium exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007147"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abiotic plant exposure (PECO:0007191) involving the use of a solid or liquid substrate for growing plants or tissue-cultured plant samples.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:cooperl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007049"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving growing plants in different types of soil growth media.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007155</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil type treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007155</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil type exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007155"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving growing plants in different types of soil growth media.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007231">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant experimental condition (PECO:0007359) or set of conditions describing what kind of plant growth facility was used for the experiment.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007231</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO_SF2_PECO:82</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO_GIT:81</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007231</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study type</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant experimental condition (PECO:0007359) or set of conditions describing what kind of plant growth facility was used for the experiment.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:cooperl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment where the plants were grown under greenhouse conditions. This may involve supplemental treatments in addition to any standard conditions.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007248</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007248</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">greenhouse study</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007248"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment where the plants were grown under greenhouse conditions. This may involve supplemental treatments in addition to any standard conditions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment where the plants were grown under laboratory / open room conditions, with very few controlled parameters. This may involve supplemental treatments in addition to any naturally occurring conditions.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007255</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007255</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory study</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007255"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment where the plants were grown under laboratory / open room conditions, with very few controlled parameters. This may involve supplemental treatments in addition to any naturally occurring conditions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment where the plants were grown under field conditions. This may involve supplemental treatments in addition to any naturally occurring conditions.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007256</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open field study (related)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007256</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field study</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007256"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment where the plants were grown under field conditions. This may involve supplemental treatments in addition to any naturally occurring conditions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007049"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving an exposure to varying amounts of water in soil growth media.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007259</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil water content treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007259</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil water content exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007259"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving an exposure to varying amounts of water in soil growth media.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007266"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An in vitro growth medium (PECO:0007266) involving use of a solid growth medium as a substrate.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007262</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO_SF2_PECO:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO_GIT:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro solid growth medium treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007262</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro solid growth medium exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007262"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An in vitro growth medium (PECO:0007266) involving use of a solid growth medium as a substrate.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:cooperl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007266"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An in vitro growth medium (PECO:0007265) involving use of liquid culture media as a substrate.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007265</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO_SF2_PECO:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO_GIT:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro liquid growth medium treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007265</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro liquid growth medium exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007265"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An in vitro growth medium (PECO:0007265) involving use of liquid culture media as a substrate.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:cooperl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007147"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A growth medium environment (PECO:0007147) for in vitro culture, involving use of a solid or liquid substrate and which may include nutrients and other amendments.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007266</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO_SF2_PECO:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO_GIT:65</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro growth medium treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007266</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro growth medium exposure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007266"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A growth medium environment (PECO:0007147) for in vitro culture, involving use of a solid or liquid substrate and which may include nutrients and other amendments.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:cooperl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving study type in which plants were grown in growth chambers.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007269</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007269</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growth chamber study</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007269"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving study type in which plants were grown in growth chambers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving study type where nothing is known in the reported literature/study about the kind of growth facilities used.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007280</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007280</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown study type</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007280"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The treatment involving study type where nothing is known in the reported literature/study about the kind of growth facilities used.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:pankaj_jaiswal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007405">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PECO_0007067"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007405</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoagland solution treatment (narrow)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007405</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoagland solution exposure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab#ARC_00000148 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000148">
@@ -822,6 +1208,119 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_00000201 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000201">
+        <rdfs:label xml:lang="en">AssayMaterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000202 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000202">
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000204 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000204">
+        <rdfs:label xml:lang="en">Factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000206 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000206">
+        <rdfs:label xml:lang="en">BioSource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000208 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000208">
+        <rdfs:label xml:lang="en">Protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000209 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000209">
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000212 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000212">
+        <rdfs:label xml:lang="en">Sample</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000215 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000215">
+        <rdfs:label xml:lang="en">AssayMeasurementType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000218 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000218">
+        <rdfs:label xml:lang="en">AssayTechnologyType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000220 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000220">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
+        <rdfs:label xml:lang="en">StudyFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000223 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000223">
+        <rdfs:label xml:lang="en">Organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000225 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000225">
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000229 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000229">
+        <rdfs:label xml:lang="en">StudyDesignType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000231 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000231">
+        <rdfs:label xml:lang="en">AssayTechnologyPlatform</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab#ARC_00000233 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000233">
@@ -831,10 +1330,36 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000208 -->
+    <!-- http://purl.org/isatab#ARC_00000235 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000208">
-        <rdfs:label xml:lang="en">Protocol</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000235">
+        <rdfs:label xml:lang="en">FactorType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000237 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000237">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
+        <rdfs:label xml:lang="en">AssayFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000239 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000239">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
+        <rdfs:label xml:lang="en">InvestigationFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000256 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000256">
+        <rdfs:label xml:lang="en">File</rdfs:label>
     </owl:Class>
     
 
@@ -857,40 +1382,6 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000239 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000239">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
-        <rdfs:label xml:lang="en">InvestigationFile</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000215 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000215">
-        <rdfs:label xml:lang="en">AssayMeasurementType</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000235 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000235">
-        <rdfs:label xml:lang="en">FactorType</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000237 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000237">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
-        <rdfs:label xml:lang="en">AssayFile</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/isatab#ARC_00000259 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000259">
@@ -905,6 +1396,24 @@
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000260">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000262"/>
         <rdfs:label xml:lang="en">Metabolome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000261 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000261">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:label xml:lang="en">ExtractionProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000262 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000262">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:label xml:lang="en">MeasurementPreparation</rdfs:label>
     </owl:Class>
     
 
@@ -945,15 +1454,6 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000261 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000261">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
-        <rdfs:label xml:lang="en">ExtractionProtocol</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/isatab#ARC_00000267 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000267">
@@ -963,44 +1463,11 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000262 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000262">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
-        <rdfs:label xml:lang="en">MeasurementPreparation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000212 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000212">
-        <rdfs:label xml:lang="en">Sample</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/isatab#ARC_00000268 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000268">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000209"/>
         <rdfs:label xml:lang="en">Software</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000223 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000223">
-        <rdfs:label xml:lang="en">Organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000202 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000202">
-        <rdfs:label xml:lang="en">Source</rdfs:label>
     </owl:Class>
     
 
@@ -1023,94 +1490,11 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000220 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000220">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000256"/>
-        <rdfs:label xml:lang="en">StudyFile</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000256 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000256">
-        <rdfs:label xml:lang="en">File</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000218 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000218">
-        <rdfs:label xml:lang="en">AssayTechnologyType</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/isatab#ARC_00000271 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000271">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000272"/>
         <rdfs:label xml:lang="en">NextGenerationSequencing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000225 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000225">
-        <rdfs:label xml:lang="en">Parameter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000204 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000204">
-        <rdfs:label xml:lang="en">Factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000206 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000206">
-        <rdfs:label xml:lang="en">BioSource</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000273 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000273">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000272"/>
-        <rdfs:label xml:lang="en">MassSpectrometry</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000231 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000231">
-        <rdfs:label xml:lang="en">AssayTechnologyPlatform</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000229 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000229">
-        <rdfs:label xml:lang="en">StudyDesignType</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000274 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000274">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
-        <rdfs:label xml:lang="en">SamplingProtocol</rdfs:label>
     </owl:Class>
     
 
@@ -1124,18 +1508,20 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000201 -->
+    <!-- http://purl.org/isatab#ARC_00000273 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000201">
-        <rdfs:label xml:lang="en">AssayMaterial</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000273">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000272"/>
+        <rdfs:label xml:lang="en">MassSpectrometry</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000209 -->
+    <!-- http://purl.org/isatab#ARC_00000274 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000209">
-        <rdfs:label xml:lang="en">Component</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000274">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:label xml:lang="en">SamplingProtocol</rdfs:label>
     </owl:Class>
     
 
