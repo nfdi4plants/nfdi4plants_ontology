@@ -124,7 +124,10 @@
 
     <!-- http://purl.obolibrary.org/obo/is_unit_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/is_unit_of"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/is_unit_of">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UO_0000005"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
+    </owl:ObjectProperty>
     
 
 
@@ -418,6 +421,16 @@
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000148"/>
         <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000239"/>
         <rdfs:label xml:lang="en">hasInvestigationFile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000280 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000280">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000225"/>
+        <rdfs:label xml:lang="en">hasParameter</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -868,6 +881,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000225"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical quality of the thermal energy of a system.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000146</oboInOwl:id>
@@ -2417,6 +2431,7 @@
     <!-- http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000267 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000267">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000225"/>
         <rdfs:label xml:lang="en">Humidity</rdfs:label>
     </owl:Class>
     
