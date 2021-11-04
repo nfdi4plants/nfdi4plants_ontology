@@ -1450,9 +1450,9 @@ comment: "Definition according to IDR"
 
 [Term]
 id: NFDI4PSO:1000113
-name: Channel
-def: "The fluorophores and what they are labeling’" []
-comment: "Needed for imaging templates" 
+name: channel
+def: "The label used in a microscopy assay and what it targets, separated by a colon. Each pair of labels and visualized object is separated by a semi-colon. E.g. DAPI:nuclei;TRITC:HA_Flag tagged protein." []
+comment: "Needed for imaging templates. Definition form IDR"
 
 [Term]
 id: NFDI4PSO:1000114
@@ -1498,9 +1498,9 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000121
-name: Compartment 
-def: "" []
-xref: http://purl.obolibrary.org/obo/FMA_76700
+name: target compartment
+def: "Compartment of interest in the prepared sample" []
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000122
@@ -1546,8 +1546,8 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000129
-name: image processing software version
-def: "Version of the software used for the processing of microscopy images like for adaption of contrast or stacking." []
+name: image data analysis software
+def: "Software used to analyze data extracted from microscopy images." []
 comment: "Needed for imaging templates"
 
 [Term]
@@ -1564,9 +1564,9 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000132
-name: feature extraction software version
-def: "Version of the software used for the extraction of features from microscopy images ." []
-comment: "Needed for imaging templates"
+name: data analysis
+def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
+xref: http://semanticscience.org/resource/SIO_001051
 
 [Term]
 id: NFDI4PSO:1000133
@@ -1612,8 +1612,8 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000140
-name: Experiment Number
-def: "The name or number of the experiment." []
+name: Magnification
+def: "The magnification of a microscopy image" []
 comment: "Needed for imaging templates"
 
 [Term]
@@ -1624,9 +1624,9 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000142
-name: channel
-def: "The label used in a microscopy assay and what it targets, separated by a colon. Each pair of labels and visualized object is separated by a semi-colon. E.g. DAPI:nuclei;TRITC:HA_Flag tagged protein." []
-comment: "Needed for imaging templates. Definition form IDR"  
+name: Objective
+def: "The microscope's objective lens." []
+xref: https://w3id.org/reproduceme#Objective
 
 [Term]
 id: NFDI4PSO:1000143
@@ -1642,25 +1642,10 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000145
-name: target compartment
-def: "Compartment of interest in the prepared sample" []
-comment: "Needed for imaging templates"
-
-[Term]
-id: NFDI4PSO:1000146
 name: prepared organism part
 def: "The part of an organism that has been prepared for an experiment" []
 comment: "Needed for imaging templates"
 
-[Term]
-id: NFDI4PSO:1000147
-name: Objective
-def: "The microscope's objective lens." []
-xref: https://w3id.org/reproduceme#Objective
 
-[Term]
-id: NFDI4PSO:1000148
-name: Magnification
-def: "The magnification of a microscopy image" []
-comment: "Needed for imaging templates"
+
 
