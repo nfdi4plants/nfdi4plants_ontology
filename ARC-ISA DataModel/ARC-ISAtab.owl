@@ -128,6 +128,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000269 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000269">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
+        <rdfs:label xml:lang="en">hasStudyType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000270 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000270">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000267"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PECO_0007241"/>
+        <rdfs:label xml:lang="en">hasNutrientExposure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000271 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000271">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000267"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PECO_0007147"/>
+        <rdfs:label xml:lang="en">hasGrowthMediumExposure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/isatab#ARC_00000170 -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000170">
@@ -2341,8 +2371,7 @@
 
     <!-- http://purl.obolibrary.org/obo/UO_0000012 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
@@ -2351,14 +2380,13 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000005"/>
-    </owl:NamedIndividual>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UO_0000027 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
@@ -2367,14 +2395,13 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000005"/>
-    </owl:NamedIndividual>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UO_0000195 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000195">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000195">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
@@ -2383,7 +2410,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000005"/>
-    </owl:NamedIndividual>
+    </owl:Class>
     
 
 
