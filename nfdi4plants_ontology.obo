@@ -1383,3 +1383,62 @@ id: NFDI4PSO:1000101
 name: Well
 def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
 xref: https://w3id.org/reproduceme#Well 
+
+[Term]
+id: NFDI4PSO:1000102
+name: Well Number
+def: "The number of a well in a well plate." []
+
+[Term]
+id: NFDI4PSO:1000103
+name: siRNA identifier
+def: "The identifier of a siRNA from a reagent library." []
+
+[Term]
+id: NFDI4PSO:1000104
+name: Compound name
+def: "Unique name of a chemical compound." []
+xref: http://edamontology.org/data_0990
+
+[Term]
+id: NFDI4PSO:1000105
+name: Compound identifier
+def: "Identifier of an entry from a database of chemicals." []
+xref: http://edamontology.org/data_1086  
+
+[Term]
+id: NFDI4PSO:1000106
+name: Compound class
+def: "The class a compound belongs to, defined by its biological function or the chemical property." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000107
+name: ORF identifier
+def: "An identifier of an open reading frame." []
+xref: http://edamontology.org/data_2795
+
+[Term]
+id: NFDI4PSO:1000108
+name: Gene Identifier
+def: "A unique gene name within a specific repository, database, or collection." []
+xref: http://purl.obolibrary.org/obo/NCIT_C48664
+
+[Term]
+id: NFDI4PSO:1000109
+name: Sense Sequence
+def: "The sequence of the sense strand." []
+comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html"
+
+[Term]
+id: NFDI4PSO:1000110
+name: Antisense Sequence
+def: "The sequence of the antisense strand." []
+comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html" 
+
+[Term]
+id: NFDI4PSO:1000111
+name: Control Type
+def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
+xref: http://purl.obolibrary.org/obo/NCIT_C49647 
+
