@@ -1630,8 +1630,8 @@ comment: "Needed for imaging templates. Definition form IDR"
 
 [Term]
 id: NFDI4PSO:1000143
-name: sample preparation
-def: " Properties of the preparation steps which took place before the measurement was performed. " []
+name: microscopy sample preparation
+def: "How a sample was further prepared for microscopy." []
 xref: http://purl.obolibrary.org/obo/MS_1000831
 
 [Term]
