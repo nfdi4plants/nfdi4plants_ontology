@@ -1378,4 +1378,8 @@ id: NFDI4PSO:1000100
 name: ER_GEO_MICROARRAY
 is_a: NFDI4PSO:1000096 ! ER_GEO
 
-
+[Term]
+id: NFDI4PSO:1000101
+name: Well
+def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
+xref: https://w3id.org/reproduceme#Well 
