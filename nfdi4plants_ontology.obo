@@ -1442,3 +1442,225 @@ name: Control Type
 def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
 xref: http://purl.obolibrary.org/obo/NCIT_C49647 
 
+[Term]
+id: NFDI4PSO:1000112
+name: Quality Control
+def: "Result of quality control. This can be: pass/fail, or other information such as: no cells" []
+comment: "Definition according to IDR"
+
+[Term]
+id: NFDI4PSO:1000113
+name: Channel
+def: "The fluorophores and what they are labeling’" []
+comment: "Needed for imaging templates" 
+
+[Term]
+id: NFDI4PSO:1000114
+name: Screen Technology Type
+def: "The type of a high content screening experiment like RNAi screen or antibody screen." []
+comment: "Needed for imaging templates"  
+
+[Term]
+id: NFDI4PSO:1000115
+name: high content screening stage
+def: "An experimental stage describing stages of high content screen analysis." []
+xref: http://www.ebi.ac.uk/efo/EFO_0007555
+
+[Term]
+id: NFDI4PSO:1000116
+name: Library Version
+def: "Version of a reagent library used e.g. in high content screening." []
+comment: "Needed for imaging templates" 
+
+[Term]
+id: NFDI4PSO:1000117
+name: Antibody
+def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." []
+xref: http://purl.obolibrary.org/obo/NCIT_C16295
+
+[Term]
+id: NFDI4PSO:1000118
+name: Cover Slip
+def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
+xref: http://purl.obolibrary.org/obo/NCIT_C126370
+
+[Term]
+id: NFDI4PSO:1000119
+name: Cover slip preparation (procedure) 
+def: "" []
+xref: http://snomed.info/id/71661000 
+
+[Term]
+id: NFDI4PSO:1000120
+name: Image file path 
+def: "" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000121
+name: Compartment 
+def: "" []
+xref: http://purl.obolibrary.org/obo/FMA_76700
+
+[Term]
+id: NFDI4PSO:1000122
+name: Imaging Software Name
+def: "The name of the software program to capture and/or process imaging data." []
+xref: http://purl.obolibrary.org/obo/NCIT_C175898
+
+[Term]
+id: NFDI4PSO:1000123
+name: Imaging Software Version
+def: "The version of the software program to capture and/or process imaging data." []
+comment: "Needed for imaging templates" 
+
+[Term]
+id: NFDI4PSO:1000124
+name: Imaging Software Settings
+def: "The used settings in the software program to capture and/or process imaging data." []
+comment: "Needed for imaging templates"  
+
+[Term]
+id: NFDI4PSO:1000125
+name: Microscope filter
+def: "Channel the image was taken with." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000126
+name: Dataset Name
+def: "" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000127
+name: Assay Name
+def: "The name of the assay." []
+xref: http://purl.obolibrary.org/obo/NCIT_C178857
+
+[Term]
+id: NFDI4PSO:1000128
+name: image processing software
+def: "Software used for the processing of microscopy images like for adaption of contrast or stacking." []
+comment: "Needed for imaging templates" 
+
+[Term]
+id: NFDI4PSO:1000129
+name: image processing software version
+def: "Version of the software used for the processing of microscopy images like for adaption of contrast or stacking." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000130
+name: image processing software parameters
+def: "Applied settings of the software used for the processing of microscopy images" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000131
+name: feature extraction software
+def: "Software used for the extraction of features from microscopy images." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000132
+name: feature extraction software version
+def: "Version of the software used for the extraction of features from microscopy images ." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000133
+name: feature extraction strategy
+def: "Description of the approach to extract features from microscopy images." []
+comment: "Needed for imaging templates" 
+
+[Term]
+id: NFDI4PSO:1000134
+name: image processing technique
+def: "Any form of signal processing for which the input is an image, such as a photograph or video frame; the output of image processing may be either an image or a set of characteristics or parameters related to the image." []
+xref: http://purl.obolibrary.org/obo/ERO_0001788
+
+[Term]
+id: NFDI4PSO:1000135
+name: use of image
+def: "Whether a microscopy image is intended to be used illustrational or analytically by deriving values from it." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000136
+name: reagent design genome reference version
+def: "The gene annotation build the siRNAs for a high content screen library were mapped to." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000137
+name: Control specification
+def: "additional information about the quality control in high content screening studies e.g. 'checks for transfection', 'gives strong phenotype'" []
+comment: "Needed for imaging templates. Definition from IDR."
+
+[Term]
+id: NFDI4PSO:1000138
+name: Quality Control Comments
+def: "additional information why a quality control passed or failed'" []
+comment: "Needed for imaging templates. Definition from IDR."
+
+[Term]
+id: NFDI4PSO:1000139
+name: Microscopy study type
+def: "Type of an imaging study." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000140
+name: Experiment Number
+def: "The name or number of the experiment." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000141
+name: Image Dimensionality
+def: "The sizes along the axis of the XYZCT dimensions in a microscopy image." []
+comment: "Needed for imaging templates" 
+
+[Term]
+id: NFDI4PSO:1000142
+name: channel
+def: "The label used in a microscopy assay and what it targets, separated by a colon. Each pair of labels and visualized object is separated by a semi-colon. E.g. DAPI:nuclei;TRITC:HA_Flag tagged protein." []
+comment: "Needed for imaging templates. Definition form IDR"  
+
+[Term]
+id: NFDI4PSO:1000143
+name: sample preparation
+def: " Properties of the preparation steps which took place before the measurement was performed. " []
+xref: http://purl.obolibrary.org/obo/MS_1000831
+
+[Term]
+id: NFDI4PSO:1000144
+name: material fixation
+def: "Plant material fixation on a microscopy slide." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000145
+name: target compartment
+def: "Compartment of interest in the prepared sample" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000146
+name: prepared organism part
+def: "The part of an organism that has been prepared for an experiment" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000147
+name: Objective
+def: "The microscope's objective lens." []
+xref: https://w3id.org/reproduceme#Objective
+
+[Term]
+id: NFDI4PSO:1000148
+name: Magnification
+def: "The magnification of a microscopy image" []
+comment: "Needed for imaging templates"
+
