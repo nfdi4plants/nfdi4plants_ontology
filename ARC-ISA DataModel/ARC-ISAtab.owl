@@ -2475,7 +2475,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126">
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000095</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_EndpointRepositories</rdfs:label>
+        <rdfs:label xml:lang="en">ER_EndpointRepositories</rdfs:label>
     </owl:Class>
     
 
@@ -2485,7 +2485,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000096/NFDI4PSO_1000131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000096</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_GEO</rdfs:label>
+        <rdfs:label xml:lang="en">ER_GEO</rdfs:label>
     </owl:Class>
     
 
@@ -2495,7 +2495,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000097/NFDI4PSO_1000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000097</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_METABOLIGHTS</rdfs:label>
+        <rdfs:label xml:lang="en">ER_METABOLIGHTS</rdfs:label>
     </owl:Class>
     
 
@@ -2505,7 +2505,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000098/NFDI4PSO_1000135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000098</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_PRIDE</rdfs:label>
+        <rdfs:label xml:lang="en">ER_PRIDE</rdfs:label>
     </owl:Class>
     
 
@@ -2515,7 +2515,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000099/NFDI4PSO_1000133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000096/NFDI4PSO_1000131"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000099</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_GEO_RNASEQ</rdfs:label>
+        <rdfs:label xml:lang="en">ER_GEO_RNASEQ</rdfs:label>
     </owl:Class>
     
 
@@ -2525,7 +2525,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000100/NFDI4PSO_1000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000096/NFDI4PSO_1000131"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000100</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_GEO_MICROARRAY</rdfs:label>
+        <rdfs:label xml:lang="en">ER_GEO_MICROARRAY</rdfs:label>
     </owl:Class>
     
 
@@ -2534,7 +2534,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000101/NFDI4PSO_1000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
-        <rdfs:label xml:lang="de">ER_GenBank</rdfs:label>
+        <rdfs:label xml:lang="en">ER_GenBank</rdfs:label>
     </owl:Class>
     
 
@@ -2544,7 +2544,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000102/NFDI4PSO_1000136">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000102</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_SRA</rdfs:label>
+        <rdfs:label xml:lang="en">ER_SRA</rdfs:label>
     </owl:Class>
     
 
@@ -2554,7 +2554,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000104/NFDI4PSO_1000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000104</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_ArrayExpress</rdfs:label>
+        <rdfs:label xml:lang="en">ER_ArrayExpress</rdfs:label>
     </owl:Class>
     
 
@@ -2564,7 +2564,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000104/NFDI4PSO_1000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000103</oboInOwl:id>
-        <rdfs:label xml:lang="de">ER_ENA</rdfs:label>
+        <rdfs:label xml:lang="en">ER_ENA</rdfs:label>
     </owl:Class>
     
 
