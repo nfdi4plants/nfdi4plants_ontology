@@ -38,7 +38,7 @@
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000117 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000117">
-        <rdfs:label xml:lang="de">hasdefinition</rdfs:label>
+        <rdfs:label xml:lang="en">hasdefinition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -58,7 +58,7 @@
     <!-- http://purl.org/isatab/NFDI4PSO_0000085 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/isatab/NFDI4PSO_0000085">
-        <rdfs:label xml:lang="de">hasTemplate</rdfs:label>
+        <rdfs:label xml:lang="en">hasTemplate</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -148,7 +148,10 @@
 
     <!-- http://purl.obolibrary.org/obo/is_unit_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/is_unit_of"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/is_unit_of">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UO_0000005"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
+    </owl:ObjectProperty>
     
 
 
@@ -448,7 +451,10 @@
 
     <!-- http://purl.org/isatab#hasParameter -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#hasParameter"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#hasParameter">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000225"/>
+    </owl:ObjectProperty>
     
 
 
@@ -918,7 +924,7 @@
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000146</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</rdfs:label>
+         <rdfs:label xml:lang="en">temperature</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
@@ -942,7 +948,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urea nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001025</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urea nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">urea nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001025"/>
@@ -965,7 +971,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTA nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001026</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTA nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">MTA nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001026"/>
@@ -990,7 +996,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alanine nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001027</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alanine nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">alanine nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001027"/>
@@ -1015,7 +1021,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glutamate nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001028</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glutamate nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">glutamate nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001028"/>
@@ -1040,7 +1046,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginine nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001029</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginine nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">arginine nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001029"/>
@@ -1065,7 +1071,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001030</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">ornithine nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001030"/>
@@ -1090,7 +1096,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glutamine nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001031</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glutamine nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">glutamine nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001031"/>
@@ -1115,7 +1121,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited carbon treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001044</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited carbon exposure</rdfs:label>
+         <rdfs:label xml:lang="en">limited carbon exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001044"/>
@@ -1140,7 +1146,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited magnesium treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001049</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited magnesium exposure</rdfs:label>
+         <rdfs:label xml:lang="en">limited magnesium exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001049"/>
@@ -1169,7 +1175,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited nitrogen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001050</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited nitrogen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">limited nitrogen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001050"/>
@@ -1194,7 +1200,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited potassium treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001051</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited potassium exposure</rdfs:label>
+         <rdfs:label xml:lang="en">limited potassium exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001051"/>
@@ -1219,7 +1225,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited sulfur treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001052</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited sulfur exposure</rdfs:label>
+         <rdfs:label xml:lang="en">limited sulfur exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001052"/>
@@ -1242,7 +1248,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited nitrate treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001054</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limited nitrate exposure</rdfs:label>
+         <rdfs:label xml:lang="en">limited nitrate exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001054"/>
@@ -1264,7 +1270,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO_GIT:112</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001064</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potassium fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">potassium fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001064"/>
@@ -1286,7 +1292,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muriate of potash exposure (related)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001065</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potassium chloride exposure</rdfs:label>
+         <rdfs:label xml:lang="en">potassium chloride exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001065"/>
@@ -1309,7 +1315,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001067</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Castor meal is a by-product of castor oil production from seeds of the Castor (Ricinus communis) plant and has a high nitrogen content.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">castor meal exposure</rdfs:label>
+         <rdfs:label xml:lang="en">castor meal exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001067"/>
@@ -1333,7 +1339,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001068</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rapeseed meal is a by-product of rapeseed oil production from seeds of the Rapeseed (Brassica napus L.) plant and has a high protein content.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rapeseed meal exposure</rdfs:label>
+         <rdfs:label xml:lang="en">rapeseed meal exposure</rdfs:label>
     </owl:Class>
     
 
@@ -1349,7 +1355,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0001069</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green manure is created by leaving uprooted or sown crop parts to wither on a field so that they serve as a mulch and soil amendment.  The plants used for green manure are often cover crops grown primarily for this purpose.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">green manure exposure</rdfs:label>
+         <rdfs:label xml:lang="en">green manure exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0001069"/>
@@ -1375,7 +1381,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-mineral nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007043</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-mineral nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">non-mineral nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007043"/>
@@ -1396,7 +1402,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007045</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These plant macronutrients are required by the plant in greatest quantities for normal growth.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary plant macronutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">primary plant macronutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007045"/>
@@ -1417,7 +1423,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary macronutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007046</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary macronutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">secondary macronutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007046"/>
@@ -1437,7 +1443,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007047</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">other nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007047"/>
@@ -1477,7 +1483,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil texture treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007050</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil texture exposure</rdfs:label>
+         <rdfs:label xml:lang="en">soil texture exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007050"/>
@@ -1497,7 +1503,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil pH environment treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007058</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil pH environment exposure</rdfs:label>
+         <rdfs:label xml:lang="en">soil pH environment exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007058"/>
@@ -1538,7 +1544,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfate fertilizer treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007079</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfate fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">sulfate fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007079"/>
@@ -1559,7 +1565,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fertilizer treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007085</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007085"/>
@@ -1579,7 +1585,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical fertilizer treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007086</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">chemical fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007086"/>
@@ -1600,7 +1606,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic fertilizer regimen (related)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007087</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">natural fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007087"/>
@@ -1620,7 +1626,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone meal treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007089</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone meal exposure</rdfs:label>
+         <rdfs:label xml:lang="en">bone meal exposure</rdfs:label>
     </owl:Class>
     
 
@@ -1634,7 +1640,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seaweed extract treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007091</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seaweed extract exposure</rdfs:label>
+         <rdfs:label xml:lang="en">seaweed extract exposure</rdfs:label>
     </owl:Class>
     
 
@@ -1648,7 +1654,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wood ash treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007092</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wood ash exposure</rdfs:label>
+         <rdfs:label xml:lang="en">wood ash exposure</rdfs:label>
     </owl:Class>
     
 
@@ -1662,7 +1668,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fish meal treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007093</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fish meal exposure</rdfs:label>
+         <rdfs:label xml:lang="en">fish meal exposure</rdfs:label>
     </owl:Class>
     
 
@@ -1676,7 +1682,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superphosphate treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007100</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superphosphate exposure</rdfs:label>
+         <rdfs:label xml:lang="en">superphosphate exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007100"/>
@@ -1696,7 +1702,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urea treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007101</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urea exposure</rdfs:label>
+         <rdfs:label xml:lang="en">urea exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007101"/>
@@ -1716,7 +1722,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrogen fertilizer treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007102</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrogen fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">nitrogen fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007102"/>
@@ -1736,7 +1742,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphate fertilizer treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007103</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphate fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">phosphate fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007103"/>
@@ -1757,7 +1763,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPK fertilizer treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007104</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPK fertilizer exposure</rdfs:label>
+         <rdfs:label xml:lang="en">NPK fertilizer exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007104"/>
@@ -1799,7 +1805,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil type treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007155</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil type exposure</rdfs:label>
+         <rdfs:label xml:lang="en">soil type exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007155"/>
@@ -1819,7 +1825,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorine nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007225</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorine nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">fluorine nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007225"/>
@@ -1839,7 +1845,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromium nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007228</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromium nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">chromium nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007228"/>
@@ -1859,7 +1865,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iodine nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007230</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iodine nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">iodine nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007230"/>
@@ -1879,7 +1885,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO_GIT:81</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007231</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study type</rdfs:label>
+         <rdfs:label xml:lang="en">study type</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007231"/>
@@ -1900,7 +1906,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selenium nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007232</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selenium nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">selenium nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007232"/>
@@ -1920,7 +1926,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007235</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">silicon nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007235"/>
@@ -1941,7 +1947,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007240</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The macronutrients comprise the elements required by the plant in relatively large quantities for normal growth.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant macronutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">plant macronutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007240"/>
@@ -1984,7 +1990,7 @@
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007248</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007248</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">greenhouse study</rdfs:label>
+         <rdfs:label xml:lang="en">greenhouse study</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007248"/>
@@ -2003,7 +2009,7 @@
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007255</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007255</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory study</rdfs:label>
+         <rdfs:label xml:lang="en">laboratory study</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007255"/>
@@ -2023,7 +2029,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open field study (related)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007256</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field study</rdfs:label>
+         <rdfs:label xml:lang="en">field study</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007256"/>
@@ -2043,7 +2049,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil water content treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007259</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil water content exposure</rdfs:label>
+         <rdfs:label xml:lang="en">soil water content exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007259"/>
@@ -2065,7 +2071,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro solid growth medium treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007262</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro solid growth medium exposure</rdfs:label>
+         <rdfs:label xml:lang="en">in vitro solid growth medium exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007262"/>
@@ -2088,7 +2094,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro liquid growth medium treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007265</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vitro liquid growth medium exposure</rdfs:label>
+         <rdfs:label xml:lang="en">in vitro liquid growth medium exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007265"/>
@@ -2131,7 +2137,7 @@
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007269</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007269</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growth chamber study</rdfs:label>
+         <rdfs:label xml:lang="en">growth chamber study</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007269"/>
@@ -2151,7 +2157,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cobalt nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007276</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cobalt nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">cobalt nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007276"/>
@@ -2171,7 +2177,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxygen treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007278</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxygen exposure</rdfs:label>
+         <rdfs:label xml:lang="en">oxygen exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007278"/>
@@ -2190,7 +2196,7 @@
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EO:0007280</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007280</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown study type</rdfs:label>
+         <rdfs:label xml:lang="en">unknown study type</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007280"/>
@@ -2212,7 +2218,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrogen macronutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007284</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrogen macronutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">nitrogen macronutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007284"/>
@@ -2235,7 +2241,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007288</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">magnesium nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007288"/>
@@ -2255,7 +2261,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potassium nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007293</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potassium nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">potassium nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007293"/>
@@ -2275,7 +2281,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfur nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007295</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfur nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">sulfur nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007295"/>
@@ -2295,7 +2301,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007297</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">calcium nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007297"/>
@@ -2315,7 +2321,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007303</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">carbon nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007303"/>
@@ -2335,7 +2341,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aluminum nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007306</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aluminum nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">aluminum nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007306"/>
@@ -2355,7 +2361,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorus nutrient treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007397</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorus nutrient exposure</rdfs:label>
+         <rdfs:label xml:lang="en">phosphorus nutrient exposure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PECO_0007397"/>
@@ -2374,7 +2380,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoagland solution treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007405</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoagland solution exposure</rdfs:label>
+        <rdfs:label xml:lang="en">Hoagland solution exposure</rdfs:label>
     </owl:Class>
     
 
@@ -2387,7 +2393,7 @@
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate treatment (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_experimental_conditions_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PECO:0007406</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate exposure</rdfs:label>
+         <rdfs:label xml:lang="en">nitrate exposure</rdfs:label>
     </owl:Class>
     
 
@@ -2408,7 +2414,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A unit which is a standard measure of the average kinetic energy of the particles in a sample of matter.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature unit</rdfs:label>
+         <rdfs:label xml:lang="en">temperature unit</rdfs:label>
         <oboInOwl1:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature derived unit</oboInOwl1:hasExactSynonym>
     </owl:Class>
     
@@ -3006,7 +3012,7 @@
     <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000087">
         <isatab:NFDI4PSO_0000085 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2EXT04_DNA</isatab:NFDI4PSO_0000085>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:0000087</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA extraction</rdfs:label>
+         <rdfs:label xml:lang="en">DNA extraction</rdfs:label>
     </owl:Class>
     
 
@@ -3016,7 +3022,7 @@
     <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000088">
         <isatab:NFDI4PSO_0000085 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2EXT03_Metabolites</isatab:NFDI4PSO_0000085>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:0000088</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolite Extraction</rdfs:label>
+         <rdfs:label xml:lang="en">Metabolite Extraction</rdfs:label>
     </owl:Class>
     
 
@@ -3026,7 +3032,7 @@
     <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000089">
         <isatab:NFDI4PSO_0000085 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2EXT02_Protein</isatab:NFDI4PSO_0000085>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:0000089</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein Extraction</rdfs:label>
+         <rdfs:label xml:lang="en">Protein Extraction</rdfs:label>
     </owl:Class>
     
 
@@ -3105,7 +3111,7 @@
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000088/NFDI4PSO_1000125">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000088</oboInOwl:id>
-        <rdfs:label xml:lang="de">total RNA</rdfs:label>
+        <rdfs:label xml:lang="en">total RNA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3115,7 +3121,7 @@
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000089/NFDI4PSO_1000123">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000089</oboInOwl:id>
-        <rdfs:label xml:lang="de">polyA RNA</rdfs:label>
+        <rdfs:label xml:lang="en">polyA RNA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3125,7 +3131,7 @@
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000090/NFDI4PSO_1000119">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000090</oboInOwl:id>
-        <rdfs:label xml:lang="de">cytoplasmic RNA</rdfs:label>
+        <rdfs:label xml:lang="en">cytoplasmic RNA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3135,7 +3141,7 @@
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000091/NFDI4PSO_1000121">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000091</oboInOwl:id>
-        <rdfs:label xml:lang="de">nuclear RNA</rdfs:label>
+        <rdfs:label xml:lang="en">nuclear RNA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3145,7 +3151,7 @@
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000092/NFDI4PSO_1000120">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000092</oboInOwl:id>
-        <rdfs:label xml:lang="de">genomic DNA</rdfs:label>
+        <rdfs:label xml:lang="en">genomic DNA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3155,7 +3161,7 @@
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000093/NFDI4PSO_1000124">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000093</oboInOwl:id>
-        <rdfs:label xml:lang="de">protein</rdfs:label>
+        <rdfs:label xml:lang="en">protein</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3164,7 +3170,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000094/NFDI4PSO_1000122">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
-        <rdfs:label xml:lang="de">other</rdfs:label>
+        <rdfs:label xml:lang="en">other</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3200,17 +3206,17 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.&quot; [BIPM:BIPM, NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</oboInOwl1:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kelvin</rdfs:label>
+         <rdfs:label xml:lang="en">kelvin</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">degree Celsius</rdfs:label>
+         <rdfs:label xml:lang="en">degree Celsius</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000195">
         <oboInOwl1:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</oboInOwl1:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">degree Fahrenheit</rdfs:label>
+         <rdfs:label xml:lang="en">degree Fahrenheit</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
