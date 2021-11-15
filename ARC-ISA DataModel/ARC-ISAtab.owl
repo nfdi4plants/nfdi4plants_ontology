@@ -308,7 +308,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000205">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000149"/>
         <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000206"/>
-        <rdfs:label xml:lang="en">hasSource</rdfs:label>
+        <rdfs:label xml:lang="en">hasBioSource</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -543,6 +543,46 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_00000298 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000298">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35225"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000297"/>
+        <rdfs:label xml:lang="en">hasBufferVolume</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000301 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000301">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000299"/>
+        <rdfs:label xml:lang="en">hasAmount</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000303 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000303">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000261"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000302"/>
+        <rdfs:label xml:lang="en">hasExtractionMethod</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000305 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000305">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000261"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000304"/>
+        <rdfs:label xml:lang="en">hasPurificationMethod</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/isatab#hasParameter -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isatab#hasParameter">
@@ -555,7 +595,6 @@
     <!-- http://purl.org/isatab#hasProcess -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isatab#hasProcess">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#Extraction_process"/>
         <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000212"/>
     </owl:ObjectProperty>
     
@@ -885,7 +924,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000244">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">hasSourceName</rdfs:label>
+        <rdfs:label xml:lang="en">hasBioSourceName</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -895,7 +934,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/isatab#ARC_00000245">
         <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000206"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">hasSampleName</rdfs:label>
+        <rdfs:label xml:lang="en">hasBioSampleName</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1035,6 +1074,51 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35225">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000225"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any substance or mixture of substances that, in solution (typically aqueous), resists change in pH upon addition of small amounts of acid or base.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buffer compound</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buffer compounds</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:35225</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buffer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buffer compound</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buffer compounds</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MS_1001045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1001045">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000225"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The name of the cleavage agent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MS:1001045</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleavage agent name</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1001045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The name of the cleavage agent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:PI</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -12014,18 +12098,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab/NFDI4PSO_0000091"/>
-        <NFDI4PSO_0000012:NFDI4PSO_1000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The biological entity (e.g. RNA, DNA, metabolites, proteins, lipids) to be extracted from a biosource targeted for assay / measurement.”</NFDI4PSO_0000012:NFDI4PSO_1000117>
-        <has_ER_target_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAMPLES_molecule</has_ER_target_term>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:0000012</oboInOwl:id>
-        <rdfs:label xml:lang="en">Bio entity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126">
@@ -12488,6 +12560,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000270">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000206"/>
+        <rdfs:comment>&apos;&apos;Will be deleted&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">Specimen</rdfs:label>
     </owl:Class>
     
@@ -12496,17 +12569,8 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.org/isatab#ARC_00000271 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000271">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000215"/>
         <rdfs:label xml:lang="en">NextGenerationSequencing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000272 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000272">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
-        <rdfs:label xml:lang="en">MeasurementProtocol</rdfs:label>
     </owl:Class>
     
 
@@ -12514,7 +12578,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.org/isatab#ARC_00000273 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000273">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000215"/>
         <rdfs:label xml:lang="en">MassSpectrometry</rdfs:label>
     </owl:Class>
     
@@ -12600,21 +12664,47 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.org/isatab#Bio_entity -->
+    <!-- http://purl.org/isatab#ARC_00000297 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#Bio_entity">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab/NFDI4PSO_0000092"/>
-        <NFDI4PSO_0000012:NFDI4PSO_1000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The biological entity (e.g. RNA, DNA, metabolites, proteins, lipids) to be extracted from a biosource targeted for assay / measurement.”</NFDI4PSO_0000012:NFDI4PSO_1000117>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:0000012</oboInOwl:id>
-        <rdfs:label xml:lang="en">Bio entity</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000297">
+        <rdfs:label xml:lang="en">bufferVolume</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/isatab#Extraction_process -->
+    <!-- http://purl.org/isatab#ARC_00000299 -->
 
-    <owl:Class rdf:about="http://purl.org/isatab#Extraction_process">
-        <rdfs:label xml:lang="en">Extraction process</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000299">
+        <NFDI4PSO_0000012:NFDI4PSO_1000117>This is the amount taken from BioSource for the extraction of the bioentity. It is measured as weight, concentration, or volume</NFDI4PSO_0000012:NFDI4PSO_1000117>
+        <rdfs:label xml:lang="en">BioSourceAmount</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000300 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000300">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000206"/>
+        <rdfs:label xml:lang="en">BioEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000302 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000302">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000225"/>
+        <NFDI4PSO_0000012:NFDI4PSO_1000117>The method to break the cells , e.g. mortar, lysis by enzymesgrinding etc</NFDI4PSO_0000012:NFDI4PSO_1000117>
+        <rdfs:label xml:lang="en">ExtractionMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000304 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000304">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000225"/>
+        <rdfs:label xml:lang="en">PurificationMethod</rdfs:label>
     </owl:Class>
     
 
@@ -12645,46 +12735,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
         <isatab:NFDI4PSO_0000085 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2EXT02_Protein</isatab:NFDI4PSO_0000085>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:0000089</oboInOwl:id>
         <rdfs:label xml:lang="en">Protein Extraction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab/NFDI4PSO_0000091 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000091">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#Extraction_process"/>
-        <isatab:NFDI4PSO_0000085 xml:lang="en">2EXT01_RNA</isatab:NFDI4PSO_0000085>
-        <rdfs:label xml:lang="en">RNA extraction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab/NFDI4PSO_0000092 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000092">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#Extraction_process"/>
-        <isatab:NFDI4PSO_0000085 xml:lang="en">2EXT04_DNA</isatab:NFDI4PSO_0000085>
-        <rdfs:label xml:lang="en">DNA extraction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab/NFDI4PSO_0000093 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000093">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#Extraction_process"/>
-        <isatab:NFDI4PSO_0000085 xml:lang="en">2EXT03_Metabolites</isatab:NFDI4PSO_0000085>
-        <rdfs:label xml:lang="en">Metabolite extraction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab/NFDI4PSO_0000094 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000094">
-        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#Extraction_process"/>
-        <isatab:NFDI4PSO_0000085 xml:lang="en">2EXT02_Protein</isatab:NFDI4PSO_0000085>
-        <rdfs:label xml:lang="en">Protein extraction</rdfs:label>
     </owl:Class>
     
 
@@ -12721,7 +12771,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000088/NFDI4PSO_1000125 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000088/NFDI4PSO_1000125">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000088</oboInOwl:id>
         <rdfs:label xml:lang="en">total RNA</rdfs:label>
     </owl:NamedIndividual>
@@ -12731,7 +12780,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000089/NFDI4PSO_1000123 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000089/NFDI4PSO_1000123">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000089</oboInOwl:id>
         <rdfs:label xml:lang="en">polyA RNA</rdfs:label>
     </owl:NamedIndividual>
@@ -12741,7 +12789,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000090/NFDI4PSO_1000119 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000090/NFDI4PSO_1000119">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000090</oboInOwl:id>
         <rdfs:label xml:lang="en">cytoplasmic RNA</rdfs:label>
     </owl:NamedIndividual>
@@ -12751,7 +12798,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000091/NFDI4PSO_1000121 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000091/NFDI4PSO_1000121">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000091</oboInOwl:id>
         <rdfs:label xml:lang="en">nuclear RNA</rdfs:label>
     </owl:NamedIndividual>
@@ -12761,7 +12807,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000092/NFDI4PSO_1000120 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000092/NFDI4PSO_1000120">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000092</oboInOwl:id>
         <rdfs:label xml:lang="en">genomic DNA</rdfs:label>
     </owl:NamedIndividual>
@@ -12771,7 +12816,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000093/NFDI4PSO_1000124 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000093/NFDI4PSO_1000124">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000093</oboInOwl:id>
         <rdfs:label xml:lang="en">protein</rdfs:label>
     </owl:NamedIndividual>
@@ -12781,7 +12825,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000094/NFDI4PSO_1000122 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000094/NFDI4PSO_1000122">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_0000012/NFDI4PSO_1000115"/>
         <rdfs:label xml:lang="en">other</rdfs:label>
     </owl:NamedIndividual>
     
