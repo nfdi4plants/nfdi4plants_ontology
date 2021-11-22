@@ -634,6 +634,38 @@
     
 
 
+    <!-- http://purl.org/isatab#ARC_00000330 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000330">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/isatab#ARC_00000285"/>
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000329"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000326"/>
+        <rdfs:label xml:lang="en">hasLabellingSample</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000331 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000331">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/isatab#ARC_00000284"/>
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000329"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000328"/>
+        <rdfs:label xml:lang="en">hasLabellingSource</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000332 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000332">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000150"/>
+        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000126"/>
+        <rdfs:label xml:lang="en">isPublishedto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/isatab#hasParameter -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isatab#hasParameter">
@@ -653,7 +685,9 @@
 
     <!-- http://purl.org/isatab#has_ER_target -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#has_ER_target"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/isatab#has_ER_target">
+        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000126"/>
+    </owl:ObjectProperty>
     
 
 
@@ -12358,19 +12392,10 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126">
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000095</oboInOwl:id>
-        <rdfs:label xml:lang="en">ER_EndpointRepositories</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000096/NFDI4PSO_1000131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000096/NFDI4PSO_1000131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000096</oboInOwl:id>
         <rdfs:label xml:lang="en">ER_GEO</rdfs:label>
     </owl:Class>
@@ -12380,7 +12405,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000097/NFDI4PSO_1000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000097/NFDI4PSO_1000134">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000097</oboInOwl:id>
         <rdfs:label xml:lang="en">ER_METABOLIGHTS</rdfs:label>
     </owl:Class>
@@ -12390,7 +12415,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000098/NFDI4PSO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000098/NFDI4PSO_1000135">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000098</oboInOwl:id>
         <rdfs:label xml:lang="en">ER_PRIDE</rdfs:label>
     </owl:Class>
@@ -12420,7 +12445,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000101/NFDI4PSO_1000129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000101/NFDI4PSO_1000129">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000126"/>
         <rdfs:label xml:lang="en">ER_GenBank</rdfs:label>
     </owl:Class>
     
@@ -12429,19 +12454,9 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000102/NFDI4PSO_1000136 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000102/NFDI4PSO_1000136">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000102</oboInOwl:id>
         <rdfs:label xml:lang="en">ER_SRA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000104/NFDI4PSO_1000127 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000104/NFDI4PSO_1000127">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000104</oboInOwl:id>
-        <rdfs:label xml:lang="en">ER_ArrayExpress</rdfs:label>
     </owl:Class>
     
 
@@ -12449,7 +12464,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/NFDI4PSO_1000104/NFDI4PSO_1000128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NFDI4PSO_1000104/NFDI4PSO_1000128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NFDI4PSO_1000095/NFDI4PSO_1000126"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000126"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000103</oboInOwl:id>
         <rdfs:label xml:lang="en">ER_ENA</rdfs:label>
     </owl:Class>
@@ -12461,6 +12476,15 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0007231#ARC_00000267">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000225"/>
         <rdfs:label xml:lang="en">Humidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000126 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000126">
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000095</oboInOwl:id>
+        <rdfs:label xml:lang="en">ER_EndpointRepositories</rdfs:label>
     </owl:Class>
     
 
@@ -12550,6 +12574,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.org/isatab#ARC_00000202 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000202">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000325"/>
         <rdfs:label xml:lang="en">Source</rdfs:label>
     </owl:Class>
     
@@ -12591,6 +12616,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.org/isatab#ARC_00000212 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000212">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000325"/>
         <rdfs:label xml:lang="en">Sample</rdfs:label>
     </owl:Class>
     
@@ -13064,6 +13090,53 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.org/isatab#ARC_00000325 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000325">
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000326 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000326">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000201"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000325"/>
+        <rdfs:label xml:lang="en">Extract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000328 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000328">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000201"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000325"/>
+        <rdfs:label xml:lang="en">LabelledExtract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000329 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000329">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000262"/>
+        <rdfs:label xml:lang="en">Labelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_1000127 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_1000127">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000126"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NFDI4PSO:1000104</oboInOwl:id>
+        <rdfs:label xml:lang="en">ER_ArrayExpress</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/isatab/NFDI4PSO_0000087 -->
 
     <owl:Class rdf:about="http://purl.org/isatab/NFDI4PSO_0000087">
@@ -13215,8 +13288,8 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000012">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.&quot; [BIPM:BIPM, NIST:NIST]</rdfs:comment>
-        <rdfs:label xml:lang="en">kelvin</rdfs:label>
         <oboInOwl1:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</oboInOwl1:hasExactSynonym>
+        <rdfs:label xml:lang="en">kelvin</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000027">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.&quot; [NIST:NIST]</rdfs:comment>
