@@ -413,16 +413,6 @@
     
 
 
-    <!-- http://purl.org/isatab#ARC_00000224 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000224">
-        <rdfs:domain rdf:resource="http://purl.org/isatab#ARC_00000208"/>
-        <rdfs:range rdf:resource="http://purl.org/isatab#ARC_00000225"/>
-        <rdfs:label xml:lang="en">hasProtocolParameter</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/isatab#ARC_00000226 -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isatab#ARC_00000226">
@@ -12583,6 +12573,14 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.org/isatab#ARC_00000204 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000204">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/isatab#ARC_00000225"/>
+                    <rdf:Description rdf:about="http://purl.org/isatab#ARC_00000295"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:label xml:lang="en">Factor</rdfs:label>
     </owl:Class>
     
@@ -12855,6 +12853,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.org/isatab#ARC_00000271 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000271">
+        <owl:equivalentClass rdf:resource="http://purl.org/isatab#ARC_00000338"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000215"/>
         <rdfs:label xml:lang="en">NextGenerationSequencing</rdfs:label>
     </owl:Class>
@@ -12864,6 +12863,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.org/isatab#ARC_00000273 -->
 
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000273">
+        <owl:equivalentClass rdf:resource="http://purl.org/isatab#ARC_00000337"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000215"/>
         <rdfs:label xml:lang="en">MassSpectrometry</rdfs:label>
     </owl:Class>
@@ -12930,14 +12930,6 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000292">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000295"/>
         <rdfs:label xml:lang="en">DevelopmentalStage</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/isatab#ARC_00000294 -->
-
-    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000294">
-        <rdfs:label xml:lang="en">Factor</rdfs:label>
     </owl:Class>
     
 
@@ -13123,6 +13115,33 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.org/isatab#ARC_00000329">
         <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000262"/>
         <rdfs:label xml:lang="en">Labelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000336 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000336">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000208"/>
+        <rdfs:label xml:lang="en">MeasurementProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000337 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000337">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000336"/>
+        <rdfs:label xml:lang="en">MassSpectrometryProtocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/isatab#ARC_00000338 -->
+
+    <owl:Class rdf:about="http://purl.org/isatab#ARC_00000338">
+        <rdfs:subClassOf rdf:resource="http://purl.org/isatab#ARC_00000336"/>
+        <rdfs:label xml:lang="en">NextGenerationSequencingProtocol</rdfs:label>
     </owl:Class>
     
 
