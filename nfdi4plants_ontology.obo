@@ -514,6 +514,11 @@ id: NFDI4PSO:0002000
 name: alias
 def: Unique identificator for a study. This is used to link experiments to the study.
 
+[Term]
+id: NFDI4PSO:0002001
+name: study_abstract
+def: Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication.
+
 
 [Term]
 id: NFDI4PSO:1000000
