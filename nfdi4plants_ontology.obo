@@ -510,6 +510,12 @@ def: "Method used for rRNA depletion during construction of the sequencing libra
 comment: "see also http://purl.obolibrary.org/obo/NCIT_C18685"
 
 [Term]
+id: NFDI4PSO:0002000
+name: alias
+def: Unique identificator for a study. This is used to link experiments to the study.
+
+
+[Term]
 id: NFDI4PSO:1000000
 name: _NotUse_TemplateTerm
 def: "This is a helper term, since I was unable to properly handle custom `property_value` tags with Protege... Dominik" []
