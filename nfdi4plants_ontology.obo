@@ -519,6 +519,11 @@ id: NFDI4PSO:0002001
 name: study_abstract
 def: Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication.
 
+[Term]
+id: NFDI4PSO:0002002
+name: title
+def: Title of the study as would be used in a publication.
+
 
 [Term]
 id: NFDI4PSO:1000000
