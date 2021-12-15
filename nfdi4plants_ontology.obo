@@ -1695,7 +1695,7 @@ def: "The presence of a constituent, impurity, or some other undesirable element
 
 [Term]
 id: NFDI4PSO:1000151
-name: axanic
+name: Axenic
 def: "Free from other living organisms" []
 is_a: NFDI4PSO:1000150
 
