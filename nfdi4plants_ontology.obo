@@ -1668,3 +1668,10 @@ name: Strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
 xref: http://www.ebi.ac.uk/efo/EFO_0005135
+
+[Term]
+id: NFDI4PSO:1000147
+name: Jar
+is_a: OBI_0000967
+def: "A wide-mouthed cylindrical container made of glass or pottery and typically having a lid" []
+
