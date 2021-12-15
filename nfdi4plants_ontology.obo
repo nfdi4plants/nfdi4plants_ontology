@@ -1699,3 +1699,8 @@ name: Axenic
 def: "Free from other living organisms" []
 is_a: NFDI4PSO:1000150
 
+[Term]
+id: NFDI4PSO:1000152
+name: Laboratory strain
+def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
+is_a: NFDI4PSO_1000146
