@@ -1669,4 +1669,9 @@ def: "A population of organisms that is geneticaly different from others of the 
 comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
 xref: http://www.ebi.ac.uk/efo/EFO_0005135
 
+[Term]
+id: NFDI4PSO:1000147
+name: Fabian Test Term
+def: "xxxx" []
+comment: "xxxx"
 
