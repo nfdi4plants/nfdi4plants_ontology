@@ -1687,5 +1687,15 @@ name: Plate
 def: "A flat dish, typically circular" []
 is_a: NFDI4PSO:1000147
 
+[Term]
+id: NFDI4PSO:1000150
+name: Contamination
+xref: http://purl.obolibrary.org/obo/PATO_0015031
+def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
 
+[Term]
+id: NFDI4PSO:1000151
+name: axanic
+def: "Free from other living organisms" []
+is_a: NFDI4PSO:1000150
 
