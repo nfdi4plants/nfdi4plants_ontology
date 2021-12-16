@@ -1668,69 +1668,82 @@ name: Strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
 xref: http://www.ebi.ac.uk/efo/EFO_0005135
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000147
 name: Container
 xref: http://purl.obolibrary.org/obo/OBI_0000967
 def: "A device that can be used to restrict the location of material entities over time" []
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000148
 name: Jar
 def: "A wide-mouthed cylindrical container made of glass or pottery and typically having a lid" []
 is_a: NFDI4PSO:1000147
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000149
 name: Plate
 def: "A flat dish, typically circular" []
 is_a: NFDI4PSO:1000147
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000150
 name: Contamination
 xref: http://purl.obolibrary.org/obo/PATO_0015031
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000151
 name: Axenic
 def: "Free from other living organisms" []
 is_a: NFDI4PSO:1000150
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000152
 name: Laboratory strain
 def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
 is_a: NFDI4PSO_1000146
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000153
 name: Date
 xref: http://purl.org/dc/elements/1.1/date
-def: "the day of the month or year as specified by a number." []
+def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." []
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000154
 name: Volume
 xref: http://purl.obolibrary.org/obo/PATO_0000918
 def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000155
-name: Medium volume
-def: "Milliliter of medium that was used to grow the organism" []
+name: Culture medium volume
+def: "Volume of culture medium used to grow the organism" []
 is_a: NFDI4PSO:1000154
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000156
 name: Light
 xref: http://www.ebi.ac.uk/efo/EFO_0000568
 def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
 [Term]
 id: NFDI4PSO:1000157
 name: Light quality
 def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" []
 is_a: NFDI4PSO:1000156
+comment: "close to the term http://purl.obolibrary.org/obo/PECO_0007154"
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
