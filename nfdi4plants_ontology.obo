@@ -526,6 +526,21 @@ def: Title of the study as would be used in a publication.
 
 
 [Term]
+id: NFDI4PSO:0002003
+name: latitude
+def: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system.
+xref: http://semanticscience.org/resource/SIO_000319
+
+[Term]
+id: NFDI4PSO:0002004
+name: longitude
+def: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system.
+xref: http://semanticscience.org/resource/SIO_000318
+
+
+
+
+[Term]
 id: NFDI4PSO:1000000
 name: _NotUse_TemplateTerm
 def: "This is a helper term, since I was unable to properly handle custom `property_value` tags with Protege... Dominik" []
