@@ -550,7 +550,7 @@ def: Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid.
 [Term]
 id: NFDI4PSO:0002007
 name: investigation type
-def: Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardised by Genomic Standards Consortium
+def: Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium
 
 [Term]
 id: NFDI4PSO:0002008
