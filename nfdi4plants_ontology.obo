@@ -537,8 +537,33 @@ name: longitude
 def: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system.
 xref: http://semanticscience.org/resource/SIO_000318
 
+[Term]
+id: NFDI4PSO:0002005
+name: project name
+def: Name of the project within which the experiment was organized.
+ 
+[Term]
+id: NFDI4PSO:0002006
+name: sequencing method
+def: Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid.
+
+[Term]
+id: NFDI4PSO:0002007
+name: investigation type
+def: Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardised by Genomic Standards Consortium
+
+[Term]
+id: NFDI4PSO:0002008
+name: environment (feature)
+def: Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO
+xref: http://purl.obolibrary.org/obo/ENVO_01000813
 
 
+[Term]
+id: NFDI4PSO:0002009
+name: environment (material)
+def: The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO
+xref: http://purl.obolibrary.org/obo/ENVO_00010483
 
 [Term]
 id: NFDI4PSO:1000000
