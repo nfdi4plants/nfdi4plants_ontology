@@ -566,6 +566,13 @@ def: The environmental material level refers to the material that was displaced 
 xref: http://purl.obolibrary.org/obo/ENVO_00010483
 
 [Term]
+id: NFDI4PSO:0002010
+name: plant-associated environmental package
+def: MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported
+
+
+
+[Term]
 id: NFDI4PSO:1000000
 name: _NotUse_TemplateTerm
 def: "This is a helper term, since I was unable to properly handle custom `property_value` tags with Protege... Dominik" []
