@@ -11,10 +11,6 @@ In order to cover new datatype or a new repository, some terms might be missing
 - Add missing terms
   - if the term is not found in any existing ontology, add it to the nfdi4pso ontology 
 
-## ID Ranges (testing for workshop)
-- Hajira  (100 - 1000)  
-- Silke   (1001-2000)  
-- Xiaoran (2001 - 3000) 
 ## ARC-ISA DataModel
 The first version of ISA-tab data model is depicted below 
 <img src="./ARC-ISA DataModel/ARC-ISAtab.png" >
@@ -22,13 +18,6 @@ The first version of ISA-tab data model is depicted below
 There are two versions ARC-ISAtab.owl, which can be opened in Protege and visualised in Vowl.
 
 ARC-ISAtab-asOBO is the corresponding obo file.
-## To Dos
-
-- [ ] Write How-Tos
-- [ ] Agree on common preferences 
-  - [ ] For User details  
-  - [ ] For new entities
-
 
 ## Notes 
 Current version of the obo flat file format (including terminologies `is_a`, `xref`, etc. 
