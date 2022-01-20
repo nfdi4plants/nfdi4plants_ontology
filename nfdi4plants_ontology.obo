@@ -1794,3 +1794,13 @@ def: "The spectral distribution of light (blue, green, red, far red and other li
 is_a: NFDI4PSO:1000156
 comment: "close to the term http://purl.obolibrary.org/obo/PECO_0007154"
 created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+
+[Term]
+id: NFDI4PSO:1000158
+name: [Demo] Staining solution
+def: "name of the staining solution used during confocal microscopy" []
+comment: "just for demo purposes"
+
+
+
+
