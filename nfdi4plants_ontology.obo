@@ -1795,3 +1795,25 @@ is_a: NFDI4PSO:1000156
 comment: "close to the term http://purl.obolibrary.org/obo/PECO_0007154"
 created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
 
+[Term]
+id: NFDI4PSO:1000158
+name: Ratio
+xref: http://purl.obolibrary.org/obo/UO_0000190
+def: "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b." [UOB:LKSR]
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+
+[Term]
+id: NFDI4PSO:1000159
+name: 260/280 ratio
+def: "Nucleic acids have absorbance maxima at 260 nm. Historically, the ratio of this absorbance maximum to the absorbance at 280 nm has been used as a measure of purity in both DNA and RNA extractions. A 260/280 ratio of ~1.8 is generally accepted as pure for DNA; a ratio of ~2.0 is generally accepted as pure for RNA." []
+is_a: NFDI4PSO:1000158
+comment: "Thermofisher NanoDrop https://tools.thermofisher.com/content/sfs/brochures/T123-NanoDrop-Lite-Interpretation-of-Nucleic-Acid-260-280-Ratios.pdf"
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+
+[Term]
+id: NFDI4PSO:1000160
+name: 260/230 ratio
+def: "The 260/230 values for pure nucleic acid are often higher than the respective 260/280 values. Expected 260/230 values are commonly in the range of 2.0–2.2" []
+is_a: NFDI4PSO:1000158
+comment: "Thermofisher NanoDrop https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/TN52646-E-0215M-NucleicAcid.pdf"
+created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
