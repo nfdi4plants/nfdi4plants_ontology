@@ -1410,32 +1410,39 @@ property_value: ER_target_term "SAMPLES_molecule" xsd:string
 [Term]
 id: NFDI4PSO:1000095
 name: EndpointRepositories
+def: "Parent term to collect endpoint repositories (ER)."
+comment: "For an overview of interesting repositories, check https://www.re3data.org or https://fairsharing.org"
 
 [Term]
 id: NFDI4PSO:1000096
 name: GEO
+def: "GEO (Gene Expression Omnibus) is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted. Tools are provided to help users query and download experiments and curated gene expression profiles. https://www.ncbi.nlm.nih.gov/geo/"
 is_a: NFDI4PSO:1000095 ! EndpointRepositories
 disjoint_from: NFDI4PSO:1000097 ! METABOLIGHTS
 
 [Term]
 id: NFDI4PSO:1000097
 name: METABOLIGHTS
+def: "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. MetaboLights is the recommended Metabolomics repository for a number of leading journals. https://www.ebi.ac.uk/metabolights/"
 is_a: NFDI4PSO:1000095 ! EndpointRepositories
 
 [Term]
 id: NFDI4PSO:1000098
 name: PRIDE
+def: "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. Datasets are submitted to ProteomeXchange via PRIDE and are handled by expert bio-curators. All PRIDE public datasets can also be searched in ProteomeCentral, the portal for all ProteomeXchange datasets. https://www.ebi.ac.uk/pride/"
 is_a: NFDI4PSO:1000095 ! EndpointRepositories
 
 [Term]
 id: NFDI4PSO:1000099
 name: GEO_RNASEQ
+def: "Parent term to collect terms required for RNASeq submission to GEO"
 is_a: NFDI4PSO:1000096 ! GEO
 disjoint_from: NFDI4PSO:1000100 ! GEO_MICROARRAY
 
 [Term]
 id: NFDI4PSO:1000100
 name: GEO_MICROARRAY
+def: "Parent term to collect terms required for microarray submission to GEO"
 is_a: NFDI4PSO:1000096 ! GEO
 
 [Term]
@@ -1750,7 +1757,7 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 id: NFDI4PSO:1000152
 name: Laboratory strain
 def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
-is_a: NFDI4PSO_1000146
+is_a: NFDI4PSO:1000146
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
