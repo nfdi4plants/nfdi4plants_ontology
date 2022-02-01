@@ -9,6 +9,7 @@ ontology: nfdi4pso
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000119> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000120> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000126> \"\"^^xsd:string)\n)
 
 [Term]
 id: NFDI4PSO:0000001
@@ -512,65 +513,61 @@ comment: "see also http://purl.obolibrary.org/obo/NCIT_C18685"
 [Term]
 id: NFDI4PSO:0002000
 name: alias
-def: "Unique identificator for a study. This is used to link experiments to the study."
+def: "Unique identificator for a study. This is used to link experiments to the study." []
 
 [Term]
 id: NFDI4PSO:0002001
 name: study_abstract
-def: "Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication."
+def: "Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication." []
 
 [Term]
 id: NFDI4PSO:0002002
 name: title
-def: "Title of the study as would be used in a publication."
-
+def: "Title of the study as would be used in a publication." []
 
 [Term]
 id: NFDI4PSO:0002003
 name: latitude
-def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system."
+def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
 xref: http://semanticscience.org/resource/SIO_000319
 
 [Term]
 id: NFDI4PSO:0002004
 name: longitude
-def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system."
+def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
 xref: http://semanticscience.org/resource/SIO_000318
 
 [Term]
 id: NFDI4PSO:0002005
 name: project name
-def: "Name of the project within which the experiment was organized."
- 
+def: "Name of the project within which the experiment was organized." []
+
 [Term]
 id: NFDI4PSO:0002006
 name: sequencing method
-def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid."
+def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid." []
 
 [Term]
 id: NFDI4PSO:0002007
 name: investigation type
-def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium"
+def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium" []
 
 [Term]
 id: NFDI4PSO:0002008
 name: environment (feature)
-def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: http://purl.obolibrary.org/obo/ENVO_01000813
-
 
 [Term]
 id: NFDI4PSO:0002009
 name: environment (material)
-def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: http://purl.obolibrary.org/obo/ENVO_00010483
 
 [Term]
 id: NFDI4PSO:0002010
 name: plant-associated environmental package
-def: "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported"
-
-
+def: "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported" []
 
 [Term]
 id: NFDI4PSO:1000000
@@ -1412,40 +1409,40 @@ property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: NFDI4PSO:1000095
-name: _ER_EndpointRepositories
+name: EndpointRepositories
 
 [Term]
 id: NFDI4PSO:1000096
-name: ER_GEO
-is_a: NFDI4PSO:1000095 ! _ER_EndpointRepositories
-disjoint_from: NFDI4PSO:1000097 ! ER_METABOLIGHTS
+name: GEO
+is_a: NFDI4PSO:1000095 ! EndpointRepositories
+disjoint_from: NFDI4PSO:1000097 ! METABOLIGHTS
 
 [Term]
 id: NFDI4PSO:1000097
-name: ER_METABOLIGHTS
-is_a: NFDI4PSO:1000095 ! _ER_EndpointRepositories
+name: METABOLIGHTS
+is_a: NFDI4PSO:1000095 ! EndpointRepositories
 
 [Term]
 id: NFDI4PSO:1000098
-name: ER_PRIDE
-is_a: NFDI4PSO:1000095 ! _ER_EndpointRepositories
+name: PRIDE
+is_a: NFDI4PSO:1000095 ! EndpointRepositories
 
 [Term]
 id: NFDI4PSO:1000099
-name: ER_GEO_RNASEQ
-is_a: NFDI4PSO:1000096 ! ER_GEO
-disjoint_from: NFDI4PSO:1000100 ! ER_GEO_MICROARRAY
+name: GEO_RNASEQ
+is_a: NFDI4PSO:1000096 ! GEO
+disjoint_from: NFDI4PSO:1000100 ! GEO_MICROARRAY
 
 [Term]
 id: NFDI4PSO:1000100
-name: ER_GEO_MICROARRAY
-is_a: NFDI4PSO:1000096 ! ER_GEO
+name: GEO_MICROARRAY
+is_a: NFDI4PSO:1000096 ! GEO
 
 [Term]
 id: NFDI4PSO:1000101
 name: Well
 def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
-xref: https://w3id.org/reproduceme#Well 
+xref: https://w3id.org/reproduceme#Well
 
 [Term]
 id: NFDI4PSO:1000102
@@ -1467,7 +1464,7 @@ xref: http://edamontology.org/data_0990
 id: NFDI4PSO:1000105
 name: Compound identifier
 def: "Identifier of an entry from a database of chemicals." []
-xref: http://edamontology.org/data_1086  
+xref: http://edamontology.org/data_1086
 
 [Term]
 id: NFDI4PSO:1000106
@@ -1497,13 +1494,13 @@ comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.ope
 id: NFDI4PSO:1000110
 name: Antisense Sequence
 def: "The sequence of the antisense strand." []
-comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html" 
+comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html"
 
 [Term]
 id: NFDI4PSO:1000111
 name: Control Type
 def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
-xref: http://purl.obolibrary.org/obo/NCIT_C49647 
+xref: http://purl.obolibrary.org/obo/NCIT_C49647
 
 [Term]
 id: NFDI4PSO:1000112
@@ -1521,7 +1518,7 @@ comment: "Needed for imaging templates. Definition form IDR"
 id: NFDI4PSO:1000114
 name: Screen Technology Type
 def: "The type of a high content screening experiment like RNAi screen or antibody screen." []
-comment: "Needed for imaging templates"  
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000115
@@ -1533,7 +1530,7 @@ xref: http://www.ebi.ac.uk/efo/EFO_0007555
 id: NFDI4PSO:1000116
 name: Library Version
 def: "Version of a reagent library used e.g. in high content screening." []
-comment: "Needed for imaging templates" 
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000117
@@ -1549,14 +1546,12 @@ xref: http://purl.obolibrary.org/obo/NCIT_C126370
 
 [Term]
 id: NFDI4PSO:1000119
-name: Cover slip preparation (procedure) 
-def: "" []
-xref: http://snomed.info/id/71661000 
+name: Cover slip preparation (procedure)
+xref: http://snomed.info/id/71661000
 
 [Term]
 id: NFDI4PSO:1000120
-name: Image file path 
-def: "" []
+name: Image file path
 comment: "Needed for imaging templates"
 
 [Term]
@@ -1575,13 +1570,13 @@ xref: http://purl.obolibrary.org/obo/NCIT_C175898
 id: NFDI4PSO:1000123
 name: Imaging Software Version
 def: "The version of the software program to capture and/or process imaging data." []
-comment: "Needed for imaging templates" 
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000124
 name: Imaging Software Settings
 def: "The used settings in the software program to capture and/or process imaging data." []
-comment: "Needed for imaging templates"  
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000125
@@ -1592,7 +1587,6 @@ comment: "Needed for imaging templates"
 [Term]
 id: NFDI4PSO:1000126
 name: Dataset Name
-def: "" []
 comment: "Needed for imaging templates"
 
 [Term]
@@ -1605,7 +1599,7 @@ xref: http://purl.obolibrary.org/obo/NCIT_C178857
 id: NFDI4PSO:1000128
 name: image processing software
 def: "Software used for the processing of microscopy images like for adaption of contrast or stacking." []
-comment: "Needed for imaging templates" 
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000129
@@ -1635,7 +1629,7 @@ xref: http://semanticscience.org/resource/SIO_001051
 id: NFDI4PSO:1000133
 name: feature extraction strategy
 def: "Description of the approach to extract features from microscopy images." []
-comment: "Needed for imaging templates" 
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000134
@@ -1683,7 +1677,7 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000141
 name: Image Dimensionality
 def: "The sizes along the axis of the XYZCT dimensions in a microscopy image." []
-comment: "Needed for imaging templates" 
+comment: "Needed for imaging templates"
 
 [Term]
 id: NFDI4PSO:1000142
@@ -1715,105 +1709,106 @@ name: Strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
 xref: http://www.ebi.ac.uk/efo/EFO_0005135
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000147
 name: Container
-xref: http://purl.obolibrary.org/obo/OBI_0000967
 def: "A device that can be used to restrict the location of material entities over time" []
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+xref: http://purl.obolibrary.org/obo/OBI_0000967
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000148
 name: Jar
 def: "A wide-mouthed cylindrical container made of glass or pottery and typically having a lid" []
-is_a: NFDI4PSO:1000147
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+is_a: NFDI4PSO:1000147 ! Container
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000149
 name: Plate
 def: "A flat dish, typically circular" []
-is_a: NFDI4PSO:1000147
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+is_a: NFDI4PSO:1000147 ! Container
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000150
 name: Contamination
-xref: http://purl.obolibrary.org/obo/PATO_0015031
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+xref: http://purl.obolibrary.org/obo/PATO_0015031
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000151
 name: Axenic
 def: "Free from other living organisms" []
-is_a: NFDI4PSO:1000150
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+is_a: NFDI4PSO:1000150 ! Contamination
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000152
 name: Laboratory strain
 def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
 is_a: NFDI4PSO_1000146
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000153
 name: Date
-xref: http://purl.org/dc/elements/1.1/date
 def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." []
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+xref: http://purl.org/dc/elements/1.1/date
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000154
 name: Volume
-xref: http://purl.obolibrary.org/obo/PATO_0000918
 def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+xref: http://purl.obolibrary.org/obo/PATO_0000918
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000155
 name: Culture medium volume
 def: "Volume of culture medium used to grow the organism" []
-is_a: NFDI4PSO:1000154
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+is_a: NFDI4PSO:1000154 ! Volume
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000156
 name: Light
-xref: http://www.ebi.ac.uk/efo/EFO_0000568
 def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+xref: http://www.ebi.ac.uk/efo/EFO_0000568
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000157
 name: Light quality
 def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" []
-is_a: NFDI4PSO:1000156
 comment: "close to the term http://purl.obolibrary.org/obo/PECO_0007154"
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+is_a: NFDI4PSO:1000156 ! Light
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000158
 name: Ratio
-xref: http://purl.obolibrary.org/obo/UO_0000190
 def: "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b." [UOB:LKSR]
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+xref: http://purl.obolibrary.org/obo/UO_0000190
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000159
 name: 260/280 ratio
 def: "Nucleic acids have absorbance maxima at 260 nm. Historically, the ratio of this absorbance maximum to the absorbance at 280 nm has been used as a measure of purity in both DNA and RNA extractions. A 260/280 ratio of ~1.8 is generally accepted as pure for DNA; a ratio of ~2.0 is generally accepted as pure for RNA." []
-is_a: NFDI4PSO:1000158
 comment: "Thermofisher NanoDrop https://tools.thermofisher.com/content/sfs/brochures/T123-NanoDrop-Lite-Interpretation-of-Nucleic-Acid-260-280-Ratios.pdf"
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+is_a: NFDI4PSO:1000158 ! Ratio
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000160
 name: 260/230 ratio
 def: "The 260/230 values for pure nucleic acid are often higher than the respective 260/280 values. Expected 260/230 values are commonly in the range of 2.0–2.2" []
-is_a: NFDI4PSO:1000158
 comment: "Thermofisher NanoDrop https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/TN52646-E-0215M-NucleicAcid.pdf"
-created_by: "Fabian Haas | ORCID:0000-0002-7711-5282"
+is_a: NFDI4PSO:1000158 ! Ratio
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
