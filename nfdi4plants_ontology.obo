@@ -512,63 +512,63 @@ comment: "see also http://purl.obolibrary.org/obo/NCIT_C18685"
 [Term]
 id: NFDI4PSO:0002000
 name: alias
-def: Unique identificator for a study. This is used to link experiments to the study.
+def: "Unique identificator for a study. This is used to link experiments to the study."
 
 [Term]
 id: NFDI4PSO:0002001
 name: study_abstract
-def: Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication.
+def: "Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication."
 
 [Term]
 id: NFDI4PSO:0002002
 name: title
-def: Title of the study as would be used in a publication.
+def: "Title of the study as would be used in a publication."
 
 
 [Term]
 id: NFDI4PSO:0002003
 name: latitude
-def: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system.
+def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system."
 xref: http://semanticscience.org/resource/SIO_000319
 
 [Term]
 id: NFDI4PSO:0002004
 name: longitude
-def: The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system.
+def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system."
 xref: http://semanticscience.org/resource/SIO_000318
 
 [Term]
 id: NFDI4PSO:0002005
 name: project name
-def: Name of the project within which the experiment was organized.
+def: "Name of the project within which the experiment was organized."
  
 [Term]
 id: NFDI4PSO:0002006
 name: sequencing method
-def: Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid.
+def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid."
 
 [Term]
 id: NFDI4PSO:0002007
 name: investigation type
-def: Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium
+def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium"
 
 [Term]
 id: NFDI4PSO:0002008
 name: environment (feature)
-def: Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
 xref: http://purl.obolibrary.org/obo/ENVO_01000813
 
 
 [Term]
 id: NFDI4PSO:0002009
 name: environment (material)
-def: The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO
+def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
 xref: http://purl.obolibrary.org/obo/ENVO_00010483
 
 [Term]
 id: NFDI4PSO:0002010
 name: plant-associated environmental package
-def: MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported
+def: "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported"
 
 
 
