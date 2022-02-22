@@ -500,9 +500,9 @@ xref: http://purl.obolibrary.org/obo/CHMO_0000995
 
 [Term]
 id: NFDI4PSO:0000081
-name: elution
-def: "A process wherein one material is extracted from another by interaction with a solvent." []
-xref: http://purl.obolibrary.org/obo/CHMO_0002742
+name: Chromatography gradient
+def: "Settings of the gradient used during (e.g. liquid, gas or ion) chromatography" []
+comment: "term was previously !elution!"
 
 [Term]
 id: NFDI4PSO:0000082
@@ -637,6 +637,63 @@ comment: https://www.ebi.ac.uk/bioimage-archive/
 is_a: NFDI4PSO:1000095 ! Endpoint Repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:04:46Z xsd:dateTime
+created_by: Dominik Brilhaus[Term]
+
+[Term]
+id: NFDI4PSO:0010009
+name: Biosource material state
+def: "The state (typically fresh or dry) of the biosource material (e.g. tissue) prepared for an assay." []
+comment: "Relates to NFDI4PSO:0000013 ! Biosource amount"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010010
+name: Fresh material
+def: "Fresh (non-dry) biosource material" []
+comment: "Relates to https://cropontology.org/rdf/CO_347:0000193 ! Plant FW - Measurement"
+is_a: NFDI4PSO:0010009
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010011
+name: Dry material
+def: "Dry biosource material" []
+comment: "Relates to https://cropontology.org/rdf/CO_347:0000196 ! Plant DW - Measurement"
+is_a: NFDI4PSO:0010009 
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010012
+name: Internal standard
+def: "Internal standard added in known amount to an analytical sample" []
+comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005 ! internal standard role"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010013
+name: Sample volume
+def: "Volume taken from the sample to be assayed (measured)." []
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010014
+name: Chromatography injection volume
+def: "Volume of the sample injected during chromatography" []
+comment: "Relates to http://purl.allotrope.org/ontologies/result#AFR_0001577 ! injection volume setting"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010015
+name: Chromatography injection mode
+def: "This is to specify split / splitless runs during e.g. gas-chromatography." []
+comment: "Compare to http://purl.obolibrary.org/obo/OBI_0000525 ! splitless GC injector"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
 [Term]
