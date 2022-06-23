@@ -1949,21 +1949,3 @@ comment: "Thermofisher NanoDrop https://assets.thermofisher.com/TFS-Assets/CAD/P
 is_a: NFDI4PSO:1000158 ! Ratio
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
-[Term]
-id: DEMO001
-name: DEMO001
-def: "This is a DEMO. Delete me" []
-
-[Term]
-id: DEMO002
-name: DEMO002
-def: "This is child term of DEMO001. Delete me" []
-is_a: DEMO001
-
-
-
-
-
-
-
-
