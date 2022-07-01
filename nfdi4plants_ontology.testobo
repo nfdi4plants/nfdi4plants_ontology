@@ -1,0 +1,1952 @@
+format-version: 1.2
+data-version: init/2020-12-01
+saved-by: muehlhaus
+default-namespace: NFDI4NFDI4PSO
+remark: coverage: Missing Terms for the DataPLANT end-point repository templates
+remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
+remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
+ontology: nfdi4pso
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000119> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000120> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000126> \"\"^^xsd:string)\n)
+treat-xrefs-as-equivalent: Wikipedia
+
+[Term]
+id: NFDI4PSO:0000001
+name: growth plot design
+def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
+synonym: "Experimental Randomisation" RELATED []
+disjoint_from: NFDI4PSO:0000002 ! Read Alignment Software
+
+[Term]
+id: NFDI4PSO:0000002
+name: Read Alignment Software
+def: "The software used for read alignment i.e http://edamontology.org/operation_3198 or http://purl.obolibrary.org/obo/OBI_0002478" []
+comment: “We might need to add the relationship with the class referenced above”
+
+[Term]
+id: NFDI4PSO:0000003
+name: Read Alignment Software Version
+def: "The version of the read alignment software (NFDI4PSO:0000002)." []
+
+[Term]
+id: NFDI4PSO:0000004
+name: Read Alignment Software Parameters
+def: "The parameters of the read alignment software (NFDI4PSO:0000002)." []
+
+[Term]
+id: NFDI4PSO:0000005
+name: Humidity Day
+def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of http://purl.obolibrary.org/obo/PECO_0007197" []
+comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
+
+[Term]
+id: NFDI4PSO:0000006
+name: Humidity Night
+def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of http://purl.obolibrary.org/obo/PECO_0007197”" []
+comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
+
+[Term]
+id: NFDI4PSO:0000007
+name: Temperature Day
+def: "This term defines the air temperature at daytime, it is a specialised concept of http://purl.obolibrary.org/obo/ENVO_09200001" []
+comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
+
+[Term]
+id: NFDI4PSO:0000008
+name: Temperature Night
+def: "This term defines the air temperature at nighttime, it is a specialised concept of http://purl.obolibrary.org/obo/ENVO_09200001”" []
+comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
+
+[Term]
+id: NFDI4PSO:0000009
+name: Sample Collection Method
+def: "Details of method to gather (e.g. scissors, scalpel) or pool the sample, tissue, organ”" []
+
+[Term]
+id: NFDI4PSO:0000010
+name: Metabolism quenching method
+def: "Method used to stop the metabolism in the sample (e.g. shock-freeze in liquid nitrogen). May include the time passed since sample collection.”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000011
+name: Sample storage
+def: "The method used for sample storage. Should include the temperature of the sample. May include the medium (freezer or liquid nitrogen) and/or additional processing (freeze-drying) of the sample”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000012
+name: Bio entity
+def: "The biological entity (e.g. RNA, DNA, metabolites, proteins, lipids) to be extracted from a biosource targeted for assay / measurement.”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000013
+name: Biosource amount
+def: "The amount (typically in milligram) of material from which a bio entity (NFDI4PSO:0000012) is extracted.”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000014
+name: Extraction Kit
+def: "The name of the commercial kit used for extraction of a bio entity (NFDI4PSO:0000012). Should include the company name.”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000015
+name: Library layout
+def: "Determines the choice of DNA sequencing strategy, in which a single read is initiated from each end (paired-end) or one end (single-end) of DNA fragment”" []
+comment: “Adapted from http://purl.obolibrary.org/obo/NCIT_C150423"
+
+[Term]
+id: NFDI4PSO:0000016
+name: Library RNA amount
+def: "Amount of RNA (typically microgram) used as starting material for library construction (http://purl.obolibrary.org/obo/GENEPIO_0001994)”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000017
+name: Base-calling Software
+def: "The name of the software used for base-calling." []
+comment: Alternative: http://edamontology.org/operation_3185
+xref: http://edamontology.org/operation_3185
+
+[Term]
+id: NFDI4PSO:0000018
+name: Base-calling Software Version
+def: "The version of the Base-calling Software (NFDI4PSO:0000017).”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000019
+name: Base-calling Software Parameters
+def: "The parameters of the Base-calling Software (NFDI4PSO:0000017).”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000020
+name: Library strand
+def: "Determines the read direction. Only applies to nucleotide sequencing in paired-end layout (NFDI4PSO:0000015)”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000021
+name: Raw data file format
+def: "File format of the raw data file”" []
+comment: “This is a specialization of https://ifb-elixirfr.github.io/edam-browser/#http://edamontology.org/format_1915"
+
+[Term]
+id: NFDI4PSO:0000022
+name: Raw data file checksum
+def: "Checksum of the raw data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum" []
+
+[Term]
+id: NFDI4PSO:0000023
+name: Data filtering software
+def: "Name of the software applied for data filtering" []
+comment: “For RNA-seq data, this may be a read adapter trimming software (GENEPIO_0002096)”
+
+[Term]
+id: NFDI4PSO:0000024
+name: Data filtering software version
+def: "The version of the data filtering software (NFDI4PSO:0000023).”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000025
+name: Data filtering Software Parameters
+def: "The parameters of the data filtering software (NFDI4PSO:0000023).”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000026
+name: Genome reference sequence
+def: "Name and version of the genome reference.”" []
+comment: “See also http://purl.obolibrary.org/obo/NCIT_C164388 and http://purl.obolibrary.org/obo/MS_1002644”
+
+[Term]
+id: NFDI4PSO:0000027
+name: Processed data file format
+def: "File format of the processed data file”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000028
+name: Processed data file name
+def: "Name of the processed data file”" []
+comment: “”
+
+[Term]
+id: NFDI4PSO:0000029
+name: Processed data file checksum
+def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum" []
+
+[Term]
+id: NFDI4PSO:0000030
+name: Organism
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+xref: http://purl.obolibrary.org/obo/OBI_0100026
+
+[Term]
+id: NFDI4PSO:0000031
+name: Genotype
+def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment." []
+xref: http://www.ebi.ac.uk/efo/EFO_0000513
+
+[Term]
+id: NFDI4PSO:0000032
+name: Organism part
+def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)." []
+xref: http://www.ebi.ac.uk/efo/EFO_0000635
+
+[Term]
+id: NFDI4PSO:0000033
+name: Plant age
+def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." []
+comment: “This is a specialization of http://www.ebi.ac.uk/efo/EFO_0000246"
+
+[Term]
+id: NFDI4PSO:0000034
+name: Time point
+def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
+xref: http://www.ebi.ac.uk/efo/EFO_0000724
+
+[Term]
+id: NFDI4PSO:0000035
+name: Library strategy
+def: "Sequencing technique intended for a next generation sequencing library." []
+xref: http://purl.obolibrary.org/obo/GENEPIO_0001973
+
+[Term]
+id: NFDI4PSO:0000036
+name: Library Selection
+def: "The method used to select for or against, enrich, or screen the material being sequenced." []
+xref: http://purl.obolibrary.org/obo/GENEPIO_0001940
+
+[Term]
+id: NFDI4PSO:0000037
+name: Library preparation kit
+def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids." []
+xref: http://purl.obolibrary.org/obo/GENEPIO_0000085
+
+[Term]
+id: NFDI4PSO:0000038
+name: Library preparation kit version
+def: "The version identifier of a packaged kit tailored for specific sequencing workflows." []
+xref: http://purl.obolibrary.org/obo/GENEPIO_0000149
+
+[Term]
+id: NFDI4PSO:0000039
+name: Adapter sequence
+def: "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters." []
+xref: http://purl.obolibrary.org/obo/GENEPIO_0000083
+
+[Term]
+id: NFDI4PSO:0000040
+name: Next generation sequencing instrument model
+def: "Model name or number of next generation sequencing instrument" []
+xref: http://www.ebi.ac.uk/efo/EFO_0003739
+
+[Term]
+id: NFDI4PSO:0000041
+name: Growth day length
+def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" []
+comment: “Adapted from 'light quantity exposure' http://purl.obolibrary.org/obo/PECO_0007078"
+
+[Term]
+id: NFDI4PSO:0000042
+name: Biological replicate
+def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')" []
+comment: “Similar to http://purl.obolibrary.org/obo/MS_1001809"
+
+[Term]
+id: NFDI4PSO:0000043
+name: MS sample post-extraction
+def: "Specific to metabolomic mass spectrometry assays. Steps performed after sample extraction (e.g. dried in a vacuum concentrator, solid phase microextraction direct injection)" []
+comment: “"
+
+[Term]
+id: NFDI4PSO:0000044
+name: MS sample resuspension
+def: "Specific to metabolomic mass spectrometry assays. Resuspension after sample extraction (e.g. dried samples resuspended in pyridine, dried samples resuspended in acetonitrile)" []
+comment: “"
+
+[Term]
+id: NFDI4PSO:0000045
+name: MS sample type
+def: "Specific to metabolomic mass spectrometry assays. Type of sample (e.g. experimental sample, pooled sample, blank, medium blank, retention index, reference standard, quality control)" []
+comment: “"
+
+[Term]
+id: NFDI4PSO:0000046
+name: Chromatography instrument model
+def: "Company name, and instrument name or serial number of the chromatography instrument" []
+comment: is_a http://purl.obolibrary.org/obo/OBI_0000048
+
+[Term]
+id: NFDI4PSO:0000047
+name: Chromatography autosampler model
+def: "Company name, and name or serial number of the chromatography autosampler model" []
+comment: is_a http://purl.obolibrary.org/obo/OBI_0000555
+
+[Term]
+id: NFDI4PSO:0000048
+name: Chromatography column model
+def: "Company name, and name or serial number of the chromatography column" []
+
+[Term]
+id: NFDI4PSO:0000049
+name: Chromatography guard column model
+def: "Company name, and name or serial number of the chromatography guard column" []
+comment: is_a http://purl.obolibrary.org/obo/OBI_0000614
+
+[Term]
+id: NFDI4PSO:0000050
+name: Extraction buffer
+def: "Chemical buffer, solvent or solution used to extract a component from a biological sample." []
+comment: “related to http://purl.obolibrary.org/obo/OBI_0302884. DB"
+
+[Term]
+id: NFDI4PSO:0000051
+name: Extraction buffer volume
+def: "Volume of the buffer (NFDI4PSO:0000050) used during extraction." []
+comment: related to http://purl.obolibrary.org/obo/OBI_0302884
+
+[Term]
+id: NFDI4PSO:0000052
+name: MS derivatization
+def: "Derivatization for metabolomics mass spectrometry." []
+xref: http://purl.obolibrary.org/obo/CHMO_0001485
+
+[Term]
+id: NFDI4PSO:0000053
+name: Chromatography column type
+def: "Type of chromatography column (NFDI4PSO:0000048)" []
+xref: http://purl.obolibrary.org/obo/CHMO_0001000
+
+[Term]
+id: NFDI4PSO:0000054
+name: Extraction method
+def: "Method or kit that was used to extract DNA or RNA" []
+comment: “More general than NFDI4PSO:0000014, because not everyone uses a kit for RNA/DNA extraction"
+
+[Term]
+id: NFDI4PSO:0000055
+name: Library source
+def: "Type of source material that is being sequenced" []
+xref: http://www.ontobee.org/ontology/GENEPIO?iri=http\://purl.obolibrary.org/obo/GENEPIO_0001965
+
+[Term]
+id: NFDI4PSO:0000056
+name: Library DNA amount
+def: "Amount of DNA (microgram) used as starting material for library construction" []
+comment: “"
+
+[Term]
+id: NFDI4PSO:0000057
+name: Next generation sequencing platform
+def: "Name of the company that produces next generation sequencing instruments" []
+xref: http://purl.obolibrary.org/obo/GENEPIO_0000071
+
+[Term]
+id: NFDI4PSO:0000058
+name: Read length
+def: "Numbers of base pairs per read" []
+xref: http://www.ontobee.org/ontology/GENEPIO?iri=http\://purl.obolibrary.org/obo/GENEPIO_0000076
+
+[Term]
+id: NFDI4PSO:0000059
+name: Sequence assembly method
+def: "Strategy that was used to assemble reads into contigs" []
+comment: “Just two options should be possible: de-novo assembly or mapping"
+xref: http://www.ontobee.org/ontology/GENEPIO?iri=http\://purl.obolibrary.org/obo/GENEPIO_0000090
+
+[Term]
+id: NFDI4PSO:0000060
+name: Sequence assembly algorithm version
+def: "The version of the sequence assembly algorithm (OBI_0001522)" []
+comment: “"
+
+[Term]
+id: NFDI4PSO:0000061
+name: Genome status
+def: "Status of the genome sequence that is uploaded" []
+comment: “Just two options should be possible: full or partial"
+
+[Term]
+id: NFDI4PSO:0000062
+name: RNA quality check
+def: "Measure of RNA quality after RNA extraction. Typically RNA integrity number (RIN) as provided by Agilent BioAnalyzer. Alternatively, RNA integrity checked via gel electrophoresis." []
+
+[Term]
+id: NFDI4PSO:0000063
+name: BioProject Accession Number
+def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345." []
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+xref: http://purl.obolibrary.org/obo/NCIT_C175890
+
+[Term]
+id: NFDI4PSO:0000064
+name: Sample type
+def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly" []
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+xref: http://purl.obolibrary.org/obo/NCIT_C70713
+
+[Term]
+id: NFDI4PSO:0000065
+name: Isolate
+def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system. [Definition Source: NCI]" []
+xref: http://purl.obolibrary.org/obo/NCIT_C53471
+
+[Term]
+id: NFDI4PSO:0000066
+name: Cultivar
+def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
+comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
+xref: http://www.ebi.ac.uk/efo/EFO_0005136
+
+[Term]
+id: NFDI4PSO:0000067
+name: Ecotype
+def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
+comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0000434]"
+xref: http://www.ebi.ac.uk/efo/EFO_0000434
+
+[Term]
+id: NFDI4PSO:0000068
+name: Cell line
+def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [Definition Source: NCI][attribution: On-line Medical Dictionary]" []
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
+xref: http://purl.obolibrary.org/obo/NCIT_C16403
+
+[Term]
+id: NFDI4PSO:0000069
+name: Cell type
+def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]" []
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C12508]"
+xref: http://purl.obolibrary.org/obo/NCIT_C12508
+
+[Term]
+id: NFDI4PSO:0000070
+name: Developmental Stage
+def: "A general term that usually refers to named landmark events during development of an organism. [Definition Source: NCI]" []
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C43531]"
+xref: http://purl.obolibrary.org/obo/NCIT_C43531
+
+[Term]
+id: NFDI4PSO:0000071
+name: Plant disease
+def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent." []
+comment: “[Definition Source: http://purl.obolibrary.org/obo/PSO_0000013]"
+xref: http://purl.obolibrary.org/obo/PSO_0000013
+
+[Term]
+id: NFDI4PSO:0000072
+name: Plant disease stage
+def: "Stage of plant disease (NFDI4PSO:0000071) at the time of sampling." []
+
+[Term]
+id: NFDI4PSO:0000073
+name: Phenotype
+def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601" []
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+xref: http://purl.obolibrary.org/obo/NCIT_C16977
+
+[Term]
+id: NFDI4PSO:0000074
+name: Geogaphic Area
+def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg 'Canada: Vancouver' or 'Germany: halfway down Zugspitze, Alps'" []
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+xref: http://purl.obolibrary.org/obo/NCIT_C16632
+
+[Term]
+id: NFDI4PSO:0000075
+name: Sample Collection Date
+def: "The date on which the sample was collected" []
+xref: http://purl.obolibrary.org/obo/NCIT_C81286
+
+[Term]
+id: NFDI4PSO:0000076
+name: Sample Collected By
+def: "Indicates the person, group, or institution who performed the collection act. [Definition Source: NCI]" []
+comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
+xref: http://purl.obolibrary.org/obo/NCIT_C45262
+
+[Term]
+id: NFDI4PSO:0000077
+name: Metabolite Assignment File
+def: "metabolite assignment file (MAF) as required by MetaboLights to describe metabolites analyzed during a metabolomics assay. Details see: https://www.ebi.ac.uk/metabolights/guides/MAF/Title" []
+comment: “[Definition Source: https://www.ebi.ac.uk/metabolights/guides/MAF/Title"
+
+[Term]
+id: NFDI4PSO:0000078
+name: BioSample Accession Number
+def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" []
+comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
+xref: http://purl.obolibrary.org/obo/NCIT_C175889
+
+[Term]
+id: NFDI4PSO:0000079
+name: label
+def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
+xref: http://purl.obolibrary.org/obo/CHEBI_35209
+
+[Term]
+id: NFDI4PSO:0000080
+name: mobile phase
+def: "A fluid that percolates through or along the stationary bed in chromatography." []
+xref: http://purl.obolibrary.org/obo/CHMO_0000995
+
+[Term]
+id: NFDI4PSO:0000081
+name: Chromatography gradient
+def: "Settings of the gradient used during (e.g. liquid, gas or ion) chromatography" []
+comment: "term was previously !elution!"
+
+[Term]
+id: NFDI4PSO:0000082
+name: rRNA depletion
+def: "Method used for rRNA depletion during construction of the sequencing library." []
+comment: "see also http://purl.obolibrary.org/obo/NCIT_C18685"
+
+[Term]
+id: NFDI4PSO:0002000
+name: alias
+def: "Unique identificator for a study. This is used to link experiments to the study." []
+
+[Term]
+id: NFDI4PSO:0002001
+name: study_abstract
+def: "Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication." []
+
+[Term]
+id: NFDI4PSO:0002002
+name: title
+def: "Title of the study as would be used in a publication." []
+
+[Term]
+id: NFDI4PSO:0002003
+name: latitude
+def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
+xref: http://semanticscience.org/resource/SIO_000319
+
+[Term]
+id: NFDI4PSO:0002004
+name: longitude
+def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
+xref: http://semanticscience.org/resource/SIO_000318
+
+[Term]
+id: NFDI4PSO:0002005
+name: project name
+def: "Name of the project within which the experiment was organized." []
+
+[Term]
+id: NFDI4PSO:0002006
+name: sequencing method
+def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid." []
+
+[Term]
+id: NFDI4PSO:0002007
+name: investigation type
+def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium" []
+
+[Term]
+id: NFDI4PSO:0002008
+name: environment (feature)
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
+xref: http://purl.obolibrary.org/obo/ENVO_01000813
+
+[Term]
+id: NFDI4PSO:0002009
+name: environment (material)
+def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
+xref: http://purl.obolibrary.org/obo/ENVO_00010483
+
+[Term]
+id: NFDI4PSO:0002010
+name: plant-associated environmental package
+def: "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported" []
+
+[Term]
+id: NFDI4PSO:0010000
+name: ENA
+def: "The European Nucleotide Archive (ENA) is an open, supported platform for the management, sharing, integration, archiving and dissemination of sequence data." []
+comment: https://www.ebi.ac.uk/ena/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:33:08Z xsd:dateTime
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010002
+name: BIOSAMPLE
+def: "The BioSample database contains descriptions of biological source materials used in experimental assays." []
+comment: https://www.ncbi.nlm.nih.gov/biosample/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:33:08Z xsd:dateTime
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010004
+name: BIOPROJECT
+def: "A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data types generated for that project." []
+comment: https://www.ncbi.nlm.nih.gov/bioproject/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:58:37Z xsd:dateTime
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010005
+name: GENBANK
+def: "GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences (Nucleic Acids Research, 2013 Jan;41(D1):D36-42). GenBank is part of the International Nucleotide Sequence Database Collaboration, which comprises the DNA DataBank of Japan (DDBJ), the European Nucleotide Archive (ENA), and GenBank at NCBI. These three organizations exchange data on a daily basis." []
+comment: https://www.ncbi.nlm.nih.gov/genbank/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:59:49Z xsd:dateTime
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010006
+name: SRA
+def: "Sequence Read Archive (SRA) data, available through multiple cloud providers and NCBI servers, is the largest publicly available repository of high throughput sequencing data. The archive accepts data from all branches of life as well as metagenomic and environmental surveys. SRA stores raw sequencing data and alignment information to enhance reproducibility and facilitate new discoveries through data analysis." []
+comment: https://www.ncbi.nlm.nih.gov/sra/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:02:27Z xsd:dateTime
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010007
+name: PGP
+def: "Plant Genomics & Phenomics Research Data Repository" []
+comment: https://edal-pgp.ipk-gatersleben.de
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:03:35Z xsd:dateTime
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010008
+name: BIA
+def: "The BioImage Archive (BIA) stores and distributes biological images that are useful to life sciences researchers. It also provides data archiving services to the broader bioimaging database community including added-value bioimaging data resources such as EMPIAR, Cell-IDR and Tissue-IDR." []
+comment: https://www.ebi.ac.uk/bioimage-archive/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:04:46Z xsd:dateTime
+created_by: Dominik Brilhaus[Term]
+
+[Term]
+id: NFDI4PSO:0010009
+name: Biosource material state
+def: "The state (typically fresh or dry) of the biosource material (e.g. tissue) prepared for an assay." []
+comment: "Relates to NFDI4PSO:0000013 ! Biosource amount"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010010
+name: Fresh material
+def: "Fresh (non-dry) biosource material" []
+comment: "Relates to https://cropontology.org/rdf/CO_347:0000193 ! Plant FW - Measurement"
+is_a: NFDI4PSO:0010009
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010011
+name: Dry material
+def: "Dry biosource material" []
+comment: "Relates to https://cropontology.org/rdf/CO_347:0000196 ! Plant DW - Measurement"
+is_a: NFDI4PSO:0010009 
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010012
+name: Internal standard
+def: "Internal standard added in known amount to an analytical sample" []
+comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005 ! internal standard role"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010013
+name: Sample volume
+def: "Volume taken from the sample to be assayed (measured)." []
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010014
+name: Chromatography injection volume
+def: "Volume of the sample injected during chromatography" []
+comment: "Relates to http://purl.allotrope.org/ontologies/result#AFR_0001577 ! injection volume setting"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:0010015
+name: Chromatography injection mode
+def: "This is to specify split / splitless runs during e.g. gas-chromatography." []
+comment: "Compare to http://purl.obolibrary.org/obo/OBI_0000525 ! splitless GC injector"
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+created_by: Dominik Brilhaus
+
+[Term]
+id: NFDI4PSO:1000000
+name: _NotUse_TemplateTerm
+def: "This is a helper term, since I was unable to properly handle custom `property_value` tags with Protege... Dominik" []
+comment: "For property values that are not ontology terms themselves, but literals/strings, add `xsd:string`"
+property_value: ER_target NFDI4PSO:1000099
+property_value: ER_target "Put name of ER here" xsd:string
+property_value: ER_target_term "Put name of ER target term for which this term should be selectable" xsd:string
+property_value: UserInstruction "This could be a place for detailed user instructions in SWATE templates" xsd:string
+
+[Term]
+id: NFDI4PSO:1000003
+name: RNA-Seq
+def: "placeholder def of RNA-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000004
+name: miRNA-Seq
+def: "placeholder def of miRNA-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000005
+name: ncRNA-Seq
+def: "placeholder def of ncRNA-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000006
+name: RNA-Seq (size fractionation)
+def: "placeholder def of RNA-Seq (size fractionation)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000007
+name: RNA-Seq (CAGE)
+def: "placeholder def of RNA-Seq (CAGE)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000008
+name: RNA-Seq (RACE)
+def: "placeholder def of RNA-Seq (RACE)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000009
+name: ssRNA-seq
+def: "placeholder def of ssRNA-seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000010
+name: ChIP-Seq
+def: "placeholder def of ChIP-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000011
+name: MNase-Seq
+def: "placeholder def of MNase-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000012
+name: MBD-Seq
+def: "placeholder def of MBD-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000013
+name: MRE-Seq
+def: "placeholder def of MRE-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000014
+name: Bisulfite-Seq
+def: "placeholder def of Bisulfite-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000015
+name: Bisulfite-Seq (reduced representation)
+def: "placeholder def of Bisulfite-Seq (reduced representation)" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000016
+name: MeDIP-Seq
+def: "placeholder def of MeDIP-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000017
+name: DNase-Hypersensitivity
+def: "placeholder def of DNase-Hypersensitivity" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000018
+name: Tn-Seq
+def: "placeholder def of Tn-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000019
+name: FAIRE-seq
+def: "placeholder def of FAIRE-seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000020
+name: SELEX
+def: "placeholder def of SELEX" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000021
+name: RIP-Seq
+def: "placeholder def of RIP-Seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000022
+name: ATAC-seq
+def: "placeholder def of ATAC-seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000023
+name: ChIA-PET
+def: "placeholder def of ChIA-PET" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000024
+name: Hi-C
+def: "placeholder def of Hi-C" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000025
+name: OTHER: specify
+def: "placeholder def of OTHER: specify" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000035 ! Library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+
+[Term]
+id: NFDI4PSO:1000026
+name: fastq
+def: "placeholder def of fastq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000027
+name: bam
+def: "placeholder def of bam" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000028
+name: Illumina_native_qseq
+def: "placeholder def of Illumina_native_qseq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000029
+name: Illumina_native
+def: "placeholder def of Illumina_native" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000030
+name: SOLiD_native_csfasta
+def: "placeholder def of SOLiD_native_csfasta" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000031
+name: SOLiD_native_qual
+def: "placeholder def of SOLiD_native_qual" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000032
+name: sff
+def: "placeholder def of sff" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000033
+name: 454_native_seq
+def: "placeholder def of 454_native_seq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000034
+name: 454_native_qual
+def: "placeholder def of 454_native_qual" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000035
+name: Helicos_native
+def: "placeholder def of Helicos_native" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000036
+name: srf
+def: "placeholder def of srf" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000037
+name: PacBio_HDF5
+def: "placeholder def of PacBio_HDF5" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000021 ! Raw data file format
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_file type" xsd:string
+
+[Term]
+id: NFDI4PSO:1000038
+name: Illumina Genome Analyzer IIx
+def: "placeholder def of Illumina Genome Analyzer IIx" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000039
+name: Illumina HiSeq 1000
+def: "placeholder def of Illumina HiSeq 1000" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000040
+name: Illumina HiSeq 1500
+def: "placeholder def of Illumina HiSeq 1500" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000041
+name: Illumina HiSeq 2000
+def: "placeholder def of Illumina HiSeq 2000" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000042
+name: Illumina HiSeq 2500
+def: "placeholder def of Illumina HiSeq 2500" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000043
+name: Illumina HiSeq 3000
+def: "placeholder def of Illumina HiSeq 3000" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000044
+name: Illumina HiSeq 4000
+def: "placeholder def of Illumina HiSeq 4000" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000045
+name: Illumina NextSeq 500
+def: "placeholder def of Illumina NextSeq 500" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000046
+name: Illumina NextSeq 550
+def: "placeholder def of Illumina NextSeq 550" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000047
+name: Illumina HiSeq X Ten
+def: "placeholder def of Illumina HiSeq X Ten" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000048
+name: Illumina HiSeq X Five
+def: "placeholder def of Illumina HiSeq X Five" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000049
+name: Illumina NovaSeq 6000
+def: "placeholder def of Illumina NovaSeq 6000" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000050
+name: Illumina MiSeq
+def: "placeholder def of Illumina MiSeq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000051
+name: Illumina HiScanSQ
+def: "placeholder def of Illumina HiScanSQ" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000052
+name: Illumina MiniSeq
+def: "placeholder def of Illumina MiniSeq" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000053
+name: Illumina iSeq 100
+def: "placeholder def of Illumina iSeq 100" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000054
+name: BGISEQ-500
+def: "placeholder def of BGISEQ-500" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000055
+name: DNBSEQ-G400
+def: "placeholder def of DNBSEQ-G400" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000056
+name: DNBSEQ-T7
+def: "placeholder def of DNBSEQ-T7" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000057
+name: DNBSEQ-G50
+def: "placeholder def of DNBSEQ-G50" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000058
+name: Ion Torrent PGM
+def: "placeholder def of Ion Torrent PGM" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000059
+name: Ion Torrent Proton
+def: "placeholder def of Ion Torrent Proton" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000060
+name: Ion Torrent S5
+def: "placeholder def of Ion Torrent S5" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000061
+name: Ion Torrent S5 XL
+def: "placeholder def of Ion Torrent S5 XL" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000062
+name: PacBio RS
+def: "placeholder def of PacBio RS" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000063
+name: PacBio RS II
+def: "placeholder def of PacBio RS II" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000064
+name: Sequel
+def: "placeholder def of Sequel" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000065
+name: Sequel II
+def: "placeholder def of Sequel II" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000066
+name: AB SOLiD System 2.0
+def: "placeholder def of AB SOLiD System 2.0" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000067
+name: AB SOLiD System 3.0
+def: "placeholder def of AB SOLiD System 3.0" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000068
+name: AB SOLiD 3 Plus System
+def: "placeholder def of AB SOLiD 3 Plus System" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000069
+name: AB SOLiD 4 System
+def: "placeholder def of AB SOLiD 4 System" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000070
+name: AB SOLiD 4hq System
+def: "placeholder def of AB SOLiD 4hq System" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000071
+name: AB SOLiD PI System
+def: "placeholder def of AB SOLiD PI System" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000072
+name: AB 5500 Genetic Analyzer
+def: "placeholder def of AB 5500 Genetic Analyzer" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000073
+name: AB 5500xl Genetic Analyzer
+def: "placeholder def of AB 5500xl Genetic Analyzer" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000074
+name: AB 5500xl-W Genetic Analysis System
+def: "placeholder def of AB 5500xl-W Genetic Analysis System" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000075
+name: 454 GS
+def: "placeholder def of 454 GS" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000076
+name: 454 GS 20
+def: "placeholder def of 454 GS 20" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000077
+name: 454 GS FLX
+def: "placeholder def of 454 GS FLX" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000078
+name: 454 GS FLX+
+def: "placeholder def of 454 GS FLX+" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000079
+name: 454 GS Junior
+def: "placeholder def of 454 GS Junior" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000080
+name: 454 GS FLX Titanium
+def: "placeholder def of 454 GS FLX Titanium" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000081
+name: Complete Genomics
+def: "placeholder def of Complete Genomics" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000082
+name: Helicos HeliScope
+def: "placeholder def of Helicos HeliScope" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000083
+name: GridION
+def: "placeholder def of GridION" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000084
+name: MinION
+def: "placeholder def of MinION" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000085
+name: PromethION
+def: "placeholder def of PromethION" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000040 ! Next generation sequencing instrument model
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
+[Term]
+id: NFDI4PSO:1000086
+name: single
+def: "placeholder def of single" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000015 ! Library layout
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
+
+[Term]
+id: NFDI4PSO:1000087
+name: paired-end
+def: "placeholder def of paired-end" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000015 ! Library layout
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
+
+[Term]
+id: NFDI4PSO:1000088
+name: total RNA
+def: "placeholder def of total RNA" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000012 ! Bio entity
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
+
+[Term]
+id: NFDI4PSO:1000089
+name: polyA RNA
+def: "placeholder def of polyA RNA" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000012 ! Bio entity
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
+
+[Term]
+id: NFDI4PSO:1000090
+name: cytoplasmic RNA
+def: "placeholder def of cytoplasmic RNA" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000012 ! Bio entity
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
+
+[Term]
+id: NFDI4PSO:1000091
+name: nuclear RNA
+def: "placeholder def of nuclear RNA" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000012 ! Bio entity
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
+
+[Term]
+id: NFDI4PSO:1000092
+name: genomic DNA
+def: "placeholder def of genomic DNA" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000012 ! Bio entity
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
+
+[Term]
+id: NFDI4PSO:1000093
+name: protein
+def: "placeholder def of protein" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000012 ! Bio entity
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
+
+[Term]
+id: NFDI4PSO:1000094
+name: other
+def: "placeholder def of other" []
+comment: To be transformed to an instance. DB
+is_a: NFDI4PSO:0000012 ! Bio entity
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "SAMPLES_molecule" xsd:string
+
+[Term]
+id: NFDI4PSO:1000095
+name: Endpoint Repository
+def: "Parent term to collect endpoint repositories (ER)." []
+comment: "For an overview of relevant repositories, check https://www.re3data.org or https://fairsharing.org"
+
+[Term]
+id: NFDI4PSO:1000096
+name: GEO
+def: "GEO (Gene Expression Omnibus) is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted. Tools are provided to help users query and download experiments and curated gene expression profiles." []
+comment: https://www.ncbi.nlm.nih.gov/geo/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+disjoint_from: NFDI4PSO:1000097 ! METABOLIGHTS
+
+[Term]
+id: NFDI4PSO:1000097
+name: METABOLIGHTS
+def: "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. MetaboLights is the recommended Metabolomics repository for a number of leading journals." []
+comment: https://www.ebi.ac.uk/metabolights/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+
+[Term]
+id: NFDI4PSO:1000098
+name: PRIDE
+def: "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. Datasets are submitted to ProteomeXchange via PRIDE and are handled by expert bio-curators. All PRIDE public datasets can also be searched in ProteomeCentral, the portal for all ProteomeXchange datasets." []
+comment: https://www.ebi.ac.uk/pride/
+is_a: NFDI4PSO:1000095 ! Endpoint Repository
+
+[Term]
+id: NFDI4PSO:1000099
+name: GEO_RNASEQ
+def: "Parent term to collect terms required for RNASeq submission to GEO" []
+is_a: NFDI4PSO:1000096 ! GEO
+disjoint_from: NFDI4PSO:1000100 ! GEO_MICROARRAY
+
+[Term]
+id: NFDI4PSO:1000100
+name: GEO_MICROARRAY
+def: "Parent term to collect terms required for microarray submission to GEO" []
+is_a: NFDI4PSO:1000096 ! GEO
+
+[Term]
+id: NFDI4PSO:1000101
+name: Well
+def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
+xref: https://w3id.org/reproduceme#Well
+
+[Term]
+id: NFDI4PSO:1000102
+name: Well Number
+def: "The number of a well in a well plate." []
+
+[Term]
+id: NFDI4PSO:1000103
+name: siRNA identifier
+def: "The identifier of a siRNA from a reagent library." []
+
+[Term]
+id: NFDI4PSO:1000104
+name: Compound name
+def: "Unique name of a chemical compound." []
+xref: http://edamontology.org/data_0990
+
+[Term]
+id: NFDI4PSO:1000105
+name: Compound identifier
+def: "Identifier of an entry from a database of chemicals." []
+xref: http://edamontology.org/data_1086
+
+[Term]
+id: NFDI4PSO:1000106
+name: Compound class
+def: "The class a compound belongs to, defined by its biological function or the chemical property." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000107
+name: ORF identifier
+def: "An identifier of an open reading frame." []
+xref: http://edamontology.org/data_2795
+
+[Term]
+id: NFDI4PSO:1000108
+name: Gene Identifier
+def: "A unique gene name within a specific repository, database, or collection." []
+xref: http://purl.obolibrary.org/obo/NCIT_C48664
+
+[Term]
+id: NFDI4PSO:1000109
+name: Sense Sequence
+def: "The sequence of the sense strand." []
+comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html"
+
+[Term]
+id: NFDI4PSO:1000110
+name: Antisense Sequence
+def: "The sequence of the antisense strand." []
+comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html"
+
+[Term]
+id: NFDI4PSO:1000111
+name: Control Type
+def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
+xref: http://purl.obolibrary.org/obo/NCIT_C49647
+
+[Term]
+id: NFDI4PSO:1000112
+name: Quality Control
+def: "Result of quality control. This can be: pass/fail, or other information such as: no cells" []
+comment: "Definition according to IDR"
+
+[Term]
+id: NFDI4PSO:1000113
+name: channel
+def: "The label used in a microscopy assay and what it targets, separated by a colon. Each pair of labels and visualized object is separated by a semi-colon. E.g. DAPI:nuclei;TRITC:HA_Flag tagged protein." []
+comment: "Needed for imaging templates. Definition form IDR"
+
+[Term]
+id: NFDI4PSO:1000114
+name: Screen Technology Type
+def: "The type of a high content screening experiment like RNAi screen or antibody screen." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000115
+name: high content screening stage
+def: "An experimental stage describing stages of high content screen analysis." []
+xref: http://www.ebi.ac.uk/efo/EFO_0007555
+
+[Term]
+id: NFDI4PSO:1000116
+name: Library Version
+def: "Version of a reagent library used e.g. in high content screening." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000117
+name: Antibody
+def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." []
+xref: http://purl.obolibrary.org/obo/NCIT_C16295
+
+[Term]
+id: NFDI4PSO:1000118
+name: Cover Slip
+def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
+xref: http://purl.obolibrary.org/obo/NCIT_C126370
+
+[Term]
+id: NFDI4PSO:1000119
+name: Cover slip preparation (procedure)
+xref: http://snomed.info/id/71661000
+
+[Term]
+id: NFDI4PSO:1000120
+name: Image file path
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000121
+name: target compartment
+def: "Compartment of interest in the prepared sample" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000122
+name: Imaging Software Name
+def: "The name of the software program to capture and/or process imaging data." []
+xref: http://purl.obolibrary.org/obo/NCIT_C175898
+
+[Term]
+id: NFDI4PSO:1000123
+name: Imaging Software Version
+def: "The version of the software program to capture and/or process imaging data." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000124
+name: Imaging Software Settings
+def: "The used settings in the software program to capture and/or process imaging data." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000125
+name: Microscope filter
+def: "Channel the image was taken with." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000126
+name: Dataset Name
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000127
+name: Assay Name
+def: "The name of the assay." []
+xref: http://purl.obolibrary.org/obo/NCIT_C178857
+
+[Term]
+id: NFDI4PSO:1000128
+name: image processing software
+def: "Software used for the processing of microscopy images like for adaption of contrast or stacking." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000129
+name: image data analysis software
+def: "Software used to analyze data extracted from microscopy images." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000130
+name: image processing software parameters
+def: "Applied settings of the software used for the processing of microscopy images" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000131
+name: feature extraction software
+def: "Software used for the extraction of features from microscopy images." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000132
+name: data analysis
+def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
+xref: http://semanticscience.org/resource/SIO_001051
+
+[Term]
+id: NFDI4PSO:1000133
+name: feature extraction strategy
+def: "Description of the approach to extract features from microscopy images." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000134
+name: image processing technique
+def: "Any form of signal processing for which the input is an image, such as a photograph or video frame; the output of image processing may be either an image or a set of characteristics or parameters related to the image." []
+xref: http://purl.obolibrary.org/obo/ERO_0001788
+
+[Term]
+id: NFDI4PSO:1000135
+name: use of image
+def: "Whether a microscopy image is intended to be used illustrational or analytically by deriving values from it." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000136
+name: reagent design genome reference version
+def: "The gene annotation build the siRNAs for a high content screen library were mapped to." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000137
+name: Control specification
+def: "additional information about the quality control in high content screening studies e.g. 'checks for transfection', 'gives strong phenotype'" []
+comment: "Needed for imaging templates. Definition from IDR."
+
+[Term]
+id: NFDI4PSO:1000138
+name: Quality Control Comments
+def: "additional information why a quality control passed or failed'" []
+comment: "Needed for imaging templates. Definition from IDR."
+
+[Term]
+id: NFDI4PSO:1000139
+name: Microscopy study type
+def: "Type of an imaging study." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000140
+name: Magnification
+def: "The magnification of a microscopy image" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000141
+name: Image Dimensionality
+def: "The sizes along the axis of the XYZCT dimensions in a microscopy image." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000142
+name: Objective
+def: "The microscope's objective lens." []
+xref: https://w3id.org/reproduceme#Objective
+
+[Term]
+id: NFDI4PSO:1000143
+name: microscopy sample preparation
+def: "How a sample was further prepared for microscopy." []
+xref: http://purl.obolibrary.org/obo/MS_1000831
+
+[Term]
+id: NFDI4PSO:1000144
+name: material fixation
+def: "Plant material fixation on a microscopy slide." []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000145
+name: prepared organism part
+def: "The part of an organism that has been prepared for an experiment" []
+comment: "Needed for imaging templates"
+
+[Term]
+id: NFDI4PSO:1000146
+name: Strain
+def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
+comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
+xref: http://www.ebi.ac.uk/efo/EFO_0005135
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000147
+name: Container
+def: "A device that can be used to restrict the location of material entities over time" []
+xref: http://purl.obolibrary.org/obo/OBI_0000967
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000148
+name: Jar
+def: "A wide-mouthed cylindrical container made of glass or pottery and typically having a lid" []
+is_a: NFDI4PSO:1000147 ! Container
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000149
+name: Plate
+def: "A flat dish, typically circular" []
+is_a: NFDI4PSO:1000147 ! Container
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000150
+name: Contamination
+def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
+xref: http://purl.obolibrary.org/obo/PATO_0015031
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000151
+name: Axenic
+def: "Free from other living organisms" []
+is_a: NFDI4PSO:1000150 ! Contamination
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000152
+name: Laboratory strain
+def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
+is_a: NFDI4PSO:1000146 ! Strain
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000153
+name: Date
+def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." []
+xref: http://purl.org/dc/elements/1.1/date
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000154
+name: Volume
+def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
+xref: http://purl.obolibrary.org/obo/PATO_0000918
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000155
+name: Culture medium volume
+def: "Volume of culture medium used to grow the organism" []
+is_a: NFDI4PSO:1000154 ! Volume
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000156
+name: Light
+def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
+xref: http://www.ebi.ac.uk/efo/EFO_0000568
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000157
+name: Light quality
+def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" []
+comment: "close to the term http://purl.obolibrary.org/obo/PECO_0007154"
+is_a: NFDI4PSO:1000156 ! Light
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000158
+name: Ratio
+def: "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b." [UOB:LKSR]
+xref: http://purl.obolibrary.org/obo/UO_0000190
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000159
+name: 260/280 ratio
+def: "Nucleic acids have absorbance maxima at 260 nm. Historically, the ratio of this absorbance maximum to the absorbance at 280 nm has been used as a measure of purity in both DNA and RNA extractions. A 260/280 ratio of ~1.8 is generally accepted as pure for DNA; a ratio of ~2.0 is generally accepted as pure for RNA." []
+comment: "Thermofisher NanoDrop https://tools.thermofisher.com/content/sfs/brochures/T123-NanoDrop-Lite-Interpretation-of-Nucleic-Acid-260-280-Ratios.pdf"
+is_a: NFDI4PSO:1000158 ! Ratio
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
+[Term]
+id: NFDI4PSO:1000160
+name: 260/230 ratio
+def: "The 260/230 values for pure nucleic acid are often higher than the respective 260/280 values. Expected 260/230 values are commonly in the range of 2.0–2.2" []
+comment: "Thermofisher NanoDrop https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/TN52646-E-0215M-NucleicAcid.pdf"
+is_a: NFDI4PSO:1000158 ! Ratio
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+
