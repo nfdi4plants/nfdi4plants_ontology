@@ -10,7 +10,23 @@ property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000119> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000120> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000126> \"\"^^xsd:string)\n)
-treat-xrefs-as-equivalent: Wikipedia
+treat-xrefs-as-equivalent: OBI
+treat-xrefs-as-equivalent: EFO
+treat-xrefs-as-equivalent: GENEPIO
+treat-xrefs-as-equivalent: CHMO
+treat-xrefs-as-equivalent: NCIT
+treat-xrefs-as-equivalent: PSO
+treat-xrefs-as-equivalent: CHEBI
+treat-xrefs-as-equivalent: SIO
+treat-xrefs-as-equivalent: ENVO
+treat-xrefs-as-equivalent: ERO
+treat-xrefs-as-equivalent: MS
+treat-xrefs-as-equivalent: PATO
+treat-xrefs-as-equivalent: UO
+treat-xrefs-as-equivalent: OME
+treat-xrefs-as-equivalent: EDAM
+treat-xrefs-as-equivalent: dc
+treat-xrefs-as-equivalent: SCTID
 
 [Term]
 id: NFDI4PSO:0000001
@@ -111,7 +127,7 @@ id: NFDI4PSO:0000017
 name: Base-calling Software
 def: "The name of the software used for base-calling." []
 comment: Alternative: http://edamontology.org/operation_3185
-xref: http://edamontology.org/operation_3185
+xref: EDAM:operation_3185
 
 [Term]
 id: NFDI4PSO:0000018
@@ -187,19 +203,19 @@ def: "Checksum of the processed data file, it is a specialised concept of http:/
 id: NFDI4PSO:0000030
 name: Organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
-xref: http://purl.obolibrary.org/obo/OBI_0100026
+xref: OBI:0100026
 
 [Term]
 id: NFDI4PSO:0000031
 name: Genotype
 def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment." []
-xref: http://www.ebi.ac.uk/efo/EFO_0000513
+xref: EFO:0000513
 
 [Term]
 id: NFDI4PSO:0000032
 name: Organism part
 def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)." []
-xref: http://www.ebi.ac.uk/efo/EFO_0000635
+xref: EFO:0000635
 
 [Term]
 id: NFDI4PSO:0000033
@@ -211,43 +227,43 @@ comment: “This is a specialization of http://www.ebi.ac.uk/efo/EFO_0000246"
 id: NFDI4PSO:0000034
 name: Time point
 def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
-xref: http://www.ebi.ac.uk/efo/EFO_0000724
+xref: EFO:0000724
 
 [Term]
 id: NFDI4PSO:0000035
 name: Library strategy
 def: "Sequencing technique intended for a next generation sequencing library." []
-xref: http://purl.obolibrary.org/obo/GENEPIO_0001973
+xref: GENEPIO:0001973
 
 [Term]
 id: NFDI4PSO:0000036
 name: Library Selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
-xref: http://purl.obolibrary.org/obo/GENEPIO_0001940
+xref: GENEPIO:0001940
 
 [Term]
 id: NFDI4PSO:0000037
 name: Library preparation kit
 def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids." []
-xref: http://purl.obolibrary.org/obo/GENEPIO_0000085
+xref: GENEPIO:0000085
 
 [Term]
 id: NFDI4PSO:0000038
 name: Library preparation kit version
 def: "The version identifier of a packaged kit tailored for specific sequencing workflows." []
-xref: http://purl.obolibrary.org/obo/GENEPIO_0000149
+xref: GENEPIO:0000149
 
 [Term]
 id: NFDI4PSO:0000039
 name: Adapter sequence
 def: "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters." []
-xref: http://purl.obolibrary.org/obo/GENEPIO_0000083
+xref: GENEPIO:0000083
 
 [Term]
 id: NFDI4PSO:0000040
 name: Next generation sequencing instrument model
 def: "Model name or number of next generation sequencing instrument" []
-xref: http://www.ebi.ac.uk/efo/EFO_0003739
+xref: EFO:0003739
 
 [Term]
 id: NFDI4PSO:0000041
@@ -318,13 +334,13 @@ comment: related to http://purl.obolibrary.org/obo/OBI_0302884
 id: NFDI4PSO:0000052
 name: MS derivatization
 def: "Derivatization for metabolomics mass spectrometry." []
-xref: http://purl.obolibrary.org/obo/CHMO_0001485
+xref: CHMO:0001485
 
 [Term]
 id: NFDI4PSO:0000053
 name: Chromatography column type
 def: "Type of chromatography column (NFDI4PSO:0000048)" []
-xref: http://purl.obolibrary.org/obo/CHMO_0001000
+xref: CHMO:0001000
 
 [Term]
 id: NFDI4PSO:0000054
@@ -336,7 +352,7 @@ comment: “More general than NFDI4PSO:0000014, because not everyone uses a kit 
 id: NFDI4PSO:0000055
 name: Library source
 def: "Type of source material that is being sequenced" []
-xref: http://www.ontobee.org/ontology/GENEPIO?iri=http\://purl.obolibrary.org/obo/GENEPIO_0001965
+xref: GENEPIO:0001965
 
 [Term]
 id: NFDI4PSO:0000056
@@ -348,20 +364,20 @@ comment: “"
 id: NFDI4PSO:0000057
 name: Next generation sequencing platform
 def: "Name of the company that produces next generation sequencing instruments" []
-xref: http://purl.obolibrary.org/obo/GENEPIO_0000071
+xref: GENEPIO:0000071
 
 [Term]
 id: NFDI4PSO:0000058
 name: Read length
 def: "Numbers of base pairs per read" []
-xref: http://www.ontobee.org/ontology/GENEPIO?iri=http\://purl.obolibrary.org/obo/GENEPIO_0000076
+xref: GENEPIO:0000076
 
 [Term]
 id: NFDI4PSO:0000059
 name: Sequence assembly method
 def: "Strategy that was used to assemble reads into contigs" []
 comment: “Just two options should be possible: de-novo assembly or mapping"
-xref: http://www.ontobee.org/ontology/GENEPIO?iri=http\://purl.obolibrary.org/obo/GENEPIO_0000090
+xref: GENEPIO:0000090
 
 [Term]
 id: NFDI4PSO:0000060
@@ -385,62 +401,62 @@ id: NFDI4PSO:0000063
 name: BioProject Accession Number
 def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345." []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
-xref: http://purl.obolibrary.org/obo/NCIT_C175890
+xref: NCIT:C175890
 
 [Term]
 id: NFDI4PSO:0000064
 name: Sample type
 def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly" []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
-xref: http://purl.obolibrary.org/obo/NCIT_C70713
+xref: NCIT:C70713
 
 [Term]
 id: NFDI4PSO:0000065
 name: Isolate
 def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system. [Definition Source: NCI]" []
-xref: http://purl.obolibrary.org/obo/NCIT_C53471
+xref: NCIT:C53471
 
 [Term]
 id: NFDI4PSO:0000066
 name: Cultivar
 def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
 comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
-xref: http://www.ebi.ac.uk/efo/EFO_0005136
+xref: EFO:0005136
 
 [Term]
 id: NFDI4PSO:0000067
 name: Ecotype
 def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
 comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0000434]"
-xref: http://www.ebi.ac.uk/efo/EFO_0000434
+xref: EFO:0000434
 
 [Term]
 id: NFDI4PSO:0000068
 name: Cell line
 def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [Definition Source: NCI][attribution: On-line Medical Dictionary]" []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
-xref: http://purl.obolibrary.org/obo/NCIT_C16403
+xref: NCIT:C16403
 
 [Term]
 id: NFDI4PSO:0000069
 name: Cell type
 def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]" []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C12508]"
-xref: http://purl.obolibrary.org/obo/NCIT_C12508
+xref: NCIT:C12508
 
 [Term]
 id: NFDI4PSO:0000070
 name: Developmental Stage
 def: "A general term that usually refers to named landmark events during development of an organism. [Definition Source: NCI]" []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C43531]"
-xref: http://purl.obolibrary.org/obo/NCIT_C43531
+xref: NCIT:C43531
 
 [Term]
 id: NFDI4PSO:0000071
 name: Plant disease
 def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent." []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/PSO_0000013]"
-xref: http://purl.obolibrary.org/obo/PSO_0000013
+xref: PSO:0000013
 
 [Term]
 id: NFDI4PSO:0000072
@@ -452,27 +468,27 @@ id: NFDI4PSO:0000073
 name: Phenotype
 def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601" []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
-xref: http://purl.obolibrary.org/obo/NCIT_C16977
+xref: NCIT:C16977
 
 [Term]
 id: NFDI4PSO:0000074
 name: Geogaphic Area
 def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg 'Canada: Vancouver' or 'Germany: halfway down Zugspitze, Alps'" []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
-xref: http://purl.obolibrary.org/obo/NCIT_C16632
+xref: NCIT:C16632
 
 [Term]
 id: NFDI4PSO:0000075
 name: Sample Collection Date
 def: "The date on which the sample was collected" []
-xref: http://purl.obolibrary.org/obo/NCIT_C81286
+xref: NCIT:C81286
 
 [Term]
 id: NFDI4PSO:0000076
 name: Sample Collected By
 def: "Indicates the person, group, or institution who performed the collection act. [Definition Source: NCI]" []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
-xref: http://purl.obolibrary.org/obo/NCIT_C45262
+xref: NCIT:C45262
 
 [Term]
 id: NFDI4PSO:0000077
@@ -485,19 +501,19 @@ id: NFDI4PSO:0000078
 name: BioSample Accession Number
 def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
-xref: http://purl.obolibrary.org/obo/NCIT_C175889
+xref: NCIT:C175889
 
 [Term]
 id: NFDI4PSO:0000079
 name: label
 def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
-xref: http://purl.obolibrary.org/obo/CHEBI_35209
+xref: CHEBI:35209
 
 [Term]
 id: NFDI4PSO:0000080
 name: mobile phase
 def: "A fluid that percolates through or along the stationary bed in chromatography." []
-xref: http://purl.obolibrary.org/obo/CHMO_0000995
+xref: CHMO:0000995
 
 [Term]
 id: NFDI4PSO:0000081
@@ -530,13 +546,13 @@ def: "Title of the study as would be used in a publication." []
 id: NFDI4PSO:0002003
 name: latitude
 def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
-xref: http://semanticscience.org/resource/SIO_000319
+xref: SIO:000319
 
 [Term]
 id: NFDI4PSO:0002004
 name: longitude
 def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
-xref: http://semanticscience.org/resource/SIO_000318
+xref: SIO:000318
 
 [Term]
 id: NFDI4PSO:0002005
@@ -557,13 +573,13 @@ def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant rep
 id: NFDI4PSO:0002008
 name: environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
-xref: http://purl.obolibrary.org/obo/ENVO_01000813
+xref: ENVO:01000813
 
 [Term]
 id: NFDI4PSO:0002009
 name: environment (material)
 def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
-xref: http://purl.obolibrary.org/obo/ENVO_00010483
+xref: ENVO:00010483
 
 [Term]
 id: NFDI4PSO:0002010
@@ -1580,7 +1596,7 @@ is_a: NFDI4PSO:1000096 ! GEO
 id: NFDI4PSO:1000101
 name: Well
 def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
-xref: https://w3id.org/reproduceme#Well
+xref: OME:Well
 
 [Term]
 id: NFDI4PSO:1000102
@@ -1596,13 +1612,13 @@ def: "The identifier of a siRNA from a reagent library." []
 id: NFDI4PSO:1000104
 name: Compound name
 def: "Unique name of a chemical compound." []
-xref: http://edamontology.org/data_0990
+xref: EDAM:data_0990
 
 [Term]
 id: NFDI4PSO:1000105
 name: Compound identifier
 def: "Identifier of an entry from a database of chemicals." []
-xref: http://edamontology.org/data_1086
+xref: data:1086
 
 [Term]
 id: NFDI4PSO:1000106
@@ -1614,13 +1630,13 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000107
 name: ORF identifier
 def: "An identifier of an open reading frame." []
-xref: http://edamontology.org/data_2795
+xref: data:2795
 
 [Term]
 id: NFDI4PSO:1000108
 name: Gene Identifier
 def: "A unique gene name within a specific repository, database, or collection." []
-xref: http://purl.obolibrary.org/obo/NCIT_C48664
+xref: NCIT:C48664
 
 [Term]
 id: NFDI4PSO:1000109
@@ -1638,7 +1654,7 @@ comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.ope
 id: NFDI4PSO:1000111
 name: Control Type
 def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
-xref: http://purl.obolibrary.org/obo/NCIT_C49647
+xref: NCIT:C49647
 
 [Term]
 id: NFDI4PSO:1000112
@@ -1662,7 +1678,7 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000115
 name: high content screening stage
 def: "An experimental stage describing stages of high content screen analysis." []
-xref: http://www.ebi.ac.uk/efo/EFO_0007555
+xref: EFO:0007555
 
 [Term]
 id: NFDI4PSO:1000116
@@ -1674,18 +1690,18 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000117
 name: Antibody
 def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." []
-xref: http://purl.obolibrary.org/obo/NCIT_C16295
+xref: NCIT:C16295
 
 [Term]
 id: NFDI4PSO:1000118
 name: Cover Slip
 def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
-xref: http://purl.obolibrary.org/obo/NCIT_C126370
+xref: NCIT:C126370
 
 [Term]
 id: NFDI4PSO:1000119
 name: Cover slip preparation (procedure)
-xref: http://snomed.info/id/71661000
+xref: SCTID:71661000
 
 [Term]
 id: NFDI4PSO:1000120
@@ -1702,7 +1718,7 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000122
 name: Imaging Software Name
 def: "The name of the software program to capture and/or process imaging data." []
-xref: http://purl.obolibrary.org/obo/NCIT_C175898
+xref: NCIT:C175898
 
 [Term]
 id: NFDI4PSO:1000123
@@ -1731,7 +1747,7 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000127
 name: Assay Name
 def: "The name of the assay." []
-xref: http://purl.obolibrary.org/obo/NCIT_C178857
+xref: NCIT:C178857
 
 [Term]
 id: NFDI4PSO:1000128
@@ -1761,7 +1777,7 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000132
 name: data analysis
 def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
-xref: http://semanticscience.org/resource/SIO_001051
+xref: SIO:001051
 
 [Term]
 id: NFDI4PSO:1000133
@@ -1773,7 +1789,7 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000134
 name: image processing technique
 def: "Any form of signal processing for which the input is an image, such as a photograph or video frame; the output of image processing may be either an image or a set of characteristics or parameters related to the image." []
-xref: http://purl.obolibrary.org/obo/ERO_0001788
+xref: ERO:0001788
 
 [Term]
 id: NFDI4PSO:1000135
@@ -1821,13 +1837,13 @@ comment: "Needed for imaging templates"
 id: NFDI4PSO:1000142
 name: Objective
 def: "The microscope's objective lens." []
-xref: https://w3id.org/reproduceme#Objective
+xref: OME:Objective
 
 [Term]
 id: NFDI4PSO:1000143
 name: microscopy sample preparation
 def: "How a sample was further prepared for microscopy." []
-xref: http://purl.obolibrary.org/obo/MS_1000831
+xref: MS:1000831
 
 [Term]
 id: NFDI4PSO:1000144
@@ -1846,14 +1862,14 @@ id: NFDI4PSO:1000146
 name: Strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
-xref: http://www.ebi.ac.uk/efo/EFO_0005135
+xref: EFO:0005135
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000147
 name: Container
 def: "A device that can be used to restrict the location of material entities over time" []
-xref: http://purl.obolibrary.org/obo/OBI_0000967
+xref: OBI:0000967
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -1874,7 +1890,7 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 id: NFDI4PSO:1000150
 name: Contamination
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
-xref: http://purl.obolibrary.org/obo/PATO_0015031
+xref: PATO:0015031
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -1895,14 +1911,14 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 id: NFDI4PSO:1000153
 name: Date
 def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." []
-xref: http://purl.org/dc/elements/1.1/date
+xref: dc:date
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000154
 name: Volume
 def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
-xref: http://purl.obolibrary.org/obo/PATO_0000918
+xref: PATO:0000918
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -1916,7 +1932,7 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 id: NFDI4PSO:1000156
 name: Light
 def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
-xref: http://www.ebi.ac.uk/efo/EFO_0000568
+xref: EFO:0000568
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -1931,7 +1947,7 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 id: NFDI4PSO:1000158
 name: Ratio
 def: "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b." [UOB:LKSR]
-xref: http://purl.obolibrary.org/obo/UO_0000190
+xref: UO:0000190
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
