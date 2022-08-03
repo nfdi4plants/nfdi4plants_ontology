@@ -1956,6 +1956,13 @@ def: "ISA-related term to identify the type of protocol used during the study or
 comment: "This term is primarily used to group and hierarchically categorize types of experimental protocols for easier (interpretation of) user-input"
 created_by: Dominik Brilhaus
 
+[Term]
+id: NFDI4PSO:1000999
+name: Test
+def: "Test Term." []
+comment: "Test Term"
+created_by: Marcel Tschoepe
+
 
 
 
