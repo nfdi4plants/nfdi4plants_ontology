@@ -1951,14 +1951,157 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: NFDI4PSO:1000161
-name: Protocol Type
-def: "ISA-related term to identify the type of protocol used during the study or assay." []
-comment: "This term is primarily used to group and hierarchically categorize types of experimental protocols for easier (interpretation of) user-input"
+name: protocol type
+def: "ISA-related term to identify the type of protocol (the set of procedures and rules that must be performed and when) used during the study or assay." []
+comment: "This term is primarily used to group and hierarchically categorize types of experimental protocols for easier (interpretation of) user-input. For the initial categorization, 'type' is defined as the purpose of the experiment (i.e. extraction of a target material such as DNA) rather than the mechanism of the protocol (i.e. column-based extraction)."
 created_by: Dominik Brilhaus
 
+[Term]
+id: NFDI4PSO:1000162
+name: growth protocol
+def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." []
+is_a: NFDI4PSO:1000161 ! protocol type
+xref: http://www.ebi.ac.uk/efo/EFO_0003789
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: NFDI4PSO:1000163
+name: algae growth protocol
+def: "A protocol that provides instructions for growing algae." []
+is_a: NFDI4PSO:1000162 ! growth protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: NFDI4PSO:1000164
+name: plant growth protocol
+def: "A protocol that provides instructions for growing a plant cultivar." []
+is_a: NFDI4PSO:1000162 ! growth protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: NFDI4PSO:1000165
+name: microbe growth protocol
+def: "A protocol that provides instructions for growing a microbial sample." []
+is_a: NFDI4PSO:1000162 ! growth protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: NFDI4PSO:1000166
+name: bacteria growth protocol
+def: "A protocol that provides instructions for growing a bacterial sample." []
+is_a: NFDI4PSO:1000165 ! microbe growth protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: NFDI4PSO:1000167
+name: yeast growth protocol
+def: "A protocol that provides instructions for growing yeast." []
+is_a: NFDI4PSO:1000165 ! microbe growth protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: NFDI4PSO:1000168
+name: treatment protocol
+def: "A protocol that aims to treat sample or collection of samples, organism or group of organisms, for some experimental purpose." []
+comment: definition from http://www.ebi.ac.uk/efo/EFO_0003969
+is_a: NFDI4PSO:1000161 ! protocol type
+xref: http://www.ebi.ac.uk/efo/EFO_0003969
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000169
+name: sample collection protocol
+def: "A protocol that provides instructions on how a biological sample for an experiment was collected."
+comment: definition from http://www.ebi.ac.uk/efo/EFO_0005518
+is_a: NFDI4PSO:1000161 ! protocol type
+xref: http://www.ebi.ac.uk/efo/EFO_0005518
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000170
+name: sample processing protocol
+def: "A protocol that details how a sample is processed or changed to prepare it for analysis."
+is_a: NFDI4PSO:1000161 ! protocol type
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000171
+name: extraction protocol
+def: "A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay"
+comment: definition taken heavily from http://www.ebi.ac.uk/efo/EFO_0000490 
+is_a: NFDI4PSO:1000170 ! sample processing protocol
+xref: http://www.ebi.ac.uk/efo/EFO_0000490 
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000172
+name: DNA extraction protocol
+def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components."
+comment: definition taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425773/
+is_a: NFDI4PSO:1000171 ! extraction protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000173
+name: RNA extraction protocol
+def: "A protocol that describes the steps for removing and purifying DNA from a biological sample
+is_a: NFDI4PSO:1000171 ! extraction protocol
+xref: http://www.ebi.ac.uk/efo/EFO_0010959
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000174
+name: protein extraction protocol
+def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample."
+is_a: NFDI4PSO:1000171 ! extraction protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000175
+name: metabolite extraction protocol
+def: "A protocol that describes the step by step process for removing metabolites from a biological sample."
+is_a: NFDI4PSO:1000171 ! extraction protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NFDI4PSO:1000176
+name: assay pre-processing protocol
+def: "A protocol that describes the steps to be taken to transform a sample before an assay can be performed"
+is_a: NFDI4PSO:1000161 ! protocol type
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
+
+[Term]
+id: NFDI4PSO:1000177
+name: assay protocol
+def: "A protocol that describes how to perform an assay."
+is_a: NFDI4PSO:1000161 ! protocol type
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
+
+[Term]
+id: NFDI4PSO:1000178
+name: data processing protocol
+def: "A protocol that describes the operations performed on data by a computer in order to retrieve, transform, or classify information."
+comment: definition heavily based on http://purl.obolibrary.org/obo/NCIT_C47925
+is_a: NFDI4PSO:1000161 ! protocol type
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
+
+[Term]
+id: NFDI4PSO:1000179
+name: data filtering protocol
+def: "A protocol that describes the operations performed to filter or select a smaller part of the dataset to be used for or rejected from subsequent analysis steps"
+is_a: NFDI4PSO:1000178 ! data processing protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
+
+[Term]
+id: NFDI4PSO:1000180
+name: data transformation protocol
+def: "A protocol that describes the operations performed to convert data from one format, structure, or value into another."
+is_a: NFDI4PSO:1000178 ! data processing protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
+
+[Term]
+id: NFDI4PSO:1000181
+name: data extraction protocol
+def: "A protocol that describes the operations performed to take a specific data set out of a larger data set and present it in a useable format."
+is_a: NFDI4PSO:1000178 ! data processing protocol
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
