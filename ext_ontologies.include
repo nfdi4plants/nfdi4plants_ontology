@@ -1,5 +1,5 @@
 https://raw.githubusercontent.com/EnvironmentOntology/envo/master/envo.obo
-http://ontologies.berkeleybop.org/ms.obo
+https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo
 http://purl.obolibrary.org/obo/chebi.obo
 http://current.geneontology.org/ontology/go.obo
 http://purl.obolibrary.org/obo/ncbitaxon.obo
@@ -11,4 +11,3 @@ https://raw.githubusercontent.com/oborel/obo-relations/master/ro.obo
 https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.obo
 https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
 https://raw.githubusercontent.com/HUPO-PSI/psi-mod-CV/master/PSI-MOD.obo
-https://raw.githubusercontent.com/EnvironmentOntology/envo/master/envo.obo
