@@ -1,0 +1,55 @@
+name: Import term
+description: Import term from a registered ontology into nfdi4pso
+title: "[Import term] "
+labels: [term-import]
+assignees: kdumschott
+body:
+ 
+  - type: input
+    id: term
+    attributes:
+      label: Term name and id
+      description: Please enter the name and id (accession number) of the term to be imported 
+      placeholder: "example term  (EXONT_00000111)"
+    validations:
+      required: true
+      
+  - type: input
+    id: Accession_id
+    attributes:
+      label: Term link
+      description: Please enter the URI where this term can be found 
+      placeholder: "http://purl.obolibrary.org/exampleobo/EXAMPLE_00000111"
+    validations:
+      required: true
+      
+  - type: input
+    id: Linked_Parent
+    attributes:
+      label: Parent term(s)
+      description: What term(s) already in the nfdi4pso ontology should this new term be under? Please list them here, including accession numbers
+    validations: 
+      required: false
+      
+  - type: textarea
+    id: Linked_Child
+    attributes:
+      label: Child term(s)
+      description: Are there terms already in the nfdi4pso ontology that should be linked underneath the new term? Please list them here, including accession numbers
+    validations:
+      required: false
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Please state the reason to import this term into nfdi4pso
+    validations:
+      required: false
+
+  - type: input
+    id: attribution
+    attributes:
+      label: Your ORCID
+      description: Please provide your ORCID for microattribution
+    validations:
+      required: false
