@@ -1,0 +1,51 @@
+name: Add synonym 
+description: New synonym suggestion for a nfdi4pso term.
+title: '[Synonym] '
+labels: [Add-synonym]
+assignees: kdumschott
+body:
+  - type: input
+    id: term
+    attributes:
+      label: nfdi4pso term
+      description: Term name and id
+      placeholder: "example term  (EXONT_00000111)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: add
+    attributes:
+      label: Synonym to be added
+    validations:
+      required: true
+
+  - type: dropdown
+    id: Scope
+    attributes:
+      label: Scope
+      description: Please provide the scope of the synonym
+      multiple: false
+      options: 
+        - BROAD
+        - EXACT 
+        - NARROW
+        - RELATED
+    validations:
+      required: false
+
+  - type: textarea
+    id: Link
+    attributes:
+      label: Comments
+      description: Please provide the reasoning for adding the synonym and/or additional comments
+    validations:
+      required: false
+      
+  - type: input
+    id: attribution
+    attributes:
+      label: Your ORCID
+      description: Please provide your ORCID for microattribution
+    validations:
+     required: false
