@@ -1,0 +1,21 @@
+name: Import ontology
+description: Request the import of an already existing ontology into the SwateDB if you need >60% of terms from the ontology to annotate your data.
+title: "[Import Ontology] "
+labels: [ontology-add]
+assignees: kdumschott
+body:
+ 
+  - type: input
+    id: ontology
+    attributes:
+      label: Ontology
+      description: Please enter the name and URI of the already existing ontology to be imported
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Please state the reason to import this ontology into the SwateDB
+    validations:
+      required: false
