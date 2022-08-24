@@ -1,0 +1,62 @@
+name: Add new term 
+description: Suggest a new term to be added to nfdi4pso
+title: "[NTR]"
+labels: [add term]
+assignees: kdumschott
+body:
+  - type: input
+    id: term
+    attributes:
+      label: New term name
+      description: Please enter the name of the term to be added
+      placeholder: "example term here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: Definition
+    attributes:
+      label: Definition
+      description: Please describe the term and provide a link to the definition source
+    validations:
+      required: true
+      
+  - type: input
+    id: Linked_Parent
+    attributes:
+      label: Parent term(s)
+      description: What term(s) already in the nfdi4pso ontology should this new term be under? Please list them here, including accession numbers
+    validations:
+      required: false
+
+  - type: textarea
+    id: Linked_Child
+    attributes:
+      label: Child term(s)
+      description: Are there terms already in the nfdi4pso ontology that should be linked underneath the new term? Please list them here, including accession numbers
+    validations:
+      required: false
+      
+  - type: textarea
+    id: Synonyms
+    attributes:
+      label: Synonyms
+      description: Please provide any synonyms for the new term
+    validations:
+      required: false
+
+  - type: textarea
+    id: Linked_xref
+    attributes:
+      label: Xrefs
+      description: Are there terms in an established ontology that are synonyms for the new term? Please list them here, including the accession number and a link to the term
+    validations:
+      required: false
+
+  - type: input
+    id: attribution
+    attributes:
+      label: Your ORCID
+      description: Please provide your ORCID for microattribution
+    validations:
+      required: false
