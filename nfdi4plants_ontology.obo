@@ -1982,11 +1982,21 @@ xref: EFO:0003789
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
+<<<<<<< Updated upstream
 id: NFDI4PSO:1000163
 name: algae growth protocol
 def: "A protocol that provides instructions for growing algae." []
 is_a: NFDI4PSO:1000162 ! growth protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+=======
+id: NFDI4PSO:9999999
+name: Test Term
+def: "Test Term"
+comment: "This term is only for testing purposes."
+created_by: Marcel Tschoepe
+
+
+>>>>>>> Stashed changes
 
 [Term]
 id: NFDI4PSO:1000164
@@ -2122,3 +2132,10 @@ name: data extraction protocol
 def: "A protocol that describes the operations performed to take a specific data set out of a larger data set and present it in a useable format."
 is_a: NFDI4PSO:1000178 ! data processing protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
+
+
+[Term]
+id: NFDI4PSO:9999999
+name: test Term
+def: "Test term for testing purposes"
+created_by: Marcel Tschoepe
