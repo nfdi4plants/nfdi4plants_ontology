@@ -2122,9 +2122,3 @@ name: data extraction protocol
 def: "A protocol that describes the operations performed to take a specific data set out of a larger data set and present it in a useable format."
 is_a: NFDI4PSO:1000178 ! data processing protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
-
-[Term]
-id: NFDI4PSO:1000999
-name: test term
-def: "test term"
-created_by: Marcel Tschoepe
