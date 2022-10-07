@@ -24,4 +24,4 @@ How to submit a new issue:
 
 
 ## Contact  
-You can contact the ontology curators via the Issues tab or our Helpdesk (https://helpdesk.nfdi4plants.org/). We look forward to hearing from you!
+You can contact the ontology curators via the Issues tab or our [Helpdesk](https://helpdesk.nfdi4plants.org/). We look forward to hearing from you!
