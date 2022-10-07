@@ -1,24 +1,27 @@
-# nfdi4plants_ontology
+# dpbo 
 
-An intermediate ontology for plants used by DataPLANT to fill the ontology gap
+With the DataPLANT biology ontology (dpbo), DataPLANT provides an intermediate ontology that acts as a broker and bridge between the individual researcher/domain experts and main ontology providers.  
 
-In order to cover new datatype or a new repository, some terms might be missing
+Nfdi4plants_ontology enables easy and agile collection of missing vocabulary as well as relationships between terms for (meta)data annotation using DataPLANT’s Swate tool. 
 
-- Add existing ontologies to the ontology database
-  - Please fill the [issue templates](https://github.com/nfdi4plants/nfdi4plants_ontoloy/issues/new/choose) 
-- Import terms from existing ontologies
-  - Add the term to the nfdi4pso ontology with the xref to the original source
-- Add missing terms
-  - if the term is not found in any existing ontology, add it to the nfdi4pso ontology 
+# Your contribution
 
-## ARC-ISA DataModel
-The first version of ISA-tab data model is depicted below 
-<img src="./ARC-ISA DataModel/ARC-ISAtab.png" >
+We welcome every contribution! If a specific term, relationship or an existing external ontology needed for annotating your data with Swate is missing from the DataPLANT database, you can open an issue. We provide a variety of issue templates depending on your wishes: 
 
-There are two versions ARC-ISAtab.owl, which can be opened in Protege and visualised in Vowl.
+- **Import term:** Suggest a term to import from a registered ontology into dpbo
+- **Import ontology:** Request the import of an already existing ontology into the SwateDB if you need >60% of terms from the ontology to annotate your data 
+- **New term:** Suggest a new term to be added to dpbo
+- **New synonym:** Suggest a synonym for an already existing dpbo term
 
-ARC-ISAtab-asOBO is the corresponding obo file.
 
-## Notes 
-Current version of the obo flat file format (including terminologies `is_a`, `xref`, etc. 
-https://owlcollab.github.io/oboformat/doc/GO.format.obo-1_4.html
+How to submit a new issue:
+
+1. Go to the Issues tab 
+2. Click on **New issue** 
+3. Choose a template or open a blank issue 
+4. Fill in the issue template with the required information
+5. Click on **Submit new issue** to validate your entry. We will get back to you soon!
+
+
+## Contact  
+You can contact the ontology curators via the Issues tab or our Helpdesk (https://helpdesk.nfdi4plants.org/). We look forward to hearing from you!
