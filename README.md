@@ -23,7 +23,7 @@ How to submit a new issue:
 
 | **Issue Template** | **Mandatory information** | **Optional Information** |
 | --- | --- | --- |
-| Import term | -Term name and id (accession number)<br/>  -URI where the term can be found  | -Parent and/or child terms already in dpbo<br/>  -The reason for import<br/>  -Your ORCID for microattribution |
+| Import term | -Term name and id (accession number)<br/>  -URI where the term can be found  | -Parent and/or child terms already in nfdi4pso<br/>  -The reason for import<br/>  -Your ORCID for microattribution |
 | Import ontology | -Name and URI of the already existing ontology to be imported | -The reason to import the ontology |
 | New term | -Name of the term to be added<br/> -Term description and a link to the definition source | -Parent and/or child terms already in nfdi4pso<br/> -Synonyms and/or xrefs for the proposed terms<br/> -Your ORCID for microattribution<br/>
 | New synonym | -Term name and ID<br/> -Synonym to be added | -Scope of the synonym<br/> -Reasoning for adding the synonym<br/> -Your ORCID for microattribution | 
