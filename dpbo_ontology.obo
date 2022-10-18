@@ -5,35 +5,18 @@ default-namespace: DPBO
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
+remark: curator: Kathryn Dumschott <k.dumschott@fz-juelich.de>
 ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000119> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000120> \"\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NFDI4PSO_1000126> \"\"^^xsd:string)\n)
-treat-xrefs-as-equivalent: OBI
-treat-xrefs-as-equivalent: EFO
-treat-xrefs-as-equivalent: GENEPIO
-treat-xrefs-as-equivalent: CHMO
-treat-xrefs-as-equivalent: NCIT
-treat-xrefs-as-equivalent: PSO
-treat-xrefs-as-equivalent: CHEBI
-treat-xrefs-as-equivalent: SIO
-treat-xrefs-as-equivalent: ENVO
-treat-xrefs-as-equivalent: ERO
-treat-xrefs-as-equivalent: MS
-treat-xrefs-as-equivalent: PATO
-treat-xrefs-as-equivalent: UO
-treat-xrefs-as-equivalent: OME
-treat-xrefs-as-equivalent: EDAM
-treat-xrefs-as-equivalent: dc
-treat-xrefs-as-equivalent: SCTID
 
 [Term]
 id: DPBO:0000001
 name: growth plot design
 def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
 synonym: "Experimental Randomisation" RELATED []
-disjoint_from: DPBO:0000002 ! Read Alignment Software
+disjoint_from: DPBO:0000002 ! read alignment software
 
 [Term]
 id: DPBO:0000002
@@ -54,25 +37,25 @@ def: "The parameters of the read alignment software (DPBO:0000002)." []
 [Term]
 id: DPBO:0000005
 name: humidity day
-def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of http://purl.obolibrary.org/obo/PECO_0007197" []
+def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" []
 comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
 
 [Term]
 id: DPBO:0000006
 name: humidity night
-def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of http://purl.obolibrary.org/obo/PECO_0007197”" []
+def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" []
 comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
 
 [Term]
 id: DPBO:0000007
 name: temperature day
-def: "This term defines the air temperature at daytime, it is a specialised concept of http://purl.obolibrary.org/obo/ENVO_09200001" []
+def: "This term defines the air temperature at daytime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" []
 comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
 
 [Term]
 id: DPBO:0000008
 name: temperature night
-def: "This term defines the air temperature at nighttime, it is a specialised concept of http://purl.obolibrary.org/obo/ENVO_09200001”" []
+def: "This term defines the air temperature at nighttime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" []
 comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
 
 [Term]
@@ -126,19 +109,19 @@ comment: “”
 id: DPBO:0000017
 name: base-calling software
 def: "The name of the software used for base-calling." []
-comment: Alternative: http://edamontology.org/operation_3185
-xref: EDAM:operation_3185
+comment: term description for base-calling http://edamontology.org/operation_3185
+
 
 [Term]
 id: DPBO:0000018
 name: base-calling software version
-def: "The version of the Base-calling Software (DPBO:0000017).”" []
+def: "The version of the base-calling software (DPBO:0000017).”" []
 comment: “”
 
 [Term]
 id: DPBO:0000019
 name: base-calling software parameters
-def: "The parameters of the Base-calling Software (DPBO:0000017).”" []
+def: "The parameters of the base-calling software (DPBO:0000017).”" []
 comment: “”
 
 [Term]
@@ -172,7 +155,7 @@ comment: “”
 
 [Term]
 id: DPBO:0000025
-name: data filtering Software Parameters
+name: data filtering software parameters
 def: "The parameters of the data filtering software (DPBO:0000023).”" []
 comment: “”
 
@@ -181,6 +164,8 @@ id: DPBO:0000026
 name: genome reference sequence
 def: "Name and version of the genome reference.”" []
 comment: “See also http://purl.obolibrary.org/obo/NCIT_C164388 and http://purl.obolibrary.org/obo/MS_1002644”
+xref: MS:1002644
+xref: NCIT:C16438
 
 [Term]
 id: DPBO:0000027
@@ -200,32 +185,31 @@ name: processed data file checksum
 def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum" []
 
 [Term]
-id: DPBO:0000030
+id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
-xref: OBI:0100026
 
 [Term]
-id: DPBO:0000031
+id: EFO:0000513
 name: genotype
 def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment." []
-xref: EFO:0000513
+
 
 [Term]
-id: DPBO:0000032
+id: EFO:0000635
 name: organism part
 def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)." []
-xref: EFO:0000635
+
 
 [Term]
 id: DPBO:0000033
 name: plant age
 def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." []
-comment: “This is a specialization of http://www.ebi.ac.uk/efo/EFO_0000246"
+comment: “This is a specialization of age (http://www.ebi.ac.uk/efo/EFO_0000246)"
 
 [Term]
-id: DPBO:0000034
-name: time point
+id: EFO:0000724
+name: timepoint
 def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
 xref: EFO:0000724
 
@@ -237,27 +221,24 @@ xref: GENEPIO:0001973
 
 [Term]
 id: DPBO:0000036
-name: library Selection
+name: library selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
 xref: GENEPIO:0001940
 
 [Term]
-id: DPBO:0000037
+id: GENEPIO:0000085
 name: library preparation kit
 def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids." []
-xref: GENEPIO:0000085
 
 [Term]
-id: DPBO:0000038
+id: GENEPIO:0000149
 name: library preparation kit version
 def: "The version identifier of a packaged kit tailored for specific sequencing workflows." []
-xref: GENEPIO:0000149
 
 [Term]
-id: DPBO:0000039
+id: GENEPIO:0000083
 name: adapter sequence
 def: "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters." []
-xref: GENEPIO:0000083
 
 [Term]
 id: DPBO:0000040
@@ -275,37 +256,37 @@ comment: “Adapted from 'light quantity exposure' http://purl.obolibrary.org/ob
 id: DPBO:0000042
 name: biological replicate
 def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')" []
-comment: “Similar to http://purl.obolibrary.org/obo/MS_1001809"
+xref: MS:1001809
 
 [Term]
 id: DPBO:0000043
 name: MS sample post-extraction
 def: "Specific to metabolomic mass spectrometry assays. Steps performed after sample extraction (e.g. dried in a vacuum concentrator, solid phase microextraction direct injection)" []
-comment: “"
+
 
 [Term]
 id: DPBO:0000044
 name: MS sample resuspension
 def: "Specific to metabolomic mass spectrometry assays. Resuspension after sample extraction (e.g. dried samples resuspended in pyridine, dried samples resuspended in acetonitrile)" []
-comment: “"
+
 
 [Term]
 id: DPBO:0000045
 name: MS sample type
 def: "Specific to metabolomic mass spectrometry assays. Type of sample (e.g. experimental sample, pooled sample, blank, medium blank, retention index, reference standard, quality control)" []
-comment: “"
+
 
 [Term]
 id: DPBO:0000046
 name: chromatography instrument model
 def: "Company name, and instrument name or serial number of the chromatography instrument" []
-comment: is_a http://purl.obolibrary.org/obo/OBI_0000048
+comment: is_a chromatography device (http://purl.obolibrary.org/obo/OBI_0000048)
 
 [Term]
 id: DPBO:0000047
 name: chromatography autosampler model
 def: "Company name, and name or serial number of the chromatography autosampler model" []
-comment: is_a http://purl.obolibrary.org/obo/OBI_0000555
+comment: is_a autosampler (http://purl.obolibrary.org/obo/OBI_0000555)
 
 [Term]
 id: DPBO:0000048
@@ -322,13 +303,13 @@ comment: is_a http://purl.obolibrary.org/obo/OBI_0000614
 id: DPBO:0000050
 name: extraction buffer
 def: "Chemical buffer, solvent or solution used to extract a component from a biological sample." []
-comment: “related to http://purl.obolibrary.org/obo/OBI_0302884. DB"
+comment: “related to extraction (http://purl.obolibrary.org/obo/OBI_0302884). DB"
 
 [Term]
 id: DPBO:0000051
 name: extraction buffer volume
 def: "Volume of the buffer (DPBO:0000050) used during extraction." []
-comment: related to http://purl.obolibrary.org/obo/OBI_0302884
+comment: “related to extraction (http://purl.obolibrary.org/obo/OBI_0302884)"
 
 [Term]
 id: DPBO:0000052
@@ -349,10 +330,9 @@ def: "Method or kit that was used to extract DNA or RNA" []
 comment: “More general than DPBO:0000014, because not everyone uses a kit for RNA/DNA extraction"
 
 [Term]
-id: DPBO:0000055
+id: GENEPIO:0001965
 name: library source
-def: "Type of source material that is being sequenced" []
-xref: GENEPIO:0001965
+def: "The library source specifies the type of source material that is being sequenced." []
 
 [Term]
 id: DPBO:0000056
@@ -367,10 +347,10 @@ def: "Name of the company that produces next generation sequencing instruments" 
 xref: GENEPIO:0000071
 
 [Term]
-id: DPBO:0000058
+id: GENEPIO:0000076
 name: read length
 def: "Numbers of base pairs per read" []
-xref: GENEPIO:0000076
+
 
 [Term]
 id: DPBO:0000059
@@ -398,7 +378,7 @@ def: "Measure of RNA quality after RNA extraction. Typically RNA integrity numbe
 
 [Term]
 id: DPBO:0000063
-name: BioProject Accession Number
+name: BioProject accession number
 def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345." []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C175890
@@ -411,29 +391,25 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 xref: NCIT:C70713
 
 [Term]
-id: DPBO:0000065
+id: NCIT:C53471
 name: isolate
-def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system. [Definition Source: NCI]" []
-xref: NCIT:C53471
+def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system." []
 
 [Term]
-id: DPBO:0000066
+id: EFO:0005136
 name: cultivar
 def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
 comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
-xref: EFO:0005136
 
 [Term]
-id: DPBO:0000067
+id: EFO:0000434
 name: ecotype
 def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
-comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0000434]"
-xref: EFO:0000434
 
 [Term]
 id: DPBO:0000068
 name: cell line
-def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [Definition Source: NCI][attribution: On-line Medical Dictionary]" []
+def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
 xref: NCIT:C16403
 
@@ -445,18 +421,14 @@ comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C12508]"
 xref: NCIT:C12508
 
 [Term]
-id: DPBO:0000070
+id: NCIT:C43531
 name: developmental stage
-def: "A general term that usually refers to named landmark events during development of an organism. [Definition Source: NCI]" []
-comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C43531]"
-xref: NCIT:C43531
+def: "A general term that usually refers to named landmark events during development of an organism." []
 
 [Term]
-id: DPBO:0000071
+id: PSO:0000013
 name: plant disease
 def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent." []
-comment: “[Definition Source: http://purl.obolibrary.org/obo/PSO_0000013]"
-xref: PSO:0000013
 
 [Term]
 id: DPBO:0000072
@@ -478,16 +450,15 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 xref: NCIT:C16632
 
 [Term]
-id: DPBO:0000075
+id: GENEPIO:0001174
 name: sample collection date
 def: "The date on which the sample was collected" []
 xref: NCIT:C81286
 
 [Term]
-id: DPBO:0000076
+id: GENEPIO:0001153
 name: sample collected by
-def: "Indicates the person, group, or institution who performed the collection act. [Definition Source: NCI]" []
-comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C45262"
+def: "The name of the agency that collected the original sample." []
 xref: NCIT:C45262
 
 [Term]
@@ -504,22 +475,20 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 xref: NCIT:C175889
 
 [Term]
-id: DPBO:0000079
+id: CHEBI:35209
 name: label
 def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
-xref: CHEBI:35209
 
 [Term]
-id: DPBO:0000080
+id: CHMO:0000995
 name: mobile phase
 def: "A fluid that percolates through or along the stationary bed in chromatography." []
-xref: CHMO:0000995
 
 [Term]
 id: DPBO:0000081
 name: chromatography gradient
 def: "Settings of the gradient used during (e.g. liquid, gas or ion) chromatography" []
-comment: "term was previously !elution!"
+comment: "term was previously
 
 [Term]
 id: DPBO:0000082
@@ -543,16 +512,15 @@ name: title
 def: "Title of the study as would be used in a publication." []
 
 [Term]
-id: DPBO:0002003
+id: SIO:000319
 name: latitude
-def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
-xref: SIO:000319
+def: "Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface to the equatorial plane" []
 
 [Term]
-id: DPBO:0002004
+id: SIO:000318
 name: longitude
-def: "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system." []
-xref: SIO:000318
+def: "Longitude is a geographic position that refers to the angle east or west of a reference meridian between the two geographical poles to another meridian that passes through an arbitrary point." []
+
 
 [Term]
 id: DPBO:0002005
@@ -572,13 +540,15 @@ def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant rep
 [Term]
 id: DPBO:0002008
 name: environment (feature)
-def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. 
+comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: ENVO:01000813
 
 [Term]
 id: DPBO:0002009
 name: environment (material)
-def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
+def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. 
+comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: ENVO:00010483
 
 [Term]
@@ -591,7 +561,8 @@ id: DPBO:0010000
 name: ENA
 def: "The European Nucleotide Archive (ENA) is an open, supported platform for the management, sharing, integration, archiving and dissemination of sequence data." []
 comment: https://www.ebi.ac.uk/ena/
-is_a: DPBO:1000095 ! Endpoint Repository
+xref: ENSGLOSSARY:0000217
+is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:33:08Z xsd:dateTime
 created_by: Dominik Brilhaus
@@ -601,7 +572,7 @@ id: DPBO:0010002
 name: BioSample
 def: "The BioSample database contains descriptions of biological source materials used in experimental assays." []
 comment: https://www.ncbi.nlm.nih.gov/biosample/
-is_a: DPBO:1000095 ! Endpoint Repository
+is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:33:08Z xsd:dateTime
 created_by: Dominik Brilhaus
@@ -611,7 +582,8 @@ id: DPBO:0010004
 name: BioProject
 def: "A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data types generated for that project." []
 comment: https://www.ncbi.nlm.nih.gov/bioproject/
-is_a: DPBO:1000095 ! Endpoint Repository
+xref: GENEPIO:0001836
+is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:58:37Z xsd:dateTime
 created_by: Dominik Brilhaus
@@ -621,7 +593,8 @@ id: DPBO:0010005
 name: GenBank
 def: "GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences (Nucleic Acids Research, 2013 Jan;41(D1):D36-42). GenBank is part of the International Nucleotide Sequence Database Collaboration, which comprises the DNA DataBank of Japan (DDBJ), the European Nucleotide Archive (ENA), and GenBank at NCBI. These three organizations exchange data on a daily basis." []
 comment: https://www.ncbi.nlm.nih.gov/genbank/
-is_a: DPBO:1000095 ! Endpoint Repository
+xref: NCIT:C43818
+is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:59:49Z xsd:dateTime
 created_by: Dominik Brilhaus
@@ -631,7 +604,7 @@ id: DPBO:0010006
 name: SRA
 def: "Sequence Read Archive (SRA) data, available through multiple cloud providers and NCBI servers, is the largest publicly available repository of high throughput sequencing data. The archive accepts data from all branches of life as well as metagenomic and environmental surveys. SRA stores raw sequencing data and alignment information to enhance reproducibility and facilitate new discoveries through data analysis." []
 comment: https://www.ncbi.nlm.nih.gov/sra/
-is_a: DPBO:1000095 ! Endpoint Repository
+is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:02:27Z xsd:dateTime
 created_by: Dominik Brilhaus
@@ -641,7 +614,7 @@ id: DPBO:0010007
 name: PGP
 def: "Plant Genomics & Phenomics Research Data Repository" []
 comment: https://edal-pgp.ipk-gatersleben.de
-is_a: DPBO:1000095 ! Endpoint Repository
+is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:03:35Z xsd:dateTime
 created_by: Dominik Brilhaus
@@ -651,16 +624,16 @@ id: DPBO:0010008
 name: BIA
 def: "The BioImage Archive (BIA) stores and distributes biological images that are useful to life sciences researchers. It also provides data archiving services to the broader bioimaging database community including added-value bioimaging data resources such as EMPIAR, Cell-IDR and Tissue-IDR." []
 comment: https://www.ebi.ac.uk/bioimage-archive/
-is_a: DPBO:1000095 ! Endpoint Repository
+is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:04:46Z xsd:dateTime
-created_by: Dominik Brilhaus[Term]
+created_by: Dominik Brilhaus
 
 [Term]
 id: DPBO:0010009
 name: biosource material state
 def: "The state (typically fresh or dry) of the biosource material (e.g. tissue) prepared for an assay." []
-comment: "Relates to DPBO:0000013 ! Biosource amount"
+comment: "Relates to DPBO:0000013"
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
@@ -668,8 +641,8 @@ created_by: Dominik Brilhaus
 id: DPBO:0010010
 name: fresh material
 def: "Fresh (non-dry) biosource material" []
-comment: "Relates to https://cropontology.org/rdf/CO_347:0000193 ! Plant FW - Measurement"
-is_a: DPBO:0010009
+comment: "Relates to https://cropontology.org/rdf/CO_347:0000193
+is_a: DPBO:0010009 ! biosource material state
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
@@ -677,8 +650,8 @@ created_by: Dominik Brilhaus
 id: DPBO:0010011
 name: dry material
 def: "Dry biosource material" []
-comment: "Relates to https://cropontology.org/rdf/CO_347:0000196 ! Plant DW - Measurement"
-is_a: DPBO:0010009 
+comment: "Relates to https://cropontology.org/rdf/CO_347:0000196
+is_a: DPBO:0010009 ! biosource material state
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
@@ -686,7 +659,7 @@ created_by: Dominik Brilhaus
 id: DPBO:0010012
 name: internal standard
 def: "Internal standard added in known amount to an analytical sample" []
-comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005 ! internal standard role"
+comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
@@ -701,7 +674,7 @@ created_by: Dominik Brilhaus
 id: DPBO:0010014
 name: chromatography injection volume
 def: "Volume of the sample injected during chromatography" []
-comment: "Relates to http://purl.allotrope.org/ontologies/result#AFR_0001577 ! injection volume setting"
+comment: "Relates to http://purl.allotrope.org/ontologies/result#AFR_0001577
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
@@ -709,71 +682,61 @@ created_by: Dominik Brilhaus
 id: DPBO:0010015
 name: chromatography injection mode
 def: "This is to specify split / splitless runs during e.g. gas-chromatography." []
-comment: "Compare to http://purl.obolibrary.org/obo/OBI_0000525 ! splitless GC injector"
+comment: "Compare to http://purl.obolibrary.org/obo/OBI_0000525
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
 [Term]
-id: DPBO:1000000
-name: _NotUse_TemplateTerm
-def: "This is a helper term, since I was unable to properly handle custom `property_value` tags with Protege... Dominik" []
-comment: "For property values that are not ontology terms themselves, but literals/strings, add `xsd:string`"
-property_value: ER_target DPBO:1000099
-property_value: ER_target "Put name of ER here" xsd:string
-property_value: ER_target_term "Put name of ER target term for which this term should be selectable" xsd:string
-property_value: UserInstruction "This could be a place for detailed user instructions in SWATE templates" xsd:string
-
-[Term]
 id: DPBO:1000003
-name: RNA-Seq
+name: RNA-seq
 def: "placeholder def of RNA-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000004
-name: miRNA-Seq
+name: miRNA-seq
 def: "placeholder def of miRNA-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000005
-name: ncRNA-Seq
+name: ncRNA-seq
 def: "placeholder def of ncRNA-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000006
-name: RNA-Seq (size fractionation)
+name: RNA-seq (size fractionation)
 def: "placeholder def of RNA-Seq (size fractionation)" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000007
-name: RNA-Seq (CAGE)
+name: RNA-seq (CAGE)
 def: "placeholder def of RNA-Seq (CAGE)" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000008
-name: RNA-Seq (RACE)
+name: RNA-seq (RACE)
 def: "placeholder def of RNA-Seq (RACE)" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -782,88 +745,88 @@ id: DPBO:1000009
 name: ssRNA-seq
 def: "placeholder def of ssRNA-seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000010
-name: ChIP-Seq
+name: ChIP-seq
 def: "placeholder def of ChIP-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000011
-name: MNase-Seq
+name: MNase-seq
 def: "placeholder def of MNase-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000012
-name: MBD-Seq
+name: MBD-seq
 def: "placeholder def of MBD-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000013
-name: MRE-Seq
+name: MRE-seq
 def: "placeholder def of MRE-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000014
-name: Bisulfite-Seq
+name: Bisulfite-seq
 def: "placeholder def of Bisulfite-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000015
-name: Bisulfite-Seq (reduced representation)
+name: Bisulfite-seq (reduced representation)
 def: "placeholder def of Bisulfite-Seq (reduced representation)" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000016
-name: MeDIP-Seq
+name: MeDIP-seq
 def: "placeholder def of MeDIP-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000017
-name: DNase-Hypersensitivity
+name: DNase hypersensitivity
 def: "placeholder def of DNase-Hypersensitivity" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000018
-name: Tn-Seq
+name: Tn-seq
 def: "placeholder def of Tn-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -872,7 +835,7 @@ id: DPBO:1000019
 name: FAIRE-seq
 def: "placeholder def of FAIRE-seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -881,16 +844,16 @@ id: DPBO:1000020
 name: SELEX
 def: "placeholder def of SELEX" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000021
-name: RIP-Seq
+name: RIP-seq
 def: "placeholder def of RIP-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -899,7 +862,7 @@ id: DPBO:1000022
 name: ATAC-seq
 def: "placeholder def of ATAC-seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -908,7 +871,7 @@ id: DPBO:1000023
 name: ChIA-PET
 def: "placeholder def of ChIA-PET" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -917,7 +880,7 @@ id: DPBO:1000024
 name: Hi-C
 def: "placeholder def of Hi-C" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -926,7 +889,7 @@ id: DPBO:1000025
 name: OTHER: specify
 def: "placeholder def of OTHER: specify" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! Library strategy
+is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -935,7 +898,7 @@ id: DPBO:1000026
 name: fastq
 def: "placeholder def of fastq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -944,7 +907,7 @@ id: DPBO:1000027
 name: bam
 def: "placeholder def of bam" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -953,7 +916,7 @@ id: DPBO:1000028
 name: Illumina_native_qseq
 def: "placeholder def of Illumina_native_qseq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -962,7 +925,7 @@ id: DPBO:1000029
 name: Illumina_native
 def: "placeholder def of Illumina_native" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -971,7 +934,7 @@ id: DPBO:1000030
 name: SOLiD_native_csfasta
 def: "placeholder def of SOLiD_native_csfasta" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -980,7 +943,7 @@ id: DPBO:1000031
 name: SOLiD_native_qual
 def: "placeholder def of SOLiD_native_qual" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -989,7 +952,7 @@ id: DPBO:1000032
 name: sff
 def: "placeholder def of sff" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -998,7 +961,7 @@ id: DPBO:1000033
 name: 454_native_seq
 def: "placeholder def of 454_native_seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -1007,7 +970,7 @@ id: DPBO:1000034
 name: 454_native_qual
 def: "placeholder def of 454_native_qual" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -1016,7 +979,7 @@ id: DPBO:1000035
 name: Helicos_native
 def: "placeholder def of Helicos_native" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -1025,7 +988,7 @@ id: DPBO:1000036
 name: srf
 def: "placeholder def of srf" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -1034,7 +997,7 @@ id: DPBO:1000037
 name: PacBio_HDF5
 def: "placeholder def of PacBio_HDF5" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! Raw data file format
+is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 
@@ -1043,7 +1006,7 @@ id: DPBO:1000038
 name: Illumina Genome Analyzer IIx
 def: "placeholder def of Illumina Genome Analyzer IIx" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1052,7 +1015,7 @@ id: DPBO:1000039
 name: Illumina HiSeq 1000
 def: "placeholder def of Illumina HiSeq 1000" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1061,7 +1024,7 @@ id: DPBO:1000040
 name: Illumina HiSeq 1500
 def: "placeholder def of Illumina HiSeq 1500" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1070,7 +1033,7 @@ id: DPBO:1000041
 name: Illumina HiSeq 2000
 def: "placeholder def of Illumina HiSeq 2000" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1079,7 +1042,7 @@ id: DPBO:1000042
 name: Illumina HiSeq 2500
 def: "placeholder def of Illumina HiSeq 2500" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1088,7 +1051,7 @@ id: DPBO:1000043
 name: Illumina HiSeq 3000
 def: "placeholder def of Illumina HiSeq 3000" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1097,7 +1060,7 @@ id: DPBO:1000044
 name: Illumina HiSeq 4000
 def: "placeholder def of Illumina HiSeq 4000" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1106,7 +1069,7 @@ id: DPBO:1000045
 name: Illumina NextSeq 500
 def: "placeholder def of Illumina NextSeq 500" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1115,7 +1078,7 @@ id: DPBO:1000046
 name: Illumina NextSeq 550
 def: "placeholder def of Illumina NextSeq 550" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1124,7 +1087,7 @@ id: DPBO:1000047
 name: Illumina HiSeq X Ten
 def: "placeholder def of Illumina HiSeq X Ten" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1133,7 +1096,7 @@ id: DPBO:1000048
 name: Illumina HiSeq X Five
 def: "placeholder def of Illumina HiSeq X Five" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1142,7 +1105,7 @@ id: DPBO:1000049
 name: Illumina NovaSeq 6000
 def: "placeholder def of Illumina NovaSeq 6000" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1151,7 +1114,7 @@ id: DPBO:1000050
 name: Illumina MiSeq
 def: "placeholder def of Illumina MiSeq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1160,7 +1123,7 @@ id: DPBO:1000051
 name: Illumina HiScanSQ
 def: "placeholder def of Illumina HiScanSQ" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1169,7 +1132,7 @@ id: DPBO:1000052
 name: Illumina MiniSeq
 def: "placeholder def of Illumina MiniSeq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1178,7 +1141,7 @@ id: DPBO:1000053
 name: Illumina iSeq 100
 def: "placeholder def of Illumina iSeq 100" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1187,7 +1150,7 @@ id: DPBO:1000054
 name: BGISEQ-500
 def: "placeholder def of BGISEQ-500" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1196,7 +1159,7 @@ id: DPBO:1000055
 name: DNBSEQ-G400
 def: "placeholder def of DNBSEQ-G400" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1205,7 +1168,7 @@ id: DPBO:1000056
 name: DNBSEQ-T7
 def: "placeholder def of DNBSEQ-T7" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1214,7 +1177,7 @@ id: DPBO:1000057
 name: DNBSEQ-G50
 def: "placeholder def of DNBSEQ-G50" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1223,7 +1186,7 @@ id: DPBO:1000058
 name: Ion Torrent PGM
 def: "placeholder def of Ion Torrent PGM" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1232,7 +1195,7 @@ id: DPBO:1000059
 name: Ion Torrent Proton
 def: "placeholder def of Ion Torrent Proton" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1241,7 +1204,7 @@ id: DPBO:1000060
 name: Ion Torrent S5
 def: "placeholder def of Ion Torrent S5" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1250,7 +1213,7 @@ id: DPBO:1000061
 name: Ion Torrent S5 XL
 def: "placeholder def of Ion Torrent S5 XL" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1259,7 +1222,7 @@ id: DPBO:1000062
 name: PacBio RS
 def: "placeholder def of PacBio RS" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1268,7 +1231,7 @@ id: DPBO:1000063
 name: PacBio RS II
 def: "placeholder def of PacBio RS II" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1277,7 +1240,7 @@ id: DPBO:1000064
 name: Sequel
 def: "placeholder def of Sequel" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1286,7 +1249,7 @@ id: DPBO:1000065
 name: Sequel II
 def: "placeholder def of Sequel II" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1295,7 +1258,7 @@ id: DPBO:1000066
 name: AB SOLiD System 2.0
 def: "placeholder def of AB SOLiD System 2.0" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1304,7 +1267,7 @@ id: DPBO:1000067
 name: AB SOLiD System 3.0
 def: "placeholder def of AB SOLiD System 3.0" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1313,7 +1276,7 @@ id: DPBO:1000068
 name: AB SOLiD 3 Plus System
 def: "placeholder def of AB SOLiD 3 Plus System" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1322,7 +1285,7 @@ id: DPBO:1000069
 name: AB SOLiD 4 System
 def: "placeholder def of AB SOLiD 4 System" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1331,7 +1294,7 @@ id: DPBO:1000070
 name: AB SOLiD 4hq System
 def: "placeholder def of AB SOLiD 4hq System" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1340,7 +1303,7 @@ id: DPBO:1000071
 name: AB SOLiD PI System
 def: "placeholder def of AB SOLiD PI System" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1349,7 +1312,7 @@ id: DPBO:1000072
 name: AB 5500 Genetic Analyzer
 def: "placeholder def of AB 5500 Genetic Analyzer" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1358,7 +1321,7 @@ id: DPBO:1000073
 name: AB 5500xl Genetic Analyzer
 def: "placeholder def of AB 5500xl Genetic Analyzer" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1367,7 +1330,7 @@ id: DPBO:1000074
 name: AB 5500xl-W Genetic Analysis System
 def: "placeholder def of AB 5500xl-W Genetic Analysis System" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1376,7 +1339,7 @@ id: DPBO:1000075
 name: 454 GS
 def: "placeholder def of 454 GS" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1385,7 +1348,7 @@ id: DPBO:1000076
 name: 454 GS 20
 def: "placeholder def of 454 GS 20" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1394,7 +1357,7 @@ id: DPBO:1000077
 name: 454 GS FLX
 def: "placeholder def of 454 GS FLX" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1403,7 +1366,7 @@ id: DPBO:1000078
 name: 454 GS FLX+
 def: "placeholder def of 454 GS FLX+" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1412,7 +1375,7 @@ id: DPBO:1000079
 name: 454 GS Junior
 def: "placeholder def of 454 GS Junior" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1421,7 +1384,7 @@ id: DPBO:1000080
 name: 454 GS FLX Titanium
 def: "placeholder def of 454 GS FLX Titanium" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1430,7 +1393,7 @@ id: DPBO:1000081
 name: Complete Genomics
 def: "placeholder def of Complete Genomics" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1439,7 +1402,7 @@ id: DPBO:1000082
 name: Helicos HeliScope
 def: "placeholder def of Helicos HeliScope" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1448,7 +1411,7 @@ id: DPBO:1000083
 name: GridION
 def: "placeholder def of GridION" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1457,7 +1420,7 @@ id: DPBO:1000084
 name: MinION
 def: "placeholder def of MinION" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1466,7 +1429,7 @@ id: DPBO:1000085
 name: PromethION
 def: "placeholder def of PromethION" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! Next generation sequencing instrument model
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
@@ -1475,7 +1438,7 @@ id: DPBO:1000086
 name: single
 def: "placeholder def of single" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000015 ! Library layout
+is_a: DPBO:0000015 ! library layout
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
@@ -1484,7 +1447,7 @@ id: DPBO:1000087
 name: paired-end
 def: "placeholder def of paired-end" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000015 ! Library layout
+is_a: DPBO:0000015 ! library layout
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
@@ -1493,7 +1456,7 @@ id: DPBO:1000088
 name: total RNA
 def: "placeholder def of total RNA" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! Bio entity
+is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -1502,7 +1465,7 @@ id: DPBO:1000089
 name: polyA RNA
 def: "placeholder def of polyA RNA" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! Bio entity
+is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -1511,7 +1474,7 @@ id: DPBO:1000090
 name: cytoplasmic RNA
 def: "placeholder def of cytoplasmic RNA" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! Bio entity
+is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -1520,7 +1483,7 @@ id: DPBO:1000091
 name: nuclear RNA
 def: "placeholder def of nuclear RNA" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! Bio entity
+is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -1529,7 +1492,7 @@ id: DPBO:1000092
 name: genomic DNA
 def: "placeholder def of genomic DNA" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! Bio entity
+is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -1538,7 +1501,7 @@ id: DPBO:1000093
 name: protein
 def: "placeholder def of protein" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! Bio entity
+is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -1547,13 +1510,13 @@ id: DPBO:1000094
 name: other
 def: "placeholder def of other" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! Bio entity
+is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: DPBO:1000095
-name: Endpoint Repository
+name: endpoint repository
 def: "Parent term to collect endpoint repositories (ER)." []
 comment: "For an overview of relevant repositories, check https://www.re3data.org or https://fairsharing.org"
 
@@ -1562,45 +1525,45 @@ id: DPBO:1000096
 name: GEO
 def: "GEO (Gene Expression Omnibus) is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted. Tools are provided to help users query and download experiments and curated gene expression profiles." []
 comment: https://www.ncbi.nlm.nih.gov/geo/
-is_a: DPBO:1000095 ! Endpoint Repository
-disjoint_from: DPBO:1000097 ! METABOLIGHTS
+is_a: DPBO:1000095 ! endpoint repository
+disjoint_from: DPBO:1000097 ! MetaboLights
 
 [Term]
 id: DPBO:1000097
-name: METABOLIGHTS
+name: MetaboLights
 def: "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. MetaboLights is the recommended Metabolomics repository for a number of leading journals." []
 comment: https://www.ebi.ac.uk/metabolights/
-is_a: DPBO:1000095 ! Endpoint Repository
+is_a: DPBO:1000095 ! endpoint repository
 
 [Term]
 id: DPBO:1000098
 name: PRIDE
 def: "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. Datasets are submitted to ProteomeXchange via PRIDE and are handled by expert bio-curators. All PRIDE public datasets can also be searched in ProteomeCentral, the portal for all ProteomeXchange datasets." []
 comment: https://www.ebi.ac.uk/pride/
-is_a: DPBO:1000095 ! Endpoint Repository
+is_a: DPBO:1000095 ! endpoint repository
 
 [Term]
 id: DPBO:1000099
-name: GEO_RNASEQ
+name: GEO_RNAseq
 def: "Parent term to collect terms required for RNASeq submission to GEO" []
 is_a: DPBO:1000096 ! GEO
-disjoint_from: DPBO:1000100 ! GEO_MICROARRAY
+disjoint_from: DPBO:1000100 ! GEO_microarray
 
 [Term]
 id: DPBO:1000100
-name: GEO_MICROARRAY
+name: GEO_microarray
 def: "Parent term to collect terms required for microarray submission to GEO" []
 is_a: DPBO:1000096 ! GEO
 
 [Term]
 id: DPBO:1000101
-name: Well
+name: well
 def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
 xref: OME:Well
 
 [Term]
 id: DPBO:1000102
-name: Well Number
+name: well Number
 def: "The number of a well in a well plate." []
 
 [Term]
@@ -1610,19 +1573,19 @@ def: "The identifier of a siRNA from a reagent library." []
 
 [Term]
 id: DPBO:1000104
-name: Compound name
+name: compound name
 def: "Unique name of a chemical compound." []
 xref: EDAM:data_0990
 
 [Term]
 id: DPBO:1000105
-name: Compound identifier
+name: compound identifier
 def: "Identifier of an entry from a database of chemicals." []
 xref: data:1086
 
 [Term]
 id: DPBO:1000106
-name: Compound class
+name: compound class
 def: "The class a compound belongs to, defined by its biological function or the chemical property." []
 comment: "Needed for imaging templates"
 
@@ -1634,31 +1597,31 @@ xref: data:2795
 
 [Term]
 id: DPBO:1000108
-name: Gene Identifier
+name: gene identifier
 def: "A unique gene name within a specific repository, database, or collection." []
 xref: NCIT:C48664
 
 [Term]
 id: DPBO:1000109
-name: Sense Sequence
+name: sense sequence
 def: "The sequence of the sense strand." []
 comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html"
 
 [Term]
 id: DPBO:1000110
-name: Antisense Sequence
+name: antisense sequence
 def: "The sequence of the antisense strand." []
 comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.openmicroscopy.org/about/submission.html"
 
 [Term]
 id: DPBO:1000111
-name: Control Type
+name: control type
 def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
 xref: NCIT:C49647
 
 [Term]
 id: DPBO:1000112
-name: Quality Control
+name: quality control
 def: "Result of quality control. This can be: pass/fail, or other information such as: no cells" []
 comment: "Definition according to IDR"
 
@@ -1670,7 +1633,7 @@ comment: "Needed for imaging templates. Definition form IDR"
 
 [Term]
 id: DPBO:1000114
-name: Screen Technology Type
+name: screen technology type
 def: "The type of a high content screening experiment like RNAi screen or antibody screen." []
 comment: "Needed for imaging templates"
 
@@ -1682,30 +1645,30 @@ xref: EFO:0007555
 
 [Term]
 id: DPBO:1000116
-name: Library Version
+name: library version
 def: "Version of a reagent library used e.g. in high content screening." []
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000117
-name: Antibody
+name: antibody
 def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." []
 xref: NCIT:C16295
 
 [Term]
 id: DPBO:1000118
-name: Cover Slip
+name: cover slip
 def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
 xref: NCIT:C126370
 
 [Term]
 id: DPBO:1000119
-name: Cover slip preparation (procedure)
+name: cover slip preparation (procedure)
 xref: SCTID:71661000
 
 [Term]
 id: DPBO:1000120
-name: Image file path
+name: image file path
 comment: "Needed for imaging templates"
 
 [Term]
@@ -1716,36 +1679,36 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000122
-name: Imaging Software Name
+name: imaging software name
 def: "The name of the software program to capture and/or process imaging data." []
 xref: NCIT:C175898
 
 [Term]
 id: DPBO:1000123
-name: Imaging Software Version
+name: imaging software version
 def: "The version of the software program to capture and/or process imaging data." []
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000124
-name: Imaging Software Settings
+name: imaging software settings
 def: "The used settings in the software program to capture and/or process imaging data." []
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000125
-name: Microscope filter
+name: microscope filter
 def: "Channel the image was taken with." []
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000126
-name: Dataset Name
+name: dataset name
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000127
-name: Assay Name
+name: assay name
 def: "The name of the assay." []
 xref: NCIT:C178857
 
@@ -1805,37 +1768,37 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000137
-name: Control specification
+name: control specification
 def: "additional information about the quality control in high content screening studies e.g. 'checks for transfection', 'gives strong phenotype'" []
 comment: "Needed for imaging templates. Definition from IDR."
 
 [Term]
 id: DPBO:1000138
-name: Quality Control Comments
+name: quality control comments
 def: "additional information why a quality control passed or failed'" []
 comment: "Needed for imaging templates. Definition from IDR."
 
 [Term]
 id: DPBO:1000139
-name: Microscopy study type
+name: microscopy study type
 def: "Type of an imaging study." []
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000140
-name: Magnification
+name: magnification
 def: "The magnification of a microscopy image" []
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000141
-name: Image Dimensionality
+name: image dimensionality
 def: "The sizes along the axis of the XYZCT dimensions in a microscopy image." []
 comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000142
-name: Objective
+name: objective
 def: "The microscope's objective lens." []
 xref: OME:Objective
 
@@ -1859,7 +1822,7 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000146
-name: Strain
+name: strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
 xref: EFO:0005135
@@ -1867,85 +1830,85 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000147
-name: Container
+name: container
 def: "A device that can be used to restrict the location of material entities over time" []
 xref: OBI:0000967
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000148
-name: Jar
+name: jar
 def: "A wide-mouthed cylindrical container made of glass or pottery and typically having a lid" []
-is_a: DPBO:1000147 ! Container
+is_a: DPBO:1000147 ! container
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000149
-name: Plate
+name: plate
 def: "A flat dish, typically circular" []
-is_a: DPBO:1000147 ! Container
+is_a: DPBO:1000147 ! container
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000150
-name: Contamination
+name: contamination
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
 xref: PATO:0015031
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000151
-name: Axenic
+name: axenic
 def: "Free from other living organisms" []
-is_a: DPBO:1000150 ! Contamination
+is_a: DPBO:1000150 ! contamination
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000152
-name: Laboratory strain
+name: laboratory strain
 def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
-is_a: DPBO:1000146 ! Strain
+is_a: DPBO:1000146 ! strain
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000153
-name: Date
+name: date
 def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." []
 xref: dc:date
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000154
-name: Volume
+name: volume
 def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
 xref: PATO:0000918
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000155
-name: Culture medium volume
+name: culture medium volume
 def: "Volume of culture medium used to grow the organism" []
-is_a: DPBO:1000154 ! Volume
+is_a: DPBO:1000154 ! volume
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000156
-name: Light
+name: light
 def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
 xref: EFO:0000568
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000157
-name: Light quality
+name: light quality
 def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" []
 comment: "close to the term http://purl.obolibrary.org/obo/PECO_0007154"
-is_a: DPBO:1000156 ! Light
+is_a: DPBO:1000156 ! light
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000158
-name: Ratio
+name: ratio
 def: "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b." [UOB:LKSR]
 xref: UO:0000190
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
@@ -1955,7 +1918,7 @@ id: DPBO:1000159
 name: 260/280 ratio
 def: "Nucleic acids have absorbance maxima at 260 nm. Historically, the ratio of this absorbance maximum to the absorbance at 280 nm has been used as a measure of purity in both DNA and RNA extractions. A 260/280 ratio of ~1.8 is generally accepted as pure for DNA; a ratio of ~2.0 is generally accepted as pure for RNA." []
 comment: "Thermofisher NanoDrop https://tools.thermofisher.com/content/sfs/brochures/T123-NanoDrop-Lite-Interpretation-of-Nucleic-Acid-260-280-Ratios.pdf"
-is_a: DPBO:1000158 ! Ratio
+is_a: DPBO:1000158 ! ratio
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -1963,7 +1926,7 @@ id: DPBO:1000160
 name: 260/230 ratio
 def: "The 260/230 values for pure nucleic acid are often higher than the respective 260/280 values. Expected 260/230 values are commonly in the range of 2.0–2.2" []
 comment: "Thermofisher NanoDrop https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/TN52646-E-0215M-NucleicAcid.pdf"
-is_a: DPBO:1000158 ! Ratio
+is_a: DPBO:1000158 ! ratio
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -1977,8 +1940,8 @@ created_by: Dominik Brilhaus
 id: DPBO:1000162
 name: growth protocol
 def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." []
-is_a: DPBO:1000161 ! protocol type
 xref: EFO:0003789
+is_a: DPBO:1000161 ! protocol type
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -2021,39 +1984,39 @@ id: DPBO:1000168
 name: treatment protocol
 def: "A protocol that aims to treat sample or collection of samples, organism or group of organisms, for some experimental purpose." []
 comment: definition from http://www.ebi.ac.uk/efo/EFO_0003969
-is_a: DPBO:1000161 ! protocol type
 xref: EFO:0003969
+is_a: DPBO:1000161 ! protocol type
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000169
 name: sample collection protocol
-def: "A protocol that provides instructions on how a biological sample for an experiment was collected."
+def: "A protocol that provides instructions on how a biological sample for an experiment was collected." []
 comment: definition from http://www.ebi.ac.uk/efo/EFO_0005518
-is_a: DPBO:1000161 ! protocol type
 xref: EFO:0005518
+is_a: DPBO:1000161 ! protocol type
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000170
 name: sample processing protocol
-def: "A protocol that details how a sample is processed or changed to prepare it for analysis."
+def: "A protocol that details how a sample is processed or changed to prepare it for analysis." []
 is_a: DPBO:1000161 ! protocol type
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000171
 name: extraction protocol
-def: "A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay"
-comment: definition taken heavily from http://www.ebi.ac.uk/efo/EFO_0000490 
+def: "A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay" []
+comment: definition taken heavily from http://www.ebi.ac.uk/efo/EFO_0000490
+xref: EFO:0000490
 is_a: DPBO:1000170 ! sample processing protocol
-xref: EFO:0000490 
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000172
 name: DNA extraction protocol
-def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components."
+def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components." []
 comment: definition taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425773/
 is_a: DPBO:1000171 ! extraction protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
@@ -2061,43 +2024,43 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 [Term]
 id: DPBO:1000173
 name: RNA extraction protocol
-def: "A protocol that describes the steps for removing and purifying DNA from a biological sample
-is_a: DPBO:1000171 ! extraction protocol
+def: "A protocol that describes the steps for removing and purifying DNA from a biological sample" []
 xref: EFO:0010959
+is_a: DPBO:1000171 ! extraction protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000174
 name: protein extraction protocol
-def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample."
+def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample." []
 is_a: DPBO:1000171 ! extraction protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000175
 name: metabolite extraction protocol
-def: "A protocol that describes the step by step process for removing metabolites from a biological sample."
+def: "A protocol that describes the step by step process for removing metabolites from a biological sample." []
 is_a: DPBO:1000171 ! extraction protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000176
 name: assay pre-processing protocol
-def: "A protocol that describes the steps to be taken to transform a sample before an assay can be performed"
+def: "A protocol that describes the steps to be taken to transform a sample before an assay can be performed" []
 is_a: DPBO:1000161 ! protocol type
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
 [Term]
 id: DPBO:1000177
 name: assay protocol
-def: "A protocol that describes how to perform an assay."
+def: "A protocol that describes how to perform an assay." []
 is_a: DPBO:1000161 ! protocol type
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
 [Term]
 id: DPBO:1000178
 name: data processing protocol
-def: "A protocol that describes the operations performed on data by a computer in order to retrieve, transform, or classify information."
+def: "A protocol that describes the operations performed on data by a computer in order to retrieve, transform, or classify information." []
 comment: definition heavily based on http://purl.obolibrary.org/obo/NCIT_C47925
 is_a: DPBO:1000161 ! protocol type
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
@@ -2105,21 +2068,21 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 [Term]
 id: DPBO:1000179
 name: data filtering protocol
-def: "A protocol that describes the operations performed to filter or select a smaller part of the dataset to be used for or rejected from subsequent analysis steps"
+def: "A protocol that describes the operations performed to filter or select a smaller part of the dataset to be used for or rejected from subsequent analysis steps" []
 is_a: DPBO:1000178 ! data processing protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
 [Term]
 id: DPBO:1000180
 name: data transformation protocol
-def: "A protocol that describes the operations performed to convert data from one format, structure, or value into another."
+def: "A protocol that describes the operations performed to convert data from one format, structure, or value into another." []
 is_a: DPBO:1000178 ! data processing protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
 [Term]
 id: DPBO:1000181
 name: data extraction protocol
-def: "A protocol that describes the operations performed to take a specific data set out of a larger data set and present it in a useable format."
+def: "A protocol that describes the operations performed to take a specific data set out of a larger data set and present it in a useable format." []
 is_a: DPBO:1000178 ! data processing protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
