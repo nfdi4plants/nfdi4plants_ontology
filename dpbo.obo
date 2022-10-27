@@ -2086,3 +2086,23 @@ def: "A protocol that describes the operations performed to take a specific data
 is_a: DPBO:1000178 ! data processing protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
+[Term]
+id: DPBO:1000182
+name: replicate group
+def: "An unique identifier for grouping experminental replicates - replication of an experiment to assess biological or technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, replicate groups must be the same for each replicate in the group (e.g. 'group 1' for each replicate in the group). This adds the possibility to aggregate the replicates without additional annotations."
+created_by: Kevin Schneider | ORCID: 0000-0002-2198-5262
+
+[Term]
+id: DPBO:1000183
+name: biological replicate group
+def: "An unique identifier for grouping biological replicates - replicates made from different individual biosamples to assess biological variation in an experiment. In contrast to other ways of annotating replicates in experimental design, biological replicate groups must be the same for each replicate in the group (e.g. 'b_1' for each biological replicate in the group). This adds the possibility to aggregate the biological replicates without additional annotations."
+is_a: NFDI4PSO:1000182 ! replicate group
+created_by: Kevin Schneider | ORCID: 0000-0002-2198-5262
+
+[Term]
+id: DPBO:1000184
+name: technical replicate group
+def: "An unique identifier for grouping technical replicates - replicates made from different individual biosamples to assess technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, technical replicate groups must be the same for each replicate in the group (e.g. 't_1' for each technical replicate in the group). This adds the possibility to aggregate the technical replicates without additional annotations."
+is_a: NFDI4PSO:1000182 ! replicate group
+created_by: Kevin Schneider | ORCID: 0000-0002-2198-526
+
