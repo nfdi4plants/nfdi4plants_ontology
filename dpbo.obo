@@ -1590,10 +1590,9 @@ def: "The class a compound belongs to, defined by its biological function or the
 comment: "Needed for imaging templates"
 
 [Term]
-id: DPBO:1000107
+id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
-xref: data:2795
 
 [Term]
 id: DPBO:1000108
@@ -1638,10 +1637,9 @@ def: "The type of a high content screening experiment like RNAi screen or antibo
 comment: "Needed for imaging templates"
 
 [Term]
-id: DPBO:1000115
+id: EFO:0007555
 name: high content screening stage
 def: "An experimental stage describing stages of high content screen analysis." []
-xref: EFO:0007555
 
 [Term]
 id: DPBO:1000116
@@ -1662,9 +1660,9 @@ def: "A thin flat piece of transparent material that is placed over a specimen f
 xref: NCIT:C126370
 
 [Term]
-id: DPBO:1000119
+id: SCTID:71661000
 name: cover slip preparation (procedure)
-xref: SCTID:71661000
+
 
 [Term]
 id: DPBO:1000120
@@ -1705,6 +1703,7 @@ comment: "Needed for imaging templates"
 id: DPBO:1000126
 name: dataset name
 comment: "Needed for imaging templates"
+xref: dwc:datasetName
 
 [Term]
 id: DPBO:1000127
@@ -1737,10 +1736,9 @@ def: "Software used for the extraction of features from microscopy images." []
 comment: "Needed for imaging templates"
 
 [Term]
-id: DPBO:1000132
+id: SIO:001051
 name: data analysis
 def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
-xref: SIO:001051
 
 [Term]
 id: DPBO:1000133
@@ -1749,10 +1747,9 @@ def: "Description of the approach to extract features from microscopy images." [
 comment: "Needed for imaging templates"
 
 [Term]
-id: DPBO:1000134
+id: ERO:0001788
 name: image processing technique
 def: "Any form of signal processing for which the input is an image, such as a photograph or video frame; the output of image processing may be either an image or a set of characteristics or parameters related to the image." []
-xref: ERO:0001788
 
 [Term]
 id: DPBO:1000135
