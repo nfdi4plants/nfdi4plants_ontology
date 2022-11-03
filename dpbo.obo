@@ -12,6 +12,152 @@ property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
 
 [Term]
+id: BTO:0001899
+name: stationary phase culture
+namespace: BrendaTissueOBO
+def: "A cell culture at the plateau of the growth curve after log growth in a culture, during which cell number remains constant. New cells are produced at the same rate as older cells die." [Biology_Dictionary_Hyperdictionary:http\://www.hyperdictionary.com/dictionary/Stationary+phase]
+is_a: BTO:0001900 ! growth phase culture
+
+[Term]
+id: BTO:0001900
+name: growth phase culture
+namespace: BrendaTissueOBO
+def: "The characteristic periods in the growth of a bacterial culture, as indicated by the shape of a graph of viable cell number versus time." [Biology_Dictionary_Hyperdictionary:http\://www.hyperdictionary.com/dictionary/Growth+phase]
+
+[Term]
+id: BTO:0001901
+name: death phase culture
+namespace: BrendaTissueOBO
+def: "A cell culture at the final growth phase in a culture, during which nutrients have been depleted and cell number decreases." [Biology_Dictionary_Hyperdictionary:http\://www.hyperdictionary.com/dictionary/Death+phase]
+is_a: BTO:0001900 ! growth phase culture
+
+[Term]
+id: BTO:0001902
+name: lag phase culture
+namespace: BrendaTissueOBO
+def: "The culture at the initial growth phase, during which cell number remains relatively constant prior to rapid growth." [Biology_Dictionary_Hyperdictionary:http\://www.hyperdictionary.com/dictionary/Lag+phase]
+is_a: BTO:0001900 ! growth phase culture
+
+[Term]
+id: BTO:0001903
+name: logarithmic phase culture
+namespace: BrendaTissueOBO
+def: "A cell culture at the steepest slope of the growth curve of a culture-- at the phase of vigorous growth during which cell number doubles every 20-30 minutes." [Biology_Dictionary_Hyperdictionary:http\://www.hyperdictionary.com/dictionary/Logarithmic+phase]
+synonym: "exponential growth phase culture" RELATED []
+synonym: "log phase culture" RELATED []
+is_a: BTO:0001900 ! growth phase culture
+
+[Term]
+id: CHEBI:35209
+name: label
+def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
+
+[Term]
+id: CHMO:0000995
+name: mobile phase
+def: "A fluid that percolates through or along the stationary bed in chromatography." []
+
+[Term]
+id: CHMO:0001583
+name: liquid-solid extraction
+def: "The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a stationary phase (e.g. silica particles)." [ISBN:0-13-147835-4]
+synonym: "liquid-solid extraction" EXACT []
+synonym: "LSE" RELATED non-mining_synonym []
+synonym: "solid phase extraction" EXACT []
+synonym: "solid-phase extraction" EXACT []
+synonym: "sorbent extraction" EXACT []
+synonym: "sorptive extraction" EXACT []
+synonym: "SPE" RELATED non-mining_synonym []
+
+[Term]
+id: CHMO:0001584
+name: normal-phase solid-phase extraction
+def: "The process of transferring a substance from a liquid to a solid phase by passing the (polar) liquid sample through a (non-polar) stationary phase." [ISBN:0-13-147835-4]
+synonym: "normal phase solid-phase extraction" EXACT []
+synonym: "normal phase SPE" EXACT []
+synonym: "normal-phase SPE" EXACT []
+is_a: CHMO:0001583 ! liquid-solid extraction
+
+[Term]
+id: CHMO:0001585
+name: reversed-phase solid-phase extraction
+def: "The process of transferring a substance from a liquid to a solid phase by passing the (non-polar) liquid sample through a (polar) stationary phase." [ISBN:0-13-147835-4]
+synonym: "reverse phase solid-phase extraction" EXACT []
+synonym: "reverse phase SPE" EXACT []
+synonym: "reverse-phase solid-phase extraction" EXACT []
+synonym: "reverse-phase SPE" EXACT []
+synonym: "reversed phase SPE" EXACT []
+synonym: "reversed-phase SPE" EXACT []
+is_a: CHMO:0001583 ! liquid-solid extraction
+
+[Term]
+id: CHMO:0001586
+name: solid-phase micro-extraction
+def: "The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a small fibre containing a stationary phase bonded to a silica needle (<10 μm diameter)." [ISBN:0-13-147835-4]
+synonym: "solid phase microextraction" EXACT []
+synonym: "solid-phase microextraction" EXACT []
+synonym: "SPME" EXACT []
+is_a: CHMO:0001583 ! liquid-solid extraction
+
+[Term]
+id: CHMO:0001587
+name: capillary micro-extraction
+def: "The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a small fused-silica capillary." [ISBN:0444505113]
+synonym: "capillary microextraction" EXACT []
+synonym: "CME" EXACT []
+is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
+id: CHMO:0001588
+name: sol–gel capillary micro-extraction
+def: "The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a small sol–gel-coated fused-silica capillary." [https://doi.org/10.1021/ac0109523]
+synonym: "sgCME" EXACT []
+synonym: "sol-gel capillary micro-extraction" EXACT []
+synonym: "sol-gel capillary microextraction" EXACT []
+synonym: "sol-gel CME" EXACT []
+synonym: "solgel capillary microextraction" EXACT []
+synonym: "solgel CME" EXACT []
+is_a: CHMO:0001587 ! capillary micro-extraction
+
+[Term]
+id: CHMO:0001589
+name: headspace solid-phase micro-extraction
+def: "The process of transferring a substance from a liquid to a solid phase by exposing a small fibre containing a stationary phase bonded to a silica needle (<10 μm diameter) to the headspace above the liquid sample." [https://orcid.org/0000-0002-0640-0422]
+synonym: "headspace solid-phase micro-extraction" EXACT []
+synonym: "headspace solid-phase microextraction" EXACT []
+synonym: "headspace sorptive extraction" EXACT []
+synonym: "HSPME" EXACT []
+synonym: "hSPME" EXACT []
+synonym: "HSSE" EXACT []
+is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
+id: CHMO:0001590
+name: micro-extraction in a packed syringe
+def: "The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a stationary phase (1 mg) packed into a microlitre syringe." [https://doi.org/10.1002/jms.73]
+synonym: "MEPS" EXACT []
+synonym: "micro extraction by packed sorbent" EXACT []
+synonym: "micro-extraction in packed syringe" EXACT []
+synonym: "microextraction in a packed syringe" EXACT []
+synonym: "microextraction in packed syringe" EXACT []
+synonym: "packed syringe micro-extraction" EXACT []
+synonym: "packed syringe microextraction" EXACT []
+synonym: "packed-syringe micro-extraction" EXACT []
+synonym: "packed-syringe microextraction" EXACT []
+is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
+id: CHMO:0002863
+name: dispersive solid phase extraction
+synonym: "dispersive solid-phase extraction" EXACT []
+is_a: CHMO:0001583 ! liquid-solid extraction
+
+[Term]
+id: CHMO:0002887
+name: dispersive solid-phase microextraction
+is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
 id: DPBO:0000001
 name: growth plot design
 def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
@@ -111,7 +257,6 @@ name: base-calling software
 def: "The name of the software used for base-calling." []
 comment: term description for base-calling http://edamontology.org/operation_3185
 
-
 [Term]
 id: DPBO:0000018
 name: base-calling software version
@@ -185,33 +330,10 @@ name: processed data file checksum
 def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum" []
 
 [Term]
-id: OBI:0100026
-name: organism
-def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
-
-[Term]
-id: EFO:0000513
-name: genotype
-def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment." []
-
-
-[Term]
-id: EFO:0000635
-name: organism part
-def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)." []
-
-
-[Term]
 id: DPBO:0000033
 name: plant age
 def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." []
 comment: “This is a specialization of age (http://www.ebi.ac.uk/efo/EFO_0000246)"
-
-[Term]
-id: EFO:0000724
-name: timepoint
-def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
-xref: EFO:0000724
 
 [Term]
 id: DPBO:0000035
@@ -224,21 +346,6 @@ id: DPBO:0000036
 name: library selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
 xref: GENEPIO:0001940
-
-[Term]
-id: GENEPIO:0000085
-name: library preparation kit
-def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids." []
-
-[Term]
-id: GENEPIO:0000149
-name: library preparation kit version
-def: "The version identifier of a packaged kit tailored for specific sequencing workflows." []
-
-[Term]
-id: GENEPIO:0000083
-name: adapter sequence
-def: "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters." []
 
 [Term]
 id: DPBO:0000040
@@ -263,18 +370,15 @@ id: DPBO:0000043
 name: MS sample post-extraction
 def: "Specific to metabolomic mass spectrometry assays. Steps performed after sample extraction (e.g. dried in a vacuum concentrator, solid phase microextraction direct injection)" []
 
-
 [Term]
 id: DPBO:0000044
 name: MS sample resuspension
 def: "Specific to metabolomic mass spectrometry assays. Resuspension after sample extraction (e.g. dried samples resuspended in pyridine, dried samples resuspended in acetonitrile)" []
 
-
 [Term]
 id: DPBO:0000045
 name: MS sample type
 def: "Specific to metabolomic mass spectrometry assays. Type of sample (e.g. experimental sample, pooled sample, blank, medium blank, retention index, reference standard, quality control)" []
-
 
 [Term]
 id: DPBO:0000046
@@ -330,11 +434,6 @@ def: "Method or kit that was used to extract DNA or RNA" []
 comment: “More general than DPBO:0000014, because not everyone uses a kit for RNA/DNA extraction"
 
 [Term]
-id: GENEPIO:0001965
-name: library source
-def: "The library source specifies the type of source material that is being sequenced." []
-
-[Term]
 id: DPBO:0000056
 name: library DNA amount
 def: "Amount of DNA (microgram) used as starting material for library construction" []
@@ -345,12 +444,6 @@ id: DPBO:0000057
 name: next generation sequencing platform
 def: "Name of the company that produces next generation sequencing instruments" []
 xref: GENEPIO:0000071
-
-[Term]
-id: GENEPIO:0000076
-name: read length
-def: "Numbers of base pairs per read" []
-
 
 [Term]
 id: DPBO:0000059
@@ -391,22 +484,6 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 xref: NCIT:C70713
 
 [Term]
-id: NCIT:C53471
-name: isolate
-def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system." []
-
-[Term]
-id: EFO:0005136
-name: cultivar
-def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
-comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
-
-[Term]
-id: EFO:0000434
-name: ecotype
-def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
-
-[Term]
 id: DPBO:0000068
 name: cell line
 def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " []
@@ -419,16 +496,6 @@ name: cell type
 def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]" []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C12508]"
 xref: NCIT:C12508
-
-[Term]
-id: NCIT:C43531
-name: developmental stage
-def: "A general term that usually refers to named landmark events during development of an organism." []
-
-[Term]
-id: PSO:0000013
-name: plant disease
-def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent." []
 
 [Term]
 id: DPBO:0000072
@@ -450,18 +517,6 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 xref: NCIT:C16632
 
 [Term]
-id: GENEPIO:0001174
-name: sample collection date
-def: "The date on which the sample was collected" []
-xref: NCIT:C81286
-
-[Term]
-id: GENEPIO:0001153
-name: sample collected by
-def: "The name of the agency that collected the original sample." []
-xref: NCIT:C45262
-
-[Term]
 id: DPBO:0000077
 name: metabolite assignment file
 def: "metabolite assignment file (MAF) as required by MetaboLights to describe metabolites analyzed during a metabolomics assay. Details see: https://www.ebi.ac.uk/metabolights/guides/MAF/Title" []
@@ -473,16 +528,6 @@ name: BioSample accession number
 def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C175889
-
-[Term]
-id: CHEBI:35209
-name: label
-def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
-
-[Term]
-id: CHMO:0000995
-name: mobile phase
-def: "A fluid that percolates through or along the stationary bed in chromatography." []
 
 [Term]
 id: DPBO:0000081
@@ -512,17 +557,6 @@ name: title
 def: "Title of the study as would be used in a publication." []
 
 [Term]
-id: SIO:000319
-name: latitude
-def: "Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface to the equatorial plane" []
-
-[Term]
-id: SIO:000318
-name: longitude
-def: "Longitude is a geographic position that refers to the angle east or west of a reference meridian between the two geographical poles to another meridian that passes through an arbitrary point." []
-
-
-[Term]
 id: DPBO:0002005
 name: project name
 def: "Name of the project within which the experiment was organized." []
@@ -540,14 +574,14 @@ def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant rep
 [Term]
 id: DPBO:0002008
 name: environment (feature)
-def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. 
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
 comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: ENVO:01000813
 
 [Term]
 id: DPBO:0002009
 name: environment (material)
-def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. 
+def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. " []
 comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: ENVO:00010483
 
@@ -1590,11 +1624,6 @@ def: "The class a compound belongs to, defined by its biological function or the
 comment: "Needed for imaging templates"
 
 [Term]
-id: data:2795
-name: ORF identifier
-def: "An identifier of an open reading frame." []
-
-[Term]
 id: DPBO:1000108
 name: gene identifier
 def: "A unique gene name within a specific repository, database, or collection." []
@@ -1637,11 +1666,6 @@ def: "The type of a high content screening experiment like RNAi screen or antibo
 comment: "Needed for imaging templates"
 
 [Term]
-id: EFO:0007555
-name: high content screening stage
-def: "An experimental stage describing stages of high content screen analysis." []
-
-[Term]
 id: DPBO:1000116
 name: library version
 def: "Version of a reagent library used e.g. in high content screening." []
@@ -1658,11 +1682,6 @@ id: DPBO:1000118
 name: cover slip
 def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
 xref: NCIT:C126370
-
-[Term]
-id: SCTID:71661000
-name: cover slip preparation (procedure)
-
 
 [Term]
 id: DPBO:1000120
@@ -1736,20 +1755,10 @@ def: "Software used for the extraction of features from microscopy images." []
 comment: "Needed for imaging templates"
 
 [Term]
-id: SIO:001051
-name: data analysis
-def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
-
-[Term]
 id: DPBO:1000133
 name: feature extraction strategy
 def: "Description of the approach to extract features from microscopy images." []
 comment: "Needed for imaging templates"
-
-[Term]
-id: ERO:0001788
-name: image processing technique
-def: "Any form of signal processing for which the input is an image, such as a photograph or video frame; the output of image processing may be either an image or a set of characteristics or parameters related to the image." []
 
 [Term]
 id: DPBO:1000135
@@ -2086,20 +2095,138 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 [Term]
 id: DPBO:1000182
 name: replicate group
-def: "An unique identifier for grouping experminental replicates - replication of an experiment to assess biological or technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, replicate groups must be the same for each replicate in the group (e.g. 'group 1' for each replicate in the group). This adds the possibility to aggregate the replicates without additional annotations."
+def: "An unique identifier for grouping experminental replicates - replication of an experiment to assess biological or technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, replicate groups must be the same for each replicate in the group (e.g. 'group 1' for each replicate in the group). This adds the possibility to aggregate the replicates without additional annotations." []
 created_by: Kevin Schneider | ORCID: 0000-0002-2198-5262
 
 [Term]
 id: DPBO:1000183
 name: biological replicate group
-def: "An unique identifier for grouping biological replicates - replicates made from different individual biosamples to assess biological variation in an experiment. In contrast to other ways of annotating replicates in experimental design, biological replicate groups must be the same for each replicate in the group (e.g. 'b_1' for each biological replicate in the group). This adds the possibility to aggregate the biological replicates without additional annotations."
-is_a: NFDI4PSO:1000182 ! replicate group
+def: "An unique identifier for grouping biological replicates - replicates made from different individual biosamples to assess biological variation in an experiment. In contrast to other ways of annotating replicates in experimental design, biological replicate groups must be the same for each replicate in the group (e.g. 'b_1' for each biological replicate in the group). This adds the possibility to aggregate the biological replicates without additional annotations." []
+is_a: DPBO:1000182 ! replicate group
 created_by: Kevin Schneider | ORCID: 0000-0002-2198-5262
 
 [Term]
 id: DPBO:1000184
 name: technical replicate group
-def: "An unique identifier for grouping technical replicates - replicates made from different individual biosamples to assess technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, technical replicate groups must be the same for each replicate in the group (e.g. 't_1' for each technical replicate in the group). This adds the possibility to aggregate the technical replicates without additional annotations."
-is_a: NFDI4PSO:1000182 ! replicate group
+def: "An unique identifier for grouping technical replicates - replicates made from different individual biosamples to assess technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, technical replicate groups must be the same for each replicate in the group (e.g. 't_1' for each technical replicate in the group). This adds the possibility to aggregate the technical replicates without additional annotations." []
+is_a: DPBO:1000182 ! replicate group
 created_by: Kevin Schneider | ORCID: 0000-0002-2198-526
+
+[Term]
+id: EFO:0000434
+name: ecotype
+def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
+
+[Term]
+id: EFO:0000513
+name: genotype
+def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment." []
+
+[Term]
+id: EFO:0000635
+name: organism part
+def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)." []
+
+[Term]
+id: EFO:0000724
+name: timepoint
+def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
+xref: EFO:0000724
+
+[Term]
+id: EFO:0005136
+name: cultivar
+def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
+comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
+
+[Term]
+id: EFO:0007555
+name: high content screening stage
+def: "An experimental stage describing stages of high content screen analysis." []
+
+[Term]
+id: ERO:0001788
+name: image processing technique
+def: "Any form of signal processing for which the input is an image, such as a photograph or video frame; the output of image processing may be either an image or a set of characteristics or parameters related to the image." []
+
+[Term]
+id: GENEPIO:0000076
+name: read length
+def: "Numbers of base pairs per read" []
+
+[Term]
+id: GENEPIO:0000083
+name: adapter sequence
+def: "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters." []
+
+[Term]
+id: GENEPIO:0000085
+name: library preparation kit
+def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids." []
+
+[Term]
+id: GENEPIO:0000149
+name: library preparation kit version
+def: "The version identifier of a packaged kit tailored for specific sequencing workflows." []
+
+[Term]
+id: GENEPIO:0001153
+name: sample collected by
+def: "The name of the agency that collected the original sample." []
+xref: NCIT:C45262
+
+[Term]
+id: GENEPIO:0001174
+name: sample collection date
+def: "The date on which the sample was collected" []
+xref: NCIT:C81286
+
+[Term]
+id: GENEPIO:0001965
+name: library source
+def: "The library source specifies the type of source material that is being sequenced." []
+
+[Term]
+id: NCIT:C43531
+name: developmental stage
+def: "A general term that usually refers to named landmark events during development of an organism." []
+
+[Term]
+id: NCIT:C53471
+name: isolate
+def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system." []
+
+[Term]
+id: OBI:0100026
+name: organism
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+
+[Term]
+id: PSO:0000013
+name: plant disease
+def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent." []
+
+[Term]
+id: SCTID:71661000
+name: cover slip preparation (procedure)
+
+[Term]
+id: SIO:000318
+name: longitude
+def: "Longitude is a geographic position that refers to the angle east or west of a reference meridian between the two geographical poles to another meridian that passes through an arbitrary point." []
+
+[Term]
+id: SIO:000319
+name: latitude
+def: "Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface to the equatorial plane" []
+
+[Term]
+id: SIO:001051
+name: data analysis
+def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
+
+[Term]
+id: data:2795
+name: ORF identifier
+def: "An identifier of an open reading frame." []
 
