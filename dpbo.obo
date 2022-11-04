@@ -10,6 +10,59 @@ ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\n)
+
+[Term]
+id: BAO_0010026
+name: protein profiling assay
+def: "Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications" []
+property_value: IAO:0000118 "protein profiling" xsd:string
+property_value: IAO:0000118 "protein quantification assay" xsd:string
+property_value: IAO:0000118 "protein quantification assay " xsd:string
+
+[Term]
+id: BAO_0010027
+name: shotgun MS protein profiling assay
+def: "An assay that is used to identify in a data-dependent mode proteins by combining the HPLC and MS methods. It is also known as liquid chromatography-coupled tandem mass spectrometry (LC-MS)" []
+is_a: BAO_0010026 ! protein profiling assay
+
+[Term]
+id: BAO_0010028
+name: SWATH MS protein profiling assay
+def: "Sequential window acquisition of all theoretical mass spectra (SWATH) MS is a mass spectrometrical method thatcouples data-independent acquisition is coupled with peptide spectral library match" []
+is_a: BAO_0010026 ! protein profiling assay
+
+[Term]
+id: BAO_0010029
+name: P100 protein profiling assay
+def: "A targeted phosphoproteomic assay that uses a data-driven approach to identify and quantify a set of 96 phosphopeptide probes" []
+is_a: BAO_0010026 ! protein profiling assay
+
+[Term]
+id: BAO_0010030
+name: RPPA protein profiling assay
+def: "Reverse phase protein array (RPPA) is a an assay that measures multiple protein expression levels in a large number of biological samples simultaneously using high quality antibodies" []
+is_a: BAO_0010026 ! protein profiling assay
+
+[Term]
+id: BAO_0010049
+name: Microwestern
+is_a: BAO_0010026 ! protein profiling assay
+
+[Term]
+id: BAO_0010052
+name: ELISA protein state assay
+is_a: BAO_0010026 ! protein profiling assay
+
+[Term]
+id: BAO_0010070
+name: Tandem Mass Tag (TMT) MS Protein Quantification
+is_a: BAO_0010026 ! protein profiling assay
+
+[Term]
+id: BAO_0010071
+name: Liquid Chromatography/Mass Spectroscopy (LC/MS) protein quantification
+is_a: BAO_0010026 ! protein profiling assay
 
 [Term]
 id: BTO:0001899
@@ -540,6 +593,29 @@ id: DPBO:0000082
 name: rRNA depletion
 def: "Method used for rRNA depletion during construction of the sequencing library." []
 comment: "see also http://purl.obolibrary.org/obo/NCIT_C18685"
+
+[Term]
+id: DPBO:0000083
+name: relative centrifugal force
+def: "Relative centrifugal force (RCF) is the amount of force applied to a sample when using a centrifuge. It is dependant on the speed of the centrifuge rotation as well as the distance of the sample from the center of rotation." []
+synonym: "RCF" EXACT []
+is_a: UO:0000048 ! acceleration unit
+equivalent_to: DPBO:0000084 ! g-force
+
+[Term]
+id: DPBO:0000084
+name: g-force
+def: "G-force is the force acting on an object as a result of acceleration or gravity." []
+is_a: UO:0000048 ! acceleration unit
+
+[Term]
+id: DPBO:0000085
+name: standard gravity
+def: "The standard acceleration of an object in free fall at or near sea level equivalent to 9.807 m/s2." []
+synonym: "g0" EXACT []
+synonym: "standard acceleration due to gravity" EXACT []
+synonym: "standard acceleration of free fall" EXACT []
+is_a: UO:0000048 ! acceleration unit
 
 [Term]
 id: DPBO:0002000
@@ -2224,6 +2300,22 @@ def: "Latitude is a geographic coordinate which refers to the angle from a point
 id: SIO:001051
 name: data analysis
 def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
+
+[Term]
+id: UO:0000000
+name: unit
+namespace: unit.ontology
+def: "A unit of measurement is a standardized quantity of a physical quality." [Wikipedia:Wikipedia]
+created_by: george gkoutos
+
+[Term]
+id: UO:0000048
+name: acceleration unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of the rate of change of velocity in either speed or direction." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+created_by: george gkoutos
 
 [Term]
 id: data:2795
