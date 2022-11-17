@@ -10,7 +10,7 @@ ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
 id: BAO_0010026
@@ -806,6 +806,14 @@ property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
+id: EFO:0008896
+name: RNA-Seq
+def: "RNA-seq is a method that involves purifying RNA and making cDNA, followed by high-throughput sequencing." []
+xref: PMID:18516045
+is_a: DPBO:0000035 ! library strategy
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
 id: DPBO:1000004
 name: miRNA-seq
 def: "placeholder def of miRNA-Seq" []
@@ -852,75 +860,84 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000009
-name: ssRNA-seq
+name: obsolete_ssRNA-seq
 def: "placeholder def of ssRNA-seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000010
-name: ChIP-seq
+name: obsolete_ChIP-seq
 def: "placeholder def of ChIP-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000011
-name: MNase-seq
+name: obsolete_MNase-seq
 def: "placeholder def of MNase-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000012
-name: MBD-seq
+name: obsolete_MBD-seq
 def: "placeholder def of MBD-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000013
-name: MRE-seq
+name: obsolete_MRE-seq
 def: "placeholder def of MRE-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000014
-name: Bisulfite-seq
+name: obsolete_Bisulfite-seq
 def: "placeholder def of Bisulfite-Seq" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+comment: Replaced by EFO term Bisulfite-seq (id:0003753)
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000015
 name: Bisulfite-seq (reduced representation)
-def: "placeholder def of Bisulfite-Seq (reduced representation)" []
+def: "A library strategy that uses one or more restriction enzymes on a genomic DNA sample prior to sequencing to produce sequence-specific fragmentation" []
 comment: To be transformed to an instance. DB
+synonym: "reduced-representation bisulfite sequencing" EXACT []
+synonym: "RRBS-Seq" EXACT []
 is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000016
-name: MeDIP-seq
+name: obsolete_MeDIP-seq
 def: "placeholder def of MeDIP-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000017
@@ -941,13 +958,22 @@ property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
+id: EFO:0008973
+name: TN-Seq
+def: "Transposon sequencing (TN-Seq)" []
+xref: PMID:23712350
+is_a: DPBO:0000035 ! library strategy
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
 id: DPBO:1000019
-name: FAIRE-seq
+name: obsolete_FAIRE-seq
 def: "placeholder def of FAIRE-seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000020
@@ -960,39 +986,43 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000021
-name: RIP-seq
+name: obsolete_RIP-seq
 def: "placeholder def of RIP-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000022
-name: ATAC-seq
+name: obsolete_ATAC-seq
 def: "placeholder def of ATAC-seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000023
-name: ChIA-PET
+name: obsolete_ChIA-PET
 def: "placeholder def of ChIA-PET" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000024
-name: Hi-C
+name: obsolete_Hi-C
 def: "placeholder def of Hi-C" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000025
@@ -1114,7 +1144,6 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000038
 name: Illumina Genome Analyzer IIx
-def: "placeholder def of Illumina Genome Analyzer IIx" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1123,7 +1152,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000039
 name: Illumina HiSeq 1000
-def: "placeholder def of Illumina HiSeq 1000" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1132,7 +1160,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000040
 name: Illumina HiSeq 1500
-def: "placeholder def of Illumina HiSeq 1500" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1141,7 +1168,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000041
 name: Illumina HiSeq 2000
-def: "placeholder def of Illumina HiSeq 2000" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1150,7 +1176,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000042
 name: Illumina HiSeq 2500
-def: "placeholder def of Illumina HiSeq 2500" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1159,7 +1184,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000043
 name: Illumina HiSeq 3000
-def: "placeholder def of Illumina HiSeq 3000" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1168,7 +1192,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000044
 name: Illumina HiSeq 4000
-def: "placeholder def of Illumina HiSeq 4000" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1177,7 +1200,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000045
 name: Illumina NextSeq 500
-def: "placeholder def of Illumina NextSeq 500" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1186,7 +1208,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000046
 name: Illumina NextSeq 550
-def: "placeholder def of Illumina NextSeq 550" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1195,7 +1216,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000047
 name: Illumina HiSeq X Ten
-def: "placeholder def of Illumina HiSeq X Ten" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1204,7 +1224,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000048
 name: Illumina HiSeq X Five
-def: "placeholder def of Illumina HiSeq X Five" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1213,7 +1232,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000049
 name: Illumina NovaSeq 6000
-def: "placeholder def of Illumina NovaSeq 6000" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1222,7 +1240,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000050
 name: Illumina MiSeq
-def: "placeholder def of Illumina MiSeq" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1231,7 +1248,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000051
 name: Illumina HiScanSQ
-def: "placeholder def of Illumina HiScanSQ" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1240,7 +1256,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000052
 name: Illumina MiniSeq
-def: "placeholder def of Illumina MiniSeq" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1249,7 +1264,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000053
 name: Illumina iSeq 100
-def: "placeholder def of Illumina iSeq 100" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1258,7 +1272,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000054
 name: BGISEQ-500
-def: "placeholder def of BGISEQ-500" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1267,7 +1280,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000055
 name: DNBSEQ-G400
-def: "placeholder def of DNBSEQ-G400" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1276,7 +1288,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000056
 name: DNBSEQ-T7
-def: "placeholder def of DNBSEQ-T7" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1285,7 +1296,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000057
 name: DNBSEQ-G50
-def: "placeholder def of DNBSEQ-G50" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1294,7 +1304,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000058
 name: Ion Torrent PGM
-def: "placeholder def of Ion Torrent PGM" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1303,7 +1312,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000059
 name: Ion Torrent Proton
-def: "placeholder def of Ion Torrent Proton" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1312,7 +1320,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000060
 name: Ion Torrent S5
-def: "placeholder def of Ion Torrent S5" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1321,7 +1328,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000061
 name: Ion Torrent S5 XL
-def: "placeholder def of Ion Torrent S5 XL" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1330,7 +1336,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000062
 name: PacBio RS
-def: "placeholder def of PacBio RS" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1339,7 +1344,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000063
 name: PacBio RS II
-def: "placeholder def of PacBio RS II" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1348,7 +1352,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000064
 name: Sequel
-def: "placeholder def of Sequel" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1357,7 +1360,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000065
 name: Sequel II
-def: "placeholder def of Sequel II" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1366,7 +1368,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000066
 name: AB SOLiD System 2.0
-def: "placeholder def of AB SOLiD System 2.0" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1375,7 +1376,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000067
 name: AB SOLiD System 3.0
-def: "placeholder def of AB SOLiD System 3.0" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1384,7 +1384,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000068
 name: AB SOLiD 3 Plus System
-def: "placeholder def of AB SOLiD 3 Plus System" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1393,7 +1392,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000069
 name: AB SOLiD 4 System
-def: "placeholder def of AB SOLiD 4 System" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1402,7 +1400,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000070
 name: AB SOLiD 4hq System
-def: "placeholder def of AB SOLiD 4hq System" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1411,7 +1408,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000071
 name: AB SOLiD PI System
-def: "placeholder def of AB SOLiD PI System" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1420,7 +1416,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000072
 name: AB 5500 Genetic Analyzer
-def: "placeholder def of AB 5500 Genetic Analyzer" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1429,7 +1424,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000073
 name: AB 5500xl Genetic Analyzer
-def: "placeholder def of AB 5500xl Genetic Analyzer" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1438,7 +1432,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000074
 name: AB 5500xl-W Genetic Analysis System
-def: "placeholder def of AB 5500xl-W Genetic Analysis System" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1447,7 +1440,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000075
 name: 454 GS
-def: "placeholder def of 454 GS" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1456,7 +1448,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000076
 name: 454 GS 20
-def: "placeholder def of 454 GS 20" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1465,7 +1456,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000077
 name: 454 GS FLX
-def: "placeholder def of 454 GS FLX" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1474,7 +1464,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000078
 name: 454 GS FLX+
-def: "placeholder def of 454 GS FLX+" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1483,7 +1472,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000079
 name: 454 GS Junior
-def: "placeholder def of 454 GS Junior" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1492,7 +1480,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000080
 name: 454 GS FLX Titanium
-def: "placeholder def of 454 GS FLX Titanium" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1501,7 +1488,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000081
 name: Complete Genomics
-def: "placeholder def of Complete Genomics" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1510,7 +1496,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000082
 name: Helicos HeliScope
-def: "placeholder def of Helicos HeliScope" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1519,7 +1504,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000083
 name: GridION
-def: "placeholder def of GridION" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1528,7 +1512,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000084
 name: MinION
-def: "placeholder def of MinION" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -1537,7 +1520,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000085
 name: PromethION
-def: "placeholder def of PromethION" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -2210,15 +2192,139 @@ def: "Time point at which a sample or observation is made or taken from a biomat
 xref: EFO:0000724
 
 [Term]
+id: EFO:0002692
+name: ChIP-seq
+def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
+xref: NCIt:C106049
+is_a: DPBO:0000035 ! library strategy
+property_value: definition:citation http://en.wikipedia.org/wiki/Chip-Sequencing xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: SRA:label "ChIP-Seq (Direct sequencing of chromatin immunoprecipitates)" xsd:string
+created_by: Helen Parkinson
+
+[Term]
+id: EFO:0003748
+name: MRE-seq
+def: "An assay in which DNA us the input molecule derived from cleavage of DNA by use of methylation sensitive restriction enzymes to fragment DNA at methylation sites before sequencing" []
+synonym: "Methylation-Sensitive Restriction Enzyme sequencing" EXACT []
+is_a: DPBO:0000035 ! library strategy
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: SRA:label "MRE-Seq (Methylation-Sensitive Restriction Enzyme Sequencing strategy)" xsd:string
+
+[Term]
+id: EFO:0003749
+name: MeDIP-seq
+def: "An assay in which DNA is the input molecule derived from an antibody based selection process using antibodies targeting methylated DNA, which is then sequenced using high throughput sequencing technology." []
+synonym: "Methylated DNA Immunoprecipitation sequencing" EXACT []
+is_a: DPBO:0000035 ! library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: SRA:label "MeDIP-Seq (Methylated DNA Immunoprecipitation Sequencing strategy)" xsd:string
+
+[Term]
+id: EFO:0003750
+name: MBD-seq
+def: "An assay in which DNA is the input molecule derived from a selection process using methyl binding domain protein to enrich for methylated fractions of DNA, then sequenced using high throughput sequencing." []
+synonym: "methyl binding domain sequencing" EXACT []
+is_a: DPBO:0000035 ! library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: SRA:label "MBD-Seq (Direct sequencing of methylated fractions sequencing strategy)" xsd:string
+
+[Term]
+id: EFO:0003751
+name: MNase-seq
+def: "An assay in which DNA is the input molecule derived from a micrococcal nuclease digestion followed by high throughput sequencing, A method that distinguishes nucleosome positioning based on the ability of nucleosomes to protect associated DNA from digestion by micrococcal nuclease. Sequenced fragments reveal nucleosome location information about the input DNA." []
+is_a: DPBO:0000035 ! library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: SRA:label "MNase-Seq (Direct sequencing following MNase digestion)" xsd:string
+
+[Term]
+id: EFO:0003753
+name: Bisulfite-seq
+def: "An assay in which DNA is the input molecule derived from a bisulphite treatment of DNA to convert cytosine residues to uracil to determine methylation status." []
+is_a: DPBO:0000035 ! library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: SRA:label "Bisulfite-Seq (Sequencing following treatment of DNA with bisulfite to\nconvert cytosine residues to uracil depending on methylation status)" xsd:string
+
+[Term]
+id: EFO:0004428
+name: FAIRE-seq
+def: "FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna." []
+xref: NCIt:C106051
+is_a: DPBO:0000035 ! library strategy
+property_value: definition:citation "Giresi, PG; Kim, J, McDaniell, RM, Iyer, VR, Lieb, JD (2007 Jun). FAIRE (Formaldehyde-Assisted Isolation of Regulatory Elements) isolates active regulatory elements from human chromatin.. Genome research 17 (6): 877â€“85. doi:10.1101/gr.5533506." xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
 id: EFO:0005136
 name: cultivar
 def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
 comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
 
 [Term]
+id: EFO:0005310
+name: RIP-seq
+def: "A method used for finding which RNA species interact with a particular RNA-binding protein. It involves immunoprecipitation with antibodies for the protein and then isolation of the RNAs associated with the protein. Unlike CLIP-seq, no cross-linking of RNAs and proteins is carried out prior to immunoprecipitation." []
+is_a: DPBO:0000035 ! library strategy
+property_value: IAO:0000117 "Amy Tang" xsd:string
+
+[Term]
+id: EFO:0007045
+name: ATAC-seq
+def: "Assay for transposase-accessible chromatin using sequencing (ATAC-seq), is a method based on direct in vitro transposition of sequencing adaptors into native chromatin, and is a rapid and sensitive method for integrative epigenomic analysis. ATAC-seq captures open chromatin sites using a simple two-step protocol." []
+is_a: DPBO:0000035 ! library strategy
+property_value: definition:citation http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2688.html xsd:string
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
 id: EFO:0007555
 name: high content screening stage
 def: "An experimental stage describing stages of high content screen analysis." []
+
+[Term]
+id: EFO:0007693
+name: Hi-C
+def: "Hi-C is a method for analysing 3-dimensional organisation and interaction of chromatin, belonging to the class of techniques collectively called \"Chromosome Conformation Capture\", in which chromatin is crosslinked, then digested, and re-ligated in such a way that only DNA fragments that are covalently linked together form ligation products. Together with 5C, Hi-C does not limit to the study to a specific locus in the genome, and can be used to study chromatin interaction across the genome. To achieve high-throughput, a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing. Mapping the sequenced reads back to genome will reveal the origin of the fragments involved in the ligation events." []
+is_a: DPBO:0000035 ! library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0008684
+name: Chia-PET
+def: "ChIA-PET (chromatin interaction analysis by paired-end tag sequencing) is a type of chromosome conformation capture assay that uses chromatin immunoprecipitation to enrich for protein-specific chromatin complexes after digestion, followed by nuclear proximity ligation and high-throughput paired-end-tag sequencing." []
+synonym: "chromatin interaction analysis by paired-end tag sequencing" EXACT []
+xref: PMID:20181287
+is_a: DPBO:0000035 ! library strategy
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008950
+name: ssRNA-seq
+def: "Strand-specific RNA-seq (ssRNA-seq)" []
+xref: PMID:19609351
+is_a: DPBO:0000035 ! library strategy
+property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
 id: ERO:0001788
@@ -2276,6 +2382,10 @@ def: "A specific individual microbe and its genetically identical progeny separa
 id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+
+[Term]
+id: ObsoleteClass
+name: Obsolete Class
 
 [Term]
 id: PSO:0000013
