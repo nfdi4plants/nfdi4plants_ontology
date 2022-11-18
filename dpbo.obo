@@ -13,7 +13,7 @@ property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" x
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
-id: BAO_0010026
+id: BAO:0010026
 name: protein profiling assay
 def: "Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications" []
 property_value: IAO:0000118 "protein profiling" xsd:string
@@ -21,48 +21,48 @@ property_value: IAO:0000118 "protein quantification assay" xsd:string
 property_value: IAO:0000118 "protein quantification assay " xsd:string
 
 [Term]
-id: BAO_0010027
+id: BAO:0010027
 name: shotgun MS protein profiling assay
 def: "An assay that is used to identify in a data-dependent mode proteins by combining the HPLC and MS methods. It is also known as liquid chromatography-coupled tandem mass spectrometry (LC-MS)" []
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
-id: BAO_0010028
+id: BAO:0010028
 name: SWATH MS protein profiling assay
 def: "Sequential window acquisition of all theoretical mass spectra (SWATH) MS is a mass spectrometrical method thatcouples data-independent acquisition is coupled with peptide spectral library match" []
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
-id: BAO_0010029
+id: BAO:0010029
 name: P100 protein profiling assay
 def: "A targeted phosphoproteomic assay that uses a data-driven approach to identify and quantify a set of 96 phosphopeptide probes" []
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
-id: BAO_0010030
+id: BAO:0010030
 name: RPPA protein profiling assay
 def: "Reverse phase protein array (RPPA) is a an assay that measures multiple protein expression levels in a large number of biological samples simultaneously using high quality antibodies" []
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
-id: BAO_0010049
+id: BAO:0010049
 name: Microwestern
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
-id: BAO_0010052
+id: BAO:0010052
 name: ELISA protein state assay
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
-id: BAO_0010070
+id: BAO:0010070
 name: Tandem Mass Tag (TMT) MS Protein Quantification
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
-id: BAO_0010071
+id: BAO:0010071
 name: Liquid Chromatography/Mass Spectroscopy (LC/MS) protein quantification
-is_a: BAO_0010026 ! protein profiling assay
+is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
 id: BTO:0001899
