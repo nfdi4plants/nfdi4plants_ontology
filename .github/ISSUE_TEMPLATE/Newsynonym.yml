@@ -1,5 +1,5 @@
 name: Add synonym 
-description: New synonym suggestion for a nfdi4pso term.
+description: New synonym suggestion for a dpbo term.
 title: '[Synonym] '
 labels: [Add-synonym]
 assignees: kdumschott
@@ -7,7 +7,7 @@ body:
   - type: input
     id: term
     attributes:
-      label: nfdi4pso term
+      label: dpbo term
       description: Term name and id
       placeholder: "example term  (EXONT_00000111)"
     validations:
