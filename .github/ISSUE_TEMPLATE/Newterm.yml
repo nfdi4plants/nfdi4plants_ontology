@@ -1,5 +1,5 @@
 name: Add new term 
-description: Suggest a new term to be added to nfdi4pso
+description: Suggest a new term to be added to dpbo
 title: "[NTR]"
 labels: [add term]
 assignees: kdumschott
@@ -25,7 +25,7 @@ body:
     id: Linked_Parent
     attributes:
       label: Parent term(s)
-      description: What term(s) already in the nfdi4pso ontology should this new term be under? Please list them here, including accession numbers
+      description: What term(s) already in the dpbo ontology should this new term be under? Please list them here, including accession numbers
     validations:
       required: false
 
@@ -33,7 +33,7 @@ body:
     id: Linked_Child
     attributes:
       label: Child term(s)
-      description: Are there terms already in the nfdi4pso ontology that should be linked underneath the new term? Please list them here, including accession numbers
+      description: Are there terms already in the dpbo ontology that should be linked underneath the new term? Please list them here, including accession numbers
     validations:
       required: false
       
