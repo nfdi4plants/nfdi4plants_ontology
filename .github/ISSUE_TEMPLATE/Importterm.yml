@@ -1,5 +1,5 @@
 name: Import term
-description: Import term from a registered ontology into nfdi4pso
+description: Import term from a registered ontology into dpbo
 title: "[Import term] "
 labels: [term-import]
 assignees: kdumschott
@@ -27,7 +27,7 @@ body:
     id: Linked_Parent
     attributes:
       label: Parent term(s)
-      description: What term(s) already in the nfdi4pso ontology should this new term be under? Please list them here, including accession numbers
+      description: What term(s) already in the dpbo ontology should this new term be under? Please list them here, including accession numbers
     validations: 
       required: false
       
@@ -35,14 +35,14 @@ body:
     id: Linked_Child
     attributes:
       label: Child term(s)
-      description: Are there terms already in the nfdi4pso ontology that should be linked underneath the new term? Please list them here, including accession numbers
+      description: Are there terms already in the dpbo ontology that should be linked underneath the new term? Please list them here, including accession numbers
     validations:
       required: false
 
   - type: textarea
     id: reason
     attributes:
-      label: Please state the reason to import this term into nfdi4pso
+      label: Please state the reason to import this term into dpbo
     validations:
       required: false
 
