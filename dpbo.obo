@@ -2432,3 +2432,7 @@ id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
 
+[Term]
+id: DPBO:1234567890
+name: Test_PR_MERGE
+def: "Do not use this. Do not merge this. This is only created to test a pipeline issue." []
