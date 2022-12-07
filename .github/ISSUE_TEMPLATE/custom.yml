@@ -1,0 +1,22 @@
+name: Custom issue template 
+description: Please use this template for all other issues or concerns
+assignees: kdumschott
+body:
+  - type: checkboxes
+    id: Type of issue
+    attributes:
+      label: feature
+      description: "Please check if this issue involves the following:"
+      options:
+        - label: "Report a Bug"
+        - label: "Report a Typo or Error"
+        - label: "Feature Request"
+        - label: "Help/Question"
+        
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: Please describe the issue concern in as much detail as possible and provide as many links or references as needed to clearly explain the situation.
+    validations:
+      required: true
