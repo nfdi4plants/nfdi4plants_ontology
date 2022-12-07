@@ -3,17 +3,16 @@ description: Please use this template for all other issues or concerns
 assignees: kdumschott
 body:
   - type: checkboxes
-    id: Type of issue
+    id: Typeofissue
     attributes:
-      label: feature
+      label: Type of Issue
       description: "Please check if this issue involves the following:"
       options:
         - label: "Report a Bug"
         - label: "Report a Typo or Error"
         - label: "Feature Request"
-        - label: "Help/Question"
+        - label: "Help or Question"
         
-
   - type: textarea
     id: describe
     attributes:
