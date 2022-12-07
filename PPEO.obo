@@ -1,0 +1,424 @@
+format-version: 1.2
+ontology: http://purl.org/ppeo/PPEO.owl
+property_value: http://purl.org/dc/elements/1.1/creator "Bruno Vasques Costa" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Cyril Pommier" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Daniel Faria" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Evangelia Papoutsoglou" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Guillaume Cornut" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Hanna Cwiek-Kupczynska" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Ines Chaves" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Manuel Ruiz" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Marie Angélique Laporte" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Pascal Neveu" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Pierre Larmande" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#GPS_location>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#biological_material>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#country>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#data_file>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#environment_parameter>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#event>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#experimental_design>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#factor>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#factor_value>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#growth_facility>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#institution>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#investigation>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#location>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#material_source>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#method>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#named_location>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#observation>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#observation_unit>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#observed_variable>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#person>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#role>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#sample>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#scale>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#spatial_coordinate>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#spatial_distribution>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#spatial_distribution_type>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#study>))\nDeclaration(Class(<http://purl.org/ppeo/PPEO.owl#trait>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasAffiliation>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasCountry>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasCountryOfOrigin>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasLocation>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasMaterialSource>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasObservedSubject>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasParticipatingInstitution>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasPersonWithRole>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasSublevel>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasSuperlevel>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#isRoleOf>))\nDeclaration(ObjectProperty(<http://purl.org/ppeo/PPEO.owl#isRoleOfPersonIn>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasAbbreviation>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasAddress>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasAltitude>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasAssociatedPublication>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasCollectionDate>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasCountryCode>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasCulturalPractices>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasDOI>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasDatabaseId>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasDateTime>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasDescription>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasDigitalLocation>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasEmailContact>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasEndDateTime>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasEntryNumber>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasEntryType>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasExperimentalDesignMap>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasGenus>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasGermplasmAccessionNumber>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasIdentifier>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasInfraspecificName>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasInstituteCode>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasLatitude>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasLicense>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasLongitude>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasMIAPPEVersion>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasName>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasObservationUnitDescription>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasPlantAnatomicalEntity>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasPlantStructureDevelopmentStage>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasPreprocessing>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasPublicReleaseDate>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasSeason>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasSpecies>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasSpeciesAuthority>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasStartDateTime>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasSubmissionDate>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasSubtaxon>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasSubtaxonAuthority>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasTaxonIdentifier>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasTimeScale>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasType>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasUncertainty>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasValue>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#hasVersion>))\nDeclaration(DataProperty(<http://purl.org/ppeo/PPEO.owl#isActive>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#altitude>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#column>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#latitude>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#longitude>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#row>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#x>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#x_m>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#y>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#y_m>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#z>))\nDeclaration(NamedIndividual(<http://purl.org/ppeo/PPEO.owl#z_m>))\nDeclaration(AnnotationProperty(<http://purl.org/ppeo/PPEO.owl#hasMIAPPESynonym>))\nDeclaration(AnnotationProperty(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation>))\n\n############################\n#   Object Properties\n############################\n\n# Object Property: <http://purl.org/ppeo/PPEO.owl#hasObservedSubject> (<http://purl.org/ppeo/PPEO.owl#hasObservedSubject>)\n\nObjectPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasObservedSubject> ObjectUnionOf(<http://purl.org/ppeo/PPEO.owl#observation_unit> <http://purl.org/ppeo/PPEO.owl#sample>))\n\n# Object Property: <http://purl.org/ppeo/PPEO.owl#hasSublevel> (<http://purl.org/ppeo/PPEO.owl#hasSublevel>)\n\nIrreflexiveObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasSublevel>)\n\n# Object Property: <http://purl.org/ppeo/PPEO.owl#hasSuperlevel> (<http://purl.org/ppeo/PPEO.owl#hasSuperlevel>)\n\nIrreflexiveObjectProperty(<http://purl.org/ppeo/PPEO.owl#hasSuperlevel>)\n\n# Object Property: <http://purl.org/ppeo/PPEO.owl#isRoleOfPersonIn> (<http://purl.org/ppeo/PPEO.owl#isRoleOfPersonIn>)\n\nObjectPropertyRange(<http://purl.org/ppeo/PPEO.owl#isRoleOfPersonIn> ObjectUnionOf(<http://purl.org/ppeo/PPEO.owl#investigation> <http://purl.org/ppeo/PPEO.owl#study>))\n\n\n############################\n#   Data Properties\n############################\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasAbbreviation> (<http://purl.org/ppeo/PPEO.owl#hasAbbreviation>)\n\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasAbbreviation> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasAddress> (<http://purl.org/ppeo/PPEO.owl#hasAddress>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasAddress>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasAddress> <http://purl.org/ppeo/PPEO.owl#location>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasAddress> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasAltitude> (<http://purl.org/ppeo/PPEO.owl#hasAltitude>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasAltitude>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasAltitude> <http://purl.org/ppeo/PPEO.owl#location>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasAltitude> xsd:float)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasAssociatedPublication> (<http://purl.org/ppeo/PPEO.owl#hasAssociatedPublication>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasAssociatedPublication> ObjectUnionOf(<http://purl.org/ppeo/PPEO.owl#investigation> <http://purl.org/ppeo/PPEO.owl#method>))\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasAssociatedPublication> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasCollectionDate> (<http://purl.org/ppeo/PPEO.owl#hasCollectionDate>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasCollectionDate> <http://purl.org/ppeo/PPEO.owl#hasDateTime>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasCollectionDate> <http://purl.org/ppeo/PPEO.owl#sample>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasCollectionDate> xsd:dateTime)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasCountryCode> (<http://purl.org/ppeo/PPEO.owl#hasCountryCode>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasCountryCode> <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasCountryCode> <http://purl.org/ppeo/PPEO.owl#country>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasCountryCode> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasCulturalPractices> (<http://purl.org/ppeo/PPEO.owl#hasCulturalPractices>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasCulturalPractices> <http://purl.org/ppeo/PPEO.owl#study>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasCulturalPractices> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasDOI> (<http://purl.org/ppeo/PPEO.owl#hasDOI>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasDOI> <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>)\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasDOI>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasDOI> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasDatabaseId> (<http://purl.org/ppeo/PPEO.owl#hasDatabaseId>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasDatabaseId> <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasDatabaseId> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasDateTime> (<http://purl.org/ppeo/PPEO.owl#hasDateTime>)\n\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasDateTime> xsd:dateTime)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasDescription> (<http://purl.org/ppeo/PPEO.owl#hasDescription>)\n\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasDigitalLocation> (<http://purl.org/ppeo/PPEO.owl#hasDigitalLocation>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasDigitalLocation> <http://purl.org/ppeo/PPEO.owl#data_file>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasDigitalLocation> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasEmailContact> (<http://purl.org/ppeo/PPEO.owl#hasEmailContact>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasEmailContact> <http://purl.org/ppeo/PPEO.owl#person>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasEmailContact> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasEndDateTime> (<http://purl.org/ppeo/PPEO.owl#hasEndDateTime>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasEndDateTime> <http://purl.org/ppeo/PPEO.owl#hasDateTime>)\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasEndDateTime>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasEndDateTime> xsd:dateTime)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasEntryNumber> (<http://purl.org/ppeo/PPEO.owl#hasEntryNumber>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasEntryNumber>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasEntryNumber> xsd:int)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasEntryType> (<http://purl.org/ppeo/PPEO.owl#hasEntryType>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasEntryType>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasEntryType> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasExperimentalDesignMap> (<http://purl.org/ppeo/PPEO.owl#hasExperimentalDesignMap>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasExperimentalDesignMap> <http://purl.org/ppeo/PPEO.owl#study>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasExperimentalDesignMap> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> (<http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> <http://purl.org/ppeo/PPEO.owl#hasIdentifier>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasGenus> (<http://purl.org/ppeo/PPEO.owl#hasGenus>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasGenus>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasGenus> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasGenus> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasGermplasmAccessionNumber> (<http://purl.org/ppeo/PPEO.owl#hasGermplasmAccessionNumber>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasGermplasmAccessionNumber> <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>)\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasGermplasmAccessionNumber> <http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasGermplasmAccessionNumber> ObjectUnionOf(<http://purl.org/ppeo/PPEO.owl#biological_material> <http://purl.org/ppeo/PPEO.owl#material_source>))\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasGermplasmAccessionNumber> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasIdentifier> (<http://purl.org/ppeo/PPEO.owl#hasIdentifier>)\n\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasIdentifier> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasInfraspecificName> (<http://purl.org/ppeo/PPEO.owl#hasInfraspecificName>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasInfraspecificName> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasInfraspecificName> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasInstituteCode> (<http://purl.org/ppeo/PPEO.owl#hasInstituteCode>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasInstituteCode> <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>)\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasInstituteCode>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasInstituteCode> <http://purl.org/ppeo/PPEO.owl#institution>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasInstituteCode> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier> (<http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier> <http://purl.org/ppeo/PPEO.owl#hasIdentifier>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasLatitude> (<http://purl.org/ppeo/PPEO.owl#hasLatitude>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasLatitude>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasLatitude> <http://purl.org/ppeo/PPEO.owl#location>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasLatitude> xsd:float)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasLicense> (<http://purl.org/ppeo/PPEO.owl#hasLicense>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasLicense>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasLicense> <http://purl.org/ppeo/PPEO.owl#investigation>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasLicense> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasLongitude> (<http://purl.org/ppeo/PPEO.owl#hasLongitude>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasLongitude>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasLongitude> <http://purl.org/ppeo/PPEO.owl#location>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasLongitude> xsd:float)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasMIAPPEVersion> (<http://purl.org/ppeo/PPEO.owl#hasMIAPPEVersion>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasMIAPPEVersion> <http://purl.org/ppeo/PPEO.owl#investigation>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasMIAPPEVersion> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier> (<http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier> <http://purl.org/ppeo/PPEO.owl#hasIdentifier>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier> ObjectUnionOf(<http://purl.org/ppeo/PPEO.owl#biological_material> <http://purl.org/ppeo/PPEO.owl#material_source>))\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasName> (<http://purl.org/ppeo/PPEO.owl#hasName>)\n\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasName> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasObservationUnitDescription> (<http://purl.org/ppeo/PPEO.owl#hasObservationUnitDescription>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasObservationUnitDescription> <http://purl.org/ppeo/PPEO.owl#study>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasObservationUnitDescription> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasPlantAnatomicalEntity> (<http://purl.org/ppeo/PPEO.owl#hasPlantAnatomicalEntity>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasPlantAnatomicalEntity> <http://purl.org/ppeo/PPEO.owl#sample>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasPlantAnatomicalEntity> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasPlantStructureDevelopmentStage> (<http://purl.org/ppeo/PPEO.owl#hasPlantStructureDevelopmentStage>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasPlantStructureDevelopmentStage> <http://purl.org/ppeo/PPEO.owl#sample>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasPlantStructureDevelopmentStage> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasPreprocessing> (<http://purl.org/ppeo/PPEO.owl#hasPreprocessing>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasPreprocessing> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasPreprocessing> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasPublicReleaseDate> (<http://purl.org/ppeo/PPEO.owl#hasPublicReleaseDate>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasPublicReleaseDate> <http://purl.org/ppeo/PPEO.owl#hasDateTime>)\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasPublicReleaseDate>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasPublicReleaseDate> <http://purl.org/ppeo/PPEO.owl#investigation>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasPublicReleaseDate> xsd:dateTime)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasSeason> (<http://purl.org/ppeo/PPEO.owl#hasSeason>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasSeason>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasSeason> <http://purl.org/ppeo/PPEO.owl#observation>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasSeason> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasSpecies> (<http://purl.org/ppeo/PPEO.owl#hasSpecies>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasSpecies>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasSpecies> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasSpecies> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasSpeciesAuthority> (<http://purl.org/ppeo/PPEO.owl#hasSpeciesAuthority>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasSpeciesAuthority>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasSpeciesAuthority> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasSpeciesAuthority> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasStartDateTime> (<http://purl.org/ppeo/PPEO.owl#hasStartDateTime>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasStartDateTime> <http://purl.org/ppeo/PPEO.owl#hasDateTime>)\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasStartDateTime>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasStartDateTime> xsd:dateTime)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasSubmissionDate> (<http://purl.org/ppeo/PPEO.owl#hasSubmissionDate>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasSubmissionDate> <http://purl.org/ppeo/PPEO.owl#hasDateTime>)\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasSubmissionDate>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasSubmissionDate> <http://purl.org/ppeo/PPEO.owl#investigation>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasSubmissionDate> xsd:dateTime)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasSubtaxon> (<http://purl.org/ppeo/PPEO.owl#hasSubtaxon>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasSubtaxon> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasSubtaxon> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasSubtaxonAuthority> (<http://purl.org/ppeo/PPEO.owl#hasSubtaxonAuthority>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasSubtaxonAuthority> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasSubtaxonAuthority> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasTaxonIdentifier> (<http://purl.org/ppeo/PPEO.owl#hasTaxonIdentifier>)\n\nSubDataPropertyOf(<http://purl.org/ppeo/PPEO.owl#hasTaxonIdentifier> <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasTaxonIdentifier> <http://purl.org/ppeo/PPEO.owl#biological_material>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasTaxonIdentifier> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasTimeScale> (<http://purl.org/ppeo/PPEO.owl#hasTimeScale>)\n\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasTimeScale> <http://purl.org/ppeo/PPEO.owl#observed_variable>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasTimeScale> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasType> (<http://purl.org/ppeo/PPEO.owl#hasType>)\n\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasType> DataUnionOf(xsd:anyURI xsd:string))\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasUncertainty> (<http://purl.org/ppeo/PPEO.owl#hasUncertainty>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasUncertainty>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasUncertainty> <http://purl.org/ppeo/PPEO.owl#location>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasUncertainty> xsd:float)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#hasVersion> (<http://purl.org/ppeo/PPEO.owl#hasVersion>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#hasVersion>)\nDataPropertyDomain(<http://purl.org/ppeo/PPEO.owl#hasVersion> <http://purl.org/ppeo/PPEO.owl#data_file>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#hasVersion> xsd:string)\n\n# Data Property: <http://purl.org/ppeo/PPEO.owl#isActive> (<http://purl.org/ppeo/PPEO.owl#isActive>)\n\nFunctionalDataProperty(<http://purl.org/ppeo/PPEO.owl#isActive>)\nDataPropertyRange(<http://purl.org/ppeo/PPEO.owl#isActive> xsd:boolean)\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.org/ppeo/PPEO.owl#GPS_location> (<http://purl.org/ppeo/PPEO.owl#GPS_location>)\n\nEquivalentClasses(<http://purl.org/ppeo/PPEO.owl#GPS_location> ObjectIntersectionOf(DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasLatitude> xsd:float) DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasLongitude> xsd:float)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#biological_material> (<http://purl.org/ppeo/PPEO.owl#biological_material>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#biological_material> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasMIAPPESynonym> \"organism\"@en) <http://purl.org/ppeo/PPEO.owl#biological_material> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasTaxonIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#biological_material> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasGenus> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#biological_material> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasSpecies> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#country> (<http://purl.org/ppeo/PPEO.owl#country>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#country> DataSomeValuesFrom(<http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#data_file> (<http://purl.org/ppeo/PPEO.owl#data_file>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#data_file> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#data_file> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDigitalLocation> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#data_file> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasVersion> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#environment_parameter> (<http://purl.org/ppeo/PPEO.owl#environment_parameter>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#environment_parameter> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#environment_parameter> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasValue> DataUnionOf(xsd:float xsd:int xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#event> (<http://purl.org/ppeo/PPEO.owl#event>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#event> DataSomeValuesFrom(<http://purl.org/ppeo/PPEO.owl#hasDateTime> xsd:dateTime))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#event> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasType> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#event> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://www.cropontology.org/rdf/CO_715:0000006\"^^xsd:anyURI) <http://purl.org/ppeo/PPEO.owl#event> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#experimental_design> (<http://purl.org/ppeo/PPEO.owl#experimental_design>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#experimental_design> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://www.cropontology.org/rdf/CO_715:0000003\"^^xsd:anyURI) <http://purl.org/ppeo/PPEO.owl#experimental_design> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasType> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#factor> (<http://purl.org/ppeo/PPEO.owl#factor>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#factor> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasType> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#factor> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#factor_value> (<http://purl.org/ppeo/PPEO.owl#factor_value>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#factor_value> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasValue> DataUnionOf(xsd:float xsd:int xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#growth_facility> (<http://purl.org/ppeo/PPEO.owl#growth_facility>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#growth_facility> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://www.cropontology.org/rdf/CO_715:0000005\"^^xsd:anyURI) <http://purl.org/ppeo/PPEO.owl#growth_facility> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasType> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#institution> (<http://purl.org/ppeo/PPEO.owl#institution>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#institution> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#investigation> (<http://purl.org/ppeo/PPEO.owl#investigation>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#investigation> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasMIAPPEVersion> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasMIAPPESynonym> \"investigation title\"@en) <http://purl.org/ppeo/PPEO.owl#investigation> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#investigation> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasMIAPPESynonym> \"investigation unique ID\"@en) <http://purl.org/ppeo/PPEO.owl#investigation> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#material_source> (<http://purl.org/ppeo/PPEO.owl#material_source>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#material_source> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasMaterialIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#material_source> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDOI> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#material_source> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#method> (<http://purl.org/ppeo/PPEO.owl#method>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#method> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#method> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasAssociatedPublication> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#method> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://www.cropontology.org/ (Method)\"^^xsd:string) <http://purl.org/ppeo/PPEO.owl#method> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#named_location> (<http://purl.org/ppeo/PPEO.owl#named_location>)\n\nEquivalentClasses(<http://purl.org/ppeo/PPEO.owl#named_location> ObjectIntersectionOf(ObjectExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasCountry> <http://purl.org/ppeo/PPEO.owl#country>) DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasAddress> xsd:string) DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#observation> (<http://purl.org/ppeo/PPEO.owl#observation>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#observation> ObjectExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasObservedSubject> ObjectUnionOf(<http://purl.org/ppeo/PPEO.owl#observation_unit> <http://purl.org/ppeo/PPEO.owl#sample>)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#observation> DataAllValuesFrom(<http://purl.org/ppeo/PPEO.owl#hasValue> DataUnionOf(xsd:float xsd:int xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#observation_unit> (<http://purl.org/ppeo/PPEO.owl#observation_unit>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#observation_unit> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#observed_variable> (<http://purl.org/ppeo/PPEO.owl#observed_variable>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#observed_variable> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://www.cropontology.org/rdf/Variable\"^^xsd:anyURI) <http://purl.org/ppeo/PPEO.owl#observed_variable> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#observed_variable> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#person> (<http://purl.org/ppeo/PPEO.owl#person>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#person> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#person> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasEmailContact> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#person> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasIdentifier> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#role> (<http://purl.org/ppeo/PPEO.owl#role>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#role> ObjectSomeValuesFrom(<http://purl.org/ppeo/PPEO.owl#isRoleOfPersonIn> ObjectUnionOf(<http://purl.org/ppeo/PPEO.owl#investigation> <http://purl.org/ppeo/PPEO.owl#study>)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#role> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#sample> (<http://purl.org/ppeo/PPEO.owl#sample>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#sample> DataAllValuesFrom(<http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#sample> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasCollectionDate> xsd:dateTime))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#sample> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasInternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://purl.obolibrary.org/obo/PO_0025131\"^^xsd:anyURI) <http://purl.org/ppeo/PPEO.owl#sample> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasPlantAnatomicalEntity> DataUnionOf(xsd:anyURI xsd:string)))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#sample> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://purl.obolibrary.org/obo/PO_0009012\"^^xsd:anyURI) <http://purl.org/ppeo/PPEO.owl#sample> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasPlantStructureDevelopmentStage> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#scale> (<http://purl.org/ppeo/PPEO.owl#scale>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#scale> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://www.cropontology.org/ (Scale)\"^^xsd:string) <http://purl.org/ppeo/PPEO.owl#scale> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#spatial_coordinate> (<http://purl.org/ppeo/PPEO.owl#spatial_coordinate>)\n\nEquivalentClasses(<http://purl.org/ppeo/PPEO.owl#spatial_coordinate> ObjectOneOf(<http://purl.org/ppeo/PPEO.owl#altitude> <http://purl.org/ppeo/PPEO.owl#column> <http://purl.org/ppeo/PPEO.owl#latitude> <http://purl.org/ppeo/PPEO.owl#longitude> <http://purl.org/ppeo/PPEO.owl#row> <http://purl.org/ppeo/PPEO.owl#x> <http://purl.org/ppeo/PPEO.owl#x_m> <http://purl.org/ppeo/PPEO.owl#y> <http://purl.org/ppeo/PPEO.owl#y_m> <http://purl.org/ppeo/PPEO.owl#z> <http://purl.org/ppeo/PPEO.owl#z_m>))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#spatial_distribution> (<http://purl.org/ppeo/PPEO.owl#spatial_distribution>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#spatial_distribution> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasValue> DataUnionOf(xsd:float xsd:int xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#spatial_distribution_type> (<http://purl.org/ppeo/PPEO.owl#spatial_distribution_type>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#spatial_distribution_type> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasType> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#study> (<http://purl.org/ppeo/PPEO.owl#study>)\n\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasMIAPPESynonym> \"study title\"@en) <http://purl.org/ppeo/PPEO.owl#study> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#study> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasObservationUnitDescription> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#study> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasStartDateTime> xsd:dateTime))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#study> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasCulturalPractices> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#study> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasDescription> xsd:string))\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#study> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasEndDateTime> xsd:dateTime))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasMIAPPESynonym> \"study unique ID\"@en) <http://purl.org/ppeo/PPEO.owl#study> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\n\n# Class: <http://purl.org/ppeo/PPEO.owl#trait> (<http://purl.org/ppeo/PPEO.owl#trait>)\n\nSubClassOf(<http://purl.org/ppeo/PPEO.owl#trait> DataExactCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasName> xsd:string))\nSubClassOf(Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://purl.obolibrary.org/obo/to.owl\"^^xsd:anyURI) Annotation(<http://purl.org/ppeo/PPEO.owl#hasOntologyRecommendation> \"http://www.cropontology.org/ (traits)\"^^xsd:string) <http://purl.org/ppeo/PPEO.owl#trait> DataMaxCardinality(1 <http://purl.org/ppeo/PPEO.owl#hasExternalIdentifier> DataUnionOf(xsd:anyURI xsd:string)))\n\n\n############################\n#   Named Individuals\n############################\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#altitude> (<http://purl.org/ppeo/PPEO.owl#altitude>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#altitude> \"altitude\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#column> (<http://purl.org/ppeo/PPEO.owl#column>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#column> \"column\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#latitude> (<http://purl.org/ppeo/PPEO.owl#latitude>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#latitude> \"latitude\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#longitude> (<http://purl.org/ppeo/PPEO.owl#longitude>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#longitude> \"longitude\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#row> (<http://purl.org/ppeo/PPEO.owl#row>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#row> \"row\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#x> (<http://purl.org/ppeo/PPEO.owl#x>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#x> \"x\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#x_m> (<http://purl.org/ppeo/PPEO.owl#x_m>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#x_m> \"x (m)\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#y> (<http://purl.org/ppeo/PPEO.owl#y>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#y> \"y\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#y_m> (<http://purl.org/ppeo/PPEO.owl#y_m>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#y_m> \"y (m)\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#z> (<http://purl.org/ppeo/PPEO.owl#z>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#z> \"z\"^^xsd:string)\n\n# Individual: <http://purl.org/ppeo/PPEO.owl#z_m> (<http://purl.org/ppeo/PPEO.owl#z_m>)\n\nDataPropertyAssertion(<http://purl.org/ppeo/PPEO.owl#hasType> <http://purl.org/ppeo/PPEO.owl#z_m> \"z (m)\"^^xsd:string)\n\n\nSubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ppeo/PPEO.owl#hasMaterialSource> <http://purl.org/ppeo/PPEO.owl#hasLocation> <http://purl.org/ppeo/PPEO.owl#hasCountry>) <http://purl.org/ppeo/PPEO.owl#hasCountryOfOrigin>)\nSubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ppeo/PPEO.owl#hasPersonWithRole> <http://purl.org/ppeo/PPEO.owl#isRoleOf> <http://purl.org/ppeo/PPEO.owl#hasAffiliation>) <http://purl.org/ppeo/PPEO.owl#hasParticipatingInstitution>)\n)
+
+[Term]
+id: GPS_location
+name: GPS location
+is_a: location ! location
+
+[Term]
+id: biological_material
+name: biological material
+comment: An organism that was the subject of the study and/or was observed in an observation unit.
+relationship: hasLocation GPS_location {maxCardinality="1"} ! GPS location
+relationship: hasMaterialSource material_source {maxCardinality="1"} ! material source
+property_value: hasBrAPISynonym "germplasm" xsd:string
+
+[Term]
+id: country
+name: country
+comment: A country in the world that either presently exists (i.e. is recognized in status by most entities) or existed at the time of the study.
+
+[Term]
+id: data_file
+name: data file
+comment: A description of and link to a file or data stream holding some or all of the data described by the MIAPPE submission.
+
+[Term]
+id: environment
+name: environment
+comment: The set of environmental parameters or experimental conditions that were kept constant during the study and did not change betweeen observation units or assays.
+relationship: hasEnvironmentParameter environment_parameter ! environment parameter
+
+[Term]
+id: environment_parameter
+name: environment parameter
+comment: A parameter of the environment which is represented by a name and a value.
+
+[Term]
+id: event
+name: event
+comment: A discrete change to the state of one or more observation units that happened at a given point in time, be it deliberate or inadvertent.
+property_value: hasRelatedSynonym "time factor" xsd:string
+
+[Term]
+id: experimental_design
+name: experimental design
+
+[Term]
+id: factor
+name: factor
+comment: A condition that varies between observation units, by taking different values or modalities, assessing the effect of which is the goal of the study. A factor may be biotic (pest, disease interaction) or abiotic (treatment, cultural practice) in nature. It must have at least two values or modalities.
+relationship: hasModality factor_value {minCardinality="2"} ! factor value
+
+[Term]
+id: factor_value
+name: factor value
+comment: A value or modality of a factor.
+relationship: isModalityOf factor {cardinality="1"} ! factor
+
+[Term]
+id: growth_facility
+name: growth facility
+comment: A facility in which plants can be grown, such as a field or greenhouse.
+
+[Term]
+id: institution
+name: institution
+comment: An institution (academic or industrial) involved in the investigation or study.
+relationship: hasLocation named_location ! named location
+
+[Term]
+id: investigation
+name: investigation
+comment: A research programme with defined aims, which can vary in scale from a single experiment, to a grant-funded programme or various components comprising a peer-reviewed publication.
+relationship: hasPart study ! study
+relationship: hasPersonWithRole role ! role
+property_value: hasBrAPISynonym "trial" xsd:string
+
+[Term]
+id: location
+name: location
+comment: A physical location, typically on planet Earth, identified by GPS coordinates and/or name and address.
+
+[Term]
+id: material_source
+name: material source
+comment: An organism from which the organism(s) used in the study were derived. It should be identified with a unique external identifier (such as germplasm accession number) and possibly a DOI.
+relationship: hasLocation GPS_location {maxCardinality="1"} ! GPS location
+
+[Term]
+id: method
+name: method
+
+[Term]
+id: named_location
+name: named location
+is_a: location ! location
+
+[Term]
+id: observation
+name: observation
+relationship: hasVariable observed_variable {cardinality="1"} ! observed variable
+
+[Term]
+id: observation_level
+name: observation level
+is_a: spatial_distribution_type ! spatial distribution type
+relationship: partOf observation_level_hierarchy {minCardinality="1"} ! observation level hierarchy
+
+[Term]
+id: observation_level_hierarchy
+name: observation level hierarchy
+relationship: hasPart observation_level ! observation level
+
+[Term]
+id: observation_unit
+name: observation unit
+relationship: hasBiologicalMaterial biological_material ! biological material
+relationship: hasObservationLevel observation_level {cardinality="1"} ! observation level
+relationship: partOf study ! study
+property_value: hasExactSynonym "experiment unit" xsd:string
+
+[Term]
+id: observed_variable
+name: observed variable
+relationship: hasMethod method {cardinality="1"} ! method
+relationship: hasScale scale {cardinality="1"} ! scale
+relationship: hasTrait trait {cardinality="1"} ! trait
+relationship: partOf study ! study
+property_value: hasBrAPISynonym "observation variable" xsd:string
+property_value: hasISASynonym "assay" xsd:string
+
+[Term]
+id: person
+name: person
+relationship: hasAffiliation institution ! institution
+relationship: hasRole role ! role
+
+[Term]
+id: role
+name: role
+relationship: isRoleOf person ! person
+
+[Term]
+id: sample
+name: sample
+relationship: derivesFrom observation_unit {cardinality="1"} ! observation unit
+
+[Term]
+id: scale
+name: scale
+
+[Term]
+id: spatial_coordinate
+name: spatial coordinate
+is_a: spatial_distribution_type ! spatial distribution type
+
+[Term]
+id: spatial_distribution
+name: spatial distribution
+relationship: hasSpatialDistributionType spatial_distribution_type {cardinality="1"} ! spatial distribution type
+
+[Term]
+id: spatial_distribution_type
+name: spatial distribution type
+
+[Term]
+id: study
+name: study
+comment: A study (or experiment) comprises a series of assays (or measurements) of one or more types, undertaken to answer a particular biological question.\nIt is recommended that a Study have a description.
+relationship: hasBiologicalMaterial biological_material ! biological material
+relationship: hasContactInstitution institution {cardinality="1"} ! institution
+relationship: hasEnvironment environment {maxCardinality="1"} ! environment
+relationship: hasExperimentalDesign experimental_design {cardinality="1"} ! experimental design
+relationship: hasGrowthFacility growth_facility {cardinality="1"} ! growth facility
+relationship: hasLocation named_location {cardinality="1"} ! named location
+relationship: hasObservationLevelHierarchy observation_level_hierarchy {maxCardinality="1"} ! observation level hierarchy
+relationship: hasPart observation_unit ! observation unit
+relationship: hasPart observed_variable ! observed variable
+relationship: partOf investigation ! investigation
+property_value: hasExactSynonym "experiment" xsd:string
+
+[Term]
+id: trait
+name: trait
+comment: Name of the (plant or environmental) trait under observation
+
+[Typedef]
+id: derivesFrom
+name: derives from
+domain: sample ! sample
+range: observation_unit ! observation unit
+
+[Typedef]
+id: hasAffiliation
+name: has affiliation
+domain: person ! person
+range: institution ! institution
+
+[Typedef]
+id: hasBiologicalMaterial
+name: has biological material
+range: biological_material ! biological material
+
+[Typedef]
+id: hasContactInstitution
+name: has contact institution
+domain: study ! study
+range: institution ! institution
+
+[Typedef]
+id: hasCountry
+name: has country
+domain: location ! location
+range: country ! country
+is_functional: true
+
+[Typedef]
+id: hasCountryOfOrigin
+name: has country of origin
+domain: biological_material ! biological material
+range: country ! country
+
+[Typedef]
+id: hasDataFile
+name: has data file
+domain: study ! study
+range: data_file ! data file
+
+[Typedef]
+id: hasEnvironment
+name: has environment
+domain: study ! study
+range: environment ! environment
+
+[Typedef]
+id: hasEnvironmentParameter
+name: has environment parameter
+domain: environment ! environment
+range: environment_parameter ! environment parameter
+
+[Typedef]
+id: hasEvent
+name: has event
+range: event ! event
+
+[Typedef]
+id: hasExperimentalDesign
+name: has experimental design
+domain: study ! study
+range: experimental_design ! experimental design
+
+[Typedef]
+id: hasFactor
+name: has factor
+domain: study ! study
+range: factor ! factor
+
+[Typedef]
+id: hasFactorValue
+name: has factor value
+domain: observation_unit ! observation unit
+range: factor_value ! factor value
+
+[Typedef]
+id: hasGrowthFacility
+name: has growth facility
+domain: study ! study
+range: growth_facility ! growth facility
+
+[Typedef]
+id: hasLocation
+name: has location
+range: location ! location
+
+[Typedef]
+id: hasMaterialSource
+name: has material source
+domain: biological_material ! biological material
+range: material_source ! material source
+
+[Typedef]
+id: hasMethod
+name: has method
+domain: observed_variable ! observed variable
+range: method ! method
+
+[Typedef]
+id: hasModality
+name: has modality
+domain: factor ! factor
+range: factor_value ! factor value
+inverse_of: isModalityOf ! is modality of
+
+[Typedef]
+id: hasObservation
+name: has observation
+domain: data_file ! data file
+range: observation ! observation
+
+[Typedef]
+id: hasObservationLevel
+name: has observation level
+domain: observation_unit ! observation unit
+range: observation_level ! observation level
+
+[Typedef]
+id: hasObservationLevelHierarchy
+name: has observation level hierarchy
+domain: study ! study
+range: observation_level_hierarchy ! observation level hierarchy
+
+[Typedef]
+id: hasObservedSubject
+name: has observed subject
+domain: observation ! observation
+inverse_of: isSubjectOfObservation ! is subject of observation
+
+[Typedef]
+id: hasPart
+name: has part
+is_transitive: true
+inverse_of: partOf ! part of
+
+[Typedef]
+id: hasParticipatingInstitution
+name: has participating institution
+range: institution ! institution
+
+[Typedef]
+id: hasPersonWithRole
+name: has person with role
+range: role ! role
+inverse_of: isRoleOfPersonIn ! is role of person in
+
+[Typedef]
+id: hasRole
+name: has role
+domain: person ! person
+range: role ! role
+inverse_of: isRoleOf ! is role of
+
+[Typedef]
+id: hasScale
+name: has scale
+domain: observed_variable ! observed variable
+range: scale ! scale
+
+[Typedef]
+id: hasSpatialDistribution
+name: has spatial distribution
+domain: observation_unit ! observation unit
+range: spatial_distribution ! spatial distribution
+
+[Typedef]
+id: hasSpatialDistributionType
+name: has spatial distribution type
+domain: spatial_distribution ! spatial distribution
+range: spatial_distribution_type ! spatial distribution type
+
+[Typedef]
+id: hasSublevel
+name: has sublevel
+domain: observation_level ! observation level
+range: observation_level ! observation level
+inverse_of: hasSuperlevel ! has superlevel
+
+[Typedef]
+id: hasSuperlevel
+name: has superlevel
+domain: observation_level ! observation level
+range: observation_level ! observation level
+
+[Typedef]
+id: hasTrait
+name: has trait
+domain: observed_variable ! observed variable
+range: trait ! trait
+
+[Typedef]
+id: hasVariable
+name: has variable
+domain: observation ! observation
+range: observed_variable ! observed variable
+
+[Typedef]
+id: isModalityOf
+name: is modality of
+domain: factor_value ! factor value
+range: factor ! factor
+
+[Typedef]
+id: isRoleOf
+name: is role of
+domain: role ! role
+range: person ! person
+
+[Typedef]
+id: isRoleOfPersonIn
+name: is role of person in
+domain: role ! role
+
+[Typedef]
+id: isSubjectOfObservation
+name: is subject of observation
+range: observation ! observation
+
+[Typedef]
+id: partOf
+name: part of
+is_transitive: true
+
