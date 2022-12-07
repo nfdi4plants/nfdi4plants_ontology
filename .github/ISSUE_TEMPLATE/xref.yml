@@ -2,7 +2,7 @@ name: fix/add xref
 description: Suggest a new ref or report issue about an incorrect xref.
 title: '[xref] '
 labels: [xref- fix or add]
-assignees: marieALaporte
+assignees: kdumschott
 body:
   - type: input
     id: term
