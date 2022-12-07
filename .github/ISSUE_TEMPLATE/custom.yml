@@ -16,6 +16,7 @@ body:
   - type: textarea
     id: describe
     attributes:
-      label: Please describe the issue concern in as much detail as possible and provide as many links or references as needed to clearly explain the situation.
+      label: Comments
+      description: Please describe the issue concern in as much detail as possible and provide as many links or references as needed to clearly explain the situation. 
     validations:
       required: true
