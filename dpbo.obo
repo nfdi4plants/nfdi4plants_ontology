@@ -806,14 +806,6 @@ property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
-id: EFO:0008896
-name: RNA-Seq
-def: "RNA-seq is a method that involves purifying RNA and making cDNA, followed by high-throughput sequencing." []
-xref: PMID:18516045
-is_a: DPBO:0000035 ! library strategy
-property_value: IAO:0000117 "Dani Welter" xsd:string
-
-[Term]
 id: DPBO:1000004
 name: miRNA-seq
 def: "placeholder def of miRNA-Seq" []
@@ -956,14 +948,6 @@ comment: To be transformed to an instance. DB
 is_a: DPBO:0000035 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-
-[Term]
-id: EFO:0008973
-name: TN-Seq
-def: "Transposon sequencing (TN-Seq)" []
-xref: PMID:23712350
-is_a: DPBO:0000035 ! library strategy
-property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
 id: DPBO:1000019
@@ -2002,31 +1986,33 @@ created_by: Dominik Brilhaus
 
 [Term]
 id: DPBO:1000162
-name: growth protocol
+name: obsolete_growth protocol
 def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." []
+comment: replaced term with EFO:0003789 ! growth protocol
 xref: EFO:0003789
-is_a: DPBO:1000161 ! protocol type
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000163
 name: algae growth protocol
 def: "A protocol that provides instructions for growing algae." []
-is_a: DPBO:1000162 ! growth protocol
+is_a: EFO:0003789 ! growth protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000164
 name: plant growth protocol
 def: "A protocol that provides instructions for growing a plant cultivar." []
-is_a: DPBO:1000162 ! growth protocol
+is_a: EFO:0003789 ! growth protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000165
 name: microbe growth protocol
 def: "A protocol that provides instructions for growing a microbial sample." []
-is_a: DPBO:1000162 ! growth protocol
+is_a: EFO:0003789 ! growth protocol
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -2260,6 +2246,13 @@ property_value: IAO:0000117 "James Malone" xsd:string
 property_value: SRA:label "Bisulfite-Seq (Sequencing following treatment of DNA with bisulfite to\nconvert cytosine residues to uracil depending on methylation status)" xsd:string
 
 [Term]
+id: EFO:0003789
+name: growth protocol
+def: "A growth protocol is a protocol which provides instructions on the growth of a biological sample. E.g. the growth of a specific cell line or Drosophila culture" []
+is_a: DPBO:1000161 ! protocol type
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+
+[Term]
 id: EFO:0004428
 name: FAIRE-seq
 def: "FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna." []
@@ -2319,10 +2312,26 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
+id: EFO:0008896
+name: RNA-Seq
+def: "RNA-seq is a method that involves purifying RNA and making cDNA, followed by high-throughput sequencing." []
+xref: PMID:18516045
+is_a: DPBO:0000035 ! library strategy
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
 id: EFO:0008950
 name: ssRNA-seq
 def: "Strand-specific RNA-seq (ssRNA-seq)" []
 xref: PMID:19609351
+is_a: DPBO:0000035 ! library strategy
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0008973
+name: TN-Seq
+def: "Transposon sequencing (TN-Seq)" []
+xref: PMID:23712350
 is_a: DPBO:0000035 ! library strategy
 property_value: IAO:0000117 "Dani Welter" xsd:string
 
