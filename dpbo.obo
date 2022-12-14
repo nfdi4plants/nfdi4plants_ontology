@@ -2159,7 +2159,8 @@ created_by: Kevin Schneider | ORCID: 0000-0002-2198-526
 [Term]
 id: DPBO:1000185
 name: incubation time
-def: "The time that a sample should incubate (keep at a suitable temperature) during a experimental protcol to allow for a reaction or proces to occur. " []
+def: "The time that a sample should incubate (keep at a suitable temperature) during a experimental protocol to allow for a reaction or proces to occur. " []
+xref: BAO:0002833
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
 [Term]
@@ -2181,7 +2182,11 @@ def: "The part of organism's anatomy or substance arising from an organism from 
 id: EFO:0000724
 name: timepoint
 def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
-xref: EFO:0000724
+xref: MO:738
+xref: NCIt:C68568
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Jie Zheng" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:strin
 
 [Term]
 id: EFO:0002692
