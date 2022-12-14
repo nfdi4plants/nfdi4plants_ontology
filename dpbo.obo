@@ -2157,6 +2157,12 @@ is_a: DPBO:1000182 ! replicate group
 created_by: Kevin Schneider | ORCID: 0000-0002-2198-526
 
 [Term]
+id: DPBO:1000185
+name: incubation time
+def: "The time that a sample should incubate (keep at a suitable temperature) during a experimental protcol to allow for a reaction or proces to occur. " []
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
+
+[Term]
 id: EFO:0000434
 name: ecotype
 def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
