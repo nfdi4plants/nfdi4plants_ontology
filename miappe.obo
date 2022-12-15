@@ -1,5 +1,5 @@
 format-version: 1.2
-ontology: MIAPPE
+ontology: miappe
 
 [Term]
 id: MIAPPE:0000
