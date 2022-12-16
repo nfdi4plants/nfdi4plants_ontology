@@ -7,12 +7,14 @@ name: Investigation
 def: "Investigations are research programmes with defined aims. They can exist at various scales (for example, they could encompass a grant-funded programme of work, the various components comprising a peer-reviewed publication, or a single experiment)."
 comment: "Cardinality: 1 per MIAPPE submission"
 
+
 [Term]
 id: MIAPPE:0001
 name: Investigation unique ID
 def: "Identifier comprising the unique name of the institution/database hosting the submission of the investigation data, and the accession number of the investigation in that institution."
 comment: "Example: EBI:12345678. Format: Unique identifier. Cardinality: 0-1"
 is_a: MIAPPE:0000 ! Investigation
+
 
 [Term]
 id: MIAPPE:0002
@@ -75,6 +77,7 @@ name: Study unique ID
 def: "Unique identifier comprising the name or identifier for the institution/database hosting the submission of the study data, and the identifier of the study in that institution."
 comment: "Example: EBI:12345678 http://phenome-fppn.fr/maugio/2013/t2351. Format: Unique identifier. Cardinality: 0-1"
 is_a: MIAPPE:0009 ! Study
+
 
 [Term]
 id: MIAPPE:0011
@@ -149,7 +152,7 @@ is_a: MIAPPE:0009 ! Study
 [Term]
 id: MIAPPE:0021
 name: Description of the experimental design
-def: "Short description of the experimental design, possibly including statistical design. In specific cases, e.g. legacy datasets or data computed from several studies, the experimental design can be "unknown"/"NA", "aggregated/reduced data", or simply 'none'."
+def: "Short description of the experimental design, possibly including statistical design. In specific cases, e.g. legacy datasets or data computed from several studies, the experimental design can be 'unknown'/'NA', 'aggregated/reduced data', or simply 'none'."
 comment: "Example: Lines were repeated twice at each location using a complete block design. In order to limit competition effects, each block was organized into four sub-blocks corresponding to earliness groups based on a priori information. . Format: Free text. Cardinality: 1"
 is_a: MIAPPE:0009 ! Study
 
@@ -185,7 +188,7 @@ is_a: MIAPPE:0009 ! Study
 id: MIAPPE:0026
 name: Type of growth facility
 def: "Type of growth facility in which the study was carried out, in the form of an accession number from the Crop Ontology."
-comment: "Example: CO_715:0000162. Format: Crop Ontology term (subclass of "CO_715:0000005"). Cardinality: 0-1"
+comment: "Example: CO_715:0000162. Format: Crop Ontology term (subclass of 'CO_715:0000005'). Cardinality: 0-1"
 is_a: MIAPPE:0009 ! Study
 
 [Term]
@@ -205,8 +208,7 @@ is_a: MIAPPE:0009 ! Study
 [Term]
 id: MIAPPE:0029
 name: Person
-def: "A human involved in the investigation or specifically any of its studies.
-"
+def: "A human involved in the investigation or specifically any of its studies."
 comment: "Cardinality: 1+ per investigation / 0+ per study"
 
 [Term]
@@ -215,6 +217,7 @@ name: Person name
 def: "The name of the person (either full name or as used in scientific publications)"
 comment: "Example: Ines Chaves. Format: Name. Cardinality: 1"
 is_a: MIAPPE:0029 ! Person
+
 
 [Term]
 id: MIAPPE:0031
@@ -276,6 +279,7 @@ id: MIAPPE:0039
 name: Biological Material
 def: "The biological material being studied (e.g. plants grown from a certain bag or seed, or plants grown in a particular field). The original source of that material (e.g., the seeds or the original plant cloned) is called the material source, which, when held by a material repository, should have its stock identified."
 comment: "Cardinality: 1+ per study; 0+ per observation unit"
+
 
 [Term]
 id: MIAPPE:0040
@@ -350,7 +354,7 @@ is_a: MIAPPE:0039 ! Biological Material
 [Term]
 id: MIAPPE:0050
 name: Material source ID (Holding institute/stock centre, accession)
-def: "An identifier for the source of the biological material, in the form of a key-value pair comprising the name/identifier of the repository from which the material was sourced plus the accession number of the repository for that material. Where an accession number has not been assigned, but the material has been derived from the crossing of known accessions, the material can be defined as follows: "mother_accession X father_accession", or, if father is unknown, as "mother_accession X UNKNOWN". For in situ material, the region of provenance may be used when an accession is not available."
+def: "An identifier for the source of the biological material, in the form of a key-value pair comprising the name/identifier of the repository from which the material was sourced plus the accession number of the repository for that material. Where an accession number has not been assigned, but the material has been derived from the crossing of known accessions, the material can be defined as follows: 'mother_accession X father_accession', or, if father is unknown, as 'mother_accession X UNKNOWN'. For in situ material, the region of provenance may be used when an accession is not available."
 comment: "Example: INRA:W95115_inra ICNF:PNB-RPI. Format: Unique identifier. Cardinality: 0-1"
 is_a: MIAPPE:0039 ! Biological Material
 
@@ -416,10 +420,11 @@ def: "Value of the environment parameter (defined above) constant within the exp
 comment: "Example: 300 seeds per m2 Clay 50% plus sand; 6.5. Format: Free text. Cardinality: 1 per parameter"
 is_a: MIAPPE:0057 ! Environment
 
+
 [Term]
 id: MIAPPE:0060
 name: Experimental Factor
-def: "The object of a study is to ascertain the impact of one or more factors on the biological material. Thus, a factor is, by definition a condition that varies between observation units, which may be biotic (pest, disease interaction) or abiotic (treatment and cultural practice) in nature. Depending on the level of the data, an experimental factor can be either  "what is the factor applied to the plant" (i.e. Unwatered), or the "environmental characterisation" (i.e. if no rain on unwatered plant : Drought ;  if rain on unwatered plant: Irrigated) "
+def: "The object of a study is to ascertain the impact of one or more factors on the biological material. Thus, a factor is, by definition a condition that varies between observation units, which may be biotic (pest, disease interaction) or abiotic (treatment and cultural practice) in nature. Depending on the level of the data, an experimental factor can be either  'what is the factor applied to the plant' (i.e. Unwatered), or the 'environmental characterisation' (i.e. if no rain on unwatered plant : Drought ;  if rain on unwatered plant: Irrigated) "
 comment: "Cardinality: 0+ per study; 0+ per observation unit"
 
 [Term]
@@ -480,8 +485,7 @@ is_a: MIAPPE:0064 ! Event
 [Term]
 id: MIAPPE:0069
 name: Observation Unit
-def: "Observation units are objects that are subject to instances of observation and measurement. An observation unit comprises one or more plants, and/or their environment. There can be pure environment observation units with no plants. 
-Synonym: Experimental unit."
+def: "Observation units are objects that are subject to instances of observation and measurement. An observation unit comprises one or more plants, and/or their environment. There can be pure environment observation units with no plants. Synonym: Experimental unit."
 comment: "Cardinality: 1+ per study"
 
 [Term]
@@ -494,9 +498,7 @@ is_a: MIAPPE:0069 ! Observation Unit
 [Term]
 id: MIAPPE:0071
 name: Observation unit type
-def: "Type of observation unit in textual form, usually one of the following: study, block, sub-block, plot, sub-plot, pot, plant. Use of other observation unit types is possible but not recommended. 
-The observation unit type cannot be used to indicate sub-plant levels. However, observations can still be made on the sub-plant level, as long as the details are indicated in the associated observed variable (see observed variables).
-Alternatively, it is possible to use samples for more detailed tracing of sub-plant units, attaching the observations to them instead."
+def: "Type of observation unit in textual form, usually one of the following: study, block, sub-block, plot, sub-plot, pot, plant. Use of other observation unit types is possible but not recommended. The observation unit type cannot be used to indicate sub-plant levels. However, observations can still be made on the sub-plant level, as long as the details are indicated in the associated observed variable (see observed variables). Alternatively, it is possible to use samples for more detailed tracing of sub-plant units, attaching the observations to them instead."
 comment: "Example: plot. Format: Free text. Cardinality: 1"
 is_a: MIAPPE:0069 ! Observation Unit
 
@@ -554,6 +556,7 @@ name: Sample description
 def: "Any information not captured by the other sample fields, including quantification, sample treatments and processing."
 comment: "Example: Distal part of the leaf ; 100 mg of roots taken from 10 roots at 20°C, conserved in vacuum at 20 mM NaCl salinity, stored at -60 °C to -85 °C.. Format: Free text. Cardinality: 0-1"
 is_a: MIAPPE:0075 ! Sample
+
 
 [Term]
 id: MIAPPE:0080
@@ -690,6 +693,7 @@ name: Photon flux density (PPFD) measured at plant or canopy level
 def: "List of hourly Photosynthetic photon flux density (PPFD) throughout the experiment."
 comment: "Example: PPFD: 89061 mol m-2 sd-1; . Format: Text"
 is_a: MIAPPE:0095 ! Growth facility
+
 
 [Term]
 id: MIAPPE:0100
@@ -828,6 +832,7 @@ def: "Height of the container."
 comment: "Example: [m]. Format: Numeric"
 is_a: MIAPPE:0115 ! Rooting conditions
 
+
 [Term]
 id: MIAPPE:0120
 name: Number of plants per containers
@@ -964,6 +969,7 @@ name: Composition of nutrient solutions used for irrigation
 def: "For all nutrients, including micronutrients, the ontology term with concentration."
 comment: "Example: Ca (XEO:00058): 5 mg/L. Format: XEML Environment Ontology:'XEO_00042' + Numeric"
 is_a: MIAPPE:0130 ! Nutrients
+
 
 [Term]
 id: MIAPPE:0140
@@ -1102,6 +1108,7 @@ name: Rainfall regime
 def: "Treatment involving an exposure to a given amount of rainfall."
 comment: "Example: 79 rainfall events; 15,6mm (mean size). Format: Plant Environment Ontology:'EO_0007181'"
 is_a: MIAPPE:0141 ! Experimental Factor
+
 
 [Term]
 id: MIAPPE:0160
