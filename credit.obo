@@ -95,7 +95,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
 property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Methodology xsd:string
 
 [Term]
-id: CCREDIT:00000007
+id: CREDIT:00000007
 name: project administration role
 def: "Management and coordination responsibility for the research activity planning and execution." []
 xref: a693fe76-ea33-49ad-9dcc-5e4f3ac5f938
