@@ -1,0 +1,212 @@
+format-version: 1.2
+data-version: http://purl.org/credit/releases/2019-04-11/credit.owl
+remark: OWL implementation of CRediT
+import: http://purl.org/obo/iao.owl
+import: http://purl.org/obo/bfo.owl
+ontology: credit
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n)
+
+[Term]
+id: BFO:0000002
+is_a: BFO:0000001
+
+[Term]
+id: BFO:0000020
+is_a: BFO:0000002
+
+[Term]
+id: BFO:0000031
+is_a: BFO:0000002
+
+[Term]
+id: CREDIT:00000000
+name: contributor role
+def: "A high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability." []
+xref: 9dbb95f4-55ed-4e43-9301-a9f0e3e17afe
+property_value: IAO:0000111 "contributor role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles xsd:string
+
+[Term]
+id: CREDIT:00000001
+name: conceptualization role
+def: "Ideas; formulation or evolution of overarching research goals and aims." []
+xref: 8b73531f-db56-4914-9502-4cc4d4d8ed73
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "conceptualization role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Conceptualization xsd:string
+
+[Term]
+id: CREDIT:00000002
+name: data curation role
+def: "Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later re-use." []
+xref: f93e0f44-f2a4-4ea1-824a-4e0853b05c9d
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "data curation role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Data_curation xsd:string
+
+[Term]
+id: CREDIT:00000003
+name: formal analysis role
+def: "Application of statistical, mathematical, computational, or other formal techniques to analyse or synthesize study data." []
+xref: 95394cbd-4dc8-4735-b589-7e5f9e622b3f
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "formal analysis role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Formal_analysis xsd:string
+
+[Term]
+id: CREDIT:00000004
+name: funding acquisition role
+def: "Acquisition of the financial support for the project leading to this publication." []
+xref: 34ff6d68-132f-4438-a1f4-fba61ccf364
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "funding acquisition role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Funding_acquisition xsd:string
+
+[Term]
+id: CREDIT:00000005
+name: investigation role
+def: "Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection." []
+xref: 2451924d-425e-4778-9f4c-36c848ca70c2
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "investigation role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Investigation xsd:string
+
+[Term]
+id: CREDIT:00000006
+name: methodology role
+def: "Development or design of methodology; creation of models." []
+xref: f21e2be9-4e38-4ab7-8691-d6f72d5d5843
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "methodology role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Methodology xsd:string
+
+[Term]
+id: CREDIT:00000007
+name: project administration role
+def: "Management and coordination responsibility for the research activity planning and execution." []
+xref: a693fe76-ea33-49ad-9dcc-5e4f3ac5f938
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "project administration role" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Project_administration xsd:string
+
+[Term]
+id: CREDIT:00000008
+name: resources role
+def: "Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools." []
+xref: ebd781f0-bf79-492c-ac21-b31b9c3c990c
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "resources role" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Resources xsd:string
+
+[Term]
+id: CREDIT:00000009
+name: software role
+def: "Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components." []
+xref: f89c5233-01b0-4778-93e9-cc7d107aa2c8
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "software role" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Software xsd:string
+
+[Term]
+id: CREDIT:00000010
+name: supervision role
+def: "Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team." []
+xref: 0c8ca7d4-06ad-4527-9cea-a8801fcb8746
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "supervision role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Supervision xsd:string
+
+[Term]
+id: CREDIT:00000011
+name: validation role
+def: "Verification, whether as a part of the activity or separate, of the overall replication/reproducibility of results/experiments and other research outputs." []
+xref: 4b1bf348-faf2-4fc4-bd66-4cd3a84b9d44
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "validation role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Validation xsd:string
+
+[Term]
+id: CREDIT:00000012
+name: visualization role
+def: "Preparation, creation and/or presentation of the published work, specifically visualization/data presentation." []
+xref: 76b9d56a-e430-4e0a-84c9-59c11be343ae
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "visualization role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000120 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Visualization xsd:string
+
+[Term]
+id: CREDIT:00000013
+name: writing original draft role
+def: "Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation)." []
+xref: 43ebbd94-98b4-42f1-866b-c930cef228ca
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "writing original draft role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000123 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_original_draft xsd:string
+
+[Term]
+id: CREDIT:00000014
+name: writing review and editing role
+def: "Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages." []
+xref: d3aead86-f2a2-47f7-bb99-79de6421164d
+is_a: CREDIT:00000000 ! contributor role
+property_value: IAO:0000111 "writing review and editing role" xsd:string
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000123 xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-5059-4132 xsd:string
+property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Writing_%E2%80%93_review_%26_editing xsd:string
+
+[Term]
+id: IAO:0000027
+is_a: IAO:0000030
+
+[Term]
+id: IAO:0000030
+is_a: BFO:0000031
+
+[Term]
+id: IAO:0000078
+is_a: IAO:0000102
+
+[Term]
+id: IAO:0000102
+is_a: IAO:0000027
+
+[Term]
+id: IAO:0000225
+is_a: IAO:0000102
+
+[Term]
+id: IAO:0000409
+is_a: IAO:0000102
+
+[Term]
+id: Subset
+is_a: IAO:0000102
+
