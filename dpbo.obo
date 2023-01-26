@@ -1988,7 +1988,7 @@ created_by: Dominik Brilhaus
 id: DPBO:1000162
 name: obsolete_growth protocol
 def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." []
-comment: replaced term with EFO:0003789 ! growth protocol
+comment: replaced term with EFO:0003789
 xref: EFO:0003789
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
@@ -2395,6 +2395,243 @@ def: "A material entity that is an individual living system, such as animal, pla
 [Term]
 id: ObsoleteClass
 name: Obsolete Class
+
+[Term]
+id: PRIDE:0000307
+name: Quantification method
+namespace: PRIDE
+comment: Defines various quantification methods
+created_by: jg
+creation_date: 2011-07-22T09:15:33Z
+
+[Term]
+id: PRIDE:0000308
+name: Gel-based quantification method
+namespace: PRIDE
+comment: Describes gel-based quantification methods
+is_a: PRIDE:0000307 ! Quantification method
+created_by: jg
+creation_date: 2011-07-22T09:16:24Z
+
+[Term]
+id: PRIDE:0000309
+name: Gel-free quantification method
+namespace: PRIDE
+comment: Describes gel-free quantification methods
+is_a: PRIDE:0000307 ! Quantification method
+created_by: jg
+creation_date: 2011-07-22T09:17:03Z
+
+[Term]
+id: PRIDE:0000310
+name: Isotope labeling
+namespace: PRIDE
+comment: Describes quantification techniques using isotope labeling
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: jg
+creation_date: 2011-07-22T09:17:34Z
+
+[Term]
+id: PRIDE:0000311
+name: Selected Reaction Monitoring
+namespace: PRIDE
+comment: Describes quantification techniques based on selected / multiple reaction monitoring
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: jg
+creation_date: 2011-07-22T09:18:39Z
+
+[Term]
+id: PRIDE:0000312
+name: Label free
+namespace: PRIDE
+comment: Describes label free quantification techniques.
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: jg
+creation_date: 2011-07-22T09:19:54Z
+
+[Term]
+id: PRIDE:0000313
+name: iTRAQ
+namespace: PRIDE
+comment: Quantification technique developed by Applied Biosystems using various reporter ions that can be detected at MS2 level
+is_a: PRIDE:0000317 ! MS2 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:20:23Z
+
+[Term]
+id: PRIDE:0000314
+name: TMT
+namespace: PRIDE
+comment: Tandem Mass Tag is a MS2 based isotope labeling quantification technique
+synonym: "Tandem Mass Tag" EXACT []
+is_a: PRIDE:0000317 ! MS2 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:23:12Z
+
+[Term]
+id: PRIDE:0000315
+name: SILAC
+namespace: PRIDE
+comment: Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification
+synonym: "Stable isotope labeling with amino acids in cell culture" EXACT []
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:25:50Z
+
+[Term]
+id: PRIDE:0000316
+name: MS1 based isotope labeling
+namespace: PRIDE
+comment: Describes isotope labeling quantification techniques detectable at MS1 level.
+is_a: PRIDE:0000310 ! Isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:28:05Z
+
+[Term]
+id: PRIDE:0000317
+name: MS2 based isotope labeling
+namespace: PRIDE
+comment: Describes isotope labeling quantification techniques detectable at MS1 level.
+is_a: PRIDE:0000310 ! Isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:29:15Z
+
+[Term]
+id: PRIDE:0000318
+name: 18O
+namespace: PRIDE
+comment: The 18O quantification method relies on the differentiation of two samples using different stable isotopes of oxygen.
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:30:12Z
+
+[Term]
+id: PRIDE:0000319
+name: ICAT
+namespace: PRIDE
+comment: Isotope-Coded Affinity Tags is an isotope labeling quantification technique and uses tags that consist of three elements.
+synonym: "Isotope-Coded Affinity Tags" EXACT []
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:31:24Z
+
+[Term]
+id: PRIDE:0000320
+name: AQUA
+namespace: PRIDE
+comment: AQUA is an isotope labeling based quantification technique that uses known peptides.
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:32:46Z
+
+[Term]
+id: PRIDE:0000321
+name: ICPL
+namespace: PRIDE
+comment: Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses.
+synonym: "Isotope-coded protein label" EXACT []
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:34:37Z
+
+[Term]
+id: PRIDE:0000322
+name: emPAI
+namespace: PRIDE
+comment: The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result.
+synonym: "Exponentially Modified Protein Abundance Index" EXACT []
+is_a: PRIDE:0000312 ! Label free
+created_by: jg
+creation_date: 2011-07-22T09:36:57Z
+
+[Term]
+id: PRIDE:0000323
+name: TIC
+namespace: PRIDE
+comment: The Total Ion Current (TIC) can be measured or calculated in order to target specific ions.
+synonym: "Total Ion Current" EXACT []
+is_a: PRIDE:0000312 ! Label free
+created_by: jg
+creation_date: 2011-07-22T09:38:17Z
+
+[Term]
+id: PRIDE:0000425
+name: MS1 intensity based label-free quantification method
+namespace: PRIDE
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: rw
+
+[Term]
+id: PRIDE:0000435
+name: Peptide counting
+namespace: PRIDE
+comment: Use of the number of peptides for an identified protein as a measure of abundance. Method reviewed in PMID 22772140.
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000436
+name: Spectrum counting
+namespace: PRIDE
+comment: Use of the number of PSMs for an identified protein as a measure of abundance. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000437
+name: Protein Abundance Index - PAI
+namespace: PRIDE
+comment: Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000438
+name: Spectrum count/molecular weight
+namespace: PRIDE
+comment: Spectrum count is divided by the molecular weight of a protein. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000439
+name: Spectral Abundance Factor - SAF
+namespace: PRIDE
+comment: The spectrum count is normalized for protein length. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000440
+name: Normalized Spectral Abundance Factor - NSAF
+namespace: PRIDE
+comment: Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000441
+name: APEX - Absolute Protein Expression
+namespace: PRIDE
+comment: Spectrum counting method using machine learning classification to derive peptide detection probabilities to predict detectable peptides for any protein. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000463
+name: Parallel Reaction Monitoring (PRM)
+namespace: PRIDE
+def: "Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis." [PRIDE:PRIDE]
+is_a: PRIDE:0000311 ! Selected Reaction Monitoring
+
+[Term]
+id: PRIDE:0000513
+name: Dimethyl Labeling
+namespace: PRIDE
+def: "Dimethyl Labeling (DML)" [PRIDE:PRIDE]
+is_a: PRIDE:0000310 ! Isotope labeling
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
 
 [Term]
 id: PSO:0000013
