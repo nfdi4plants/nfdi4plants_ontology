@@ -1,22 +1,24 @@
 format-version: 1.2
 data-version: http://purl.org/credit/releases/2019-04-11/credit.owl
 remark: OWL implementation of CRediT
-import: http://purl.org/obo/iao.owl
-import: http://purl.org/obo/bfo.owl
+import: http://purl.org/credit/imports/iao
 ontology: credit
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (<http://purl.obolibrary.org/obo/BFO_0000001>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n\n)
 
 [Term]
 id: BFO:0000002
-is_a: BFO:0000001
+name: continuant
+is_a: BFO:0000001 ! entity
 
 [Term]
 id: BFO:0000020
-is_a: BFO:0000002
+name: specifically dependent continuant
+is_a: BFO:0000002 ! continuant
 
 [Term]
 id: BFO:0000031
-is_a: BFO:0000002
+name: generically dependent continuant
+is_a: BFO:0000002 ! continuant
 
 [Term]
 id: CREDIT:00000000
@@ -184,29 +186,30 @@ property_value: IAO:0000119 http://dictionary.casrai.org/Contributor_Roles/Writi
 
 [Term]
 id: IAO:0000027
-is_a: IAO:0000030
+name: data item
+is_a: IAO:0000030 ! information content entity
 
 [Term]
 id: IAO:0000030
-is_a: BFO:0000031
+name: information content entity
+is_a: BFO:0000031 ! generically dependent continuant
 
 [Term]
 id: IAO:0000078
-is_a: IAO:0000102
+name: curation status specification
+is_a: IAO:0000102 ! data about an ontology part
 
 [Term]
 id: IAO:0000102
-is_a: IAO:0000027
+name: data about an ontology part
+is_a: IAO:0000027 ! data item
 
 [Term]
 id: IAO:0000225
-is_a: IAO:0000102
+name: obsolescence reason specification
+is_a: IAO:0000102 ! data about an ontology part
 
 [Term]
 id: IAO:0000409
-is_a: IAO:0000102
-
-[Term]
-id: Subset
-is_a: IAO:0000102
-
+name: denotator type
+is_a: IAO:0000102 ! data about an ontology part
