@@ -2186,7 +2186,7 @@ xref: MO:738
 xref: NCIt:C68568
 property_value: IAO:0000117 "James Malone" xsd:string
 property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "Tomasz Adamusiak" xsd:strin
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
 
 [Term]
 id: EFO:0002692
