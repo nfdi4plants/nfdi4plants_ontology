@@ -1721,9 +1721,12 @@ xref: NCIT:C16295
 
 [Term]
 id: DPBO:1000118
-name: cover slip
+name: obsolete_cover slip
 def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
+comment: use NCIT:C126370
 xref: NCIT:C126370
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000120
@@ -1738,9 +1741,12 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000122
-name: imaging software name
+name: obsolete_imaging software name
 def: "The name of the software program to capture and/or process imaging data." []
+comment: false
 xref: NCIT:C175898
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000123
@@ -1846,9 +1852,12 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000142
-name: objective
+name: obsolete_objective
 def: "The microscope's objective lens." []
+comment: use OME:objective
 xref: OME:Objective
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000143
@@ -2389,6 +2398,14 @@ name: library source
 def: "The library source specifies the type of source material that is being sequenced." []
 
 [Term]
+id: NCIT:C126370
+name: Cover Slip
+
+[Term]
+id: NCIT:C175898
+name: Imaging Software Name
+
+[Term]
 id: NCIT:C43531
 name: developmental stage
 def: "A general term that usually refers to named landmark events during development of an organism." []
@@ -2399,9 +2416,29 @@ name: isolate
 def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system." []
 
 [Term]
+id: OBI:0001048
+name: digital camera
+def: "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor." []
+
+[Term]
 id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+
+[Term]
+id: OBI:0400169
+name: microscope
+def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
+
+[Term]
+id: OBI:0400170
+name: microscope slide
+def: "A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument" []
+
+[Term]
+id: OME:Objective
+name: Objective
+comment: Class "Objective" is microscopes' objective lens.
 
 [Term]
 id: ObsoleteClass
@@ -2688,4 +2725,5 @@ created_by: george gkoutos
 id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
+
 
