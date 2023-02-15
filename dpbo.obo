@@ -2845,16 +2845,76 @@ def: "cover slip" []
 is_a: NCIT:C126370 ! Cover Slip
 created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: NCIT:C181919
+name: Objective Lens
 
+[Term]
+id: DPBO:1000202
+name: 0.8x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000203
+name: 1x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000204
+name: 1.25x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000205
+name: 1.6x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000206
+name: 2x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000207
+name: 2.5x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000208
+name: 3.2x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000209
+name: 4x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
+[Term]
+id: DPBO:1000210
+name: 5x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
-
-
-
+[Term]
+id: DPBO:1000211
+name: 5.6x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
