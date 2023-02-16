@@ -2918,3 +2918,126 @@ name: 5.6x
 def: "magnification of Olympus SZX7 (Bino)" []
 is_a: DPBO:1000140 ! magnification
 created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: NCIT:C181919
+name: Objective Lens
+
+[Term]
+id: DPBO:1000212
+name: Plan-Neofluar 5x/0.15 
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000213
+name: Plan-Neofluar 10x/0.3 
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000214
+name: Plan-Neofluar 20x/0.50 Ph2 
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000215
+name: Plan-Neofluar 40x/0.75 
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000216
+name: Plan-Neofluar 63x/1.25 Oil 
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000217
+name: Plan-Neofluar 100x/1.30 Oil 
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000218
+name: Achroplan 5x/012 
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000219
+name: Achroplan 10x/0.25 Ph1 
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000220
+name: Achroplan 20x/0.40 
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000221
+name: Achroplan 40x/0.60 korr Ph2
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000222
+name: Achroplan 63x/0.75 korr Ph2
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: OBI:0000079
+name: culture medium
+
+[Term]
+id: DPBO:1000223
+name: Knop medium
+def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
+synonym: "Knop ME" []
+synonym: "Knop solution" []
+is_a: OBI:0000079 ! culture medium
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000224
+name: phenotyping
+def: "The activity or process of determining, analyzing, or predicting all or part of an organism's phenotype." []
+comment: Definition from https://www.merriam-webster.com/dictionary/phenotyping
+created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
