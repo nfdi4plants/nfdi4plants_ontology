@@ -14,6 +14,13 @@ owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://w
 treat-xrefs-as-equivalent: MIAPPE
 treat-xrefs-as-equivalent: NCIT
 treat-xrefs-as-equivalent: NFDI4PSO
+treat-xrefs-as-equivalent: NCBITaxon
+
+[Term]
+id: NCIT:C45293
+name: Species
+xref: MIAPPE:0043
+xref: NCBITaxon:species
 
 [Term]
 id: BAO:0010026
@@ -2852,10 +2859,6 @@ is_a: NCIT:C126370 ! Cover Slip
 created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
-id: NCIT:C181919
-name: Objective Lens
-
-[Term]
 id: DPBO:1000202
 name: 0.8x
 def: "magnification of Olympus SZX7 (Bino)" []
@@ -3025,25 +3028,3 @@ name: phenotyping
 def: "The activity or process of determining, analyzing, or predicting all or part of an organism's phenotype." []
 comment: Definition from https://www.merriam-webster.com/dictionary/phenotyping
 created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
