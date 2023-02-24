@@ -1521,8 +1521,18 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: DPBO:1000086
-name: single
+name: obsolete_single
 def: "placeholder def of single" []
+comment: Deprecated, please use DPBO:0000086 "single-end" instead
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
+
+[Term]
+id: DPBO:0000086
+name: single-end
+def: "placeholder def of single-end" []
 comment: To be transformed to an instance. DB
 is_a: DPBO:0000015 ! library layout
 property_value: ER_target "GEO_RNASEQ" xsd:string
