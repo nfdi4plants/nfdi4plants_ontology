@@ -17,6 +17,46 @@ property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" x
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
+id: AGRO:00000007
+name: desuckering
+def: "A pruning process in which one or more suckers are removed." []
+comment: Which suckers are removed depends on the criteria set by the agent of the desuckering process.
+synonym: "desuckering process" EXACT []
+is_a: AGRO:00000027 ! thinning
+
+[Term]
+id: AGRO:00000027
+name: thinning
+def: "A planned process in which selected parts of the plant are removed. The practice entails targeted removal of diseased, damaged, dead, non-productive, structurally unsound, or otherwise unwanted tissue from plants. This is done in order to shape the plant or tree, improve plant or tree health, reduce the risk from falling branches, prepare nursery specimens for transplanting, and increase the yield or quality of harvested products." [http://aims.fao.org/aos/agrovoc/c_6274, https://en.wikipedia.org/wiki/Pruning#Types_of_pruning]
+synonym: "pruning" BROAD []
+synonym: "thinning process" EXACT []
+is_a: AGRO:00000566 ! pruning process
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-6284-4821 xsd:string
+
+[Term]
+id: AGRO:00000363
+name: greenhouse
+def: "An experimental site in which the experiment is performed in a structure with walls and roof made chiefly of transparent material, such as glass, with the possibility to regulate climatic conditions." [https://en.wikipedia.org/wiki/Greenhouse]
+synonym: "glasshouse" EXACT []
+synonym: "hothouse" BROAD []
+synonym: "screenhouse" BROAD []
+
+[Term]
+id: AGRO:00000566
+name: pruning process
+def: "Process which involves the selective removal of certain parts of a plant or a tree, such as branches, buds, or roots." [https://en.wikipedia.org/wiki/Pruning]
+synonym: "pruning" EXACT []
+synonym: "pruning method" EXACT []
+is_a: AGRO:00002071 ! agricultural process
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-6284-4821
+
+[Term]
+id: AGRO:00002071
+name: agricultural process
+def: "A planned process which occurs in an agricultural field." []
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-8461-9745
+
+[Term]
 id: BAO:0010026
 name: protein profiling assay
 def: "Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications" []
