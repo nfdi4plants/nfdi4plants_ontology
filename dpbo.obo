@@ -2,6 +2,10 @@ format-version: 1.2
 data-version: init/2020-12-01
 saved-by: muehlhaus
 default-namespace: DPBO
+treat-xrefs-as-equivalent: MIAPPE
+treat-xrefs-as-equivalent: NCBITaxon
+treat-xrefs-as-equivalent: NCIT
+treat-xrefs-as-equivalent: NFDI4PSO
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
@@ -11,16 +15,6 @@ property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
-treat-xrefs-as-equivalent: MIAPPE
-treat-xrefs-as-equivalent: NCIT
-treat-xrefs-as-equivalent: NFDI4PSO
-treat-xrefs-as-equivalent: NCBITaxon
-
-[Term]
-id: NCIT:C45293
-name: Species
-xref: MIAPPE:0043
-xref: NCBITaxon:species
 
 [Term]
 id: BAO:0010026
@@ -121,6 +115,26 @@ name: mobile phase
 def: "A fluid that percolates through or along the stationary bed in chromatography." []
 
 [Term]
+id: CHMO:0001485
+name: derivatisation
+def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derivatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc." [https://orcid.org/0000-0002-0640-0422]
+synonym: "derivatization" EXACT []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0001549
+name: sample drying
+def: "The process of removing a solvent from a substance." [https://orcid.org/0000-0002-0640-0422]
+synonym: "drying" RELATED non-mining_synonym []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0001557
+name: vacuum drying
+def: "The removal of water from a sample by placing it under reduced pressure. This allows water to evaporate from (heat-sensitive) samples at a lower temperature." [https://orcid.org/0000-0002-0640-0422]
+is_a: CHMO:0001549 ! sample drying
+
+[Term]
 id: CHMO:0001583
 name: liquid-solid extraction
 def: "The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a stationary phase (e.g. silica particles)." [ISBN:0-13-147835-4]
@@ -208,6 +222,35 @@ synonym: "packed syringe microextraction" EXACT []
 synonym: "packed-syringe micro-extraction" EXACT []
 synonym: "packed-syringe microextraction" EXACT []
 is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
+id: CHMO:0001652
+name: grinding
+def: "The mechanical reduction of the particle size of a solid sample by attribution (friction), impact or cutting." [https://doi.org/10.1351/goldbook.M03928]
+synonym: "dry grinding" EXACT []
+synonym: "milling" EXACT []
+synonym: "solid-state grinding" EXACT []
+synonym: "solvent-free grinding" EXACT []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0002757
+name: methoxyamination derivatisation
+def: "Derivatisation of a metabolite by addition of pyridinic methoxyamine to stabilise carbonyl moieties." [https://doi.org/10.1039/9781847558107-00254, https://orcid.org/0000-0001-5985-7429]
+comment: this typically happens prior to GC-MS, but not LC-MS
+synonym: "methoxyamination derivatization" EXACT []
+is_a: CHMO:0001485 ! derivatisation
+is_a: DPBO:0000052 ! MS derivatization
+
+[Term]
+id: CHMO:0002758
+name: trimethylsilyl derivatisation
+def: "Derivatisation of a metabolite by addition of a trimethylsilyl reagent to protect functional groups such as hydroxy, carboxylic acid, thio and amine groups." [https://doi.org/10.1039/9781847558107-00254, https://orcid.org/0000-0001-5985-7429]
+comment: this typically happens prior to GC-MS, but not LC-MS
+synonym: "TMS derivatisation" EXACT []
+synonym: "trimethylsilyl derivatization" EXACT []
+is_a: CHMO:0001485 ! derivatisation
+is_a: DPBO:0000052 ! MS derivatization
 
 [Term]
 id: CHMO:0002863
@@ -483,6 +526,7 @@ id: DPBO:0000052
 name: MS derivatization
 def: "Derivatization for metabolomics mass spectrometry." []
 xref: CHMO:0001485
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: DPBO:0000053
@@ -626,6 +670,15 @@ synonym: "g0" EXACT []
 synonym: "standard acceleration due to gravity" EXACT []
 synonym: "standard acceleration of free fall" EXACT []
 is_a: UO:0000048 ! acceleration unit
+
+[Term]
+id: DPBO:0000086
+name: single-end
+def: "placeholder def of single-end" []
+comment: To be transformed to an instance. DB
+is_a: DPBO:0000015 ! library layout
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
 [Term]
 id: DPBO:0002000
@@ -1525,18 +1578,9 @@ name: obsolete_single
 def: "placeholder def of single" []
 comment: Deprecated, please use DPBO:0000086 "single-end" instead
 is_a: ObsoleteClass ! Obsolete Class
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 is_obsolete: true
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
-
-[Term]
-id: DPBO:0000086
-name: single-end
-def: "placeholder def of single-end" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000015 ! library layout
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
 [Term]
 id: DPBO:1000087
@@ -2193,6 +2237,289 @@ xref: BAO:0002833
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
 [Term]
+id: DPBO:1000186
+name: Zeiss Axiovert
+def: "Axiovert series, inverse microscope" []
+is_a: OBI:0400169 ! microscope
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000187
+name: Olympus SZX7 (Bino)
+def: "binocular, stereo microscope" []
+is_a: OBI:0400169 ! microscope
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000188
+name: Zeiss AxioCam MRc5
+def: "camera" []
+is_a: OBI:0001048 ! digital camera
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000189
+name: 01
+def: "white" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000190
+name: 01
+def: "white" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000191
+name: DIC
+def: "differential interference contrast" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000192
+name: 09
+def: "yellow" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000193
+name: 10
+def: "green" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000194
+name: 15
+def: "red" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000195
+name: Zeiss ZEN 3.5 (blue edition)
+def: "software controlling imaging systems from ZEISS." []
+is_a: NCIT:C175898 ! Imaging Software Name
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000196
+name: Thermo Scientific Menzel slides, 76 x 26 mm, 1,0 mm
+def: "microscope slide" []
+is_a: OBI:0400170 ! microscope slide
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000197
+name: VWR frosted edges, ground edges 90°, 76 x 26 mm, 0,8 - 1,0 mm
+def: "microscope slide" []
+is_a: OBI:0400170 ! microscope slide
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000198
+name: Roth SuperFrost® white, cut edges, 76 x 26 mm, 1,0 mm
+def: "microscope slide" []
+is_a: OBI:0400170 ! microscope slide
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000199
+name: Menzel, 24 x 50 mm, selected 0,17 +/- 0,01, strength 1,5
+def: "cover slip" []
+is_a: NCIT:C126370 ! Cover Slip
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000200
+name: Roth, 24 x 50 mm, strength 1
+def: "cover slip" []
+is_a: NCIT:C126370 ! Cover Slip
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000201
+name: VWR, 18 x 18 mm, 0,13 - 0,16 mm, strength 1,5
+def: "cover slip" []
+is_a: NCIT:C126370 ! Cover Slip
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000202
+name: 0.8x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000203
+name: 1x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000204
+name: 1.25x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000205
+name: 1.6x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000206
+name: 2x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000207
+name: 2.5x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000208
+name: 3.2x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000209
+name: 4x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000210
+name: 5x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000211
+name: 5.6x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000212
+name: Plan-Neofluar 5x/0.15
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000213
+name: Plan-Neofluar 10x/0.3
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000214
+name: Plan-Neofluar 20x/0.50 Ph2
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000215
+name: Plan-Neofluar 40x/0.75
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000216
+name: Plan-Neofluar 63x/1.25 Oil
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000217
+name: Plan-Neofluar 100x/1.30 Oil
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000218
+name: Achroplan 5x/012
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000219
+name: Achroplan 10x/0.25 Ph1
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000220
+name: Achroplan 20x/0.40
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000221
+name: Achroplan 40x/0.60 korr Ph2
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000222
+name: Achroplan 63x/0.75 korr Ph2
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000223
+name: Knop medium
+def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
+synonym: "Knop ME" RELATED []
+synonym: "Knop solution" RELATED []
+is_a: OBI:0000079 ! culture medium
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000224
+name: phenotyping
+def: "The activity or process of determining, analyzing, or predicting all or part of an organism's phenotype." []
+comment: Definition from https://www.merriam-webster.com/dictionary/phenotyping
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000225
+name: Zeiss Axioplan 2
+def: "Axioplan series, imaging fluorescence microscope" []
+comment: NOTE: This term's ID has been changed from DPBO:1000185 to DPBO:1000225 due to a discrepancy with the term ID: the ID DPBO:1000185 was already being used for another term within the ontology (incubation time)
+is_a: OBI:0400169 ! microscope
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
 id: EFO:0000434
 name: ecotype
 def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
@@ -2426,14 +2753,42 @@ id: NCIT:C175898
 name: Imaging Software Name
 
 [Term]
+id: NCIT:C181919
+name: Objective Lens
+
+[Term]
 id: NCIT:C43531
 name: developmental stage
 def: "A general term that usually refers to named landmark events during development of an organism." []
 
 [Term]
+id: NCIT:C45293
+name: Species
+xref: MIAPPE:0043
+xref: NCBITaxon:species
+
+[Term]
 id: NCIT:C53471
 name: isolate
 def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system." []
+
+[Term]
+id: OBI:0000079
+name: culture medium
+
+[Term]
+id: OBI:0000094
+name: material processing
+alt_id: CHMO:0001131
+alt_id: CHMO:0001267
+alt_id: CHMO:0001461
+alt_id: FIX:0000258
+def: "A planned process which results in physical changes in a specified input material." [obi:bp, obi:fg, obi:jf, obi:mc, obi:prs]
+synonym: "material transformations" EXACT []
+synonym: "preparative method" EXACT []
+synonym: "sample preparation" EXACT []
+synonym: "sample preparation step" EXACT []
+synonym: "sample preparative method" EXACT []
 
 [Term]
 id: OBI:0001048
@@ -2749,292 +3104,3 @@ id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
 
-[Term]
-id: DPBO:1000185
-name: Zeiss Axioplan 2
-def: "Axioplan series, imaging fluorescence microscope" []
-is_a: OBI:0400169 ! microscope
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000186
-name: Zeiss Axiovert
-def: "Axiovert series, inverse microscope" []
-is_a: OBI:0400169 ! microscope
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000187
-name: Olympus SZX7 (Bino)
-def: "binocular, stereo microscope" []
-is_a: OBI:0400169 ! microscope
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000188
-name: Zeiss AxioCam MRc5
-def: "camera" []
-is_a: OBI:0001048 ! digital camera
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000189
-name: 01
-def: "white" []
-is_a: DPBO:1000125 ! microscope filter
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000190
-name: 01
-def: "white" []
-is_a: DPBO:1000125 ! microscope filter
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000191
-name: DIC
-def: "differential interference contrast" []
-is_a: DPBO:1000125 ! microscope filter
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000192
-name: 09
-def: "yellow" []
-is_a: DPBO:1000125 ! microscope filter
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000193
-name: 10
-def: "green" []
-is_a: DPBO:1000125 ! microscope filter
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000194
-name: 15
-def: "red" []
-is_a: DPBO:1000125 ! microscope filter
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000195
-name: Zeiss ZEN 3.5 (blue edition)
-def: "software controlling imaging systems from ZEISS." []
-is_a: NCIT:C175898 ! Imaging Software Name
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000196
-name: Thermo Scientific Menzel slides, 76 x 26 mm, 1,0 mm
-def: "microscope slide" []
-is_a: OBI:0400170 ! microscope slide
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000197
-name: VWR frosted edges, ground edges 90°, 76 x 26 mm, 0,8 - 1,0 mm 
-def: "microscope slide" []
-is_a: OBI:0400170 ! microscope slide
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000198
-name: Roth SuperFrost® white, cut edges, 76 x 26 mm, 1,0 mm
-def: "microscope slide" []
-is_a: OBI:0400170 ! microscope slide
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000199
-name: Menzel, 24 x 50 mm, selected 0,17 +/- 0,01, strength 1,5
-def: "cover slip" []
-is_a: NCIT:C126370 ! Cover Slip
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000200
-name: Roth, 24 x 50 mm, strength 1
-def: "cover slip" []
-is_a: NCIT:C126370 ! Cover Slip
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000201
-name: VWR, 18 x 18 mm, 0,13 - 0,16 mm, strength 1,5
-def: "cover slip" []
-is_a: NCIT:C126370 ! Cover Slip
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000202
-name: 0.8x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000203
-name: 1x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000204
-name: 1.25x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000205
-name: 1.6x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000206
-name: 2x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000207
-name: 2.5x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000208
-name: 3.2x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000209
-name: 4x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000210
-name: 5x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000211
-name: 5.6x
-def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: NCIT:C181919
-name: Objective Lens
-
-[Term]
-id: DPBO:1000212
-name: Plan-Neofluar 5x/0.15 
-def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000213
-name: Plan-Neofluar 10x/0.3 
-def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000214
-name: Plan-Neofluar 20x/0.50 Ph2 
-def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000215
-name: Plan-Neofluar 40x/0.75 
-def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000216
-name: Plan-Neofluar 63x/1.25 Oil 
-def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000217
-name: Plan-Neofluar 100x/1.30 Oil 
-def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000218
-name: Achroplan 5x/012 
-def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000219
-name: Achroplan 10x/0.25 Ph1 
-def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000220
-name: Achroplan 20x/0.40 
-def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000221
-name: Achroplan 40x/0.60 korr Ph2
-def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000222
-name: Achroplan 63x/0.75 korr Ph2
-def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919 ! Objective Lens
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: OBI:0000079
-name: culture medium
-
-[Term]
-id: DPBO:1000223
-name: Knop medium
-def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
-synonym: "Knop ME" []
-synonym: "Knop solution" []
-is_a: OBI:0000079 ! culture medium
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-
-[Term]
-id: DPBO:1000224
-name: phenotyping
-def: "The activity or process of determining, analyzing, or predicting all or part of an organism's phenotype." []
-comment: Definition from https://www.merriam-webster.com/dictionary/phenotyping
-created_by:  Kathryn Dumschott | ORCID: 0000-0002-9905-4011
