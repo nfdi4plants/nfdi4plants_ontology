@@ -34,12 +34,43 @@ is_a: AGRO:00000566 ! pruning process
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-6284-4821 xsd:string
 
 [Term]
+id: AGRO:00000360
+name: experimental site
+def: "Location where the experiment is implemented." []
+
+[Term]
+id: AGRO:00000361
+name: farmer field
+def: "Experimental site in which the experiment is implemented on the field of a farmer." []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000362
+name: research station field
+def: "Experimental site in which the experiment is done in a the field of a research station." []
+synonym: "experimental station field" EXACT []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
 id: AGRO:00000363
 name: greenhouse
 def: "An experimental site in which the experiment is performed in a structure with walls and roof made chiefly of transparent material, such as glass, with the possibility to regulate climatic conditions." [https://en.wikipedia.org/wiki/Greenhouse]
 synonym: "glasshouse" EXACT []
 synonym: "hothouse" BROAD []
 synonym: "screenhouse" BROAD []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000364
+name: governmental forest
+def: "Experimental site where the experiment is done in a forest owned by a government." []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000365
+name: private forest
+def: "Experimental site where the experiment is done in a private forest." []
+is_a: AGRO:00000360 ! experimental site
 
 [Term]
 id: AGRO:00000566
