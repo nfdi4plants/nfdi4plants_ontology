@@ -3175,3 +3175,8 @@ id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
 
+[Term]
+id: test:123
+name: KIDA-I6 identifier
+def: "An identifier for testing." []
+
