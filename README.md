@@ -28,7 +28,7 @@ How to submit a new issue:
 | New term | -Name of the term to be added<br/> -Term description and a link to the definition source | -Parent and/or child terms already in dpbo<br/> -Synonyms and/or xrefs for the proposed terms<br/> -Your ORCID for microattribution<br/>
 | New synonym | -Term name and ID<br/> -Synonym to be added | -Scope of the synonym<br/> -Reasoning for adding the synonym<br/> -Your ORCID for microattribution | 
 
-6. Click on **Submit new issue** to validate your entry. We will get back to you soon!
+5. Click on **Submit new issue** to validate your entry. We will get back to you soon!
 
 
 ## Contact  
