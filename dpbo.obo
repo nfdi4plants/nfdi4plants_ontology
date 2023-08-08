@@ -754,7 +754,7 @@ property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 [Term]
 id: DPBO:0002000
 name: alias
-def: "Unique identificator for a study. This is used to link experiments to the study." []
+def: "Unique identifier for a study. This is used to link experiments to the study." []
 
 [Term]
 id: DPBO:0002001
