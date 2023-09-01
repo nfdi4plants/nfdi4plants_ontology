@@ -2591,6 +2591,18 @@ is_a: OBI:0400169 ! microscope
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
+id: DPBO:1000226
+name: student helper
+def: "A role of a student in a research project which is acknowledged in papers." []
+created_by: Andrea Schrader | 0000-0002-3879-7057
+
+[Term]
+id: DPBO:1000227
+name: plant work helper
+def: "A person that helps at various steps of the plant growth cycle e.g. sowing seeds, separating plants at the correct age or collecting seeds." []
+created_by: Andrea Schrader | 0000-0002-3879-7057
+
+[Term]
 id: EFO:0000434
 name: ecotype
 def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
@@ -3174,4 +3186,5 @@ created_by: george gkoutos
 id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
+
 
