@@ -175,10 +175,6 @@ synonym: "exponential growth phase culture" RELATED []
 synonym: "log phase culture" RELATED []
 is_a: BTO:0001900 ! growth phase culture
 
-[Term]
-id: CHEBI:35209
-name: label
-def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
 
 [Term]
 id: CHMO:0000995
@@ -2602,15 +2598,6 @@ name: plant work helper
 def: "A person that helps at various steps of the plant growth cycle e.g. sowing seeds, separating plants at the correct age or collecting seeds." []
 created_by: Andrea Schrader | 0000-0002-3879-7057
 
-[Term]
-id: EFO:0000434
-name: ecotype
-def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
-
-[Term]
-id: EFO:0000513
-name: genotype
-def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment." []
 
 [Term]
 id: EFO:0000635
