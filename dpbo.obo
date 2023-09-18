@@ -2598,33 +2598,12 @@ name: plant work helper
 def: "A person that helps at various steps of the plant growth cycle e.g. sowing seeds, separating plants at the correct age or collecting seeds." []
 created_by: Andrea Schrader | 0000-0002-3879-7057
 
-
-[Term]
-id: EFO:0000635
-name: organism part
-def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)." []
-
-[Term]
-id: EFO:0000724
-name: timepoint
-def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
-xref: MO:738
-xref: NCIt:C68568
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
-
 [Term]
 id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
 xref: NCIt:C106049
 is_a: DPBO:0000035 ! library strategy
-property_value: definition:citation http://en.wikipedia.org/wiki/Chip-Sequencing xsd:string
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: SRA:label "ChIP-Seq (Direct sequencing of chromatin immunoprecipitates)" xsd:string
-created_by: Helen Parkinson
 
 [Term]
 id: EFO:0003748
@@ -2632,9 +2611,6 @@ name: MRE-seq
 def: "An assay in which DNA us the input molecule derived from cleavage of DNA by use of methylation sensitive restriction enzymes to fragment DNA at methylation sites before sequencing" []
 synonym: "Methylation-Sensitive Restriction Enzyme sequencing" EXACT []
 is_a: DPBO:0000035 ! library strategy
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MRE-Seq (Methylation-Sensitive Restriction Enzyme Sequencing strategy)" xsd:string
 
 [Term]
 id: EFO:0003749
@@ -2642,11 +2618,6 @@ name: MeDIP-seq
 def: "An assay in which DNA is the input molecule derived from an antibody based selection process using antibodies targeting methylated DNA, which is then sequenced using high throughput sequencing technology." []
 synonym: "Methylated DNA Immunoprecipitation sequencing" EXACT []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MeDIP-Seq (Methylated DNA Immunoprecipitation Sequencing strategy)" xsd:string
 
 [Term]
 id: EFO:0003750
@@ -2654,40 +2625,24 @@ name: MBD-seq
 def: "An assay in which DNA is the input molecule derived from a selection process using methyl binding domain protein to enrich for methylated fractions of DNA, then sequenced using high throughput sequencing." []
 synonym: "methyl binding domain sequencing" EXACT []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MBD-Seq (Direct sequencing of methylated fractions sequencing strategy)" xsd:string
 
 [Term]
 id: EFO:0003751
 name: MNase-seq
 def: "An assay in which DNA is the input molecule derived from a micrococcal nuclease digestion followed by high throughput sequencing, A method that distinguishes nucleosome positioning based on the ability of nucleosomes to protect associated DNA from digestion by micrococcal nuclease. Sequenced fragments reveal nucleosome location information about the input DNA." []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MNase-Seq (Direct sequencing following MNase digestion)" xsd:string
 
 [Term]
 id: EFO:0003753
 name: Bisulfite-seq
 def: "An assay in which DNA is the input molecule derived from a bisulphite treatment of DNA to convert cytosine residues to uracil to determine methylation status." []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "Bisulfite-Seq (Sequencing following treatment of DNA with bisulfite to\nconvert cytosine residues to uracil depending on methylation status)" xsd:string
 
 [Term]
 id: EFO:0003789
 name: growth protocol
 def: "A growth protocol is a protocol which provides instructions on the growth of a biological sample. E.g. the growth of a specific cell line or Drosophila culture" []
 is_a: DPBO:1000161 ! protocol type
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
 
 [Term]
 id: EFO:0004428
@@ -2695,23 +2650,12 @@ name: FAIRE-seq
 def: "FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna." []
 xref: NCIt:C106051
 is_a: DPBO:0000035 ! library strategy
-property_value: definition:citation "Giresi, PG; Kim, J, McDaniell, RM, Iyer, VR, Lieb, JD (2007 Jun). FAIRE (Formaldehyde-Assisted Isolation of Regulatory Elements) isolates active regulatory elements from human chromatin.. Genome research 17 (6): 877â€“85. doi:10.1101/gr.5533506." xsd:string
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-
-[Term]
-id: EFO:0005136
-name: cultivar
-def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
-comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
 
 [Term]
 id: EFO:0005310
 name: RIP-seq
 def: "A method used for finding which RNA species interact with a particular RNA-binding protein. It involves immunoprecipitation with antibodies for the protein and then isolation of the RNAs associated with the protein. Unlike CLIP-seq, no cross-linking of RNAs and proteins is carried out prior to immunoprecipitation." []
 is_a: DPBO:0000035 ! library strategy
-property_value: IAO:0000117 "Amy Tang" xsd:string
 
 [Term]
 id: EFO:0007045
@@ -2719,23 +2663,12 @@ name: ATAC-seq
 def: "Assay for transposase-accessible chromatin using sequencing (ATAC-seq), is a method based on direct in vitro transposition of sequencing adaptors into native chromatin, and is a rapid and sensitive method for integrative epigenomic analysis. ATAC-seq captures open chromatin sites using a simple two-step protocol." []
 is_a: DPBO:0000035 ! library strategy
 property_value: definition:citation http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2688.html xsd:string
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
-
-[Term]
-id: EFO:0007555
-name: high content screening stage
-def: "An experimental stage describing stages of high content screen analysis." []
 
 [Term]
 id: EFO:0007693
 name: Hi-C
 def: "Hi-C is a method for analysing 3-dimensional organisation and interaction of chromatin, belonging to the class of techniques collectively called \"Chromosome Conformation Capture\", in which chromatin is crosslinked, then digested, and re-ligated in such a way that only DNA fragments that are covalently linked together form ligation products. Together with 5C, Hi-C does not limit to the study to a specific locus in the genome, and can be used to study chromatin interaction across the genome. To achieve high-throughput, a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing. Mapping the sequenced reads back to genome will reveal the origin of the fragments involved in the ligation events." []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
 
 [Term]
 id: EFO:0008684
@@ -2744,9 +2677,6 @@ def: "ChIA-PET (chromatin interaction analysis by paired-end tag sequencing) is 
 synonym: "chromatin interaction analysis by paired-end tag sequencing" EXACT []
 xref: PMID:20181287
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
 id: EFO:0008896
@@ -2815,55 +2745,10 @@ name: library source
 def: "The library source specifies the type of source material that is being sequenced." []
 
 [Term]
-id: NCIT:C126370
-name: Cover Slip
-
-[Term]
-id: NCIT:C175898
-name: Imaging Software Name
-
-[Term]
-id: NCIT:C181919
-name: Objective Lens
-
-[Term]
-id: NCIT:C43531
-name: developmental stage
-def: "A general term that usually refers to named landmark events during development of an organism." []
-
-[Term]
 id: NCIT:C45293
 name: Species
 xref: MIAPPE:0043
 xref: NCBITaxon:species
-
-[Term]
-id: NCIT:C53471
-name: isolate
-def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system." []
-
-[Term]
-id: OBI:0000079
-name: culture medium
-
-[Term]
-id: OBI:0000094
-name: material processing
-alt_id: CHMO:0001131
-alt_id: CHMO:0001267
-alt_id: CHMO:0001461
-alt_id: FIX:0000258
-def: "A planned process which results in physical changes in a specified input material." [obi:bp, obi:fg, obi:jf, obi:mc, obi:prs]
-synonym: "material transformations" EXACT []
-synonym: "preparative method" EXACT []
-synonym: "sample preparation" EXACT []
-synonym: "sample preparation step" EXACT []
-synonym: "sample preparative method" EXACT []
-
-[Term]
-id: OBI:0001048
-name: digital camera
-def: "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor." []
 
 [Term]
 id: OBI:0100026
@@ -2872,16 +2757,6 @@ def: "A material entity that is an individual living system, such as animal, pla
 xref: MIAPPE:0041
 xref: NCIT:C14250
 xref: NFDI4PSO:0000030
-
-[Term]
-id: OBI:0400169
-name: microscope
-def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
-
-[Term]
-id: OBI:0400170
-name: microscope slide
-def: "A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument" []
 
 [Term]
 id: OME:Objective
@@ -3152,13 +3027,6 @@ def: "Latitude is a geographic coordinate which refers to the angle from a point
 id: SIO:001051
 name: data analysis
 def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
-
-[Term]
-id: UO:0000000
-name: unit
-namespace: unit.ontology
-def: "A unit of measurement is a standardized quantity of a physical quality." [Wikipedia:Wikipedia]
-created_by: george gkoutos
 
 [Term]
 id: UO:0000048
