@@ -1258,18 +1258,32 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000038
 name: Illumina Genome Analyzer IIx
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+comment: term is redundant, use EFO:0004202 or OBI:0002000 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004202
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002000
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000039
 name: Illumina HiSeq 1000
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+comment: term is redundant, use EFO:0004204 or OBI:0002022 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002022
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000040
@@ -1622,6 +1636,7 @@ comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+
 
 [Term]
 id: DPBO:1000084
