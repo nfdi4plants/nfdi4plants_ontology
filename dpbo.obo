@@ -1408,7 +1408,7 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 id: DPBO:1000047
 name: obsolete_Illumina HiSeq X Ten
 comment: Term is redundant, please use GENEPIO:0100113 or OBI:0002129 
-is_a: ObsoleteClass ! Obsolete Clas
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
@@ -1425,7 +1425,7 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 id: DPBO:1000048
 name: obsolete_Illumina HiSeq X Five
 comment: Term is redundant, please use GENEPIO:0100112
-is_a: ObsoleteClass ! Obsolete Clas
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
@@ -1438,7 +1438,7 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 id: DPBO:1000049
 name: obsolete_Illumina NovaSeq 6000
 comment: Term is redundant, please use GENEPIO:0100123, OBI:0002630 or EFO:0008637
-is_a: ObsoleteClass ! Obsolete Clas
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
@@ -1457,19 +1457,29 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000050
-name: Illumina MiSeq
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina MiSeq
+comment: Redundant term, please use EFO:0004205 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004205
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000051
-name: Illumina HiScanSQ
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiScanSQ
+comment: Redundant term, please use GENEPIO:0100109 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100109
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000052
