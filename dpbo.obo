@@ -1483,19 +1483,41 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000052
-name: Illumina MiniSeq
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina MiniSeq
+comment: Term is redundant, please use GENEPIO:0100124, OBI:0003114 or EFO:0008636 instead.
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100124
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0003114
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008636
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000053
-name: Illumina iSeq 100
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina iSeq 100
+comment: Term is redundant, please use GENEPIO:0100121 or EFO:0008635 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100121
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008635
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000054
