@@ -1590,27 +1590,42 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000059
-name: Ion Torrent Proton
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Ion Torrent Proton
+comment: Term is redundant, please use GENEPIO:0100137
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100137
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000060
-name: Ion Torrent S5
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Ion Torrent S5
+comment: Term is redundant, please use GENEPIO:0100139
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100139
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000061
-name: Ion Torrent S5 XL
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Ion Torrent S5 XL
+comment: Term is redundant, please use GENEPIO:0100138
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100138
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000062
