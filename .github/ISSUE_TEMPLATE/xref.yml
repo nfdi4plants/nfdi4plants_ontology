@@ -32,7 +32,7 @@ body:
   - type: input
     id: attribution
     attributes:
-      label: Your nano-attribution (ORCID)
+      label: Your microattribution (ORCID)
       description: If you don't have an ORCID, you can sign up for one [here](https://orcid.org/)
     validations:
       required: false
