@@ -1447,7 +1447,7 @@ is_obsolete: true
 id: GENEPIO:0100123
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
-[Term}
+[Term]
 id: OBI:0002630
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
