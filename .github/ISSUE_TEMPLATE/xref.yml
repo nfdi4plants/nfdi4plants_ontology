@@ -19,7 +19,7 @@ body:
       label: xref that should be added or fixed
       description: ID and label
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: Comments
