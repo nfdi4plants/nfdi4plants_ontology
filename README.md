@@ -23,12 +23,13 @@ How to submit a new issue:
 
 | **Issue Template** | **Mandatory information** | **Optional Information** |
 | --- | --- | --- |
-| Import term | -Term name and id (accession number)<br/>  -URI where the term can be found  | -Parent and/or child terms already in dpbo<br/>  -The reason for import<br/>  -Your ORCID for microattribution |
 | Import ontology | -Name and URI of the already existing ontology to be imported | -The reason to import the ontology |
-| New term | -Name of the term to be added<br/> -Term description and a link to the definition source | -Parent and/or child terms already in dpbo<br/> -Synonyms and/or xrefs for the proposed terms<br/> -Your ORCID for microattribution<br/>
-| New synonym | -Term name and ID<br/> -Synonym to be added | -Scope of the synonym<br/> -Reasoning for adding the synonym<br/> -Your ORCID for microattribution | 
+| Import term | -Term name and id (accession number)<br/>  -URI where the term can be found  | -Parent and/or child terms already in dpbo<br/>  -The reason for import<br/>  -Your ORCID for microattribution |
+| Add synonym | -Term name and ID<br/> -Synonym to be added | -Scope of the synonym<br/> -Reasoning for adding the synonym<br/> -Your ORCID for microattribution |
+| Add new term | -Name of the term to be added<br/> -Term description and a link to the definition source | -Parent and/or child terms already in dpbo<br/> -Synonyms and/or xrefs for the proposed terms<br/> -Your ORCID for microattribution<br/> |
+| Fix/add xref | -Term name and ID where the xref should be added or fixed<br/> -xref to be added or fixed | -Comments<br/> -Your ORCID for microattribution |
 
-6. Click on **Submit new issue** to validate your entry. We will get back to you soon!
+5. Click on **Submit new issue** to validate your entry. We will get back to you soon!
 
 
 ## Contact  

@@ -2,6 +2,10 @@ format-version: 1.2
 data-version: init/2020-12-01
 saved-by: muehlhaus
 default-namespace: DPBO
+treat-xrefs-as-equivalent: MIAPPE
+treat-xrefs-as-equivalent: NCBITaxon
+treat-xrefs-as-equivalent: NCIT
+treat-xrefs-as-equivalent: NFDI4PSO
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
@@ -11,6 +15,77 @@ property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
+
+[Term]
+id: AGRO:00000007
+name: desuckering
+def: "A pruning process in which one or more suckers are removed." []
+comment: Which suckers are removed depends on the criteria set by the agent of the desuckering process.
+synonym: "desuckering process" EXACT []
+is_a: AGRO:00000027 ! thinning
+
+[Term]
+id: AGRO:00000027
+name: thinning
+def: "A planned process in which selected parts of the plant are removed. The practice entails targeted removal of diseased, damaged, dead, non-productive, structurally unsound, or otherwise unwanted tissue from plants. This is done in order to shape the plant or tree, improve plant or tree health, reduce the risk from falling branches, prepare nursery specimens for transplanting, and increase the yield or quality of harvested products." [http://aims.fao.org/aos/agrovoc/c_6274, https://en.wikipedia.org/wiki/Pruning#Types_of_pruning]
+synonym: "pruning" BROAD []
+synonym: "thinning process" EXACT []
+is_a: AGRO:00000566 ! pruning process
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-6284-4821 xsd:string
+
+[Term]
+id: AGRO:00000360
+name: experimental site
+def: "Location where the experiment is implemented." []
+
+[Term]
+id: AGRO:00000361
+name: farmer field
+def: "Experimental site in which the experiment is implemented on the field of a farmer." []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000362
+name: research station field
+def: "Experimental site in which the experiment is done in a the field of a research station." []
+synonym: "experimental station field" EXACT []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000363
+name: greenhouse
+def: "An experimental site in which the experiment is performed in a structure with walls and roof made chiefly of transparent material, such as glass, with the possibility to regulate climatic conditions." [https://en.wikipedia.org/wiki/Greenhouse]
+synonym: "glasshouse" EXACT []
+synonym: "hothouse" BROAD []
+synonym: "screenhouse" BROAD []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000364
+name: governmental forest
+def: "Experimental site where the experiment is done in a forest owned by a government." []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000365
+name: private forest
+def: "Experimental site where the experiment is done in a private forest." []
+is_a: AGRO:00000360 ! experimental site
+
+[Term]
+id: AGRO:00000566
+name: pruning process
+def: "Process which involves the selective removal of certain parts of a plant or a tree, such as branches, buds, or roots." [https://en.wikipedia.org/wiki/Pruning]
+synonym: "pruning" EXACT []
+synonym: "pruning method" EXACT []
+is_a: AGRO:00002071 ! agricultural process
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-6284-4821
+
+[Term]
+id: AGRO:00002071
+name: agricultural process
+def: "A planned process which occurs in an agricultural field." []
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-8461-9745
 
 [Term]
 id: BAO:0010026
@@ -100,15 +175,31 @@ synonym: "exponential growth phase culture" RELATED []
 synonym: "log phase culture" RELATED []
 is_a: BTO:0001900 ! growth phase culture
 
-[Term]
-id: CHEBI:35209
-name: label
-def: "A role played by a part of a molecular entity distinguishable by the observer but not by the system and used to identify a tracer." []
 
 [Term]
 id: CHMO:0000995
 name: mobile phase
 def: "A fluid that percolates through or along the stationary bed in chromatography." []
+
+[Term]
+id: CHMO:0001485
+name: derivatisation
+def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derivatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc." [https://orcid.org/0000-0002-0640-0422]
+synonym: "derivatization" EXACT []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0001549
+name: sample drying
+def: "The process of removing a solvent from a substance." [https://orcid.org/0000-0002-0640-0422]
+synonym: "drying" RELATED non-mining_synonym []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0001557
+name: vacuum drying
+def: "The removal of water from a sample by placing it under reduced pressure. This allows water to evaporate from (heat-sensitive) samples at a lower temperature." [https://orcid.org/0000-0002-0640-0422]
+is_a: CHMO:0001549 ! sample drying
 
 [Term]
 id: CHMO:0001583
@@ -198,6 +289,35 @@ synonym: "packed syringe microextraction" EXACT []
 synonym: "packed-syringe micro-extraction" EXACT []
 synonym: "packed-syringe microextraction" EXACT []
 is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
+id: CHMO:0001652
+name: grinding
+def: "The mechanical reduction of the particle size of a solid sample by attribution (friction), impact or cutting." [https://doi.org/10.1351/goldbook.M03928]
+synonym: "dry grinding" EXACT []
+synonym: "milling" EXACT []
+synonym: "solid-state grinding" EXACT []
+synonym: "solvent-free grinding" EXACT []
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: CHMO:0002757
+name: methoxyamination derivatisation
+def: "Derivatisation of a metabolite by addition of pyridinic methoxyamine to stabilise carbonyl moieties." [https://doi.org/10.1039/9781847558107-00254, https://orcid.org/0000-0001-5985-7429]
+comment: this typically happens prior to GC-MS, but not LC-MS
+synonym: "methoxyamination derivatization" EXACT []
+is_a: CHMO:0001485 ! derivatisation
+is_a: DPBO:0000052 ! MS derivatization
+
+[Term]
+id: CHMO:0002758
+name: trimethylsilyl derivatisation
+def: "Derivatisation of a metabolite by addition of a trimethylsilyl reagent to protect functional groups such as hydroxy, carboxylic acid, thio and amine groups." [https://doi.org/10.1039/9781847558107-00254, https://orcid.org/0000-0001-5985-7429]
+comment: this typically happens prior to GC-MS, but not LC-MS
+synonym: "TMS derivatisation" EXACT []
+synonym: "trimethylsilyl derivatization" EXACT []
+is_a: CHMO:0001485 ! derivatisation
+is_a: DPBO:0000052 ! MS derivatization
 
 [Term]
 id: CHMO:0002863
@@ -473,6 +593,7 @@ id: DPBO:0000052
 name: MS derivatization
 def: "Derivatization for metabolomics mass spectrometry." []
 xref: CHMO:0001485
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: DPBO:0000053
@@ -616,6 +737,15 @@ synonym: "g0" EXACT []
 synonym: "standard acceleration due to gravity" EXACT []
 synonym: "standard acceleration of free fall" EXACT []
 is_a: UO:0000048 ! acceleration unit
+
+[Term]
+id: DPBO:0000086
+name: single-end
+def: "placeholder def of single-end" []
+comment: To be transformed to an instance. DB
+is_a: DPBO:0000015 ! library layout
+property_value: ER_target "GEO_RNASEQ" xsd:string
+property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
 [Term]
 id: DPBO:0002000
@@ -1127,243 +1257,473 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 
 [Term]
 id: DPBO:1000038
-name: Illumina Genome Analyzer IIx
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina Genome Analyzer IIx
+comment: term is redundant, use EFO:0004202 or OBI:0002000 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004202
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002000
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000039
-name: Illumina HiSeq 1000
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq 1000
+comment: term is redundant, use EFO:0004204 or OBI:0002022 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002022
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000040
-name: Illumina HiSeq 1500
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq 1500
+comment:  term is redundant, use GENEPIO:0100115, OBI:0003386 or EFO:0011027
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100115
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0003386
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0011027
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000041
-name: Illumina HiSeq 2000
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq 2000
+comment: Term is redundant, please use OBI:0002001 or EFO:0004203
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002001
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004203
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000042
-name: Illumina HiSeq 2500
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq 2500
+comment: Term is redundant, please use OBI:0002002 or EFO:0008565
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002002
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008565
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000043
-name: Illumina HiSeq 3000
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq 3000
+comment: Term is redundant, please use OBI:0002048 or EFO:0008564
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002048
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008564
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000044
-name: Illumina HiSeq 4000
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq 4000
+comment: Term is redundant, please use OBI:0002049 or EFO:0008563
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002049
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008563
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000045
-name: Illumina NextSeq 500
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina NextSeq 500
+comment: Term is redundant, please use EFO:0009173
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0009173
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000046
-name: Illumina NextSeq 550
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina NextSeq 550
+comment: Term is redundant, please use GENEPIO:0100128 or EFO:0008566
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100128
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008566
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000047
-name: Illumina HiSeq X Ten
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq X Ten
+comment: Term is redundant, please use GENEPIO:0100113 or OBI:0002129 
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100113
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002129
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000048
-name: Illumina HiSeq X Five
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiSeq X Five
+comment: Term is redundant, please use GENEPIO:0100112
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100112
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000049
-name: Illumina NovaSeq 6000
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina NovaSeq 6000
+comment: Term is redundant, please use GENEPIO:0100123, OBI:0002630 or EFO:0008637
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100123
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term}
+id: OBI:0002630
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008637
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000050
-name: Illumina MiSeq
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina MiSeq
+comment: Redundant term, please use EFO:0004205 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004205
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000051
-name: Illumina HiScanSQ
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina HiScanSQ
+comment: Redundant term, please use GENEPIO:0100109 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100109
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000052
-name: Illumina MiniSeq
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina MiniSeq
+comment: Term is redundant, please use GENEPIO:0100124, OBI:0003114 or EFO:0008636 instead.
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100124
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0003114
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008636
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000053
-name: Illumina iSeq 100
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Illumina iSeq 100
+comment: Term is redundant, please use GENEPIO:0100121 or EFO:0008635 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100121
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008635
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000054
-name: BGISEQ-500
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_BGISEQ-500
+comment: Term is redundant, please use NCIT:C146812 or GENEPIO:0100145 instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: NCIT:C146812
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0100145
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000055
-name: DNBSEQ-G400
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_DNBSEQ-G400
+comment: Term is redundant, please use GENEPIO:0100148
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100148
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000056
-name: DNBSEQ-T7
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_DNBSEQ-T7
+comment: Term is redundant, please use GENEPIO:0100147
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100147
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000057
-name: DNBSEQ-G50
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_DNBSEQ-G50
+comment: Term is redundant, please use GENEPIO:0100150
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100150
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000058
-name: Ion Torrent PGM
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Ion Torrent PGM
+comment: Term is redundant, please use GENEPIO:0100136
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100136
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000059
-name: Ion Torrent Proton
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Ion Torrent Proton
+comment: Term is redundant, please use GENEPIO:0100137
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100137
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000060
-name: Ion Torrent S5
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Ion Torrent S5
+comment: Term is redundant, please use GENEPIO:0100139
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100139
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000061
-name: Ion Torrent S5 XL
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Ion Torrent S5 XL
+comment: Term is redundant, please use GENEPIO:0100138
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100138
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000062
-name: PacBio RS
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_PacBio RS
+comment: Term is redundant, please use GENEPIO:0100131
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100131
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000063
-name: PacBio RS II
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_PacBio RS II
+comment: Term is redundant, please use OBI:0002012 or EFO:0008631
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002012
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008631
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000064
-name: Sequel
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Sequel
+comment: Term is redundant, please use GENEPIO:0100133 or OBI:0002632
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100133
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002632
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000065
-name: Sequel II
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Sequel II
+comment: Term is redundant, please use GENEPIO:0100134 or OBI:0002633
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100134
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002633
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000066
-name: AB SOLiD System 2.0
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_AB SOLiD System 2.0
+comment: Term is redundant, please use GENEPIO:0001932 or EFO:0004442
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0001932
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004442
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000067
-name: AB SOLiD System 3.0
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_AB SOLiD System 3.0
+comment: Term is redundant, please use EFO:0004439 or GENEPIO:0001933
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004439
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001933
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000068
@@ -1493,6 +1853,7 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
+
 [Term]
 id: DPBO:1000084
 name: MinION
@@ -1511,12 +1872,13 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: DPBO:1000086
-name: single
+name: obsolete_single
 def: "placeholder def of single" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000015 ! library layout
+comment: Deprecated, please use DPBO:0000086 "single-end" instead
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000087
@@ -1721,9 +2083,12 @@ xref: NCIT:C16295
 
 [Term]
 id: DPBO:1000118
-name: cover slip
+name: obsolete_cover slip
 def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
+comment: use NCIT:C126370
 xref: NCIT:C126370
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000120
@@ -1738,9 +2103,12 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000122
-name: imaging software name
+name: obsolete_imaging software name
 def: "The name of the software program to capture and/or process imaging data." []
+comment: false
 xref: NCIT:C175898
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000123
@@ -1846,9 +2214,12 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000142
-name: objective
+name: obsolete_objective
 def: "The microscope's objective lens." []
+comment: use OME:objective
 xref: OME:Objective
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000143
@@ -1988,7 +2359,7 @@ created_by: Dominik Brilhaus
 id: DPBO:1000162
 name: obsolete_growth protocol
 def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." []
-comment: replaced term with EFO:0003789 ! growth protocol
+comment: replaced term with EFO:0003789
 xref: EFO:0003789
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
@@ -2164,29 +2535,299 @@ xref: BAO:0002833
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
 [Term]
-id: EFO:0000434
-name: ecotype
-def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
+id: DPBO:1000186
+name: Zeiss Axiovert
+def: "Axiovert series, inverse microscope" []
+is_a: OBI:0400169 ! microscope
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
-id: EFO:0000513
-name: genotype
-def: "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment." []
+id: DPBO:1000187
+name: Olympus SZX7 (Bino)
+def: "binocular, stereo microscope" []
+is_a: OBI:0400169 ! microscope
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
-id: EFO:0000635
-name: organism part
-def: "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells. E.g. tissue, organ, system, sperm, blood or body location (arm)." []
+id: DPBO:1000188
+name: Zeiss AxioCam MRc5
+def: "camera" []
+is_a: OBI:0001048 ! digital camera
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
-id: EFO:0000724
-name: timepoint
-def: "Time point at which a sample or observation is made or taken from a biomaterial as measured from some reference point." []
-xref: MO:738
-xref: NCIt:C68568
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "Tomasz Adamusiak" xsd:strin
+id: DPBO:1000189
+name: 01
+def: "white" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000190
+name: 01
+def: "white" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000191
+name: DIC
+def: "differential interference contrast" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000192
+name: 09
+def: "yellow" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000193
+name: 10
+def: "green" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000194
+name: 15
+def: "red" []
+is_a: DPBO:1000125 ! microscope filter
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000195
+name: Zeiss ZEN 3.5 (blue edition)
+def: "software controlling imaging systems from ZEISS." []
+is_a: NCIT:C175898 ! Imaging Software Name
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000196
+name: Thermo Scientific Menzel slides, 76 x 26 mm, 1,0 mm
+def: "microscope slide" []
+is_a: OBI:0400170 ! microscope slide
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000197
+name: VWR frosted edges, ground edges 90°, 76 x 26 mm, 0,8 - 1,0 mm
+def: "microscope slide" []
+is_a: OBI:0400170 ! microscope slide
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000198
+name: Roth SuperFrost® white, cut edges, 76 x 26 mm, 1,0 mm
+def: "microscope slide" []
+is_a: OBI:0400170 ! microscope slide
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000199
+name: Menzel, 24 x 50 mm, selected 0,17 +/- 0,01, strength 1,5
+def: "cover slip" []
+is_a: NCIT:C126370 ! Cover Slip
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000200
+name: Roth, 24 x 50 mm, strength 1
+def: "cover slip" []
+is_a: NCIT:C126370 ! Cover Slip
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000201
+name: VWR, 18 x 18 mm, 0,13 - 0,16 mm, strength 1,5
+def: "cover slip" []
+is_a: NCIT:C126370 ! Cover Slip
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000202
+name: 0.8x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000203
+name: 1x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000204
+name: 1.25x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000205
+name: 1.6x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000206
+name: 2x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000207
+name: 2.5x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000208
+name: 3.2x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000209
+name: 4x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000210
+name: 5x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000211
+name: 5.6x
+def: "magnification of Olympus SZX7 (Bino)" []
+is_a: DPBO:1000140 ! magnification
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000212
+name: Plan-Neofluar 5x/0.15
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000213
+name: Plan-Neofluar 10x/0.3
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000214
+name: Plan-Neofluar 20x/0.50 Ph2
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000215
+name: Plan-Neofluar 40x/0.75
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000216
+name: Plan-Neofluar 63x/1.25 Oil
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000217
+name: Plan-Neofluar 100x/1.30 Oil
+def: "objective lens of Zeiss Axioplan 2" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000218
+name: Achroplan 5x/012
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000219
+name: Achroplan 10x/0.25 Ph1
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000220
+name: Achroplan 20x/0.40
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000221
+name: Achroplan 40x/0.60 korr Ph2
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000222
+name: Achroplan 63x/0.75 korr Ph2
+def: "objective lens of Zeiss Axiovert" []
+is_a: NCIT:C181919 ! Objective Lens
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000223
+name: Knop medium
+def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
+synonym: "Knop ME" RELATED []
+synonym: "Knop solution" RELATED []
+is_a: OBI:0000079 ! culture medium
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000224
+name: phenotyping
+def: "The activity or process of determining, analyzing, or predicting all or part of an organism's phenotype." []
+comment: Definition from https://www.merriam-webster.com/dictionary/phenotyping
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000225
+name: Zeiss Axioplan 2
+def: "Axioplan series, imaging fluorescence microscope" []
+comment: NOTE: This term's ID has been changed from DPBO:1000185 to DPBO:1000225 due to a discrepancy with the term ID: the ID DPBO:1000185 was already being used for another term within the ontology (incubation time)
+is_a: OBI:0400169 ! microscope
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000226
+name: student helper
+def: "A role of a student in a research project which is acknowledged in papers." []
+created_by: Andrea Schrader | 0000-0002-3879-7057
+
+[Term]
+id: DPBO:1000227
+name: plant work helper
+def: "A person that helps at various steps of the plant growth cycle e.g. sowing seeds, separating plants at the correct age or collecting seeds." []
+created_by: Andrea Schrader | 0000-0002-3879-7057
 
 [Term]
 id: EFO:0002692
@@ -2194,11 +2835,6 @@ name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
 xref: NCIt:C106049
 is_a: DPBO:0000035 ! library strategy
-property_value: definition:citation http://en.wikipedia.org/wiki/Chip-Sequencing xsd:string
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: SRA:label "ChIP-Seq (Direct sequencing of chromatin immunoprecipitates)" xsd:string
-created_by: Helen Parkinson
 
 [Term]
 id: EFO:0003748
@@ -2206,9 +2842,6 @@ name: MRE-seq
 def: "An assay in which DNA us the input molecule derived from cleavage of DNA by use of methylation sensitive restriction enzymes to fragment DNA at methylation sites before sequencing" []
 synonym: "Methylation-Sensitive Restriction Enzyme sequencing" EXACT []
 is_a: DPBO:0000035 ! library strategy
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MRE-Seq (Methylation-Sensitive Restriction Enzyme Sequencing strategy)" xsd:string
 
 [Term]
 id: EFO:0003749
@@ -2216,11 +2849,6 @@ name: MeDIP-seq
 def: "An assay in which DNA is the input molecule derived from an antibody based selection process using antibodies targeting methylated DNA, which is then sequenced using high throughput sequencing technology." []
 synonym: "Methylated DNA Immunoprecipitation sequencing" EXACT []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MeDIP-Seq (Methylated DNA Immunoprecipitation Sequencing strategy)" xsd:string
 
 [Term]
 id: EFO:0003750
@@ -2228,40 +2856,24 @@ name: MBD-seq
 def: "An assay in which DNA is the input molecule derived from a selection process using methyl binding domain protein to enrich for methylated fractions of DNA, then sequenced using high throughput sequencing." []
 synonym: "methyl binding domain sequencing" EXACT []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MBD-Seq (Direct sequencing of methylated fractions sequencing strategy)" xsd:string
 
 [Term]
 id: EFO:0003751
 name: MNase-seq
 def: "An assay in which DNA is the input molecule derived from a micrococcal nuclease digestion followed by high throughput sequencing, A method that distinguishes nucleosome positioning based on the ability of nucleosomes to protect associated DNA from digestion by micrococcal nuclease. Sequenced fragments reveal nucleosome location information about the input DNA." []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "MNase-Seq (Direct sequencing following MNase digestion)" xsd:string
 
 [Term]
 id: EFO:0003753
 name: Bisulfite-seq
 def: "An assay in which DNA is the input molecule derived from a bisulphite treatment of DNA to convert cytosine residues to uracil to determine methylation status." []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-property_value: SRA:label "Bisulfite-Seq (Sequencing following treatment of DNA with bisulfite to\nconvert cytosine residues to uracil depending on methylation status)" xsd:string
 
 [Term]
 id: EFO:0003789
 name: growth protocol
 def: "A growth protocol is a protocol which provides instructions on the growth of a biological sample. E.g. the growth of a specific cell line or Drosophila culture" []
 is_a: DPBO:1000161 ! protocol type
-property_value: IAO:0000117 "Helen Parkinson" xsd:string
 
 [Term]
 id: EFO:0004428
@@ -2269,23 +2881,12 @@ name: FAIRE-seq
 def: "FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna." []
 xref: NCIt:C106051
 is_a: DPBO:0000035 ! library strategy
-property_value: definition:citation "Giresi, PG; Kim, J, McDaniell, RM, Iyer, VR, Lieb, JD (2007 Jun). FAIRE (Formaldehyde-Assisted Isolation of Regulatory Elements) isolates active regulatory elements from human chromatin.. Genome research 17 (6): 877â€“85. doi:10.1101/gr.5533506." xsd:string
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "James Malone" xsd:string
-
-[Term]
-id: EFO:0005136
-name: cultivar
-def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
-comment: “[Definition Source: http://www.ebi.ac.uk/efo/EFO_0005136]"
 
 [Term]
 id: EFO:0005310
 name: RIP-seq
 def: "A method used for finding which RNA species interact with a particular RNA-binding protein. It involves immunoprecipitation with antibodies for the protein and then isolation of the RNAs associated with the protein. Unlike CLIP-seq, no cross-linking of RNAs and proteins is carried out prior to immunoprecipitation." []
 is_a: DPBO:0000035 ! library strategy
-property_value: IAO:0000117 "Amy Tang" xsd:string
 
 [Term]
 id: EFO:0007045
@@ -2293,23 +2894,12 @@ name: ATAC-seq
 def: "Assay for transposase-accessible chromatin using sequencing (ATAC-seq), is a method based on direct in vitro transposition of sequencing adaptors into native chromatin, and is a rapid and sensitive method for integrative epigenomic analysis. ATAC-seq captures open chromatin sites using a simple two-step protocol." []
 is_a: DPBO:0000035 ! library strategy
 property_value: definition:citation http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2688.html xsd:string
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
-
-[Term]
-id: EFO:0007555
-name: high content screening stage
-def: "An experimental stage describing stages of high content screen analysis." []
 
 [Term]
 id: EFO:0007693
 name: Hi-C
 def: "Hi-C is a method for analysing 3-dimensional organisation and interaction of chromatin, belonging to the class of techniques collectively called \"Chromosome Conformation Capture\", in which chromatin is crosslinked, then digested, and re-ligated in such a way that only DNA fragments that are covalently linked together form ligation products. Together with 5C, Hi-C does not limit to the study to a specific locus in the genome, and can be used to study chromatin interaction across the genome. To achieve high-throughput, a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing. Mapping the sequenced reads back to genome will reveal the origin of the fragments involved in the ligation events." []
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
 
 [Term]
 id: EFO:0008684
@@ -2318,9 +2908,6 @@ def: "ChIA-PET (chromatin interaction analysis by paired-end tag sequencing) is 
 synonym: "chromatin interaction analysis by paired-end tag sequencing" EXACT []
 xref: PMID:20181287
 is_a: DPBO:0000035 ! library strategy
-property_value: ER_target "GEO_RNASEQ" xsd:string
-property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
-property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
 id: EFO:0008896
@@ -2389,23 +2976,264 @@ name: library source
 def: "The library source specifies the type of source material that is being sequenced." []
 
 [Term]
-id: NCIT:C43531
-name: developmental stage
-def: "A general term that usually refers to named landmark events during development of an organism." []
-
-[Term]
-id: NCIT:C53471
-name: isolate
-def: "A specific individual microbe and its genetically identical progeny separated on a single occasion from a sample taken from a host or culture system." []
+id: NCIT:C45293
+name: Species
+xref: MIAPPE:0043
+xref: NCBITaxon:species
 
 [Term]
 id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+xref: MIAPPE:0041
+xref: NCIT:C14250
+xref: NFDI4PSO:0000030
+
+[Term]
+id: OME:Objective
+name: Objective
+comment: Class "Objective" is microscopes' objective lens.
 
 [Term]
 id: ObsoleteClass
 name: Obsolete Class
+
+[Term]
+id: PRIDE:0000307
+name: Quantification method
+namespace: PRIDE
+comment: Defines various quantification methods
+created_by: jg
+creation_date: 2011-07-22T09:15:33Z
+
+[Term]
+id: PRIDE:0000308
+name: Gel-based quantification method
+namespace: PRIDE
+comment: Describes gel-based quantification methods
+is_a: PRIDE:0000307 ! Quantification method
+created_by: jg
+creation_date: 2011-07-22T09:16:24Z
+
+[Term]
+id: PRIDE:0000309
+name: Gel-free quantification method
+namespace: PRIDE
+comment: Describes gel-free quantification methods
+is_a: PRIDE:0000307 ! Quantification method
+created_by: jg
+creation_date: 2011-07-22T09:17:03Z
+
+[Term]
+id: PRIDE:0000310
+name: Isotope labeling
+namespace: PRIDE
+comment: Describes quantification techniques using isotope labeling
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: jg
+creation_date: 2011-07-22T09:17:34Z
+
+[Term]
+id: PRIDE:0000311
+name: Selected Reaction Monitoring
+namespace: PRIDE
+comment: Describes quantification techniques based on selected / multiple reaction monitoring
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: jg
+creation_date: 2011-07-22T09:18:39Z
+
+[Term]
+id: PRIDE:0000312
+name: Label free
+namespace: PRIDE
+comment: Describes label free quantification techniques.
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: jg
+creation_date: 2011-07-22T09:19:54Z
+
+[Term]
+id: PRIDE:0000313
+name: iTRAQ
+namespace: PRIDE
+comment: Quantification technique developed by Applied Biosystems using various reporter ions that can be detected at MS2 level
+is_a: PRIDE:0000317 ! MS2 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:20:23Z
+
+[Term]
+id: PRIDE:0000314
+name: TMT
+namespace: PRIDE
+comment: Tandem Mass Tag is a MS2 based isotope labeling quantification technique
+synonym: "Tandem Mass Tag" EXACT []
+is_a: PRIDE:0000317 ! MS2 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:23:12Z
+
+[Term]
+id: PRIDE:0000315
+name: SILAC
+namespace: PRIDE
+comment: Stable isotope labeling with amino acids in cell culture is a MS1 based istope labeling technique for quantification
+synonym: "Stable isotope labeling with amino acids in cell culture" EXACT []
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:25:50Z
+
+[Term]
+id: PRIDE:0000316
+name: MS1 based isotope labeling
+namespace: PRIDE
+comment: Describes isotope labeling quantification techniques detectable at MS1 level.
+is_a: PRIDE:0000310 ! Isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:28:05Z
+
+[Term]
+id: PRIDE:0000317
+name: MS2 based isotope labeling
+namespace: PRIDE
+comment: Describes isotope labeling quantification techniques detectable at MS1 level.
+is_a: PRIDE:0000310 ! Isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:29:15Z
+
+[Term]
+id: PRIDE:0000318
+name: 18O
+namespace: PRIDE
+comment: The 18O quantification method relies on the differentiation of two samples using different stable isotopes of oxygen.
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:30:12Z
+
+[Term]
+id: PRIDE:0000319
+name: ICAT
+namespace: PRIDE
+comment: Isotope-Coded Affinity Tags is an isotope labeling quantification technique and uses tags that consist of three elements.
+synonym: "Isotope-Coded Affinity Tags" EXACT []
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:31:24Z
+
+[Term]
+id: PRIDE:0000320
+name: AQUA
+namespace: PRIDE
+comment: AQUA is an isotope labeling based quantification technique that uses known peptides.
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:32:46Z
+
+[Term]
+id: PRIDE:0000321
+name: ICPL
+namespace: PRIDE
+comment: Isotope-coded protein labels is an isotope labeling based quantification method where peptides are labelled with reagents of different masses.
+synonym: "Isotope-coded protein label" EXACT []
+is_a: PRIDE:0000316 ! MS1 based isotope labeling
+created_by: jg
+creation_date: 2011-07-22T09:34:37Z
+
+[Term]
+id: PRIDE:0000322
+name: emPAI
+namespace: PRIDE
+comment: The Exponentially Modified Protein Abundance Index (emPAI) offers approximate, label-free, relative quantification of the proteins in a mixture based on protein coverage by the peptide matches in a database search result.
+synonym: "Exponentially Modified Protein Abundance Index" EXACT []
+is_a: PRIDE:0000312 ! Label free
+created_by: jg
+creation_date: 2011-07-22T09:36:57Z
+
+[Term]
+id: PRIDE:0000323
+name: TIC
+namespace: PRIDE
+comment: The Total Ion Current (TIC) can be measured or calculated in order to target specific ions.
+synonym: "Total Ion Current" EXACT []
+is_a: PRIDE:0000312 ! Label free
+created_by: jg
+creation_date: 2011-07-22T09:38:17Z
+
+[Term]
+id: PRIDE:0000425
+name: MS1 intensity based label-free quantification method
+namespace: PRIDE
+is_a: PRIDE:0000309 ! Gel-free quantification method
+created_by: rw
+
+[Term]
+id: PRIDE:0000435
+name: Peptide counting
+namespace: PRIDE
+comment: Use of the number of peptides for an identified protein as a measure of abundance. Method reviewed in PMID 22772140.
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000436
+name: Spectrum counting
+namespace: PRIDE
+comment: Use of the number of PSMs for an identified protein as a measure of abundance. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000437
+name: Protein Abundance Index - PAI
+namespace: PRIDE
+comment: Protein Abundance Index (PAI) is the number of identified peptides divided by the number of observable peptides. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000438
+name: Spectrum count/molecular weight
+namespace: PRIDE
+comment: Spectrum count is divided by the molecular weight of a protein. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000439
+name: Spectral Abundance Factor - SAF
+namespace: PRIDE
+comment: The spectrum count is normalized for protein length. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000440
+name: Normalized Spectral Abundance Factor - NSAF
+namespace: PRIDE
+comment: Spectral Abundance Factor normalized for the sum of all protein abundances in the sample. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000441
+name: APEX - Absolute Protein Expression
+namespace: PRIDE
+comment: Spectrum counting method using machine learning classification to derive peptide detection probabilities to predict detectable peptides for any protein. Method reviewed in PMID 22772140
+is_a: PRIDE:0000312 ! Label free
+created_by: acsordas
+
+[Term]
+id: PRIDE:0000463
+name: Parallel Reaction Monitoring (PRM)
+namespace: PRIDE
+def: "Using Selected Reaction Monitoring (SRM) with parallel detection of all transitions in a single analysis." [PRIDE:PRIDE]
+is_a: PRIDE:0000311 ! Selected Reaction Monitoring
+
+[Term]
+id: PRIDE:0000513
+name: Dimethyl Labeling
+namespace: PRIDE
+def: "Dimethyl Labeling (DML)" [PRIDE:PRIDE]
+is_a: PRIDE:0000310 ! Isotope labeling
+created_by: yperez
+creation_date: 2019-08-07T15:21:19Z
 
 [Term]
 id: PSO:0000013
@@ -2432,13 +3260,6 @@ name: data analysis
 def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
 
 [Term]
-id: UO:0000000
-name: unit
-namespace: unit.ontology
-def: "A unit of measurement is a standardized quantity of a physical quality." [Wikipedia:Wikipedia]
-created_by: george gkoutos
-
-[Term]
 id: UO:0000048
 name: acceleration unit
 namespace: unit.ontology
@@ -2451,4 +3272,5 @@ created_by: george gkoutos
 id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
+
 

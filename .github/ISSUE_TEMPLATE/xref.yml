@@ -19,7 +19,7 @@ body:
       label: xref that should be added or fixed
       description: ID and label
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: Comments
@@ -32,7 +32,7 @@ body:
   - type: input
     id: attribution
     attributes:
-      label: Your nano-attribution (ORCID)
-      description: If you don't have an ORCID, you can sign up for one [here](https://orcid.org/)
+      label: Your ORCID
+      description: Please provide your ORCID for microattribution. If you don't have an ORCID, you can sign up for one [here](https://orcid.org/)
     validations:
       required: false
