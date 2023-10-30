@@ -8,10 +8,12 @@ dpbo enables easy and agile collection of missing vocabulary as well as relation
 
 We welcome every contribution! If a specific term, relationship or an existing external ontology needed for annotating your data with Swate is missing from the DataPLANT database, you can open an issue. We provide a variety of issue templates depending on your wishes: 
 
+- **Add New term:** Suggest a new term to be added to dpbo
 - **Import term:** Suggest a term to import from a registered ontology into dpbo
 - **Import ontology:** Request the import of an already existing ontology into the SwateDB if you need >60% of terms from the ontology to annotate your data 
-- **New term:** Suggest a new term to be added to dpbo
-- **New synonym:** Suggest a synonym for an already existing dpbo term
+- **Add synonym:** Suggest a synonym for an already existing dpbo term
+- **Fix/add xref:** Suggest a new xref or report issue about an incorrect xref
+- **Custom template** For all other issues or concerns
 
 
 How to submit a new issue:
@@ -23,11 +25,12 @@ How to submit a new issue:
 
 | **Issue Template** | **Mandatory information** | **Optional Information** |
 | --- | --- | --- |
-| Import ontology | -Name and URI of the already existing ontology to be imported | -The reason to import the ontology |
-| Import term | -Term name and id (accession number)<br/>  -URI where the term can be found  | -Parent and/or child terms already in dpbo<br/>  -The reason for import<br/>  -Your ORCID for microattribution |
-| Add synonym | -Term name and ID<br/> -Synonym to be added | -Scope of the synonym<br/> -Reasoning for adding the synonym<br/> -Your ORCID for microattribution |
 | Add new term | -Name of the term to be added<br/> -Term description and a link to the definition source | -Parent and/or child terms already in dpbo<br/> -Synonyms and/or xrefs for the proposed terms<br/> -Your ORCID for microattribution<br/> |
+| Import term | -Term name and id (accession number)<br/>  -URI where the term can be found  | -Parent and/or child terms already in dpbo<br/>  -The reason for import<br/>  -Your ORCID for microattribution |
+| Import ontology | -Name and URI of the already existing ontology to be imported | -The reason to import the ontology |
+| Add synonym | -Term name and ID<br/> -Synonym to be added | -Scope of the synonym<br/> -Reasoning for adding the synonym<br/> -Your ORCID for microattribution |
 | Fix/add xref | -Term name and ID where the xref should be added or fixed<br/> -xref to be added or fixed | -Comments<br/> -Your ORCID for microattribution |
+| Custom template | -Comments describing the issue | -Type of issue |
 
 5. Click on **Submit new issue** to validate your entry. We will get back to you soon!
 
