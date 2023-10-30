@@ -13,7 +13,7 @@ We welcome every contribution! If a specific term, relationship or an existing e
 - **Import ontology:** Request the import of an already existing ontology into the SwateDB if you need >60% of terms from the ontology to annotate your data 
 - **Add synonym:** Suggest a synonym for an already existing dpbo term
 - **Fix/add xref:** Suggest a new xref or report issue about an incorrect xref
-- **Custom template** For all other issues or concerns
+- **Custom template:** For all other issues or concerns
 
 
 How to submit a new issue:
