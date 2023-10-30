@@ -8,7 +8,7 @@ dpbo enables easy and agile collection of missing vocabulary as well as relation
 
 We welcome every contribution! If a specific term, relationship or an existing external ontology needed for annotating your data with Swate is missing from the DataPLANT database, you can open an issue. We provide a variety of issue templates depending on your wishes: 
 
-- **Add New term:** Suggest a new term to be added to dpbo
+- **Add new term:** Suggest a new term to be added to dpbo
 - **Import term:** Suggest a term to import from a registered ontology into dpbo
 - **Import ontology:** Request the import of an already existing ontology into the SwateDB if you need >60% of terms from the ontology to annotate your data 
 - **Add synonym:** Suggest a synonym for an already existing dpbo term
