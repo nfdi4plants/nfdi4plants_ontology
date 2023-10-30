@@ -2827,7 +2827,13 @@ created_by: Andrea Schrader | 0000-0002-3879-7057
 id: DPBO:1000227
 name: plant work helper
 def: "A person that helps at various steps of the plant growth cycle e.g. sowing seeds, separating plants at the correct age or collecting seeds." []
-created_by: Andrea Schrader | 0000-0002-3879-7057
+comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
+
+[Term]
+id: DPBO:1000228
+name: biolistic transformation
+def: "A method for physical delivery of DNA (likely also RNA) into cells. Gold or tungsten particles are coated with DNA and shot with a gene gun / particle gun on tissue like leaves, seedlings, callus or other types of tissue and cells. Often, in plant sciences, this method is used as a transient transformation method in protein or protein-protein interaction localization studies using binary vectors. Co-transformation of multiple vectors is possible."
+comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
 
 [Term]
 id: EFO:0002692
