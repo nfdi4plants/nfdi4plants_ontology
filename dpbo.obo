@@ -2832,9 +2832,19 @@ comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
 [Term]
 id: DPBO:1000228
 name: biolistic transformation
-def: "A method for physical delivery of DNA (likely also RNA) into cells. Gold or tungsten particles are coated with DNA and shot with a gene gun / particle gun on tissue like leaves, seedlings, callus or other types of tissue and cells. Often, in plant sciences, this method is used as a transient transformation method in protein or protein-protein interaction localization studies using binary vectors. Co-transformation of multiple vectors is possible."
+def: "A method for physical delivery of DNA (likely also RNA) into cells. Gold or tungsten particles are coated with DNA and shot with a gene gun / particle gun on tissue like leaves, 
+seedlings, callus or other types of tissue and cells. Often, in plant sciences, this method is used as a transient transformation method in protein or protein-protein interaction localization 
+studies using binary vectors. Co-transformation of multiple vectors is possible."
 comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
 synonym: particle bombardment
+
+[Term]
+id: DPBO:1000229
+name: bioimaging protocol
+def: "A protocol describing the method of a bioimaging technique. Bioimaging is a biological imaging method causing as minimal interference to living processes as possible or getting a 3-D structure 
+from the outside without physical interference e.g. of cells, tissues or other living matter. Usually, the method is non-invasive but also fixed biological material is covered by a wider definition." 
+comment: adapted from https://cab.ku.dk/what_is_bioimaging/
+comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
 
 [Term]
 id: EFO:0002692
