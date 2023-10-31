@@ -2843,6 +2843,12 @@ def: "A protocol describing the method of a bioimaging technique. Bioimaging is 
 comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
 
 [Term]
+id: DPBO:1000230
+name: transformation protocol
+def: "A protocol describing a transformation method of cell, tissues or organisms."
+comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
+
+[Term]
 id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
