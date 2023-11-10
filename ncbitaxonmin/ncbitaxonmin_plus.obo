@@ -5,3 +5,9 @@ date: 27:10:2023 09:20
 saved-by: Kevin Frey
 import: http://purl.obolibrary.org/obo/ncbitaxon.obo
 remark: This file was created to offer a subset of ncbitaxon, adding missing terms for `ncbitaxon.obo`.
+
+
+[Term]
+id: NCBITaxon:110664
+name: Talinum fruticosum
+is_a: OBI:0100026 ! organism
