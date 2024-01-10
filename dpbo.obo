@@ -3282,6 +3282,16 @@ name: data analysis
 def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
 
 [Term]
+id: SO:0000141
+name: terminator
+def: "The sequence of DNA located either at the end of the transcript that causes RNA polymerase to terminate transcription." [http://www.insdc.org/files/feature_table.html]
+comment: Moved from transcription_regulatory_region (SO:0001679) to transcriptional_cis_regulatory_region (SO:0001055) by Dave Sant on Feb 11, 2021 when transcription_regulatory_region was merged into transcriptional_cis_regulatory_region to be consistent with GO and reduce redundancy as part of the GREEKC consortium. See GitHub Issue #527.
+synonym: "INSDC_feature:regulatory" BROAD []
+synonym: "INSDC_qualifier:terminator" EXACT []
+synonym: "terminator sequence" EXACT []
+xref: http://en.wikipedia.org/wiki/Terminator_(genetics) "wiki"
+
+[Term]
 id: UO:0000048
 name: acceleration unit
 namespace: unit.ontology
