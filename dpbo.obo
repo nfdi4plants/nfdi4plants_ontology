@@ -531,6 +531,8 @@ name: growth day length
 def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" []
 comment: “Adapted from 'light quantity exposure' http://purl.obolibrary.org/obo/PECO_0007078"
 synonym: "light duration" EXACT []
+xref: ZECO:0000147
+xref: PECO:0007078
 
 [Term]
 id: DPBO:0000042
