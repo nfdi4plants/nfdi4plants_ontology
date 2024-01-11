@@ -2650,6 +2650,22 @@ def: "A protocol describing a transformation method of cell, tissues or organism
 comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
 
 [Term]
+id: DPBO:1000231
+name: Zeiss Axio Observer Z1
+def: "Inverted fluorescence microscope" []
+is_a: OBI:0400169
+comment: https://www.zeiss.com/microscopy/en/products/light-microscopes/widefield-microscopes/axio-observer-for-life-science-research.html
+comment: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
+
+[Term]
+id: DPBO:1000232
+name: Zeiss Imager M1
+def: "Upright fluorescence microscope" []
+is_a: OBI:0400169
+comment: https://microscopy.ucsf.edu/instruments/zeiss-axioimager-m1, https://profcontrol.de/Zeiss-Axio-Imager-M1m-Fluorescence-DIC-Microscope-Fluoreszenz-Mikroskop
+comment: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
+
+[Term]
 id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
