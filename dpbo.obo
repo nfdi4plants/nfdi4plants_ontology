@@ -1574,7 +1574,7 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 id: DPBO:1000071
 name: obsolete_AB SOLiD PI System
 comment: Term is redundant, please use EFO:0004437 or GENEPIO:0001931
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
@@ -1613,27 +1613,47 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: DPBO:1000075
-name: 454 GS
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_454 GS
+comment: Term is redundant, please use EFO:0004431
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004431
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000076
-name: 454 GS 20
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_454 GS 20
+comment:  Term is redundant, please use EFO:0004206
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+
+[Term]
+id: EFO:0004206
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000077
-name: 454 GS FLX
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_454 GS FLX
+comment: Term is redundant, please use EFO:0004432 or OBI:0000702
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004432
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0000702
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000078
@@ -1645,19 +1665,38 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 
 [Term]
 id: DPBO:1000079
-name: 454 GS Junior
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_454 GS Junior
+comment: Term is redundant, please use EFO:0004434 or GENEPIO:0001938
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004434
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001938
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
 
 [Term]
 id: DPBO:1000080
-name: 454 GS FLX Titanium
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_454 GS FLX Titanium
+comment:  Term is redundant, please use EFO:0004433 or GENEPIO:0001936
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: EFO:0004433
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001936
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000081
