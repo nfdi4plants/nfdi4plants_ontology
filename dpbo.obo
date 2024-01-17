@@ -1700,43 +1700,84 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000081
-name: Complete Genomics
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Complete Genomics
+comment: Term is redundant, please use NCIT:C146815 or GENEPIO:0001924
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: NCIT:C146815
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001924
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000082
-name: Helicos HeliScope
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_Helicos HeliScope
+comment: Term is redundant, please use OBI:0000717
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0000717
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000083
-name: GridION
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_GridION
+comment: Term is redundant, please use GENEPIO:0100141
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: GENEPIO:0100141
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000084
-name: MinION
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_MinION
+comment: Term is redundant, please use OBI:0002750, EFO:0008632 or GENEPIO:0100142
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002750
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008632
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0100142
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000085
-name: PromethION
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000040 ! next generation sequencing instrument model
+name: obsolete_PromethION
+comment:  Term is redundant, please use OBI:0002752 or GENEPIO:0100143
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
+is_obsolete: true
+
+[Term]
+id: OBI:0002752
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0100143
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000086
