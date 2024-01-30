@@ -82,6 +82,16 @@ is_a: AGRO:00002071 ! agricultural process
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-6284-4821
 
 [Term]
+id: AGRO:00000572
+name: GPS coordinates
+def: "A measurement datum that is a unique identifier of a precise geographic location on the earth, usually expressed in alphanumeric characters" [https://whatis.techtarget.com/definition/GPS-coordinates]
+synonym: "geo-location" EXACT []
+synonym: "geographic coordinate system" BROAD []
+synonym: "geolocation" EXACT []
+synonym: "GPS coordinates measurement datum" EXACT []
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-6284-4821
+
+[Term]
 id: AGRO:00002071
 name: agricultural process
 def: "A planned process which occurs in an agricultural field." []
@@ -531,8 +541,8 @@ name: growth day length
 def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" []
 comment: “Adapted from 'light quantity exposure' http://purl.obolibrary.org/obo/PECO_0007078"
 synonym: "light duration" EXACT []
-xref: ZECO:0000147
 xref: PECO:0007078
+xref: ZECO:0000147
 
 [Term]
 id: DPBO:0000042
@@ -1537,10 +1547,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
 
 [Term]
-id: OBI:0002007
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
 id: DPBO:1000069
 name: obsolete_AB SOLiD 4 System
 comment: Term is redundant, please use EFO:0004438
@@ -1548,10 +1554,6 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
-
-[Term]
-id: EFO:0004438  
-is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000070
@@ -1563,14 +1565,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
 
 [Term]
-id: GENEPIO:0001928
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: EFO:0004441
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
 id: DPBO:1000071
 name: obsolete_AB SOLiD PI System
 comment: Term is redundant, please use EFO:0004437 or GENEPIO:0001931
@@ -1578,14 +1572,6 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
-
-[Term]
-id: EFO:0004437
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: GENEPIO:0001931
-is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000072
@@ -1621,22 +1607,13 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
 
 [Term]
-id: EFO:0004431
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
 id: DPBO:1000076
 name: obsolete_454 GS 20
-comment:  Term is redundant, please use EFO:0004206
+comment: Term is redundant, please use EFO:0004206
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
-
-
-[Term]
-id: EFO:0004206
-is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000077
@@ -1646,14 +1623,6 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
-
-[Term]
-id: EFO:0004432
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: OBI:0000702
-is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000078
@@ -1673,30 +1642,13 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
 
 [Term]
-id: EFO:0004434
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: GENEPIO:0001938
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-
-[Term]
 id: DPBO:1000080
 name: obsolete_454 GS FLX Titanium
-comment:  Term is redundant, please use EFO:0004433 or GENEPIO:0001936
+comment: Term is redundant, please use EFO:0004433 or GENEPIO:0001936
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
-
-[Term]
-id: EFO:0004433
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: GENEPIO:0001936
-is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000081
@@ -1708,14 +1660,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
 
 [Term]
-id: NCIT:C146815
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: GENEPIO:0001924
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
 id: DPBO:1000082
 name: obsolete_Helicos HeliScope
 comment: Term is redundant, please use OBI:0000717
@@ -1723,10 +1667,6 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
-
-[Term]
-id: OBI:0000717
-is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000083
@@ -1738,10 +1678,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
 
 [Term]
-id: GENEPIO:0100141
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
 id: DPBO:1000084
 name: obsolete_MinION
 comment: Term is redundant, please use OBI:0002750, EFO:0008632 or GENEPIO:0100142
@@ -1751,33 +1687,13 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
 
 [Term]
-id: OBI:0002750
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: EFO:0008632
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: GENEPIO:0100142
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
 id: DPBO:1000085
 name: obsolete_PromethION
-comment:  Term is redundant, please use OBI:0002752 or GENEPIO:0100143
+comment: Term is redundant, please use OBI:0002752 or GENEPIO:0100143
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
-
-[Term]
-id: OBI:0002752
-is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: GENEPIO:0100143
-is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: DPBO:1000086
@@ -2761,16 +2677,16 @@ comment: Suggested by Andrea Schrader | 0000-0002-3879-7057
 id: DPBO:1000231
 name: Zeiss Axio Observer Z1
 def: "Inverted fluorescence microscope" []
-is_a: OBI:0400169
 comment: https://www.zeiss.com/microscopy/en/products/light-microscopes/widefield-microscopes/axio-observer-for-life-science-research.html
+is_a: OBI:0400169
 created_by: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
 
 [Term]
 id: DPBO:1000232
 name: Zeiss Imager M1
 def: "Upright fluorescence microscope" []
-is_a: OBI:0400169
 comment: https://microscopy.ucsf.edu/instruments/zeiss-axioimager-m1, https://profcontrol.de/Zeiss-Axio-Imager-M1m-Fluorescence-DIC-Microscope-Fluoreszenz-Mikroskop
+is_a: OBI:0400169
 created_by: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
 
 [Term]
@@ -2832,6 +2748,10 @@ id: EFO:0004205
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: EFO:0004206
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
 id: EFO:0004428
 name: FAIRE-seq
 def: "FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna." []
@@ -2839,7 +2759,35 @@ xref: NCIt:C106051
 is_a: DPBO:0000035 ! library strategy
 
 [Term]
+id: EFO:0004431
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004432
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004433
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004434
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004437
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004438
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
 id: EFO:0004439
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0004441
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -2883,6 +2831,10 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008631
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0008632
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -2975,11 +2927,31 @@ def: "The date on which the sample was collected" []
 xref: NCIT:C81286
 
 [Term]
+id: GENEPIO:0001924
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001928
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001931
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
 id: GENEPIO:0001932
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0001933
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001936
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0001938
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3048,6 +3020,18 @@ id: GENEPIO:0100139
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: GENEPIO:0100141
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0100142
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: GENEPIO:0100143
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
 id: GENEPIO:0100145
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
@@ -3073,10 +3057,22 @@ id: NCIT:C146812
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: NCIT:C146815
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
 id: NCIT:C45293
 name: Species
 xref: MIAPPE:0043
 xref: NCBITaxon:species
+
+[Term]
+id: OBI:0000702
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0000717
+is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002000
@@ -3088,6 +3084,10 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002002
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002007
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3120,6 +3120,14 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002633
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002750
+is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0002752
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
