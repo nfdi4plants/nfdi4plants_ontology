@@ -2763,7 +2763,7 @@ name: Zeiss Axio Observer Z1
 def: "Inverted fluorescence microscope" []
 is_a: OBI:0400169
 comment: https://www.zeiss.com/microscopy/en/products/light-microscopes/widefield-microscopes/axio-observer-for-life-science-research.html
-comment: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
+created_by: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
 
 [Term]
 id: DPBO:1000232
@@ -2771,7 +2771,7 @@ name: Zeiss Imager M1
 def: "Upright fluorescence microscope" []
 is_a: OBI:0400169
 comment: https://microscopy.ucsf.edu/instruments/zeiss-axioimager-m1, https://profcontrol.de/Zeiss-Axio-Imager-M1m-Fluorescence-DIC-Microscope-Fluoreszenz-Mikroskop
-comment: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
+created_by: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
 
 [Term]
 id: EFO:0002692
