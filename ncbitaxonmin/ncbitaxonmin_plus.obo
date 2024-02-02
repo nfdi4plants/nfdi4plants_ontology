@@ -87,11 +87,6 @@ name: algae metagenome
 is_a: OBI:0100026 ! organism
 
 [Term]
-id: NCBITaxon:1300146
-name: algae metagenome
-is_a: OBI:0100026 ! organism
-
-[Term]
 id: NCBITaxon:2977533
 name: eukaryotic soil metagenome
 is_a: OBI:0100026 ! organism
