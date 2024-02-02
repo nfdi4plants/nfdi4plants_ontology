@@ -2915,6 +2915,28 @@ name: library preparation kit version
 def: "The version identifier of a packaged kit tailored for specific sequencing workflows." []
 
 [Term]
+id: GENEPIO:0001142
+name: SRA accession field
+def: "A data field which describes the Sequence Read Archive (SRA), European Nucleotide Archive (ENA) or DDBJ Sequence Read Archive (DRA) identifier linking raw read data, methodological metadata and quality control metrics submitted to the International Nucleotide Sequence Database Collaboration (INSDC)." []
+comment: DDBJ = DNA DataBank of Japan  Example Guidance: Store the accession assigned to the submitted .run.. NCBI-SRA accessions start with SRR, EBI-ENA runs start with ERR and DRA accessions start with DRR.
+subset:  GRDI
+subset:  Monkeypox 
+subset:  Monkeypox-International 
+subset:  PHA4GE SARS-CoV-2 
+subset: CanCOGeN SARS-CoV-2 
+synonym: "Sequence Read Archive accession field" EXACT []
+synonym: "Sequence Read Archive accession slot" EXACT []
+synonym: "SRA accession slot" EXACT []
+property_value: http://purl.org/dc/terms/contributor "https://orcid.org/0000-0002-1107-9135 " xsd:string
+property_value: http://purl.org/dc/terms/contributor "https://orcid.org/0000-0002-8844-9165 " xsd:string
+property_value: http://purl.org/dc/terms/contributor "https://orcid.org/0000-0002-9578-0788 " xsd:string
+property_value: http://purl.org/dc/terms/date 2021-04-24T00:42:14Z xsd:dateTime
+property_value: IAO:0000112 "SRR11177792" xsd:string
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000118 "SRA accession" xsd:string
+property_value: IAO:0000118 "SRA_accession" xsd:string
+
+[Term]
 id: GENEPIO:0001153
 name: sample collected by
 def: "The name of the agency that collected the original sample." []
