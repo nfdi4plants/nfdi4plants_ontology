@@ -1,17 +1,15 @@
 format-version: 1.2
-data-version: 1.0.2
+data-version: 1.0.3
 ontology: ncbitaxonmin
 date: 27:10:2023 09:20
 saved-by: Kevin Frey
 import: http://purl.obolibrary.org/obo/ncbitaxon.obo
 remark: This file was created to offer a subset of ncbitaxon, adding missing terms for `ncbitaxon.obo`.
 
-
 [Term]
 id: NCBITaxon:110664
 name: Talinum fruticosum
 is_a: OBI:0100026 ! organism
-
 
 [Term]
 id: NCBITaxon:749907
@@ -73,12 +71,10 @@ id: NCBITaxon:1672641
 name: rice paddy metagenome
 is_a: OBI:0100026 ! organism
 
-
 [Term]
 id: NCBITaxon:1518171
 name: root associated fungus metagenome
 is_a: OBI:0100026 ! organism
-
 
 [Term]
 id: NCBITaxon:1593443
@@ -89,3 +85,102 @@ is_a: OBI:0100026 ! organism
 id: NCBITaxon:1300146
 name: algae metagenome
 is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1300146
+name: algae metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2977533
+name: eukaryotic soil metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:496922
+name: coral metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1868704
+name: grain metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1385665
+name: flower metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:483425
+name: endophyte metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1675540
+name: moss metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2015907
+name: macroalgae metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1297858
+name: leaf metagenome
+is_a: OBI:0100026 ! organism
+
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2562286
+name: tree metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2900150
+name: sugarcane bagasse metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1335591
+name: seed metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1904484
+name: seagrass metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2890062
+name: root nodule metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1118232
+name: root metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1628154
+name: pollen metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1297885
+name: plant metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2819232
+name: plant fiber metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1808295
+name: pitcher plant inquiline metagenome
+is_a: OBI:0100026 ! organism
+
+
