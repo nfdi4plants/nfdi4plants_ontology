@@ -11,3 +11,81 @@ remark: This file was created to offer a subset of ncbitaxon, adding missing ter
 id: NCBITaxon:110664
 name: Talinum fruticosum
 is_a: OBI:0100026 ! organism
+
+
+[Term]
+id: NCBITaxon:749907
+name: sediment metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:471232
+name: coral reef metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:556182
+name: freshwater sediment metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:449393
+name: freshwater metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:412755
+name: marine sediment metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:408172
+name: marine metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1874687
+name: marine plankton metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2805829
+name: marsh metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1284368
+name: mangrove metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1851193
+name: pond metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:939928
+name: rhizosphere metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1672641
+name: rice paddy metagenome
+is_a: OBI:0100026 ! organism
+
+
+[Term]
+id: NCBITaxon:1518171
+name: root associated fungus metagenome
+is_a: OBI:0100026 ! organism
+
+
+[Term]
+id: NCBITaxon:1593443
+name: wood decay metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:1300146
+name: algae metagenome
+is_a: OBI:0100026 ! organism
