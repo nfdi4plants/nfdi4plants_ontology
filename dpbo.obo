@@ -2919,11 +2919,6 @@ id: GENEPIO:0001142
 name: SRA accession field
 def: "A data field which describes the Sequence Read Archive (SRA), European Nucleotide Archive (ENA) or DDBJ Sequence Read Archive (DRA) identifier linking raw read data, methodological metadata and quality control metrics submitted to the International Nucleotide Sequence Database Collaboration (INSDC)." []
 comment: DDBJ = DNA DataBank of Japan  Example Guidance: Store the accession assigned to the submitted .run.. NCBI-SRA accessions start with SRR, EBI-ENA runs start with ERR and DRA accessions start with DRR.
-subset:  GRDI
-subset:  Monkeypox 
-subset:  Monkeypox-International 
-subset:  PHA4GE SARS-CoV-2 
-subset: CanCOGeN SARS-CoV-2 
 synonym: "Sequence Read Archive accession field" EXACT []
 synonym: "Sequence Read Archive accession slot" EXACT []
 synonym: "SRA accession slot" EXACT []
