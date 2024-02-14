@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: 1.0.3
+data-version: 1.0.4
 ontology: ncbitaxonmin
 date: 27:10:2023 09:20
 saved-by: Kevin Frey
@@ -178,4 +178,7 @@ id: NCBITaxon:1808295
 name: pitcher plant inquiline metagenome
 is_a: OBI:0100026 ! organism
 
-
+[Term]
+id: NCBITaxon:1564682
+name: subsurface metagenome
+is_a: OBI:0100026 ! organism
