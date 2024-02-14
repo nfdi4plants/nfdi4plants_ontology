@@ -126,8 +126,6 @@ id: NCBITaxon:1297858
 name: leaf metagenome
 is_a: OBI:0100026 ! organism
 
-is_a: OBI:0100026 ! organism
-
 [Term]
 id: NCBITaxon:2562286
 name: tree metagenome
