@@ -1,8 +1,11 @@
 # dpbo 
 
-With the  DataPLANT biology ontology (dpbo), DataPLANT provides an intermediate ontology that acts as a broker and bridge between the individual researcher/domain experts and main ontology providers.  
+With the  DataPLANT biology ontology (DPBO), DataPLANT provides an intermediate ontology that acts as a broker and bridge between the individual researcher/domain experts and main ontology providers.  
 
 dpbo enables easy and agile collection of missing vocabulary as well as relationships between terms for (meta)data annotation using DataPLANT’s Swate tool. 
+
+#### Note: 
+DPBO formerly had the namespace NFDI4PSO, which is now obsolete. Old NFDI4PSO terms correspond to the DPBO term with the same accession number. For example, NFDI4PSO:0000011 (obsolete) corresponds to the term DPBO:0000011
 
 # Your contribution
 
