@@ -3235,6 +3235,10 @@ created_by: jg
 creation_date: 2011-07-22T09:20:23Z
 
 [Term]
+id: NCIT:C126370
+name: Cover Slip
+
+[Term]
 id: PRIDE:0000314
 name: TMT
 namespace: PRIDE
