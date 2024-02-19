@@ -2624,7 +2624,7 @@ name: Knop medium
 def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
 synonym: "Knop ME" RELATED []
 synonym: "Knop solution" RELATED []
-is_a: OBI:0000079
+is_a: OBI:0000079 ! culture medium
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
