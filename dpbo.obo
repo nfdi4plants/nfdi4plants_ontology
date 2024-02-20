@@ -3070,6 +3070,10 @@ name: tag
 def: "Small molecules, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." [PMID:14755292]
 
 [Term]
+id:NCIT:C181919
+name:Objective Lens
+
+[Term]
 id: NCIT:C146812
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
