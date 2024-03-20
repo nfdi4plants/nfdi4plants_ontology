@@ -103,6 +103,11 @@ name: 96 well plate
 def: "This microplate contains 96 wells. It is suitable for a low throughput assay."
 
 [Term]
+id: BAO:0010013
+name: 6 well plate
+def: "" []
+
+[Term]
 id: BAO:0010026
 name: protein profiling assay
 def: "Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications" []
