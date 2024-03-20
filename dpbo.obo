@@ -98,6 +98,11 @@ def: "A planned process which occurs in an agricultural field." []
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-8461-9745
 
 [Term]
+id: BAO:0000513
+name: 96 well plate
+def: "This microplate contains 96 wells. It is suitable for a low throughput assay."
+
+[Term]
 id: BAO:0010026
 name: protein profiling assay
 def: "Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications" []
@@ -3471,4 +3476,3 @@ created_by: george gkoutos
 id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
-
