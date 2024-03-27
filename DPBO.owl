@@ -5273,7 +5273,20 @@
         <rdfs:comment>https://microscopy.ucsf.edu/instruments/zeiss-axioimager-m1, https://profcontrol.de/Zeiss-Axio-Imager-M1m-Fluorescence-DIC-Microscope-Fluoreszenz-Mikroskop</rdfs:comment>
         <rdfs:label>Zeiss Imager M1</rdfs:label>
     </owl:Class>
-    
+
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000233">
+        <obo:IAO_0000115>A data field which describes the MG-RAST identifier linking raw read data, methodological metadata and quality control metrics submitted to the MG-RAST metagenomics analysis server.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000233</oboInOwl:id>
+        <rdfs:comment>https://www.mg-rast.org/mgmain.html?mgpage=analysis</rdfs:comment>
+        <rdfs:label>MG-RAST accession number field</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://purl.obolibrary.org/obo/EFO_0002692 -->
