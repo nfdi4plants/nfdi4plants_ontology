@@ -2711,6 +2711,13 @@ is_a: OBI:0400169
 created_by: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
 
 [Term]
+id: DPBO:1000233
+name: MG-RAST accession number field
+def: "A data field which describes the MG-RAST identifier linking raw read data, methodological metadata and quality control metrics submitted to the MG-RAST metagenomics analysis server." []
+comment: https://www.mg-rast.org/mgmain.html?mgpage=analysis
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
 id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
