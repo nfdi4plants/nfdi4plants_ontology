@@ -681,10 +681,12 @@ xref: NCIT:C70713
 
 [Term]
 id: DPBO:0000068
-name: cell line
+name: obsolete_cell line
 def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
+is_a: ObsoleteClass ! Obsolete Class
 xref: NCIT:C16403
+is_obsolete: true
 
 [Term]
 id: DPBO:0000069
@@ -950,12 +952,13 @@ created_by: Dominik Brilhaus
 
 [Term]
 id: DPBO:1000003
-name: RNA-seq
+name: obsolete_RNA-seq
 def: "placeholder def of RNA-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000004
@@ -1864,9 +1867,11 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000108
-name: gene identifier
+name: obsolete_gene identifier
 def: "A unique gene name within a specific repository, database, or collection." []
+is_a: ObsoleteClass ! Obsolete Class
 xref: NCIT:C48664
+is_obsolete: true
 
 [Term]
 id: DPBO:1000109
@@ -1971,9 +1976,11 @@ xref: dwc:datasetName
 
 [Term]
 id: DPBO:1000127
-name: assay name
+name: obsolete_assay name
 def: "The name of the assay." []
+is_a: ObsoleteClass ! Obsolete Class
 xref: NCIT:C178857
+is_obsolete: true
 
 [Term]
 id: DPBO:1000128
@@ -2076,11 +2083,13 @@ comment: "Needed for imaging templates"
 
 [Term]
 id: DPBO:1000146
-name: strain
+name: obsolete_strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
+is_a: ObsoleteClass ! Obsolete Class
 xref: EFO:0005135
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+is_obsolete: true
 
 [Term]
 id: DPBO:1000147
@@ -2105,23 +2114,25 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000150
-name: contamination
+name: obsolete_contamination
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
+is_a: ObsoleteClass ! Obsolete Class
 xref: PATO:0015031
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+is_obsolete: true
 
 [Term]
 id: DPBO:1000151
 name: axenic
 def: "Free from other living organisms" []
-is_a: DPBO:1000150 ! contamination
+is_a: PATO:0015031 ! contamination
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000152
 name: laboratory strain
 def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
-is_a: DPBO:1000146 ! strain
+is_a: EFO:0005135 ! strain
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
