@@ -74,6 +74,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/definition_citation -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/definition_citation"/>
@@ -4128,7 +4134,7 @@
         <oboInOwl:hasDbXref>EFO:0005135</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000146</oboInOwl:id>
-        <rdfs:comment>&quot;Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135&quot;</rdfs:comment>
+        <rdfs:comment>use EFO:0005135</rdfs:comment>
         <rdfs:label>obsolete_strain</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -5273,7 +5279,7 @@
         <rdfs:comment>https://microscopy.ucsf.edu/instruments/zeiss-axioimager-m1, https://profcontrol.de/Zeiss-Axio-Imager-M1m-Fluorescence-DIC-Microscope-Fluoreszenz-Mikroskop</rdfs:comment>
         <rdfs:label>Zeiss Imager M1</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/DPBO_1000233 -->
@@ -5286,7 +5292,7 @@
         <rdfs:comment>https://www.mg-rast.org/mgmain.html?mgpage=analysis</rdfs:comment>
         <rdfs:label>MG-RAST accession number field</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/EFO_0002692 -->
@@ -5522,7 +5528,12 @@
 
     <!-- http://purl.obolibrary.org/obo/EFO_0005135 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0005135"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0005135">
+        <obo:IAO_0000115>A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0005135</oboInOwl:id>
+        <rdfs:label>strain</rdfs:label>
+    </owl:Class>
     
 
 
@@ -6181,7 +6192,18 @@
 
     <!-- http://purl.obolibrary.org/obo/NCIT_C175898 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C175898"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C175898">
+        <obo:IAO_0000115>The name of the software program capture and/or process imaging data.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C175898</oboInOwl:id>
+        <rdfs:label>Imaging Software Name</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C175898"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The name of the software program capture and/or process imaging data.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
     
 
 
@@ -6209,13 +6231,23 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000079 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000079"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000079">
+        <obo:IAO_0000115>a processed material that provides the needed nourishment for microorganisms or cells grown in vitro.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0000079</oboInOwl:id>
+        <rdfs:label>culture medium</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <obo:IAO_0000115>A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0000094</oboInOwl:id>
+        <rdfs:label>material processing</rdfs:label>
+    </owl:Class>
     
 
 
@@ -6241,7 +6273,12 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048">
+        <obo:IAO_0000115>An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0001048</oboInOwl:id>
+        <rdfs:label>digital camera</rdfs:label>
+    </owl:Class>
     
 
 
@@ -6421,13 +6458,23 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0400169 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400169">
+        <obo:IAO_0000115>A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0400169</oboInOwl:id>
+        <rdfs:label>microscope</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0400170 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400170"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400170">
+        <obo:IAO_0000115>A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0400170</oboInOwl:id>
+        <rdfs:label>microscope slide</rdfs:label>
+    </owl:Class>
     
 
 
@@ -6446,7 +6493,19 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0015031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0015031"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0015031">
+        <obo:IAO_0000115>The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0015031</oboInOwl:id>
+        <rdfs:label>contamination</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0015031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Contamination</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://github.com/pato-ontology/pato/issues/420</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -6929,7 +6988,11 @@
 
     <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UO:0000000</oboInOwl:id>
+        <rdfs:label>unit</rdfs:label>
+    </owl:Class>
     
 
 
