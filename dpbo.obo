@@ -2085,7 +2085,7 @@ comment: "Needed for imaging templates"
 id: DPBO:1000146
 name: obsolete_strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
-comment: "Source URL: https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=EFO_0005135"
+comment: use EFO:0005135
 is_a: ObsoleteClass ! Obsolete Class
 xref: EFO:0005135
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
@@ -2823,6 +2823,11 @@ id: EFO:0004442
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: EFO:0005135
+name: strain
+def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
+
+[Term]
 id: EFO:0005310
 name: RIP-seq
 def: "A method used for finding which RNA species interact with a particular RNA-binding protein. It involves immunoprecipitation with antibodies for the protein and then isolation of the RNAs associated with the protein. Unlike CLIP-seq, no cross-linking of RNAs and proteins is carried out prior to immunoprecipitation." []
@@ -3116,12 +3121,32 @@ xref: MIAPPE:0043
 xref: NCBITaxon:species
 
 [Term]
+id: NCIT:C175898
+name: Imaging Software Name
+def: "The name of the software program capture and/or process imaging data." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+
+[Term]
+id: OBI:0000079
+name: culture medium
+def: "a processed material that provides the needed nourishment for microorganisms or cells grown in vitro." []
+
+[Term]
+id: OBI:0000094
+name: material processing
+def: "A planned process which results in physical changes in a specified input material" []
+
+[Term]
 id: OBI:0000702
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0000717
 is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI:0001048
+name: digital camera
+def: "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor." []
 
 [Term]
 id: OBI:0002000
@@ -3196,6 +3221,16 @@ xref: NCIT:C14250
 xref: NFDI4PSO:0000030
 
 [Term]
+id: OBI:0400169
+name: microscope
+def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
+
+[Term]
+id: OBI:0400170
+name: microscope slide
+def: "A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument" []
+
+[Term]
 id: OME:Objective
 name: obsolete_Objective
 comment: Class "Objective" is microscopes' objective lens. 19.02.2024: term has been deprecated, please use REPR:Objective
@@ -3210,6 +3245,11 @@ def: "The microscope's objective lens."
 [Term]
 id: ObsoleteClass
 name: Obsolete Class
+
+[Term]
+id: PATO:0015031
+name: contamination
+def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity." [https://en.wikipedia.org/wiki/Contamination, https://github.com/pato-ontology/pato/issues/420]
 
 [Term]
 id: PRIDE:0000307
@@ -3485,6 +3525,10 @@ synonym: "INSDC_feature:regulatory" BROAD []
 synonym: "INSDC_qualifier:terminator" EXACT []
 synonym: "terminator sequence" EXACT []
 xref: http://en.wikipedia.org/wiki/Terminator_(genetics) "wiki"
+
+[Term]
+id: UO:0000000
+name: unit
 
 [Term]
 id: UO:0000048
