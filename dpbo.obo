@@ -2718,6 +2718,69 @@ comment: https://www.mg-rast.org/mgmain.html?mgpage=analysis
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
+id: DPBO:1000234
+name: assembly software
+def: "Tool/Software used for assembly." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000058/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000235
+name: assembly parameters
+def: "Parameters used for assembly." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000058/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000236
+name: MISAG/MIMAG assembly quality
+def: "The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling < 90% of the expected genome or replicon sequence, or for which no genome size could be estimated." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000056/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000237
+name: binning software
+def: "Tool(s) used for the extraction of genomes from metagenomic datasets, where possible include a product ID (PID) of the tool(s) used." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000078/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000238
+name: binning parameters
+def: "The parameters that have been applied during the extraction of genomes from metagenomic datasets." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000077/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000239
+name: taxonomic identity marker
+def: "The phylogenetic marker(s) used to assign an organism name to the SAG or MAG." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000053/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000240
+name: completeness software
+def: "Tools used for completion estimate, i.e. checkm, anvi'o, busco." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000070/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000241
+name: completeness score
+def: "Completeness score is typically based on either the fraction of markers found as compared to a database or the percent of a genome found as compared to a closely related reference genome. High Quality Draft: >90%, Medium Quality Draft: >50%, and Low Quality Draft: < 50% should have the indicated completeness scores." []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000069/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
+id: DPBO:1000242
+name: contamination score
+def: "The contamination score is based on the fraction of single-copy genes that are observed more than once in a query genome. The following scores are acceptable for; High Quality Draft: < 5%, Medium Quality Draft: < 10%, Low Quality Draft: < 10%. Contamination must be below 5% for a SAG or MAG to be deposited into any of the public databases" []
+comment: https://genomicsstandardsconsortium.github.io/mixs/0000072/
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
 id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
