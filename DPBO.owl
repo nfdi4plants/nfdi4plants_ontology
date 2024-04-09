@@ -1695,12 +1695,13 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_0000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>NCIT:C12508</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000069</oboInOwl:id>
-        <rdfs:comment>“[Definition Source: http://purl.obolibrary.org/obo/NCIT_C12508]&quot;</rdfs:comment>
-        <rdfs:label>cell type</rdfs:label>
+        <rdfs:comment>term is redundant, please use NCIT:C12508</rdfs:comment>
+        <rdfs:label>obsolete_cell type</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3456,14 +3457,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of total RNA</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000088</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
-        <rdfs:label>total RNA</rdfs:label>
+        <rdfs:comment>term is redundant, please use EFO:0004964</rdfs:comment>
+        <rdfs:label>obsolete_total RNA</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3746,11 +3748,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C49647</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000111</oboInOwl:id>
-        <rdfs:label>control type</rdfs:label>
+        <rdfs:comment>term is redundant, please use NCIT:C49647</rdfs:comment>
+        <rdfs:label>obsolete_control type</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3806,11 +3811,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C16295</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000117</oboInOwl:id>
-        <rdfs:label>antibody</rdfs:label>
+        <rdfs:comment>term is redundant, please use NCIT:C16295</rdfs:comment>
+        <rdfs:label>obsolete_antibody</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4144,12 +4152,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000147 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A device that can be used to restrict the location of material entities over time</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasDbXref>OBI:0000967</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000147</oboInOwl:id>
-        <rdfs:label>container</rdfs:label>
+        <rdfs:comment>term is redundant, please use OBI:0000967</rdfs:comment>
+        <rdfs:label>obsolete_container</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4157,7 +4168,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000148 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000148">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115>A wide-mouthed cylindrical container made of glass or pottery and typically having a lid</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -4170,7 +4181,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000149 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000149">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000967"/>
         <obo:IAO_0000115>A flat dish, typically circular</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -4237,12 +4248,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000154 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A 3-D extent quality inhering in a bearer by virtue of the bearer&apos;s amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasDbXref>PATO:0000918</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000154</oboInOwl:id>
-        <rdfs:label>volume</rdfs:label>
+        <rdfs:comment>term is redundant, please use PATO:0000918</rdfs:comment>
+        <rdfs:label>obsolete_volume</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4250,7 +4264,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000155">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000154"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
         <obo:IAO_0000115>Volume of culture medium used to grow the organism</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -4263,12 +4277,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000156 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The photoperiod and type (e.g., natural, restricted wavelength) of light exposure.</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasDbXref>EFO:0000568</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000156</oboInOwl:id>
-        <rdfs:label>light</rdfs:label>
+        <rdfs:comment>term is redundant, please use EFO:0000568</rdfs:comment>
+        <rdfs:label>obsolete_light</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4276,7 +4293,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000156"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0000568"/>
         <obo:IAO_0000115>The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -4290,12 +4307,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000158 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b.</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
-        <oboInOwl:hasDbXref>UO:0000190</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000158</oboInOwl:id>
-        <rdfs:label>ratio</rdfs:label>
+        <rdfs:comment>term is redundant, please use UO:0010006</rdfs:comment>
+        <rdfs:label>obsolete_ratio</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000158"/>
@@ -4309,7 +4328,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000159 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000159">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000158"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0010006"/>
         <obo:IAO_0000115>Nucleic acids have absorbance maxima at 260 nm. Historically, the ratio of this absorbance maximum to the absorbance at 280 nm has been used as a measure of purity in both DNA and RNA extractions. A 260/280 ratio of ~1.8 is generally accepted as pure for DNA; a ratio of ~2.0 is generally accepted as pure for RNA.</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -4323,7 +4342,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000160 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000160">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000158"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0010006"/>
         <obo:IAO_0000115>The 260/230 values for pure nucleic acid are often higher than the respective 260/280 values. Expected 260/230 values are commonly in the range of 2.0–2.2</obo:IAO_0000115>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -4431,14 +4450,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000168 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000168">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000161"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A protocol that aims to treat sample or collection of samples, organism or group of organisms, for some experimental purpose.</obo:IAO_0000115>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasDbXref>EFO:0003969</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000168</oboInOwl:id>
-        <rdfs:comment>definition from http://www.ebi.ac.uk/efo/EFO_0003969</rdfs:comment>
-        <rdfs:label>treatment protocol</rdfs:label>
+        <rdfs:comment>definition from http://www.ebi.ac.uk/efo/EFO_0003969. Term is redundant, please use EFO:0003969</rdfs:comment>
+        <rdfs:label>obsolete_treatment protocol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4446,14 +4466,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000169 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000169">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000161"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A protocol that provides instructions on how a biological sample for an experiment was collected.</obo:IAO_0000115>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasDbXref>EFO:0005518</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000169</oboInOwl:id>
-        <rdfs:comment>definition from http://www.ebi.ac.uk/efo/EFO_0005518</rdfs:comment>
-        <rdfs:label>sample collection protocol</rdfs:label>
+        <rdfs:comment>definition from http://www.ebi.ac.uk/efo/EFO_0005518. Term is redundant, please use EFO:0005518</rdfs:comment>
+        <rdfs:label>obsolete_sample collection protocol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4474,14 +4495,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000171 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000171">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000170"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay</obo:IAO_0000115>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasDbXref>EFO:0000490</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000171</oboInOwl:id>
-        <rdfs:comment>definition taken heavily from http://www.ebi.ac.uk/efo/EFO_0000490</rdfs:comment>
-        <rdfs:label>extraction protocol</rdfs:label>
+        <rdfs:comment>definition taken heavily from http://www.ebi.ac.uk/efo/EFO_0000490. Term is redundant, please use EFO:0000490</rdfs:comment>
+        <rdfs:label>obsolete_extraction protocol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4489,13 +4511,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000172 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000172">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000171"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components.</obo:IAO_0000115>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000172</oboInOwl:id>
-        <rdfs:comment>definition taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425773/</rdfs:comment>
-        <rdfs:label>DNA extraction protocol</rdfs:label>
+        <rdfs:comment>definition taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425773/. Term is redundant, please use EFO:0022384.</rdfs:comment>
+        <rdfs:label>obsolete_DNA extraction protocol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4503,13 +4526,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000173 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000173">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000171"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A protocol that describes the steps for removing and purifying DNA from a biological sample</obo:IAO_0000115>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasDbXref>EFO:0010959</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000173</oboInOwl:id>
-        <rdfs:label>RNA extraction protocol</rdfs:label>
+        <rdfs:comment>term is redundant, please use EFO:0010959</rdfs:comment>
+        <rdfs:label>obsolete_RNA extraction protocol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4517,12 +4542,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000174 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000174">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000171"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample.</obo:IAO_0000115>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000174</oboInOwl:id>
-        <rdfs:label>protein extraction protocol</rdfs:label>
+        <rdfs:comment>term is redundant, please use EFO:0022383</rdfs:comment>
+        <rdfs:label>obsolete_protein extraction protocol</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4530,7 +4557,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000175 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000175">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000171"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0000490"/>
         <obo:IAO_0000115>A protocol that describes the step by step process for removing metabolites from a biological sample.</obo:IAO_0000115>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -5295,6 +5322,144 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000234">
+        <obo:IAO_0000115>Tool/Software used for assembly.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000234</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000058/</rdfs:comment>
+        <rdfs:label>assembly software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000235">
+        <obo:IAO_0000115>Parameters used for assembly.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000235</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000058/</rdfs:comment>
+        <rdfs:label>assembly parameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000236">
+        <obo:IAO_0000115>The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling &lt; 90% of the expected genome or replicon sequence, or for which no genome size could be estimated.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000236</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000056/</rdfs:comment>
+        <rdfs:label>MISAG/MIMAG assembly quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000237">
+        <obo:IAO_0000115>Tool(s) used for the extraction of genomes from metagenomic datasets, where possible include a product ID (PID) of the tool(s) used.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000237</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000078/</rdfs:comment>
+        <rdfs:label>binning software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000238">
+        <obo:IAO_0000115>The parameters that have been applied during the extraction of genomes from metagenomic datasets.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000238</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000077/</rdfs:comment>
+        <rdfs:label>binning parameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000239">
+        <obo:IAO_0000115>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000239</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000053/</rdfs:comment>
+        <rdfs:label>taxonomic identity marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000240">
+        <obo:IAO_0000115>Tools used for completion estimate, i.e. checkm, anvi&apos;o, busco.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000240</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000070/</rdfs:comment>
+        <rdfs:label>completeness software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000241">
+        <obo:IAO_0000115>Completeness score is typically based on either the fraction of markers found as compared to a database or the percent of a genome found as compared to a closely related reference genome. High Quality Draft: &gt;90%, Medium Quality Draft: &gt;50%, and Low Quality Draft: &lt; 50% should have the indicated completeness scores.</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000241</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000069/</rdfs:comment>
+        <rdfs:label>completeness score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_1000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000242">
+        <obo:IAO_0000115>The contamination score is based on the fraction of single-copy genes that are observed more than once in a query genome. The following scores are acceptable for; High Quality Draft: &lt; 5%, Medium Quality Draft: &lt; 10%, Low Quality Draft: &lt; 10%. Contamination must be below 5% for a SAG or MAG to be deposited into any of the public databases</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:1000242</oboInOwl:id>
+        <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000072/</rdfs:comment>
+        <rdfs:label>contamination score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EFO_0000490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0000490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000170"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0000490</oboInOwl:id>
+        <rdfs:label>extraction protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EFO_0000568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0000568">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0000568</oboInOwl:id>
+        <rdfs:label>light</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EFO_0002692 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0002692">
@@ -5375,10 +5540,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003789">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000161"/>
-        <obo:IAO_0000115>A growth protocol is a protocol which provides instructions on the growth of a biological sample. E.g. the growth of a specific cell line or Drosophila culture</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0003789</oboInOwl:id>
         <rdfs:label>growth protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EFO_0003969 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003969">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000161"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0003969</oboInOwl:id>
+        <rdfs:label>treatment protocol</rdfs:label>
     </owl:Class>
     
 
@@ -5526,6 +5701,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EFO_0004964 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004964">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0004964</oboInOwl:id>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EFO_0005135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0005135">
@@ -5545,6 +5730,17 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0005310</oboInOwl:id>
         <rdfs:label>RIP-seq</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EFO_0005518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0005518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_1000161"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0005518</oboInOwl:id>
+        <rdfs:label>sample collection protocol</rdfs:label>
     </owl:Class>
     
 
@@ -5730,12 +5926,45 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EFO_0010959 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0010959">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0000490"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0010959</oboInOwl:id>
+        <rdfs:label>RNA extraction protocol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EFO_0011027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0011027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0011027</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EFO_0022383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0022383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0000490"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0022383</oboInOwl:id>
+        <rdfs:label>protein extraction protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EFO_0022384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0022384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0000490"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0022384</oboInOwl:id>
+        <rdfs:label>DNA extraction protocol</rdfs:label>
     </owl:Class>
     
 
@@ -6271,6 +6500,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000967 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000967">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0000967</oboInOwl:id>
+        <rdfs:label>container</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048">
@@ -6487,6 +6726,16 @@
         <rdfs:comment>Class &quot;Objective&quot; is microscopes&apos; objective lens. 19.02.2024: term has been deprecated, please use REPR:Objective</rdfs:comment>
         <rdfs:label>obsolete_Objective</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000918 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000918">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000918</oboInOwl:id>
+        <rdfs:label>volume</rdfs:label>
     </owl:Class>
     
 
@@ -7013,6 +7262,16 @@
         <owl:annotatedTarget>A unit which is a standard measure of the rate of change of velocity in either speed or direction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0010006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0010006">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UO:0010006</oboInOwl:id>
+        <rdfs:label>ratio</rdfs:label>
+    </owl:Class>
     
 
 
