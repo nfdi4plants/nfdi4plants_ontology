@@ -11,10 +11,10 @@ remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
 remark: curator: Kathryn Dumschott <k.dumschott@fz-juelich.de>
 ontology: dpbo
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9021-3197 xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0003-1476-2121 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
 id: AGRO:00000007
@@ -31,7 +31,7 @@ def: "A planned process in which selected parts of the plant are removed. The pr
 synonym: "pruning" BROAD []
 synonym: "thinning process" EXACT []
 is_a: AGRO:00000566 ! pruning process
-property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-6284-4821 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-6284-4821" xsd:string
 
 [Term]
 id: AGRO:00000360
@@ -100,12 +100,11 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 [Term]
 id: BAO:0000513
 name: 96 well plate
-def: "This microplate contains 96 wells. It is suitable for a low throughput assay."
+def: "This microplate contains 96 wells. It is suitable for a low throughput assay." []
 
 [Term]
 id: BAO:0010013
 name: 6 well plate
-def: "" []
 
 [Term]
 id: BAO:0010026
@@ -205,14 +204,14 @@ id: CHMO:0001485
 name: derivatisation
 def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derivatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc." [https://orcid.org/0000-0002-0640-0422]
 synonym: "derivatization" EXACT []
-is_a: OBI:0000094
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001549
 name: sample drying
 def: "The process of removing a solvent from a substance." [https://orcid.org/0000-0002-0640-0422]
 synonym: "drying" RELATED non-mining_synonym []
-is_a: OBI:0000094
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0001557
@@ -317,7 +316,7 @@ synonym: "dry grinding" EXACT []
 synonym: "milling" EXACT []
 synonym: "solid-state grinding" EXACT []
 synonym: "solvent-free grinding" EXACT []
-is_a: OBI:0000094
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: CHMO:0002757
@@ -522,22 +521,34 @@ name: processed data file checksum
 def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum" []
 
 [Term]
+id: DPBO:0000030
+name: isolation and growth condition
+def: "Publication reference for isolation and growth condition specifications of the organism/material" []
+comment: for submission to ENA
+
+[Term]
 id: DPBO:0000033
 name: plant age
 def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." []
 comment: “This is a specialization of age (http://www.ebi.ac.uk/efo/EFO_0000246)"
 
 [Term]
-id: DPBO:0000035
+id: obsolete_DPBO:0000035
 name: library strategy
 def: "Sequencing technique intended for a next generation sequencing library." []
+comment: term is redundant, please use GENEPIO:0001973
 xref: GENEPIO:0001973
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:0000036
-name: library selection
+name: obsolete_library selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
+comment: term is redundant, please use GENEPIO:0001940
 xref: GENEPIO:0001940
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:0000040
@@ -615,7 +626,7 @@ id: DPBO:0000052
 name: MS derivatization
 def: "Derivatization for metabolomics mass spectrometry." []
 xref: CHMO:0001485
-is_a: OBI:0000094
+is_a: OBI:0000094 ! material processing
 
 [Term]
 id: DPBO:0000053
@@ -684,8 +695,8 @@ id: DPBO:0000068
 name: obsolete_cell line
 def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " []
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
-is_a: ObsoleteClass ! Obsolete Class
 xref: NCIT:C16403
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
@@ -829,7 +840,7 @@ comment: https://www.ebi.ac.uk/ena/
 xref: ENSGLOSSARY:0000217
 is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:33:08Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2022-02-02T08:33:08Z" xsd:dateTime
 created_by: Dominik Brilhaus
 
 [Term]
@@ -839,7 +850,7 @@ def: "The BioSample database contains descriptions of biological source material
 comment: https://www.ncbi.nlm.nih.gov/biosample/
 is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:33:08Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2022-02-02T08:33:08Z" xsd:dateTime
 created_by: Dominik Brilhaus
 
 [Term]
@@ -850,7 +861,7 @@ comment: https://www.ncbi.nlm.nih.gov/bioproject/
 xref: GENEPIO:0001836
 is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:58:37Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2022-02-02T08:58:37Z" xsd:dateTime
 created_by: Dominik Brilhaus
 
 [Term]
@@ -861,7 +872,7 @@ comment: https://www.ncbi.nlm.nih.gov/genbank/
 xref: NCIT:C43818
 is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T08:59:49Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2022-02-02T08:59:49Z" xsd:dateTime
 created_by: Dominik Brilhaus
 
 [Term]
@@ -871,7 +882,7 @@ def: "Sequence Read Archive (SRA) data, available through multiple cloud provide
 comment: https://www.ncbi.nlm.nih.gov/sra/
 is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:02:27Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2022-02-02T09:02:27Z" xsd:dateTime
 created_by: Dominik Brilhaus
 
 [Term]
@@ -881,7 +892,7 @@ def: "Plant Genomics & Phenomics Research Data Repository" []
 comment: https://edal-pgp.ipk-gatersleben.de
 is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:03:35Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2022-02-02T09:03:35Z" xsd:dateTime
 created_by: Dominik Brilhaus
 
 [Term]
@@ -891,7 +902,7 @@ def: "The BioImage Archive (BIA) stores and distributes biological images that a
 comment: https://www.ebi.ac.uk/bioimage-archive/
 is_a: DPBO:1000095 ! endpoint repository
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-property_value: http://purl.org/dc/elements/1.1/date 2022-02-02T09:04:46Z xsd:dateTime
+property_value: http://purl.org/dc/elements/1.1/date "2022-02-02T09:04:46Z" xsd:dateTime
 created_by: Dominik Brilhaus
 
 [Term]
@@ -966,7 +977,7 @@ id: DPBO:1000004
 name: miRNA-seq
 def: "placeholder def of miRNA-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -975,7 +986,7 @@ id: DPBO:1000005
 name: ncRNA-seq
 def: "placeholder def of ncRNA-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -984,7 +995,7 @@ id: DPBO:1000006
 name: RNA-seq (size fractionation)
 def: "placeholder def of RNA-Seq (size fractionation)" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -993,7 +1004,7 @@ id: DPBO:1000007
 name: RNA-seq (CAGE)
 def: "placeholder def of RNA-Seq (CAGE)" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -1002,7 +1013,7 @@ id: DPBO:1000008
 name: RNA-seq (RACE)
 def: "placeholder def of RNA-Seq (RACE)" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -1073,7 +1084,7 @@ def: "A library strategy that uses one or more restriction enzymes on a genomic 
 comment: To be transformed to an instance. DB
 synonym: "reduced-representation bisulfite sequencing" EXACT []
 synonym: "RRBS-Seq" EXACT []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -1092,7 +1103,7 @@ id: DPBO:1000017
 name: DNase hypersensitivity
 def: "placeholder def of DNase-Hypersensitivity" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -1101,7 +1112,7 @@ id: DPBO:1000018
 name: Tn-seq
 def: "placeholder def of Tn-Seq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -1120,7 +1131,7 @@ id: DPBO:1000020
 name: SELEX
 def: "placeholder def of SELEX" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -1169,7 +1180,7 @@ id: DPBO:1000025
 name: OTHER: specify
 def: "placeholder def of OTHER: specify" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
@@ -1871,8 +1882,8 @@ comment: "Needed for imaging templates"
 id: DPBO:1000108
 name: obsolete_gene identifier
 def: "A unique gene name within a specific repository, database, or collection." []
-is_a: ObsoleteClass ! Obsolete Class
 xref: NCIT:C48664
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
@@ -1986,8 +1997,8 @@ xref: dwc:datasetName
 id: DPBO:1000127
 name: obsolete_assay name
 def: "The name of the assay." []
-is_a: ObsoleteClass ! Obsolete Class
 xref: NCIT:C178857
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
@@ -2094,20 +2105,20 @@ id: DPBO:1000146
 name: obsolete_strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 comment: use EFO:0005135
-is_a: ObsoleteClass ! Obsolete Class
 xref: EFO:0005135
-created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000147
 name: obsolete_container
 def: "A device that can be used to restrict the location of material entities over time" []
 comment: term is redundant, please use OBI:0000967
-is_a: ObsoleteClass ! Obsolete Class
 xref: OBI:0000967
-created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000148
@@ -2127,10 +2138,10 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 id: DPBO:1000150
 name: obsolete_contamination
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
-is_a: ObsoleteClass ! Obsolete Class
 xref: PATO:0015031
-created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000151
@@ -2158,10 +2169,10 @@ id: DPBO:1000154
 name: obsolete_volume
 def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
 comment: term is redundant, please use PATO:0000918
-is_a: ObsoleteClass ! Obsolete Class
 xref: PATO:0000918
-created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000155
@@ -2175,10 +2186,10 @@ id: DPBO:1000156
 name: obsolete_light
 def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
 comment: term is redundant, please use EFO:0000568
-is_a: ObsoleteClass ! Obsolete Class
 xref: EFO:0000568
-created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000157
@@ -2194,8 +2205,8 @@ name: obsolete_ratio
 def: "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b." [UOB:LKSR]
 comment: term is redundant, please use UO:0010006
 is_a: ObsoleteClass ! Obsolete Class
-created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 is_obsolete: true
+created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000159
@@ -2272,8 +2283,8 @@ def: "A protocol that aims to treat sample or collection of samples, organism or
 comment: definition from http://www.ebi.ac.uk/efo/EFO_0003969. Term is redundant, please use EFO:0003969
 xref: EFO:0003969
 is_a: ObsoleteClass ! Obsolete Class
-created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 is_obsolete: true
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000169
@@ -2282,8 +2293,8 @@ def: "A protocol that provides instructions on how a biological sample for an ex
 comment: definition from http://www.ebi.ac.uk/efo/EFO_0005518. Term is redundant, please use EFO:0005518
 xref: EFO:0005518
 is_a: ObsoleteClass ! Obsolete Class
-created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 is_obsolete: true
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000170
@@ -2299,8 +2310,8 @@ def: "A protocol used to obtain something of experimental interest from a sample
 comment: definition taken heavily from http://www.ebi.ac.uk/efo/EFO_0000490. Term is redundant, please use EFO:0000490
 xref: EFO:0000490
 is_a: ObsoleteClass ! Obsolete Class
-created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 is_obsolete: true
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000172
@@ -2308,8 +2319,8 @@ name: obsolete_DNA extraction protocol
 def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components." []
 comment: definition taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425773/. Term is redundant, please use EFO:0022384.
 is_a: ObsoleteClass ! Obsolete Class
-created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 is_obsolete: true
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000173
@@ -2318,8 +2329,8 @@ def: "A protocol that describes the steps for removing and purifying DNA from a 
 comment: term is redundant, please use EFO:0010959
 xref: EFO:0010959
 is_a: ObsoleteClass ! Obsolete Class
-created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 is_obsolete: true
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000174
@@ -2327,8 +2338,8 @@ name: obsolete_protein extraction protocol
 def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample." []
 comment: term is redundant, please use EFO:0022383
 is_a: ObsoleteClass ! Obsolete Class
-created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 is_obsolete: true
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000175
@@ -2411,21 +2422,21 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 id: DPBO:1000186
 name: Zeiss Axiovert
 def: "Axiovert series, inverse microscope" []
-is_a: OBI:0400169
+is_a: OBI:0400169 ! microscope
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000187
 name: Olympus SZX7 (Bino)
 def: "binocular, stereo microscope" []
-is_a: OBI:0400169
+is_a: OBI:0400169 ! microscope
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000188
 name: Zeiss AxioCam MRc5
 def: "camera" []
-is_a: OBI:0001048
+is_a: OBI:0001048 ! digital camera
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -2474,49 +2485,49 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 id: DPBO:1000195
 name: Zeiss ZEN 3.5 (blue edition)
 def: "software controlling imaging systems from ZEISS." []
-is_a: NCIT:C175898
+is_a: NCIT:C175898 ! Imaging Software Name
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000196
 name: Thermo Scientific Menzel slides, 76 x 26 mm, 1,0 mm
 def: "microscope slide" []
-is_a: OBI:0400170
+is_a: OBI:0400170 ! microscope slide
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000197
 name: VWR frosted edges, ground edges 90°, 76 x 26 mm, 0,8 - 1,0 mm
 def: "microscope slide" []
-is_a: OBI:0400170
+is_a: OBI:0400170 ! microscope slide
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000198
 name: Roth SuperFrost® white, cut edges, 76 x 26 mm, 1,0 mm
 def: "microscope slide" []
-is_a: OBI:0400170
+is_a: OBI:0400170 ! microscope slide
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000199
 name: Menzel, 24 x 50 mm, selected 0,17 +/- 0,01, strength 1,5
 def: "cover slip" []
-is_a: NCIT:C126370
+is_a: NCIT:C126370 ! Cover Slip
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000200
 name: Roth, 24 x 50 mm, strength 1
 def: "cover slip" []
-is_a: NCIT:C126370
+is_a: NCIT:C126370 ! Cover Slip
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000201
 name: VWR, 18 x 18 mm, 0,13 - 0,16 mm, strength 1,5
 def: "cover slip" []
-is_a: NCIT:C126370
+is_a: NCIT:C126370 ! Cover Slip
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -2593,77 +2604,77 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 id: DPBO:1000212
 name: Plan-Neofluar 5x/0.15
 def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000213
 name: Plan-Neofluar 10x/0.3
 def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000214
 name: Plan-Neofluar 20x/0.50 Ph2
 def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000215
 name: Plan-Neofluar 40x/0.75
 def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000216
 name: Plan-Neofluar 63x/1.25 Oil
 def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000217
 name: Plan-Neofluar 100x/1.30 Oil
 def: "objective lens of Zeiss Axioplan 2" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000218
 name: Achroplan 5x/012
 def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000219
 name: Achroplan 10x/0.25 Ph1
 def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000220
 name: Achroplan 20x/0.40
 def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000221
 name: Achroplan 40x/0.60 korr Ph2
 def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000222
 name: Achroplan 63x/0.75 korr Ph2
 def: "objective lens of Zeiss Axiovert" []
-is_a: NCIT:C181919
+is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -2687,7 +2698,7 @@ id: DPBO:1000225
 name: Zeiss Axioplan 2
 def: "Axioplan series, imaging fluorescence microscope" []
 comment: NOTE: This term's ID has been changed from DPBO:1000185 to DPBO:1000225 due to a discrepancy with the term ID: the ID DPBO:1000185 was already being used for another term within the ontology (incubation time)
-is_a: OBI:0400169
+is_a: OBI:0400169 ! microscope
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -2726,7 +2737,7 @@ id: DPBO:1000231
 name: Zeiss Axio Observer Z1
 def: "Inverted fluorescence microscope" []
 comment: https://www.zeiss.com/microscopy/en/products/light-microscopes/widefield-microscopes/axio-observer-for-life-science-research.html
-is_a: OBI:0400169
+is_a: OBI:0400169 ! microscope
 created_by: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
 
 [Term]
@@ -2734,7 +2745,7 @@ id: DPBO:1000232
 name: Zeiss Imager M1
 def: "Upright fluorescence microscope" []
 comment: https://microscopy.ucsf.edu/instruments/zeiss-axioimager-m1, https://profcontrol.de/Zeiss-Axio-Imager-M1m-Fluorescence-DIC-Microscope-Fluoreszenz-Mikroskop
-is_a: OBI:0400169
+is_a: OBI:0400169 ! microscope
 created_by: suggested by Ursula Eberhardt | ORCID: 0000-0003-1221-7074
 
 [Term]
@@ -2821,40 +2832,40 @@ id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
 xref: NCIt:C106049
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0003748
 name: MRE-seq
 def: "An assay in which DNA us the input molecule derived from cleavage of DNA by use of methylation sensitive restriction enzymes to fragment DNA at methylation sites before sequencing" []
 synonym: "Methylation-Sensitive Restriction Enzyme sequencing" EXACT []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0003749
 name: MeDIP-seq
 def: "An assay in which DNA is the input molecule derived from an antibody based selection process using antibodies targeting methylated DNA, which is then sequenced using high throughput sequencing technology." []
 synonym: "Methylated DNA Immunoprecipitation sequencing" EXACT []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0003750
 name: MBD-seq
 def: "An assay in which DNA is the input molecule derived from a selection process using methyl binding domain protein to enrich for methylated fractions of DNA, then sequenced using high throughput sequencing." []
 synonym: "methyl binding domain sequencing" EXACT []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0003751
 name: MNase-seq
 def: "An assay in which DNA is the input molecule derived from a micrococcal nuclease digestion followed by high throughput sequencing, A method that distinguishes nucleosome positioning based on the ability of nucleosomes to protect associated DNA from digestion by micrococcal nuclease. Sequenced fragments reveal nucleosome location information about the input DNA." []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0003753
 name: Bisulfite-seq
 def: "An assay in which DNA is the input molecule derived from a bisulphite treatment of DNA to convert cytosine residues to uracil to determine methylation status." []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0003789
@@ -2887,7 +2898,7 @@ id: EFO:0004428
 name: FAIRE-seq
 def: "FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna." []
 xref: NCIt:C106051
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0004431
@@ -2927,7 +2938,7 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004964
-is_a: DPBO:0000012 ! bio entity 
+is_a: DPBO:0000012 ! bio entity
 
 [Term]
 id: EFO:0005135
@@ -2938,7 +2949,7 @@ def: "A population of organisms that is geneticaly different from others of the 
 id: EFO:0005310
 name: RIP-seq
 def: "A method used for finding which RNA species interact with a particular RNA-binding protein. It involves immunoprecipitation with antibodies for the protein and then isolation of the RNAs associated with the protein. Unlike CLIP-seq, no cross-linking of RNAs and proteins is carried out prior to immunoprecipitation." []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0005518
@@ -2949,14 +2960,14 @@ is_a: DPBO:1000161 ! protocol type
 id: EFO:0007045
 name: ATAC-seq
 def: "Assay for transposase-accessible chromatin using sequencing (ATAC-seq), is a method based on direct in vitro transposition of sequencing adaptors into native chromatin, and is a rapid and sensitive method for integrative epigenomic analysis. ATAC-seq captures open chromatin sites using a simple two-step protocol." []
-is_a: DPBO:0000035 ! library strategy
-property_value: definition:citation http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2688.html xsd:string
+is_a: GENEPIO:0001973 ! library strategy
+property_value: definition:citation "http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2688.html" xsd:string
 
 [Term]
 id: EFO:0007693
 name: Hi-C
 def: "Hi-C is a method for analysing 3-dimensional organisation and interaction of chromatin, belonging to the class of techniques collectively called \"Chromosome Conformation Capture\", in which chromatin is crosslinked, then digested, and re-ligated in such a way that only DNA fragments that are covalently linked together form ligation products. Together with 5C, Hi-C does not limit to the study to a specific locus in the genome, and can be used to study chromatin interaction across the genome. To achieve high-throughput, a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing. Mapping the sequenced reads back to genome will reveal the origin of the fragments involved in the ligation events." []
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0008563
@@ -3000,14 +3011,14 @@ name: Chia-PET
 def: "ChIA-PET (chromatin interaction analysis by paired-end tag sequencing) is a type of chromosome conformation capture assay that uses chromatin immunoprecipitation to enrich for protein-specific chromatin complexes after digestion, followed by nuclear proximity ligation and high-throughput paired-end-tag sequencing." []
 synonym: "chromatin interaction analysis by paired-end tag sequencing" EXACT []
 xref: PMID:20181287
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0008896
 name: RNA-Seq
 def: "RNA-seq is a method that involves purifying RNA and making cDNA, followed by high-throughput sequencing." []
 xref: PMID:18516045
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
@@ -3015,7 +3026,7 @@ id: EFO:0008950
 name: ssRNA-seq
 def: "Strand-specific RNA-seq (ssRNA-seq)" []
 xref: PMID:19609351
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
@@ -3023,7 +3034,7 @@ id: EFO:0008973
 name: TN-Seq
 def: "Transposon sequencing (TN-Seq)" []
 xref: PMID:23712350
-is_a: DPBO:0000035 ! library strategy
+is_a: GENEPIO:0001973 ! library strategy
 property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
@@ -3085,7 +3096,7 @@ synonym: "SRA accession slot" EXACT []
 property_value: http://purl.org/dc/terms/contributor "https://orcid.org/0000-0002-1107-9135 " xsd:string
 property_value: http://purl.org/dc/terms/contributor "https://orcid.org/0000-0002-8844-9165 " xsd:string
 property_value: http://purl.org/dc/terms/contributor "https://orcid.org/0000-0002-9578-0788 " xsd:string
-property_value: http://purl.org/dc/terms/date 2021-04-24T00:42:14Z xsd:dateTime
+property_value: http://purl.org/dc/terms/date "2021-04-24T00:42:14Z" xsd:dateTime
 property_value: IAO:0000112 "SRR11177792" xsd:string
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000118 "SRA accession" xsd:string
@@ -3102,6 +3113,10 @@ id: GENEPIO:0001174
 name: sample collection date
 def: "The date on which the sample was collected" []
 xref: NCIT:C81286
+
+[Term]
+id: GENEPIO:0001681
+name: laboratory sequencing datum
 
 [Term]
 id: GENEPIO:0001924
@@ -3132,9 +3147,26 @@ id: GENEPIO:0001938
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: GENEPIO:0001940
+name: library selection
+def: "Whether any method was used to select for or against, enrich, or screen the material being sequenced." []
+xref: NCBI SRA: LIBRARY_SELECTION
+is_a: GENEPIO:0001681
+property_value: GENEPIO:0000005 "https://www.ncbi.nlm.nih.gov/books/NBK54984/table/SRA_Glossary_BK.T._library_descriptor_te/?report=objectonly" xsd:string
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
 id: GENEPIO:0001965
 name: library source
 def: "The library source specifies the type of source material that is being sequenced." []
+
+[Term]
+id: GENEPIO:0001973
+name: library strategy
+def: "Sequencing technique intended for this library." []
+is_a: GENEPIO:0001681
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+property_value: IAO:0000119 "https://www.ncbi.nlm.nih.gov/books/NBK54984/table/SRA_Glossary_BK.T._library_descriptor_te/?report=objectonly" xsd:string
 
 [Term]
 id: GENEPIO:0100109
@@ -3225,13 +3257,27 @@ id: GENEPIO:0100150
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: GEO:000000370
+name: geographical entity
+
+[Term]
+id: GEO:000000372
+name: geographical region
+def: "A geographical entity that is demarcated at least in part by one or more closed fiat boundaries all of whose lines are part of the planetary surface." []
+is_a: GEO:000000370 ! geographical entity
+property_value: IAO:0000117 "François Modave" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000117 "Matt Diller" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
 id: MI:0507
 name: tag
 def: "Small molecules, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." [PMID:14755292]
 
 [Term]
-id:NCIT:C181919
-name:Objective Lens
+id: NCIT:C126370
+name: Cover Slip
 
 [Term]
 id: NCIT:C146812
@@ -3242,15 +3288,19 @@ id: NCIT:C146815
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: NCIT:C175898
+name: Imaging Software Name
+def: "The name of the software program capture and/or process imaging data." [] {P378="NCI"}
+
+[Term]
+id: NCIT:C181919
+name: Objective Lens
+
+[Term]
 id: NCIT:C45293
 name: Species
 xref: MIAPPE:0043
 xref: NCBITaxon:species
-
-[Term]
-id: NCIT:C175898
-name: Imaging Software Name
-def: "The name of the software program capture and/or process imaging data." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
 
 [Term]
 id: OBI:0000079
@@ -3369,22 +3419,17 @@ is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
-id: REPR:Objective
-name: Objective
-def: "The microscope's objective lens."
-
-[Term]
 id: ObsoleteClass
 name: Obsolete Class
+
+[Term]
+id: PATO:0000918
+name: volume
 
 [Term]
 id: PATO:0015031
 name: contamination
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity." [https://en.wikipedia.org/wiki/Contamination, https://github.com/pato-ontology/pato/issues/420]
-
-[Term]
-id: PATO:0000918
-name: volume
 
 [Term]
 id: PRIDE:0000307
@@ -3447,10 +3492,6 @@ comment: Quantification technique developed by Applied Biosystems using various 
 is_a: PRIDE:0000317 ! MS2 based isotope labeling
 created_by: jg
 creation_date: 2011-07-22T09:20:23Z
-
-[Term]
-id: NCIT:C126370
-name: Cover Slip
 
 [Term]
 id: PRIDE:0000314
@@ -3633,6 +3674,11 @@ name: plant disease
 def: "A biotic plant stress caused by exposure to an environment containing a biological stress agent." []
 
 [Term]
+id: REPR:Objective
+name: Objective
+def: "The microscope's objective lens." []
+
+[Term]
 id: SCTID:71661000
 name: cover slip preparation (procedure)
 
@@ -3671,7 +3717,7 @@ name: acceleration unit
 namespace: unit.ontology
 def: "A unit which is a standard measure of the rate of change of velocity in either speed or direction." [Wikipedia:Wikipedia]
 subset: unit_group_slim
-is_a: UO:0000000
+is_a: UO:0000000 ! unit
 created_by: george gkoutos
 
 [Term]
@@ -3682,3 +3728,4 @@ name: ratio
 id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
+
