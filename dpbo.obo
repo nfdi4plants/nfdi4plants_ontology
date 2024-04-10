@@ -533,15 +533,6 @@ def: "A temporal measurement of the time period elapsed since an identifiable po
 comment: “This is a specialization of age (http://www.ebi.ac.uk/efo/EFO_0000246)"
 
 [Term]
-id: obsolete_DPBO:0000035
-name: library strategy
-def: "Sequencing technique intended for a next generation sequencing library." []
-comment: term is redundant, please use GENEPIO:0001973
-xref: GENEPIO:0001973
-is_a: ObsoleteClass ! Obsolete Class
-is_obsolete: true
-
-[Term]
 id: DPBO:0000036
 name: obsolete_library selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
@@ -1846,9 +1837,12 @@ is_a: DPBO:1000096 ! GEO
 
 [Term]
 id: DPBO:1000101
-name: well
+name: obsolete_well
 def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
+comment: term is redundant, please use REPR:Well
 xref: OME:Well
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000102
@@ -1862,15 +1856,21 @@ def: "The identifier of a siRNA from a reagent library." []
 
 [Term]
 id: DPBO:1000104
-name: compound name
+name: obsolete_compound name
 def: "Unique name of a chemical compound." []
+comment: term is redundant, please use data:0990
 xref: EDAM:data_0990
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000105
-name: compound identifier
+name: obsolete_compound identifier
 def: "Identifier of an entry from a database of chemicals." []
+comment: term is redundant, please use data:1086
 xref: data:1086
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:1000106
@@ -3151,7 +3151,7 @@ id: GENEPIO:0001940
 name: library selection
 def: "Whether any method was used to select for or against, enrich, or screen the material being sequenced." []
 xref: NCBI SRA: LIBRARY_SELECTION
-is_a: GENEPIO:0001681
+is_a: GENEPIO:0001681 ! laboratory sequencing datum
 property_value: GENEPIO:0000005 "https://www.ncbi.nlm.nih.gov/books/NBK54984/table/SRA_Glossary_BK.T._library_descriptor_te/?report=objectonly" xsd:string
 property_value: IAO:0000117 "Damion Dooley" xsd:string
 
@@ -3164,7 +3164,7 @@ def: "The library source specifies the type of source material that is being seq
 id: GENEPIO:0001973
 name: library strategy
 def: "Sequencing technique intended for this library." []
-is_a: GENEPIO:0001681
+is_a: GENEPIO:0001681 ! laboratory sequencing datum
 property_value: IAO:0000117 "Damion Dooley" xsd:string
 property_value: IAO:0000119 "https://www.ncbi.nlm.nih.gov/books/NBK54984/table/SRA_Glossary_BK.T._library_descriptor_te/?report=objectonly" xsd:string
 
@@ -3679,6 +3679,11 @@ name: Objective
 def: "The microscope's objective lens." []
 
 [Term]
+id: REPR:Well
+name: Well
+def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
+
+[Term]
 id: SCTID:71661000
 name: cover slip preparation (procedure)
 
@@ -3725,7 +3730,55 @@ id: UO:0010006
 name: ratio
 
 [Term]
+id: data:0962
+name: Small molecule report
+
+[Term]
+id: data:0982
+name: Molecule identifier
+
+[Term]
+id: data:0984
+name: Molecule name
+
+[Term]
+id: data:0990
+name: Compound name
+subset: data
+subset: edam
+subset: identifiers
+synonym: "Chemical name" EXACT []
+is_a: data:0984 ! Molecule name
+is_a: data:1086 ! Compound identifier
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Unique name of a chemical compound." xsd:string
+
+[Term]
+id: data:1086
+name: Compound identifier
+subset: data
+subset: edam
+subset: identifiers
+synonym: "Chemical compound identifier" EXACT []
+synonym: "Compound ID" EXACT []
+synonym: "Small molecule identifier" EXACT []
+is_a: data:0982 ! Molecule identifier
+relationship: http://edamontology.org/is_identifier_of data:0962 ! Small molecule report
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasDefinition "Identifier of an entry from a database of chemicals." xsd:string
+property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
+
+[Term]
 id: data:2795
 name: ORF identifier
 def: "An identifier of an open reading frame." []
+
+[Term]
+id: obsolete_DPBO:0000035
+name: library strategy
+def: "Sequencing technique intended for a next generation sequencing library." []
+comment: term is redundant, please use GENEPIO:0001973
+xref: GENEPIO:0001973
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
