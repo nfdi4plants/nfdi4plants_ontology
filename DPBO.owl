@@ -10,7 +10,8 @@
      xmlns:dpbo="http://purl.obolibrary.org/obo/dpbo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
@@ -39,6 +40,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://edamontology.org/notRecommendedForAnnotation -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/notRecommendedForAnnotation"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0000005 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0000005"/>
     
 
 
@@ -74,9 +87,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/created_in -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/created_in"/>
     
 
 
@@ -95,6 +114,12 @@
     <!-- http://purl.obolibrary.org/obo/dpbo#ER_target_term -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dpbo#ER_target_term"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#hasDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dpbo#hasDefinition"/>
     
 
 
@@ -125,6 +150,12 @@
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#P378 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#P378"/>
     
 
 
@@ -251,6 +282,23 @@
     <!-- http://www.w3.org/2002/07/owl#deprecated -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/is_identifier_of -->
+
+    <owl:ObjectProperty rdf:about="http://edamontology.org/is_identifier_of"/>
     
 
 
@@ -1362,6 +1410,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000030">
+        <obo:IAO_0000115>Publication reference for isolation and growth condition specifications of the organism/material</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000030</oboInOwl:id>
+        <rdfs:comment>for submission to ENA</rdfs:comment>
+        <rdfs:label>isolation and growth condition</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000033">
@@ -1374,26 +1434,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DPBO_0000035 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000035">
-        <obo:IAO_0000115>Sequencing technique intended for a next generation sequencing library.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>GENEPIO:0001973</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DPBO:0000035</oboInOwl:id>
-        <rdfs:label>library strategy</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DPBO_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The method used to select for or against, enrich, or screen the material being sequenced.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>GENEPIO:0001940</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000036</oboInOwl:id>
-        <rdfs:label>library selection</rdfs:label>
+        <rdfs:comment>term is redundant, please use GENEPIO:0001940</rdfs:comment>
+        <rdfs:label>obsolete_library selection</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2185,7 +2236,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of miRNA-Seq</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2200,7 +2251,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of ncRNA-Seq</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2215,7 +2266,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of RNA-Seq (size fractionation)</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2230,7 +2281,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of RNA-Seq (CAGE)</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2245,7 +2296,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of RNA-Seq (RACE)</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2356,7 +2407,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>A library strategy that uses one or more restriction enzymes on a genomic DNA sample prior to sequencing to produce sequence-specific fragmentation</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2389,7 +2440,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of DNase-Hypersensitivity</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2404,7 +2455,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of Tn-Seq</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2435,7 +2486,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of SELEX</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -2515,7 +2566,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>placeholder def of OTHER: specify</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
@@ -3640,11 +3691,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>OME:Well</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000101</oboInOwl:id>
-        <rdfs:label>well</rdfs:label>
+        <rdfs:comment>term is redundant, please use REPR:Well</rdfs:comment>
+        <rdfs:label>obsolete_well</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3674,11 +3728,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>Unique name of a chemical compound.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EDAM:data_0990</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000104</oboInOwl:id>
-        <rdfs:label>compound name</rdfs:label>
+        <rdfs:comment>term is redundant, please use data:0990</rdfs:comment>
+        <rdfs:label>obsolete_compound name</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3686,11 +3743,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>Identifier of an entry from a database of chemicals.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>data:1086</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000105</oboInOwl:id>
-        <rdfs:label>compound identifier</rdfs:label>
+        <rdfs:comment>term is redundant, please use data:1086</rdfs:comment>
+        <rdfs:label>obsolete_compound identifier</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5463,7 +5523,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0002692 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0002692">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIt:C106049</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -5476,7 +5536,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0003748 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003748">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>An assay in which DNA us the input molecule derived from cleavage of DNA by use of methylation sensitive restriction enzymes to fragment DNA at methylation sites before sequencing</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Methylation-Sensitive Restriction Enzyme sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -5489,7 +5549,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0003749 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003749">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>An assay in which DNA is the input molecule derived from an antibody based selection process using antibodies targeting methylated DNA, which is then sequenced using high throughput sequencing technology.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Methylated DNA Immunoprecipitation sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -5502,7 +5562,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0003750 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003750">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>An assay in which DNA is the input molecule derived from a selection process using methyl binding domain protein to enrich for methylated fractions of DNA, then sequenced using high throughput sequencing.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>methyl binding domain sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -5515,7 +5575,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0003751 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003751">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>An assay in which DNA is the input molecule derived from a micrococcal nuclease digestion followed by high throughput sequencing, A method that distinguishes nucleosome positioning based on the ability of nucleosomes to protect associated DNA from digestion by micrococcal nuclease. Sequenced fragments reveal nucleosome location information about the input DNA.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0003751</oboInOwl:id>
@@ -5527,7 +5587,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0003753 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003753">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>An assay in which DNA is the input molecule derived from a bisulphite treatment of DNA to convert cytosine residues to uracil to determine methylation status.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0003753</oboInOwl:id>
@@ -5601,7 +5661,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0004428 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004428">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIt:C106051</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -5725,7 +5785,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0005310 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0005310">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>A method used for finding which RNA species interact with a particular RNA-binding protein. It involves immunoprecipitation with antibodies for the protein and then isolation of the RNAs associated with the protein. Unlike CLIP-seq, no cross-linking of RNAs and proteins is carried out prior to immunoprecipitation.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0005310</oboInOwl:id>
@@ -5748,7 +5808,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0007045 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0007045">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>Assay for transposase-accessible chromatin using sequencing (ATAC-seq), is a method based on direct in vitro transposition of sequencing adaptors into native chromatin, and is a rapid and sensitive method for integrative epigenomic analysis. ATAC-seq captures open chromatin sites using a simple two-step protocol.</obo:IAO_0000115>
         <obo:definition_citation>http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2688.html</obo:definition_citation>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -5761,7 +5821,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0007693 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0007693">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>Hi-C is a method for analysing 3-dimensional organisation and interaction of chromatin, belonging to the class of techniques collectively called &quot;Chromosome Conformation Capture&quot;, in which chromatin is crosslinked, then digested, and re-ligated in such a way that only DNA fragments that are covalently linked together form ligation products. Together with 5C, Hi-C does not limit to the study to a specific locus in the genome, and can be used to study chromatin interaction across the genome. To achieve high-throughput, a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing. Mapping the sequenced reads back to genome will reveal the origin of the fragments involved in the ligation events.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0007693</oboInOwl:id>
@@ -5863,7 +5923,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0008684 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008684">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>ChIA-PET (chromatin interaction analysis by paired-end tag sequencing) is a type of chromosome conformation capture assay that uses chromatin immunoprecipitation to enrich for protein-specific chromatin complexes after digestion, followed by nuclear proximity ligation and high-throughput paired-end-tag sequencing.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>PMID:20181287</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>chromatin interaction analysis by paired-end tag sequencing</oboInOwl:hasExactSynonym>
@@ -5877,7 +5937,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0008896 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008896">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>RNA-seq is a method that involves purifying RNA and making cDNA, followed by high-throughput sequencing.</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:18516045</oboInOwl:hasDbXref>
@@ -5891,7 +5951,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0008950 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008950">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>Strand-specific RNA-seq (ssRNA-seq)</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:19609351</oboInOwl:hasDbXref>
@@ -5905,7 +5965,7 @@
     <!-- http://purl.obolibrary.org/obo/EFO_0008973 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008973">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
         <obo:IAO_0000115>Transposon sequencing (TN-Seq)</obo:IAO_0000115>
         <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
         <oboInOwl:hasDbXref>PMID:23712350</oboInOwl:hasDbXref>
@@ -6071,6 +6131,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001681">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GENEPIO:0001681</oboInOwl:id>
+        <rdfs:label>laboratory sequencing datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GENEPIO_0001924 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001924">
@@ -6141,6 +6211,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001940">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001681"/>
+        <obo:GENEPIO_0000005>https://www.ncbi.nlm.nih.gov/books/NBK54984/table/SRA_Glossary_BK.T._library_descriptor_te/?report=objectonly</obo:GENEPIO_0000005>
+        <obo:IAO_0000115>Whether any method was used to select for or against, enrich, or screen the material being sequenced.</obo:IAO_0000115>
+        <obo:IAO_0000117>Damion Dooley</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>NCBI SRA: LIBRARY_SELECTION</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GENEPIO:0001940</oboInOwl:id>
+        <rdfs:label>library selection</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GENEPIO_0001965 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001965">
@@ -6148,6 +6233,20 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001965</oboInOwl:id>
         <rdfs:label>library source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001973 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001973">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001681"/>
+        <obo:IAO_0000115>Sequencing technique intended for this library.</obo:IAO_0000115>
+        <obo:IAO_0000117>Damion Dooley</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK54984/table/SRA_Glossary_BK.T._library_descriptor_te/?report=objectonly</obo:IAO_0000119>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GENEPIO:0001973</oboInOwl:id>
+        <rdfs:label>library strategy</rdfs:label>
     </owl:Class>
     
 
@@ -6372,6 +6471,32 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GEO_000000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000370">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GEO:000000370</oboInOwl:id>
+        <rdfs:label>geographical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GEO_000000372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
+        <obo:IAO_0000115>A geographical entity that is demarcated at least in part by one or more closed fiat boundaries all of whose lines are part of the planetary surface.</obo:IAO_0000115>
+        <obo:IAO_0000117>François Modave</obo:IAO_0000117>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117>Matt Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GEO:000000372</oboInOwl:id>
+        <rdfs:label>geographical region</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MI_0507 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0507">
@@ -6431,7 +6556,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C175898"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The name of the software program capture and/or process imaging data.</owl:annotatedTarget>
-        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+        <oboInOwl:P378>NCI</oboInOwl:P378>
     </owl:Axiom>
     
 
@@ -7164,6 +7289,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/REPR_Well -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REPR_Well">
+        <obo:IAO_0000115>A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REPR:Well</oboInOwl:id>
+        <rdfs:label>Well</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SCTID_71661000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SCTID_71661000">
@@ -7275,6 +7411,80 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/data_0962 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/data_0962">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>data:0962</oboInOwl:id>
+        <rdfs:label>Small molecule report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/data_0982 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/data_0982">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>data:0982</oboInOwl:id>
+        <rdfs:label>Molecule identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/data_0984 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/data_0984">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>data:0984</oboInOwl:id>
+        <rdfs:label>Molecule name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/data_0990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/data_0990">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/data_0984"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/data_1086"/>
+        <obo:created_in>beta12orEarlier</obo:created_in>
+        <dpbo:hasDefinition>Unique name of a chemical compound.</dpbo:hasDefinition>
+        <oboInOwl:hasExactSynonym>Chemical name</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>data:0990</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#identifiers"/>
+        <rdfs:label>Compound name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/data_1086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/data_1086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/data_0982"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/data_0962"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <obo:created_in>beta12orEarlier</obo:created_in>
+        <dpbo:hasDefinition>Identifier of an entry from a database of chemicals.</dpbo:hasDefinition>
+        <oboInOwl:hasExactSynonym>Chemical compound identifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Compound ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Small molecule identifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>data:1086</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#identifiers"/>
+        <rdfs:label>Compound identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/data_2795 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/data_2795">
@@ -7282,6 +7492,21 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>data:2795</oboInOwl:id>
         <rdfs:label>ORF identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obsolete_DPBO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/obsolete_DPBO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
+        <obo:IAO_0000115>Sequencing technique intended for a next generation sequencing library.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>GENEPIO:0001973</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>obsolete_DPBO:0000035</oboInOwl:id>
+        <rdfs:comment>term is redundant, please use GENEPIO:0001973</rdfs:comment>
+        <rdfs:label>library strategy</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
