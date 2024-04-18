@@ -769,8 +769,8 @@ is_a: UO:0000048 ! acceleration unit
 [Term]
 id: DPBO:0000086
 name: single-end
-def: "placeholder def of single-end" []
-comment: To be transformed to an instance. DB
+def: "A library layout which describes that only one end of the library fragment is sequenced" []
+comment: "Adapted from http://purl.obolibrary.org/obo/FBcv_0003220"
 is_a: DPBO:0000015 ! library layout
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
@@ -967,8 +967,8 @@ is_obsolete: true
 [Term]
 id: DPBO:1000004
 name: miRNA-seq
-def: "placeholder def of miRNA-Seq" []
-comment: To be transformed to an instance. DB
+def: "A library strategy that can identify and quantify the microRNA sequences present in a biological sample." []
+comment: "Adapted from http://purl.obolibrary.org/obo/NCIT_C156057"
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
@@ -976,8 +976,8 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 [Term]
 id: DPBO:1000005
 name: ncRNA-seq
-def: "placeholder def of ncRNA-Seq" []
-comment: To be transformed to an instance. DB
+def: "A next-generation sequencing library strategy that can determine the small and large non-protein coding RNA transcripts in a sample." []
+comment: "Adapted from http://purl.obolibrary.org/obo/NCIT_C172858"
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
@@ -985,8 +985,8 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 [Term]
 id: DPBO:1000006
 name: RNA-seq (size fractionation)
-def: "placeholder def of RNA-Seq (size fractionation)" []
-comment: To be transformed to an instance. DB
+def: "A library strategy with an additional size fractionation step after RNA-seq library preparation" []
+comment: 
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
@@ -994,8 +994,8 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 [Term]
 id: DPBO:1000007
 name: RNA-seq (CAGE)
-def: "placeholder def of RNA-Seq (CAGE)" []
-comment: To be transformed to an instance. DB
+def: "A library strategy that is used to sequence the 5' capped transcripts, using CAGE to biotinylate and isolate the 7-methylguanosine cap." []
+comment: "Adapted from http://purl.obolibrary.org/obo/FBcv_0003051"
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
@@ -1003,8 +1003,8 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 [Term]
 id: DPBO:1000008
 name: RNA-seq (RACE)
-def: "placeholder def of RNA-Seq (RACE)" []
-comment: To be transformed to an instance. DB
+def: "Rapid Amplification of cDNA Ends (RACE) is a library strategy for RNA-seq that is used to obtain the full length sequence of an RNA transcript found within a cell. RACE produces a cDNA copy of the RNA through reverse transcription which is amplified and sequenced." []
+comment: "Adapted from http://www.ebi.ac.uk/efo/EFO_0004182."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
