@@ -10,6 +10,7 @@ remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
 remark: curator: Kathryn Dumschott <k.dumschott@fz-juelich.de>
+remark: curator: Stella Eggels <s.eggels@fz-juelich.de>
 ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
@@ -2879,18 +2880,26 @@ is_a: DPBO:1000161 ! protocol type
 
 [Term]
 id: EFO:0004202
+name: Illumina Genome Analyzer IIx
+def: "A DNA sequencer developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004203
+name: Illumina HiSeq 2000
+def: "The Illumina HiSeq 2000 is a sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004205
+name: Illumina MiSeq
+def: "The Illumina MiSeq is a high-throughput sequencing machine developed by Illumina. Its primary applications include small whole-genome sequencing, targeted sequencing of a set of genes or gene regions and 16S metagenomic sequencing." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004206
+name: 454 GS 20 sequencer
+def: "The 454 GS 20 is a GS20 high-throughput sequencing machine developed by 454 Life Sciences." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -2902,42 +2911,56 @@ is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0004431
+name: 454 GS sequencer
+def: "The 454 GS is a GS high-throughput sequencing machine developed by 454 Life Sciences." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004432
+name: 454 GS FLX sequencer
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004433
+name: 454 GS FLX Titanium sequencer
+def: "The 454 GS FLX Titanium sequencer is a GS high-throughput sequencing machine developed by 454 Life Sciences." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004434
+name: 454 GS Junior sequencer
+def: "The 454 GS Junior is a GS high-throughput sequencing machine developed by 454 Life Sciences." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004437
+name: AB SOLiD PI System
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004438
+name: AB SOLiD 4 System
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004439
+name: AB SOLiD System 3.0
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004441
+name: AB SOLiD 4hq System
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004442
+name: AB SOLiD System 2.0
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0004964
+name: total RNA
+def: "An RNA extract that is the output of an extraction process in which total RNA from either whole cells or from specific cellular compartment(s)/organelle(s) are isolated from a specimen." []
 is_a: DPBO:0000012 ! bio entity
 
 [Term]
@@ -2971,38 +2994,56 @@ is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0008563
+name: Illumina HiSeq 4000
+def: "The Illumina HiSeq 4000 is a high-throughput sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008564
+name: Illumina HiSeq 3000
+def: "The Illumina HiSeq 3000 is a high-throughput sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008565
+name: Illumina HiSeq 2500
+def: "The Illumina HiSeq 2500 is a sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008566
+name: Illumina NextSeq 550
+def: "The Illumina NextSeq 550 is a benchtop high-throughput sequencing machine developed by Illumina. Its primary applications include exome sequencing, targeted gene sequencing (amplicon, gene panel), whole-transcriptome sequencing and cytogenomic arrays." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008631
+name: PacBio RS II
+def: "The PacBio RS II is a high-throughput sequencing machine developed by PacBio. Its primary applications are whole genome sequencing of smaller organisms and targeted sequencing of DNA and RNA." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008632
+name: ONT MinION
+def: "The ONT MinION is a pocket-sized sequencing machine developed by Oxford Nanopore Technologies." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008635
+name: Illumina iSeq 100
+def: "The Illumina iSeq 100 is a benchtop sequencing machine developed by Illumina. Its primary applications include small whole-genome sequencing, targeted sequencing of a set of genes or gene regions, gene expression analysis and 16S metagenomic sequencing." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008636
+name: Illumina MiniSeq
+def: "The Illumina MiniSeq is a benchtop sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: EFO:0008637
+name: Illumina NovaSeq 6000
+def: "The Illumina NovaSeq 6000 is a high-throughput sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3039,6 +3080,8 @@ property_value: IAO:0000117 "Dani Welter" xsd:string
 
 [Term]
 id: EFO:0009173
+name: Illumina NextSeq 500
+def: "The Illumina NextSeq 500 is a benchtop high-throughput sequencing machine developed by Illumina." [] 
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3048,6 +3091,8 @@ is_a: EFO:0000490 ! extraction protocol
 
 [Term]
 id: EFO:0011027
+name: Illumina HiSeq 1500
+def: "The Illumina HiSeq 1500 is a sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3120,30 +3165,38 @@ name: laboratory sequencing datum
 
 [Term]
 id: GENEPIO:0001924
+name: Complete Genomics platform
+def: "Damion Dooley's note: This platform is in-house and not a product per se. Complete Genomics states: 'Complete Genomics’ sequencing platform employs high-density DNA nanoarrays that are populated with DNA nanoballs (DNBs™). Base identification is performed using an unchained ligation-based read technology known as combinatorial probe-anchor ligation (cPAL™). The sequencing instrumentation is custom-developed to support this process. Details are described in our Science publication (Drmanac et al., 2010).'"
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0001928
+name: SOLiD 4hq System
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0001931
+name: SOLiD PI System
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0001932
+name: SOLiD System 2.0
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0001933
+name: SOLiD System 3.0
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0001936
+name: 454 Genome Sequencer FLX Titanium
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0001938
+name: 454 Genome Sequencer Junior
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3170,90 +3223,134 @@ property_value: IAO:0000119 "https://www.ncbi.nlm.nih.gov/books/NBK54984/table/S
 
 [Term]
 id: GENEPIO:0100109
+name: Illumina HiScanSQ
+def: "A DNA sequencer manufactured by the Illumina corporation using sequence-by-synthesis chemistry, and contains a HiScan Reader for sequencing and microarray-based analyses as well as an 'SQ Module' to support microfluidics." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100112
+name: Illumina HiSeq X Five
+def: "A DNA sequencer manufactured by the Illumina corporation using sequence-by-synthesis chemistry that consists of a set of 5 HiSeq X Sequencing Systems." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100113
+name: Illumina HiSeq X Ten
+def: "A DNA sequencer that consists of a set of 10 HiSeq X Sequencing Systems." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100115
+name: Illumina HiSeq 1500
+def: "A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell and a throughput of up to 35-50 Gb per day." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100121
+name: Illumina iSeq 100
+def: "A DNA sequencer manufactured by the Illumina corporation using sequence-by-synthesis chemistry that is lightweight and has an output capacity between 144MB-1.2GB." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100123
+name: Illumina NovaSeq 6000
+def: "A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and an output of up to 6000 Gb (32-40 B reads per run). The sequencer utilizes synthesis technology and patterned flow cells to optimize throughput and even spacing of sequencing clusters." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100124
+name: Illumina MiniSeq
+def: "A DNA sequencer which is manufactured by the Illumina corporation using sequence-by-synthesis chemistry that fits on a benchtop and has an output capacity of 1.65-7.5 Gb." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100128
+name: Illumina NextSeq 550
+def: "A DNA sequencer which is a desktop sequencer ideal for smaller-scale studies manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The 550 is an upgrade on the 500 model." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100131
+name: PacBio RS
+def: "A DNA sequencer manufactured by the Pacific Biosciences corporation which utilizes 'SMRT Cells' for single-molecule real-time sequencing. The RS was the first model made by the company." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100133
+name: PacBio Sequel
+def: "A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation with long reads and high consensus accuracy, and manufactured by the Pacific Biosciences corporation" []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100134
+name: PacBio Sequel II
+def: "A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation of highly accurate ('HiFi') long reads, and which is manufactured by the Pacific Biosciences corporation." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100136
+name: Ion Torrent PGM
+def: "A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and has an output capacity of 300 MB - 1GB." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100137
+name: Ion Torrent Proton
+def: "A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and has an output capacity of up to 15 Gb." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100138
+name: Ion Torrent S5 XL
+def: "A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and requires only a small amount of input material while producing data faster than the S5 model." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100139
+name: Ion Torrent S5
+def: "A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and requires only a small amount of input material." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100141
+name: Oxford Nanopore GridION
+def: "A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, that can run and analyze up to five individual flow cells producing up to 150 Gb of data per run. The sequencer produces real-time results and utilizes nanopore technology with the option of running the flow cells concurrently or individual" []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100142
+name: Oxford Nanopore MinION
+def: "A portable DNA sequencer which is manufactured by the Oxford Nanopore Technologies corporation, that uses consumable flow cells producing up to 30 Gb of DNA sequence data per flow cell. The sequencer produces real-time results and utilizes nanopore technology with up to 512 nanopore channels in the sensor array." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100143
+name: Oxford Nanopore PromethION
+def: "A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, capable of running up to 48 flow cells and producing up to 7.6 Tb of data per run. The sequencer produces real-time results and utilizes Nanopore technology, with each flow cell allowing up to 3,000 nanopores to be sequencing simultaneously." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100145
+name: BGI Genomics BGISEQ-500
+def: "A DNA sequencer manufactured by the BGI Genomics corporation that utilizes Probe-Anchor Synthesis (cPAS) chemistry and 'DNA Nanoballs'." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100147
+name: MGI DNBSEQ-T7
+def: "A high throughput DNA sequencer manufactured by the MGI corporation with an output capacity of 1; 6TB of data per day." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100148
+name: MGI DNBSEQ-G400
+def: "A DNA sequencer manufactured by the MGI corporation with an output capacity of 55GB; 1440GB per run." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: GENEPIO:0100150
+name: MGI DNBSEQ-G50
+def: "A DNA sequencer manufactured by the MGI corporation with an output capacity of 10～150 GB per run and enables different read lengths." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3281,10 +3378,14 @@ name: Cover Slip
 
 [Term]
 id: NCIT:C146812
+name: BGISEQ-500 Sequencing
+def: "A proprietary next-generation DNA sequencing system from BGI Genomics using combinatorial Probe-Anchor Synthesis (cPAS) and improved DNA Nanoballs (DNB) technology. The cPAS chemistry works by incorporating a fluorescent probe to a DNA anchor on the DNB, followed by high-resolution digital imaging." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: NCIT:C146815
+name: Complete Genomics Sequencing
+def: "A next-generation DNA sequencing service offered by Complete Genomics. Unamplified human genomic DNA is sheared into 500bp fragments and then amplified to create DNA nano-balls (DNBs). The DNBs are arrayed on a substrate and their sequence is determined by Combinatorial Probe-Anchor Ligation (cPAL) sequencing." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3314,10 +3415,14 @@ def: "A planned process which results in physical changes in a specified input m
 
 [Term]
 id: OBI:0000702
+name: 454 Genome Sequencer FLX
+def: "Is a DNA sequencer which was first manufactured by 454 Life Science Corporation in 2008 and enables pyrosequencing to be performed. It comprises both optics and fluidics subsystems, which are controlled by a computer subsystem. The fluidics subsystem ensures accurate reagent dispensing. It consists of a reagents cassette (which holds the reagent containers), a sipper manifold, pumps, valves, and debubblers. The fluidics subsystem flows the sequencing reagents across the wells of the PicoTiterPlate device, and moves the spent reagents from the PicoTiterPlate device to the waste receptacle. The optics subsystem consists of a CCD camera and a camera controller. The camera captures the light emitted in the wells of the PicoTiterPlate device during each step of the sequencing cycle, and sends the digital images to the computer subsystem for processing. The computer controls the other Sequencer subsystems, and processes the digital images sent by the camera to extract the DNA sequence information. It has the ability to sequence 400-600 million base pairs per run with 400-500 base pair read lengths." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0000717
+name: HeliScope Single Molecule Sequencer
+def: "Is a DNA sequencer manufacturer by Helicos Corporation to carry out Single Molecule sequencing using reversible termination chemistry" []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3331,66 +3436,98 @@ def: "An image acquisition device that takes video or still photographs, or both
 
 [Term]
 id: OBI:0002000
+name: Genome Analyzer IIx
+def: "An Illumina Genome Analyzer II which is manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The Genome Analyzer IIx is the most widely adopted next-generation sequencing platform and proven and published across the broadest range of research applications." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002001
+name: Illumina HiSeq 2000
+def: "A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 55 Gb per day. Built upon sequencing by synthesis technology, the machine is optimized for generation of data for multiple samples in a single run." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002002
+name: Illumina HiSeq 2500
+def: "A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 160 Gb per day. Built upon sequencing by synthesis technology, the machine is optimized for generation of data for batching multiple samples or rapid results on a few samples." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002007
+name: SOLiD 3 Plus System
+def: "A DNA sequencer which is manufacted by the Applied Biosystems corporation. Built upon SOLiD sequencing technology, the machine generates greater than 1 billion mappable reads per run." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002012
+name: PacBio RS II
+def: "A DNA sequencer which is manufactured by the Pacific Biosciences corporation. Built upon single molecule real-time sequencing technology, the machine is optimized for generation with long reads and high consensus accuracy." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002022
+name: Illumina HiSeq 1000
+def: "A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell and a throughput of up to 35 Gb per day. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002048
+name: Illumina HiSeq 3000
+def: "A DNA sequencer manufactured by Illumina corporation, with a single flow cell and a throughput of more than 200 Gb per day." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002049
+name: Illumina HiSeq 4000
+def: "A DNA sequencer manufactured by Illumina corporation, with two flow cell and a throughput of more than 400 Gb per day." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002129
+name: Illumina HiSeq X Ten
+def: "A DNA sequencer that consists of a set of 10 HiSeq X Sequencing Systems." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002630
+name: Illumina NovaSeq 6000
+def: "A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and an output of up to 6000 Gb (32-40 B reads per run). The sequencer utilizes synthesis technology and patterned flow cells to optimize throughput and even spacing of sequencing clusters." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002632
+name: PacBio Sequel
+def: " A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation with long reads and high consensus accuracy, and manufactured by the Pacific Biosciences corporation" []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002633
+name: PacBio Sequel II
+def: "A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation of highly accurate ('HiFi') long reads, and which is manufactured by the Pacific Biosciences corporation." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002750
+name: Oxford Nanopore MinION
+def: "A portable DNA sequencer which is manufactured by the Oxford Nanopore Technologies corporation, that uses consumable flow cells producing up to 30 Gb of DNA sequence data per flow cell. The sequencer produces real-time results and utilizes nanopore technology with up to 512 nanopore channels in the sensor array." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0002752
+name: Oxford Nanopore PromethION
+def: "A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, capable of running up to 48 flow cells and producing up to 7.6 Tb of data per run. The sequencer produces real-time results and utilizes Nanopore technology, with each flow cell allowing up to 3,000 nanopores to be sequencing simultaneously." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0003114
+name: Illumina MiniSeq
+def: "A small benchtop DNA sequencer which is manufactured by the Illumina corporation with integrated cluster generation, sequencing and data analysis. The sequencer accommodates various flow cell configurations and can produce up to 25M single reads or 50M paired-end reads per run." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
 id: OBI:0003386
+name: Illumina HiSeq 1500
+def: "A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell. Built upon sequencing by synthesis technology, the machine employs dual surface imaging and offers two high-output options and one rapid-run option." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]

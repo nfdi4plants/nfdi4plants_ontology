@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl">
+    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl"> 
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
         <dc:creator>https://orcid.org/0000-0003-1476-2121</dc:creator>
@@ -28,6 +28,7 @@
         <rdfs:comment>creator: Dominik Brilhaus &lt;dominik.brilhaus&lt;-at-&gt;hhu.de&gt;</rdfs:comment>
         <rdfs:comment>creator: Hajira Jabeen &lt;hajira.jabeen&lt;-at-&gt;uni-koeln.de&gt;</rdfs:comment>
         <rdfs:comment>curator: Kathryn Dumschott &lt;k.dumschott@fz-juelich.de&gt;</rdfs:comment>
+        <rdfs:comment>curator: Stella Eggels &lt;s.eggels@fz-juelich.de&gt;</rdfs:comment>
     </owl:Ontology>
     
 
@@ -5622,8 +5623,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004202</oboInOwl:id>
+        <rdfs:label>Illumina Genome Analyzer IIx</rdfs:label>
     </owl:Class>
     
 
@@ -5632,8 +5635,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina HiSeq 2000 is a sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004203</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 2000</rdfs:label>
     </owl:Class>
     
 
@@ -5642,8 +5647,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina MiSeq is a high-throughput sequencing machine developed by Illumina. Its primary applications include small whole-genome sequencing, targeted sequencing of a set of genes or gene regions and 16S metagenomic sequencing.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004205</oboInOwl:id>
+        <rdfs:label>Illumina MiSeq</rdfs:label>
     </owl:Class>
     
 
@@ -5652,8 +5659,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The 454 GS 20 is a GS20 high-throughput sequencing machine developed by 454 Life Sciences.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004206</oboInOwl:id>
+        <rdfs:label>454 GS 20 sequencer</rdfs:label>
     </owl:Class>
     
 
@@ -5675,8 +5684,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004431">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The 454 GS is a GS high-throughput sequencing machine developed by 454 Life Sciences.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004431</oboInOwl:id>
+        <rdfs:label>454 GS sequencer</rdfs:label>
     </owl:Class>
     
 
@@ -5687,6 +5698,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004432</oboInOwl:id>
+        <rdfs:label>454 GS FLX sequencer</rdfs:label>
     </owl:Class>
     
 
@@ -5695,8 +5707,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004433">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The 454 GS FLX Titanium sequencer is a GS high-throughput sequencing machine developed by 454 Life Sciences.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004433</oboInOwl:id>
+        <rdfs:label>454 GS FLX Titanium sequencer</rdfs:label>
     </owl:Class>
     
 
@@ -5705,8 +5719,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004434">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The 454 GS Junior is a GS high-throughput sequencing machine developed by 454 Life Sciences.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004434</oboInOwl:id>
+        <rdfs:label>454 GS Junior sequencer</rdfs:label>
     </owl:Class>
     
 
@@ -5717,6 +5733,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004437</oboInOwl:id>
+        <rdfs:label>AB SOLiD PI System</rdfs:label>
     </owl:Class>
     
 
@@ -5727,6 +5744,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004438</oboInOwl:id>
+        <rdfs:label>AB SOLiD 4 System</rdfs:label>
     </owl:Class>
     
 
@@ -5737,6 +5755,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004439</oboInOwl:id>
+        <rdfs:label>AB SOLiD System 3.0</rdfs:label>
     </owl:Class>
     
 
@@ -5747,6 +5766,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004441</oboInOwl:id>
+        <rdfs:label>AB SOLiD 4hq System</rdfs:label>
     </owl:Class>
     
 
@@ -5757,6 +5777,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004442</oboInOwl:id>
+        <rdfs:label>AB SOLiD System 2.0</rdfs:label>
     </owl:Class>
     
 
@@ -5765,8 +5786,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0004964">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <obo:IAO_0000115>An RNA extract that is the output of an extraction process in which total RNA from either whole cells or from specific cellular compartment(s)/organelle(s) are isolated from a specimen.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0004964</oboInOwl:id>
+        <rdfs:label>total RNA</rdfs:label>
     </owl:Class>
     
 
@@ -5834,8 +5857,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008563">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina HiSeq 4000 is a high-throughput sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008563</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 4000</rdfs:label>
     </owl:Class>
     
 
@@ -5844,8 +5869,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008564">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina HiSeq 3000 is a high-throughput sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008564</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 3000</rdfs:label>
     </owl:Class>
     
 
@@ -5854,8 +5881,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008565">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina HiSeq 2500 is a sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008565</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 2500</rdfs:label>
     </owl:Class>
     
 
@@ -5864,8 +5893,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008566">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina NextSeq 550 is a benchtop high-throughput sequencing machine developed by Illumina. Its primary applications include exome sequencing, targeted gene sequencing (amplicon, gene panel), whole-transcriptome sequencing and cytogenomic arrays.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008566</oboInOwl:id>
+        <rdfs:label>Illumina NextSeq 550</rdfs:label>
     </owl:Class>
     
 
@@ -5874,8 +5905,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008631">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The PacBio RS II is a high-throughput sequencing machine developed by PacBio. Its primary applications are whole genome sequencing of smaller organisms and targeted sequencing of DNA and RNA.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008631</oboInOwl:id>
+        <rdfs:label>PacBio RS II</rdfs:label>
     </owl:Class>
     
 
@@ -5884,8 +5917,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The ONT MinION is a pocket-sized sequencing machine developed by Oxford Nanopore Technologies.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008632</oboInOwl:id>
+        <rdfs:label>ONT MinION</rdfs:label>
     </owl:Class>
     
 
@@ -5894,8 +5929,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008635">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina iSeq 100 is a benchtop sequencing machine developed by Illumina. Its primary applications include small whole-genome sequencing, targeted sequencing of a set of genes or gene regions, gene expression analysis and 16S metagenomic sequencing.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008635</oboInOwl:id>
+        <rdfs:label>Illumina iSeq 100</rdfs:label>
     </owl:Class>
     
 
@@ -5904,8 +5941,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008636">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina MiniSeq is a benchtop sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008636</oboInOwl:id>
+        <rdfs:label>Illumina MiniSeq</rdfs:label>
     </owl:Class>
     
 
@@ -5914,8 +5953,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0008637">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina NovaSeq 6000 is a high-throughput sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0008637</oboInOwl:id>
+        <rdfs:label>Illumina NovaSeq 6000</rdfs:label>
     </owl:Class>
     
 
@@ -5980,8 +6021,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0009173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina NextSeq 500 is a benchtop high-throughput sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0009173</oboInOwl:id>
+        <rdfs:label>Illumina NextSeq 500</rdfs:label>
     </owl:Class>
     
 
@@ -6001,8 +6044,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0011027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>The Illumina HiSeq 1500 is a sequencing machine developed by Illumina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0011027</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 1500</rdfs:label>
     </owl:Class>
     
 
@@ -6145,8 +6190,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001924">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>Damion Dooley&apos;s note: This platform is in-house and not a product per se. Complete Genomics states: &apos;Complete Genomics’ sequencing platform employs high-density DNA nanoarrays that are populated with DNA nanoballs (DNBs™). Base identification is performed using an unchained ligation-based read technology known as combinatorial probe-anchor ligation (cPAL™). The sequencing instrumentation is custom-developed to support this process. Details are described in our Science publication (Drmanac et al., 2010).&apos;</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001924</oboInOwl:id>
+        <rdfs:label>Complete Genomics platform</rdfs:label>
     </owl:Class>
     
 
@@ -6157,6 +6204,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001928</oboInOwl:id>
+        <rdfs:label>SOLiD 4hq System</rdfs:label>
     </owl:Class>
     
 
@@ -6167,6 +6215,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001931</oboInOwl:id>
+        <rdfs:label>SOLiD PI System</rdfs:label>
     </owl:Class>
     
 
@@ -6177,6 +6226,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001932</oboInOwl:id>
+        <rdfs:label>SOLiD System 2.0</rdfs:label>
     </owl:Class>
     
 
@@ -6187,6 +6237,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001933</oboInOwl:id>
+        <rdfs:label>SOLiD System 3.0</rdfs:label>
     </owl:Class>
     
 
@@ -6197,6 +6248,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001936</oboInOwl:id>
+        <rdfs:label>454 Genome Sequencer FLX Titanium</rdfs:label>
     </owl:Class>
     
 
@@ -6207,6 +6259,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0001938</oboInOwl:id>
+        <rdfs:label>454 Genome Sequencer Junior</rdfs:label>
     </owl:Class>
     
 
@@ -6255,8 +6308,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Illumina corporation using sequence-by-synthesis chemistry, and contains a HiScan Reader for sequencing and microarray-based analyses as well as an &apos;SQ Module&apos; to support microfluidics.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100109</oboInOwl:id>
+        <rdfs:label>Illumina HiScanSQ</rdfs:label>
     </owl:Class>
     
 
@@ -6265,8 +6320,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Illumina corporation using sequence-by-synthesis chemistry that consists of a set of 5 HiSeq X Sequencing Systems.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100112</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq X Five</rdfs:label>
     </owl:Class>
     
 
@@ -6275,8 +6332,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer that consists of a set of 10 HiSeq X Sequencing Systems.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100113</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq X Ten</rdfs:label>
     </owl:Class>
     
 
@@ -6285,8 +6344,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell and a throughput of up to 35-50 Gb per day.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100115</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 1500</rdfs:label>
     </owl:Class>
     
 
@@ -6295,8 +6356,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Illumina corporation using sequence-by-synthesis chemistry that is lightweight and has an output capacity between 144MB-1.2GB.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100121</oboInOwl:id>
+        <rdfs:label>Illumina iSeq 100</rdfs:label>
     </owl:Class>
     
 
@@ -6305,8 +6368,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and an output of up to 6000 Gb (32-40 B reads per run). The sequencer utilizes synthesis technology and patterned flow cells to optimize throughput and even spacing of sequencing clusters.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100123</oboInOwl:id>
+        <rdfs:label>Illumina NovaSeq 6000</rdfs:label>
     </owl:Class>
     
 
@@ -6315,8 +6380,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation using sequence-by-synthesis chemistry that fits on a benchtop and has an output capacity of 1.65-7.5 Gb.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100124</oboInOwl:id>
+        <rdfs:label>Illumina MiniSeq</rdfs:label>
     </owl:Class>
     
 
@@ -6325,8 +6392,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is a desktop sequencer ideal for smaller-scale studies manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The 550 is an upgrade on the 500 model.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100128</oboInOwl:id>
+        <rdfs:label>Illumina NextSeq 550</rdfs:label>
     </owl:Class>
     
 
@@ -6335,8 +6404,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Pacific Biosciences corporation which utilizes &apos;SMRT Cells&apos; for single-molecule real-time sequencing. The RS was the first model made by the company.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100131</oboInOwl:id>
+        <rdfs:label>PacBio RS</rdfs:label>
     </owl:Class>
     
 
@@ -6345,8 +6416,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation with long reads and high consensus accuracy, and manufactured by the Pacific Biosciences corporation</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100133</oboInOwl:id>
+        <rdfs:label>PacBio Sequel</rdfs:label>
     </owl:Class>
     
 
@@ -6355,8 +6428,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation of highly accurate (&apos;HiFi&apos;) long reads, and which is manufactured by the Pacific Biosciences corporation.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100134</oboInOwl:id>
+        <rdfs:label>PacBio Sequel II</rdfs:label>
     </owl:Class>
     
 
@@ -6365,8 +6440,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100136">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and has an output capacity of 300 MB - 1GB.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100136</oboInOwl:id>
+        <rdfs:label>Ion Torrent PGM</rdfs:label>
     </owl:Class>
     
 
@@ -6375,8 +6452,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and has an output capacity of up to 15 Gb.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100137</oboInOwl:id>
+        <rdfs:label>Ion Torrent Proton</rdfs:label>
     </owl:Class>
     
 
@@ -6385,8 +6464,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and requires only a small amount of input material while producing data faster than the S5 model.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100138</oboInOwl:id>
+        <rdfs:label>Ion Torrent S5 XL</rdfs:label>
     </owl:Class>
     
 
@@ -6395,8 +6476,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100139">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the Ion Torrent corporation which utilizes Ion semiconductor sequencing and requires only a small amount of input material.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100139</oboInOwl:id>
+        <rdfs:label>Ion Torrent S5</rdfs:label>
     </owl:Class>
     
 
@@ -6405,8 +6488,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, that can run and analyze up to five individual flow cells producing up to 150 Gb of data per run. The sequencer produces real-time results and utilizes nanopore technology with the option of running the flow cells concurrently or individual</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100141</oboInOwl:id>
+        <rdfs:label>Oxford Nanopore GridION</rdfs:label>
     </owl:Class>
     
 
@@ -6415,8 +6500,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A portable DNA sequencer which is manufactured by the Oxford Nanopore Technologies corporation, that uses consumable flow cells producing up to 30 Gb of DNA sequence data per flow cell. The sequencer produces real-time results and utilizes nanopore technology with up to 512 nanopore channels in the sensor array.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100142</oboInOwl:id>
+        <rdfs:label>Oxford Nanopore MinION</rdfs:label>
     </owl:Class>
     
 
@@ -6425,8 +6512,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, capable of running up to 48 flow cells and producing up to 7.6 Tb of data per run. The sequencer produces real-time results and utilizes Nanopore technology, with each flow cell allowing up to 3,000 nanopores to be sequencing simultaneously.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100143</oboInOwl:id>
+        <rdfs:label>Oxford Nanopore PromethION</rdfs:label>
     </owl:Class>
     
 
@@ -6435,8 +6524,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the BGI Genomics corporation that utilizes Probe-Anchor Synthesis (cPAS) chemistry and &apos;DNA Nanoballs&apos;.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100145</oboInOwl:id>
+        <rdfs:label>BGI Genomics BGISEQ-500</rdfs:label>
     </owl:Class>
     
 
@@ -6445,8 +6536,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A high throughput DNA sequencer manufactured by the MGI corporation with an output capacity of 1; 6TB of data per day.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100147</oboInOwl:id>
+        <rdfs:label>MGI DNBSEQ-T7</rdfs:label>
     </owl:Class>
     
 
@@ -6455,8 +6548,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the MGI corporation with an output capacity of 55GB; 1440GB per run.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100148</oboInOwl:id>
+        <rdfs:label>MGI DNBSEQ-G400</rdfs:label>
     </owl:Class>
     
 
@@ -6465,8 +6560,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by the MGI corporation with an output capacity of 10～150 GB per run and enables different read lengths.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GENEPIO:0100150</oboInOwl:id>
+        <rdfs:label>MGI DNBSEQ-G50</rdfs:label>
     </owl:Class>
     
 
@@ -6528,8 +6625,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C146812">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A proprietary next-generation DNA sequencing system from BGI Genomics using combinatorial Probe-Anchor Synthesis (cPAS) and improved DNA Nanoballs (DNB) technology. The cPAS chemistry works by incorporating a fluorescent probe to a DNA anchor on the DNB, followed by high-resolution digital imaging.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>NCIT:C146812</oboInOwl:id>
+        <rdfs:label>BGISEQ-500 Sequencing</rdfs:label>
     </owl:Class>
     
 
@@ -6538,8 +6637,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C146815">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A next-generation DNA sequencing service offered by Complete Genomics. Unamplified human genomic DNA is sheared into 500bp fragments and then amplified to create DNA nano-balls (DNBs). The DNBs are arrayed on a substrate and their sequence is determined by Combinatorial Probe-Anchor Ligation (cPAL) sequencing.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>NCIT:C146815</oboInOwl:id>
+        <rdfs:label>Complete Genomics Sequencing</rdfs:label>
     </owl:Class>
     
 
@@ -6609,8 +6710,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000702">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>Is a DNA sequencer which was first manufactured by 454 Life Science Corporation in 2008 and enables pyrosequencing to be performed. It comprises both optics and fluidics subsystems, which are controlled by a computer subsystem. The fluidics subsystem ensures accurate reagent dispensing. It consists of a reagents cassette (which holds the reagent containers), a sipper manifold, pumps, valves, and debubblers. The fluidics subsystem flows the sequencing reagents across the wells of the PicoTiterPlate device, and moves the spent reagents from the PicoTiterPlate device to the waste receptacle. The optics subsystem consists of a CCD camera and a camera controller. The camera captures the light emitted in the wells of the PicoTiterPlate device during each step of the sequencing cycle, and sends the digital images to the computer subsystem for processing. The computer controls the other Sequencer subsystems, and processes the digital images sent by the camera to extract the DNA sequence information. It has the ability to sequence 400-600 million base pairs per run with 400-500 base pair read lengths.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0000702</oboInOwl:id>
+        <rdfs:label>454 Genome Sequencer FLX</rdfs:label>
     </owl:Class>
     
 
@@ -6619,8 +6722,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000717">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>Is a DNA sequencer manufacturer by Helicos Corporation to carry out Single Molecule sequencing using reversible termination chemistry</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0000717</oboInOwl:id>
+        <rdfs:label>HeliScope Single Molecule Sequencer</rdfs:label>
     </owl:Class>
     
 
@@ -6650,8 +6755,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>An Illumina Genome Analyzer II which is manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The Genome Analyzer IIx is the most widely adopted next-generation sequencing platform and proven and published across the broadest range of research applications.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002000</oboInOwl:id>
+        <rdfs:label>Genome Analyzer IIx</rdfs:label>
     </owl:Class>
     
 
@@ -6660,8 +6767,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 55 Gb per day. Built upon sequencing by synthesis technology, the machine is optimized for generation of data for multiple samples in a single run.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002001</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 2000</rdfs:label>
     </owl:Class>
     
 
@@ -6670,8 +6779,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 160 Gb per day. Built upon sequencing by synthesis technology, the machine is optimized for generation of data for batching multiple samples or rapid results on a few samples.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002002</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 2500</rdfs:label>
     </owl:Class>
     
 
@@ -6680,8 +6791,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufacted by the Applied Biosystems corporation. Built upon SOLiD sequencing technology, the machine generates greater than 1 billion mappable reads per run.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002007</oboInOwl:id>
+        <rdfs:label>SOLiD 3 Plus System</rdfs:label>
     </owl:Class>
     
 
@@ -6690,8 +6803,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Pacific Biosciences corporation. Built upon single molecule real-time sequencing technology, the machine is optimized for generation with long reads and high consensus accuracy.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002012</oboInOwl:id>
+        <rdfs:label>PacBio RS II</rdfs:label>
     </owl:Class>
     
 
@@ -6700,8 +6815,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell and a throughput of up to 35 Gb per day. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002022</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 1000</rdfs:label>
     </owl:Class>
     
 
@@ -6710,8 +6827,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by Illumina corporation, with a single flow cell and a throughput of more than 200 Gb per day.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002048</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 3000</rdfs:label>
     </owl:Class>
     
 
@@ -6720,8 +6839,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer manufactured by Illumina corporation, with two flow cell and a throughput of more than 400 Gb per day.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002049</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 4000</rdfs:label>
     </owl:Class>
     
 
@@ -6730,8 +6851,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer that consists of a set of 10 HiSeq X Sequencing Systems.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002129</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq X Ten</rdfs:label>
     </owl:Class>
     
 
@@ -6740,8 +6863,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002630">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and an output of up to 6000 Gb (32-40 B reads per run). The sequencer utilizes synthesis technology and patterned flow cells to optimize throughput and even spacing of sequencing clusters.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002630</oboInOwl:id>
+        <rdfs:label>Illumina NovaSeq 6000</rdfs:label>
     </owl:Class>
     
 
@@ -6750,8 +6875,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115> A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation with long reads and high consensus accuracy, and manufactured by the Pacific Biosciences corporation</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002632</oboInOwl:id>
+        <rdfs:label>PacBio Sequel</rdfs:label>
     </owl:Class>
     
 
@@ -6760,8 +6887,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002633">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation of highly accurate (&apos;HiFi&apos;) long reads, and which is manufactured by the Pacific Biosciences corporation.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002633</oboInOwl:id>
+        <rdfs:label>PacBio Sequel II</rdfs:label>
     </owl:Class>
     
 
@@ -6770,8 +6899,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002750">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A portable DNA sequencer which is manufactured by the Oxford Nanopore Technologies corporation, that uses consumable flow cells producing up to 30 Gb of DNA sequence data per flow cell. The sequencer produces real-time results and utilizes nanopore technology with up to 512 nanopore channels in the sensor array.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002750</oboInOwl:id>
+        <rdfs:label>Oxford Nanopore MinION</rdfs:label>
     </owl:Class>
     
 
@@ -6780,8 +6911,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002752">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, capable of running up to 48 flow cells and producing up to 7.6 Tb of data per run. The sequencer produces real-time results and utilizes Nanopore technology, with each flow cell allowing up to 3,000 nanopores to be sequencing simultaneously.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0002752</oboInOwl:id>
+        <rdfs:label>Oxford Nanopore PromethION</rdfs:label>
     </owl:Class>
     
 
@@ -6790,8 +6923,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A small benchtop DNA sequencer which is manufactured by the Illumina corporation with integrated cluster generation, sequencing and data analysis. The sequencer accommodates various flow cell configurations and can produce up to 25M single reads or 50M paired-end reads per run.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0003114</oboInOwl:id>
+        <rdfs:label>Illumina MiniSeq</rdfs:label>
     </owl:Class>
     
 
@@ -6800,8 +6935,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003386">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000040"/>
+        <obo:IAO_0000115>A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell. Built upon sequencing by synthesis technology, the machine employs dual surface imaging and offers two high-output options and one rapid-run option.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>OBI:0003386</oboInOwl:id>
+        <rdfs:label>Illumina HiSeq 1500</rdfs:label>
     </owl:Class>
     
 
