@@ -14,7 +14,7 @@ remark: curator: Stella Eggels <s.eggels@fz-juelich.de>
 ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "The DataPlant Ontology" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontology" xsd:string
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
@@ -1170,8 +1170,8 @@ is_obsolete: true
 [Term]
 id: DPBO:1000025
 name: OTHER: specify
-def: "placeholder def of OTHER: specify" []
-comment: To be transformed to an instance. DB
+def: "Any other possible library strategy that can be used for RNA-seq" []
+comment: "This is a term that is used to enter a library strategy as free text in the checklist of GEO for the upload of RNA-seq data."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
