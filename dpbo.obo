@@ -104,6 +104,12 @@ name: 96 well plate
 def: "This microplate contains 96 wells. It is suitable for a low throughput assay." []
 
 [Term]
+id: BAO:0000316
+name: genomic DNA
+def: "DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc." []
+is_a: DPBO:0000012 ! bio entity
+
+[Term]
 id: BAO:0010013
 name: 6 well plate
 
@@ -194,6 +200,12 @@ def: "A cell culture at the steepest slope of the growth curve of a culture-- at
 synonym: "exponential growth phase culture" RELATED []
 synonym: "log phase culture" RELATED []
 is_a: BTO:0001900 ! growth phase culture
+
+[Term]
+id: CHEBI:36080
+name: protein
+def: " biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome." []
+is_a: DPBO:0000012 ! bio entity
 
 [Term]
 id: CHMO:0000995
@@ -1762,27 +1774,28 @@ is_obsolete: true
 
 [Term]
 id: DPBO:1000092
-name: genomic DNA
+name: obsolete_genomic DNA
 def: "placeholder def of genomic DNA" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! bio entity
+comment: Term is redundant, please use BAO:0000316
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000093
-name: protein
+name: obsolete_protein
 def: "placeholder def of protein" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! bio entity
+comment: Term is redundant, please use CHEBI:36080
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000094
 name: other
-def: "placeholder def of other" []
-comment: To be transformed to an instance. DB
+def: "pAny other bio entity that can be characterized by high-throuput sequencing." []
 is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
