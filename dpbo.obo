@@ -1121,8 +1121,8 @@ is_obsolete: true
 [Term]
 id: DPBO:1000020
 name: SELEX
-def: "placeholder def of SELEX" []
-comment: To be transformed to an instance. DB
+def: "A library strategy for high-througput sequencing that is based on Systematic evolution of ligands by exponential enrichment." []
+comment: "Adapted from http://www.ebi.ac.uk/efo/EFO_0008918."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
@@ -1178,18 +1178,19 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 
 [Term]
 id: DPBO:1000026
-name: fastq
+name: obsolete_fastq
 def: "placeholder def of fastq" []
 comment: To be transformed to an instance. DB
-is_a: DPBO:0000021 ! raw data file format
+is_a: ObsoleteClass ! Obsolete Clas
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000027
 name: bam
-def: "placeholder def of bam" []
-comment: To be transformed to an instance. DB
+def: "Binary format for storing of sequencing data" []
+comment: Adapted from http://purl.obolibrary.org/obo/NGBO_6000021.
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1197,8 +1198,7 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000028
 name: Illumina_native_qseq
-def: "placeholder def of Illumina_native_qseq" []
-comment: To be transformed to an instance. DB
+def: "Illumina´s native QSEQ format" []
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1206,8 +1206,7 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000029
 name: Illumina_native
-def: "placeholder def of Illumina_native" []
-comment: To be transformed to an instance. DB
+def: "Illumina´s native sequencing format" []
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1215,8 +1214,7 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000030
 name: SOLiD_native_csfasta
-def: "placeholder def of SOLiD_native_csfasta" []
-comment: To be transformed to an instance. DB
+def: "SOLID´s native csfasta sequencing format" []
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1224,8 +1222,7 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000031
 name: SOLiD_native_qual
-def: "placeholder def of SOLiD_native_qual" []
-comment: To be transformed to an instance. DB
+def: "SOLI´s native quality sequencing format" []
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1233,8 +1230,8 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000032
 name: sff
-def: "placeholder def of sff" []
-comment: To be transformed to an instance. DB
+def: "Standard flowgram format (SFF) is a binary file format used to encode results of pyrosequencing from the 454 Life Sciences platform for high-throughput sequencing." []
+comment: http://edamontology.org/format_3284
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1242,8 +1239,7 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000033
 name: 454_native_seq
-def: "placeholder def of 454_native_seq" []
-comment: To be transformed to an instance. DB
+def: "454 pyrosequencing native sequencing file format" []
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1251,8 +1247,7 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000034
 name: 454_native_qual
-def: "placeholder def of 454_native_qual" []
-comment: To be transformed to an instance. DB
+def: "454 pyrosequencing native quality sequencing file format" []
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1260,8 +1255,7 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000035
 name: Helicos_native
-def: "placeholder def of Helicos_native" []
-comment: To be transformed to an instance. DB
+def: "Helicos native file format" []
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1269,8 +1263,8 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000036
 name: srf
-def: "placeholder def of srf" []
-comment: To be transformed to an instance. DB
+def: "Sequence Read Format (SRF) of sequence trace data. Supports submission to the NCBI Short Read Archive." []
+comment: http://edamontology.org/format_3017
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1278,8 +1272,8 @@ property_value: ER_target_term "RAW FILES_file type" xsd:string
 [Term]
 id: DPBO:1000037
 name: PacBio_HDF5
-def: "placeholder def of PacBio_HDF5" []
-comment: To be transformed to an instance. DB
+def: "PacBio hierarchical, filesystem-like data format that can store metadata in the form of user-defined, named attributes, which are attached to groups and datasets, and representations of images and tables built up using datasets, groups and attributes." []
+comment: Adapted from http://purl.obolibrary.org/obo/NCIT_C184763
 is_a: DPBO:0000021 ! raw data file format
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
@@ -1593,7 +1587,6 @@ is_obsolete: true
 [Term]
 id: DPBO:1000072
 name: AB 5500 Genetic Analyzer
-comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
@@ -1601,7 +1594,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000073
 name: AB 5500xl Genetic Analyzer
-comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
@@ -1609,7 +1601,6 @@ property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 [Term]
 id: DPBO:1000074
 name: AB 5500xl-W Genetic Analysis System
-comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
@@ -1644,7 +1635,6 @@ is_obsolete: true
 [Term]
 id: DPBO:1000078
 name: 454 GS FLX+
-comment: To be transformed to an instance. DB
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
@@ -1725,8 +1715,8 @@ is_obsolete: true
 [Term]
 id: DPBO:1000087
 name: paired-end
-def: "placeholder def of paired-end" []
-comment: To be transformed to an instance. DB
+def: "A library layout which describes that both ends of the library fragment are sequenced" []
+comment: Adapted from http://purl.obolibrary.org/obo/FBcv_0003221
 is_a: DPBO:0000015 ! library layout
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
@@ -1743,30 +1733,32 @@ is_obsolete: true
 
 [Term]
 id: DPBO:1000089
-name: polyA RNA
+name: obsolete_polyA RNA
 def: "placeholder def of polyA RNA" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! bio entity
+comment: Term is redundant, please use OBI_0000869
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
 [Term]
 id: DPBO:1000090
-name: cytoplasmic RNA
+name: obsolete_cytoplasmic RNA
 def: "placeholder def of cytoplasmic RNA" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! bio entity
+comment: Term is redundant, please use NCIT:C84512
+is_a: ObsoleteClass ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000091
-name: nuclear RNA
+name: obsolete_nuclear RNA
 def: "placeholder def of nuclear RNA" []
-comment: To be transformed to an instance. DB
-is_a: DPBO:0000012 ! bio entity
+comment: Term is redundant. Please use EFO:0030052
+is_a: ObsoleteClass ! ObsoleteClass
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
+is_obsolete: true
 
 [Term]
 id: DPBO:1000092
@@ -2820,6 +2812,12 @@ comment: https://genomicsstandardsconsortium.github.io/mixs/0000072/
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
+id: EDAM:1930
+name: FASTQ
+def: "FASTQ short read format ignoring quality scores."
+is_a: DPBO:0000021 ! raw data file format
+
+[Term]
 id: EFO:0000490
 name: extraction protocol
 is_a: DPBO:1000170 ! sample processing protocol
@@ -3104,6 +3102,11 @@ is_a: EFO:0000490 ! extraction protocol
 id: EFO:0022384
 name: DNA extraction protocol
 is_a: EFO:0000490 ! extraction protocol
+
+[Term]
+id: EFO:0030052
+name: nuclear RNA
+is_a: DPBO:0000012 ! bio entity
 
 [Term]
 id: ERO:0001788
@@ -3404,6 +3407,12 @@ xref: MIAPPE:0043
 xref: NCBITaxon:species
 
 [Term]
+id: NCIT:C84512
+name: Cytoplasmic RNA
+def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
+is_a: DPBO:0000012 ! bio entity
+
+[Term]
 id: OBI:0000079
 name: culture medium
 def: "a processed material that provides the needed nourishment for microorganisms or cells grown in vitro." []
@@ -3424,6 +3433,12 @@ id: OBI:0000717
 name: HeliScope Single Molecule Sequencer
 def: "Is a DNA sequencer manufacturer by Helicos Corporation to carry out Single Molecule sequencing using reversible termination chemistry" []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: OBI_0000869
+name: polyA RNA
+def: "A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3' end are purified." []
+is_a: DPBO:0000012 ! bio entity
 
 [Term]
 id: OBI:0000967
