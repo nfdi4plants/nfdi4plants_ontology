@@ -16,7 +16,7 @@
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
         <dc:creator>https://orcid.org/0000-0003-1476-2121</dc:creator>
-        <dc:title>The DataPlant Ontology</dc:title>
+        <dc:title>DataPLANT Biology Ontology</dc:title>
         <oboInOwl:default-namespace>DPBO</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by>muehlhaus</oboInOwl:saved-by>
