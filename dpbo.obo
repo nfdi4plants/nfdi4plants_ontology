@@ -1093,8 +1093,8 @@ is_obsolete: true
 [Term]
 id: DPBO:1000017
 name: DNase hypersensitivity
-def: "placeholder def of DNase-Hypersensitivity" []
-comment: To be transformed to an instance. DB
+def: "A library strategy that is used to characterize the DNase hypersensitivity of a genome by treatment with DNase before library preparation." []
+comment: "Adapted from FBcv:0003058."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
@@ -1102,8 +1102,8 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 [Term]
 id: DPBO:1000018
 name: Tn-seq
-def: "placeholder def of Tn-Seq" []
-comment: To be transformed to an instance. DB
+def: "A library strategy that is used to sequence transposons." []
+comment: "Adapted from http://www.ebi.ac.uk/efo/EFO_0008973."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
