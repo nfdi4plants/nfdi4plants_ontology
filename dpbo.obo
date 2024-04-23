@@ -15,7 +15,7 @@ ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
 id: AGRO:00000007
@@ -99,15 +99,15 @@ def: "A planned process which occurs in an agricultural field." []
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-8461-9745
 
 [Term]
-id: BAO:0000513
-name: 96 well plate
-def: "This microplate contains 96 wells. It is suitable for a low throughput assay." []
-
-[Term]
 id: BAO:0000316
 name: genomic DNA
 def: "DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc." []
 is_a: DPBO:0000012 ! bio entity
+
+[Term]
+id: BAO:0000513
+name: 96 well plate
+def: "This microplate contains 96 wells. It is suitable for a low throughput assay." []
 
 [Term]
 id: BAO:0010013
@@ -233,6 +233,11 @@ def: "The removal of water from a sample by placing it under reduced pressure. T
 is_a: CHMO:0001549 ! sample drying
 
 [Term]
+id:CHMO:0001577
+name: extraction
+def: "The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it." []
+
+[Term]
 id: CHMO:0001583
 name: liquid-solid extraction
 def: "The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a stationary phase (e.g. silica particles)." [ISBN:0-13-147835-4]
@@ -320,6 +325,12 @@ synonym: "packed syringe microextraction" EXACT []
 synonym: "packed-syringe micro-extraction" EXACT []
 synonym: "packed-syringe microextraction" EXACT []
 is_a: CHMO:0001586 ! solid-phase micro-extraction
+
+[Term]
+id: CHMO:0001598
+name: solvent extraction
+def: "The process of transferring a substance from any matrix to an appropriate liquid phase." [OrangeBook:9.4.1]
+is_a: CHMO:0001577 ! extraction
 
 [Term]
 id: CHMO:0001652
@@ -794,7 +805,6 @@ def: "Short unique identifier for the sequencing library" []
 comment: "Required for upload of next-generation sequencing data to SRA."
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
-
 [Term]
 id: DPBO:0002000
 name: alias
@@ -1006,7 +1016,6 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 id: DPBO:1000006
 name: RNA-seq (size fractionation)
 def: "A library strategy with an additional size fractionation step after RNA-seq library preparation" []
-comment: 
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
@@ -1201,7 +1210,7 @@ id: DPBO:1000026
 name: obsolete_fastq
 def: "placeholder def of fastq" []
 comment: To be transformed to an instance. DB
-is_a: ObsoleteClass ! Obsolete Clas
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_file type" xsd:string
 is_obsolete: true
@@ -1765,7 +1774,7 @@ id: DPBO:1000090
 name: obsolete_cytoplasmic RNA
 def: "placeholder def of cytoplasmic RNA" []
 comment: Term is redundant, please use NCIT:C84512
-is_a: ObsoleteClass ! bio entity
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 is_obsolete: true
@@ -1775,7 +1784,7 @@ id: DPBO:1000091
 name: obsolete_nuclear RNA
 def: "placeholder def of nuclear RNA" []
 comment: Term is redundant. Please use EFO:0030052
-is_a: ObsoleteClass ! ObsoleteClass
+is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 is_obsolete: true
@@ -2835,7 +2844,7 @@ created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 [Term]
 id: EDAM:1930
 name: FASTQ
-def: "FASTQ short read format ignoring quality scores."
+def: "FASTQ short read format ignoring quality scores." []
 is_a: DPBO:0000021 ! raw data file format
 
 [Term]
@@ -3100,7 +3109,7 @@ property_value: IAO:0000117 "Dani Welter" xsd:string
 [Term]
 id: EFO:0009173
 name: Illumina NextSeq 500
-def: "The Illumina NextSeq 500 is a benchtop high-throughput sequencing machine developed by Illumina." [] 
+def: "The Illumina NextSeq 500 is a benchtop high-throughput sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3190,7 +3199,7 @@ name: laboratory sequencing datum
 [Term]
 id: GENEPIO:0001924
 name: Complete Genomics platform
-def: "Damion Dooley's note: This platform is in-house and not a product per se. Complete Genomics states: 'Complete Genomics’ sequencing platform employs high-density DNA nanoarrays that are populated with DNA nanoballs (DNBs™). Base identification is performed using an unchained ligation-based read technology known as combinatorial probe-anchor ligation (cPAL™). The sequencing instrumentation is custom-developed to support this process. Details are described in our Science publication (Drmanac et al., 2010).'"
+def: "Damion Dooley's note: This platform is in-house and not a product per se. Complete Genomics states: 'Complete Genomics’ sequencing platform employs high-density DNA nanoarrays that are populated with DNA nanoballs (DNBs™). Base identification is performed using an unchained ligation-based read technology known as combinatorial probe-anchor ligation (cPAL™). The sequencing instrumentation is custom-developed to support this process. Details are described in our Science publication (Drmanac et al., 2010).'" []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
@@ -3456,12 +3465,6 @@ def: "Is a DNA sequencer manufacturer by Helicos Corporation to carry out Single
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
-id: OBI_0000869
-name: polyA RNA
-def: "A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3' end are purified." []
-is_a: DPBO:0000012 ! bio entity
-
-[Term]
 id: OBI:0000967
 name: container
 
@@ -3583,6 +3586,12 @@ def: "A microscope is an instrument which magnifies the view on objects (too sma
 id: OBI:0400170
 name: microscope slide
 def: "A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument" []
+
+[Term]
+id: OBI_0000869
+name: polyA RNA
+def: "A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3' end are purified." []
+is_a: DPBO:0000012 ! bio entity
 
 [Term]
 id: OME:Objective

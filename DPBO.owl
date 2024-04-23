@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl"> 
+    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
         <dc:creator>https://orcid.org/0000-0003-1476-2121</dc:creator>
@@ -486,6 +486,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BAO_0000316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BAO_0000316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <obo:IAO_0000115>DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BAO:0000316</oboInOwl:id>
+        <rdfs:label>genomic DNA</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BAO_0000513 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BAO_0000513">
@@ -705,6 +717,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <obo:IAO_0000115> biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:36080</oboInOwl:id>
+        <rdfs:label>protein</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0000995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000995">
@@ -775,6 +799,17 @@
         <owl:annotatedTarget>The removal of water from a sample by placing it under reduced pressure. This allows water to evaporate from (heat-sensitive) samples at a lower temperature.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001577">
+        <obo:IAO_0000115>The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHMO:0001577</oboInOwl:id>
+        <rdfs:label>extraction</rdfs:label>
+    </owl:Class>
     
 
 
@@ -971,6 +1006,24 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process of transferring a substance from a liquid to a solid phase by passing the liquid sample through a stationary phase (1 mg) packed into a microlitre syringe.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1002/jms.73</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001598 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001598">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001577"/>
+        <obo:IAO_0000115>The process of transferring a substance from any matrix to an appropriate liquid phase.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHMO:0001598</oboInOwl:id>
+        <rdfs:label>solvent extraction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001598"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The process of transferring a substance from any matrix to an appropriate liquid phase.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>OrangeBook:9.4.1</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1890,13 +1943,26 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000015"/>
-        <obo:IAO_0000115>placeholder def of single-end</obo:IAO_0000115>
+        <obo:IAO_0000115>A library layout which describes that only one end of the library fragment is sequenced</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_single or paired-end</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000086</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from http://purl.obolibrary.org/obo/FBcv_0003220&quot;</rdfs:comment>
         <rdfs:label>single-end</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000087">
+        <obo:IAO_0000115>Short unique identifier for the sequencing library</obo:IAO_0000115>
+        <oboInOwl:created_by>Angela Kranz | ORCID: 0000-0002-8000-0400</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000087</oboInOwl:id>
+        <rdfs:comment>&quot;Required for upload of next-generation sequencing data to SRA.&quot;</rdfs:comment>
+        <rdfs:label>library_ID</rdfs:label>
     </owl:Class>
     
 
@@ -2238,12 +2304,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of miRNA-Seq</obo:IAO_0000115>
+        <obo:IAO_0000115>A library strategy that can identify and quantify the microRNA sequences present in a biological sample.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000004</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from http://purl.obolibrary.org/obo/NCIT_C156057&quot;</rdfs:comment>
         <rdfs:label>miRNA-seq</rdfs:label>
     </owl:Class>
     
@@ -2253,12 +2319,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of ncRNA-Seq</obo:IAO_0000115>
+        <obo:IAO_0000115>A next-generation sequencing library strategy that can determine the small and large non-protein coding RNA transcripts in a sample.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000005</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from http://purl.obolibrary.org/obo/NCIT_C172858&quot;</rdfs:comment>
         <rdfs:label>ncRNA-seq</rdfs:label>
     </owl:Class>
     
@@ -2268,12 +2334,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of RNA-Seq (size fractionation)</obo:IAO_0000115>
+        <obo:IAO_0000115>A library strategy with an additional size fractionation step after RNA-seq library preparation</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000006</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment></rdfs:comment>
         <rdfs:label>RNA-seq (size fractionation)</rdfs:label>
     </owl:Class>
     
@@ -2283,12 +2349,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of RNA-Seq (CAGE)</obo:IAO_0000115>
+        <obo:IAO_0000115>A library strategy that is used to sequence the 5&apos; capped transcripts, using CAGE to biotinylate and isolate the 7-methylguanosine cap.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000007</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from http://purl.obolibrary.org/obo/FBcv_0003051&quot;</rdfs:comment>
         <rdfs:label>RNA-seq (CAGE)</rdfs:label>
     </owl:Class>
     
@@ -2298,12 +2364,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of RNA-Seq (RACE)</obo:IAO_0000115>
+        <obo:IAO_0000115>Rapid Amplification of cDNA Ends (RACE) is a library strategy for RNA-seq that is used to obtain the full length sequence of an RNA transcript found within a cell. RACE produces a cDNA copy of the RNA through reverse transcription which is amplified and sequenced.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000008</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from http://www.ebi.ac.uk/efo/EFO_0004182.&quot;</rdfs:comment>
         <rdfs:label>RNA-seq (RACE)</rdfs:label>
     </owl:Class>
     
@@ -2442,12 +2508,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of DNase-Hypersensitivity</obo:IAO_0000115>
+        <obo:IAO_0000115>A library strategy that is used to characterize the DNase hypersensitivity of a genome by treatment with DNase before library preparation.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000017</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from FBcv:0003058.&quot;</rdfs:comment>
         <rdfs:label>DNase hypersensitivity</rdfs:label>
     </owl:Class>
     
@@ -2457,12 +2523,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of Tn-Seq</obo:IAO_0000115>
+        <obo:IAO_0000115>A library strategy that is used to sequence transposons.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000018</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from http://www.ebi.ac.uk/efo/EFO_0008973.&quot;</rdfs:comment>
         <rdfs:label>Tn-seq</rdfs:label>
     </owl:Class>
     
@@ -2488,12 +2554,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of SELEX</obo:IAO_0000115>
+        <obo:IAO_0000115>A library strategy for high-througput sequencing that is based on Systematic evolution of ligands by exponential enrichment.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000020</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;Adapted from http://www.ebi.ac.uk/efo/EFO_0008918.&quot;</rdfs:comment>
         <rdfs:label>SELEX</rdfs:label>
     </owl:Class>
     
@@ -2568,12 +2634,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001973"/>
-        <obo:IAO_0000115>placeholder def of OTHER: specify</obo:IAO_0000115>
+        <obo:IAO_0000115>Any other possible library strategy that can be used for RNA-seq</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>PROTOCOLS_library strategy</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000025</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>&quot;This is a term that is used to enter a library strategy as free text in the checklist of GEO for the upload of RNA-seq data.&quot;</rdfs:comment>
         <rdfs:label>OTHER: specify</rdfs:label>
     </owl:Class>
     
@@ -2582,14 +2648,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of fastq</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000026</oboInOwl:id>
         <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
-        <rdfs:label>fastq</rdfs:label>
+        <rdfs:label>obsolete_fastq</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2598,12 +2665,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of bam</obo:IAO_0000115>
+        <obo:IAO_0000115>Binary format for storing of sequencing data</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000027</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>Adapted from http://purl.obolibrary.org/obo/NGBO_6000021.</rdfs:comment>
         <rdfs:label>bam</rdfs:label>
     </owl:Class>
     
@@ -2613,12 +2680,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of Illumina_native_qseq</obo:IAO_0000115>
+        <obo:IAO_0000115>Illumina´s native QSEQ format</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000028</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>Illumina_native_qseq</rdfs:label>
     </owl:Class>
     
@@ -2628,12 +2694,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of Illumina_native</obo:IAO_0000115>
+        <obo:IAO_0000115>Illumina´s native sequencing format</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000029</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>Illumina_native</rdfs:label>
     </owl:Class>
     
@@ -2643,12 +2708,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of SOLiD_native_csfasta</obo:IAO_0000115>
+        <obo:IAO_0000115>SOLID´s native csfasta sequencing format</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000030</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>SOLiD_native_csfasta</rdfs:label>
     </owl:Class>
     
@@ -2658,12 +2722,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of SOLiD_native_qual</obo:IAO_0000115>
+        <obo:IAO_0000115>SOLI´s native quality sequencing format</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000031</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>SOLiD_native_qual</rdfs:label>
     </owl:Class>
     
@@ -2673,12 +2736,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of sff</obo:IAO_0000115>
+        <obo:IAO_0000115>Standard flowgram format (SFF) is a binary file format used to encode results of pyrosequencing from the 454 Life Sciences platform for high-throughput sequencing.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000032</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>http://edamontology.org/format_3284</rdfs:comment>
         <rdfs:label>sff</rdfs:label>
     </owl:Class>
     
@@ -2688,12 +2751,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of 454_native_seq</obo:IAO_0000115>
+        <obo:IAO_0000115>454 pyrosequencing native sequencing file format</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000033</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>454_native_seq</rdfs:label>
     </owl:Class>
     
@@ -2703,12 +2765,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of 454_native_qual</obo:IAO_0000115>
+        <obo:IAO_0000115>454 pyrosequencing native quality sequencing file format</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000034</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>454_native_qual</rdfs:label>
     </owl:Class>
     
@@ -2718,12 +2779,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of Helicos_native</obo:IAO_0000115>
+        <obo:IAO_0000115>Helicos native file format</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000035</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>Helicos_native</rdfs:label>
     </owl:Class>
     
@@ -2733,12 +2793,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of srf</obo:IAO_0000115>
+        <obo:IAO_0000115>Sequence Read Format (SRF) of sequence trace data. Supports submission to the NCBI Short Read Archive.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000036</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>http://edamontology.org/format_3017</rdfs:comment>
         <rdfs:label>srf</rdfs:label>
     </owl:Class>
     
@@ -2748,12 +2808,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
-        <obo:IAO_0000115>placeholder def of PacBio_HDF5</obo:IAO_0000115>
+        <obo:IAO_0000115>PacBio hierarchical, filesystem-like data format that can store metadata in the form of user-defined, named attributes, which are attached to groups and datasets, and representations of images and tables built up using datasets, groups and attributes.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_file type</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000037</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>Adapted from http://purl.obolibrary.org/obo/NCIT_C184763</rdfs:comment>
         <rdfs:label>PacBio_HDF5</rdfs:label>
     </owl:Class>
     
@@ -3277,7 +3337,6 @@
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000072</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>AB 5500 Genetic Analyzer</rdfs:label>
     </owl:Class>
     
@@ -3291,7 +3350,6 @@
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000073</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>AB 5500xl Genetic Analyzer</rdfs:label>
     </owl:Class>
     
@@ -3305,7 +3363,6 @@
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000074</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>AB 5500xl-W Genetic Analysis System</rdfs:label>
     </owl:Class>
     
@@ -3364,7 +3421,6 @@
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000078</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>454 GS FLX+</rdfs:label>
     </owl:Class>
     
@@ -3495,12 +3551,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000015"/>
-        <obo:IAO_0000115>placeholder def of paired-end</obo:IAO_0000115>
+        <obo:IAO_0000115>A library layout which describes that both ends of the library fragment are sequenced</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_single or paired-end</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000087</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
+        <rdfs:comment>Adapted from http://purl.obolibrary.org/obo/FBcv_0003221</rdfs:comment>
         <rdfs:label>paired-end</rdfs:label>
     </owl:Class>
     
@@ -3525,14 +3581,14 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000089 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000089">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of polyA RNA</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000089</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
-        <rdfs:label>polyA RNA</rdfs:label>
+        <rdfs:comment>Term is redundant, please use OBI_0000869</rdfs:comment>
+        <rdfs:label>obsolete_polyA RNA</rdfs:label>
     </owl:Class>
     
 
@@ -3540,14 +3596,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of cytoplasmic RNA</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000090</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
-        <rdfs:label>cytoplasmic RNA</rdfs:label>
+        <rdfs:comment>Term is redundant, please use NCIT:C84512</rdfs:comment>
+        <rdfs:label>obsolete_cytoplasmic RNA</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3555,14 +3612,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of nuclear RNA</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000091</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
-        <rdfs:label>nuclear RNA</rdfs:label>
+        <rdfs:comment>Term is redundant. Please use EFO:0030052</rdfs:comment>
+        <rdfs:label>obsolete_nuclear RNA</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3570,14 +3628,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of genomic DNA</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000092</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
-        <rdfs:label>genomic DNA</rdfs:label>
+        <rdfs:comment>Term is redundant, please use BAO:0000316</rdfs:comment>
+        <rdfs:label>obsolete_genomic DNA</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3585,14 +3644,15 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_1000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of protein</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000093</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
-        <rdfs:label>protein</rdfs:label>
+        <rdfs:comment>Term is redundant, please use CHEBI:36080</rdfs:comment>
+        <rdfs:label>obsolete_protein</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3601,12 +3661,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
-        <obo:IAO_0000115>placeholder def of other</obo:IAO_0000115>
+        <obo:IAO_0000115>pAny other bio entity that can be characterized by high-throuput sequencing.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000094</oboInOwl:id>
-        <rdfs:comment>To be transformed to an instance. DB</rdfs:comment>
         <rdfs:label>other</rdfs:label>
     </owl:Class>
     
@@ -5500,6 +5559,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EDAM_1930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EDAM_1930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000021"/>
+        <obo:IAO_0000115>FASTQ short read format ignoring quality scores.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EDAM:1930</oboInOwl:id>
+        <rdfs:label>FASTQ</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EFO_0000490 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0000490">
@@ -6070,6 +6141,17 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>EFO:0022384</oboInOwl:id>
         <rdfs:label>DNA extraction protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EFO_0030052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0030052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0030052</oboInOwl:id>
+        <rdfs:label>nuclear RNA</rdfs:label>
     </owl:Class>
     
 
@@ -6680,6 +6762,18 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>NCIT:C45293</oboInOwl:id>
         <rdfs:label>Species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C84512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C84512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <obo:IAO_0000115>RNA present in the cytoplasm. It is involved in the protein export process from the cells.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT:C84512</oboInOwl:id>
+        <rdfs:label>Cytoplasmic RNA</rdfs:label>
     </owl:Class>
     
 
@@ -7644,6 +7738,18 @@
         <rdfs:comment>term is redundant, please use GENEPIO:0001973</rdfs:comment>
         <rdfs:label>library strategy</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#OBI_0000869 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#OBI_0000869">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <obo:IAO_0000115>A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3&apos; end are purified.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI_0000869</oboInOwl:id>
+        <rdfs:label>polyA RNA</rdfs:label>
     </owl:Class>
     
 
