@@ -206,6 +206,14 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
@@ -5566,6 +5574,26 @@
         <oboInOwl:id>DPBO:1000242</oboInOwl:id>
         <rdfs:comment>https://genomicsstandardsconsortium.github.io/mixs/0000072/</rdfs:comment>
         <rdfs:label>contamination score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EDAM_0593 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EDAM_0593">
+        <obo:IAO_0000115>An analytical technique that exploits the magenetic properties of certain atomic nuclei to provide information on the structure, dynamics, reaction state and chemical environment of molecules.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>Spectroscopy</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>NMR spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nuclear magnetic resonance spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>HOESY</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Heteronuclear Overhauser Effect Spectroscopy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>NOESY</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Nuclear Overhauser Effect Spectroscopy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>ROESY</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Rotational Frame Nuclear Overhauser Effect Spectroscopy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EDAM:0593</oboInOwl:id>
+        <rdfs:label>NMR</rdfs:label>
     </owl:Class>
     
 

@@ -2847,6 +2847,20 @@ comment: https://genomicsstandardsconsortium.github.io/mixs/0000072/
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
+id: EDAM:0593
+name: NMR
+def: "An analytical technique that exploits the magenetic properties of certain atomic nuclei to provide information on the structure, dynamics, reaction state and chemical environment of molecules." []
+synonym: "Heteronuclear Overhauser Effect Spectroscopy" NARROW []
+synonym: "HOESY" NARROW []
+synonym: "NMR spectroscopy" EXACT []
+synonym: "NOESY" NARROW []
+synonym: "Nuclear magnetic resonance spectroscopy" EXACT []
+synonym: "Nuclear Overhauser Effect Spectroscopy" NARROW []
+synonym: "ROESY" NARROW []
+synonym: "Rotational Frame Nuclear Overhauser Effect Spectroscopy" NARROW []
+synonym: "Spectroscopy" BROAD []
+
+[Term]
 id: EDAM:1930
 name: FASTQ
 def: "FASTQ short read format ignoring quality scores." []
@@ -3999,4 +4013,3 @@ comment: term is redundant, please use GENEPIO:0001973
 xref: GENEPIO:0001973
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
-
