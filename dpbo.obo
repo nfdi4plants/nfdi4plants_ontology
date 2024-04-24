@@ -18,6 +18,11 @@ property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontolog
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
+id: AFR:0002149
+name: sample temperature
+def: "A sample temperature result is a quality quantification facet that quantifies the temperature of the sample." []
+
+[Term]
 id: AGRO:00000007
 name: desuckering
 def: "A pruning process in which one or more suckers are removed." []
@@ -233,7 +238,7 @@ def: "The removal of water from a sample by placing it under reduced pressure. T
 is_a: CHMO:0001549 ! sample drying
 
 [Term]
-id:CHMO:0001577
+id: CHMO:0001577
 name: extraction
 def: "The transfer of a solute from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it." []
 
@@ -3441,6 +3446,37 @@ id: NCIT:C84512
 name: Cytoplasmic RNA
 def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
 is_a: DPBO:0000012 ! bio entity
+
+[Term]
+id: NMR:1000019
+name: sample pH
+is_a: NMR:1002011 ! pH
+
+[Term]
+id: NMR:1001954
+name: NMR acquisition parameter
+def: "Parameters used in the NMR spectrometry acquisition." []
+
+[Term]
+id: NMR:1002011
+name: pH
+
+[Term]
+id: NMR:1400027
+name: field strength
+def: "The intensity of an electric, magnetic, or other field." []
+
+[Term]
+id: NMR:1400087
+name: number of scans
+def: "The number of repeat scans performed and summed to create the data set for an NMR sample." []
+is_a: NMR:1001954 ! NMR acquisition parameter
+
+[Term]
+id: NMR:1400253
+name: magnetic field strength
+comment: defneed
+is_a: NMR:1400027 ! field strength
 
 [Term]
 id: OBI:0000079

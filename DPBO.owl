@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl">
+    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl"> 
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
         <dc:creator>https://orcid.org/0000-0003-1476-2121</dc:creator>
@@ -311,6 +311,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AFR_0002149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AFR_0002149">
+        <obo:IAO_0000115>A sample temperature result is a quality quantification facet that quantifies the temperature of the sample.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AFR:0002149</oboInOwl:id>
+        <rdfs:label>sample temperature</rdfs:label>
+    </owl:Class>
     
 
 
@@ -6774,6 +6785,73 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>NCIT:C84512</oboInOwl:id>
         <rdfs:label>Cytoplasmic RNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NMR_1000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NMR_1000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NMR_1002011"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NMR:1000019</oboInOwl:id>
+        <rdfs:label>sample pH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NMR_1001954 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NMR_1001954">
+        <obo:IAO_0000115>Parameters used in the NMR spectrometry acquisition.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NMR:1001954</oboInOwl:id>
+        <rdfs:label>NMR acquisition parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NMR_1002011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NMR_1002011">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NMR:1002011</oboInOwl:id>
+        <rdfs:label>pH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NMR_1400027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NMR_1400027">
+        <obo:IAO_0000115>The intensity of an electric, magnetic, or other field.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NMR:1400027</oboInOwl:id>
+        <rdfs:label>field strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NMR_1400087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NMR_1400087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NMR_1001954"/>
+        <obo:IAO_0000115>The number of repeat scans performed and summed to create the data set for an NMR sample.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NMR:1400087</oboInOwl:id>
+        <rdfs:label>number of scans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NMR_1400253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NMR_1400253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NMR_1400027"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NMR:1400253</oboInOwl:id>
+        <rdfs:comment>defneed</rdfs:comment>
+        <rdfs:label>magnetic field strength</rdfs:label>
     </owl:Class>
     
 
