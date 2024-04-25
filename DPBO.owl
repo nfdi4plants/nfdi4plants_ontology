@@ -322,6 +322,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AFR_0001577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AFR_0001577">
+        <obo:IAO_0000115>The injection volume setting is an injection setting that specifies the volume of the fluid to be injected.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AFR:0001577</oboInOwl:id>
+        <rdfs:label>injection volume setting</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AFR_0002149 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AFR_0002149">
@@ -329,6 +340,17 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>AFR:0002149</oboInOwl:id>
         <rdfs:label>sample temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000006">
+        <obo:IAO_0000115>A planned process in which water is artificially supplied to plant or soil to sustain plants.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000006</oboInOwl:id>
+        <rdfs:label>irrigation process</rdfs:label>
     </owl:Class>
     
 
@@ -7562,6 +7584,17 @@
         <oboInOwl:id>PRIDE:0000441</oboInOwl:id>
         <rdfs:comment>Spectrum counting method using machine learning classification to derive peptide detection probabilities to predict detectable peptides for any protein. Method reviewed in PMID 22772140</rdfs:comment>
         <rdfs:label>APEX - Absolute Protein Expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000457">
+        <obo:IAO_0000115>Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000457</oboInOwl:id>
+        <rdfs:label>Experiment Type</rdfs:label>
     </owl:Class>
     
 
