@@ -18,9 +18,19 @@ property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontolog
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
+id: AFR:0001577
+name: injection volume setting
+def: "The injection volume setting is an injection setting that specifies the volume of the fluid to be injected." []
+
+[Term]
 id: AFR:0002149
 name: sample temperature
 def: "A sample temperature result is a quality quantification facet that quantifies the temperature of the sample." []
+
+[Term]
+id: AGRO:00000006
+name: irrigation process
+def: "A planned process in which water is artificially supplied to plant or soil to sustain plants." []
 
 [Term]
 id: AGRO:00000007
