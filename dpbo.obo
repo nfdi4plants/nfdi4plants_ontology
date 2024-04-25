@@ -3895,6 +3895,11 @@ is_a: PRIDE:0000312 ! Label free
 created_by: acsordas
 
 [Term]
+id: PRIDE:0000457
+name: Experiment Type
+def: "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method." []
+
+[Term]
 id: PRIDE:0000463
 name: Parallel Reaction Monitoring (PRM)
 namespace: PRIDE
@@ -4023,3 +4028,4 @@ comment: term is redundant, please use GENEPIO:0001973
 xref: GENEPIO:0001973
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+
