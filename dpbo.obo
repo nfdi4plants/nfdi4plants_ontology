@@ -815,7 +815,7 @@ property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 
 [Term]
 id: DPBO:0000087
-name: library_ID
+name: library ID
 def: "Short unique identifier for the sequencing library" []
 comment: "Required for upload of next-generation sequencing data to SRA."
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
