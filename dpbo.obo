@@ -3416,6 +3416,11 @@ def: "A DNA sequencer manufactured by the MGI corporation with an output capacit
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: GENEPIO:0100598
+name: gene symbol
+def: "A sequence data which is the short name of a gene typically derived from the gene name." []
+
+[Term]
 id: GEO:000000370
 name: geographical entity
 
@@ -3428,6 +3433,11 @@ property_value: IAO:0000117 "François Modave" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Matt Diller" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: MI:0251
+name: gene product
+def: "Reference of a protein object pointing to its genomic or nucleic acid sequence." []
 
 [Term]
 id: MI:0507
@@ -3950,6 +3960,11 @@ name: data analysis
 def: "data analysis is a process of inspecting, cleaning, transforming, and modeling data with the goal of highlighting useful information, suggesting conclusions, and supporting decision making" []
 
 [Term]
+id: SIO:010016
+name: nucleic acid sequence
+def: "A nucleic acid sequence is a symbolic representation of the sequence of nucleic acid residues in a nucleic acid." []
+
+[Term]
 id: SO:0000141
 name: terminator
 def: "The sequence of DNA located either at the end of the transcript that causes RNA polymerase to terminate transcription." [http://www.insdc.org/files/feature_table.html]
@@ -3958,6 +3973,45 @@ synonym: "INSDC_feature:regulatory" BROAD []
 synonym: "INSDC_qualifier:terminator" EXACT []
 synonym: "terminator sequence" EXACT []
 xref: http://en.wikipedia.org/wiki/Terminator_(genetics) "wiki"
+
+[Term]
+id: SO:0000167
+name: promoter
+def: "A regulatory_region composed of the TSS(s) and binding sites for TF_complexes of the core transcription machinery. A region (DNA) to which RNA polymerase binds, to begin transcription." []
+
+[Term]
+id: SO:0000323
+name: coding_start
+namespace: sequence
+def: "The first base to be translated into protein." [SO:ke]
+synonym: "coding start" EXACT []
+synonym: "translation initiation site" EXACT []
+synonym: "translation start" RELATED []
+is_a: SO:0000851
+
+[Term]
+id: SO:0000327
+name: coding_end
+namespace: sequence
+def: "The last base to be translated into protein. It does not include the stop codon." [SO:ke]
+synonym: "coding end" EXACT []
+synonym: "translation termination site" EXACT []
+synonym: "translation_end" EXACT []
+is_a: SO:0000851
+
+[Term]
+id: SO:0000568
+name: bidirectional_promoter
+namespace: sequence
+def: "A promoter that can allow for transcription in both directions." [PMID:21601935, SO:ke]
+comment: Definition updated in Aug 2020 by Dave Sant.
+synonym: "bidirectional promoter" EXACT []
+is_a: SO:0000167
+
+[Term]
+id: SO:0000851
+name: CDS_region
+def: "A region of a CDS." []
 
 [Term]
 id: UO:0000000
