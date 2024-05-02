@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl"> 
+    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
         <dc:creator>https://orcid.org/0000-0003-1476-2121</dc:creator>
@@ -2003,7 +2003,7 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000087</oboInOwl:id>
         <rdfs:comment>&quot;Required for upload of next-generation sequencing data to SRA.&quot;</rdfs:comment>
-        <rdfs:label>library_ID</rdfs:label>
+        <rdfs:label>library ID</rdfs:label>
     </owl:Class>
     
 
@@ -6711,6 +6711,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0100598 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0100598">
+        <obo:IAO_0000115>A sequence data which is the short name of a gene typically derived from the gene name.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GENEPIO:0100598</oboInOwl:id>
+        <rdfs:label>gene symbol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GEO_000000370 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000370">
@@ -6733,6 +6744,17 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GEO:000000372</oboInOwl:id>
         <rdfs:label>geographical region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0251">
+        <obo:IAO_0000115>Reference of a protein object pointing to its genomic or nucleic acid sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0251</oboInOwl:id>
+        <rdfs:label>gene product</rdfs:label>
     </owl:Class>
     
 
@@ -7713,6 +7735,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SIO_010016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SIO_010016">
+        <obo:IAO_0000115>A nucleic acid sequence is a symbolic representation of the sequence of nucleic acid residues in a nucleic acid.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SIO:010016</oboInOwl:id>
+        <rdfs:label>nucleic acid sequence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0000141 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000141">
@@ -7738,6 +7771,91 @@
         <owl:annotatedTarget>http://en.wikipedia.org/wiki/Terminator_(genetics)</owl:annotatedTarget>
         <rdfs:label>wiki</rdfs:label>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000167">
+        <obo:IAO_0000115>A regulatory_region composed of the TSS(s) and binding sites for TF_complexes of the core transcription machinery. A region (DNA) to which RNA polymerase binds, to begin transcription.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000167</oboInOwl:id>
+        <rdfs:label>promoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000851"/>
+        <obo:IAO_0000115>The first base to be translated into protein.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>coding start</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>translation initiation site</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>translation start</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>SO:0000323</oboInOwl:id>
+        <rdfs:label>coding_start</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000323"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The first base to be translated into protein.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000327">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000851"/>
+        <obo:IAO_0000115>The last base to be translated into protein. It does not include the stop codon.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>coding end</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>translation termination site</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>translation_end</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000327</oboInOwl:id>
+        <rdfs:label>coding_end</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000327"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The last base to be translated into protein. It does not include the stop codon.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000568">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000167"/>
+        <obo:IAO_0000115>A promoter that can allow for transcription in both directions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>bidirectional promoter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000568</oboInOwl:id>
+        <rdfs:comment>Definition updated in Aug 2020 by Dave Sant.</rdfs:comment>
+        <rdfs:label>bidirectional_promoter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000568"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A promoter that can allow for transcription in both directions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:21601935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000851 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000851">
+        <obo:IAO_0000115>A region of a CDS.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000851</oboInOwl:id>
+        <rdfs:label>CDS_region</rdfs:label>
+    </owl:Class>
     
 
 
