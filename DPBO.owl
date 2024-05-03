@@ -1517,6 +1517,29 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000031">
+        <obo:IAO_0000115>The haploid chromosome count of a eukaryote</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000031</oboInOwl:id>
+        <rdfs:label>number of chromosomes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000032">
+        <obo:IAO_0000115>The estimated size of the genome prior to sequencing</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000032</oboInOwl:id>
+        <rdfs:comment>adapted from MIXS:0000024</rdfs:comment>
+        <rdfs:label>estimated genome size</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000033">
@@ -1525,6 +1548,17 @@
         <oboInOwl:id>DPBO:0000033</oboInOwl:id>
         <rdfs:comment>“This is a specialization of age (http://www.ebi.ac.uk/efo/EFO_0000246)&quot;</rdfs:comment>
         <rdfs:label>plant age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000034">
+        <obo:IAO_0000115>Health status of the plant at the time of sample collection</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000034</oboInOwl:id>
+        <rdfs:label>plant health state</rdfs:label>
     </owl:Class>
     
 
@@ -1540,6 +1574,41 @@
         <rdfs:comment>term is redundant, please use GENEPIO:0001940</rdfs:comment>
         <rdfs:label>obsolete_library selection</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000037">
+        <obo:IAO_0000115>Determination of the taxonomic ranking that is below species level i.e. variety, cultivar, ecotype, inbred line</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000037</oboInOwl:id>
+        <rdfs:label>subspecific taxonomic rank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000038">
+        <obo:IAO_0000115>pH measurement of the culture rooting medium</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000038</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist</rdfs:comment>
+        <rdfs:label>rooting medium pH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000039">
+        <obo:IAO_0000115>Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S); e.g. KH2PO4 (170mg/L)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000039</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist</rdfs:comment>
+        <rdfs:label>rooting medium macronutrients</rdfs:label>
     </owl:Class>
     
 
@@ -1725,6 +1794,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000055">
+        <obo:IAO_0000115>Measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, Mo); e.g. H3BO3 (6.2mg/L)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000055</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist</rdfs:comment>
+        <rdfs:label>rooting medium micronutrients</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000056">
@@ -1745,6 +1826,18 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000057</oboInOwl:id>
         <rdfs:label>next generation sequencing platform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000058">
+        <obo:IAO_0000115>Organic supplements of the culture rooting medium, such as vitaimins, amino acids, organic acids, antibiotics activated charcoal; e.g. Nicotinic acid (0.5mg/L)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000058</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist</rdfs:comment>
+        <rdfs:label>rooting medium organic supplements</rdfs:label>
     </owl:Class>
     
 
@@ -1819,6 +1912,42 @@
         <oboInOwl:id>DPBO:0000064</oboInOwl:id>
         <rdfs:comment>“[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]&quot;</rdfs:comment>
         <rdfs:label>sample type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000065">
+        <obo:IAO_0000115>Source of organic carbon in the culture rooting medium; e.g. sucrose</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000065</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist</rdfs:comment>
+        <rdfs:label>rooting medium carbon source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000066">
+        <obo:IAO_0000115>Growth regulators in the culture rooting medium, such as cytokinins, auxins, gybberellins, abscisic acid; e.g. 0.5mg/L NAA</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000066</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist</rdfs:comment>
+        <rdfs:label>rooting medium growth regulators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000067">
+        <obo:IAO_0000115>Specification of the solidifying agent in the culture rooting medium; e.g. agar</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000067</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist</rdfs:comment>
+        <rdfs:label>rooting medium solidifier</rdfs:label>
     </owl:Class>
     
 
