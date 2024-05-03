@@ -566,10 +566,26 @@ def: "Publication reference for isolation and growth condition specifications of
 comment: for submission to ENA
 
 [Term]
+id: DPBO:0000031
+name: number of chromosomes
+def: "The haploid chromosome count of a eukaryote" []
+
+[Term]
+id: DPBO:0000032
+name: estimated genome size
+def: "The estimated size of the genome prior to sequencing" []
+comment: adapted from MIXS:0000024
+
+[Term]
 id: DPBO:0000033
 name: plant age
 def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." []
 comment: “This is a specialization of age (http://www.ebi.ac.uk/efo/EFO_0000246)"
+
+[Term]
+id: DPBO:0000034
+name: plant health state
+def: "Health status of the plant at the time of sample collection" []
 
 [Term]
 id: DPBO:0000036
@@ -579,6 +595,23 @@ comment: term is redundant, please use GENEPIO:0001940
 xref: GENEPIO:0001940
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+
+[Term]
+id: DPBO:0000037
+name: subspecific taxonomic rank
+def: "Determination of the taxonomic ranking that is below species level i.e. variety, cultivar, ecotype, inbred line" []
+
+[Term]
+id: DPBO:0000038
+name: rooting medium pH
+def: "pH measurement of the culture rooting medium" []
+comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
+
+[Term]
+id: DPBO:0000039
+name: rooting medium macronutrients
+def: "Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S); e.g. KH2PO4 (170mg/L)" []
+comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
 
 [Term]
 id: DPBO:0000040
@@ -671,6 +704,12 @@ def: "Method or kit that was used to extract DNA or RNA" []
 comment: “More general than DPBO:0000014, because not everyone uses a kit for RNA/DNA extraction"
 
 [Term]
+id: DPBO:0000055
+name: rooting medium micronutrients
+def: "Measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, Mo); e.g. H3BO3 (6.2mg/L)" []
+comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
+
+[Term]
 id: DPBO:0000056
 name: library DNA amount
 def: "Amount of DNA (microgram) used as starting material for library construction" []
@@ -681,6 +720,12 @@ id: DPBO:0000057
 name: next generation sequencing platform
 def: "Name of the company that produces next generation sequencing instruments" []
 xref: GENEPIO:0000071
+
+[Term]
+id: DPBO:0000058
+name: rooting medium organic supplements
+def: "Organic supplements of the culture rooting medium, such as vitaimins, amino acids, organic acids, antibiotics activated charcoal; e.g. Nicotinic acid (0.5mg/L)" []
+comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
 
 [Term]
 id: DPBO:0000059
@@ -719,6 +764,24 @@ name: sample type
 def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly" []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C70713
+
+[Term]
+id: DPBO:0000065
+name: rooting medium carbon source
+def: "Source of organic carbon in the culture rooting medium; e.g. sucrose" []
+comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
+
+[Term]
+id: DPBO:0000066
+name: rooting medium growth regulators
+def: "Growth regulators in the culture rooting medium, such as cytokinins, auxins, gybberellins, abscisic acid; e.g. 0.5mg/L NAA" []
+comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
+
+[Term]
+id: DPBO:0000067
+name: rooting medium solidifier
+def: "Specification of the solidifying agent in the culture rooting medium; e.g. agar" []
+comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
 
 [Term]
 id: DPBO:0000068
