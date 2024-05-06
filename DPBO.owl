@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl">
+    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl"> 
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
         <dc:creator>https://orcid.org/0000-0003-1476-2121</dc:creator>
@@ -1981,10 +1981,34 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000070">
+        <obo:IAO_0000115>Incomplete CDS (coding sequence) with the start codon upstream of the submitted sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000070</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) CDS templates for annotated sequences.</rdfs:comment>
+        <rdfs:label>5&apos; partial CDS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000071">
+        <obo:IAO_0000115>Incomplete CDS (coding sequence) with the stop codon downstream of the submitted sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000071</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) CDS templates for annotated sequences.</rdfs:comment>
+        <rdfs:label>3&apos; partial CDS</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0000072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000072">
-        <obo:IAO_0000115>Stage of plant disease (DPBO:0000071) at the time of sampling.</obo:IAO_0000115>
+        <obo:IAO_0000115>Stage of plant disease at the time of sampling.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000072</oboInOwl:id>
         <rdfs:label>plant disease stage</rdfs:label>
@@ -2018,6 +2042,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000075">
+        <obo:IAO_0000115>Incomplete promoter with its 5&apos; end upstream of the submitted sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000075</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.</rdfs:comment>
+        <rdfs:label>5&apos; partial promoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000076">
+        <obo:IAO_0000115>Incomplete promoter with its 3&apos; end downstream of the submitted sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000076</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.</rdfs:comment>
+        <rdfs:label>3&apos; partial promoter</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0000077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000077">
@@ -2039,6 +2087,30 @@
         <oboInOwl:id>DPBO:0000078</oboInOwl:id>
         <rdfs:comment>“[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]&quot;</rdfs:comment>
         <rdfs:label>BioSample accession number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000079">
+        <obo:IAO_0000115>Coordinate of the 5&apos; end of the promoter within the submitted sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000079</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.</rdfs:comment>
+        <rdfs:label>promoter 5&apos; end coordinate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000080">
+        <obo:IAO_0000115>Coordinate of the 3&apos; end of the promoter within the submitted sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000080</oboInOwl:id>
+        <rdfs:comment>adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.</rdfs:comment>
+        <rdfs:label>promoter 3&apos; end coordinate</rdfs:label>
     </owl:Class>
     
 
