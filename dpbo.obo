@@ -801,9 +801,21 @@ is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
+id: DPBO:0000070
+name: 5' partial CDS
+def: "Incomplete CDS (coding sequence) with the start codon upstream of the submitted sequence." []
+comment: adapted from the ENA (European Nucleotide Archive) CDS templates for annotated sequences.
+
+[Term]
+id: DPBO:0000071
+name: 3' partial CDS
+def: "Incomplete CDS (coding sequence) with the stop codon downstream of the submitted sequence." []
+comment: adapted from the ENA (European Nucleotide Archive) CDS templates for annotated sequences.
+
+[Term]
 id: DPBO:0000072
 name: plant disease stage
-def: "Stage of plant disease (DPBO:0000071) at the time of sampling." []
+def: "Stage of plant disease at the time of sampling." []
 
 [Term]
 id: DPBO:0000073
@@ -820,6 +832,18 @@ comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.ni
 xref: NCIT:C16632
 
 [Term]
+id: DPBO:0000075
+name: 5' partial promoter
+def: "Incomplete promoter with its 5' end upstream of the submitted sequence." []
+comment: adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.
+
+[Term]
+id: DPBO:0000076
+name: 3' partial promoter
+def: "Incomplete promoter with its 3' end downstream of the submitted sequence." []
+comment: adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.
+
+[Term]
 id: DPBO:0000077
 name: metabolite assignment file
 def: "metabolite assignment file (MAF) as required by MetaboLights to describe metabolites analyzed during a metabolomics assay. Details see: https://www.ebi.ac.uk/metabolights/guides/MAF/Title" []
@@ -831,6 +855,18 @@ name: BioSample accession number
 def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" []
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C175889
+
+[Term]
+id: DPBO:0000079
+name: promoter 5' end coordinate
+def: "Coordinate of the 5' end of the promoter within the submitted sequence." []
+comment: adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.
+
+[Term]
+id: DPBO:0000080
+name: promoter 3' end coordinate 
+def: "Coordinate of the 3' end of the promoter within the submitted sequence." []
+comment: adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.
 
 [Term]
 id: DPBO:0000081
