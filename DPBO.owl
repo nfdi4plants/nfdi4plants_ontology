@@ -2209,6 +2209,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000088">
+        <obo:IAO_0000115>A climatic chamber used for growing plants under controlled environmental conditions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000088</oboInOwl:id>
+        <rdfs:label>growth chamber</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0002000">
