@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl"> 
+    <owl:Ontology rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/dpbo.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dpbo/init/2020-12-01/dpbo.owl"/>
         <dc:creator>https://orcid.org/0000-0001-9021-3197</dc:creator>
         <dc:creator>https://orcid.org/0000-0003-1476-2121</dc:creator>
