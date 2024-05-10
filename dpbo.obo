@@ -3539,6 +3539,87 @@ property_value: IAO:0000117 "Matt Diller" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
+id: MCO_0000041
+name: overexpression mutant
+def: "A mutant in which a gene ore genes are expressed at higher levels than the wild type." []
+is_a: NCIT_C25360 ! mutant
+
+[Term]
+id: MCO_0000042
+name: gene variant mutant
+def: "A mutant genotype in which one or more genes can have modifications (subtitutions, indels, partial truncations, etc), but they conserve functionality." []
+is_a: NCIT_C25360 ! mutant
+
+[Term]
+id: MCO_0000051
+name: knockout mutant
+def: "A mutant in which the function of a target gene has been disrupted within its normal biological context. Utilized to examine the involvement of a gene in a complex biological process." []
+is_a: NCIT_C25360 ! mutant
+
+[Term]
+id: MCO_0000052
+name: plasmid mutant
+def: "a mutant in which a foreign DNA sequence is introduced to cell in an extrachromosomal unit of replication." []
+is_a: NCIT_C25360 ! mutant
+
+[Term]
+id: MCO_0000059
+name: OD600
+def: "An optical density that specifies the amount of light of 600 nm of wavelenght the bearer is able to transmit." []
+is_a: MCO_0000077 ! optical density
+
+[Term]
+id: MCO_0000077
+name: optical density
+def: "A physical quality that inheres in a bearer by virtue of the amount of light that the bearer of the quality is able to transmit." []
+
+[Term]
+id: MCO_0000173
+name: nutrient availability stress treatment
+def: "" []
+is_a: MCO_0000866 ! treatment
+
+[Term]
+id: MCO_0000174
+name: nutrient depletion treatment
+def: "" []
+is_a: MCO_0000173 ! nutrient availability stress treatment
+
+[Term]
+id: MCO_0000178
+name: carbon starvation
+def: "" []
+is_a: MCO_0000173 ! nutrient availability stress treatment
+
+[Term]
+id: MCO_0000177
+name: iron depletion
+def: "" []
+is_a: MCO_0000173 ! nutrient availability stress treatment
+
+[Term]
+id: MCO_0000179
+name: nitrogen starvation
+def: "" []
+is_a: MCO_0000173 ! nutrient availability stress treatment
+
+[Term]
+id: MCO_0000180
+name: phosphate starvation
+def: "" []
+is_a: MCO_0000173 ! nutrient availability stress treatment
+
+[Term]
+id: MCO_0000851
+name: genotype
+def: "A biological quality that inheres in specific organisms and that describes its total genetic content" []
+
+[Term]
+id: MCO_0000866
+name: treatment
+def: "A process in which the act is intended to modify or alter some other material entity." []
+
+[Term]
 id: MI:0251
 name: gene product
 def: "Reference of a protein object pointing to its genomic or nucleic acid sequence." []
@@ -3574,10 +3655,22 @@ id: NCIT:C181919
 name: Objective Lens
 
 [Term]
+id: NCIT_C25360
+name: mutant
+def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
+is_a: MCO_0000851 ! genotype
+
+[Term]
 id: NCIT:C45293
 name: Species
 xref: MIAPPE:0043
 xref: NCBITaxon:species
+
+[Term]
+id: NCIT_C62195
+name: wild type
+def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
+is_a: MCO_0000851 ! genotype
 
 [Term]
 id: NCIT:C84512
