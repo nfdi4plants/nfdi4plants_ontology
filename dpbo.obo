@@ -3640,6 +3640,12 @@ def: "A proprietary next-generation DNA sequencing system from BGI Genomics usin
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: NCIT_C146818
+name: Nanopore Sequencing
+def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis." []
+is_a: DPBO:0002006 ! sequencing method
+
+[Term]
 id: NCIT:C146815
 name: Complete Genomics Sequencing
 def: "A next-generation DNA sequencing service offered by Complete Genomics. Unamplified human genomic DNA is sheared into 500bp fragments and then amplified to create DNA nano-balls (DNBs). The DNBs are arrayed on a substrate and their sequence is determined by Combinatorial Probe-Anchor Ligation (cPAL) sequencing." []
