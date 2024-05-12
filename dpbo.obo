@@ -3640,6 +3640,12 @@ def: "A proprietary next-generation DNA sequencing system from BGI Genomics usin
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: NCIT_C146817
+name: Illumina Sequencing
+def: "A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected." []
+is_a: DPBO:0002006 ! sequencing method
+
+[Term]
 id: NCIT_C146818
 name: Nanopore Sequencing
 def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis." []
