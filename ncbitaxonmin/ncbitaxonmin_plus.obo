@@ -12,6 +12,11 @@ name: Talinum fruticosum
 is_a: OBI:0100026 ! organism
 
 [Term]
+id: NCBITaxon:717931
+name: groundwater metagenome
+is_a: OBI:0100026 ! organism
+
+[Term]
 id: NCBITaxon:749907
 name: sediment metagenome
 is_a: OBI:0100026 ! organism
