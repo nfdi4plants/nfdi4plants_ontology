@@ -15,7 +15,12 @@ ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000173> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000174> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000177> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000178> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000179> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000180> \"\")\n)
+
+[Term]
+id: AFP:0003774
+name: imaging
+def: "Imaging is a process that produces an image of something." []
 
 [Term]
 id: AFR:0001577
@@ -864,7 +869,7 @@ comment: adapted from the ENA (European Nucleotide Archive) gene promoter templa
 
 [Term]
 id: DPBO:0000080
-name: promoter 3' end coordinate 
+name: promoter 3' end coordinate
 def: "Coordinate of the 3' end of the promoter within the submitted sequence." []
 comment: adapted from the ENA (European Nucleotide Archive) gene promoter template for annotated sequences.
 
@@ -923,6 +928,7 @@ created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 id: DPBO:0000088
 name: growth chamber
 def: "A climatic chamber used for growing plants under controlled environmental conditions." []
+is_a: MIAPPE:0095
 
 [Term]
 id: DPBO:0002000
@@ -3576,37 +3582,31 @@ def: "A physical quality that inheres in a bearer by virtue of the amount of lig
 [Term]
 id: MCO_0000173
 name: nutrient availability stress treatment
-def: "" []
 is_a: MCO_0000866 ! treatment
 
 [Term]
 id: MCO_0000174
 name: nutrient depletion treatment
-def: "" []
-is_a: MCO_0000173 ! nutrient availability stress treatment
-
-[Term]
-id: MCO_0000178
-name: carbon starvation
-def: "" []
 is_a: MCO_0000173 ! nutrient availability stress treatment
 
 [Term]
 id: MCO_0000177
 name: iron depletion
-def: "" []
+is_a: MCO_0000173 ! nutrient availability stress treatment
+
+[Term]
+id: MCO_0000178
+name: carbon starvation
 is_a: MCO_0000173 ! nutrient availability stress treatment
 
 [Term]
 id: MCO_0000179
 name: nitrogen starvation
-def: "" []
 is_a: MCO_0000173 ! nutrient availability stress treatment
 
 [Term]
 id: MCO_0000180
 name: phosphate starvation
-def: "" []
 is_a: MCO_0000173 ! nutrient availability stress treatment
 
 [Term]
@@ -3630,6 +3630,10 @@ name: tag
 def: "Small molecules, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." [PMID:14755292]
 
 [Term]
+id: MIAPPE:0095
+name: Growth facility
+
+[Term]
 id: NCIT:C126370
 name: Cover Slip
 
@@ -3638,18 +3642,6 @@ id: NCIT:C146812
 name: BGISEQ-500 Sequencing
 def: "A proprietary next-generation DNA sequencing system from BGI Genomics using combinatorial Probe-Anchor Synthesis (cPAS) and improved DNA Nanoballs (DNB) technology. The cPAS chemistry works by incorporating a fluorescent probe to a DNA anchor on the DNB, followed by high-resolution digital imaging." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
-
-[Term]
-id: NCIT_C146817
-name: Illumina Sequencing
-def: "A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected." []
-is_a: DPBO:0002006 ! sequencing method
-
-[Term]
-id: NCIT_C146818
-name: Nanopore Sequencing
-def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis." []
-is_a: DPBO:0002006 ! sequencing method
 
 [Term]
 id: NCIT:C146815
@@ -3667,28 +3659,40 @@ id: NCIT:C181919
 name: Objective Lens
 
 [Term]
-id: NCIT_C25360
-name: mutant
-def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
-is_a: MCO_0000851 ! genotype
-
-[Term]
 id: NCIT:C45293
 name: Species
 xref: MIAPPE:0043
 xref: NCBITaxon:species
 
 [Term]
-id: NCIT_C62195
-name: wild type
-def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
-is_a: MCO_0000851 ! genotype
-
-[Term]
 id: NCIT:C84512
 name: Cytoplasmic RNA
 def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
 is_a: DPBO:0000012 ! bio entity
+
+[Term]
+id: NCIT_C146817
+name: Illumina Sequencing
+def: "A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected." []
+is_a: DPBO:0002006 ! sequencing method
+
+[Term]
+id: NCIT_C146818
+name: Nanopore Sequencing
+def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis." []
+is_a: DPBO:0002006 ! sequencing method
+
+[Term]
+id: NCIT_C25360
+name: mutant
+def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
+is_a: MCO_0000851 ! genotype
+
+[Term]
+id: NCIT_C62195
+name: wild type
+def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
+is_a: MCO_0000851 ! genotype
 
 [Term]
 id: NMR:1000019
@@ -4196,7 +4200,7 @@ def: "The first base to be translated into protein." [SO:ke]
 synonym: "coding start" EXACT []
 synonym: "translation initiation site" EXACT []
 synonym: "translation start" RELATED []
-is_a: SO:0000851
+is_a: SO:0000851 ! CDS_region
 
 [Term]
 id: SO:0000327
@@ -4206,7 +4210,7 @@ def: "The last base to be translated into protein. It does not include the stop 
 synonym: "coding end" EXACT []
 synonym: "translation termination site" EXACT []
 synonym: "translation_end" EXACT []
-is_a: SO:0000851
+is_a: SO:0000851 ! CDS_region
 
 [Term]
 id: SO:0000568
@@ -4215,7 +4219,7 @@ namespace: sequence
 def: "A promoter that can allow for transcription in both directions." [PMID:21601935, SO:ke]
 comment: Definition updated in Aug 2020 by Dave Sant.
 synonym: "bidirectional promoter" EXACT []
-is_a: SO:0000167
+is_a: SO:0000167 ! promoter
 
 [Term]
 id: SO:0000851
@@ -4254,6 +4258,7 @@ name: Molecule name
 [Term]
 id: data:0990
 name: Compound name
+def: "Unique name of a chemical compound." []
 subset: data
 subset: edam
 subset: identifiers
@@ -4261,11 +4266,11 @@ synonym: "Chemical name" EXACT []
 is_a: data:0984 ! Molecule name
 is_a: data:1086 ! Compound identifier
 property_value: created:in "beta12orEarlier" xsd:string
-property_value: hasDefinition "Unique name of a chemical compound." xsd:string
 
 [Term]
 id: data:1086
 name: Compound identifier
+def: "Identifier of an entry from a database of chemicals." []
 subset: data
 subset: edam
 subset: identifiers
@@ -4275,7 +4280,6 @@ synonym: "Small molecule identifier" EXACT []
 is_a: data:0982 ! Molecule identifier
 relationship: http://edamontology.org/is_identifier_of data:0962 ! Small molecule report
 property_value: created:in "beta12orEarlier" xsd:string
-property_value: hasDefinition "Identifier of an entry from a database of chemicals." xsd:string
 property_value: http://edamontology.org/notRecommendedForAnnotation "true" xsd:string
 
 [Term]
@@ -4291,4 +4295,20 @@ comment: term is redundant, please use GENEPIO:0001973
 xref: GENEPIO:0001973
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+
+[Term]
+id: topic:0077
+name: Nucleic acids
+
+[Term]
+id: topic:0099
+name: RNA
+def: "RNA sequences and structures." []
+subset: edam
+subset: topics
+synonym: "Small RNA" NARROW []
+is_a: topic:0077
+property_value: created:in "beta12orEarlier" xsd:string
+property_value: hasHumanReadableId "RNA" xsd:string
+property_value: seeAlso https://en.wikipedia.org/wiki/RNA
 
