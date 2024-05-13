@@ -28,7 +28,7 @@ jobs:
 
       - name: get difference in files
         run: |
-          comm -23 new_extraction_sorted.txt purls.txt > missing_purls.txt
+          comm -23 new_extraction_sorted.txt purls_sorted.txt > missing_purls.txt
 
       - name: remove temporary new file
         run: |
