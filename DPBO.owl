@@ -118,9 +118,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dpbo#hasDefinition -->
+    <!-- http://purl.obolibrary.org/obo/dpbo#hasHumanReadableId -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dpbo#hasDefinition"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dpbo#hasHumanReadableId"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dpbo#seeAlso"/>
     
 
 
@@ -319,6 +325,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AFP_0003774 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AFP_0003774">
+        <obo:IAO_0000115>Imaging is a process that produces an image of something.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AFP:0003774</oboInOwl:id>
+        <rdfs:label>imaging</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2212,6 +2229,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MIAPPE_0095"/>
         <obo:IAO_0000115>A climatic chamber used for growing plants under controlled environmental conditions.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000088</oboInOwl:id>
@@ -6960,6 +6978,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MIAPPE_0095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MIAPPE_0095">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MIAPPE:0095</oboInOwl:id>
+        <rdfs:label>Growth facility</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MI_0251 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0251">
@@ -8146,8 +8174,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/data_0990">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/data_0984"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/data_1086"/>
+        <obo:IAO_0000115>Unique name of a chemical compound.</obo:IAO_0000115>
         <obo:created_in>beta12orEarlier</obo:created_in>
-        <dpbo:hasDefinition>Unique name of a chemical compound.</dpbo:hasDefinition>
         <oboInOwl:hasExactSynonym>Chemical name</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>data:0990</oboInOwl:id>
@@ -8170,8 +8198,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology:notRecommendedForAnnotation>true</edamontology:notRecommendedForAnnotation>
+        <obo:IAO_0000115>Identifier of an entry from a database of chemicals.</obo:IAO_0000115>
         <obo:created_in>beta12orEarlier</obo:created_in>
-        <dpbo:hasDefinition>Identifier of an entry from a database of chemicals.</dpbo:hasDefinition>
         <oboInOwl:hasExactSynonym>Chemical compound identifier</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Compound ID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Small molecule identifier</oboInOwl:hasExactSynonym>
@@ -8207,6 +8235,247 @@
         <rdfs:comment>term is redundant, please use GENEPIO:0001973</rdfs:comment>
         <rdfs:label>library strategy</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/topic_0077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/topic_0077">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>topic:0077</oboInOwl:id>
+        <rdfs:label>Nucleic acids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/topic_0099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/topic_0099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/topic_0077"/>
+        <obo:IAO_0000115>RNA sequences and structures.</obo:IAO_0000115>
+        <obo:created_in>beta12orEarlier</obo:created_in>
+        <dpbo:hasHumanReadableId>RNA</dpbo:hasHumanReadableId>
+        <dpbo:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA"/>
+        <oboInOwl:hasNarrowSynonym>Small RNA</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>topic:0099</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#topics"/>
+        <rdfs:label>RNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#NCIT_C25360"/>
+        <obo:IAO_0000115>A mutant in which a gene ore genes are expressed at higher levels than the wild type.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000041</oboInOwl:id>
+        <rdfs:label>overexpression mutant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#NCIT_C25360"/>
+        <obo:IAO_0000115>A mutant genotype in which one or more genes can have modifications (subtitutions, indels, partial truncations, etc), but they conserve functionality.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000042</oboInOwl:id>
+        <rdfs:label>gene variant mutant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#NCIT_C25360"/>
+        <obo:IAO_0000115>A mutant in which the function of a target gene has been disrupted within its normal biological context. Utilized to examine the involvement of a gene in a complex biological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000051</oboInOwl:id>
+        <rdfs:label>knockout mutant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#NCIT_C25360"/>
+        <obo:IAO_0000115>a mutant in which a foreign DNA sequence is introduced to cell in an extrachromosomal unit of replication.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000052</oboInOwl:id>
+        <rdfs:label>plasmid mutant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000077"/>
+        <obo:IAO_0000115>An optical density that specifies the amount of light of 600 nm of wavelenght the bearer is able to transmit.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000059</oboInOwl:id>
+        <rdfs:label>OD600</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000077">
+        <obo:IAO_0000115>A physical quality that inheres in a bearer by virtue of the amount of light that the bearer of the quality is able to transmit.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000077</oboInOwl:id>
+        <rdfs:label>optical density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000866"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000173</oboInOwl:id>
+        <rdfs:label>nutrient availability stress treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000173"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000174</oboInOwl:id>
+        <rdfs:label>nutrient depletion treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000173"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000177</oboInOwl:id>
+        <rdfs:label>iron depletion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000173"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000178</oboInOwl:id>
+        <rdfs:label>carbon starvation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000173"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000179</oboInOwl:id>
+        <rdfs:label>nitrogen starvation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000173"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000180</oboInOwl:id>
+        <rdfs:label>phosphate starvation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000851 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000851">
+        <obo:IAO_0000115>A biological quality that inheres in specific organisms and that describes its total genetic content</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000851</oboInOwl:id>
+        <rdfs:label>genotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#MCO_0000866 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#MCO_0000866">
+        <obo:IAO_0000115>A process in which the act is intended to modify or alter some other material entity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MCO_0000866</oboInOwl:id>
+        <rdfs:label>treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#NCIT_C146817 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#NCIT_C146817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0002006"/>
+        <obo:IAO_0000115>A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT_C146817</oboInOwl:id>
+        <rdfs:label>Illumina Sequencing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#NCIT_C146818 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#NCIT_C146818">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0002006"/>
+        <obo:IAO_0000115>A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT_C146818</oboInOwl:id>
+        <rdfs:label>Nanopore Sequencing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#NCIT_C25360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#NCIT_C25360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000851"/>
+        <obo:IAO_0000115>An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT_C25360</oboInOwl:id>
+        <rdfs:label>mutant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dpbo#NCIT_C62195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dpbo#NCIT_C62195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#MCO_0000851"/>
+        <obo:IAO_0000115>The naturally-occurring, normal, non-mutated version of a gene or genome.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCIT_C62195</oboInOwl:id>
+        <rdfs:label>wild type</rdfs:label>
     </owl:Class>
     
 
