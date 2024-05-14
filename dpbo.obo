@@ -978,6 +978,11 @@ name: R package
 def: "Packages are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality." []
 
 [Term]
+id: DPBO:0000096
+name: package version
+def: "The version of the software package or library that was used in the analysis." []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
