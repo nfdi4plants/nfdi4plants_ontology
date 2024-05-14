@@ -596,6 +596,7 @@ def: "Health status of the plant at the time of sample collection" []
 id: DPBO:0000035
 name: Seurat
 def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
+is_a: DPBO:0000095 ! R package
 
 [Term]
 id: DPBO:0000036
@@ -934,6 +935,47 @@ id: DPBO:0000088
 name: growth chamber
 def: "A climatic chamber used for growing plants under controlled environmental conditions." []
 is_a: MIAPPE:0095
+
+[Term]
+id: DPBO:0000089
+name: SingleCellExperiment
+def: "Defines a S4 class for storing data from single-cell experiments. This includes specialized methods to store and retrieve spike-in information, dimensionality reduction coordinates and size factors for each cell, along with the usual metadata for genes and libraries." []
+is_a: DPBO:0000095 ! R package
+
+[Term]
+id: DPBO:0000090
+name: tidyverse
+def: "The core tidyverse includes the packages that you’re likely to use in everyday data analyses. As of tidyverse 1.3.0, the following packages are included in the core tidyverse: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats." []
+is_a: DPBO:0000095 ! R package
+
+[Term]
+id: DPBO:0000091
+name: Matrix
+def: "A rich hierarchy of sparse and dense matrix classes, including general, symmetric, triangular, and diagonal matrices with numeric, logical, or pattern entries. Efficient methods for operating on such matrices, often wrapping the 'BLAS', 'LAPACK', and 'SuiteSparse' libraries." []
+is_a: DPBO:0000095 ! R package
+
+[Term]
+id: DPBO:0000092
+name: scales
+def: "Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends." []
+is_a: DPBO:0000095 ! R package
+
+[Term]
+id: DPBO:0000093
+name: cowplot
+def: "Provides various features that help with creating publication-quality figures with 'ggplot2', such as a set of themes, functions to align plots and arrange them into complex compound figures, and functions that make it easy to annotate plots and or mix plots with images. The package was originally written for internal use in the Wilke lab, hence the name (Claus O. Wilke's plot package). It has also been used extensively in the book Fundamentals of Data Visualization." []
+is_a: DPBO:0000095 ! R package
+
+[Term]
+id: DPBO:0000094
+name: RCurl
+def: "A wrapper for 'libcurl' <https://curl.se/libcurl/> Provides functions to allow one to compose general HTTP requests and provides convenient functions to fetch URIs, get & post forms, etc. and process the results returned by the Web server. This provides a great deal of control over the HTTP/FTP/... connection and the form of the request while providing a higher-level interface than is available just using R socket connections. Additionally, the underlying implementation is robust and extensive, supporting FTP/FTPS/TFTP (uploads and downloads), SSL/HTTPS, telnet, dict, ldap, and also supports cookies, redirects, authentication, etc." []
+is_a: DPBO:0000095 ! R package
+
+[Term]
+id: DPBO:0000095
+name: R package
+def: "Packages are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality." []
 
 [Term]
 id: DPBO:0002000
