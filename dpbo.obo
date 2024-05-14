@@ -593,6 +593,11 @@ name: plant health state
 def: "Health status of the plant at the time of sample collection" []
 
 [Term]
+id: DPBO:0000035
+name: Seurat
+def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
+
+[Term]
 id: DPBO:0000036
 name: obsolete_library selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
