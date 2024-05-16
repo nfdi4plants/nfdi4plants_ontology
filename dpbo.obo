@@ -983,6 +983,18 @@ name: package version
 def: "The version of the software package or library that was used in the analysis." []
 
 [Term]
+id: DPBO:0000097
+name: prm-PASEF
+def: "Targeted proteomics method that combines parallel reaction monitoring (PRM) and parallel accumulation-serial fragmentation (PASEF)." []
+comment: Bruker Corporation term. Definition from https://www.bruker.com/
+
+[Term]
+id: DPBO:0000098
+name: dda-PASEF
+def: "Data-dependent acquisition (DDA) method that uses parallel accumulation-serial fragmentation (PASEF) technology for proteomics analysis." []
+comment: Bruker Corporation term. Definition from https://www.bruker.com/
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
@@ -4189,6 +4201,12 @@ def: "Dimethyl Labeling (DML)" [PRIDE:PRIDE]
 is_a: PRIDE:0000310 ! Isotope labeling
 created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
+
+[Term]
+id: PRIDE:0000650
+name: diaPASEF
+def: "Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825" [PRIDE:PRIDE]
+created_by: yperez
 
 [Term]
 id: PSO:0000013
