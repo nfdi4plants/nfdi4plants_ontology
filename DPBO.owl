@@ -1580,6 +1580,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000035</oboInOwl:id>
+        <rdfs:label>Seurat</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000036">
@@ -2234,6 +2246,124 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000088</oboInOwl:id>
         <rdfs:label>growth chamber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>Defines a S4 class for storing data from single-cell experiments. This includes specialized methods to store and retrieve spike-in information, dimensionality reduction coordinates and size factors for each cell, along with the usual metadata for genes and libraries.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000089</oboInOwl:id>
+        <rdfs:label>SingleCellExperiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>The core tidyverse includes the packages that you’re likely to use in everyday data analyses. As of tidyverse 1.3.0, the following packages are included in the core tidyverse: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000090</oboInOwl:id>
+        <rdfs:label>tidyverse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>A rich hierarchy of sparse and dense matrix classes, including general, symmetric, triangular, and diagonal matrices with numeric, logical, or pattern entries. Efficient methods for operating on such matrices, often wrapping the &apos;BLAS&apos;, &apos;LAPACK&apos;, and &apos;SuiteSparse&apos; libraries.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000091</oboInOwl:id>
+        <rdfs:label>Matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000092</oboInOwl:id>
+        <rdfs:label>scales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>Provides various features that help with creating publication-quality figures with &apos;ggplot2&apos;, such as a set of themes, functions to align plots and arrange them into complex compound figures, and functions that make it easy to annotate plots and or mix plots with images. The package was originally written for internal use in the Wilke lab, hence the name (Claus O. Wilke&apos;s plot package). It has also been used extensively in the book Fundamentals of Data Visualization.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000093</oboInOwl:id>
+        <rdfs:label>cowplot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>A wrapper for &apos;libcurl&apos; &lt;https://curl.se/libcurl/&gt; Provides functions to allow one to compose general HTTP requests and provides convenient functions to fetch URIs, get &amp; post forms, etc. and process the results returned by the Web server. This provides a great deal of control over the HTTP/FTP/... connection and the form of the request while providing a higher-level interface than is available just using R socket connections. Additionally, the underlying implementation is robust and extensive, supporting FTP/FTPS/TFTP (uploads and downloads), SSL/HTTPS, telnet, dict, ldap, and also supports cookies, redirects, authentication, etc.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000094</oboInOwl:id>
+        <rdfs:label>RCurl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000095">
+        <obo:IAO_0000115>Packages are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000095</oboInOwl:id>
+        <rdfs:label>R package</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000096">
+        <obo:IAO_0000115>The version of the software package or library that was used in the analysis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000096</oboInOwl:id>
+        <rdfs:label>package version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000097">
+        <obo:IAO_0000115>Targeted proteomics method that combines parallel reaction monitoring (PRM) and parallel accumulation-serial fragmentation (PASEF).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000097</oboInOwl:id>
+        <rdfs:comment>Bruker Corporation term. Definition from https://www.bruker.com/</rdfs:comment>
+        <rdfs:label>prm-PASEF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000098">
+        <obo:IAO_0000115>Data-dependent acquisition (DDA) method that uses parallel accumulation-serial fragmentation (PASEF) technology for proteomics analysis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000098</oboInOwl:id>
+        <rdfs:comment>Bruker Corporation term. Definition from https://www.bruker.com/</rdfs:comment>
+        <rdfs:label>dda-PASEF</rdfs:label>
     </owl:Class>
     
 
@@ -7894,6 +8024,24 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000513"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Dimethyl Labeling (DML)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000650">
+        <obo:IAO_0000115>Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825</obo:IAO_0000115>
+        <oboInOwl:created_by>yperez</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000650</oboInOwl:id>
+        <rdfs:label>diaPASEF</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000650"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
