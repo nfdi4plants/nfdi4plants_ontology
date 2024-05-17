@@ -3347,6 +3347,11 @@ name: image processing technique
 def: "Any form of signal processing for which the input is an image, such as a photograph or video frame; the output of image processing may be either an image or a set of characteristics or parameters related to the image." []
 
 [Term]
+id: FOODON:00004331
+name: plant material
+def: "Anatomical or other piece(s) or substance derived from one or more plants." []
+
+[Term]
 id: GENEPIO:0000076
 name: read length
 def: "Numbers of base pairs per read" []

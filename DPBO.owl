@@ -6588,6 +6588,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004331">
+        <obo:IAO_0000115>Anatomical or other piece(s) or substance derived from one or more plants.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FOODON:00004331</oboInOwl:id>
+        <rdfs:label>plant material</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GENEPIO_0000076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0000076">
