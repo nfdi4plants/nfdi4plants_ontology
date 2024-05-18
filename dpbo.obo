@@ -1000,6 +1000,11 @@ name: antibiotic concentration
 def: "Concentration of an antibiotic that was added to a growth medium." []
 
 [Term]
+id: DPBO:0000100
+name: growth time
+def: "Duration of a bacterial cultivation." []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
