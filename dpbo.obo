@@ -995,6 +995,11 @@ def: "Data-dependent acquisition (DDA) method that uses parallel accumulation-se
 comment: Bruker Corporation term. Definition from https://www.bruker.com/
 
 [Term]
+id: DPBO:0000099
+name: antibiotic concentration
+def: "Concentration of an antibiotic that was added to a growth medium." []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
