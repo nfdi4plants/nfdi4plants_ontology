@@ -1005,6 +1005,11 @@ name: growth time
 def: "Duration of a bacterial cultivation." []
 
 [Term]
+id: DPBO:0000101
+name: start OD600
+def: "The OD600 that was used to incoculate a bacterial culture." []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
