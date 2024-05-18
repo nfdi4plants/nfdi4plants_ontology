@@ -1010,6 +1010,11 @@ name: start OD600
 def: "The OD600 that was used to incoculate a bacterial culture." []
 
 [Term]
+id: DPBO:0000102
+name: harvesting method
+def: "Method that was used to harvest bacterial cells." []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
