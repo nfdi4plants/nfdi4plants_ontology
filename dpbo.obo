@@ -1015,6 +1015,17 @@ name: harvesting method
 def: "Method that was used to harvest bacterial cells." []
 
 [Term]
+id: DPBO:0000103
+name: dissolved oxygen (DO)
+def: "Constant percentage of dissolved oxygen in a culture medium." []
+
+[Term]
+id: DPBO:0000104
+name: oxygen limitation experiment
+def: "An experiment that is used to grow bacterial cells under oxygen limitation conditions. " []
+is_a: EFO:0002694 ! experimental process
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
