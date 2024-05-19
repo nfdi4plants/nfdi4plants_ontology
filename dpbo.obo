@@ -1026,6 +1026,16 @@ def: "An experiment that is used to grow bacterial cells under oxygen limitation
 is_a: EFO:0002694 ! experimental process
 
 [Term]
+id: DPBO:0000105
+name: oxygen concentration
+def: "Percent of oxygen that is added to a culture medium via gassing. " []
+
+[Term]
+id: DPBO:0000106
+name: nitrogen concentration
+def: "Percent of nitrogen that is added to a culture medium via gassing. " []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
