@@ -1028,18 +1028,23 @@ is_a: EFO:0002694 ! experimental process
 [Term]
 id: DPBO:0000105
 name: oxygen concentration
-def: "Percent of oxygen that is added to a culture medium via gassing. " []
+def: "Percent of oxygen that is added to a culture medium via gassing." []
 
 [Term]
 id: DPBO:0000106
 name: nitrogen concentration
-def: "Percent of nitrogen that is added to a culture medium via gassing. " []
+def: "Percent of nitrogen that is added to a culture medium via gassing." []
 
 [Term]
 id: DPBO:0000107
 name: oxygen excess experiment
-def: "An experiment that is used to grow bacterial cells under oxygen excess conditions. " []
+def: "An experiment that is used to grow bacterial cells under oxygen excess conditions." []
 is_a: EFO:0002694 ! experimental process
+
+[Term]
+id: DPBO:0000108
+name: transcriptional binding site identification
+def: "A measurement that is used to identify transcriptional binding sites in a genome." []
 
 [Term]
 id: DPBO:0002000
