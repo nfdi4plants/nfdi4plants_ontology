@@ -1,9 +1,7 @@
 name: extract_terms_without_purls_yaml
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   extract_terms_without_purls:
