@@ -1,0 +1,57 @@
+name: auto_create_purls
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extract_terms_without_purls:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: remove previous chrome
+        run: sudo apt purge google-chrome-stable
+
+      - name: install requests
+        run: |
+          pip install chromedriver-autoinstaller
+          pip install pyvirtualdisplay
+          pip install requests
+          pip install selenium
+
+      - name: Install xvfb
+        run: sudo apt-get install xvfb
+
+      - name: extract all dpbo terms
+        run: |
+          grep -E 'id: DPBO:[0-9]+' dpbo.obo > missing_purls.txt
+
+      - name: extract TANs and replace colon
+        run: |
+          sed -i 's/id: DPBO:\([0-9]\+\)/DPBO_\1/g' missing_purls.txt 
+
+      - name: run purl verification script
+        run: python .github/workflows/verify_purls.py
+
+      - name: run purl creation
+        env:
+          MY_MAIL: ${{ secrets.PURL_USERNAME }}
+          MY_PW: ${{ secrets.PURL_PASSWORD }}
+        run: python .github/workflows/create_purls.py
+
+      - name: remove temporary new files
+        run: |
+          rm missing_purls.txt
+
+      - name: commit and push
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'
