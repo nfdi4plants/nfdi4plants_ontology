@@ -42,3 +42,6 @@ How to submit a new issue:
 
 ## Contact  
 You can contact the ontology curators via the Issues tab or our [Helpdesk](https://helpdesk.nfdi4plants.org/). We look forward to hearing from you!
+
+## Licensing
+This repository contains workflow code from https://github.com/MarketingPipeline/Python-Selenium-Action, which is licensed under the MIT License (Copyright (c) 2022 MarketingPipeline).
