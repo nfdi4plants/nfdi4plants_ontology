@@ -106,10 +106,4 @@ for elem in term_ids:
     create_purl(elem, ts4tib)
     i += 1
 
-
-print(driver.title)
-with open('./GitHub_Action_Results.txt', 'w') as f:
-    f.write(f"This was written with a GitHub action: {driver.title}")
-
-
 driver.close()
