@@ -339,6 +339,40 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AFR_0000952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AFR_0000952">
+        <obo:IAO_0000115>The date/time of the measurement.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AFR:0000952</oboInOwl:id>
+        <rdfs:label>measurement time</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AFR_0000952"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The date/time of the measurement.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Allotrope</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AFR_0001255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AFR_0001255">
+        <obo:IAO_0000115>A temperature setting is a setting that specifies some temperature configuration of a temperature controlling or monitoring device, that controls or monitors the target temperature at the site of some system component.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AFR:0001255</oboInOwl:id>
+        <rdfs:label>temperature setting</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AFR_0001255"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A temperature setting is a setting that specifies some temperature configuration of a temperature controlling or monitoring device, that controls or monitors the target temperature at the site of some system component.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Allotrope</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AFR_0001577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AFR_0001577">
@@ -563,6 +597,17 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>BAO:0000513</oboInOwl:id>
         <rdfs:label>96 well plate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BAO_0002628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BAO_0002628">
+        <obo:IAO_0000115>The role of a company as a creator of detection instrumentation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BAO:0002628</oboInOwl:id>
+        <rdfs:label>instrumentation manufacturer</rdfs:label>
     </owl:Class>
     
 
@@ -1588,6 +1633,7 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000035</oboInOwl:id>
         <rdfs:label>Seurat</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2364,6 +2410,142 @@
         <oboInOwl:id>DPBO:0000098</oboInOwl:id>
         <rdfs:comment>Bruker Corporation term. Definition from https://www.bruker.com/</rdfs:comment>
         <rdfs:label>dda-PASEF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000099">
+        <obo:IAO_0000115>Concentration of an antibiotic that was added to a growth medium.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000099</oboInOwl:id>
+        <rdfs:label>antibiotic concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000100">
+        <obo:IAO_0000115>Duration of a bacterial cultivation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000100</oboInOwl:id>
+        <rdfs:label>growth time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000101">
+        <obo:IAO_0000115>The OD600 that was used to incoculate a bacterial culture.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000101</oboInOwl:id>
+        <rdfs:label>start OD600</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000102">
+        <obo:IAO_0000115>Method that was used to harvest bacterial cells.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000102</oboInOwl:id>
+        <rdfs:label>harvesting method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000103">
+        <obo:IAO_0000115>Constant percentage of dissolved oxygen in a culture medium.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000103</oboInOwl:id>
+        <rdfs:label>dissolved oxygen (DO)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0002694"/>
+        <obo:IAO_0000115>An experiment that is used to grow bacterial cells under oxygen limitation conditions. </obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000104</oboInOwl:id>
+        <rdfs:label>oxygen limitation experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000105">
+        <obo:IAO_0000115>Percent of oxygen that is added to a culture medium via gassing.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000105</oboInOwl:id>
+        <rdfs:label>oxygen concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000106">
+        <obo:IAO_0000115>Percent of nitrogen that is added to a culture medium via gassing.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000106</oboInOwl:id>
+        <rdfs:label>nitrogen concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0002694"/>
+        <obo:IAO_0000115>An experiment that is used to grow bacterial cells under oxygen excess conditions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000107</oboInOwl:id>
+        <rdfs:label>oxygen excess experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000108">
+        <obo:IAO_0000115>A measurement that is used to identify transcriptional binding sites in a genome.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000108</oboInOwl:id>
+        <rdfs:label>transcriptional binding site identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000109">
+        <obo:IAO_0000115>Exchange of carbon dioxide, oxygen and water vapor between the plant leaf and the ambient air through stomata.</obo:IAO_0000115>
+        <oboInOwl:created_by>Stella Eggels</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000109</oboInOwl:id>
+        <rdfs:label>leaf gas exchange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000110">
+        <obo:IAO_0000115>Analyzer that measures the concentration of gases in air based on their absorption of infrared radiation.</obo:IAO_0000115>
+        <oboInOwl:created_by>Stella Eggels</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000110</oboInOwl:id>
+        <rdfs:label>infrared gas analyzer</rdfs:label>
     </owl:Class>
     
 
@@ -6026,6 +6208,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EFO_0002694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0002694"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EFO_0003748 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0003748">
@@ -8254,6 +8442,19 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SO:0000851</oboInOwl:id>
         <rdfs:label>CDS_region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <obo:IAO_0000115>Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>DPBO:0000035</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SWO:1100130</oboInOwl:id>
+        <rdfs:label>Seurat</rdfs:label>
     </owl:Class>
     
 
