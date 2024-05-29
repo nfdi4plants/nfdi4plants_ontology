@@ -23,6 +23,16 @@ name: imaging
 def: "Imaging is a process that produces an image of something." []
 
 [Term]
+id: AFR:0000952
+name: measurement time
+def: "The date/time of the measurement." [Allotrope]
+
+[Term]
+id: AFR:0001255
+name: temperature setting
+def: "A temperature setting is a setting that specifies some temperature configuration of a temperature controlling or monitoring device, that controls or monitors the target temperature at the site of some system component." [Allotrope]
+
+[Term]
 id: AFR:0001577
 name: injection volume setting
 def: "The injection volume setting is an injection setting that specifies the volume of the fluid to be injected." []
@@ -128,6 +138,11 @@ is_a: DPBO:0000012 ! bio entity
 id: BAO:0000513
 name: 96 well plate
 def: "This microplate contains 96 wells. It is suitable for a low throughput assay." []
+
+[Term]
+id: BAO:0002628
+name: instrumentation manufacturer
+def: "The role of a company as a creator of detection instrumentation." []
 
 [Term]
 id: BAO:0010013
@@ -1053,6 +1068,18 @@ is_a: EFO:0002694 ! experimental process
 id: DPBO:0000108
 name: transcriptional binding site identification
 def: "A measurement that is used to identify transcriptional binding sites in a genome." []
+
+[Term]
+id: DPBO:0000109
+name: leaf gas exchange
+def: "Exchange of carbon dioxide, oxygen and water vapor between the plant leaf and the ambient air through stomata." []
+created_by: Stella Eggels
+
+[Term]
+id: DPBO:0000110
+name: infrared gas analyzer
+def: "Analyzer that measures the concentration of gases in air based on their absorption of infrared radiation." []
+created_by: Stella Eggels
 
 [Term]
 id: DPBO:0002000
