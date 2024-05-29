@@ -597,6 +597,14 @@ id: DPBO:0000035
 name: Seurat
 def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
 is_a: DPBO:0000095 ! R package
+is_obsolete: true
+
+[Term]
+id: SWO:1100130
+name: Seurat
+def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
+is_a: DPBO:0000095 ! R package
+xref: DPBO:0000035
 
 [Term]
 id: DPBO:0000036
