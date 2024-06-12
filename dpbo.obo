@@ -129,6 +129,12 @@ def: "A planned process which occurs in an agricultural field." []
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-8461-9745
 
 [Term]
+id: BAO:0000269
+name: DNA
+def: "DNA or deoxyribonucleic acid is the genetic material in all the living things, and some viruses. It is a polymer of nucleotides, with a backbone made of deoxyribose sugar and phosphate groups joined together by ester bonds." []
+is_a: DPBO:0000012 ! bio entity
+
+[Term]
 id: BAO:0000316
 name: genomic DNA
 def: "DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc." []
