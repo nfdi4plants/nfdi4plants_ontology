@@ -578,6 +578,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BAO_0000269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BAO_0000269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
+        <obo:IAO_0000115>DNA or deoxyribonucleic acid is the genetic material in all the living things, and some viruses. It is a polymer of nucleotides, with a backbone made of deoxyribose sugar and phosphate groups joined together by ester bonds.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BAO:0000269</oboInOwl:id>
+        <rdfs:label>DNA</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BAO_0000316 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BAO_0000316">
