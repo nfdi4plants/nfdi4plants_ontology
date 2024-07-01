@@ -104,6 +104,73 @@ def: "Experimental site where the experiment is done in a private forest." []
 is_a: AGRO:00000360 ! experimental site
 
 [Term]
+id: AGRO:00000372
+name: farmer
+def: "A person engaged in agriculture, raising living organisms for food or raw materials." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000373
+name: researcher
+def: "A person who conducts research." []
+synonym: "scientist" EXACT []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000374
+name: student
+def: "A person that is enrolled or attends classes at a school, college, or university." []
+synonym: "intern" RELATED []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000375
+name: research station employee
+def: "A person that works in a research station." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000376
+name: extension agent
+def: "A person that is employed by the government to assist people in rural areas with methods of farming and home economics." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000377
+name: faculty member
+def: "A person that is an educator who works at a college or university." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000378
+name: person role within the experiment
+def: "Roled performed by a person during an experiment." []
+
+[Term]
+id: AGRO:00000379
+name: data collector
+def: "A person that has a role of collecting data related to the experiment." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000380
+name: principal investigator
+def: "A person that is the holder of an independent grant and the lead researcher for the grant project." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000381
+name: experiment manager
+def: "A person that has a role of managing the experiment." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
+id: AGRO:00000382
+name: field laborer
+def: "A person that has a role of performing the operations required to run the experiment in the field." []
+is_a: AGRO:00000378 ! person role within the experiment
+
+[Term]
 id: AGRO:00000566
 name: pruning process
 def: "Process which involves the selective removal of certain parts of a plant or a tree, such as branches, buds, or roots." [https://en.wikipedia.org/wiki/Pruning]
@@ -121,6 +188,12 @@ synonym: "geographic coordinate system" BROAD []
 synonym: "geolocation" EXACT []
 synonym: "GPS coordinates measurement datum" EXACT []
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-6284-4821
+
+[Term]
+id: AGRO:00000659
+name: field owner
+def: "A person that own an agricultural field." []
+is_a: AGRO:00000378 ! person role within the experiment
 
 [Term]
 id: AGRO:00002071

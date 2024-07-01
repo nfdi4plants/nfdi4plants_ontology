@@ -523,6 +523,139 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person engaged in agriculture, raising living organisms for food or raw materials.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000372</oboInOwl:id>
+        <rdfs:label>farmer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person who conducts research.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>scientist</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000373</oboInOwl:id>
+        <rdfs:label>researcher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that is enrolled or attends classes at a school, college, or university.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>intern</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>AGRO:00000374</oboInOwl:id>
+        <rdfs:label>student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that works in a research station.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000375</oboInOwl:id>
+        <rdfs:label>research station employee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that is employed by the government to assist people in rural areas with methods of farming and home economics.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000376</oboInOwl:id>
+        <rdfs:label>extension agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that is an educator who works at a college or university.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000377</oboInOwl:id>
+        <rdfs:label>faculty member</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000378">
+        <obo:IAO_0000115>Roled performed by a person during an experiment.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000378</oboInOwl:id>
+        <rdfs:label>person role within the experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000379">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that has a role of collecting data related to the experiment.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000379</oboInOwl:id>
+        <rdfs:label>data collector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that is the holder of an independent grant and the lead researcher for the grant project.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000380</oboInOwl:id>
+        <rdfs:label>principal investigator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that has a role of managing the experiment.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000381</oboInOwl:id>
+        <rdfs:label>experiment manager</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that has a role of performing the operations required to run the experiment in the field.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000382</oboInOwl:id>
+        <rdfs:label>field laborer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/AGRO_00000566 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000566">
@@ -563,6 +696,18 @@
         <owl:annotatedTarget>A measurement datum that is a unique identifier of a precise geographic location on the earth, usually expressed in alphanumeric characters</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://whatis.techtarget.com/definition/GPS-coordinates</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000378"/>
+        <obo:IAO_0000115>A person that own an agricultural field.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>AGRO:00000659</oboInOwl:id>
+        <rdfs:label>field owner</rdfs:label>
+    </owl:Class>
     
 
 
