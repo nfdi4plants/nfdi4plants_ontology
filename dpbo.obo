@@ -4538,6 +4538,24 @@ is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
+id: operation:3198
+name: Read mapping
+comment: The purpose of read mapping is to identify the location of sequenced fragments within a reference genome and assumes that there is, in fact, at least local similarity between the fragment and reference sequences.
+subset: edam
+subset: operations
+synonym: "Oligonucleotide alignment" EXACT []
+synonym: "Oligonucleotide alignment construction" EXACT []
+synonym: "Oligonucleotide alignment generation" EXACT []
+synonym: "Oligonucleotide mapping" EXACT []
+synonym: "Read alignment" EXACT []
+synonym: "Short oligonucleotide alignment" EXACT []
+synonym: "Short read alignment" EXACT []
+synonym: "Short read mapping" EXACT []
+synonym: "Short sequence read mapping" EXACT []
+property_value: created:in "1.1" xsd:string
+property_value: hasDefinition "Align short oligonucleotide sequences (reads) to a larger (genomic) sequence." xsd:string
+
+[Term]
 id: topic:0077
 name: Nucleic acids
 
