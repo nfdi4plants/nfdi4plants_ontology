@@ -766,13 +766,11 @@ def: "Specific to metabolomic mass spectrometry assays. Type of sample (e.g. exp
 id: DPBO:0000046
 name: chromatography instrument model
 def: "Company name, and instrument name or serial number of the chromatography instrument" []
-comment: is_a chromatography device (http://purl.obolibrary.org/obo/OBI_0000048)
 
 [Term]
 id: DPBO:0000047
 name: chromatography autosampler model
 def: "Company name, and name or serial number of the chromatography autosampler model" []
-comment: is_a autosampler (http://purl.obolibrary.org/obo/OBI_0000555)
 
 [Term]
 id: DPBO:0000048
@@ -783,7 +781,6 @@ def: "Company name, and name or serial number of the chromatography column" []
 id: DPBO:0000049
 name: chromatography guard column model
 def: "Company name, and name or serial number of the chromatography guard column" []
-comment: is_a http://purl.obolibrary.org/obo/OBI_0000614
 
 [Term]
 id: DPBO:0000050
@@ -985,7 +982,6 @@ comment: adapted from the ENA (European Nucleotide Archive) gene promoter templa
 id: DPBO:0000081
 name: chromatography gradient
 def: "Settings of the gradient used during (e.g. liquid, gas or ion) chromatography" []
-comment: "term was previously
 
 [Term]
 id: DPBO:0000082
@@ -1109,7 +1105,7 @@ def: "Duration of a bacterial cultivation." []
 [Term]
 id: DPBO:0000101
 name: start OD600
-def: "The OD600 that was used to incoculate a bacterial culture." []
+def: "The OD600 that was used to inoculate a bacterial culture." []
 
 [Term]
 id: DPBO:0000102
@@ -2167,7 +2163,7 @@ is_obsolete: true
 [Term]
 id: DPBO:1000094
 name: other
-def: "pAny other bio entity that can be characterized by high-throuput sequencing." []
+def: "Any other bio entity that can be characterized by high-throuput sequencing." []
 is_a: DPBO:0000012 ! bio entity
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string

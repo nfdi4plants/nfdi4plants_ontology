@@ -118,6 +118,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/dpbo#hasDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dpbo#hasDefinition"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/dpbo#hasHumanReadableId -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/dpbo#hasHumanReadableId"/>
@@ -1924,7 +1930,6 @@
         <obo:IAO_0000115>Company name, and instrument name or serial number of the chromatography instrument</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000046</oboInOwl:id>
-        <rdfs:comment>is_a chromatography device (http://purl.obolibrary.org/obo/OBI_0000048)</rdfs:comment>
         <rdfs:label>chromatography instrument model</rdfs:label>
     </owl:Class>
     
@@ -1936,7 +1941,6 @@
         <obo:IAO_0000115>Company name, and name or serial number of the chromatography autosampler model</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000047</oboInOwl:id>
-        <rdfs:comment>is_a autosampler (http://purl.obolibrary.org/obo/OBI_0000555)</rdfs:comment>
         <rdfs:label>chromatography autosampler model</rdfs:label>
     </owl:Class>
     
@@ -1959,7 +1963,6 @@
         <obo:IAO_0000115>Company name, and name or serial number of the chromatography guard column</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000049</oboInOwl:id>
-        <rdfs:comment>is_a http://purl.obolibrary.org/obo/OBI_0000614</rdfs:comment>
         <rdfs:label>chromatography guard column model</rdfs:label>
     </owl:Class>
     
@@ -2353,7 +2356,6 @@
         <obo:IAO_0000115>Settings of the gradient used during (e.g. liquid, gas or ion) chromatography</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000081</oboInOwl:id>
-        <rdfs:comment>&quot;term was previously</rdfs:comment>
         <rdfs:label>chromatography gradient</rdfs:label>
     </owl:Class>
     
@@ -2596,7 +2598,7 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000101">
-        <obo:IAO_0000115>The OD600 that was used to incoculate a bacterial culture.</obo:IAO_0000115>
+        <obo:IAO_0000115>The OD600 that was used to inoculate a bacterial culture.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000101</oboInOwl:id>
         <rdfs:label>start OD600</rdfs:label>
@@ -4401,7 +4403,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_1000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000012"/>
-        <obo:IAO_0000115>pAny other bio entity that can be characterized by high-throuput sequencing.</obo:IAO_0000115>
+        <obo:IAO_0000115>Any other bio entity that can be characterized by high-throuput sequencing.</obo:IAO_0000115>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -8752,6 +8754,30 @@
         <rdfs:comment>term is redundant, please use GENEPIO:0001973</rdfs:comment>
         <rdfs:label>library strategy</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/operation_3198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/operation_3198">
+        <obo:created_in>1.1</obo:created_in>
+        <dpbo:hasDefinition>Align short oligonucleotide sequences (reads) to a larger (genomic) sequence.</dpbo:hasDefinition>
+        <oboInOwl:hasExactSynonym>Oligonucleotide alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oligonucleotide alignment construction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oligonucleotide alignment generation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Oligonucleotide mapping</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Read alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Short oligonucleotide alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Short read alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Short read mapping</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Short sequence read mapping</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>operation:3198</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/dpbo#operations"/>
+        <rdfs:comment>The purpose of read mapping is to identify the location of sequenced fragments within a reference genome and assumes that there is, in fact, at least local similarity between the fragment and reference sequences.</rdfs:comment>
+        <rdfs:label>Read mapping</rdfs:label>
     </owl:Class>
     
 
