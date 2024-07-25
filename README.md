@@ -6,8 +6,8 @@ You can visualize the class tree of the DPBO and browse for terms at the TIB ter
 DPBO enables easy and agile collection of missing vocabulary as well as relationships between terms for (meta)data annotation using DataPLANT’s Swate tool. 
 
 
-#### Note: 
-DPBO formerly had the namespace NFDI4PSO, which is now obsolete. Old NFDI4PSO terms correspond to the DPBO term with the same accession number. For example, NFDI4PSO:0000011 (obsolete) corresponds to the term DPBO:0000011.
+> [!Note] 
+> DPBO formerly had the namespace NFDI4PSO, which is now obsolete. Old NFDI4PSO terms correspond to the DPBO term with the same accession number. For example, NFDI4PSO:0000011 (obsolete) corresponds to the term DPBO:0000011.
 
 # Your contribution
 
