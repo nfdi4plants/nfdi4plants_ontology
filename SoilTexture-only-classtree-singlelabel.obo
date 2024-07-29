@@ -5,235 +5,234 @@ ontology: https://srv.ktbl.de/ontologies/SoilTexture
 [Term]
 id: soilTexture:KA4Ls2
 name: slightly sandy loam
-is_a: KA4ll ! normal loams
+is_a: soilTexture:KA4ll ! normal loams
 
 [Term]
 id: soilTexture:KA4Ls3
 name: medium sandy loam
-is_a: KA4ll ! normal loams
+is_a: soilTexture:KA4ll ! normal loams
 
 [Term]
 id: soilTexture:KA4Ls4
 name: strongly sandy loam
-is_a: KA4ll ! normal loams
+is_a: soilTexture:KA4ll ! normal loams
 
 [Term]
 id: soilTexture:KA4Lt2
 name: weakly clayey loam
-is_a: KA4ll ! normal loams
+is_a: soilTexture:KA4ll ! normal loams
 
 [Term]
 id: soilTexture:KA4Lt3
 name: medium clayey loam
-is_a: KA4ut ! silty clays
+is_a: soilTexture:KA4ut ! silty clays
 
 [Term]
 id: soilTexture:KA4Lts
 name: sandy-clayey loam
-is_a: KA4tl ! clayey loams
+is_a: soilTexture:KA4tl ! clayey loams
 
 [Term]
 id: soilTexture:KA4Lu
 name: silty loam
-is_a: KA4tu ! clayey silts
+is_a: soilTexture:KA4tu ! clayey silts
 
 [Term]
 id: soilTexture:KA4Sl2
 name: slightly loamy sand
-is_a: KA4ls ! loamy sands
+is_a: soilTexture:KA4ls ! loamy sands
 
 [Term]
 id: soilTexture:KA4Sl3
 name: medium loamy sand
-is_a: KA4ls ! loamy sands
+is_a: soilTexture:KA4ls ! loamy sands
 
 [Term]
 id: soilTexture:KA4Sl4
 name: strongly loamy sand
-is_a: KA4sl ! sandy loams
+is_a: soilTexture:KA4sl ! sandy loams
 
 [Term]
 id: soilTexture:KA4Slu
 name: silty-loamy sand
-is_a: KA4sl ! sandy loams
+is_a: soilTexture:KA4sl ! sandy loams
 
 [Term]
 id: soilTexture:KA4SoilTexture
 name: soil texture (KA4)
-is_a: SoilTexture
+is_a: soilTexture:SoilTexture
 
 [Term]
 id: soilTexture:KA4Ss
 name: pure sand
-is_a: KA4ss ! pure sands
+is_a: soilTexture:KA4ss ! pure sands
 
 [Term]
 id: soilTexture:KA4St2
 name: slightly clayey sand
-is_a: KA4ls ! loamy sands
+is_a: soilTexture:KA4ls ! loamy sands
 
 [Term]
 id: soilTexture:KA4St3
 name: medium clayey sand
-is_a: KA4sl ! sandy loams
+is_a: soilTexture:KA4sl ! sandy loams
 
 [Term]
 id: soilTexture:KA4Su2
 name: slightly silty sand
-is_a: KA4ls ! loamy sands
+is_a: soilTexture:KA4ls ! loamy sands
 
 [Term]
 id: soilTexture:KA4Su3
 name: medium silty sand
-is_a: KA4us ! silty sands
+is_a: soilTexture:KA4us ! silty sands
 
 [Term]
 id: soilTexture:KA4Su4
 name: strongly silty sand
-is_a: KA4us ! silty sands
+is_a: soilTexture:KA4us ! silty sands
 
 [Term]
 id: soilTexture:KA4Tl
 name: loamy clay
-is_a: KA4lt ! loamy clays
+is_a: soilTexture:KA4lt ! loamy clays
 
 [Term]
 id: soilTexture:KA4Ts2
 name: slightly sandy clay
-is_a: KA4lt ! loamy clays
+is_a: soilTexture:KA4lt ! loamy clays
 
 [Term]
 id: soilTexture:KA4Ts3
 name: medium sandy clay
-is_a: KA4tl ! clayey loams
+is_a: soilTexture:KA4tl ! clayey loams
 
 [Term]
 id: soilTexture:KA4Ts4
 name: strongly sandy clay
-is_a: KA4tl ! clayey loams
+is_a: soilTexture:KA4tl ! clayey loams
 
 [Term]
 id: soilTexture:KA4Tt
 name: pure clay
-is_a: KA4lt ! loamy clays
+is_a: soilTexture:KA4lt ! loamy clays
 
 [Term]
 id: soilTexture:KA4Tu2
 name: slightly silty clay
-is_a: KA4lt ! loamy clays
+is_a: soilTexture:KA4lt ! loamy clays
 
 [Term]
 id: soilTexture:KA4Tu3
 name: medium silty clay
-is_a: KA4ut ! silty clays
+is_a: soilTexture:KA4ut ! silty clays
 
 [Term]
 id: soilTexture:KA4Tu4
 name: strongly silty clay
-is_a: KA4ut ! silty clays
+is_a: soilTexture:KA4ut ! silty clays
 
 [Term]
 id: soilTexture:KA4Uls
 name: sandy-loamy silt
-is_a: KA4lu ! loamy silts
+is_a: soilTexture:KA4lu ! loamy silts
 
 [Term]
 id: soilTexture:KA4Us
 name: sandy silt
-is_a: KA4su ! sandy silts
+is_a: soilTexture:KA4su ! sandy silts
 
 [Term]
 id: soilTexture:KA4Ut2
 name: slightly clayey silt
-is_a: KA4lu ! loamy silts
+is_a: soilTexture:KA4lu ! loamy silts
 
 [Term]
 id: soilTexture:KA4Ut3
 name: medium clayey silt
-is_a: KA4lu ! loamy silts
+is_a: soilTexture:KA4lu ! loamy silts
 
 [Term]
 id: soilTexture:KA4Ut4
 name: strongly clayey silt
-is_a: KA4tu ! clayey silts
+is_a: soilTexture:KA4tu ! clayey silts
 
 [Term]
 id: soilTexture:KA4Uu
 name: pure silt
-is_a: KA4su ! sandy silts
+is_a: soilTexture:KA4su ! sandy silts
 
 [Term]
 id: soilTexture:KA4l
 name: loam
-is_a: KA4SoilTexture ! soil texture (KA4)
+is_a: soilTexture:KA4SoilTexture ! soil texture (KA4)
 
 [Term]
 id: soilTexture:KA4ll
 name: normal loams
-is_a: KA4l ! loam
+is_a: soilTexture:KA4l ! loam
 
 [Term]
 id: soilTexture:KA4ls
 name: loamy sands
-is_a: KA4s ! sand
+is_a: soilTexture:KA4s ! sand
 
 [Term]
 id: soilTexture:KA4lt
 name: loamy clays
-is_a: KA4t ! clay
+is_a: soilTexture:KA4t ! clay
 
 [Term]
 id: soilTexture:KA4lu
 name: loamy silts
-is_a: KA4u ! silt
+is_a: soilTexture:KA4u ! silt
 
 [Term]
 id: soilTexture:KA4s
 name: sand
-is_a: KA4SoilTexture ! soil texture (KA4)
+is_a: soilTexture:KA4SoilTexture ! soil texture (KA4)
 
 [Term]
 id: soilTexture:KA4sl
 name: sandy loams
-is_a: KA4l ! loam
+is_a: soilTexture:KA4l ! loam
 
 [Term]
 id: soilTexture:KA4ss
 name: pure sands
-is_a: KA4s ! sand
+is_a: soilTexture:KA4s ! sand
 
 [Term]
 id: soilTexture:KA4su
 name: sandy silts
-is_a: KA4u ! silt
+is_a: soilTexture:KA4u ! silt
 
 [Term]
 id: soilTexture:KA4t
 name: clay
-is_a: KA4SoilTexture ! soil texture (KA4)
+is_a: soilTexture:KA4SoilTexture ! soil texture (KA4)
 
 [Term]
 id: soilTexture:KA4tl
 name: clayey loams
-is_a: KA4l ! loam
+is_a: soilTexture:KA4l ! loam
 
 [Term]
 id: soilTexture:KA4tu
 name: clayey silts
-is_a: KA4u ! silt
+is_a: soilTexture:KA4u ! silt
 
 [Term]
 id: soilTexture:KA4u
 name: silt
-is_a: KA4SoilTexture ! soil texture (KA4)
+is_a: soilTexture:KA4SoilTexture ! soil texture (KA4)
 
 [Term]
 id: soilTexture:KA4us
 name: silty sands
-is_a: KA4s ! sand
+is_a: soilTexture:KA4s ! sand
 
 [Term]
 id: soilTexture:KA4ut
 name: silty clays
-is_a: KA4t ! clay
-
+is_a: soilTexture:KA4t ! clay
