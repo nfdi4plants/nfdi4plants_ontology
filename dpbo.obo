@@ -1157,6 +1157,11 @@ def: "Analyzer that measures the concentration of gases in air based on their ab
 created_by: Stella Eggels
 
 [Term]
+id: DPBO:0000111
+name: Explication
+def: "A word, term or short statement that clarifies the cause, context and/or consequence of another entity." []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []

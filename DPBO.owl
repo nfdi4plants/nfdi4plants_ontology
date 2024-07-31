@@ -2709,6 +2709,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000111">
+        <obo:IAO_0000115>A word, term or short statement that clarifies the cause, context and/or consequence of another entity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000111</oboInOwl:id>
+        <rdfs:label>Explication</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0002000">
