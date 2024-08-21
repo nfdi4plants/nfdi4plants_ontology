@@ -39,6 +39,26 @@ How to submit a new issue:
 
 5. Click on **Submit new issue** to validate your entry. We will get back to you soon!
 
+## Git workflow to edit/add terms and ontologies
+
+You can contribute to the current ontology collection either through the [GitHub Issues](https://github.com/nfdi4plants/nfdi4plants_ontology/issues) or by creating a pull request (PR) with the changes you would like to have incorporated. In order to do this, you can follow the steps outlined below:
+
+1. (recommended) Create an issue with background information about the changes you want to make. This also serves as a place for discussion.
+2. Fork the repository:
+![image](_tutorials/repo1.png)
+![image](_tutorials/repo2.png)
+3. (recommended) Create a new branch (e.g. "feature") on your fork.
+![image](_tutorials/repo3.png)
+![image](_tutorials/repo4.png)
+![image](_tutorials/repo5.png)
+![image](_tutorials/repo6.png)
+![image](_tutorials/repo7.png)
+4. Change the files you want changed, e.g., add a new term into the `dpbo.obo` file, or add your own ontology file into the root folder of this repository.
+5. After adding your changes, make sure your fork is synced and open a pull request:
+![image](_tutorials/repo8.png)
+6. In the PR, make sure the `base repository` is set to `nfdi4plants/nfdi4plants_ontology` with the main branch selected `base: main`. This should be correct by default. Then, check that the head repository is your fork `head repository: <your github name>/nfdi4plants_ontology` and that the correct branch is selected, `compare: feature`. In the below example, a new branch called `feature` was created, so this is the branch that needs to be selected here. Afterwards, give the PR a meaningful title and add a short description summarizing your changes. Here, you should also reference your issue, if you have created one in step 1. You can do this by typing in a `#`, followed by the number of your issue. When you have added everything, you can create the pull request. One of the DataPLANT maintainers for this repo will then review your changes and accept them, or request additional changes to be made.
+![image](_tutorials/repo9.png)
+
 
 ## Contact  
 You can contact the ontology curators via the Issues tab or our [Helpdesk](https://helpdesk.nfdi4plants.org/). We look forward to hearing from you!
