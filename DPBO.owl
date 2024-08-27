@@ -1791,11 +1791,11 @@
     <!-- http://purl.obolibrary.org/obo/DPBO_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000095"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000035</oboInOwl:id>
-        <rdfs:label>Seurat</rdfs:label>
+        <rdfs:label>obsolete_Seurat</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -2720,6 +2720,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_00002008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_00002008">
+        <obo:IAO_0000115>Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. </obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ENVO:01000813</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:00002008</oboInOwl:id>
+        <rdfs:comment>EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO&quot; []</rdfs:comment>
+        <rdfs:label>environment (feature)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_0002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0002000">
@@ -2782,19 +2795,6 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0002007</oboInOwl:id>
         <rdfs:label>investigation type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DPBO_0002008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0002008">
-        <obo:IAO_0000115>Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. </obo:IAO_0000115>
-        <oboInOwl:hasDbXref>ENVO:01000813</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DPBO:0002008</oboInOwl:id>
-        <rdfs:comment>EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO&quot; []</rdfs:comment>
-        <rdfs:label>environment (feature)</rdfs:label>
     </owl:Class>
     
 
@@ -6380,7 +6380,12 @@
 
     <!-- http://purl.obolibrary.org/obo/EFO_0002694 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0002694"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0002694">
+        <obo:IAO_0000115>A process performed as part of an experiment or wider study, i.e. intentionally designed.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>EFO:0002694</oboInOwl:id>
+        <rdfs:label>experimental process</rdfs:label>
+    </owl:Class>
     
 
 
@@ -6935,6 +6940,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_00002008"/>
+        <obo:IAO_0000115>A hot spring that erupts periodically, ejecting a column of hot water and steam into the air.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ENVO:00000050</oboInOwl:id>
+        <rdfs:label>geyser</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_00002008"/>
+        <obo:IAO_0000115>A cold seep is a seep in which methane and other hydrocarbon-rich fluids rise to the sea floor.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ENVO:01000263</oboInOwl:id>
+        <rdfs:label>cold seep</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_00002008"/>
+        <obo:IAO_0000115>This class corresponds to the &apos;Tropical Mixed needleleaf / broadleaf forest&apos; category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the &apos;tropical mixed needleleaf forest&apos; class can be made. The relationship between this &apos;forest&apos; class and the mangrove swamp must be clarified.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ENVO:01000403</oboInOwl:id>
+        <rdfs:label>tropical mangrove</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001788 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001788">
@@ -7477,6 +7518,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MIAPPE_0049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MIAPPE_0049">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MIAPPE:0049</oboInOwl:id>
+        <rdfs:label>Biological material preprocessing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MIAPPE_0095 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MIAPPE_0095">
@@ -8000,6 +8051,18 @@
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Contamination</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://github.com/pato-ontology/pato/issues/420</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PECO_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PECO_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MIAPPE_0049"/>
+        <obo:IAO_0000115>A plant experimental condition (PECO:0007359) or set of conditions describing the application of an abiotic (PECO:0007191) or biotic plant exposure (biotic plant exposurePECO:0007359) or set of conditions describing the application of an abiotic (PECO:0007191) or biotic plant exposure (PECO:0007357plant experimental condition) or set of conditions describing the application of an abiotic (abiotic plant exposure) or biotic plant exposure (PECO:0007357) or the combinatorial application thereof.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PECO:0001001</oboInOwl:id>
+        <rdfs:label>plant exposure</rdfs:label>
+    </owl:Class>
     
 
 
