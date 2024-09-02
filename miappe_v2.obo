@@ -25,14 +25,14 @@ is_a: MIAPPE:0174 ! Investigation information
 id: MIAPPE:0002
 name: Investigation title
 def: "Human-readable string summarising the investigation." []
-comment: "Example: Adaptation of Maize to Temperate Climates: Mid-Density Genome-Wide Association Genetics and Diversity Patterns Reveal Key Genomic Regions, with a Major Contribution of the Vgt2 (ZCN8) Locus.. Format: Free text (short). Cardinality: 1"
+comment: "Example: Adaptation of Maize to Temperate Climates: Mid-Density Genome-Wide Association Genetics and Diversity Patterns Reveal Key Genomic Regions, with a Major Contribution of the Vgt2 (ZCN8) Locus. Format: Free text (short). Cardinality: 1"
 is_a: MIAPPE:0174 ! Investigation information
 
 [Term]
 id: MIAPPE:0003
 name: Investigation description
 def: "Human-readable text describing the investigation in more detail." []
-comment: "Example: The migration of maize from tropical to temperate climates was accompanied by a dramatic evolution in flowering time. To gain insight into the genetic architecture of this adaptive trait, we conducted a 50K SNP-based genome-wide association and diversity investigation on a panel of tropical and temperate American and European representatives.. Format: Free text. Cardinality: 0-1"
+comment: "Example: The migration of maize from tropical to temperate climates was accompanied by a dramatic evolution in flowering time. To gain insight into the genetic architecture of this adaptive trait, we conducted a 50K SNP-based genome-wide association and diversity investigation on a panel of tropical and temperate American and European representatives. Format: Free text. Cardinality: 0-1"
 is_a: MIAPPE:0174 ! Investigation information
 
 [Term]
@@ -556,7 +556,7 @@ xref: PO:0025131
 id: MIAPPE:0079
 name: Sample description
 def: "Any information not captured by the other sample fields, including quantification, sample treatments and processing." []
-comment: "Example: Distal part of the leaf ; 100 mg of roots taken from 10 roots at 20°C, conserved in vacuum at 20 mM NaCl salinity, stored at -60 °C to -85 °C.. Format: Free text. Cardinality: 0-1"
+comment: "Example: Distal part of the leaf ; 100 mg of roots taken from 10 roots at 20°C, conserved in vacuum at 20 mM NaCl salinity, stored at -60°C to -85°C. Format: Free text. Cardinality: 0-1"
 is_a: MIAPPE:0178 ! Sample information
 
 [Term]
@@ -668,21 +668,21 @@ is_a: MIAPPE:0057 ! Environment
 id: MIAPPE:0096
 name: Air temperature
 def: "List of hourly air temperature throughout the experiment." []
-comment: "Example: 22 °C. Format: Numeric"
+comment: "Example: 22°C. Format: Numeric"
 is_a: MIAPPE:0169 ! Growth condition
 
 [Term]
 id: MIAPPE:0097
 name: Organ temperature
 def: "List of hourly organ temperatures throughout the experiment." []
-comment: "Example: 18 °C. Format: Numeric"
+comment: "Example: 18°C. Format: Numeric"
 is_a: MIAPPE:0169 ! Growth condition
 
 [Term]
 id: MIAPPE:0098
 name: Change in air temperature over the course of experiment
 def: "Difference between the maximum air temperature recorded and the minimum." []
-comment: "Example: 0.75 °C. Format: Numeric"
+comment: "Example: 0.75°C. Format: Numeric"
 is_a: MIAPPE:0169 ! Growth condition
 
 [Term]
@@ -990,14 +990,14 @@ is_a: MIAPPE:0060 ! Experimental factor
 id: MIAPPE:0143
 name: Air treatment regime
 def: "The treatment involving an exposure to wind/air with varying degree of temperature, which may depend on the study type or the regional environment." []
-comment: "Example: 28/25ºC ( Day/Night )."
+comment: "Example: 28/25°C ( Day/Night )."
 is_a: MIAPPE:0060 ! Experimental factor
 
 [Term]
 id: MIAPPE:0144
 name: Soil temperature regime
 def: "A physical plant treatment involving an exposure to varying degree of temperature, which may depend on regional environment." []
-comment: "Example: 27/25ºC ( Day/Night )."
+comment: "Example: 27/25°C ( Day/Night )."
 is_a: MIAPPE:0060 ! Experimental factor
 
 [Term]
@@ -1123,7 +1123,7 @@ is_a: MIAPPE:0060 ! Experimental factor
 id: MIAPPE:0162
 name: Water temperature regime
 def: "Treatment involving an exposure to water with varying degree of temperature, which may depend on regional environment." []
-comment: "Example: 20ºC."
+comment: "Example: 20°C."
 is_a: MIAPPE:0060 ! Experimental factor
 
 [Term]
