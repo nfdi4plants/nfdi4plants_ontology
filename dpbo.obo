@@ -1174,6 +1174,11 @@ def: "The vertical distance below local surface at which the sample was taken. F
 comment: adapted from MIXS:0000018
 
 [Term]
+id: DPBO:0000114
+name: Number of injections
+def: "Number of injections of a sample into a mass spectrometer or chromatograph." []
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []

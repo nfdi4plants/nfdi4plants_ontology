@@ -2744,6 +2744,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000114">
+        <obo:IAO_0000115>Number of injections of a sample into a mass spectrometer or chromatograph.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000114</oboInOwl:id>
+        <rdfs:label>Number of injections</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_00002008">
