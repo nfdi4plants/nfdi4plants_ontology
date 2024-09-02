@@ -1162,6 +1162,18 @@ name: Explication
 def: "A word, term or short statement that clarifies the cause, context and/or consequence of another entity." []
 
 [Term]
+id: DPBO:0000112
+name: Tissue
+def: "Multicellular structure comprising similar cells with some specific function." []
+comment: adapted from FBcv:0003046
+
+[Term]
+id: DPBO:0000113
+name: Sampling depth
+def: "The vertical distance below local surface at which the sample was taken. For sediment or soil samples depth is measured from sediment or soil surface, respectively." []
+comment: adapted from MIXS:0000018
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
@@ -4166,6 +4178,26 @@ def: "A plant experimental condition (PECO:0007359) or set of conditions describ
 is_a: MIAPPE:0049 ! Biological material preprocessing
 
 [Term]
+id: PO:0009001
+name: fruit
+is_a: DPBO:0000112 ! Tissue
+
+[Term]
+id: PO:0009008
+name: plant organ
+is_a: DPBO:0000112 ! Tissue
+
+[Term]
+id: PO:0009010
+name: seed
+is_a: DPBO:0000112 ! Tissue
+
+[Term]
+id: PO:0025498
+name: cardinal part of multi-tissue plant structure
+is_a: DPBO:0000112 ! Tissue
+
+[Term]
 id: PRIDE:0000307
 name: Quantification method
 namespace: PRIDE
@@ -4451,6 +4483,10 @@ def: "data analysis is a process of inspecting, cleaning, transforming, and mode
 id: SIO:010016
 name: nucleic acid sequence
 def: "A nucleic acid sequence is a symbolic representation of the sequence of nucleic acid residues in a nucleic acid." []
+
+[Term]
+id: SNOMED:430862008
+name: Microscope slide mounting medium (substance)
 
 [Term]
 id: SO:0000141

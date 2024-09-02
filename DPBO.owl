@@ -2720,6 +2720,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000112">
+        <obo:IAO_0000115>Multicellular structure comprising similar cells with some specific function.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000112</oboInOwl:id>
+        <rdfs:comment>adapted from FBcv:0003046</rdfs:comment>
+        <rdfs:label>Tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DPBO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_0000113">
+        <obo:IAO_0000115>The vertical distance below local surface at which the sample was taken. For sediment or soil samples depth is measured from sediment or soil surface, respectively.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DPBO:0000113</oboInOwl:id>
+        <rdfs:comment>adapted from MIXS:0000018</rdfs:comment>
+        <rdfs:label>Sampling depth</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DPBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DPBO_00002008">
@@ -8066,6 +8090,50 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0009001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000112"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0009001</oboInOwl:id>
+        <rdfs:label>fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000112"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0009008</oboInOwl:id>
+        <rdfs:label>plant organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000112"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0009010</oboInOwl:id>
+        <rdfs:label>seed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DPBO_0000112"/>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PO:0025498</oboInOwl:id>
+        <rdfs:label>cardinal part of multi-tissue plant structure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000307 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000307">
@@ -8562,6 +8630,16 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SIO:010016</oboInOwl:id>
         <rdfs:label>nucleic acid sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SNOMED_430862008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SNOMED_430862008">
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SNOMED:430862008</oboInOwl:id>
+        <rdfs:label>Microscope slide mounting medium (substance)</rdfs:label>
     </owl:Class>
     
 
