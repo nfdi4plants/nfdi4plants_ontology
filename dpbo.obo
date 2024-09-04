@@ -688,9 +688,9 @@ def: "Health status of the plant at the time of sample collection" []
 
 [Term]
 id: DPBO:0000035
-name: Seurat
+name: obsolete_Seurat
 def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
-is_a: DPBO:0000095 ! R package
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
@@ -1160,6 +1160,23 @@ created_by: Stella Eggels
 id: DPBO:0000111
 name: Explication
 def: "A word, term or short statement that clarifies the cause, context and/or consequence of another entity." []
+
+[Term]
+id: DPBO:0000112
+name: Tissue
+def: "Multicellular structure comprising similar cells with some specific function." []
+comment: adapted from FBcv:0003046
+
+[Term]
+id: DPBO:0000113
+name: Sampling depth
+def: "The vertical distance below local surface at which the sample was taken. For sediment or soil samples depth is measured from sediment or soil surface, respectively." []
+comment: adapted from MIXS:0000018
+
+[Term]
+id: DPBO:0000114
+name: Number of injections
+def: "Number of injections of a sample into a mass spectrometer or chromatograph." []
 
 [Term]
 id: DPBO:0002000
@@ -3234,6 +3251,11 @@ xref: NCIt:C106049
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
+id: EFO:0002694
+name: experimental process
+def: "A process performed as part of an experiment or wider study, i.e. intentionally designed." []
+
+[Term]
 id: EFO:0003748
 name: MRE-seq
 def: "An assay in which DNA us the input molecule derived from cleavage of DNA by use of methylation sensitive restriction enzymes to fragment DNA at methylation sites before sequencing" []
@@ -3511,7 +3533,7 @@ is_a: DPBO:0000012 ! bio entity
 [Term]
 id: ENVO:01000403
 name: tropical mangrove
-def: "This class corresponds to the "Tropical Mixed needleleaf / broadleaf forest" category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the "tropical mixed needleleaf forest" class can be made. The relationship between this "forest" class and the mangrove swamp must be clarified."
+def: "This class corresponds to the 'Tropical Mixed needleleaf / broadleaf forest' category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the 'tropical mixed needleleaf forest' class can be made. The relationship between this 'forest' class and the mangrove swamp must be clarified."
 is_a: DPBO:00002008 ! environment (feature)
 
 [Term]
@@ -3884,6 +3906,10 @@ name: tag
 def: "Small molecules, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." [PMID:14755292]
 
 [Term]
+id: MIAPPE:0049
+name: Biological material preprocessing
+
+[Term]
 id: MIAPPE:0095
 name: Growth facility
 
@@ -4149,6 +4175,32 @@ name: volume
 id: PATO:0015031
 name: contamination
 def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity." [https://en.wikipedia.org/wiki/Contamination, https://github.com/pato-ontology/pato/issues/420]
+
+[Term]
+id: PECO:0001001
+name: plant exposure
+def: "A plant experimental condition (PECO:0007359) or set of conditions describing the application of an abiotic (PECO:0007191) or biotic plant exposure (biotic plant exposurePECO:0007359) or set of conditions describing the application of an abiotic (PECO:0007191) or biotic plant exposure (PECO:0007357plant experimental condition) or set of conditions describing the application of an abiotic (abiotic plant exposure) or biotic plant exposure (PECO:0007357) or the combinatorial application thereof." []
+is_a: MIAPPE:0049 ! Biological material preprocessing
+
+[Term]
+id: PO:0009001
+name: fruit
+is_a: DPBO:0000112 ! Tissue
+
+[Term]
+id: PO:0009008
+name: plant organ
+is_a: DPBO:0000112 ! Tissue
+
+[Term]
+id: PO:0009010
+name: seed
+is_a: DPBO:0000112 ! Tissue
+
+[Term]
+id: PO:0025498
+name: cardinal part of multi-tissue plant structure
+is_a: DPBO:0000112 ! Tissue
 
 [Term]
 id: PRIDE:0000307
@@ -4436,6 +4488,10 @@ def: "data analysis is a process of inspecting, cleaning, transforming, and mode
 id: SIO:010016
 name: nucleic acid sequence
 def: "A nucleic acid sequence is a symbolic representation of the sequence of nucleic acid residues in a nucleic acid." []
+
+[Term]
+id: SNOMED:430862008
+name: Microscope slide mounting medium (substance)
 
 [Term]
 id: SO:0000141
