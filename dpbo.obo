@@ -694,13 +694,6 @@ is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
-id: SWO:1100130
-name: Seurat
-def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
-is_a: DPBO:0000095 ! R package
-xref: DPBO:0000035
-
-[Term]
 id: DPBO:0000036
 name: obsolete_library selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
@@ -1032,7 +1025,7 @@ created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 id: DPBO:0000088
 name: growth chamber
 def: "A climatic chamber used for growing plants under controlled environmental conditions." []
-is_a: MIAPPE:0095
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: DPBO:0000089
@@ -1179,6 +1172,13 @@ name: Number of injections
 def: "Number of injections of a sample into a mass spectrometer or chromatograph." []
 
 [Term]
+id: DPBO:00002008
+name: environment (feature)
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
+comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
+xref: ENVO:01000813
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
@@ -1207,13 +1207,6 @@ def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid." []
 id: DPBO:0002007
 name: investigation type
 def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium" []
-
-[Term]
-id: DPBO:00002008
-name: environment (feature)
-def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
-comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
-xref: ENVO:01000813
 
 [Term]
 id: DPBO:0002009
@@ -3531,21 +3524,21 @@ name: nuclear RNA
 is_a: DPBO:0000012 ! bio entity
 
 [Term]
-id: ENVO:01000403
-name: tropical mangrove
-def: "This class corresponds to the 'Tropical Mixed needleleaf / broadleaf forest' category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the 'tropical mixed needleleaf forest' class can be made. The relationship between this 'forest' class and the mangrove swamp must be clarified."
-is_a: DPBO:00002008 ! environment (feature)
-
-[Term]
 id: ENVO:00000050
 name: geyser
-def: "A hot spring that erupts periodically, ejecting a column of hot water and steam into the air."
+def: "A hot spring that erupts periodically, ejecting a column of hot water and steam into the air." []
 is_a: DPBO:00002008 ! environment (feature)
 
 [Term]
 id: ENVO:01000263
 name: cold seep
-def: "A cold seep is a seep in which methane and other hydrocarbon-rich fluids rise to the sea floor."
+def: "A cold seep is a seep in which methane and other hydrocarbon-rich fluids rise to the sea floor." []
+is_a: DPBO:00002008 ! environment (feature)
+
+[Term]
+id: ENVO:01000403
+name: tropical mangrove
+def: "This class corresponds to the 'Tropical Mixed needleleaf / broadleaf forest' category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the 'tropical mixed needleleaf forest' class can be made. The relationship between this 'forest' class and the mangrove swamp must be clarified." []
 is_a: DPBO:00002008 ! environment (feature)
 
 [Term]
@@ -3655,6 +3648,174 @@ xref: NCBI SRA: LIBRARY_SELECTION
 is_a: GENEPIO:0001681 ! laboratory sequencing datum
 property_value: GENEPIO:0000005 "https://www.ncbi.nlm.nih.gov/books/NBK54984/table/SRA_Glossary_BK.T._library_descriptor_te/?report=objectonly" xsd:string
 property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001941
+name: 5-methylcytidine antibody method
+def: "Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C)." []
+xref: NCBI SRA: 5-methylcytidine antibody
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001942
+name: CAGE method
+def: "Cap-analysis gene expression." []
+xref: NCBI SRA: CAGE
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001943
+name: CF-H method
+def: "Cot-filtered highly repetitive genomic DNA" []
+xref: NCBI SRA: CF-H
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001944
+name: CF-M method
+def: "Cot-filtered moderately repetitive genomic DNA" []
+xref: NCBI SRA: CF-M
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001945
+name: CF-S method
+def: "Cot-filtered single/low-copy genomic DNA" []
+xref: NCBI SRA: CF-S
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001946
+name: CF-T method
+def: "Cot-filtered theoretical single-copy genomic DNA" []
+xref: NCBI SRA: CF-T
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001947
+name: ChIP method
+def: "Chromatin immunoprecipitation" []
+xref: NCBI SRA: ChIP
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001948
+name: DNAse method
+def: "Deoxyribonuclease (MNase) digestion" []
+xref: NCBI SRA: DNAse
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001949
+name: HMPR method
+def: "Hypo-methylated partial restriction digest" []
+xref: NCBI SRA: HMPR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001950
+name: Hybrid Selection method
+def: "Selection by hybridization in array or solution." []
+xref: NCBI SRA: Hybrid Selection
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001951
+name: MBD2 protein methyl-CpG binding domain method
+def: "Enrichment by methyl-CpG binding domain." []
+xref: NCBI SRA: MBD2 protein methyl-CpG binding domain
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001952
+name: MF method
+def: "Methyl Filtrated" []
+xref: NCBI SRA: MF
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001953
+name: MNase method
+def: "Micrococcal Nuclease (MNase) digestion" []
+xref: NCBI SRA: MNase
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001954
+name: MSLL method
+def: "Methylation Spanning Linking Library" []
+xref: NCBI SRA: MSLL
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001955
+name: PCR method
+def: "Source material was selected by designed primers." []
+xref: NCBI SRA: PCR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001956
+name: RACE method
+def: "Rapid Amplification of cDNA Ends." []
+xref: NCBI SRA: RACE
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001957
+name: RANDOM PCR method
+def: "Source material was selected by randomly generated primers." []
+xref: NCBI SRA: RANDOM PCR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001958
+name: RANDOM method
+def: "Random selection by shearing or other method." []
+xref: NCBI SRA: RANDOM
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001959
+name: RT-PCR method
+def: "Source material was selected by reverse transcription PCR" []
+xref: NCBI SRA: RT-PCR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001960
+name: Reduced Representation method
+def: "Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling." []
+xref: NCBI SRA: Reduced Representation
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001961
+name: Restriction Digest method
+def: "DNA fractionation using restriction enzymes." []
+xref: NCBI SRA: Restriction Digest
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001962
+name: cDNA method
+def: "PolyA selection or enrichment for messenger RNA (mRNA). complementary DNA." []
+xref: NCBI SRA: cDNA
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001963
+name: size fractionation method
+def: "Physical selection of size appropriate targets." []
+xref: NCBI SRA: size fractionation
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001964
+name: other library method
+def: "Other library enrichment, screening, or selection process." []
+xref: NCBI SRA: other
+is_a: GENEPIO:0001940 ! library selection
 
 [Term]
 id: GENEPIO:0001965
@@ -4543,6 +4704,13 @@ name: CDS_region
 def: "A region of a CDS." []
 
 [Term]
+id: SWO:1100130
+name: Seurat
+def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
+xref: DPBO:0000035
+is_a: DPBO:0000095 ! R package
+
+[Term]
 id: UO:0000000
 name: unit
 
@@ -4641,7 +4809,7 @@ def: "RNA sequences and structures." []
 subset: edam
 subset: topics
 synonym: "Small RNA" NARROW []
-is_a: topic:0077
+is_a: topic:0077 ! Nucleic acids
 property_value: created:in "beta12orEarlier" xsd:string
 property_value: hasHumanReadableId "RNA" xsd:string
 property_value: seeAlso https://en.wikipedia.org/wiki/RNA
