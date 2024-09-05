@@ -3821,6 +3821,63 @@ is_a: GENEPIO:0001940 ! library selection
 id: GENEPIO:0001965
 name: library source
 def: "The library source specifies the type of source material that is being sequenced." []
+is_a: GENEPIO:0001681 ! laboratory sequencing datum
+
+[Term]
+id: GENEPIO:0001966
+name: genomic source
+def: "Genomic DNA (includes PCR products from genomic DNA)." []
+xref: NCBI SRA: GENOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001967
+name: metagenomic source
+def: "Mixed material from metagenome." []
+xref: NCBI SRA: METAGENOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001968
+name: metatranscriptomic source
+def: "Transcription products from community targets" []
+xref: NCBI SRA: METATRANSCRIPTOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001969
+name: other library source
+def: "Other, unspecified, or unknown library source material." []
+xref: NCBI SRA: OTHER
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001970
+name: synthetic source
+def: "Synthetic DNA." []
+xref: NCBI SRA: SYNTHETIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001971
+name: transcriptomic source
+def: "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)." []
+xref: NCBI SRA: TRANSCRIPTOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001972
+name: viral RNA source
+def: "Viral RNA." []
+xref: NCBI SRA: VIRAL RNA
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
 
 [Term]
 id: GENEPIO:0001973
