@@ -1,0 +1,29 @@
+name: adjust_OWL_file
+
+on:
+  push:
+    paths:
+      - DPBO.owl
+  workflow_dispatch:
+
+jobs:
+  replace_URIs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: replace the URIs in the OWL file non-capitalized
+        run: |
+          sed -i 's|purl.obolibrary.org/obo/dpbo|purl.org/nfdi4plants/ontology/dpbo/dpbo|g' DPBO.owl
+
+      - name: replace the URIs in the OWL file capitalized
+        run: |
+          sed -i 's|purl.obolibrary.org/obo/DPBO|purl.org/nfdi4plants/ontology/dpbo/DPBO|g' DPBO.owl
+
+      - name: commit and push
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'
