@@ -4187,10 +4187,37 @@ def: "An altered form of an individual, organism, population, or genetic charact
 is_a: MCO_0000851 ! genotype
 
 [Term]
+id: NCIT:C49487
+name: No
+def: "The non-affirmative response to a question." []
+is_a: SO:0000568 ! bidirectional_promoter
+is_a: DPBO:0000075 ! 5' partial promoter
+is_a: DPBO:0000076 ! 3' partial promoter
+is_a: DPBO:0000071 ! 3' partial CDS
+is_a: DPBO:0000070 ! 5' partial CDS
+is_a: NCIT:C169106 ! Environmental DNA
+
+[Term]
+id: NCIT:C49488
+name: Yes
+def: "The affirmative response to a question." []
+is_a: SO:0000568 ! bidirectional_promoter
+is_a: DPBO:0000075 ! 5' partial promoter
+is_a: DPBO:0000076 ! 3' partial promoter
+is_a: DPBO:0000071 ! 3' partial CDS
+is_a: DPBO:0000070 ! 5' partial CDS
+is_a: NCIT:C169106 ! Environmental DNA
+
+[Term]
 id: NCIT_C62195
 name: wild type
 def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
 is_a: MCO_0000851 ! genotype
+
+[Term]
+id: NCIT:C169106
+name: Environmental DNA
+def: "DNA obtained directly from environmental samples (soil, sediment, water, etc.) without any obvious signs of biological source material. It originates from cellular material shed by organisms (via skin, excrement, etc.) into aquatic or terrestrial environments." []
 
 [Term]
 id: NMR:1000019
