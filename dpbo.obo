@@ -4039,77 +4039,77 @@ property_value: IAO:0000117 "Matt Diller" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
-id: MCO_0000041
+id: MCO:0000041
 name: overexpression mutant
 def: "A mutant in which a gene ore genes are expressed at higher levels than the wild type." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000042
+id: MCO:0000042
 name: gene variant mutant
 def: "A mutant genotype in which one or more genes can have modifications (subtitutions, indels, partial truncations, etc), but they conserve functionality." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000051
+id: MCO:0000051
 name: knockout mutant
 def: "A mutant in which the function of a target gene has been disrupted within its normal biological context. Utilized to examine the involvement of a gene in a complex biological process." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000052
+id: MCO:0000052
 name: plasmid mutant
 def: "a mutant in which a foreign DNA sequence is introduced to cell in an extrachromosomal unit of replication." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000059
+id: MCO:0000059
 name: OD600
 def: "An optical density that specifies the amount of light of 600 nm of wavelenght the bearer is able to transmit." []
-is_a: MCO_0000077 ! optical density
+is_a: MCO:0000077 ! optical density
 
 [Term]
-id: MCO_0000077
+id: MCO:0000077
 name: optical density
 def: "A physical quality that inheres in a bearer by virtue of the amount of light that the bearer of the quality is able to transmit." []
 
 [Term]
-id: MCO_0000173
+id: MCO:0000173
 name: nutrient availability stress treatment
-is_a: MCO_0000866 ! treatment
+is_a: MCO:0000866 ! treatment
 
 [Term]
-id: MCO_0000174
+id: MCO:0000174
 name: nutrient depletion treatment
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000177
+id: MCO:0000177
 name: iron depletion
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000178
+id: MCO:0000178
 name: carbon starvation
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000179
+id: MCO:0000179
 name: nitrogen starvation
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000180
+id: MCO:0000180
 name: phosphate starvation
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000851
+id: MCO:0000851
 name: genotype
 def: "A biological quality that inheres in specific organisms and that describes its total genetic content" []
 
 [Term]
-id: MCO_0000866
+id: MCO:0000866
 name: treatment
 def: "A process in which the act is intended to modify or alter some other material entity." []
 
@@ -4169,22 +4169,22 @@ def: "RNA present in the cytoplasm. It is involved in the protein export process
 is_a: DPBO:0000012 ! bio entity
 
 [Term]
-id: NCIT_C146817
+id: NCIT:C146817
 name: Illumina Sequencing
 def: "A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected." []
 is_a: DPBO:0002006 ! sequencing method
 
 [Term]
-id: NCIT_C146818
+id: NCIT:C146818
 name: Nanopore Sequencing
 def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis." []
 is_a: DPBO:0002006 ! sequencing method
 
 [Term]
-id: NCIT_C25360
+id: NCIT:C25360
 name: mutant
 def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
-is_a: MCO_0000851 ! genotype
+is_a: MCO:0000851 ! genotype
 
 [Term]
 id: NCIT:C49487
@@ -4209,10 +4209,10 @@ is_a: DPBO:0000070 ! 5' partial CDS
 is_a: NCIT:C169106 ! Environmental DNA
 
 [Term]
-id: NCIT_C62195
+id: NCIT:C62195
 name: wild type
 def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
-is_a: MCO_0000851 ! genotype
+is_a: MCO:0000851 ! genotype
 
 [Term]
 id: NCIT:C169106
