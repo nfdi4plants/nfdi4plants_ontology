@@ -15,7 +15,7 @@ ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000173> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000174> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000177> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000178> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000179> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000180> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
 id: AFP:0003774
@@ -74,6 +74,7 @@ id: AGRO:00000361
 name: farmer field
 def: "Experimental site in which the experiment is implemented on the field of a farmer." []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000362
@@ -81,6 +82,7 @@ name: research station field
 def: "Experimental site in which the experiment is done in a the field of a research station." []
 synonym: "experimental station field" EXACT []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000363
@@ -90,18 +92,21 @@ synonym: "glasshouse" EXACT []
 synonym: "hothouse" BROAD []
 synonym: "screenhouse" BROAD []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000364
 name: governmental forest
 def: "Experimental site where the experiment is done in a forest owned by a government." []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000365
 name: private forest
 def: "Experimental site where the experiment is done in a private forest." []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000372
@@ -4132,6 +4137,12 @@ id: MIAPPE:0095
 name: Growth facility
 
 [Term]
+id: NCIT:C115935
+name: Healthy
+def: "Having no significant health-related issues." []
+is_a: DPBO:0000034 ! plant health state
+
+[Term]
 id: NCIT:C126370
 name: Cover Slip
 
@@ -4148,27 +4159,6 @@ def: "A next-generation DNA sequencing service offered by Complete Genomics. Una
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
-id: NCIT:C175898
-name: Imaging Software Name
-def: "The name of the software program capture and/or process imaging data." [] {P378="NCI"}
-
-[Term]
-id: NCIT:C181919
-name: Objective Lens
-
-[Term]
-id: NCIT:C45293
-name: Species
-xref: MIAPPE:0043
-xref: NCBITaxon:species
-
-[Term]
-id: NCIT:C84512
-name: Cytoplasmic RNA
-def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
-is_a: DPBO:0000012 ! bio entity
-
-[Term]
 id: NCIT:C146817
 name: Illumina Sequencing
 def: "A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected." []
@@ -4181,32 +4171,58 @@ def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopo
 is_a: DPBO:0002006 ! sequencing method
 
 [Term]
+id: NCIT:C169106
+name: Environmental DNA
+def: "DNA obtained directly from environmental samples (soil, sediment, water, etc.) without any obvious signs of biological source material. It originates from cellular material shed by organisms (via skin, excrement, etc.) into aquatic or terrestrial environments." []
+
+[Term]
+id: NCIT:C175249
+name: Diseased
+def: "An indication that an anatomic structure has detectable aberrations." []
+is_a: DPBO:0000034 ! plant health state
+
+[Term]
+id: NCIT:C175898
+name: Imaging Software Name
+def: "The name of the software program capture and/or process imaging data." [] {P378="NCI"}
+
+[Term]
+id: NCIT:C181919
+name: Objective Lens
+
+[Term]
 id: NCIT:C25360
 name: mutant
 def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
 is_a: MCO:0000851 ! genotype
 
 [Term]
+id: NCIT:C45293
+name: Species
+xref: MIAPPE:0043
+xref: NCBITaxon:species
+
+[Term]
 id: NCIT:C49487
 name: No
 def: "The non-affirmative response to a question." []
-is_a: SO:0000568 ! bidirectional_promoter
+is_a: DPBO:0000070 ! 5' partial CDS
+is_a: DPBO:0000071 ! 3' partial CDS
 is_a: DPBO:0000075 ! 5' partial promoter
 is_a: DPBO:0000076 ! 3' partial promoter
-is_a: DPBO:0000071 ! 3' partial CDS
-is_a: DPBO:0000070 ! 5' partial CDS
 is_a: NCIT:C169106 ! Environmental DNA
+is_a: SO:0000568 ! bidirectional_promoter
 
 [Term]
 id: NCIT:C49488
 name: Yes
 def: "The affirmative response to a question." []
-is_a: SO:0000568 ! bidirectional_promoter
+is_a: DPBO:0000070 ! 5' partial CDS
+is_a: DPBO:0000071 ! 3' partial CDS
 is_a: DPBO:0000075 ! 5' partial promoter
 is_a: DPBO:0000076 ! 3' partial promoter
-is_a: DPBO:0000071 ! 3' partial CDS
-is_a: DPBO:0000070 ! 5' partial CDS
 is_a: NCIT:C169106 ! Environmental DNA
+is_a: SO:0000568 ! bidirectional_promoter
 
 [Term]
 id: NCIT:C62195
@@ -4215,9 +4231,10 @@ def: "The naturally-occurring, normal, non-mutated version of a gene or genome."
 is_a: MCO:0000851 ! genotype
 
 [Term]
-id: NCIT:C169106
-name: Environmental DNA
-def: "DNA obtained directly from environmental samples (soil, sediment, water, etc.) without any obvious signs of biological source material. It originates from cellular material shed by organisms (via skin, excrement, etc.) into aquatic or terrestrial environments." []
+id: NCIT:C84512
+name: Cytoplasmic RNA
+def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
+is_a: DPBO:0000012 ! bio entity
 
 [Term]
 id: NMR:1000019
