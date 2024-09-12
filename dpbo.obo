@@ -321,6 +321,12 @@ synonym: "log phase culture" RELATED []
 is_a: BTO:0001900 ! growth phase culture
 
 [Term]
+id: CHEBI:2509
+name: agar
+def: "A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties." []
+is_a: DPBO:0000067 ! rooting medium solidifier
+
+[Term]
 id: CHEBI:36080
 name: protein
 def: " biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome." []
@@ -1175,6 +1181,12 @@ comment: adapted from MIXS:0000018
 id: DPBO:0000114
 name: Number of injections
 def: "Number of injections of a sample into a mass spectrometer or chromatograph." []
+
+[Term]
+id: DPBO:0000115
+name: inbred line
+def: "Nearly identical and homozygous genotypes, resulting from repeated selfing over several generations." []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
 
 [Term]
 id: DPBO:00002008
@@ -3233,6 +3245,12 @@ def: "FASTQ short read format ignoring quality scores." []
 is_a: DPBO:0000021 ! raw data file format
 
 [Term]
+id: EFO:0000434
+name: ecotype
+def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
+
+[Term]
 id: EFO:0000490
 name: extraction protocol
 is_a: DPBO:1000170 ! sample processing protocol
@@ -3385,6 +3403,12 @@ is_a: DPBO:0000012 ! bio entity
 id: EFO:0005135
 name: strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
+
+[Term]
+id: EFO:0005136
+name: cultivar
+def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
 
 [Term]
 id: EFO:0005310
@@ -4229,6 +4253,12 @@ id: NCIT:C62195
 name: wild type
 def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
 is_a: MCO:0000851 ! genotype
+
+[Term]
+id: NCIT:C62709
+name: Variety
+def: "In botanical nomenclature, a rank below subspecies but above forma." []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
 
 [Term]
 id: NCIT:C84512
