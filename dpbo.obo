@@ -15,7 +15,7 @@ ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000173> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000174> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000177> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000178> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000179> \"\")\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/dpbo#MCO_0000180> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
 id: AFP:0003774
@@ -74,6 +74,7 @@ id: AGRO:00000361
 name: farmer field
 def: "Experimental site in which the experiment is implemented on the field of a farmer." []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000362
@@ -81,6 +82,7 @@ name: research station field
 def: "Experimental site in which the experiment is done in a the field of a research station." []
 synonym: "experimental station field" EXACT []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000363
@@ -90,18 +92,21 @@ synonym: "glasshouse" EXACT []
 synonym: "hothouse" BROAD []
 synonym: "screenhouse" BROAD []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000364
 name: governmental forest
 def: "Experimental site where the experiment is done in a forest owned by a government." []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000365
 name: private forest
 def: "Experimental site where the experiment is done in a private forest." []
 is_a: AGRO:00000360 ! experimental site
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: AGRO:00000372
@@ -314,6 +319,12 @@ def: "A cell culture at the steepest slope of the growth curve of a culture-- at
 synonym: "exponential growth phase culture" RELATED []
 synonym: "log phase culture" RELATED []
 is_a: BTO:0001900 ! growth phase culture
+
+[Term]
+id: CHEBI:2509
+name: agar
+def: "A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties." []
+is_a: DPBO:0000067 ! rooting medium solidifier
 
 [Term]
 id: CHEBI:36080
@@ -694,13 +705,6 @@ is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 
 [Term]
-id: SWO:1100130
-name: Seurat
-def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
-is_a: DPBO:0000095 ! R package
-xref: DPBO:0000035
-
-[Term]
 id: DPBO:0000036
 name: obsolete_library selection
 def: "The method used to select for or against, enrich, or screen the material being sequenced." []
@@ -1032,7 +1036,7 @@ created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 id: DPBO:0000088
 name: growth chamber
 def: "A climatic chamber used for growing plants under controlled environmental conditions." []
-is_a: MIAPPE:0095
+is_a: MIAPPE:0095 ! Growth facility
 
 [Term]
 id: DPBO:0000089
@@ -1179,6 +1183,19 @@ name: Number of injections
 def: "Number of injections of a sample into a mass spectrometer or chromatograph." []
 
 [Term]
+id: DPBO:0000115
+name: inbred line
+def: "Nearly identical and homozygous genotypes, resulting from repeated selfing over several generations." []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
+
+[Term]
+id: DPBO:00002008
+name: environment (feature)
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
+comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
+xref: ENVO:01000813
+
+[Term]
 id: DPBO:0002000
 name: alias
 def: "Unique identificator for a study. This is used to link experiments to the study." []
@@ -1207,13 +1224,6 @@ def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid." []
 id: DPBO:0002007
 name: investigation type
 def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium" []
-
-[Term]
-id: DPBO:00002008
-name: environment (feature)
-def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
-comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
-xref: ENVO:01000813
 
 [Term]
 id: DPBO:0002009
@@ -3235,6 +3245,12 @@ def: "FASTQ short read format ignoring quality scores." []
 is_a: DPBO:0000021 ! raw data file format
 
 [Term]
+id: EFO:0000434
+name: ecotype
+def: "A biotype resulting from selection in a particular habitat, e.g. the A. thaliana Ecotype Ler" []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
+
+[Term]
 id: EFO:0000490
 name: extraction protocol
 is_a: DPBO:1000170 ! sample processing protocol
@@ -3389,6 +3405,12 @@ name: strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
 
 [Term]
+id: EFO:0005136
+name: cultivar
+def: "A cultivated plant variety selected and given a name because it has desirable characteristics that distinguish it from otherwise similar plants of the same species." []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
+
+[Term]
 id: EFO:0005310
 name: RIP-seq
 def: "A method used for finding which RNA species interact with a particular RNA-binding protein. It involves immunoprecipitation with antibodies for the protein and then isolation of the RNAs associated with the protein. Unlike CLIP-seq, no cross-linking of RNAs and proteins is carried out prior to immunoprecipitation." []
@@ -3531,21 +3553,21 @@ name: nuclear RNA
 is_a: DPBO:0000012 ! bio entity
 
 [Term]
-id: ENVO:01000403
-name: tropical mangrove
-def: "This class corresponds to the 'Tropical Mixed needleleaf / broadleaf forest' category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the 'tropical mixed needleleaf forest' class can be made. The relationship between this 'forest' class and the mangrove swamp must be clarified."
-is_a: DPBO:00002008 ! environment (feature)
-
-[Term]
 id: ENVO:00000050
 name: geyser
-def: "A hot spring that erupts periodically, ejecting a column of hot water and steam into the air."
+def: "A hot spring that erupts periodically, ejecting a column of hot water and steam into the air." []
 is_a: DPBO:00002008 ! environment (feature)
 
 [Term]
 id: ENVO:01000263
 name: cold seep
-def: "A cold seep is a seep in which methane and other hydrocarbon-rich fluids rise to the sea floor."
+def: "A cold seep is a seep in which methane and other hydrocarbon-rich fluids rise to the sea floor." []
+is_a: DPBO:00002008 ! environment (feature)
+
+[Term]
+id: ENVO:01000403
+name: tropical mangrove
+def: "This class corresponds to the 'Tropical Mixed needleleaf / broadleaf forest' category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the 'tropical mixed needleleaf forest' class can be made. The relationship between this 'forest' class and the mangrove swamp must be clarified." []
 is_a: DPBO:00002008 ! environment (feature)
 
 [Term]
@@ -3657,9 +3679,234 @@ property_value: GENEPIO:0000005 "https://www.ncbi.nlm.nih.gov/books/NBK54984/tab
 property_value: IAO:0000117 "Damion Dooley" xsd:string
 
 [Term]
+id: GENEPIO:0001941
+name: 5-methylcytidine antibody method
+def: "Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C)." []
+xref: NCBI SRA: 5-methylcytidine antibody
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001942
+name: CAGE method
+def: "Cap-analysis gene expression." []
+xref: NCBI SRA: CAGE
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001943
+name: CF-H method
+def: "Cot-filtered highly repetitive genomic DNA" []
+xref: NCBI SRA: CF-H
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001944
+name: CF-M method
+def: "Cot-filtered moderately repetitive genomic DNA" []
+xref: NCBI SRA: CF-M
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001945
+name: CF-S method
+def: "Cot-filtered single/low-copy genomic DNA" []
+xref: NCBI SRA: CF-S
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001946
+name: CF-T method
+def: "Cot-filtered theoretical single-copy genomic DNA" []
+xref: NCBI SRA: CF-T
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001947
+name: ChIP method
+def: "Chromatin immunoprecipitation" []
+xref: NCBI SRA: ChIP
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001948
+name: DNAse method
+def: "Deoxyribonuclease (MNase) digestion" []
+xref: NCBI SRA: DNAse
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001949
+name: HMPR method
+def: "Hypo-methylated partial restriction digest" []
+xref: NCBI SRA: HMPR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001950
+name: Hybrid Selection method
+def: "Selection by hybridization in array or solution." []
+xref: NCBI SRA: Hybrid Selection
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001951
+name: MBD2 protein methyl-CpG binding domain method
+def: "Enrichment by methyl-CpG binding domain." []
+xref: NCBI SRA: MBD2 protein methyl-CpG binding domain
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001952
+name: MF method
+def: "Methyl Filtrated" []
+xref: NCBI SRA: MF
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001953
+name: MNase method
+def: "Micrococcal Nuclease (MNase) digestion" []
+xref: NCBI SRA: MNase
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001954
+name: MSLL method
+def: "Methylation Spanning Linking Library" []
+xref: NCBI SRA: MSLL
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001955
+name: PCR method
+def: "Source material was selected by designed primers." []
+xref: NCBI SRA: PCR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001956
+name: RACE method
+def: "Rapid Amplification of cDNA Ends." []
+xref: NCBI SRA: RACE
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001957
+name: RANDOM PCR method
+def: "Source material was selected by randomly generated primers." []
+xref: NCBI SRA: RANDOM PCR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001958
+name: RANDOM method
+def: "Random selection by shearing or other method." []
+xref: NCBI SRA: RANDOM
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001959
+name: RT-PCR method
+def: "Source material was selected by reverse transcription PCR" []
+xref: NCBI SRA: RT-PCR
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001960
+name: Reduced Representation method
+def: "Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling." []
+xref: NCBI SRA: Reduced Representation
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001961
+name: Restriction Digest method
+def: "DNA fractionation using restriction enzymes." []
+xref: NCBI SRA: Restriction Digest
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001962
+name: cDNA method
+def: "PolyA selection or enrichment for messenger RNA (mRNA). complementary DNA." []
+xref: NCBI SRA: cDNA
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001963
+name: size fractionation method
+def: "Physical selection of size appropriate targets." []
+xref: NCBI SRA: size fractionation
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: GENEPIO:0001964
+name: other library method
+def: "Other library enrichment, screening, or selection process." []
+xref: NCBI SRA: other
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
 id: GENEPIO:0001965
 name: library source
 def: "The library source specifies the type of source material that is being sequenced." []
+is_a: GENEPIO:0001681 ! laboratory sequencing datum
+
+[Term]
+id: GENEPIO:0001966
+name: genomic source
+def: "Genomic DNA (includes PCR products from genomic DNA)." []
+xref: NCBI SRA: GENOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001967
+name: metagenomic source
+def: "Mixed material from metagenome." []
+xref: NCBI SRA: METAGENOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001968
+name: metatranscriptomic source
+def: "Transcription products from community targets" []
+xref: NCBI SRA: METATRANSCRIPTOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001969
+name: other library source
+def: "Other, unspecified, or unknown library source material." []
+xref: NCBI SRA: OTHER
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001970
+name: synthetic source
+def: "Synthetic DNA." []
+xref: NCBI SRA: SYNTHETIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001971
+name: transcriptomic source
+def: "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)." []
+xref: NCBI SRA: TRANSCRIPTOMIC
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
+
+[Term]
+id: GENEPIO:0001972
+name: viral RNA source
+def: "Viral RNA." []
+xref: NCBI SRA: VIRAL RNA
+is_a: GENEPIO:0001965 ! library source
+property_value: IAO:0000117 "Damion Dooley" xsd:string
 
 [Term]
 id: GENEPIO:0001973
@@ -3821,77 +4068,77 @@ property_value: IAO:0000117 "Matt Diller" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
-id: MCO_0000041
+id: MCO:0000041
 name: overexpression mutant
 def: "A mutant in which a gene ore genes are expressed at higher levels than the wild type." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000042
+id: MCO:0000042
 name: gene variant mutant
 def: "A mutant genotype in which one or more genes can have modifications (subtitutions, indels, partial truncations, etc), but they conserve functionality." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000051
+id: MCO:0000051
 name: knockout mutant
 def: "A mutant in which the function of a target gene has been disrupted within its normal biological context. Utilized to examine the involvement of a gene in a complex biological process." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000052
+id: MCO:0000052
 name: plasmid mutant
 def: "a mutant in which a foreign DNA sequence is introduced to cell in an extrachromosomal unit of replication." []
-is_a: NCIT_C25360 ! mutant
+is_a: NCIT:C25360 ! mutant
 
 [Term]
-id: MCO_0000059
+id: MCO:0000059
 name: OD600
 def: "An optical density that specifies the amount of light of 600 nm of wavelenght the bearer is able to transmit." []
-is_a: MCO_0000077 ! optical density
+is_a: MCO:0000077 ! optical density
 
 [Term]
-id: MCO_0000077
+id: MCO:0000077
 name: optical density
 def: "A physical quality that inheres in a bearer by virtue of the amount of light that the bearer of the quality is able to transmit." []
 
 [Term]
-id: MCO_0000173
+id: MCO:0000173
 name: nutrient availability stress treatment
-is_a: MCO_0000866 ! treatment
+is_a: MCO:0000866 ! treatment
 
 [Term]
-id: MCO_0000174
+id: MCO:0000174
 name: nutrient depletion treatment
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000177
+id: MCO:0000177
 name: iron depletion
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000178
+id: MCO:0000178
 name: carbon starvation
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000179
+id: MCO:0000179
 name: nitrogen starvation
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000180
+id: MCO:0000180
 name: phosphate starvation
-is_a: MCO_0000173 ! nutrient availability stress treatment
+is_a: MCO:0000173 ! nutrient availability stress treatment
 
 [Term]
-id: MCO_0000851
+id: MCO:0000851
 name: genotype
 def: "A biological quality that inheres in specific organisms and that describes its total genetic content" []
 
 [Term]
-id: MCO_0000866
+id: MCO:0000866
 name: treatment
 def: "A process in which the act is intended to modify or alter some other material entity." []
 
@@ -3914,6 +4161,12 @@ id: MIAPPE:0095
 name: Growth facility
 
 [Term]
+id: NCIT:C115935
+name: Healthy
+def: "Having no significant health-related issues." []
+is_a: DPBO:0000034 ! plant health state
+
+[Term]
 id: NCIT:C126370
 name: Cover Slip
 
@@ -3930,6 +4183,29 @@ def: "A next-generation DNA sequencing service offered by Complete Genomics. Una
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: NCIT:C146817
+name: Illumina Sequencing
+def: "A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected." []
+is_a: DPBO:0002006 ! sequencing method
+
+[Term]
+id: NCIT:C146818
+name: Nanopore Sequencing
+def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis." []
+is_a: DPBO:0002006 ! sequencing method
+
+[Term]
+id: NCIT:C169106
+name: Environmental DNA
+def: "DNA obtained directly from environmental samples (soil, sediment, water, etc.) without any obvious signs of biological source material. It originates from cellular material shed by organisms (via skin, excrement, etc.) into aquatic or terrestrial environments." []
+
+[Term]
+id: NCIT:C175249
+name: Diseased
+def: "An indication that an anatomic structure has detectable aberrations." []
+is_a: DPBO:0000034 ! plant health state
+
+[Term]
 id: NCIT:C175898
 name: Imaging Software Name
 def: "The name of the software program capture and/or process imaging data." [] {P378="NCI"}
@@ -3939,40 +4215,56 @@ id: NCIT:C181919
 name: Objective Lens
 
 [Term]
+id: NCIT:C25360
+name: mutant
+def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
+is_a: MCO:0000851 ! genotype
+
+[Term]
 id: NCIT:C45293
 name: Species
 xref: MIAPPE:0043
 xref: NCBITaxon:species
 
 [Term]
+id: NCIT:C49487
+name: No
+def: "The non-affirmative response to a question." []
+is_a: DPBO:0000070 ! 5' partial CDS
+is_a: DPBO:0000071 ! 3' partial CDS
+is_a: DPBO:0000075 ! 5' partial promoter
+is_a: DPBO:0000076 ! 3' partial promoter
+is_a: NCIT:C169106 ! Environmental DNA
+is_a: SO:0000568 ! bidirectional_promoter
+
+[Term]
+id: NCIT:C49488
+name: Yes
+def: "The affirmative response to a question." []
+is_a: DPBO:0000070 ! 5' partial CDS
+is_a: DPBO:0000071 ! 3' partial CDS
+is_a: DPBO:0000075 ! 5' partial promoter
+is_a: DPBO:0000076 ! 3' partial promoter
+is_a: NCIT:C169106 ! Environmental DNA
+is_a: SO:0000568 ! bidirectional_promoter
+
+[Term]
+id: NCIT:C62195
+name: wild type
+def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
+is_a: MCO:0000851 ! genotype
+
+[Term]
+id: NCIT:C62709
+name: Variety
+def: "In botanical nomenclature, a rank below subspecies but above forma." []
+is_a: DPBO:0000037 ! subspecific taxonomic rank
+
+[Term]
 id: NCIT:C84512
 name: Cytoplasmic RNA
 def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
 is_a: DPBO:0000012 ! bio entity
-
-[Term]
-id: NCIT_C146817
-name: Illumina Sequencing
-def: "A proprietary next-generation DNA sequencing system from Solexa that uses reversible terminator nucleotides. The genomic DNA to be sequenced is fragmented and ligated to adapter molecules on both ends to construct an Illumina-specific adapter library. PCR amplification of the DNA fragments is then performed using the adapter sequence as primer. Sequencing is carried out by repeated cycles of adding reversible fluorescent-labelled nucleotide and incorporation of the nucleotides to the complementary strand. The fluorescence of the incorporated nucleotides is detected." []
-is_a: DPBO:0002006 ! sequencing method
-
-[Term]
-id: NCIT_C146818
-name: Nanopore Sequencing
-def: "A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis." []
-is_a: DPBO:0002006 ! sequencing method
-
-[Term]
-id: NCIT_C25360
-name: mutant
-def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
-is_a: MCO_0000851 ! genotype
-
-[Term]
-id: NCIT_C62195
-name: wild type
-def: "The naturally-occurring, normal, non-mutated version of a gene or genome." []
-is_a: MCO_0000851 ! genotype
 
 [Term]
 id: NMR:1000019
@@ -4543,6 +4835,13 @@ name: CDS_region
 def: "A region of a CDS." []
 
 [Term]
+id: SWO:1100130
+name: Seurat
+def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
+xref: DPBO:0000035
+is_a: DPBO:0000095 ! R package
+
+[Term]
 id: UO:0000000
 name: unit
 
@@ -4641,7 +4940,7 @@ def: "RNA sequences and structures." []
 subset: edam
 subset: topics
 synonym: "Small RNA" NARROW []
-is_a: topic:0077
+is_a: topic:0077 ! Nucleic acids
 property_value: created:in "beta12orEarlier" xsd:string
 property_value: hasHumanReadableId "RNA" xsd:string
 property_value: seeAlso https://en.wikipedia.org/wiki/RNA
