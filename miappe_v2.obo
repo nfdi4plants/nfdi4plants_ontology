@@ -834,7 +834,7 @@ is_a: MIAPPE:0115 ! Rooting condition
 
 [Term]
 id: MIAPPE:0120
-name: Number of plants per containers
+name: Number of plants per container
 def: "Number of plants per container." []
 comment: "Example: 'X/container'. Format: Numeric"
 is_a: MIAPPE:0115 ! Rooting condition
@@ -960,10 +960,11 @@ is_a: MIAPPE:0170 ! Growth medium property
 
 [Term]
 id: MIAPPE:0138
-name: Watering regimen
+name: obsolete_Watering regimen
 def: "The treatment involving an exposure to watering frequencies." []
 comment: "Examples: 'irrigation from top'; 'irrigation from bottom'; 'drip irrigation'. Format: Text"
-is_a: MIAPPE:0171 ! Watering information
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: MIAPPE:0139
@@ -1118,6 +1119,7 @@ name: Watering regime
 def: "Treatment involving an exposure to watering frequencies." []
 comment: "Example: '20ml every 3 days.'"
 is_a: MIAPPE:0060 ! Experimental factor
+is_a: MIAPPE:0171 ! Watering information
 
 [Term]
 id: MIAPPE:0162
