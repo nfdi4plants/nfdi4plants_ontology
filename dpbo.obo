@@ -3263,7 +3263,7 @@ name: light
 id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
-xref: NCIt:C106049
+xref: NCIT:C106049
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
@@ -3342,7 +3342,7 @@ is_a: DPBO:0000040 ! next generation sequencing instrument model
 id: EFO:0004428
 name: FAIRE-seq
 def: "FAIRE-Seq (Formaldehyde-Assisted Isolation of Regulatory Elements) is an assay used for determining the sequences of DNA regions associated with regulatory activity. This is enabled by the isolation of nucleosome-depleted DNA from total genomic dna to access actively transcribed dna." []
-xref: NCIt:C106051
+xref: NCIT:C106051
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
