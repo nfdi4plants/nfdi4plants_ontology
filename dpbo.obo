@@ -43,6 +43,11 @@ name: sample temperature
 def: "A sample temperature result is a quality quantification facet that quantifies the temperature of the sample." []
 
 [Term]
+id: AFR:0002311
+name: cycle count
+def: "A cycle count is a count of the number of iterations of a repeated process." [Allotrope]
+
+[Term]
 id: AGRO:00000006
 name: irrigation process
 def: "A planned process in which water is artificially supplied to plant or soil to sustain plants." []
@@ -1187,6 +1192,38 @@ id: DPBO:0000115
 name: inbred line
 def: "Nearly identical and homozygous genotypes, resulting from repeated selfing over several generations." []
 is_a: DPBO:0000037 ! subspecific taxonomic rank
+
+[Term]
+id: DPBO:0000116
+name: Infinite M200 plate reader (Tecan)
+is_a: OBI:0001058 ! microplate reader
+xref: BAO:0150076
+
+[Term]
+id: DPBO:0000117
+name: buffer volume
+def: "Volume of the buffer in which the sample is diluted." []
+comment: Suggested by Lukas Weil | 0000-0003-1945-6342
+
+[Term]
+id: DPBO:0000118
+name: mortar and pestle
+def: "Combination of two tools used for grinding or shearing substances to a fine paste or powder." []
+comment: Suggested by Lukas Weil | 0000-0003-1945-6342
+is_a: DPBO:0000119 ! grinding device
+
+[Term]
+id: DPBO:0000119
+name: grinding device
+def: "Device used for the mechanical reduction of the particle size of a solid sample." []
+comment: definition adapted from CHMO:0001652
+
+[Term]
+id: DPBO:0000120
+name: sugar measurement
+def: "The quantification of some sugar." []
+comment: Suggested by Lukas Weil | 0000-0003-1945-6342
+is_a: EFO:0004998 ! carbohydrate measurement
 
 [Term]
 id: DPBO:00002008
@@ -3398,6 +3435,11 @@ def: "An RNA extract that is the output of an extraction process in which total 
 is_a: DPBO:0000012 ! bio entity
 
 [Term]
+id: EFO:0004998
+name: carbohydrate measurement
+def: "The quantification of some carbohydrate, typically obtained from an individual with the intention of using the measurement in some diagnostic process." []
+
+[Term]
 id: EFO:0005135
 name: strain
 def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
@@ -4325,6 +4367,11 @@ name: container
 id: OBI:0001048
 name: digital camera
 def: "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor." []
+
+[Term]
+id: OBI:0001058
+name: microplate reader
+def: "A measurement device that detects biological, chemical or physical events of samples in microtiter plates."
 
 [Term]
 id: OBI:0002000
