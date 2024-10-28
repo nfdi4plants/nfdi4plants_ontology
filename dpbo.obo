@@ -1226,6 +1226,13 @@ comment: Suggested by Lukas Weil | 0000-0003-1945-6342
 is_a: EFO:0004998 ! carbohydrate measurement
 
 [Term]
+id: DPBO:0000121
+name: TAP medium
+def: "Tris-Acetate-Phosphate medium for the growth of Chlamydomonas." []
+comment: Medium composition can be found at doi.org/10.1101/pdb.rec560
+is_a: OBI:0000079 ! culture medium
+
+[Term]
 id: DPBO:00002008
 name: environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
