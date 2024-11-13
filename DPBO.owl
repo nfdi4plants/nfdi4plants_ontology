@@ -1920,7 +1920,7 @@
         <oboInOwl:hasDbXref>MS:1001809</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000042</oboInOwl:id>
-        <rdfs:label>biological replicate</rdfs:label>
+        <rdfs:label>biological replicate identifier</rdfs:label>
     </owl:Class>
     
 
