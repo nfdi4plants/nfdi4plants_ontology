@@ -752,7 +752,7 @@ xref: ZECO:0000147
 
 [Term]
 id: DPBO:0000042
-name: biological replicate
+name: biological replicate identifier
 def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')" []
 xref: MS:1001809
 
