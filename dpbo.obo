@@ -3269,6 +3269,11 @@ comment: https://genomicsstandardsconsortium.github.io/mixs/0000072/
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
+id: ECSO:00000517
+name: Soil Moisture Percentage
+def: "wetness caused by water" []
+
+[Term]
 id: EDAM:0593
 name: NMR
 def: "An analytical technique that exploits the magenetic properties of certain atomic nuclei to provide information on the structure, dynamics, reaction state and chemical environment of molecules." []
