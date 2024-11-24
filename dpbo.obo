@@ -3269,6 +3269,13 @@ comment: https://genomicsstandardsconsortium.github.io/mixs/0000072/
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
+id: DPBO:1000243
+name: ENA accession field
+def: "A data field which describes the ENA experiment accession assigned to the sequencing data." []
+comment: 
+created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
+
+[Term]
 id: ECSO:00000517
 name: Soil Moisture Percentage
 def: "wetness caused by water" []
