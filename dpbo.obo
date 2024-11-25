@@ -1001,7 +1001,7 @@ comment: "see also http://purl.obolibrary.org/obo/NCIT_C18685"
 [Term]
 id: DPBO:0000083
 name: relative centrifugal force
-def: "Relative centrifugal force (RCF) is the amount of force applied to a sample when using a centrifuge. It is dependant on the speed of the centrifuge rotation as well as the distance of the sample from the center of rotation." []
+def: "Relative centrifugal force (RCF) is the amount of force applied to a sample when using a centrifuge. It is dependent on the speed of the centrifuge rotation as well as the distance of the sample from the center of rotation." []
 synonym: "RCF" EXACT []
 is_a: UO:0000048 ! acceleration unit
 equivalent_to: DPBO:0000084 ! g-force
