@@ -23,6 +23,11 @@ name: imaging
 def: "Imaging is a process that produces an image of something." []
 
 [Term]
+id: AFQ:0000029
+name: detection wavelength
+def: "A detection wavelength quality is a device setting which determines the wavelength range that a detector of electromagnetic radiation detects." [Allotrope]
+
+[Term]
 id: AFR:0000952
 name: measurement time
 def: "The date/time of the measurement." [Allotrope]
@@ -1247,6 +1252,11 @@ xref: SHARELOC:000004
 id: DPBO:0000123
 name: imaging signal molecule
 def: "Name of the molecule used to visualize a specific target in a cell or tissue, e.g. GFP." []
+
+[Term]
+id: DPBO:0000124
+name: excitation method
+def: "The type of excitation used for imaging purposes." []
 
 [Term]
 id: DPBO:00002008
