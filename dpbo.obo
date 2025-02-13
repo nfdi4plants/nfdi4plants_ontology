@@ -1260,10 +1260,10 @@ def: "The type of excitation used for imaging purposes." []
 
 [Term]
 id: DPBO:00002008
-name: environment (feature)
+name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
-comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
-xref: ENVO:01000813
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:0002000
@@ -1294,6 +1294,13 @@ def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid." []
 id: DPBO:0002007
 name: investigation type
 def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium" []
+
+[Term]
+id: DPBO:0002008
+name: environment (feature)
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
+comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
+xref: ENVO:01000813
 
 [Term]
 id: DPBO:0002009
@@ -3641,19 +3648,19 @@ is_a: DPBO:0000012 ! bio entity
 id: ENVO:00000050
 name: geyser
 def: "A hot spring that erupts periodically, ejecting a column of hot water and steam into the air." []
-is_a: DPBO:00002008 ! environment (feature)
+is_a: DPBO:0002008 ! environment (feature)
 
 [Term]
 id: ENVO:01000263
 name: cold seep
 def: "A cold seep is a seep in which methane and other hydrocarbon-rich fluids rise to the sea floor." []
-is_a: DPBO:00002008 ! environment (feature)
+is_a: DPBO:0002008 ! environment (feature)
 
 [Term]
 id: ENVO:01000403
 name: tropical mangrove
 def: "This class corresponds to the 'Tropical Mixed needleleaf / broadleaf forest' category of the updated Global Forest Map classification (GFM 2000). To reconstruct the original class, an aggregate class with this and the 'tropical mixed needleleaf forest' class can be made. The relationship between this 'forest' class and the mangrove swamp must be clarified." []
-is_a: DPBO:00002008 ! environment (feature)
+is_a: DPBO:0002008 ! environment (feature)
 
 [Term]
 id: ERO:0001788
