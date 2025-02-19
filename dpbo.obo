@@ -5046,3 +5046,7 @@ property_value: created:in "beta12orEarlier" xsd:string
 property_value: hasHumanReadableId "RNA" xsd:string
 property_value: seeAlso https://en.wikipedia.org/wiki/RNA
 
+[Term]
+id: XCO:0000058
+name: room temperature
+def: "The temperature of the air surrounding an organism which is considered the most common level for the facility. For humans the temperature considered most comfortable for a room is between 18 and 27 degrees celsius." [Dorland:Dorlands_Illustrated_Medical_Dictionary--31st_Ed, ISBN:978-1416049982]
