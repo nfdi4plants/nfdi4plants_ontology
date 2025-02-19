@@ -3360,6 +3360,12 @@ name: experimental process
 def: "A process performed as part of an experiment or wider study, i.e. intentionally designed." []
 
 [Term]
+id: EFO:0003741
+name: pooled clone sequencing
+def: "An assay in which DNA is the input molecule derived from pooled clones (for example BACs and Fosmids) is sequenced using high throughput technology using shotgun methodology."
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
 id: EFO:0003748
 name: MRE-seq
 def: "An assay in which DNA us the input molecule derived from cleavage of DNA by use of methylation sensitive restriction enzymes to fragment DNA at methylation sites before sequencing" []
@@ -3393,6 +3399,18 @@ def: "An assay in which DNA is the input molecule derived from a bisulphite trea
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
+id: EFO:0003754
+name: EST sequencing
+def: "An assay in which RNA derived from an EST is sequenced." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: EFO:0003755
+name: FL-cDNA
+def: "An assay in which RNA derived from a full length cDNA template is sequenced." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
 id: EFO:0003789
 name: growth protocol
 is_a: DPBO:1000161 ! protocol type
@@ -3401,6 +3419,16 @@ is_a: DPBO:1000161 ! protocol type
 id: EFO:0003969
 name: treatment protocol
 is_a: DPBO:1000161 ! protocol type
+
+[Term]
+id: EFO:0004160
+name: whole chromosome random sequencing
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: EFO:0004161
+name: finishing sequencing assay
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0004202
@@ -3586,6 +3614,12 @@ name: Chia-PET
 def: "ChIA-PET (chromatin interaction analysis by paired-end tag sequencing) is a type of chromosome conformation capture assay that uses chromatin immunoprecipitation to enrich for protein-specific chromatin complexes after digestion, followed by nuclear proximity ligation and high-throughput paired-end-tag sequencing." []
 synonym: "chromatin interaction analysis by paired-end tag sequencing" EXACT []
 xref: PMID:20181287
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: EFO:0008891
+name: Ribo-seq
+def: "Ribosome profiling (also named ribosome footprinting) that uses specialized messenger RNA (mRNA) sequencing to determine which mRNAs are being actively translated. It produces a “global snapshot” of all the ribosomes active in a cell at a particular moment, known as a translatome." []
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
@@ -4253,6 +4287,18 @@ id: MIAPPE:0095
 name: Growth facility
 
 [Term]
+id: NCIT:C101294
+name: Whole Genome Sequencing
+def: "A procedure that can determine the DNA sequence for nearly the entire genome of an individual."
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C101295
+name: Whole Exome Sequencing
+def: "A procedure that can determine the DNA sequence for all of the exons in an individual."
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
 id: NCIT:C115935
 name: Healthy
 def: "Having no significant health-related issues." []
@@ -4311,6 +4357,55 @@ id: NCIT:C25360
 name: mutant
 def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
 is_a: MCO:0000851 ! genotype
+
+[Term]
+id: NCIT:C204813
+name: Amplicon Sequencing
+def: "A method for targeted DNA sequencing that uses oligonucleotide primers to amplify regions of interest, followed by next-generation sequencing (NGS) for deep coverage of the region." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C204814
+name: Clone-Based Sequencing
+def: "DNA sequencing where a target is cloned into a vector, physically mapped, and then shotgun sequenced." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C204815
+name: Clone End Sequencing
+def: "A DNA sequencing strategy where a single read is initiated from one or both ends of a cloned DNA fragment." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C204816
+name: Concatenated Tag Sequencing
+def: "A DNA sequencing strategy where a sequencing primer is chosen from a sequenced region in order to extend the sequenced region." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C204824
+name: Restriction-site Associated DNA Sequencing
+def: "A type of genome-wide sampling sequencing that reduces the complexity of the genome by subsampling only at specific sites defined by restriction enzymes. It is able to identify, verify, and score markers simultaneously and to identify which markers derive from each site." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C204827
+name: Synthetic Long-Read Sequencing
+def: "A sequence analysis method that uses sample processing and conventional sequencing to computationally reconstruct long reads from shorter sequencing reads." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C204828
+name: Targeted Capture Sequencing
+def: "A method to enrich and sequence genomic regions of interest. Sequences are selected by oligonucleotides that are used to pull-down complementary DNA through hybridization." []
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: NCIT:C204829
+name: Tethered Chromatin Conformation Capture Sequencing
+def: "A method for genome-wide mapping of chromatin interactions. It is similar to Hi-C sequencing except that the ligations are performed on a solid substrate rather than in solution. This enhances the signal-to-noise ratio, thereby facilitating a detailed analysis of interactions within and between chromosomes." []
+is_a: GENEPIO:0001973 ! library strategy
+
 
 [Term]
 id: NCIT:C45293
@@ -4528,6 +4623,12 @@ def: "A material entity that is an individual living system, such as animal, pla
 xref: MIAPPE:0041
 xref: NCIT:C14250
 xref: NFDI4PSO:0000030
+
+[Term]
+id: OBI:0302911
+name: validation
+def: "A planned process with objective to check that the accuracy or the quality of a claim or prediction satisfies some criteria and which is assessed by comparing with independent results" []
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: OBI:0400169
