@@ -1259,6 +1259,27 @@ name: excitation method
 def: "The type of excitation used for imaging purposes." []
 
 [Term]
+id: DPBO:0000125
+name: whole genome amplification
+def: "Whole genome amplification followed by random sequencing." []
+comment: from the ENA (European Nucleotide Archive) Read submission permitted values.
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: DPBO:0000126
+name: single cell genomic source
+def: "Genomic DNA that can be traced to a single cell of origin." []
+comment: adapted from http://purl.obolibrary.org/obo/OBI_0002631
+is_a: GENEPIO:0001965 ! library source
+
+[Term]
+id: DPBO:0000127
+name: single cell transcriptomic source
+def: "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries) that can be traced to a single cell of origin." []
+comment: adapted from http://purl.obolibrary.org/obo/OBI_0002631 and the ENA (European Nucleotide Archive) Read submission permitted values
+is_a: GENEPIO:0001965 ! library source
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
