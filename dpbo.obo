@@ -1280,6 +1280,35 @@ comment: adapted from http://purl.obolibrary.org/obo/OBI_0002631 and the ENA (Eu
 is_a: GENEPIO:0001965 ! library source
 
 [Term]
+id: DPBO:0000128
+name: repeat fractionation
+def: "Selection for less repetitive (and more gene rich) sequence through Cot filtration (CF) or other fractionation techniques based on DNA kinetics." []
+comment: from the ENA (European Nucleotide Archive) Read submission permitted values
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: DPBO:0000129
+name: oligo-dT selection
+def: "Enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT." []
+comment: from the ENA (European Nucleotide Archive) Read submission permitted values
+is_a: GENEPIO:0001940 ! library selection
+xref: FBcv:0003203
+
+[Term]
+id: DPBO:0000130
+name: inverse rRNA selection
+def: "Depletion of ribosomal RNA by inverse oligo hybridization." []
+comment: from the ENA (European Nucleotide Archive) Read submission permitted values
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
+id: DPBO:0000131
+name: padlock probes capture method
+def: "Targeted sequence capture protocol covering an arbitrary set of nonrepetitive genomics targets. An example is capture bisulfite sequencing using padlock probes (BSPP)." []
+comment: from the ENA (European Nucleotide Archive) Read submission permitted values
+is_a: GENEPIO:0001940 ! library selection
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
@@ -3636,6 +3665,12 @@ def: "ChIA-PET (chromatin interaction analysis by paired-end tag sequencing) is 
 synonym: "chromatin interaction analysis by paired-end tag sequencing" EXACT []
 xref: PMID:20181287
 is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
+id: EFO:0008800
+name: MDA
+def: "Multiple displacement amplification (MDA)." []
+is_a: GENEPIO:0001940 ! library selection
 
 [Term]
 id: EFO:0008891
