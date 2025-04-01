@@ -519,6 +519,7 @@ name: growth plot design
 def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
 synonym: "Experimental Randomisation" RELATED []
 disjoint_from: DPBO:0000002 ! read alignment software
+xref: AGRO:00000343
 
 [Term]
 id: DPBO:0000002
@@ -739,6 +740,7 @@ id: DPBO:0000038
 name: rooting medium pH
 def: "pH measurement of the culture rooting medium" []
 comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
+xref: PATO:0001428
 
 [Term]
 id: DPBO:0000039
@@ -760,6 +762,7 @@ comment: “Adapted from 'light quantity exposure' http://purl.obolibrary.org/ob
 synonym: "light duration" EXACT []
 xref: PECO:0007078
 xref: ZECO:0000147
+xref: EO:0007153
 
 [Term]
 id: DPBO:0000042
@@ -1471,6 +1474,7 @@ def: "Internal standard added in known amount to an analytical sample" []
 comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
+xref: AFRL:0000432
 
 [Term]
 id: DPBO:0010013
@@ -3219,6 +3223,7 @@ synonym: "Knop ME" RELATED []
 synonym: "Knop solution" RELATED []
 is_a: OBI:0000079 ! culture medium
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+xref: PECO:0001074
 
 [Term]
 id: DPBO:1000224
@@ -3240,6 +3245,7 @@ id: DPBO:1000226
 name: student helper
 def: "A role of a student in a research project which is acknowledged in papers." []
 created_by: Andrea Schrader | 0000-0002-3879-7057
+xref: AGRO:00000374
 
 [Term]
 id: DPBO:1000227
@@ -3305,7 +3311,7 @@ created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
 id: DPBO:1000236
-name: MISAG/MIMAG assembly quality
+name: genome assembly quality
 def: "The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling < 90% of the expected genome or replicon sequence, or for which no genome size could be estimated." []
 comment: https://genomicsstandardsconsortium.github.io/mixs/0000056/
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
@@ -3777,6 +3783,11 @@ def: "Adapters provide priming sequences for both amplification and sequencing o
 id: GENEPIO:0000085
 name: library preparation kit
 def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids." []
+
+[Term]
+id: GENEPIO:0000093
+name: contig count
+def: "A contig count is the count of contigs that belong to a sequence assembly." []
 
 [Term]
 id: GENEPIO:0000149
