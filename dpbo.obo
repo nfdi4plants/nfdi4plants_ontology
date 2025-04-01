@@ -1313,6 +1313,24 @@ comment: from the ENA (European Nucleotide Archive) Read submission permitted va
 is_a: GENEPIO:0001940 ! library selection
 
 [Term]
+id: DPBO:0000132
+name: cell lysis approach
+def: "Name of the kit or standard protocol used for cell(s) lysis."
+comment: adapted from the MIxS checklists, MIXS:0000054
+
+[Term]
+id: DPBO:0000133
+name: cell sorting technology
+def: "Method used to sort/isolate cells of interest."
+comment: adapted from the MIxS checklists, MIXS:0000075
+
+[Term]
+id: DPBO:0000134
+name: whole genome amplification approach
+def: "Method used to amplify genomic DNA in preparation for sequencing."
+comment: adapted from the MIxS checklists, MIXS:0000055
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
