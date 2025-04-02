@@ -1331,6 +1331,24 @@ def: "Method used to amplify genomic DNA in preparation for sequencing."
 comment: adapted from the MIxS checklists, MIXS:0000055
 
 [Term]
+id: DPBO:0000135
+name: instrument customizations
+def: "Any significant (i.e. affecting behaviour) deviations from the manufacturer’s specification for the instrument."
+comment: adapted from the MIAPE-MS checklist
+
+[Term]
+id: DPBO:0000136
+name: ion source description
+def: "Description of the ion source of a mass spectrometer and relevant and discriminating parameters for its use."
+comment: adapted from the MIAPE-MS checklist
+
+[Term]
+id: DPBO:0000137
+name: activation component
+def: "Instrument component of a mass spectrometer, where the activation and/or dissociation occurs."
+comment: adapted from the MIAPE-MS checklist
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
