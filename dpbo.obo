@@ -1349,6 +1349,30 @@ def: "Instrument component of a mass spectrometer, where the activation and/or d
 comment: adapted from the MIAPE-MS checklist
 
 [Term]
+id: DPBO:0000138
+name: chromatography column accessories
+def: "Details of any guards or traps used in conjunction with the chromatography column."
+comment: adapted from the MIAPE-CC checklist
+
+[Term]
+id: DPBO:0000139
+name: mobile phase constituents
+def: "A description, the concentration, pH (including how it was adjusted) and date prepared of each consistuent of the mobile phase."
+comment: adapted from the MIAPE-CC checklist
+
+[Term]
+id: DPBO:0000140
+name: column run time
+def: "The total time of the chromatography column run with appropriate units."
+comment: adapted from the MIAPE-CC checklist
+
+[Term]
+id: DPBO:0000141
+name: detector model
+def: "Manufacturer and model name, or description of the equipment used for detection."
+comment: adapted from the MIAPE-CC checklist
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
