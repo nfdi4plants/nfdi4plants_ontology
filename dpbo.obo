@@ -1373,6 +1373,12 @@ def: "Manufacturer and model name, or description of the equipment used for dete
 comment: adapted from the MIAPE-CC checklist
 
 [Term]
+id: DPBO:0000142
+name: pre and post chromatography run processes
+def: "Description of the purpose, reagents used, duration and flow rate of processes pre or post chromatography run, such as equilibration, calibration or washing."
+comment: adapted from the MIAPE-CC checklist
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
