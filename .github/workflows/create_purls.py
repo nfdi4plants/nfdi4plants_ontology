@@ -18,6 +18,7 @@ from pyvirtualdisplay import Display
 import time
 import os
 import requests
+
 display = Display(visible=0, size=(800,800))
 display.start()
 
@@ -25,7 +26,10 @@ chromedriver_autoinstaller.install()
 chrome_options = webdriver.ChromeOptions()
 options = [
     "--window-size=1200,1200",
-    "--ignore-certificate-errors"
+    "--ignore-certificate-errors",
+    "--headless=new",
+    "--no-sandbox",
+    "--disable-dev-shm-usage"
 ]
 
 for option in options:
