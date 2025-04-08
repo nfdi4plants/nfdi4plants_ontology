@@ -31,16 +31,16 @@ jobs:
       - name: Install xvfb
         run: sudo apt-get install xvfb
 
-#      - name: extract all dpbo terms
-#        run: |
-#          grep -E 'id: DPBO:[0-9]+' dpbo.obo > missing_purls.txt
+      - name: extract all dpbo terms
+        run: |
+          grep -E 'id: DPBO:[0-9]+' dpbo.obo > missing_purls.txt
 
-#      - name: extract TANs and replace colon
-#        run: |
-#          sed -i 's/id: DPBO:\([0-9]\+\)/DPBO_\1/g' missing_purls.txt 
+      - name: extract TANs and replace colon
+        run: |
+          sed -i 's/id: DPBO:\([0-9]\+\)/DPBO_\1/g' missing_purls.txt 
 
-#      - name: run purl verification script
-#        run: python .github/workflows/verify_purls.py
+      - name: run purl verification script
+        run: python .github/workflows/verify_purls.py
 
       - name: run purl creation
         env:
