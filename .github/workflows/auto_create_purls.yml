@@ -23,7 +23,7 @@ jobs:
 
       - name: install requests
         run: |
-          pip install chromedriver-autoinstaller
+          pip install chromedriver-autoinstaller=0.6.2
           pip install pyvirtualdisplay
           pip install requests
           pip install selenium
