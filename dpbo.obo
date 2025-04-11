@@ -1413,41 +1413,49 @@ name: physical dimensions of the gel
 def: "The physical dimensions of the gel matrix and of any sub-matrices. The measurements should be in the form of the Cartesian Coordinate system (x,y,z)."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000149
 name: physicochemical property range and distribution of the gel
 def: "The details of the pH distribution of the matrix, including the overall pH range of the gel, and details of the molecular weight distribution of matrix with appropriate measurement unit."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000150
 name: acrylamide concentration
 def: "The acrylamide concentration of the gel, or each matrix. For gradients include the gradient distribution if appropriate, (e.g. fixed, stepped or linear)."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000151
 name: acrylamide crosslinker ratio
 def: "The acrylamide to crosslinker ratio of the gel."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000152
 name: additional gel ingredients
 def: "The details of any additional substances or reagents contained within the gel, recording the concentration or molarities for each (and pH if appropriate)."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000153
 name: gel lane number
 def: "The number of lanes on the gel matrix."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000154
 name: gel electrophoresis sample application 
 def: "Description of how the sample was applied to the gel for electrophoresis, including method and volume of loading buffer and sample."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000155
 name: electrophoresis conditions
 def: "The running conditions applied to the gel. To be given in terms of voltages versus time/kilovolt hours (or appropriate measurements) and temperature. Include voltage mode profile (step and hold, or gradient).."
 comment: adapted from the MIAPE-GE checklist
 
+[Term]
 id: DPBO:0000156
 name: interdimension process
 def: "Description of any process applied to, or carried out between the dimensions of gel electrophoresis, including processes such as equilibration, reduction and alkylation."
