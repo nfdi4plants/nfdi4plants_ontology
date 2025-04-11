@@ -1462,6 +1462,18 @@ def: "Description of any process applied to, or carried out between the dimensio
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
+id: DPBO:0000157
+name: molecular interaction host system
+def: "The host organism in which the studies molecular interaction took place."
+comment: adapted from the MIMIx checklist
+
+[Term]
+id: DPBO:0000158
+name: molecular interaction participant accession number
+def: "The accession number from a database for a molecule that is part of a molecular interaction."
+comment: adapted from the MIMIx checklist
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
