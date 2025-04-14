@@ -1474,6 +1474,32 @@ def: "The accession number from a database for a molecule that is part of a mole
 comment: adapted from the MIMIx checklist
 
 [Term]
+id: DPBO:0000159
+name: skimmer and focusing lens voltages
+def: "Voltages of the skimmer and the focusing lens in a mass spectrometer."
+comment: term from CIMR
+
+[Term]
+id: DPBO:0000160
+name: ionization gas flows
+def: "Controlled introduction of gases used for ionization in mass spectrometry such as nebulization gas or cone gas."
+
+[Term]
+id: DPBO:0000161
+name: data acquisition date
+def: "The date that data was acquired for a sample."
+
+[Term]
+id: DPBO:0000162
+name: data acquisition rate
+def: "The rate at which data was measured."
+
+[Term]
+id: DPBO:0000163
+name: mass spectrometer lock spray
+def: "Sprayer used in mass spectrometry that provides a continuous calibrant to ensure high mass accuracy throughout an analysis."
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
