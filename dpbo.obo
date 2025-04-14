@@ -5247,6 +5247,10 @@ id: SNOMED:260757005
 name: Species of origin (attribute)
 
 [Term]
+id: SNOMED:81547007
+name: Vacuum (physical force)
+
+[Term]
 id: SO:0000141
 name: terminator
 def: "The sequence of DNA located either at the end of the transcript that causes RNA polymerase to terminate transcription." [http://www.insdc.org/files/feature_table.html]
