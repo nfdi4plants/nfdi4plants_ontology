@@ -1525,6 +1525,11 @@ name: post-column split
 def: "Chromatography setup where the flow coming out of the column is split into two or more paths after the separation has occurred."
 
 [Term]
+id: DPBO:0000169
+name: sample resuspension
+def: "Description of what solution a sample was resuspended in after extraction."
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
