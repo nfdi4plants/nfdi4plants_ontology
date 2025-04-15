@@ -1530,6 +1530,12 @@ name: sample resuspension
 def: "Description of what solution a sample was resuspended in after extraction."
 
 [Term]
+id: DPBO:0000170
+name: sample wash method
+def: "Wash method for removing unwanted external components from the sample."
+comment: adapted from CIMR
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
