@@ -1500,6 +1500,31 @@ name: mass spectrometer lock spray
 def: "Sprayer used in mass spectrometry that provides a continuous calibrant to ensure high mass accuracy throughout an analysis."
 
 [Term]
+id: DPBO:0000164
+name: autosampler wash cycles
+def: "Number and volume of washing steps in a chromatography autosampler."
+
+[Term]
+id: DPBO:0000165
+name: physical column parameters
+def: "Physical characteristics of a chromatography column, such as pore size, particle size or coating thickness."
+
+[Term]
+id: DPBO:0000166
+name: chromatography pressure
+def: "Pressure used during chromatographic separation."
+
+[Term]
+id: DPBO:0000167
+name: chromatography injection mode
+def: "Method of how the sample is introduced into the chromatography system."
+
+[Term]
+id: DPBO:0000168
+name: post-column split
+def: "Chromatography setup where the flow coming out of the column is split into two or more paths after the separation has occurred."
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
