@@ -1536,6 +1536,23 @@ def: "Wash method for removing unwanted external components from the sample."
 comment: adapted from CIMR
 
 [Term]
+id: DPBO:0000171
+name: concentration adjustment
+def: "The process of concentrating, diluting and/or resuspending an extract to obtain a desired concentration."
+
+[Term]
+id: DPBO:0000172
+name: extract cleanup
+def: "Method for removing unwanted components from an extract, such as ultrafiltration, removal of paramagnetic ions or addition of metal chelators."
+comment: adapted from CIMR
+
+[Term]
+id: DPBO:0000173
+name: extract storage
+def: "Storage conditions prior to and during analysis of an extract."
+comment: adapted from CIMR
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
@@ -5277,6 +5294,10 @@ def: "A nucleic acid sequence is a symbolic representation of the sequence of nu
 [Term]
 id: SNOMED:430862008
 name: Microscope slide mounting medium (substance)
+
+[Term]
+id: SNOMED:260707002
+name: Method of extraction (attribute)
 
 [Term]
 id: SNOMED:260757005
