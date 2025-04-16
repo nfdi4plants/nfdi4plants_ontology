@@ -1553,6 +1553,11 @@ def: "Storage conditions prior to and during analysis of an extract."
 comment: adapted from CIMR
 
 [Term]
+id: DPBO:0000174
+name: gel electrophoresis dimension
+def: "Specification of whether the first or second dimension of a one- or two-dimensional gel electrophoresis is described."
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
