@@ -4592,14 +4592,6 @@ name: tag
 def: "Small molecules, peptides or full proteins that can be used as label as they confer some property that facilitates identification purification and monitoring to the labeled molecule." [PMID:14755292]
 
 [Term]
-id: MIAPPE:0049
-name: Biological material preprocessing
-
-[Term]
-id: MIAPPE:0095
-name: Growth facility
-
-[Term]
 id: NCIT:C101294
 name: Whole Genome Sequencing
 def: "A procedure that can determine the DNA sequence for nearly the entire genome of an individual."
