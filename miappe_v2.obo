@@ -3,6 +3,8 @@ treat-xrefs-as-equivalent: PATO
 treat-xrefs-as-equivalent: OBI
 treat-xrefs-as-equivalent: PO
 treat-xrefs-as-equivalent: PECO
+remark: This ontology is based off of the MIAPPE checklist (https://github.com/MIAPPE/MIAPPE/blob/master/MIAPPE_Checklist_Data_Model.pdf) and was designed by the DataPLANT team to help fill out MIAPPE-related templates in Swate. 
+remark: To view MIAPPE's own ontology (Plant Phenotype Experiment Ontology- PPEO), which is an implementation of MIAPPE guidelines, please visit https://agroportal.lirmm.fr/ontologies/PPEO
 ontology: miappe
 property_value: owl:versionInfo "MIAPPE version 1.1" xsd:string
 
