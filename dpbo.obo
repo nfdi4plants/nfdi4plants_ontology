@@ -1558,6 +1558,11 @@ name: gel electrophoresis dimension
 def: "Specification of whether the first or second dimension of a one- or two-dimensional gel electrophoresis is described."
 
 [Term]
+id: DPBO:0000175
+name: sample description
+def: "Description of the sample."
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
