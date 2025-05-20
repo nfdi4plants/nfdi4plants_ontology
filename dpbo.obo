@@ -4974,12 +4974,12 @@ is_a: DPBO:0000012 ! bio entity
 [Term]
 id: OBI:0001094
 name: plate shaker
-is_a: dpbo:0000176 ! shaker type
+is_a: DPBO:0000176 ! shaker type
 
 [Term]
 id: OBI:0001076
 name: incubator shaker
-is_a: dpbo:0000176 ! shaker type
+is_a: DPBO:0000176 ! shaker type
 
 [Term]
 id: OME:Objective
