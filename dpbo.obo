@@ -6,6 +6,7 @@ treat-xrefs-as-equivalent: MIAPPE
 treat-xrefs-as-equivalent: NCBITaxon
 treat-xrefs-as-equivalent: NCIT
 treat-xrefs-as-equivalent: NFDI4PSO
+
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
@@ -1561,6 +1562,12 @@ def: "Specification of whether the first or second dimension of a one- or two-di
 id: DPBO:0000175
 name: sample description
 def: "Description of the sample."
+
+[Term]
+id: DPBO:0000176
+name: shaker type
+def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available."
+xref: SNOMED:470694005
 
 [Term]
 id: DPBO:00002008
@@ -4963,6 +4970,16 @@ id: OBI_0000869
 name: polyA RNA
 def: "A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3' end are purified." []
 is_a: DPBO:0000012 ! bio entity
+
+[Term]
+id: OBI:0001094
+name: plate shaker
+is_a: dpbo:0000176 ! shaker type
+
+[Term]
+id: OBI:0001076
+name: incubator shaker
+is_a: dpbo:0000176 ! shaker type
 
 [Term]
 id: OME:Objective
