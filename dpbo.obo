@@ -20,6 +20,12 @@ property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontolog
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
 
 [Term]
+id: AFM:0000341
+name: cell
+def: "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane." [CL]
+is_a: DPBO:0000177 ! plant material type
+
+[Term]
 id: AFP:0003774
 name: imaging
 def: "Imaging is a process that produces an image of something." []
@@ -4653,11 +4659,6 @@ id: NCIT:C115935
 name: Healthy
 def: "Having no significant health-related issues." []
 is_a: DPBO:0000034 ! plant health state
-
-[Term]
-id: NCIT:C12508
-name: Cell
-is_a: DPBO:0000177 ! plant material type
 
 [Term]
 id: NCIT:C126370
