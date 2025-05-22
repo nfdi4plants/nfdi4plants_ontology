@@ -50,6 +50,11 @@ name: sample temperature
 def: "A sample temperature result is a quality quantification facet that quantifies the temperature of the sample." []
 
 [Term]
+id: AFR:0002229
+name: experiment type
+def: "An experiment type is a classification datum that classifies the type of experiment performed." [Allotrope]
+
+[Term]
 id: AFR:0002311
 name: cycle count
 def: "A cycle count is a count of the number of iterations of a repeated process." [Allotrope]
@@ -1568,6 +1573,11 @@ id: DPBO:0000176
 name: shaker type
 def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available."
 xref: SNOMED:470694005
+
+[Term]
+id: DPBO:0000177
+name: plant material type
+def: "The level at which the plant material is investigated (e.g. whole organism, organism part, cell, DNA)."
 
 [Term]
 id: DPBO:00002008
@@ -3663,6 +3673,11 @@ id: EFO:0000568
 name: light
 
 [Term]
+id: EFO:0001032
+name: transcription profiling
+is_a: AFR:0002229 ! experiment type
+
+[Term]
 id: EFO:0002692
 name: ChIP-seq
 def: "ChIP-seq is an assay in which chromatin immunoprecipitation with high throughput sequencing is used to identify the cistrome of DNA-associated proteins." []
@@ -4612,6 +4627,11 @@ id: MIAPPE:0095
 name: Growth facility
 
 [Term]
+id: NCIT:C449
+name: DNA
+is_a: DPBO:0000177 ! plant material type
+
+[Term]
 id: NCIT:C101294
 name: Whole Genome Sequencing
 def: "A procedure that can determine the DNA sequence for nearly the entire genome of an individual."
@@ -4624,14 +4644,29 @@ def: "A procedure that can determine the DNA sequence for all of the exons in an
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
+id: NCIT:C103199
+name: Organism Part
+is_a: DPBO:0000177 ! plant material type
+
+[Term]
 id: NCIT:C115935
 name: Healthy
 def: "Having no significant health-related issues." []
 is_a: DPBO:0000034 ! plant health state
 
 [Term]
+id: NCIT:C12508
+name: Cell
+is_a: DPBO:0000177 ! plant material type
+
+[Term]
 id: NCIT:C126370
 name: Cover Slip
+
+[Term]
+id: NCIT:C13413
+name: Whole Organism
+is_a: DPBO:0000177 ! plant material type
 
 [Term]
 id: NCIT:C146812
@@ -5490,6 +5525,7 @@ subset: edam
 subset: topics
 synonym: "Small RNA" NARROW []
 is_a: topic:0077 ! Nucleic acids
+is_a: DPBO:0000177 ! plant material type
 property_value: created:in "beta12orEarlier" xsd:string
 property_value: hasHumanReadableId "RNA" xsd:string
 property_value: seeAlso https://en.wikipedia.org/wiki/RNA
