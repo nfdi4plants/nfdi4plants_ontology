@@ -1586,6 +1586,12 @@ name: plant material type
 def: "The level at which the plant material is investigated (e.g. whole organism, organism part, cell, DNA)."
 
 [Term]
+id: DPBO:0000178
+name: stock solution protocol
+def:" A protocol that details how a stock solution is mixed from various chemical compounds. This can be from the same or different methodologies."
+is_a: DPBO:1000161 ! protocol type
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
