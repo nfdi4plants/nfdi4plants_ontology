@@ -6,7 +6,6 @@ treat-xrefs-as-equivalent: MIAPPE
 treat-xrefs-as-equivalent: NCBITaxon
 treat-xrefs-as-equivalent: NCIT
 treat-xrefs-as-equivalent: NFDI4PSO
-
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
@@ -17,7 +16,7 @@ ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000243> \"\")\n)
 
 [Term]
 id: AFM:0000341
@@ -239,14 +238,14 @@ id: BAO:0000269
 name: DNA
 def: "DNA or deoxyribonucleic acid is the genetic material in all the living things, and some viruses. It is a polymer of nucleotides, with a backbone made of deoxyribose sugar and phosphate groups joined together by ester bonds." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
+is_a: NCIT:C63816
 
 [Term]
 id: BAO:0000316
 name: genomic DNA
 def: "DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
+is_a: NCIT:C63816
 
 [Term]
 id: BAO:0000513
@@ -361,7 +360,7 @@ id: CHEBI:36080
 name: protein
 def: " biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
+is_a: NCIT:C63816
 
 [Term]
 id: CHMO:0000995
@@ -533,8 +532,8 @@ id: DPBO:0000001
 name: growth plot design
 def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
 synonym: "Experimental Randomisation" RELATED []
-disjoint_from: DPBO:0000002 ! read alignment software
 xref: AGRO:00000343
+disjoint_from: DPBO:0000002 ! read alignment software
 
 [Term]
 id: DPBO:0000002
@@ -775,9 +774,9 @@ name: growth day length
 def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" []
 comment: “Adapted from 'light quantity exposure' http://purl.obolibrary.org/obo/PECO_0007078"
 synonym: "light duration" EXACT []
+xref: EO:0007153
 xref: PECO:0007078
 xref: ZECO:0000147
-xref: EO:0007153
 
 [Term]
 id: DPBO:0000042
@@ -1225,8 +1224,8 @@ is_a: DPBO:0000037 ! subspecific taxonomic rank
 [Term]
 id: DPBO:0000116
 name: Infinite M200 plate reader (Tecan)
-is_a: OBI:0001058 ! microplate reader
 xref: BAO:0150076
+is_a: OBI:0001058 ! microplate reader
 
 [Term]
 id: DPBO:0000117
@@ -1310,8 +1309,8 @@ id: DPBO:0000129
 name: oligo-dT selection
 def: "Enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT." []
 comment: from the ENA (European Nucleotide Archive) Read submission permitted values
-is_a: GENEPIO:0001940 ! library selection
 xref: FBcv:0003203
+is_a: GENEPIO:0001940 ! library selection
 
 [Term]
 id: DPBO:0000130
@@ -1330,268 +1329,268 @@ is_a: GENEPIO:0001940 ! library selection
 [Term]
 id: DPBO:0000132
 name: cell lysis approach
-def: "Name of the kit or standard protocol used for cell(s) lysis."
+def: "Name of the kit or standard protocol used for cell(s) lysis." []
 comment: adapted from the MIxS checklists, MIXS:0000054
 
 [Term]
 id: DPBO:0000133
 name: cell sorting technology
-def: "Method used to sort/isolate cells of interest."
+def: "Method used to sort/isolate cells of interest." []
 comment: adapted from the MIxS checklists, MIXS:0000075
 
 [Term]
 id: DPBO:0000134
 name: whole genome amplification approach
-def: "Method used to amplify genomic DNA in preparation for sequencing."
+def: "Method used to amplify genomic DNA in preparation for sequencing." []
 comment: adapted from the MIxS checklists, MIXS:0000055
 
 [Term]
 id: DPBO:0000135
 name: instrument customizations
-def: "Any significant (i.e. affecting behaviour) deviations from the manufacturer’s specification for the instrument."
+def: "Any significant (i.e. affecting behaviour) deviations from the manufacturer’s specification for the instrument." []
 comment: adapted from the MIAPE-MS checklist
 
 [Term]
 id: DPBO:0000136
 name: ion source description
-def: "Description of the ion source of a mass spectrometer and relevant and discriminating parameters for its use."
+def: "Description of the ion source of a mass spectrometer and relevant and discriminating parameters for its use." []
 comment: adapted from the MIAPE-MS checklist
 
 [Term]
 id: DPBO:0000137
 name: activation component
-def: "Instrument component of a mass spectrometer, where the activation and/or dissociation occurs."
+def: "Instrument component of a mass spectrometer, where the activation and/or dissociation occurs." []
 comment: adapted from the MIAPE-MS checklist
 
 [Term]
 id: DPBO:0000138
 name: chromatography column accessories
-def: "Details of any guards or traps used in conjunction with the chromatography column."
+def: "Details of any guards or traps used in conjunction with the chromatography column." []
 comment: adapted from the MIAPE-CC checklist
 
 [Term]
 id: DPBO:0000139
 name: mobile phase constituents
-def: "A description, the concentration, pH (including how it was adjusted) and date prepared of each consistuent of the mobile phase."
+def: "A description, the concentration, pH (including how it was adjusted) and date prepared of each consistuent of the mobile phase." []
 comment: adapted from the MIAPE-CC checklist
 
 [Term]
 id: DPBO:0000140
 name: column run time
-def: "The total time of the chromatography column run with appropriate units."
+def: "The total time of the chromatography column run with appropriate units." []
 comment: adapted from the MIAPE-CC checklist
 
 [Term]
 id: DPBO:0000141
 name: detector model
-def: "Manufacturer and model name, or description of the equipment used for detection."
+def: "Manufacturer and model name, or description of the equipment used for detection." []
 comment: adapted from the MIAPE-CC checklist
 
 [Term]
 id: DPBO:0000142
 name: pre and post chromatography run processes
-def: "Description of the purpose, reagents used, duration and flow rate of processes pre or post chromatography run, such as equilibration, calibration or washing."
+def: "Description of the purpose, reagents used, duration and flow rate of processes pre or post chromatography run, such as equilibration, calibration or washing." []
 comment: adapted from the MIAPE-CC checklist
 
 [Term]
 id: DPBO:0000143
 name: gel electrophoresis dimension type
-def: "The type of gel electrophoresis with respect to the number of dimensions."
+def: "The type of gel electrophoresis with respect to the number of dimensions." []
 
 [Term]
 id: DPBO:0000144
 name: loading buffer
-def: "The components, with concentrations (excluding the sample) of the loading buffer that is to be loaded onto the gel matrix for gel electrophoresis."
+def: "The components, with concentrations (excluding the sample) of the loading buffer that is to be loaded onto the gel matrix for gel electrophoresis." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000145
 name: gel electrophoresis separation method
-def: "Name of the separation technique employed for each dimension of gel electrophoresis."
+def: "Name of the separation technique employed for each dimension of gel electrophoresis." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000146
 name: gel matrix type
-def: "Name and type of the gel matrix used for gel electrophoresis."
+def: "Name and type of the gel matrix used for gel electrophoresis." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000147
 name: gel manufacture
-def: "Description of how the gel used for gel electrophoresis was produced. For purchased gels, model name, model number, batch number and manufacturer, for self-prepared gels, a reference to the recipe or published protocol should be given."
+def: "Description of how the gel used for gel electrophoresis was produced. For purchased gels, model name, model number, batch number and manufacturer, for self-prepared gels, a reference to the recipe or published protocol should be given." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000148
 name: physical dimensions of the gel
-def: "The physical dimensions of the gel matrix and of any sub-matrices. The measurements should be in the form of the Cartesian Coordinate system (x,y,z)."
+def: "The physical dimensions of the gel matrix and of any sub-matrices. The measurements should be in the form of the Cartesian Coordinate system (x,y,z)." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000149
 name: physicochemical property range and distribution of the gel
-def: "The details of the pH distribution of the matrix, including the overall pH range of the gel, and details of the molecular weight distribution of matrix with appropriate measurement unit."
+def: "The details of the pH distribution of the matrix, including the overall pH range of the gel, and details of the molecular weight distribution of matrix with appropriate measurement unit." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000150
 name: acrylamide concentration
-def: "The acrylamide concentration of the gel, or each matrix. For gradients include the gradient distribution if appropriate, (e.g. fixed, stepped or linear)."
+def: "The acrylamide concentration of the gel, or each matrix. For gradients include the gradient distribution if appropriate, (e.g. fixed, stepped or linear)." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000151
 name: acrylamide crosslinker ratio
-def: "The acrylamide to crosslinker ratio of the gel."
+def: "The acrylamide to crosslinker ratio of the gel." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000152
 name: additional gel ingredients
-def: "The details of any additional substances or reagents contained within the gel, recording the concentration or molarities for each (and pH if appropriate)."
+def: "The details of any additional substances or reagents contained within the gel, recording the concentration or molarities for each (and pH if appropriate)." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000153
 name: gel lane number
-def: "The number of lanes on the gel matrix."
+def: "The number of lanes on the gel matrix." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000154
-name: gel electrophoresis sample application 
-def: "Description of how the sample was applied to the gel for electrophoresis, including method and volume of loading buffer and sample."
+name: gel electrophoresis sample application
+def: "Description of how the sample was applied to the gel for electrophoresis, including method and volume of loading buffer and sample." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000155
 name: electrophoresis conditions
-def: "The running conditions applied to the gel. To be given in terms of voltages versus time/kilovolt hours (or appropriate measurements) and temperature. Include voltage mode profile (step and hold, or gradient).."
+def: "The running conditions applied to the gel. To be given in terms of voltages versus time/kilovolt hours (or appropriate measurements) and temperature. Include voltage mode profile (step and hold, or gradient).." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000156
 name: interdimension process
-def: "Description of any process applied to, or carried out between the dimensions of gel electrophoresis, including processes such as equilibration, reduction and alkylation."
+def: "Description of any process applied to, or carried out between the dimensions of gel electrophoresis, including processes such as equilibration, reduction and alkylation." []
 comment: adapted from the MIAPE-GE checklist
 
 [Term]
 id: DPBO:0000157
 name: molecular interaction host system
-def: "The host organism in which the studies molecular interaction took place."
+def: "The host organism in which the studies molecular interaction took place." []
 comment: adapted from the MIMIx checklist
 
 [Term]
 id: DPBO:0000158
 name: molecular interaction participant accession number
-def: "The accession number from a database for a molecule that is part of a molecular interaction."
+def: "The accession number from a database for a molecule that is part of a molecular interaction." []
 comment: adapted from the MIMIx checklist
 
 [Term]
 id: DPBO:0000159
 name: skimmer and focusing lens voltages
-def: "Voltages of the skimmer and the focusing lens in a mass spectrometer."
+def: "Voltages of the skimmer and the focusing lens in a mass spectrometer." []
 comment: term from CIMR
 
 [Term]
 id: DPBO:0000160
 name: ionization gas flows
-def: "Controlled introduction of gases used for ionization in mass spectrometry such as nebulization gas or cone gas."
+def: "Controlled introduction of gases used for ionization in mass spectrometry such as nebulization gas or cone gas." []
 
 [Term]
 id: DPBO:0000161
 name: data acquisition date
-def: "The date that data was acquired for a sample."
+def: "The date that data was acquired for a sample." []
 
 [Term]
 id: DPBO:0000162
 name: data acquisition rate
-def: "The rate at which data was measured."
+def: "The rate at which data was measured." []
 
 [Term]
 id: DPBO:0000163
 name: mass spectrometer lock spray
-def: "Sprayer used in mass spectrometry that provides a continuous calibrant to ensure high mass accuracy throughout an analysis."
+def: "Sprayer used in mass spectrometry that provides a continuous calibrant to ensure high mass accuracy throughout an analysis." []
 
 [Term]
 id: DPBO:0000164
 name: autosampler wash cycles
-def: "Number and volume of washing steps in a chromatography autosampler."
+def: "Number and volume of washing steps in a chromatography autosampler." []
 
 [Term]
 id: DPBO:0000165
 name: physical column parameters
-def: "Physical characteristics of a chromatography column, such as pore size, particle size or coating thickness."
+def: "Physical characteristics of a chromatography column, such as pore size, particle size or coating thickness." []
 
 [Term]
 id: DPBO:0000166
 name: chromatography pressure
-def: "Pressure used during chromatographic separation."
+def: "Pressure used during chromatographic separation." []
 
 [Term]
 id: DPBO:0000167
 name: chromatography injection mode
-def: "Method of how the sample is introduced into the chromatography system."
+def: "Method of how the sample is introduced into the chromatography system." []
 
 [Term]
 id: DPBO:0000168
 name: post-column split
-def: "Chromatography setup where the flow coming out of the column is split into two or more paths after the separation has occurred."
+def: "Chromatography setup where the flow coming out of the column is split into two or more paths after the separation has occurred." []
 
 [Term]
 id: DPBO:0000169
 name: sample resuspension
-def: "Description of what solution a sample was resuspended in after extraction."
+def: "Description of what solution a sample was resuspended in after extraction." []
 
 [Term]
 id: DPBO:0000170
 name: sample wash method
-def: "Wash method for removing unwanted external components from the sample."
+def: "Wash method for removing unwanted external components from the sample." []
 comment: adapted from CIMR
 
 [Term]
 id: DPBO:0000171
 name: concentration adjustment
-def: "The process of concentrating, diluting and/or resuspending an extract to obtain a desired concentration."
+def: "The process of concentrating, diluting and/or resuspending an extract to obtain a desired concentration." []
 
 [Term]
 id: DPBO:0000172
 name: extract cleanup
-def: "Method for removing unwanted components from an extract, such as ultrafiltration, removal of paramagnetic ions or addition of metal chelators."
+def: "Method for removing unwanted components from an extract, such as ultrafiltration, removal of paramagnetic ions or addition of metal chelators." []
 comment: adapted from CIMR
 
 [Term]
 id: DPBO:0000173
 name: extract storage
-def: "Storage conditions prior to and during analysis of an extract."
+def: "Storage conditions prior to and during analysis of an extract." []
 comment: adapted from CIMR
 
 [Term]
 id: DPBO:0000174
 name: gel electrophoresis dimension
-def: "Specification of whether the first or second dimension of a one- or two-dimensional gel electrophoresis is described."
+def: "Specification of whether the first or second dimension of a one- or two-dimensional gel electrophoresis is described." []
 
 [Term]
 id: DPBO:0000175
 name: sample description
-def: "Description of the sample."
+def: "Description of the sample." []
 
 [Term]
 id: DPBO:0000176
 name: shaker type
-def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available."
+def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available." []
 xref: SNOMED:470694005
 
 [Term]
 id: DPBO:0000177
 name: plant material type
-def: "The level at which the plant material is investigated (e.g. whole organism, organism part, cell, DNA)."
+def: "The level at which the plant material is investigated (e.g. whole organism, organism part, cell, DNA)." []
 
 [Term]
 id: DPBO:0000178
 name: stock solution protocol
-def:" A protocol that details how a stock solution is mixed from various chemical compounds. This can be from the same or different methodologies."
+def: " A protocol that details how a stock solution is mixed from various chemical compounds. This can be from the same or different methodologies." []
 is_a: DPBO:1000161 ! protocol type
 
 [Term]
@@ -1754,9 +1753,9 @@ id: DPBO:0010012
 name: internal standard
 def: "Internal standard added in known amount to an analytical sample" []
 comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005
+xref: AFRL:0000432
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
-xref: AFRL:0000432
 
 [Term]
 id: DPBO:0010013
@@ -2611,7 +2610,7 @@ id: DPBO:1000094
 name: other
 def: "Any other bio entity that can be characterized by high-throuput sequencing." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
+is_a: NCIT:C63816
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -3504,9 +3503,9 @@ name: Knop medium
 def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
 synonym: "Knop ME" RELATED []
 synonym: "Knop solution" RELATED []
+xref: PECO:0001074
 is_a: OBI:0000079 ! culture medium
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-xref: PECO:0001074
 
 [Term]
 id: DPBO:1000224
@@ -3527,8 +3526,8 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 id: DPBO:1000226
 name: student helper
 def: "A role of a student in a research project which is acknowledged in papers." []
-created_by: Andrea Schrader | 0000-0002-3879-7057
 xref: AGRO:00000374
+created_by: Andrea Schrader | 0000-0002-3879-7057
 
 [Term]
 id: DPBO:1000227
@@ -3645,7 +3644,6 @@ created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 id: DPBO:1000243
 name: ENA accession field
 def: "A data field which describes the ENA experiment accession assigned to the sequencing data." []
-comment: 
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
@@ -3707,7 +3705,7 @@ def: "A process performed as part of an experiment or wider study, i.e. intentio
 [Term]
 id: EFO:0003741
 name: pooled clone sequencing
-def: "An assay in which DNA is the input molecule derived from pooled clones (for example BACs and Fosmids) is sequenced using high throughput technology using shotgun methodology."
+def: "An assay in which DNA is the input molecule derived from pooled clones (for example BACs and Fosmids) is sequenced using high throughput technology using shotgun methodology." []
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
@@ -3858,7 +3856,7 @@ id: EFO:0004964
 name: total RNA
 def: "An RNA extract that is the output of an extraction process in which total RNA from either whole cells or from specific cellular compartment(s)/organelle(s) are isolated from a specimen." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
+is_a: NCIT:C63816
 
 [Term]
 id: EFO:0004998
@@ -4029,7 +4027,7 @@ is_a: EFO:0000490 ! extraction protocol
 id: EFO:0030052
 name: nuclear RNA
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
+is_a: NCIT:C63816
 
 [Term]
 id: ENVO:00000050
@@ -4645,20 +4643,15 @@ id: MIAPPE:0095
 name: Growth facility
 
 [Term]
-id: NCIT:C449
-name: DNA
-is_a: DPBO:0000177 ! plant material type
-
-[Term]
 id: NCIT:C101294
 name: Whole Genome Sequencing
-def: "A procedure that can determine the DNA sequence for nearly the entire genome of an individual."
+def: "A procedure that can determine the DNA sequence for nearly the entire genome of an individual." []
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: NCIT:C101295
 name: Whole Exome Sequencing
-def: "A procedure that can determine the DNA sequence for all of the exons in an individual."
+def: "A procedure that can determine the DNA sequence for all of the exons in an individual." []
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
@@ -4726,12 +4719,6 @@ id: NCIT:C181919
 name: Objective Lens
 
 [Term]
-id: NCIT:C25360
-name: mutant
-def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
-is_a: MCO:0000851 ! genotype
-
-[Term]
 id: NCIT:C204813
 name: Amplicon Sequencing
 def: "A method for targeted DNA sequencing that uses oligonucleotide primers to amplify regions of interest, followed by next-generation sequencing (NGS) for deep coverage of the region." []
@@ -4779,6 +4766,16 @@ name: Tethered Chromatin Conformation Capture Sequencing
 def: "A method for genome-wide mapping of chromatin interactions. It is similar to Hi-C sequencing except that the ligations are performed on a solid substrate rather than in solution. This enhances the signal-to-noise ratio, thereby facilitating a detailed analysis of interactions within and between chromosomes." []
 is_a: GENEPIO:0001973 ! library strategy
 
+[Term]
+id: NCIT:C25360
+name: mutant
+def: "An altered form of an individual, organism, population, or genetic character that differs from the corresponding wild type due to one or more alterations (mutations)." []
+is_a: MCO:0000851 ! genotype
+
+[Term]
+id: NCIT:C449
+name: DNA
+is_a: DPBO:0000177 ! plant material type
 
 [Term]
 id: NCIT:C45293
@@ -4821,11 +4818,15 @@ def: "In botanical nomenclature, a rank below subspecies but above forma." []
 is_a: DPBO:0000037 ! subspecific taxonomic rank
 
 [Term]
+id: NCIT:C63816
+name: Molecule
+
+[Term]
 id: NCIT:C84512
 name: Cytoplasmic RNA
 def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
+is_a: NCIT:C63816
 
 [Term]
 id: NMR:1000019
@@ -4892,7 +4893,17 @@ def: "An image acquisition device that takes video or still photographs, or both
 [Term]
 id: OBI:0001058
 name: microplate reader
-def: "A measurement device that detects biological, chemical or physical events of samples in microtiter plates."
+def: "A measurement device that detects biological, chemical or physical events of samples in microtiter plates." []
+
+[Term]
+id: OBI:0001076
+name: incubator shaker
+is_a: DPBO:0000176 ! shaker type
+
+[Term]
+id: OBI:0001094
+name: plate shaker
+is_a: DPBO:0000176 ! shaker type
 
 [Term]
 id: OBI:0002000
@@ -5019,17 +5030,7 @@ id: OBI_0000869
 name: polyA RNA
 def: "A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3' end are purified." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816 ! molecule
-
-[Term]
-id: OBI:0001094
-name: plate shaker
-is_a: DPBO:0000176 ! shaker type
-
-[Term]
-id: OBI:0001076
-name: incubator shaker
-is_a: DPBO:0000176 ! shaker type
+is_a: NCIT:C63816
 
 [Term]
 id: OME:Objective
@@ -5060,22 +5061,22 @@ is_a: MIAPPE:0049 ! Biological material preprocessing
 [Term]
 id: PO:0009001
 name: fruit
-is_a: DPBO:0000112 ! Tissue
+is_a: DPBO:0000112 ! tissue
 
 [Term]
 id: PO:0009008
 name: plant organ
-is_a: DPBO:0000112 ! Tissue
+is_a: DPBO:0000112 ! tissue
 
 [Term]
 id: PO:0009010
 name: seed
-is_a: DPBO:0000112 ! Tissue
+is_a: DPBO:0000112 ! tissue
 
 [Term]
 id: PO:0025498
 name: cardinal part of multi-tissue plant structure
-is_a: DPBO:0000112 ! Tissue
+is_a: DPBO:0000112 ! tissue
 
 [Term]
 id: PRIDE:0000307
@@ -5243,6 +5244,22 @@ is_a: PRIDE:0000309 ! Gel-free quantification method
 created_by: rw
 
 [Term]
+id: PRIDE:0000427
+name: Top-down proteomics
+namespace: PRIDE
+def: "A mass spectrometry-based approach that analyzes intact proteins rather than digesting them into peptides (as in bottom-up proteomics)" [PRIDE:PRIDE]
+is_a: PRIDE:0000426
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
+id: PRIDE:0000428
+name: Bottom-up proteomics
+namespace: PRIDE
+def: "Proteins go through proteolytic digestion yielding peptides before entering the mass spectrometer" [PRIDE:PRIDE]
+is_a: PRIDE:0000426
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
 id: PRIDE:0000435
 name: Peptide counting
 namespace: PRIDE
@@ -5304,6 +5321,29 @@ name: Experiment Type
 def: "Domain-specific mass spectrometry experiment type focusing on the scientific knowledge gained, not the mass spectrometry method." []
 
 [Term]
+id: PRIDE:0000458
+name: Metaproteomics
+namespace: PRIDE
+def: "Studying all protein samples of diverse host environments like the human body, soil or sea water" [PRIDE:PRIDE]
+synonym: "Community Proteomics" EXACT [PRIDE]
+synonym: "Environmental Proteomics" RELATED [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
+id: PRIDE:0000460
+name: Proteogenomics
+namespace: PRIDE
+def: "Studies that use proteomic information to improve genome annotation. Proteogenomics approaches are also increasingly used in personalised medicine studies" [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
+id: PRIDE:0000461
+name: Multi-omics study
+namespace: PRIDE
+def: "Studies that use various omics methods like proteomics, genomics, transcriptomics, metabolomics to analyse the same biological samples" [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
 id: PRIDE:0000463
 name: Parallel Reaction Monitoring (PRM)
 namespace: PRIDE
@@ -5320,10 +5360,39 @@ created_by: yperez
 creation_date: 2019-08-07T15:21:19Z
 
 [Term]
+id: PRIDE:0000543
+name: Quality Control
+namespace: PRIDE
+def: "MS experiments conducted to control the quality of measurements" [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
+id: PRIDE:0000635
+name: Affinity proteomics
+namespace: PRIDE
+def: "The field of proteome analysis based on the use of antibodies and other binding reagents as protein-specific detection probes" [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
+id: PRIDE:0000649
+name: Immunopeptidomics
+namespace: PRIDE
+def: "Immunopeptidomics is a large-scale method capable of identifying and quantifying the presented HLA immunopeptidome" [PRIDE:PRIDE]
+is_a: PRIDE:0000426
+is_a: PRIDE:0000457 ! Experiment Type
+
+[Term]
 id: PRIDE:0000650
 name: diaPASEF
 def: "Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825" [PRIDE:PRIDE]
 created_by: yperez
+
+[Term]
+id: PRIDE:0000665
+name: Glycoproteomics
+namespace: PRIDE
+def: "Study of proteins that identifies, catalogs, and characterizes those proteins that contain carbohydrates as posttranslational modifications" [PRIDE:PRIDE]
+is_a: PRIDE:0000457 ! Experiment Type
 
 [Term]
 id: PSO:0000013
@@ -5369,16 +5438,16 @@ name: nucleic acid sequence
 def: "A nucleic acid sequence is a symbolic representation of the sequence of nucleic acid residues in a nucleic acid." []
 
 [Term]
-id: SNOMED:430862008
-name: Microscope slide mounting medium (substance)
-
-[Term]
 id: SNOMED:260707002
 name: Method of extraction (attribute)
 
 [Term]
 id: SNOMED:260757005
 name: Species of origin (attribute)
+
+[Term]
+id: SNOMED:430862008
+name: Microscope slide mounting medium (substance)
 
 [Term]
 id: SNOMED:81547007
@@ -5456,6 +5525,11 @@ created_by: george gkoutos
 [Term]
 id: UO:0010006
 name: ratio
+
+[Term]
+id: XCO:0000058
+name: room temperature
+def: "The temperature of the air surrounding an organism which is considered the most common level for the facility. For humans the temperature considered most comfortable for a room is between 18 and 27 degrees celsius." [Dorland:Dorlands_Illustrated_Medical_Dictionary--31st_Ed, ISBN:978-1416049982]
 
 [Term]
 id: data:0962
@@ -5539,13 +5613,9 @@ def: "RNA sequences and structures." []
 subset: edam
 subset: topics
 synonym: "Small RNA" NARROW []
-is_a: topic:0077 ! Nucleic acids
 is_a: DPBO:0000177 ! plant material type
+is_a: topic:0077 ! Nucleic acids
 property_value: created:in "beta12orEarlier" xsd:string
 property_value: hasHumanReadableId "RNA" xsd:string
 property_value: seeAlso https://en.wikipedia.org/wiki/RNA
 
-[Term]
-id: XCO:0000058
-name: room temperature
-def: "The temperature of the air surrounding an organism which is considered the most common level for the facility. For humans the temperature considered most comfortable for a room is between 18 and 27 degrees celsius." [Dorland:Dorlands_Illustrated_Medical_Dictionary--31st_Ed, ISBN:978-1416049982]
