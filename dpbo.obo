@@ -239,12 +239,14 @@ id: BAO:0000269
 name: DNA
 def: "DNA or deoxyribonucleic acid is the genetic material in all the living things, and some viruses. It is a polymer of nucleotides, with a backbone made of deoxyribose sugar and phosphate groups joined together by ester bonds." []
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 
 [Term]
 id: BAO:0000316
 name: genomic DNA
 def: "DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc." []
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 
 [Term]
 id: BAO:0000513
@@ -359,6 +361,7 @@ id: CHEBI:36080
 name: protein
 def: " biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome." []
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 
 [Term]
 id: CHMO:0000995
@@ -2608,6 +2611,7 @@ id: DPBO:1000094
 name: other
 def: "Any other bio entity that can be characterized by high-throuput sequencing." []
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -3854,6 +3858,7 @@ id: EFO:0004964
 name: total RNA
 def: "An RNA extract that is the output of an extraction process in which total RNA from either whole cells or from specific cellular compartment(s)/organelle(s) are isolated from a specimen." []
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 
 [Term]
 id: EFO:0004998
@@ -4024,6 +4029,7 @@ is_a: EFO:0000490 ! extraction protocol
 id: EFO:0030052
 name: nuclear RNA
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 
 [Term]
 id: ENVO:00000050
@@ -4819,6 +4825,7 @@ id: NCIT:C84512
 name: Cytoplasmic RNA
 def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 
 [Term]
 id: NMR:1000019
@@ -5012,6 +5019,7 @@ id: OBI_0000869
 name: polyA RNA
 def: "A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3' end are purified." []
 is_a: DPBO:0000012 ! bio entity
+is_a: NCIT:C63816 ! molecule
 
 [Term]
 id: OBI:0001094
