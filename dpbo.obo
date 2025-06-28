@@ -4654,6 +4654,11 @@ id: MIAPPE:0095
 name: Growth facility
 
 [Term]
+id: MICRO:0001593
+name: culture tube
+is_a: DPBO:0002011 ! cultivation container
+
+[Term]
 id: NCIT:C101294
 name: Whole Genome Sequencing
 def: "A procedure that can determine the DNA sequence for nearly the entire genome of an individual." []
