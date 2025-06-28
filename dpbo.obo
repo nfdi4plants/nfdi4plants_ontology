@@ -1650,6 +1650,17 @@ name: plant-associated environmental package
 def: "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported" []
 
 [Term]
+id: DPBO:0002011
+name: cultivation container
+def: "A container that is used for the cultivation of cells." []
+
+[Term]
+id: DPBO:0002012
+name: shake flask
+def: "A shake flask is a common piece of laboratory equipment used for growing microorganisms or cells in a liquid culture. " []
+is_a: DPBO:0002011 ! cultivation container
+
+[Term]
 id: DPBO:0010000
 name: ENA
 def: "The European Nucleotide Archive (ENA) is an open, supported platform for the management, sharing, integration, archiving and dissemination of sequence data." []
