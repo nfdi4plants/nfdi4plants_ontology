@@ -37,7 +37,7 @@ for option in options:
 
 mail_key = os.getenv("MY_MAIL")
 pw_key = os.getenv("MY_PW")
-ts4tib = "https://terminology.tib.eu/ts/ontologies/dpbo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F"
+ts4tib = "https://terminology.tib.eu/ts/ontologies/dpbo/terms?iri=https%3A%2F%2Fpurl.org%2Fnfdi4plants%2Fontology%2Fdpbo%2F"
 term_ids = []
 
 with open("missing_purls_verified.txt") as f:
@@ -91,7 +91,7 @@ def create_purl(purl_to_create, redirect_url, retry=0):
     target.clear()
 
 
-    new_purl = current_purl + "/" + purl_to_create
+    new_purl = current_purl + purl_to_create
     target_url = redirect_url + purl_to_create
     purl.send_keys(new_purl)
     target.send_keys(target_url)
