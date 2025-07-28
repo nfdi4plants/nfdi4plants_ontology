@@ -11,7 +11,7 @@ remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
 remark: curator: Kathryn Dumschott <k.dumschott@fz-juelich.de>
 remark: curator: Stella Eggels <s.eggels@fz-juelich.de>
-idspace: DPBO https://purl.org/nfdi4plants/ontology/dpbo/DPBO_ "DataPLANT Biology Ontology"
+idspace: DPBO https://purl.org/nfdi4plants/ontology/dpbo "DataPLANT Biology Ontology"
 ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
