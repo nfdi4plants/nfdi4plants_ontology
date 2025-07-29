@@ -1224,6 +1224,7 @@ is_a: DPBO:0000037 ! subspecific taxonomic rank
 [Term]
 id: DPBO:0000116
 name: Infinite M200 plate reader (Tecan)
+def: "A microtiter plate reader by the brand Tecan." []
 xref: BAO:0150076
 is_a: OBI:0001058 ! microplate reader
 
