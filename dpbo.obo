@@ -1595,6 +1595,18 @@ def: " A protocol that details how a stock solution is mixed from various chemic
 is_a: DPBO:1000161 ! protocol type
 
 [Term]
+id: DPBO:0000179
+name: Source Name
+def: "Sources are considered as the starting biological material used in a study." []
+comment: https://isa-specs.readthedocs.io/en/latest/isamodel.html
+
+[Term]
+id: DPBO:0000180
+name: Sample Name
+def: "Samples are a kind of material and represent major outputs resulting from a protocol application." []
+comment: https://isa-specs.readthedocs.io/en/latest/isamodel.html
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
