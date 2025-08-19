@@ -1607,6 +1607,12 @@ def: "Samples are a kind of material and represent major outputs resulting from 
 comment: https://isa-specs.readthedocs.io/en/latest/isamodel.html
 
 [Term]
+id: DPBO:0000181
+name: data file name
+def: "Name of the data file resulting from a protocol application that corresponds to some process that produces data." []
+comment: https://isa-specs.readthedocs.io/en/latest/isamodel.html
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
