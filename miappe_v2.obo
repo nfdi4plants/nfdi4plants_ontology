@@ -510,11 +510,11 @@ is_a: MIAPPE:0175 ! Observation unit information
 
 [Term]
 id: MIAPPE:0072
-name: External ID
+name: obsolete_External ID
 def: "Identifier for the sample/observation unit in a persistent repository, comprises the name of the repository and the identifier of the observation unit therein. The EBI Biosamples repository can be used. URI are recommended when possible." []
 comment: "Example: 'Biosamples:SAMEA4202911'. Format: Unique identifier. Cardinality: 0+"
-is_a: MIAPPE:0175 ! Observation unit information
-is_a: MIAPPE:0178 ! Sample information
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: MIAPPE:0073
@@ -1222,6 +1222,76 @@ def: "Information about the sample obtained from an observation unit for the pur
 id: MIAPPE:0179
 name: Study information
 def: "Information about the study." []
+
+[Term]
+id: MIAPPE:0180
+name: Biological material external ID
+def: "One to many identifiers for the biological material. Can include EBI Biosamples ID. URI are recommended when possible." []
+comment: "Examples: 'AGENT_project:AGENT_ID'; 'Kernel_ID'; 'experimentalPlateformID'; 'GERMPLASM_DB_ID'; 'Biosamples:SAMEA001234'"
+is_a: MIAPPE:0167 ! Biological material information
+
+[Term]
+id: MIAPPE:0181
+name: Material source accession number
+def: "Unique identifier for accessions within a genebank. If material source is not from a genebank, use a laboratory ID. In the case of a commercial variety, use the variety code, or name if no code available." []
+comment: "Examples: 'W95115_inra'; 'SYNTHETICS R93'"
+is_a: MIAPPE:0167 ! Biological material information
+
+[Term]
+id: MIAPPE:0182
+name: Material source accession name
+def: "Can be: (i)genebank accession registered name or other designation given to the material, other than the donor's accession number or collecting number. (ii) Variety name." []
+comment: "Examples: 'Rheinische Vorgebirgstrauben'; 'APACHE'"
+is_a: MIAPPE:0167 ! Biological material information
+
+[Term]
+id: MIAPPE:0183
+name: Material source institute code
+def: "FAO WIEWS code of the institute where the accession is maintained. The current set of institute codes is available from https://www.fao.org/wiews. If no institute code is available, create your own (Laboratory acronym or research institute acronym ...)." []
+comment: "Example: 'FRA09'"
+is_a: MIAPPE:0167 ! Biological material information
+
+[Term]
+id: MIAPPE:0184
+name: Material source institute name
+def: "Name of the material source institute." []
+comment: "Example: 'INRA'"
+is_a: MIAPPE:0167 ! Biological material information
+
+[Term]
+id: MIAPPE:0185
+name: Material source other identifiers
+def: "Any other identifiers known to exist in other collections for this material source." []
+comment: "Examples: 'AGENT_ID:AB_06024; Yet_Another_ID:YAID_123'"
+is_a: MIAPPE:0167 ! Biological material information
+
+[Term]
+id: MIAPPE:0186
+name: Sample external ID
+def: "An identifier for the sample in a persistent repository, comprising the name of the repository and the accession number of the observation unit therein. Submission to the EBI Biosamples repository is recommended. URI are recommended when possible.." []
+comment: "Example: 'Biosamples:SAMEA4202911'"
+is_a: MIAPPE:0178 ! Sample information
+
+[Term]
+id: MIAPPE:0187
+name: Observation unit external ID
+def: "Identifier for the observation unit in a persistent repository, comprises the name of the repository and the identifier of the observation unit therein. The EBI Biosamples repository can be used. URI are recommended when possible." []
+comment: "Example: 'Biosamples:SAMEA4202911'"
+is_a: MIAPPE:0175 ! Observation unit information
+
+[Term]
+id: MIAPPE:0188
+name: Trait entity
+def: "Entity (part of the plant, whole plant, group of plant e.g. canopy) on which the trait has been measured." []
+comment: "Example: 'Leaf'"
+is_a: MIAPPE:0176 ! Method information
+
+[Term]
+id: MIAPPE:0189
+name: Trait characteristic
+def: "Characteristic measured. It can be a morphological characteristic (size, volume, surface), a molecular characteristic (sugar concentration), etc..." []
+comment: "Example: 'Area'"
+is_a: MIAPPE:0176 ! Method information
 
 [Term]
 id: ObsoleteClass
