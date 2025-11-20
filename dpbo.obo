@@ -3692,6 +3692,21 @@ def: "A data field which describes the ENA experiment accession assigned to the 
 created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 
 [Term]
+id: DPBO:1000244
+name: IonQuant
+def: "IonQuant is a software tool for MS1 precursor intensity-based quantification for timsTOF PASEF DDA and non-timsTOF (e.g., Orbitrap) data. It enables label-free quantification with false discovery (FDR) controlled match-between-runs (MBR). It can also be used for quantification in labelling-based experiments such as those involving SILAC, dimethyl, or similar labelling strategies. IonQuant is available as a stand-alone tool or it can be run within [FragPipe] (http://fragpipe.nesvilab.org/) computational platform." []
+is_a: MS:1003429 ! FragPipe
+is_a: MS:1001139 ! quantitation software name
+
+[Term]
+id: MS:1003429
+name: FragPipe
+
+[Term]
+id: MS:1001139
+name: quantitation software name
+
+[Term]
 id: ECSO:00000517
 name: Soil Moisture Percentage
 def: "wetness caused by water" []
