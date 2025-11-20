@@ -3699,6 +3699,12 @@ is_a: MS:1003429 ! FragPipe
 is_a: MS:1001139 ! quantitation software name
 
 [Term]
+id: DPBO:1000245
+name: MSBooster
+def: "MSBooster is a tool for incorporating spectral libary predictions into peptide-spectrum match (PSM) rescoring in bottom-up tandem liquid chromatography mass spectrometry proteomics data. It is incorporated into [FragPipe] (https://fragpipe.nesvilab.org/)" []
+is_a: MS:1003429 ! FragPipe
+
+[Term]
 id: MS:1003429
 name: FragPipe
 
