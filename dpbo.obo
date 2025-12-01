@@ -5159,7 +5159,7 @@ is_a: DPBO:0000112 ! tissue
 [Term]
 id: PRIDE:0000650
 name: diaPASEF
-def: Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825
+def: "Data-independent acquisition parallel accumulation-serial fragmentation, PMID: 33257825" []
 
 [Term]
 id: PRIDE:0000307
