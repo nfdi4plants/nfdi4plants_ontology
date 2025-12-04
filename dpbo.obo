@@ -3705,6 +3705,13 @@ def: "MSBooster is a tool for incorporating spectral libary predictions into pep
 is_a: MS:1003429 ! FragPipe
 
 [Term]
+id: DPBO:1000246
+name: infection
+def: "To implant pathogenic microbes or infective materials. Special case of NCIT_C68774" []
+is_a: NCIT:C68774 ! inoculation
+created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
+ 
+[Term]
 id: MS:1003429
 name: FragPipe
 
@@ -4854,6 +4861,10 @@ is_a: MCO:0000851 ! genotype
 id: NCIT:C449
 name: DNA
 is_a: DPBO:0000177 ! plant material type
+
+[Term]
+id: NCIT:C68774
+name: Inoculation
 
 [Term]
 id: NCIT:C45293
