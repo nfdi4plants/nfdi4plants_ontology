@@ -25,7 +25,7 @@ body:
     id: Linked_Parent
     attributes:
       label: Parent term(s)
-      description: What term(s) already in the dpbo ontology should this new term be under? Please list them here, including accession numbers
+      description: What term(s) already in the dpbo ontology should this new term be under? Please list them here, including accession numbers. If the parent term does not get exist as an ontology term, please submit it as a new term request.
     validations:
       required: false
 
@@ -33,7 +33,7 @@ body:
     id: Linked_Child
     attributes:
       label: Child term(s)
-      description: Are there terms already in the dpbo ontology that should be linked underneath the new term? Please list them here, including accession numbers
+      description: Are there terms already in the dpbo ontology that should be linked underneath the new term? Please list them here, including accession numbers. If the child term does not get exist as an ontology term, please submit it as a new term request.
     validations:
       required: false
       
