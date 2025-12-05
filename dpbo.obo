@@ -3713,8 +3713,8 @@ created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 
 [Term]
 id: DPBO:1000247
-name: Days post infection
-def: "Abbreviated dpi or DPI. Unit to describe the length of the period after an infection or inoculation treatment."
+name: days post infection
+def: "Abbreviated dpi or DPI. Unit to describe the length of the period after an infection or inoculation treatment." []
 synonym: "days post-infection" EXACT []
 synonym: "days post inoculation" NARROW []
 synonym: "days post-inoculation" NARROW []
