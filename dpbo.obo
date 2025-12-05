@@ -3721,6 +3721,21 @@ synonym: "days post-inoculation" NARROW []
 created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 
 [Term]
+id: DPBO:1000248
+name: Apoplast extraction
+def: "Extraction of the soluble apoplast constituents, in particular, apoplastic proteins." []
+is_a: OBI:0302884 ! extraction
+created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
+
+[Term]
+id: DPBO:1000249
+name: Apoplast extraction solution
+def: "Solution used to extract apoplast proteins. Examples are ultra pure water, sorbitol or NaCl solutions." []
+synonym: "apoplast infiltration solution" EXACT []
+comment:see https://doi.org/10.1186/1746-4811-7-48
+created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
+
+[Term]
 id: MS:1003429
 name: FragPipe
 
