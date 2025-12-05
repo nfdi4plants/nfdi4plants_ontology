@@ -3710,7 +3710,16 @@ name: infection
 def: "To implant pathogenic microbes or infective materials. Special case of NCIT_C68774" []
 is_a: NCIT:C68774 ! inoculation
 created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
- 
+
+[Term]
+id: DPBO:1000247
+name: days post infection
+def: "Abbreviated dpi or DPI. Unit to describe the length of the period after an infection or inoculation treatment." []
+synonym: "days post-infection" EXACT []
+synonym: "days post inoculation" NARROW []
+synonym: "days post-inoculation" NARROW []
+created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
+
 [Term]
 id: MS:1003429
 name: FragPipe
