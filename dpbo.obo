@@ -350,6 +350,11 @@ synonym: "log phase culture" RELATED []
 is_a: BTO:0001900 ! growth phase culture
 
 [Term]
+id: C:86F26167
+name: genotyping-by-sequencing
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
 id: CHEBI:2509
 name: agar
 def: "A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties." []
@@ -4058,6 +4063,11 @@ xref: PMID:20181287
 is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
+id: EFO:0008686
+name: ChIPmentation
+is_a: GENEPIO:0001973 ! library strategy
+
+[Term]
 id: EFO:0008800
 name: MDA
 def: "Multiple displacement amplification (MDA)." []
@@ -4098,6 +4108,11 @@ id: EFO:0009173
 name: Illumina NextSeq 500
 def: "The Illumina NextSeq 500 is a benchtop high-throughput sequencing machine developed by Illumina." []
 is_a: DPBO:0000040 ! next generation sequencing instrument model
+
+[Term]
+id: EFO:0009809
+name: single nucleus RNA sequencing
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: EFO:0010959
@@ -4767,6 +4782,11 @@ is_a: GENEPIO:0001973 ! library strategy
 id: NCIT:C103199
 name: Organism Part
 is_a: DPBO:0000177 ! plant material type
+
+[Term]
+id: NCIT:C106053
+name: NOMe-Seq
+is_a: GENEPIO:0001973 ! library strategy
 
 [Term]
 id: NCIT:C115935
