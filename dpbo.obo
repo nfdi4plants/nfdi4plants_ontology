@@ -4761,6 +4761,12 @@ def: "A test tube used to culture a microorganism."
 is_a: DPBO:0002011 ! cultivation container
 
 [Term]
+id: MICRO_000052
+name: LB medium
+def: "An organic-rich, liquid microbiological culture medium containing tryptone, yeast extract, and sodium chloride."
+is_a: OBI:0000079 ! culture medium
+
+[Term]
 id: MICRO_0000569
 name: brain heart infusion medium
 def: "An organic-rich, liquid microbiological culture medium containing water infusions of calf brains and beef hearts, proteose peptone, and dextrose (i.e. D-glucose)."
