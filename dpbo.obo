@@ -4231,6 +4231,12 @@ def: "The date on which the sample was collected" []
 xref: NCIT:C81286
 
 [Term]
+id: GENEPIO:0001561
+name: assembly genome size
+def: "The assembly genome size is the sum of all lengths of a sequence assembly's contigs." []
+comment: As noted in Quast documentation: " The total assembly size may increase (and in some cases exceeds the genome size) due to contaminants (see Chitsaz et al. (2011)), misassembled contigs, repeats, and hubs that contribute to multiple contigs. "
+
+[Term]
 id: GENEPIO:0001681
 name: laboratory sequencing datum
 
