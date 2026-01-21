@@ -3741,6 +3741,13 @@ comment: see https://doi.org/10.1186/1746-4811-7-48
 created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 
 [Term]
+id: DPBO:1000250
+name: plant phenotyping protocol
+def: "A protocol that provides instructions for phenotyping a plant sample."
+is_a: DPBO:1000170 ! sample processing protocol
+created_by: Manuel Feser | ORCID: 0000-0001-6546-1818
+
+[Term]
 id: MS:1003429
 name: FragPipe
 
