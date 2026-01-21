@@ -1240,6 +1240,7 @@ def: "Volume of the buffer in which the sample is diluted." []
 comment: Suggested by Lukas Weil | 0000-0003-1945-6342; term is redundant, please use EFO:0920056
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+xref: EFO:0920056
 
 [Term]
 id: DPBO:0000118
@@ -1817,6 +1818,7 @@ created_by: Dominik Brilhaus
 comment: term is redundant, please use EFO:0920055
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+xref: EFO:0920055
 
 [Term]
 id: DPBO:0010014
