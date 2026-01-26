@@ -14,7 +14,7 @@ def check_url_status(url):
 
 with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
     for line in infile:
-        id = line.strip()
+        id = line.strip().replace("_", "")
         url = f"{base_url}{id}"
         if not check_url_status(url):
             outfile.write(f"{id}\n")
