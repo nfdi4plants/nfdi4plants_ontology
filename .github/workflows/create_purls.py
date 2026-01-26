@@ -46,19 +46,42 @@ with open("missing_purls_verified.txt") as f:
         term_ids.append(term_id)
 
 driver = webdriver.Chrome(options = chrome_options)
-driver.get("https://archive.org/account/login?referer=http%3A//purl.archive.org/domain/nfdi4plants_ontology_dpbo")
+driver.get("https://archive.org/login?referer=http://purl.archive.org/domain/nfdi4plants_ontology_dpbo")
 
-mail = driver.find_element(By.CSS_SELECTOR, value=".form-element.input-email")
+wait = WebDriverWait(driver, 20)
+host1 = wait.until(lambda d: d.execute_script("""
+    return document.querySelector('app-root');
+"""))
+root1 = driver.execute_script("return arguments[0].shadowRoot", host1)
+
+host2 = wait.until(lambda d: d.execute_script("""
+    let root1 = arguments[0];
+    let el = root1.querySelector('router-slot');
+    return el ? el : false;
+""", root1))
+root2 = driver.execute_script("return arguments[0].shadowRoot", host2)
+
+slot = wait.until(lambda d: d.execute_script("""
+    let root2 = arguments[0];
+    let el = root2.querySelector('slot');
+    return el ? el : false;
+""", root2))
+slotted_elements = wait.until(lambda d: d.execute_script("""
+    let slot = arguments[0];
+    let el = slot.assignedElements();
+    return el ? el : false;
+""", slot))
+
+host3 = slotted_elements[0]
+root3 = driver.execute_script("return arguments[0].shadowRoot", host3)
+
+
+mail = driver.execute_script("return arguments[0].querySelector('#email-input')", root3)
 mail.send_keys(mail_key)
-pw = driver.find_element(By.CSS_SELECTOR, value=".form-element.input-password")
+pw = driver.execute_script("return arguments[0].querySelector('#password-input')", root3)
 pw.send_keys(pw_key)
-login = driver.find_element(By.CSS_SELECTOR, value=".btn.btn-primary.btn-submit.input-submit.js-submit-login")
+login = driver.execute_script("return arguments[0].querySelector('ia-button')", root3)
 login.click()
-
-# wait a bit to make sure we are successfully redirected to purl.org
-new_url = WebDriverWait(driver, 10).until(
-    EC.url_changes(driver.current_url)
-)
 
 def check_url_status(url):
     try:
@@ -90,8 +113,8 @@ def create_purl(purl_to_create, redirect_url, retry=0):
     purl.clear()
     target.clear()
 
-
-    new_purl = current_purl + purl_to_create
+    purl_to_create = purl_to_create.replace("_", "")
+    new_purl = current_purl + "/" + purl_to_create
     target_url = redirect_url + purl_to_create
     purl.send_keys(new_purl)
     target.send_keys(target_url)
