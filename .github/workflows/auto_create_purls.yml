@@ -39,8 +39,8 @@ jobs:
         run: |
           sed -i 's/id: DPBO:\([0-9]\+\)/DPBO_\1/g' missing_purls.txt 
 
-#      - name: run purl verification script
-#        run: python .github/workflows/verify_purls.py
+      - name: run purl verification script
+        run: python .github/workflows/verify_purls.py
 
       - name: run purl creation
         env:
