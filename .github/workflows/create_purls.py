@@ -81,7 +81,12 @@ mail.send_keys(mail_key)
 pw = driver.execute_script("return arguments[0].querySelector('#password-input')", root3)
 pw.send_keys(pw_key)
 login = driver.execute_script("return arguments[0].querySelector('ia-button')", root3)
+time.sleep(10)
 login.click()
+
+new_url = wait.until(
+    EC.url_changes(driver.current_url)
+)
 
 def check_url_status(url):
     try:
