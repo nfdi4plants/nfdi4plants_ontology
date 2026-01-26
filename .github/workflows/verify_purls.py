@@ -18,4 +18,4 @@ with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         id = id_unmodified.replace("_", "")
         url = f"{base_url}{id}"
         if not check_url_status(url):
-            outfile.write(f"{id}\n")
+            outfile.write(f"{id_unmodified}\n")
