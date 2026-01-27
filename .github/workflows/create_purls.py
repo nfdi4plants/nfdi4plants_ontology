@@ -133,7 +133,7 @@ def create_purl(purl_to_create, redirect_url, retry=0):
     validate_purl(purl_to_create, current_purl, redirect_url, retry)
     
 i = 0
-for elem in term_ids:
+for elem in term_ids[107:200]:
     print(i, elem)
     create_purl(elem, ts4tib)
     i += 1
