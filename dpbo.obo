@@ -1629,6 +1629,42 @@ def: "Name of the material consumed or produced during an experimental workflow.
 comment: https://isa-specs.readthedocs.io/en/latest/isamodel.html
 
 [Term]
+id: DPBO:0000183
+name: NMR sample protocol
+def: "Column marking the start of metadata describing the NMR sample." []
+comment: as required by MetaboLights
+
+[Term]
+id: DPBO:0000184
+name: NMR spectroscopy protocol
+def: "Column marking the start of metadata describing the NMR spectroscopy." []
+comment: as required by MetaboLights
+
+[Term]
+id: DPBO:0000185
+name: NMR assay protocol
+def: "Column marking the start of metadata describing the NMR assay." []
+comment: as required by MetaboLights
+
+[Term]
+id: DPBO:0000186
+name: metabolite identification protocol
+def: "Column marking the start of metadata describing the metabolite identification." []
+comment: as required by MetaboLights
+
+[Term]
+id: DPBO:0000187
+name: chromatography protocol
+def: "Column marking the start of metadata describing the chromatography." []
+comment: as required by MetaboLights
+
+[Term]
+id: DPBO:0000188
+name: mass spectrometry protocol
+def: "Column marking the start of metadata describing the mass spectrometry." []
+comment: as required by MetaboLights
+
+[Term]
 id: DPBO:00002008
 name: obsolete_environment (feature)
 def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
