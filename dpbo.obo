@@ -3797,7 +3797,7 @@ is_a: DPBO:1000161 ! protocol type
 created_by: Manuel Feser | ORCID: 0000-0001-6546-1818
 
 [Term]
-id:DPBO:1000251
+id: DPBO:1000251
 name: data steward
 def: "Provide guidance and help curate research data to ensure it aligns with best practices."
 is_a: BFO:0000023 ! role
