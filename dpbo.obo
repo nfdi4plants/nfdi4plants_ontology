@@ -314,6 +314,10 @@ name: Liquid Chromatography/Mass Spectroscopy (LC/MS) protein quantification
 is_a: BAO:0010026 ! protein profiling assay
 
 [Term]
+id: BFO:0000023
+name: role
+
+[Term]
 id: BTO:0001899
 name: stationary phase culture
 namespace: BrendaTissueOBO
@@ -3791,6 +3795,12 @@ name: plant phenotyping protocol
 def: "A protocol that provides instructions for phenotyping a plant sample."
 is_a: DPBO:1000161 ! protocol type
 created_by: Manuel Feser | ORCID: 0000-0001-6546-1818
+
+[Term]
+id:DPBO:1000251
+name: data steward
+def: "Provide guidance and help curate research data to ensure it aligns with best practices."
+is_a: BFO:0000023 ! role
 
 [Term]
 id: MS:1003429
