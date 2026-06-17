@@ -6,6 +6,7 @@ treat-xrefs-as-equivalent: MIAPPE
 treat-xrefs-as-equivalent: NCBITaxon
 treat-xrefs-as-equivalent: NCIT
 treat-xrefs-as-equivalent: NFDI4PSO
+treat-xrefs-as-equivalent: T4FS
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
@@ -3792,15 +3793,16 @@ created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 [Term]
 id: DPBO:1000250
 name: plant phenotyping protocol
-def: "A protocol that provides instructions for phenotyping a plant sample."
+def: "A protocol that provides instructions for phenotyping a plant sample." []
 is_a: DPBO:1000161 ! protocol type
 created_by: Manuel Feser | ORCID: 0000-0001-6546-1818
 
 [Term]
 id: DPBO:1000251
 name: data steward
-def: "Provide guidance and help curate research data to ensure it aligns with best practices."
+def: "Provide guidance and help curate research data to ensure it aligns with best practices." []
 is_a: BFO:0000023 ! role
+xref: T4FS:0000178
 
 [Term]
 id: MS:1003429
@@ -5848,3 +5850,7 @@ property_value: created:in "beta12orEarlier" xsd:string
 property_value: hasHumanReadableId "RNA" xsd:string
 property_value: seeAlso https://en.wikipedia.org/wiki/RNA
 
+[Term]
+id: T4FS:0000178
+name: data steward
+def: "Data steward is an umbrella term for numerous support roles that involve the creation, management and usage of research data. A data steward facilitates the quality, integrity and access to (meta)data in a manner that is consistent with the appropriate laws and institutional policies, ensuring professional treatment of data throughout all stages of the research project." []
