@@ -4250,6 +4250,11 @@ name: plant material
 def: "Anatomical or other piece(s) or substance derived from one or more plants." []
 
 [Term]
+id: GENO:0000914
+name: reference genome
+def: "A genome whose sequence is identical to that of a genome sequence considered to be the reference." []
+
+[Term]
 id: GENEPIO:0000076
 name: read length
 def: "Numbers of base pairs per read" []
