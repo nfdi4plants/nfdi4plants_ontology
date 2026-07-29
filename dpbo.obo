@@ -1199,9 +1199,12 @@ created_by: Stella Eggels
 
 [Term]
 id: DPBO:0000110
-name: infrared gas analyzer
+name: obsolete_infrared gas analyzer
 def: "Analyzer that measures the concentration of gases in air based on their absorption of infrared radiation." []
+comment: Term has been accepted by an 'external to DataPLANT' ontology, please use OBI:0003708
 created_by: Stella Eggels
+is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:0000111
@@ -1242,7 +1245,7 @@ is_a: OBI:0001058 ! microplate reader
 id: DPBO:0000117
 name: obsolete_buffer volume
 def: "Volume of the buffer in which the sample is diluted." []
-comment: Suggested by Lukas Weil | 0000-0003-1945-6342; term is redundant, please use EFO:0920056
+comment: Term has been accepted by an 'external to DataPLANT' ontology, please use EFO:0920056. Suggested by Lukas Weil | 0000-0003-1945-6342; term is redundant, please use EFO:0920056
 xref: EFO:0920056
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
@@ -1251,8 +1254,9 @@ is_obsolete: true
 id: DPBO:0000118
 name: obsolete_mortar and pestle
 def: "Combination of two tools used for grinding or shearing substances to a fine paste or powder." []
-comment: Suggested by Lukas Weil | 0000-0003-1945-6342
+comment: Term has been accepted by an 'external to DataPLANT' ontology, please use OBI:0003707. Suggested by Lukas Weil | 0000-0003-1945-6342
 is_a: ObsoleteClass ! Obsolete Class
+is_obsolete: true
 
 [Term]
 id: DPBO:0000119
