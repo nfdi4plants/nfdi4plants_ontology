@@ -2,6 +2,7 @@ format-version: 1.2
 data-version: init/2020-12-01
 saved-by: muehlhaus
 default-namespace: DPBO
+idspace: DPBO https://purl.org/nfdi4plants/ontology/dpbo/DPBO_ 
 treat-xrefs-as-equivalent: MIAPPE
 treat-xrefs-as-equivalent: NCBITaxon
 treat-xrefs-as-equivalent: NCIT
@@ -12,12 +13,11 @@ remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
 remark: curator: Kathryn Dumschott <k.dumschott@fz-juelich.de>
 remark: curator: Stella Eggels <s.eggels@fz-juelich.de>
-idspace: DPBO https://purl.org/nfdi4plants/ontology/dpbo/DPBO_ "DataPLANT Biology Ontology"
 ontology: dpbo
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0001-9021-3197" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "https://orcid.org/0000-0003-1476-2121" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "DataPLANT Biology Ontology" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/DPBO_0000041> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_0000083> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000006> \"\")\nAnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/DPBO_1000022> \"\")\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/DPBO_1000243> \"\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\n\n\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BAO_0010013> \"\")\n)
 
 [Term]
 id: AFM:0000341
@@ -239,14 +239,14 @@ id: BAO:0000269
 name: DNA
 def: "DNA or deoxyribonucleic acid is the genetic material in all the living things, and some viruses. It is a polymer of nucleotides, with a backbone made of deoxyribose sugar and phosphate groups joined together by ester bonds." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 
 [Term]
 id: BAO:0000316
 name: genomic DNA
 def: "DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 
 [Term]
 id: BAO:0000513
@@ -370,7 +370,7 @@ id: CHEBI:36080
 name: protein
 def: " biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 
 [Term]
 id: CHMO:0000995
@@ -1243,16 +1243,16 @@ id: DPBO:0000117
 name: obsolete_buffer volume
 def: "Volume of the buffer in which the sample is diluted." []
 comment: Suggested by Lukas Weil | 0000-0003-1945-6342; term is redundant, please use EFO:0920056
+xref: EFO:0920056
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
-xref: EFO:0920056
 
 [Term]
 id: DPBO:0000118
-name: mortar and pestle
+name: obsolete_mortar and pestle
 def: "Combination of two tools used for grinding or shearing substances to a fine paste or powder." []
 comment: Suggested by Lukas Weil | 0000-0003-1945-6342
-is_a: DPBO:0000119 ! grinding device
+is_a: ObsoleteClass ! Obsolete Class
 
 [Term]
 id: DPBO:0000119
@@ -1854,12 +1854,12 @@ created_by: Dominik Brilhaus
 id: DPBO:0010013
 name: obsolete_sample volume
 def: "Volume taken from the sample to be assayed (measured)." []
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
-created_by: Dominik Brilhaus
 comment: term is redundant, please use EFO:0920055
-is_a: ObsoleteClass ! Obsolete Class
-is_obsolete: true
 xref: EFO:0920055
+is_a: ObsoleteClass ! Obsolete Class
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
+is_obsolete: true
+created_by: Dominik Brilhaus
 
 [Term]
 id: DPBO:0010014
@@ -2707,7 +2707,7 @@ id: DPBO:1000094
 name: other
 def: "Any other bio entity that can be characterized by high-throuput sequencing." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 
@@ -3262,11 +3262,11 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 id: DPBO:1000175
 name: obsolete_metabolite extraction protocol
 def: "A protocol that describes the step by step process for removing metabolites from a biological sample." []
-is_a: ObsoleteClass ! Obsolete Class
-created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
-xref: EFO:0022981
 comment: term is redundant, please use EFO:0022981
+xref: EFO:0022981
+is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000176
@@ -3750,8 +3750,8 @@ created_by: Angela Kranz | ORCID: 0000-0002-8000-0400
 id: DPBO:1000244
 name: IonQuant
 def: "IonQuant is a software tool for MS1 precursor intensity-based quantification for timsTOF PASEF DDA and non-timsTOF (e.g., Orbitrap) data. It enables label-free quantification with false discovery (FDR) controlled match-between-runs (MBR). It can also be used for quantification in labelling-based experiments such as those involving SILAC, dimethyl, or similar labelling strategies. IonQuant is available as a stand-alone tool or it can be run within [FragPipe] (http://fragpipe.nesvilab.org/) computational platform." []
-is_a: MS:1003429 ! FragPipe
 is_a: MS:1001139 ! quantitation software name
+is_a: MS:1003429 ! FragPipe
 
 [Term]
 id: DPBO:1000245
@@ -3763,15 +3763,15 @@ is_a: MS:1003429 ! FragPipe
 id: DPBO:1000246
 name: infection
 def: "To implant pathogenic microbes or infective materials. Special case of NCIT_C68774" []
-is_a: NCIT:C68774 ! inoculation
+is_a: NCIT:C68774 ! Inoculation
 created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 
 [Term]
 id: DPBO:1000247
 name: days post infection
 def: "Abbreviated dpi or DPI. Unit to describe the length of the period after an infection or inoculation treatment." []
-synonym: "days post-infection" EXACT []
 synonym: "days post inoculation" NARROW []
+synonym: "days post-infection" EXACT []
 synonym: "days post-inoculation" NARROW []
 created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 
@@ -3779,15 +3779,15 @@ created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 id: DPBO:1000248
 name: apoplast extraction
 def: "Extraction of the soluble apoplast constituents, in particular, apoplastic proteins." []
-is_a: OBI:0302884 ! extraction
+is_a: OBI:0302884
 created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 
 [Term]
 id: DPBO:1000249
 name: apoplast extraction solution
 def: "Solution used to extract apoplast proteins. Examples are ultra pure water, sorbitol or NaCl solutions." []
-synonym: "apoplast infiltration solution" EXACT []
 comment: see https://doi.org/10.1186/1746-4811-7-48
+synonym: "apoplast infiltration solution" EXACT []
 created_by: Ursula Eberhardt |  ORCID: 0000-0003-1221-7074
 
 [Term]
@@ -3801,16 +3801,8 @@ created_by: Manuel Feser | ORCID: 0000-0001-6546-1818
 id: DPBO:1000251
 name: data steward
 def: "Provide guidance and help curate research data to ensure it aligns with best practices." []
-is_a: BFO:0000023 ! role
 xref: T4FS:0000178
-
-[Term]
-id: MS:1003429
-name: FragPipe
-
-[Term]
-id: MS:1001139
-name: quantitation software name
+is_a: BFO:0000023 ! role
 
 [Term]
 id: ECSO:00000517
@@ -4022,7 +4014,7 @@ id: EFO:0004964
 name: total RNA
 def: "An RNA extract that is the output of an extraction process in which total RNA from either whole cells or from specific cellular compartment(s)/organelle(s) are isolated from a specimen." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 
 [Term]
 id: EFO:0004998
@@ -4209,7 +4201,7 @@ is_a: EFO:0000490 ! extraction protocol
 id: EFO:0030052
 name: nuclear RNA
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 
 [Term]
 id: EFO:0920055
@@ -4248,11 +4240,6 @@ def: "Any form of signal processing for which the input is an image, such as a p
 id: FOODON:00004331
 name: plant material
 def: "Anatomical or other piece(s) or substance derived from one or more plants." []
-
-[Term]
-id: GENO:0000914
-name: reference genome
-def: "A genome whose sequence is identical to that of a genome sequence considered to be the reference." []
 
 [Term]
 id: GENEPIO:0000076
@@ -4739,6 +4726,11 @@ name: gene symbol
 def: "A sequence data which is the short name of a gene typically derived from the gene name." []
 
 [Term]
+id: GENO:0000914
+name: reference genome
+def: "A genome whose sequence is identical to that of a genome sequence considered to be the reference." []
+
+[Term]
 id: GEO:000000370
 name: geographical entity
 
@@ -4846,28 +4838,36 @@ id: MIAPPE:0095
 name: Growth facility
 
 [Term]
-id: MICRO:0001593
-name: culture tube
-def: "A test tube used to culture a microorganism."
-is_a: DPBO:0002011 ! cultivation container
-
-[Term]
 id: MICRO:000052
 name: LB medium
-def: "An organic-rich, liquid microbiological culture medium containing tryptone, yeast extract, and sodium chloride."
-is_a: OBI:0000079 ! culture medium
-
-[Term]
-id: MICRO:000067
-name: microbiological culture medium
-def: "A culture medium used to select for, grow, and maintain prokaryotic microorganisms. Can be in either liquid (broth) or solidified (e.g. with agar) forms."
+def: "An organic-rich, liquid microbiological culture medium containing tryptone, yeast extract, and sodium chloride." []
 is_a: OBI:0000079 ! culture medium
 
 [Term]
 id: MICRO:0000569
 name: brain heart infusion medium
-def: "An organic-rich, liquid microbiological culture medium containing water infusions of calf brains and beef hearts, proteose peptone, and dextrose (i.e. D-glucose)."
+def: "An organic-rich, liquid microbiological culture medium containing water infusions of calf brains and beef hearts, proteose peptone, and dextrose (i.e. D-glucose)." []
 is_a: OBI:0000079 ! culture medium
+
+[Term]
+id: MICRO:000067
+name: microbiological culture medium
+def: "A culture medium used to select for, grow, and maintain prokaryotic microorganisms. Can be in either liquid (broth) or solidified (e.g. with agar) forms." []
+is_a: OBI:0000079 ! culture medium
+
+[Term]
+id: MICRO:0001593
+name: culture tube
+def: "A test tube used to culture a microorganism." []
+is_a: DPBO:0002011 ! cultivation container
+
+[Term]
+id: MS:1001139
+name: quantitation software name
+
+[Term]
+id: MS:1003429
+name: FragPipe
 
 [Term]
 id: NCIT:C101294
@@ -5010,10 +5010,6 @@ name: DNA
 is_a: DPBO:0000177 ! plant material type
 
 [Term]
-id: NCIT:C68774
-name: Inoculation
-
-[Term]
 id: NCIT:C45293
 name: Species
 xref: MIAPPE:0043
@@ -5058,11 +5054,15 @@ id: NCIT:C63816
 name: Molecule
 
 [Term]
+id: NCIT:C68774
+name: Inoculation
+
+[Term]
 id: NCIT:C84512
 name: Cytoplasmic RNA
 def: "RNA present in the cytoplasm. It is involved in the protein export process from the cells." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 
 [Term]
 id: NMR:1000019
@@ -5238,6 +5238,32 @@ def: "A DNA sequencer which is manufactured by the Illumina corporation, with a 
 is_a: DPBO:0000040 ! next generation sequencing instrument model
 
 [Term]
+id: OBI:0003707
+name: mortar and pestle device
+def: "A device which is a set of two tools used to crush or grind material into smaller particles. A mortar is used to contain the material, and a pestle is a handheld blunt object used to apply force to the material." []
+is_a: COB:0001300
+relationship: RO:0000085 OBI:0000379
+property_value: IAO:0000111 "mortar and pestle device" xsd:string
+property_value: IAO:0000112 "https://geoinfo.nmt.edu/staff/mclemore/projects/environment/documents/SOP_90v2_XRD-Sample-Prep_final.pdf Pour HMS into agate mortar and add a small (~5 ml) of acetone to mortar.  Use pestle to grind HMS until no more crystallites are felt breaking and a smooth feel to the grinding is obtained." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "https://orcid.org/0000-0002-8844-9165" xsd:string
+property_value: IAO:0000118 "mortar and pestle" xsd:string
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Mortar_and_pestle" xsd:string
+
+[Term]
+id: OBI:0003708
+name: infrared gas analyzer
+def: "A measurement device that measures the concentration of gases in an air sample based on their absorption of infrared radiation." []
+is_a: OBI:0000832
+relationship: RO:0000085 OBI:0000453
+property_value: IAO:0000111 "infrared gas analyzer" xsd:string
+property_value: IAO:0000112 "Infrared gas analyzers usually have two chambers, one is a reference chamber while the other chamber is a measurement chamber - Wikipedia" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "https://orcid.org/0000-0002-8844-9165" xsd:string
+property_value: IAO:0000117 "StellaEggels" xsd:string
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Infrared_gas_analyzer" xsd:string
+
+[Term]
 id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
@@ -5266,7 +5292,7 @@ id: OBI_0000869
 name: polyA RNA
 def: "A RNA extract that is the output of an extraction process in which RNA molecules with poly A tail at its 3' end are purified." []
 is_a: DPBO:0000012 ! bio entity
-is_a: NCIT:C63816
+is_a: NCIT:C63816 ! Molecule
 
 [Term]
 id: OME:Objective
@@ -5746,6 +5772,11 @@ xref: DPBO:0000035
 is_a: DPBO:0000095 ! R package
 
 [Term]
+id: T4FS:0000178
+name: data steward
+def: "Data steward is an umbrella term for numerous support roles that involve the creation, management and usage of research data. A data steward facilitates the quality, integrity and access to (meta)data in a manner that is consistent with the appropriate laws and institutional policies, ensuring professional treatment of data throughout all stages of the research project." []
+
+[Term]
 id: UO:0000000
 name: unit
 
@@ -5855,7 +5886,3 @@ property_value: created:in "beta12orEarlier" xsd:string
 property_value: hasHumanReadableId "RNA" xsd:string
 property_value: seeAlso https://en.wikipedia.org/wiki/RNA
 
-[Term]
-id: T4FS:0000178
-name: data steward
-def: "Data steward is an umbrella term for numerous support roles that involve the creation, management and usage of research data. A data steward facilitates the quality, integrity and access to (meta)data in a manner that is consistent with the appropriate laws and institutional policies, ensuring professional treatment of data throughout all stages of the research project." []
