@@ -22,7 +22,7 @@ treat-xrefs-as-equivalent: FBcv
 treat-xrefs-as-equivalent: SNOMED
 treat-xrefs-as-equivalent: ENVO
 treat-xrefs-as-equivalent: ENSGLOSSARY
-treat-xrefs-as-equivalent: AFRL
+treat-xrefs-as-equivalent: MSIO
 treat-xrefs-as-equivalent: OME
 treat-xrefs-as-equivalent: EDAM
 treat-xrefs-as-equivalent: data
@@ -1871,7 +1871,7 @@ id: DPBO:0010012
 name: internal standard
 def: "Internal standard added in known amount to an analytical sample" []
 comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005
-xref: AFRL:0000432
+xref: MSIO:0000005
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
 
