@@ -3809,6 +3809,46 @@ xref: T4FS:0000178
 is_a: BFO:0000023 ! role
 
 [Term]
+id: DPBO:1000252
+name: LI-6800
+def: "A portable photosynthesis system produced by LI-COR Biosciences to measure gas exchange and chlorophyll flourescence." []
+comment: reference: https://www.licor.com/products/photosynthesis/LI-6800
+is_a: OBI:0003708 ! infrared gas analyzer
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000253
+name: CIRAS-4
+def: "A portable photosynthesis instrument produced by PP Systems that measures gas exchange and cholorophll flourescence." []
+comment: reference: https://ppsystems.com/ciras4-portable-photosynthesis-system/
+is_a: OBI:0003708 ! infrared gas analyzer
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000254
+name: LCpro T
+def: "A portable photosynthesis instrument produced by ADC BioScientific that measures gas exchange and cholorophll flourescence." []
+comment: reference: https://www.adc.co.uk/products/lcpro-t-intelligent-photosynthesis-system/
+is_a: OBI:0003708 ! infrared gas analyzer
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000255
+name: CI-340
+def: "A handheld photosynthesis system produced by CID Bio-Science to measure gas exchange and chlorophyll flourescence." []
+comment: reference: https://cid-inc.com/plant-science-tools/photosynthesis-measurement/ci-340-handheld-photosynthesis-system/?utm_term=ci-340&utm_campaign=CID+-+Specific+Products+-+All&utm_source=adwords&utm_medium=ppc&hsa_acc=5022570593&hsa_cam=7238932443&hsa_grp=80408847996&hsa_ad=771463291139&hsa_src=g&hsa_tgt=kwd-832656103181&hsa_kw=ci-340&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=7238932443&gbraid=0AAAAADHhjdisvIR1f0QEAxhKKI72C9HiR&gclid=CjwKCAjwj7HTBhBiEiwA8s35Oq2VRS-os6aVpojdZzG9OxZ4zD_ZQllYdVYG22rTTKkVG80jqfbHWxoCRLsQAvD_BwE
+is_a: OBI:0003708 ! infrared gas analyzer
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
+id: DPBO:1000256
+name: GFS-3000
+def: "Portable photosynthesis system produced by WALZ photosynthesis instruments to measure gas exchange and chlorophyll flourescence." []
+comment: reference: https://www.walz.com/products/gfs-3000/
+is_a: OBI:0003708 ! infrared gas analyzer
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
 id: ECSO:00000517
 name: Soil Moisture Percentage
 def: "wetness caused by water" []
