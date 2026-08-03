@@ -8,6 +8,27 @@ treat-xrefs-as-equivalent: NCBITaxon
 treat-xrefs-as-equivalent: NCIT
 treat-xrefs-as-equivalent: NFDI4PSO
 treat-xrefs-as-equivalent: T4FS
+treat-xrefs-as-equivalent: AGRO
+treat-xrefs-as-equivalent: MS
+treat-xrefs-as-equivalent: GENEPIO
+treat-xrefs-as-equivalent: PATO
+treat-xrefs-as-equivalent: EFO
+treat-xrefs-as-equivalent: PECO
+treat-xrefs-as-equivalent: ZECO
+treat-xrefs-as-equivalent: CHMO
+treat-xrefs-as-equivalent: BAO
+treat-xrefs-as-equivalent: SHARLOC
+treat-xrefs-as-equivalent: FBcv
+treat-xrefs-as-equivalent: SNOMED
+treat-xrefs-as-equivalent: ENVO
+treat-xrefs-as-equivalent: ENSGLOSSARY
+treat-xrefs-as-equivalent: AFRL
+treat-xrefs-as-equivalent: OME
+treat-xrefs-as-equivalent: EDAM
+treat-xrefs-as-equivalent: data
+treat-xrefs-as-equivalent: dwc
+treat-xrefs-as-equivalent: OBI
+treat-xrefs-as-equivalent: dc
 remark: coverage: Missing Terms for the DataPLANT end-point repository templates
 remark: creator: Dominik Brilhaus <dominik.brilhaus<-at->hhu.de>
 remark: creator: Hajira Jabeen <hajira.jabeen<-at->uni-koeln.de>
