@@ -3366,21 +3366,24 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 [Term]
 id: DPBO:1000186
 name: Zeiss Axiovert
-def: "Axiovert series, inverse microscope" []
+def: "A series of inverted light microscopes manufactured by Zeiss." []
+comment: https://www.zeiss.com/microscopy/en/products/light-microscopes/widefield-microscopes/axiovert-for-materials.html#highlights, definition updated on 10.08.2026
 is_a: OBI:0400169 ! microscope
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000187
-name: Olympus SZX7 (Bino)
-def: "binocular, stereo microscope" []
+name: SZX7 Stereo Microscope
+def: "A stereo zoom microscope featuring a binocular head" []
+comment: https://evidentscientific.com/en/products/upright/szx7. Term name changed due to change of company structuring, Since 2022, former Olympus 'scientific solutions' now fall under the Evident Corportation umbrella. term name and defintion updated on 10.08.2026
 is_a: OBI:0400169 ! microscope
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000188
 name: Zeiss AxioCam MRc5
-def: "camera" []
+def:"A 5-megapixel color digital microscope camera." []
+comment: definition updated on 10.08.2026
 is_a: OBI:0001048 ! digital camera
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
