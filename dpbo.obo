@@ -3558,77 +3558,88 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 [Term]
 id: DPBO:1000212
 name: Plan-Neofluar 5x/0.15
-def: "objective lens of Zeiss Axioplan 2" []
+def: "5x magnification, infinity-corrected microscope objective lens featuring a 0.15 numerical aperture, a flat-field (Plan) correction, and high UV transmission for fluorescence." []
+comment: https://www.micro-shop.zeiss.com/en/de/shop/objectives/440321-0000-000/Objective-quot-Plan-Neofluar-quot-5x-0.15-Ph-1, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000213
 name: Plan-Neofluar 10x/0.3
-def: "objective lens of Zeiss Axioplan 2" []
+def: "A microscope objective lens manufactured by Zeiss featuring 10x magnification, a 0.30 numerical apiture and flat-field (plan) correction." []
+comment: https://www.micro-shop.zeiss.com/en/us/shop/objectives/420340-9901-000/Objective-EC-Plan-Neofluar-10x-0.3-M27, defintion updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000214
 name: Plan-Neofluar 20x/0.50 Ph2
-def: "objective lens of Zeiss Axioplan 2" []
+def: "A microscope objective lens manufactured by Zeiss featuring 20x magnification, a 0.50 numerical apiture and flat-field (plan) correction and phase contrast capabilities." []
+comment: https://www.micro-shop.zeiss.com/de/de/shop/objectives/420351-9910-000/Objektiv-EC-Plan-Neofluar-20x-0,50-Ph2-M27, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000215
 name: Plan-Neofluar 40x/0.75
-def: "objective lens of Zeiss Axioplan 2" []
+def: "A microscope objective lens manufactured by Zeiss featuring 20x magnification, a 0.50 numerical apiture and flat-field (plan) correction" []
+comment: https://www.micro-shop.zeiss.com/en/us/shop/objectives/440351-9902-000/Objective-quot-Plan-Neofluar-quot-40x-0.75-Ph2, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000216
 name: Plan-Neofluar 63x/1.25 Oil
-def: "objective lens of Zeiss Axioplan 2" []
+def: "A microscope objective lens made by Zeiss featuring 63x magnification, a 1,25 numerical aperture and flat field (plan) correction. Requires oil immersion." []
+comment: https://www.micro-shop.zeiss.com/de/de/shop/objectives/420480-9901-000/Objektiv-EC-Plan-Neofluar-63x-1,25-Oil-M27, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000217
 name: Plan-Neofluar 100x/1.30 Oil
-def: "objective lens of Zeiss Axioplan 2" []
+def: "A microscope objective lens manufactured by Zeiss featuring 100x magnification, a 1,30 numerical aperture and flat field (plan) correction. Requires oil immersion."" []
+comment: https://www.micro-shop.zeiss.com/en/us/shop/objectives/420490-9900-000/Objective-EC-Plan-Neofluar-100x-1.30-Oil-M27, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000218
 name: Achroplan 5x/012
-def: "objective lens of Zeiss Axiovert" []
+def: "A microscope objective lens manufactured by Zeiss featuring 5x magnification and a 0.12 numerical aperture." []
+comment: https://www.micro-shop.zeiss.com/en/ch/shop/objectives/440920-0000-000/Objective-CP--quot-Achromat-quot-5x-0.12, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000219
 name: Achroplan 10x/0.25 Ph1
-def: "objective lens of Zeiss Axiovert" []
+def: "A microscope objective lens manufactured by Zeiss featuring 10x magnification and a 0.25 numerical aperture. Ph1 rings makes phase contrast viewing possible." []
+comment: https://www.micro-shop.zeiss.com/de/de/shop/objectives/420941-9911-000/Objektiv-N-Achroplan-10x-0,25-Ph1-M27, definition upated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000220
 name: Achroplan 20x/0.40
-def: "objective lens of Zeiss Axiovert" []
+def: "A microscope objective lens manufactured by Zeiss featuring 20x magnificaiton and a 0.40 numerical aperture." []
+comment: https://wie-tec.de/?a=18178&lang=eng, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000221
 name: Achroplan 40x/0.60 korr Ph2
-def: "objective lens of Zeiss Axiovert" []
+def: "A microscope objective lens manufactured by Zeiss featuring 40x magnificaiton, a 0.60 numerical aperture and phase contrast capabilities." []
+comment: https://www.micro-shop.zeiss.com/de/de/shop/objectives/420961-9911-000/Objektiv-N-Achroplan-40x-0,65-Ph2-M27, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000222
 name: Achroplan 63x/0.75 korr Ph2
-def: "objective lens of Zeiss Axiovert" []
+def: "A microscope objective lens manufactured by Zeiss featuring 63x magnificaiton, a 0.75 numerical aperture and phase contrast capabilities." []
+comment: https://wie-tec.de/zeiss-mikroskop-objektiv-ld-achroplan-63x-075-korr-ph2-440861, definition upeated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
