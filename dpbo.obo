@@ -3477,72 +3477,82 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000202
-name: 0.8x
+name: obsolete_0.8x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000203
-name: 1x
+name: obsolete_1x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000204
-name: 1.25x
+name: obsolete_1.25x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000205
-name: 1.6x
+name: obsolete_1.6x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000206
-name: 2x
+name: obsolete_2x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000207
-name: 2.5x
+name: obsolete_2.5x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000208
 name: 3.2x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000209
-name: 4x
+name: obsolete_4x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000210
-name: 5x
+name: obsolete_5x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000211
-name: 5.6x
+name: obsolete_5.6x
 def: "magnification of Olympus SZX7 (Bino)" []
-is_a: DPBO:1000140 ! magnification
+comment: obsoleted as term represents a data value rather than a classification of an entity
+is_a: ObsoleteClass ! Obsolete Class
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
