@@ -3894,6 +3894,15 @@ is_a: OBI:0003708 ! infrared gas analyzer
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
+id: DPBO:1000257
+name: Oxford Nanopore Flongle
+def: "A single-use, disposable flow cell adapter manufactured by Oxford Nanopore Technologies, compatible with the MinION and GridION sequencers, that enables lower-throughput nanopore sequencing runs an adapter that provides pipette-free sample application." []
+comment: reference: https://nanoporetech.com/document/flongle#flongle-the-flow-cell-dongle
+synonym: "Flongle" EXACT []
+synonym: "Flongle Flow cell" EXACT []
+created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+
+[Term]
 id: ECSO:00000517
 name: Soil Moisture Percentage
 def: "wetness caused by water" []
