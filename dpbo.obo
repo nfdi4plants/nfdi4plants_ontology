@@ -3903,6 +3903,14 @@ synonym: "Flongle Flow cell" EXACT []
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
+id: DPBO:1000258
+name: Golden Promise
+def: "A two-rowed variety of Hordeum vulgare (barley)."
+synonym: "Hordeum vulgare cv Golden Promise" EXACT []
+is_a: NCBITAXON:4513 ! Hordeum vulgare 
+created_by: Hannah Doerpholz | ORCID: 0000-0002-0476-9699
+
+[Term]
 id: ECSO:00000517
 name: Soil Moisture Percentage
 def: "wetness caused by water" []
@@ -4966,6 +4974,10 @@ name: quantitation software name
 [Term]
 id: MS:1003429
 name: FragPipe
+
+[Term}
+id: NCBITAXON:4513
+name: Hordeum vulgare
 
 [Term]
 id: NCIT:C101294
