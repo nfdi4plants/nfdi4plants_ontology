@@ -3601,7 +3601,7 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 [Term]
 id: DPBO:1000217
 name: Plan-Neofluar 100x/1.30 Oil
-def: "A microscope objective lens manufactured by Zeiss featuring 100x magnification, a 1,30 numerical aperture and flat field (plan) correction. Requires oil immersion."" []
+def: "A microscope objective lens manufactured by Zeiss featuring 100x magnification, a 1,30 numerical aperture and flat field (plan) correction. Requires oil immersion." []
 comment: https://www.micro-shop.zeiss.com/en/us/shop/objectives/420490-9900-000/Objective-EC-Plan-Neofluar-100x-1.30-Oil-M27, definition updated on 10.08.2026
 is_a: NCIT:C181919 ! Objective Lens
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
