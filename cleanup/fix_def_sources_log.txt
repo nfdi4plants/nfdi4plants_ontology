@@ -1,0 +1,1665 @@
+======================================================================
+fix_def_sources.py — run log
+======================================================================
+
+Input:   dpbo.obo
+Output:  dpbo_fixed.obo
+
+Summary:
+  Fixed automatically : 85
+  Needs manual review : 328
+  Skipped (non-DPBO)  : 405
+
+======================================================================
+
+[FIXED]  DPBO:0000001 — growth plot design
+  BEFORE: def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
+  AFTER:  def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" [AGRO:00000343]
+
+[FIXED]  DPBO:0000002 — read alignment software
+  BEFORE: def: "The software used for read alignment i.e http://edamontology.org/operation_3198 or http://purl.obolibrary.org/obo/OBI_0002478" []
+  AFTER:  def: "The software used for read alignment i.e http://edamontology.org/operation_3198 or http://purl.obolibrary.org/obo/OBI_0002478" [OBI:0002478]
+
+[MANUAL] DPBO:0000003 — read alignment software version
+  def: def: "The version of the read alignment software (DPBO:0000002)." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000004 — read alignment software parameters
+  def: def: "The parameters of the read alignment software (DPBO:0000002)." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000005 — humidity day
+  BEFORE: def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" []
+  AFTER:  def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" [PECO:0007197]
+
+[FIXED]  DPBO:0000006 — humidity night
+  BEFORE: def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" []
+  AFTER:  def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" [PECO:0007197]
+
+[FIXED]  DPBO:0000007 — temperature day
+  BEFORE: def: "This term defines the air temperature at daytime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" []
+  AFTER:  def: "This term defines the air temperature at daytime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" [ENVO:09200001]
+
+[FIXED]  DPBO:0000008 — temperature night
+  BEFORE: def: "This term defines the air temperature at nighttime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" []
+  AFTER:  def: "This term defines the air temperature at nighttime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" [ENVO:09200001]
+
+[MANUAL] DPBO:0000009 — sample collection method
+  def: def: "Details of method to gather (e.g. scissors, scalpel) or pool the sample, tissue, organ”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000010 — metabolism quenching method
+  def: def: "Method used to stop the metabolism in the sample (e.g. shock-freeze in liquid nitrogen). May include the time passed since sample collection.”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000011 — sample storage
+  def: def: "The method used for sample storage. Should include the temperature of the sample. May include the medium (freezer or liquid nitrogen) and/or additional processing (freeze-drying) of the sample”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000012 — bio entity
+  def: def: "The biological entity (e.g. RNA, DNA, metabolites, proteins, lipids) to be extracted from a biosource targeted for assay / measurement.”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000013 — biosource amount
+  def: def: "The amount (typically in milligram) of material from which a bio entity (DPBO:0000012) is extracted.”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000014 — extraction kit
+  def: def: "The name of the commercial kit used for extraction of a bio entity (DPBO:0000012). Should include the company name.”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000015 — library layout
+  def: def: "Determines the choice of DNA sequencing strategy, in which a single read is initiated from each end (paired-end) or one end (single-end) of DNA fragment”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000016 — library RNA amount
+  def: def: "Amount of RNA (typically microgram) used as starting material for library construction (http://purl.obolibrary.org/obo/GENEPIO_0001994)”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000017 — base-calling software
+  def: def: "The name of the software used for base-calling." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000018 — base-calling software version
+  def: def: "The version of the base-calling software (DPBO:0000017).”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000019 — base-calling software parameters
+  def: def: "The parameters of the base-calling software (DPBO:0000017).”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000020 — library strand
+  def: def: "Determines the read direction. Only applies to nucleotide sequencing in paired-end layout (DPBO:0000015)”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000021 — raw data file format
+  def: def: "File format of the raw data file”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000022 — raw data file checksum
+  def: def: "Checksum of the raw data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000023 — data filtering software
+  def: def: "Name of the software applied for data filtering" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000024 — data filtering software version
+  def: def: "The version of the data filtering software (DPBO:0000023).”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000025 — data filtering software parameters
+  def: def: "The parameters of the data filtering software (DPBO:0000023).”" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000026 — genome reference sequence
+  BEFORE: def: "Name and version of the genome reference.”" []
+  AFTER:  def: "Name and version of the genome reference.”" [MS:1002644, NCIT:C16438]
+
+[MANUAL] DPBO:0000027 — processed data file format
+  def: def: "File format of the processed data file”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000028 — processed data file name
+  def: def: "Name of the processed data file”" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000029 — processed data file checksum
+  def: def: "Checksum of the processed data file, it is a specialised concept of http://purl.obolibrary.org/obo/NCIT_C43522” ! Checksum" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000030 — isolation and growth condition
+  def: def: "Publication reference for isolation and growth condition specifications of the organism/material" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000031 — number of chromosomes
+  def: def: "The haploid chromosome count of a eukaryote" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000032 — estimated genome size
+  BEFORE: def: "The estimated size of the genome prior to sequencing" []
+  AFTER:  def: "The estimated size of the genome prior to sequencing" [MIXS:0000024]
+
+[FIXED]  DPBO:0000033 — plant age
+  BEFORE: def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." []
+  AFTER:  def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." [EFO:0000246]
+
+[MANUAL] DPBO:0000034 — plant health state
+  def: def: "Health status of the plant at the time of sample collection" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000035 — obsolete_Seurat
+  def: def: "Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000036 — obsolete_library selection
+  BEFORE: def: "The method used to select for or against, enrich, or screen the material being sequenced." []
+  AFTER:  def: "The method used to select for or against, enrich, or screen the material being sequenced." [GENEPIO:0001940]
+
+[MANUAL] DPBO:0000037 — subspecific taxonomic rank
+  def: def: "Determination of the taxonomic ranking that is below species level i.e. variety, cultivar, ecotype, inbred line" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000038 — rooting medium pH
+  BEFORE: def: "pH measurement of the culture rooting medium" []
+  AFTER:  def: "pH measurement of the culture rooting medium" [PATO:0001428]
+
+[MANUAL] DPBO:0000039 — rooting medium macronutrients
+  def: def: "Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S); e.g. KH2PO4 (170mg/L)" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000040 — next generation sequencing instrument model
+  BEFORE: def: "Model name or number of next generation sequencing instrument" []
+  AFTER:  def: "Model name or number of next generation sequencing instrument" [EFO:0003739]
+
+[FIXED]  DPBO:0000041 — growth day length
+  BEFORE: def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" []
+  AFTER:  def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" [EO:0007153, PECO:0007078, ZECO:0000147]
+
+[FIXED]  DPBO:0000042 — biological replicate identifier
+  BEFORE: def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')" []
+  AFTER:  def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')" [MS:1001809]
+
+[MANUAL] DPBO:0000043 — MS sample post-extraction
+  def: def: "Specific to metabolomic mass spectrometry assays. Steps performed after sample extraction (e.g. dried in a vacuum concentrator, solid phase microextraction direct injection)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000044 — MS sample resuspension
+  def: def: "Specific to metabolomic mass spectrometry assays. Resuspension after sample extraction (e.g. dried samples resuspended in pyridine, dried samples resuspended in acetonitrile)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000045 — MS sample type
+  def: def: "Specific to metabolomic mass spectrometry assays. Type of sample (e.g. experimental sample, pooled sample, blank, medium blank, retention index, reference standard, quality control)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000046 — chromatography instrument model
+  def: def: "Company name, and instrument name or serial number of the chromatography instrument" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000047 — chromatography autosampler model
+  def: def: "Company name, and name or serial number of the chromatography autosampler model" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000048 — chromatography column model
+  def: def: "Company name, and name or serial number of the chromatography column" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000049 — chromatography guard column model
+  def: def: "Company name, and name or serial number of the chromatography guard column" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000050 — extraction buffer
+  BEFORE: def: "Chemical buffer, solvent or solution used to extract a component from a biological sample." []
+  AFTER:  def: "Chemical buffer, solvent or solution used to extract a component from a biological sample." [OBI:0302884]
+
+[FIXED]  DPBO:0000051 — extraction buffer volume
+  BEFORE: def: "Volume of the buffer (DPBO:0000050) used during extraction." []
+  AFTER:  def: "Volume of the buffer (DPBO:0000050) used during extraction." [OBI:0302884]
+
+[FIXED]  DPBO:0000052 — MS derivatization
+  BEFORE: def: "Derivatization for metabolomics mass spectrometry." []
+  AFTER:  def: "Derivatization for metabolomics mass spectrometry." [CHMO:0001485]
+
+[FIXED]  DPBO:0000053 — chromatography column type
+  BEFORE: def: "Type of chromatography column (DPBO:0000048)" []
+  AFTER:  def: "Type of chromatography column (DPBO:0000048)" [CHMO:0001000]
+
+[MANUAL] DPBO:0000054 — extraction method
+  def: def: "Method or kit that was used to extract DNA or RNA" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000055 — rooting medium micronutrients
+  def: def: "Measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, Mo); e.g. H3BO3 (6.2mg/L)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000056 — library DNA amount
+  def: def: "Amount of DNA (microgram) used as starting material for library construction" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000057 — next generation sequencing platform
+  BEFORE: def: "Name of the company that produces next generation sequencing instruments" []
+  AFTER:  def: "Name of the company that produces next generation sequencing instruments" [GENEPIO:0000071]
+
+[MANUAL] DPBO:0000058 — rooting medium organic supplements
+  def: def: "Organic supplements of the culture rooting medium, such as vitaimins, amino acids, organic acids, antibiotics activated charcoal; e.g. Nicotinic acid (0.5mg/L)" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000059 — sequence assembly method
+  BEFORE: def: "Strategy that was used to assemble reads into contigs" []
+  AFTER:  def: "Strategy that was used to assemble reads into contigs" [GENEPIO:0000090]
+
+[MANUAL] DPBO:0000060 — sequence assembly algorithm version
+  def: def: "The version of the sequence assembly algorithm (OBI_0001522)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000061 — genome status
+  def: def: "Status of the genome sequence that is uploaded" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000062 — RNA quality check
+  def: def: "Measure of RNA quality after RNA extraction. Typically RNA integrity number (RIN) as provided by Agilent BioAnalyzer. Alternatively, RNA integrity checked via gel electrophoresis." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000063 — BioProject accession number
+  BEFORE: def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345." []
+  AFTER:  def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345." [NCIT:C175890]
+
+[FIXED]  DPBO:0000064 — sample type
+  BEFORE: def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly" []
+  AFTER:  def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly" [NCIT:C70713]
+
+[MANUAL] DPBO:0000065 — rooting medium carbon source
+  def: def: "Source of organic carbon in the culture rooting medium; e.g. sucrose" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000066 — rooting medium growth regulators
+  def: def: "Growth regulators in the culture rooting medium, such as cytokinins, auxins, gybberellins, abscisic acid; e.g. 0.5mg/L NAA" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000067 — rooting medium solidifier
+  def: def: "Specification of the solidifying agent in the culture rooting medium; e.g. agar" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000068 — obsolete_cell line
+  BEFORE: def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " []
+  AFTER:  def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " [NCIT:C16403]
+
+[MANUAL] DPBO:0000069 — obsolete_cell type
+  def: def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000070 — 5' partial CDS
+  def: def: "Incomplete CDS (coding sequence) with the start codon upstream of the submitted sequence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000071 — 3' partial CDS
+  def: def: "Incomplete CDS (coding sequence) with the stop codon downstream of the submitted sequence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000072 — plant disease stage
+  def: def: "Stage of plant disease at the time of sampling." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000073 — phenotype
+  BEFORE: def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601" []
+  AFTER:  def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601" [NCIT:C16977]
+
+[FIXED]  DPBO:0000074 — geographic area
+  BEFORE: def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg 'Canada: Vancouver' or 'Germany: halfway down Zugspitze, Alps'" []
+  AFTER:  def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg 'Canada: Vancouver' or 'Germany: halfway down Zugspitze, Alps'" [NCIT:C16632]
+
+[MANUAL] DPBO:0000075 — 5' partial promoter
+  def: def: "Incomplete promoter with its 5' end upstream of the submitted sequence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000076 — 3' partial promoter
+  def: def: "Incomplete promoter with its 3' end downstream of the submitted sequence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000077 — metabolite assignment file
+  def: def: "metabolite assignment file (MAF) as required by MetaboLights to describe metabolites analyzed during a metabolomics assay. Details see: https://www.ebi.ac.uk/metabolights/guides/MAF/Title" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000078 — BioSample accession number
+  BEFORE: def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" []
+  AFTER:  def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" [NCIT:C175889]
+
+[MANUAL] DPBO:0000079 — promoter 5' end coordinate
+  def: def: "Coordinate of the 5' end of the promoter within the submitted sequence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000080 — promoter 3' end coordinate
+  def: def: "Coordinate of the 3' end of the promoter within the submitted sequence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000081 — chromatography gradient
+  def: def: "Settings of the gradient used during (e.g. liquid, gas or ion) chromatography" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000082 — rRNA depletion
+  def: def: "Method used for rRNA depletion during construction of the sequencing library." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000083 — relative centrifugal force
+  def: def: "Relative centrifugal force (RCF) is the amount of force applied to a sample when using a centrifuge. It is dependent on the speed of the centrifuge rotation as well as the distance of the sample from the center of rotation." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000084 — g-force
+  def: def: "G-force is the force acting on an object as a result of acceleration or gravity." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000085 — standard gravity
+  def: def: "The standard acceleration of an object in free fall at or near sea level equivalent to 9.807 m/s2." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000086 — single-end
+  def: def: "A library layout which describes that only one end of the library fragment is sequenced" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000087 — library ID
+  def: def: "Short unique identifier for the sequencing library" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000088 — growth chamber
+  def: def: "A climatic chamber used for growing plants under controlled environmental conditions." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000089 — SingleCellExperiment
+  def: def: "Defines a S4 class for storing data from single-cell experiments. This includes specialized methods to store and retrieve spike-in information, dimensionality reduction coordinates and size factors for each cell, along with the usual metadata for genes and libraries." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000090 — tidyverse
+  def: def: "The core tidyverse includes the packages that you’re likely to use in everyday data analyses. As of tidyverse 1.3.0, the following packages are included in the core tidyverse: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000091 — Matrix
+  def: def: "A rich hierarchy of sparse and dense matrix classes, including general, symmetric, triangular, and diagonal matrices with numeric, logical, or pattern entries. Efficient methods for operating on such matrices, often wrapping the 'BLAS', 'LAPACK', and 'SuiteSparse' libraries." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000092 — scales
+  def: def: "Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000093 — cowplot
+  def: def: "Provides various features that help with creating publication-quality figures with 'ggplot2', such as a set of themes, functions to align plots and arrange them into complex compound figures, and functions that make it easy to annotate plots and or mix plots with images. The package was originally written for internal use in the Wilke lab, hence the name (Claus O. Wilke's plot package). It has also been used extensively in the book Fundamentals of Data Visualization." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000094 — RCurl
+  def: def: "A wrapper for 'libcurl' <https://curl.se/libcurl/> Provides functions to allow one to compose general HTTP requests and provides convenient functions to fetch URIs, get & post forms, etc. and process the results returned by the Web server. This provides a great deal of control over the HTTP/FTP/... connection and the form of the request while providing a higher-level interface than is available just using R socket connections. Additionally, the underlying implementation is robust and extensive, supporting FTP/FTPS/TFTP (uploads and downloads), SSL/HTTPS, telnet, dict, ldap, and also supports cookies, redirects, authentication, etc." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000095 — R package
+  def: def: "Packages are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000096 — package version
+  def: def: "The version of the software package or library that was used in the analysis." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000097 — prm-PASEF
+  def: def: "Targeted proteomics method that combines parallel reaction monitoring (PRM) and parallel accumulation-serial fragmentation (PASEF)." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000098 — dda-PASEF
+  def: def: "Data-dependent acquisition (DDA) method that uses parallel accumulation-serial fragmentation (PASEF) technology for proteomics analysis." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000099 — antibiotic concentration
+  def: def: "Concentration of an antibiotic that was added to a growth medium." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000100 — growth time
+  def: def: "Duration of a bacterial cultivation." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000101 — start OD600
+  def: def: "The OD600 that was used to inoculate a bacterial culture." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000102 — harvesting method
+  def: def: "Method that was used to harvest bacterial cells." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000103 — dissolved oxygen (DO)
+  def: def: "Constant percentage of dissolved oxygen in a culture medium." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000104 — oxygen limitation experiment
+  def: def: "An experiment that is used to grow bacterial cells under oxygen limitation conditions. " []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000105 — oxygen concentration
+  def: def: "Percent of oxygen that is added to a culture medium via gassing." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000106 — nitrogen concentration
+  def: def: "Percent of nitrogen that is added to a culture medium via gassing." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000107 — oxygen excess experiment
+  def: def: "An experiment that is used to grow bacterial cells under oxygen excess conditions." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000108 — transcriptional binding site identification
+  def: def: "A measurement that is used to identify transcriptional binding sites in a genome." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000109 — leaf gas exchange
+  def: def: "Exchange of carbon dioxide, oxygen and water vapor between the plant leaf and the ambient air through stomata." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000110 — obsolete_infrared gas analyzer
+  BEFORE: def: "Analyzer that measures the concentration of gases in air based on their absorption of infrared radiation." []
+  AFTER:  def: "Analyzer that measures the concentration of gases in air based on their absorption of infrared radiation." [OBI:0003708]
+
+[MANUAL] DPBO:0000111 — Explication
+  def: def: "A word, term or short statement that clarifies the cause, context and/or consequence of another entity." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000112 — tissue
+  def: def: "Multicellular structure comprising similar cells with some specific function." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000113 — sampling depth
+  BEFORE: def: "The vertical distance below local surface at which the sample was taken. For sediment or soil samples depth is measured from sediment or soil surface, respectively." []
+  AFTER:  def: "The vertical distance below local surface at which the sample was taken. For sediment or soil samples depth is measured from sediment or soil surface, respectively." [MIXS:0000018]
+
+[MANUAL] DPBO:0000114 — number of injections
+  def: def: "Number of injections of a sample into a mass spectrometer or chromatograph." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000115 — inbred line
+  def: def: "Nearly identical and homozygous genotypes, resulting from repeated selfing over several generations." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000116 — Infinite M200 plate reader (Tecan)
+  BEFORE: def: "A microtiter plate reader by the brand Tecan." []
+  AFTER:  def: "A microtiter plate reader by the brand Tecan." [BAO:0150076]
+
+[FIXED]  DPBO:0000117 — obsolete_buffer volume
+  BEFORE: def: "Volume of the buffer in which the sample is diluted." []
+  AFTER:  def: "Volume of the buffer in which the sample is diluted." [EFO:0920056]
+
+[FIXED]  DPBO:0000118 — obsolete_mortar and pestle
+  BEFORE: def: "Combination of two tools used for grinding or shearing substances to a fine paste or powder." []
+  AFTER:  def: "Combination of two tools used for grinding or shearing substances to a fine paste or powder." [OBI:0003707]
+
+[FIXED]  DPBO:0000119 — grinding device
+  BEFORE: def: "Device used for the mechanical reduction of the particle size of a solid sample." []
+  AFTER:  def: "Device used for the mechanical reduction of the particle size of a solid sample." [CHMO:0001652]
+
+[MANUAL] DPBO:0000120 — sugar measurement
+  def: def: "The quantification of some sugar." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000121 — TAP medium
+  def: def: "Tris-Acetate-Phosphate medium for the growth of Chlamydomonas." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000122 — imaging signal mechanism
+  BEFORE: def: "Mechanism by which the imaging signal is generated by the sample, e.g. fluorescent protein, fluorescent dye, antibody." []
+  AFTER:  def: "Mechanism by which the imaging signal is generated by the sample, e.g. fluorescent protein, fluorescent dye, antibody." [SHARELOC:000004]
+
+[MANUAL] DPBO:0000123 — imaging signal molecule
+  def: def: "Name of the molecule used to visualize a specific target in a cell or tissue, e.g. GFP." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000124 — excitation method
+  def: def: "The type of excitation used for imaging purposes." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000125 — whole genome amplification
+  def: def: "Whole genome amplification followed by random sequencing." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000126 — single cell genomic source
+  BEFORE: def: "Genomic DNA that can be traced to a single cell of origin." []
+  AFTER:  def: "Genomic DNA that can be traced to a single cell of origin." [OBI:0002631]
+
+[FIXED]  DPBO:0000127 — single cell transcriptomic source
+  BEFORE: def: "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries) that can be traced to a single cell of origin." []
+  AFTER:  def: "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries) that can be traced to a single cell of origin." [OBI:0002631]
+
+[MANUAL] DPBO:0000128 — repeat fractionation
+  def: def: "Selection for less repetitive (and more gene rich) sequence through Cot filtration (CF) or other fractionation techniques based on DNA kinetics." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000129 — oligo-dT selection
+  BEFORE: def: "Enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT." []
+  AFTER:  def: "Enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT." [FBcv:0003203]
+
+[MANUAL] DPBO:0000130 — inverse rRNA selection
+  def: def: "Depletion of ribosomal RNA by inverse oligo hybridization." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000131 — padlock probes capture method
+  def: def: "Targeted sequence capture protocol covering an arbitrary set of nonrepetitive genomics targets. An example is capture bisulfite sequencing using padlock probes (BSPP)." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000132 — cell lysis approach
+  BEFORE: def: "Name of the kit or standard protocol used for cell(s) lysis." []
+  AFTER:  def: "Name of the kit or standard protocol used for cell(s) lysis." [MIXS:0000054]
+
+[FIXED]  DPBO:0000133 — cell sorting technology
+  BEFORE: def: "Method used to sort/isolate cells of interest." []
+  AFTER:  def: "Method used to sort/isolate cells of interest." [MIXS:0000075]
+
+[FIXED]  DPBO:0000134 — whole genome amplification approach
+  BEFORE: def: "Method used to amplify genomic DNA in preparation for sequencing." []
+  AFTER:  def: "Method used to amplify genomic DNA in preparation for sequencing." [MIXS:0000055]
+
+[MANUAL] DPBO:0000135 — instrument customizations
+  def: def: "Any significant (i.e. affecting behaviour) deviations from the manufacturer’s specification for the instrument." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000136 — ion source description
+  def: def: "Description of the ion source of a mass spectrometer and relevant and discriminating parameters for its use." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000137 — activation component
+  def: def: "Instrument component of a mass spectrometer, where the activation and/or dissociation occurs." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000138 — chromatography column accessories
+  def: def: "Details of any guards or traps used in conjunction with the chromatography column." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000139 — mobile phase constituents
+  def: def: "A description, the concentration, pH (including how it was adjusted) and date prepared of each consistuent of the mobile phase." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000140 — column run time
+  def: def: "The total time of the chromatography column run with appropriate units." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000141 — detector model
+  def: def: "Manufacturer and model name, or description of the equipment used for detection." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000142 — pre and post chromatography run processes
+  def: def: "Description of the purpose, reagents used, duration and flow rate of processes pre or post chromatography run, such as equilibration, calibration or washing." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000143 — gel electrophoresis dimension type
+  def: def: "The type of gel electrophoresis with respect to the number of dimensions." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000144 — loading buffer
+  def: def: "The components, with concentrations (excluding the sample) of the loading buffer that is to be loaded onto the gel matrix for gel electrophoresis." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000145 — gel electrophoresis separation method
+  def: def: "Name of the separation technique employed for each dimension of gel electrophoresis." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000146 — gel matrix type
+  def: def: "Name and type of the gel matrix used for gel electrophoresis." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000147 — gel manufacture
+  def: def: "Description of how the gel used for gel electrophoresis was produced. For purchased gels, model name, model number, batch number and manufacturer, for self-prepared gels, a reference to the recipe or published protocol should be given." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000148 — physical dimensions of the gel
+  def: def: "The physical dimensions of the gel matrix and of any sub-matrices. The measurements should be in the form of the Cartesian Coordinate system (x,y,z)." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000149 — physicochemical property range and distribution of the gel
+  def: def: "The details of the pH distribution of the matrix, including the overall pH range of the gel, and details of the molecular weight distribution of matrix with appropriate measurement unit." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000150 — acrylamide concentration
+  def: def: "The acrylamide concentration of the gel, or each matrix. For gradients include the gradient distribution if appropriate, (e.g. fixed, stepped or linear)." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000151 — acrylamide crosslinker ratio
+  def: def: "The acrylamide to crosslinker ratio of the gel." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000152 — additional gel ingredients
+  def: def: "The details of any additional substances or reagents contained within the gel, recording the concentration or molarities for each (and pH if appropriate)." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000153 — gel lane number
+  def: def: "The number of lanes on the gel matrix." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000154 — gel electrophoresis sample application
+  def: def: "Description of how the sample was applied to the gel for electrophoresis, including method and volume of loading buffer and sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000155 — electrophoresis conditions
+  def: def: "The running conditions applied to the gel. To be given in terms of voltages versus time/kilovolt hours (or appropriate measurements) and temperature. Include voltage mode profile (step and hold, or gradient).." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000156 — interdimension process
+  def: def: "Description of any process applied to, or carried out between the dimensions of gel electrophoresis, including processes such as equilibration, reduction and alkylation." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000157 — molecular interaction host system
+  def: def: "The host organism in which the studies molecular interaction took place." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000158 — molecular interaction participant accession number
+  def: def: "The accession number from a database for a molecule that is part of a molecular interaction." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000159 — skimmer and focusing lens voltages
+  def: def: "Voltages of the skimmer and the focusing lens in a mass spectrometer." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000160 — ionization gas flows
+  def: def: "Controlled introduction of gases used for ionization in mass spectrometry such as nebulization gas or cone gas." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000161 — data acquisition date
+  def: def: "The date that data was acquired for a sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000162 — data acquisition rate
+  def: def: "The rate at which data was measured." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000163 — mass spectrometer lock spray
+  def: def: "Sprayer used in mass spectrometry that provides a continuous calibrant to ensure high mass accuracy throughout an analysis." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000164 — autosampler wash cycles
+  def: def: "Number and volume of washing steps in a chromatography autosampler." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000165 — physical column parameters
+  def: def: "Physical characteristics of a chromatography column, such as pore size, particle size or coating thickness." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000166 — chromatography pressure
+  def: def: "Pressure used during chromatographic separation." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000167 — chromatography injection mode
+  def: def: "Method of how the sample is introduced into the chromatography system." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000168 — post-column split
+  def: def: "Chromatography setup where the flow coming out of the column is split into two or more paths after the separation has occurred." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000169 — sample resuspension
+  def: def: "Description of what solution a sample was resuspended in after extraction." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000170 — sample wash method
+  def: def: "Wash method for removing unwanted external components from the sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000171 — concentration adjustment
+  def: def: "The process of concentrating, diluting and/or resuspending an extract to obtain a desired concentration." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000172 — extract cleanup
+  def: def: "Method for removing unwanted components from an extract, such as ultrafiltration, removal of paramagnetic ions or addition of metal chelators." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000173 — extract storage
+  def: def: "Storage conditions prior to and during analysis of an extract." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000174 — gel electrophoresis dimension
+  def: def: "Specification of whether the first or second dimension of a one- or two-dimensional gel electrophoresis is described." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000175 — sample description
+  def: def: "Description of the sample." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0000176 — shaker type
+  BEFORE: def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available." []
+  AFTER:  def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available." [SNOMED:470694005]
+
+[MANUAL] DPBO:0000177 — plant material type
+  def: def: "The level at which the plant material is investigated (e.g. whole organism, organism part, cell, DNA)." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000178 — stock solution protocol
+  def: def: " A protocol that details how a stock solution is mixed from various chemical compounds. This can be from the same or different methodologies." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000179 — Source Name
+  def: def: "Sources are considered as the starting biological material used in a study." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000180 — Sample Name
+  def: def: "Samples are a kind of material and represent major outputs resulting from a protocol application." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000181 — data file name
+  def: def: "Name of the data file resulting from a protocol application that corresponds to some process that produces data." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000182 — Material
+  def: def: "Name of the material consumed or produced during an experimental workflow." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000183 — NMR sample protocol
+  def: def: "Column marking the start of metadata describing the NMR sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000184 — NMR spectroscopy protocol
+  def: def: "Column marking the start of metadata describing the NMR spectroscopy." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000185 — NMR assay protocol
+  def: def: "Column marking the start of metadata describing the NMR assay." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000186 — metabolite identification protocol
+  def: def: "Column marking the start of metadata describing the metabolite identification." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000187 — chromatography protocol
+  def: def: "Column marking the start of metadata describing the chromatography." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0000188 — mass spectrometry protocol
+  def: def: "Column marking the start of metadata describing the mass spectrometry." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:00002008 — obsolete_environment (feature)
+  def: def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002000 — alias
+  def: def: "Unique identificator for a study. This is used to link experiments to the study." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002001 — study abstract
+  def: def: "Briefly describes the goals, purpose, and scope of the Study.  This need not be listed if it can be inherited from a referenced publication." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002002 — title
+  def: def: "Title of the study as would be used in a publication." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002005 — project name
+  def: def: "Name of the project within which the experiment was organized." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002006 — sequencing method
+  def: def: "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002007 — investigation type
+  def: def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0002008 — environment (feature)
+  BEFORE: def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
+  AFTER:  def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " [ENVO:01000813]
+
+[FIXED]  DPBO:0002009 — environment (material)
+  BEFORE: def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. " []
+  AFTER:  def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. " [ENVO:00010483]
+
+[MANUAL] DPBO:0002010 — plant-associated environmental package
+  def: def: "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002011 — cultivation container
+  def: def: "A container that is used for the cultivation of cells." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002012 — shake flask
+  def: def: "A shake flask is a common piece of laboratory equipment used for growing microorganisms or cells in a liquid culture. " []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0002013 — CGXII medium
+  def: def: "A defined medium for Corynebacterium glutamicum according to Keilhauer et al., 1993. " []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0010000 — ENA
+  BEFORE: def: "The European Nucleotide Archive (ENA) is an open, supported platform for the management, sharing, integration, archiving and dissemination of sequence data." []
+  AFTER:  def: "The European Nucleotide Archive (ENA) is an open, supported platform for the management, sharing, integration, archiving and dissemination of sequence data." [ENSGLOSSARY:0000217]
+
+[MANUAL] DPBO:0010002 — BioSample
+  def: def: "The BioSample database contains descriptions of biological source materials used in experimental assays." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0010004 — BioProject
+  BEFORE: def: "A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data types generated for that project." []
+  AFTER:  def: "A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data types generated for that project." [GENEPIO:0001836]
+
+[FIXED]  DPBO:0010005 — GenBank
+  BEFORE: def: "GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences (Nucleic Acids Research, 2013 Jan;41(D1):D36-42). GenBank is part of the International Nucleotide Sequence Database Collaboration, which comprises the DNA DataBank of Japan (DDBJ), the European Nucleotide Archive (ENA), and GenBank at NCBI. These three organizations exchange data on a daily basis." []
+  AFTER:  def: "GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences (Nucleic Acids Research, 2013 Jan;41(D1):D36-42). GenBank is part of the International Nucleotide Sequence Database Collaboration, which comprises the DNA DataBank of Japan (DDBJ), the European Nucleotide Archive (ENA), and GenBank at NCBI. These three organizations exchange data on a daily basis." [NCIT:C43818]
+
+[MANUAL] DPBO:0010006 — SRA
+  def: def: "Sequence Read Archive (SRA) data, available through multiple cloud providers and NCBI servers, is the largest publicly available repository of high throughput sequencing data. The archive accepts data from all branches of life as well as metagenomic and environmental surveys. SRA stores raw sequencing data and alignment information to enhance reproducibility and facilitate new discoveries through data analysis." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0010007 — PGP
+  def: def: "Plant Genomics & Phenomics Research Data Repository" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0010008 — BIA
+  def: def: "The BioImage Archive (BIA) stores and distributes biological images that are useful to life sciences researchers. It also provides data archiving services to the broader bioimaging database community including added-value bioimaging data resources such as EMPIAR, Cell-IDR and Tissue-IDR." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0010009 — biosource material state
+  def: def: "The state (typically fresh or dry) of the biosource material (e.g. tissue) prepared for an assay." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0010010 — fresh material
+  def: def: "Fresh (non-dry) biosource material" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:0010011 — dry material
+  def: def: "Dry biosource material" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0010012 — internal standard
+  BEFORE: def: "Internal standard added in known amount to an analytical sample" []
+  AFTER:  def: "Internal standard added in known amount to an analytical sample" [MSIO:0000005]
+
+[FIXED]  DPBO:0010013 — obsolete_sample volume
+  BEFORE: def: "Volume taken from the sample to be assayed (measured)." []
+  AFTER:  def: "Volume taken from the sample to be assayed (measured)." [EFO:0920055]
+
+[MANUAL] DPBO:0010014 — chromatography injection volume
+  def: def: "Volume of the sample injected during chromatography" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:0010015 — chromatography injection mode
+  BEFORE: def: "This is to specify split / splitless runs during e.g. gas-chromatography." []
+  AFTER:  def: "This is to specify split / splitless runs during e.g. gas-chromatography." [OBI:0000525]
+
+[MANUAL] DPBO:1000003 — obsolete_RNA-seq
+  def: def: "placeholder def of RNA-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000004 — miRNA-seq
+  def: def: "A library strategy that can identify and quantify the microRNA sequences present in a biological sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000005 — ncRNA-seq
+  def: def: "A next-generation sequencing library strategy that can determine the small and large non-protein coding RNA transcripts in a sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000006 — RNA-seq (size fractionation)
+  def: def: "A library strategy with an additional size fractionation step after RNA-seq library preparation" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000007 — RNA-seq (CAGE)
+  def: def: "A library strategy that is used to sequence the 5' capped transcripts, using CAGE to biotinylate and isolate the 7-methylguanosine cap." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000008 — RNA-seq (RACE)
+  BEFORE: def: "Rapid Amplification of cDNA Ends (RACE) is a library strategy for RNA-seq that is used to obtain the full length sequence of an RNA transcript found within a cell. RACE produces a cDNA copy of the RNA through reverse transcription which is amplified and sequenced." []
+  AFTER:  def: "Rapid Amplification of cDNA Ends (RACE) is a library strategy for RNA-seq that is used to obtain the full length sequence of an RNA transcript found within a cell. RACE produces a cDNA copy of the RNA through reverse transcription which is amplified and sequenced." [EFO:0004182]
+
+[MANUAL] DPBO:1000009 — obsolete_ssRNA-seq
+  def: def: "placeholder def of ssRNA-seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000010 — obsolete_ChIP-seq
+  def: def: "placeholder def of ChIP-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000011 — obsolete_MNase-seq
+  def: def: "placeholder def of MNase-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000012 — obsolete_MBD-seq
+  def: def: "placeholder def of MBD-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000013 — obsolete_MRE-seq
+  def: def: "placeholder def of MRE-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000014 — obsolete_Bisulfite-seq
+  def: def: "placeholder def of Bisulfite-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000015 — Bisulfite-seq (reduced representation)
+  def: def: "A library strategy that uses one or more restriction enzymes on a genomic DNA sample prior to sequencing to produce sequence-specific fragmentation" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000016 — obsolete_MeDIP-seq
+  def: def: "placeholder def of MeDIP-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000017 — DNase hypersensitivity
+  def: def: "A library strategy that is used to characterize the DNase hypersensitivity of a genome by treatment with DNase before library preparation." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000018 — Tn-seq
+  BEFORE: def: "A library strategy that is used to sequence transposons." []
+  AFTER:  def: "A library strategy that is used to sequence transposons." [EFO:0008973]
+
+[MANUAL] DPBO:1000019 — obsolete_FAIRE-seq
+  def: def: "placeholder def of FAIRE-seq" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000020 — SELEX
+  BEFORE: def: "A library strategy for high-througput sequencing that is based on Systematic evolution of ligands by exponential enrichment." []
+  AFTER:  def: "A library strategy for high-througput sequencing that is based on Systematic evolution of ligands by exponential enrichment." [EFO:0008918]
+
+[MANUAL] DPBO:1000021 — obsolete_RIP-seq
+  def: def: "placeholder def of RIP-Seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000022 — obsolete_ATAC-seq
+  def: def: "placeholder def of ATAC-seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000023 — obsolete_ChIA-PET
+  def: def: "placeholder def of ChIA-PET" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000024 — obsolete_Hi-C
+  def: def: "placeholder def of Hi-C" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000025 — OTHER: specify
+  def: def: "Any other possible library strategy that can be used for RNA-seq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000026 — obsolete_fastq
+  def: def: "placeholder def of fastq" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000027 — bam
+  def: def: "Binary format for storing of sequencing data" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000028 — Illumina_native_qseq
+  def: def: "Illumina´s native QSEQ format" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000029 — Illumina_native
+  def: def: "Illumina´s native sequencing format" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000030 — SOLiD_native_csfasta
+  def: def: "SOLID´s native csfasta sequencing format" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000031 — SOLiD_native_qual
+  def: def: "SOLI´s native quality sequencing format" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000032 — sff
+  def: def: "Standard flowgram format (SFF) is a binary file format used to encode results of pyrosequencing from the 454 Life Sciences platform for high-throughput sequencing." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000033 — 454_native_seq
+  def: def: "454 pyrosequencing native sequencing file format" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000034 — 454_native_qual
+  def: def: "454 pyrosequencing native quality sequencing file format" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000035 — Helicos_native
+  def: def: "Helicos native file format" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000036 — srf
+  def: def: "Sequence Read Format (SRF) of sequence trace data. Supports submission to the NCBI Short Read Archive." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000037 — PacBio_HDF5
+  def: def: "PacBio hierarchical, filesystem-like data format that can store metadata in the form of user-defined, named attributes, which are attached to groups and datasets, and representations of images and tables built up using datasets, groups and attributes." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000086 — obsolete_single
+  def: def: "placeholder def of single" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000087 — paired-end
+  def: def: "A library layout which describes that both ends of the library fragment are sequenced" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000088 — obsolete_total RNA
+  BEFORE: def: "placeholder def of total RNA" []
+  AFTER:  def: "placeholder def of total RNA" [EFO:0004964]
+
+[MANUAL] DPBO:1000089 — obsolete_polyA RNA
+  def: def: "placeholder def of polyA RNA" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000090 — obsolete_cytoplasmic RNA
+  def: def: "placeholder def of cytoplasmic RNA" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000091 — obsolete_nuclear RNA
+  BEFORE: def: "placeholder def of nuclear RNA" []
+  AFTER:  def: "placeholder def of nuclear RNA" [EFO:0030052]
+
+[FIXED]  DPBO:1000092 — obsolete_genomic DNA
+  BEFORE: def: "placeholder def of genomic DNA" []
+  AFTER:  def: "placeholder def of genomic DNA" [BAO:0000316]
+
+[FIXED]  DPBO:1000093 — obsolete_protein
+  BEFORE: def: "placeholder def of protein" []
+  AFTER:  def: "placeholder def of protein" [CHEBI:36080]
+
+[MANUAL] DPBO:1000094 — other
+  def: def: "Any other bio entity that can be characterized by high-throuput sequencing." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000095 — endpoint repository
+  def: def: "Parent term to collect endpoint repositories (ER)." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000096 — GEO
+  def: def: "GEO (Gene Expression Omnibus) is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted. Tools are provided to help users query and download experiments and curated gene expression profiles." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000097 — MetaboLights
+  def: def: "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. MetaboLights is the recommended Metabolomics repository for a number of leading journals." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000098 — PRIDE
+  def: def: "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. Datasets are submitted to ProteomeXchange via PRIDE and are handled by expert bio-curators. All PRIDE public datasets can also be searched in ProteomeCentral, the portal for all ProteomeXchange datasets." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000099 — GEO_RNAseq
+  def: def: "Parent term to collect terms required for RNASeq submission to GEO" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000100 — GEO_microarray
+  def: def: "Parent term to collect terms required for microarray submission to GEO" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000101 — obsolete_well
+  BEFORE: def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
+  AFTER:  def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." [OME:Well]
+
+[MANUAL] DPBO:1000102 — well Number
+  def: def: "The number of a well in a well plate." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000103 — siRNA identifier
+  def: def: "The identifier of a siRNA from a reagent library." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000104 — obsolete_compound name
+  BEFORE: def: "Unique name of a chemical compound." []
+  AFTER:  def: "Unique name of a chemical compound." [EDAM:data_0990]
+
+[FIXED]  DPBO:1000105 — obsolete_compound identifier
+  BEFORE: def: "Identifier of an entry from a database of chemicals." []
+  AFTER:  def: "Identifier of an entry from a database of chemicals." [data:1086]
+
+[MANUAL] DPBO:1000106 — compound class
+  def: def: "The class a compound belongs to, defined by its biological function or the chemical property." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000108 — obsolete_gene identifier
+  BEFORE: def: "A unique gene name within a specific repository, database, or collection." []
+  AFTER:  def: "A unique gene name within a specific repository, database, or collection." [NCIT:C48664]
+
+[MANUAL] DPBO:1000109 — sense sequence
+  def: def: "The sequence of the sense strand." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000110 — antisense sequence
+  def: def: "The sequence of the antisense strand." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000111 — obsolete_control type
+  BEFORE: def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
+  AFTER:  def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." [NCIT:C49647]
+
+[MANUAL] DPBO:1000112 — quality control
+  def: def: "Result of quality control. This can be: pass/fail, or other information such as: no cells" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000113 — channel
+  def: def: "The label used in a microscopy assay and what it targets, separated by a colon. Each pair of labels and visualized object is separated by a semi-colon. E.g. DAPI:nuclei;TRITC:HA_Flag tagged protein." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000114 — screen technology type
+  def: def: "The type of a high content screening experiment like RNAi screen or antibody screen." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000116 — library version
+  def: def: "Version of a reagent library used e.g. in high content screening." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000117 — obsolete_antibody
+  BEFORE: def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." []
+  AFTER:  def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." [NCIT:C16295]
+
+[FIXED]  DPBO:1000118 — obsolete_cover slip
+  BEFORE: def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
+  AFTER:  def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." [NCIT:C126370]
+
+[MANUAL] DPBO:1000121 — target compartment
+  def: def: "Compartment of interest in the prepared sample" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000122 — obsolete_imaging software name
+  BEFORE: def: "The name of the software program to capture and/or process imaging data." []
+  AFTER:  def: "The name of the software program to capture and/or process imaging data." [NCIT:C175898]
+
+[MANUAL] DPBO:1000123 — imaging software version
+  def: def: "The version of the software program to capture and/or process imaging data." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000124 — imaging software settings
+  def: def: "The used settings in the software program to capture and/or process imaging data." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000125 — microscope filter
+  def: def: "Channel the image was taken with." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000127 — obsolete_assay name
+  BEFORE: def: "The name of the assay." []
+  AFTER:  def: "The name of the assay." [NCIT:C178857]
+
+[MANUAL] DPBO:1000128 — image processing software
+  def: def: "Software used for the processing of microscopy images like for adaption of contrast or stacking." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000129 — image data analysis software
+  def: def: "Software used to analyze data extracted from microscopy images." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000130 — image processing software parameters
+  def: def: "Applied settings of the software used for the processing of microscopy images" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000131 — feature extraction software
+  def: def: "Software used for the extraction of features from microscopy images." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000133 — feature extraction strategy
+  def: def: "Description of the approach to extract features from microscopy images." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000135 — use of image
+  def: def: "Whether a microscopy image is intended to be used illustrational or analytically by deriving values from it." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000136 — reagent design genome reference version
+  def: def: "The gene annotation build the siRNAs for a high content screen library were mapped to." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000137 — control specification
+  def: def: "additional information about the quality control in high content screening studies e.g. 'checks for transfection', 'gives strong phenotype'" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000138 — quality control comments
+  def: def: "additional information why a quality control passed or failed'" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000139 — microscopy study type
+  def: def: "Type of an imaging study." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000140 — magnification
+  def: def: "The magnification of a microscopy image" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000141 — image dimensionality
+  def: def: "The sizes along the axis of the XYZCT dimensions in a microscopy image." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000142 — obsolete_objective
+  BEFORE: def: "The microscope's objective lens." []
+  AFTER:  def: "The microscope's objective lens." [OME:Objective]
+
+[FIXED]  DPBO:1000143 — microscopy sample preparation
+  BEFORE: def: "How a sample was further prepared for microscopy." []
+  AFTER:  def: "How a sample was further prepared for microscopy." [MS:1000831]
+
+[MANUAL] DPBO:1000144 — material fixation
+  def: def: "Plant material fixation on a microscopy slide." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000145 — prepared organism part
+  def: def: "The part of an organism that has been prepared for an experiment" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000146 — obsolete_strain
+  BEFORE: def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
+  AFTER:  def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." [EFO:0005135]
+
+[FIXED]  DPBO:1000147 — obsolete_container
+  BEFORE: def: "A device that can be used to restrict the location of material entities over time" []
+  AFTER:  def: "A device that can be used to restrict the location of material entities over time" [OBI:0000967]
+
+[MANUAL] DPBO:1000148 — jar
+  def: def: "A wide-mouthed cylindrical container made of glass or pottery and typically having a lid" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000149 — plate
+  def: def: "A flat dish, typically circular" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000150 — obsolete_contamination
+  BEFORE: def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
+  AFTER:  def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" [PATO:0015031]
+
+[MANUAL] DPBO:1000151 — axenic
+  def: def: "Free from other living organisms" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000152 — laboratory strain
+  def: def: "Latest laboratory cultivated the strain. Who sent the strain to your laboratory" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000153 — date
+  BEFORE: def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." []
+  AFTER:  def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." [dc:date]
+
+[FIXED]  DPBO:1000154 — obsolete_volume
+  BEFORE: def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
+  AFTER:  def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" [PATO:0000918]
+
+[MANUAL] DPBO:1000155 — culture medium volume
+  def: def: "Volume of culture medium used to grow the organism" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000156 — obsolete_light
+  BEFORE: def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
+  AFTER:  def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." [EFO:0000568]
+
+[FIXED]  DPBO:1000157 — light quality
+  BEFORE: def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" []
+  AFTER:  def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" [PECO:0007154]
+
+[MANUAL] DPBO:1000159 — 260/280 ratio
+  def: def: "Nucleic acids have absorbance maxima at 260 nm. Historically, the ratio of this absorbance maximum to the absorbance at 280 nm has been used as a measure of purity in both DNA and RNA extractions. A 260/280 ratio of ~1.8 is generally accepted as pure for DNA; a ratio of ~2.0 is generally accepted as pure for RNA." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000160 — 260/230 ratio
+  def: def: "The 260/230 values for pure nucleic acid are often higher than the respective 260/280 values. Expected 260/230 values are commonly in the range of 2.0–2.2" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000161 — protocol type
+  def: def: "ISA-related term to identify the type of protocol (the set of procedures and rules that must be performed and when) used during the study or assay." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000162 — obsolete_growth protocol
+  BEFORE: def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." []
+  AFTER:  def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." [EFO:0003789]
+
+[MANUAL] DPBO:1000163 — algae growth protocol
+  def: def: "A protocol that provides instructions for growing algae." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000164 — plant growth protocol
+  def: def: "A protocol that provides instructions for growing a plant cultivar." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000165 — microbe growth protocol
+  def: def: "A protocol that provides instructions for growing a microbial sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000166 — bacteria growth protocol
+  def: def: "A protocol that provides instructions for growing a bacterial sample." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000167 — yeast growth protocol
+  def: def: "A protocol that provides instructions for growing yeast." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000168 — obsolete_treatment protocol
+  BEFORE: def: "A protocol that aims to treat sample or collection of samples, organism or group of organisms, for some experimental purpose." []
+  AFTER:  def: "A protocol that aims to treat sample or collection of samples, organism or group of organisms, for some experimental purpose." [EFO:0003969]
+
+[FIXED]  DPBO:1000169 — obsolete_sample collection protocol
+  BEFORE: def: "A protocol that provides instructions on how a biological sample for an experiment was collected." []
+  AFTER:  def: "A protocol that provides instructions on how a biological sample for an experiment was collected." [EFO:0005518]
+
+[MANUAL] DPBO:1000170 — sample processing protocol
+  def: def: "A protocol that details how a sample is processed or changed to prepare it for analysis." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000171 — obsolete_extraction protocol
+  BEFORE: def: "A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay" []
+  AFTER:  def: "A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay" [EFO:0000490]
+
+[FIXED]  DPBO:1000172 — obsolete_DNA extraction protocol
+  BEFORE: def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components." []
+  AFTER:  def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components." [EFO:0022384]
+
+[FIXED]  DPBO:1000173 — obsolete_RNA extraction protocol
+  BEFORE: def: "A protocol that describes the steps for removing and purifying DNA from a biological sample" []
+  AFTER:  def: "A protocol that describes the steps for removing and purifying DNA from a biological sample" [EFO:0010959]
+
+[FIXED]  DPBO:1000174 — obsolete_protein extraction protocol
+  BEFORE: def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample." []
+  AFTER:  def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample." [EFO:0022383]
+
+[FIXED]  DPBO:1000175 — obsolete_metabolite extraction protocol
+  BEFORE: def: "A protocol that describes the step by step process for removing metabolites from a biological sample." []
+  AFTER:  def: "A protocol that describes the step by step process for removing metabolites from a biological sample." [EFO:0022981]
+
+[MANUAL] DPBO:1000176 — assay pre-processing protocol
+  def: def: "A protocol that describes the steps to be taken to transform a sample before an assay can be performed" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000177 — assay protocol
+  def: def: "A protocol that describes how to perform an assay." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000178 — data processing protocol
+  def: def: "A protocol that describes the operations performed on data by a computer in order to retrieve, transform, or classify information." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000179 — data filtering protocol
+  def: def: "A protocol that describes the operations performed to filter or select a smaller part of the dataset to be used for or rejected from subsequent analysis steps" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000180 — data transformation protocol
+  def: def: "A protocol that describes the operations performed to convert data from one format, structure, or value into another." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000181 — data extraction protocol
+  def: def: "A protocol that describes the operations performed to take a specific data set out of a larger data set and present it in a useable format." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000182 — replicate group
+  def: def: "An unique identifier for grouping experminental replicates - replication of an experiment to assess biological or technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, replicate groups must be the same for each replicate in the group (e.g. 'group 1' for each replicate in the group). This adds the possibility to aggregate the replicates without additional annotations." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000183 — biological replicate group
+  def: def: "An unique identifier for grouping biological replicates - replicates made from different individual biosamples to assess biological variation in an experiment. In contrast to other ways of annotating replicates in experimental design, biological replicate groups must be the same for each replicate in the group (e.g. 'b_1' for each biological replicate in the group). This adds the possibility to aggregate the biological replicates without additional annotations." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000184 — technical replicate group
+  def: def: "An unique identifier for grouping technical replicates - replicates made from different individual biosamples to assess technical variation in an experiment. In contrast to other ways of annotating replicates in experimental design, technical replicate groups must be the same for each replicate in the group (e.g. 't_1' for each technical replicate in the group). This adds the possibility to aggregate the technical replicates without additional annotations." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000185 — incubation time
+  BEFORE: def: "The time that a sample should incubate (keep at a suitable temperature) during a experimental protocol to allow for a reaction or proces to occur. " []
+  AFTER:  def: "The time that a sample should incubate (keep at a suitable temperature) during a experimental protocol to allow for a reaction or proces to occur. " [BAO:0002833]
+
+[MANUAL] DPBO:1000186 — Zeiss Axiovert
+  def: def: "A series of inverted light microscopes manufactured by Zeiss." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000187 — SZX7 Stereo Microscope
+  def: def: "A stereo zoom microscope featuring a binocular head" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000189 — 01
+  def: def: "white" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000190 — 01
+  def: def: "white" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000191 — DIC
+  def: def: "differential interference contrast" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000192 — 09
+  def: def: "yellow" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000193 — 10
+  def: def: "green" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000194 — 15
+  def: def: "red" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000195 — Zeiss ZEN 3.5 (blue edition)
+  def: def: "software controlling imaging systems from ZEISS." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000196 — Thermo Scientific Menzel slides, 76 x 26 mm, 1,0 mm
+  def: def: "microscope slide" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000197 — VWR frosted edges, ground edges 90°, 76 x 26 mm, 0,8 - 1,0 mm
+  def: def: "microscope slide" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000198 — Roth SuperFrost® white, cut edges, 76 x 26 mm, 1,0 mm
+  def: def: "microscope slide" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000199 — Menzel, 24 x 50 mm, selected 0,17 +/- 0,01, strength 1,5
+  def: def: "cover slip" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000200 — Roth, 24 x 50 mm, strength 1
+  def: def: "cover slip" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000201 — VWR, 18 x 18 mm, 0,13 - 0,16 mm, strength 1,5
+  def: def: "cover slip" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000202 — obsolete_0.8x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000203 — obsolete_1x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000204 — obsolete_1.25x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000205 — obsolete_1.6x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000206 — obsolete_2x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000207 — obsolete_2.5x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000208 — 3.2x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000209 — obsolete_4x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000210 — obsolete_5x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000211 — obsolete_5.6x
+  def: def: "magnification of Olympus SZX7 (Bino)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000212 — Plan-Neofluar 5x/0.15
+  def: def: "5x magnification, infinity-corrected microscope objective lens featuring a 0.15 numerical aperture, a flat-field (Plan) correction, and high UV transmission for fluorescence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000213 — Plan-Neofluar 10x/0.3
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 10x magnification, a 0.30 numerical apiture and flat-field (plan) correction." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000214 — Plan-Neofluar 20x/0.50 Ph2
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 20x magnification, a 0.50 numerical apiture and flat-field (plan) correction and phase contrast capabilities." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000215 — Plan-Neofluar 40x/0.75
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 20x magnification, a 0.50 numerical apiture and flat-field (plan) correction" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000216 — Plan-Neofluar 63x/1.25 Oil
+  def: def: "A microscope objective lens made by Zeiss featuring 63x magnification, a 1,25 numerical aperture and flat field (plan) correction. Requires oil immersion." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000217 — Plan-Neofluar 100x/1.30 Oil
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 100x magnification, a 1,30 numerical aperture and flat field (plan) correction. Requires oil immersion." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000218 — Achroplan 5x/012
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 5x magnification and a 0.12 numerical aperture." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000219 — Achroplan 10x/0.25 Ph1
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 10x magnification and a 0.25 numerical aperture. Ph1 rings makes phase contrast viewing possible." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000220 — Achroplan 20x/0.40
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 20x magnificaiton and a 0.40 numerical aperture." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000221 — Achroplan 40x/0.60 korr Ph2
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 40x magnificaiton, a 0.60 numerical aperture and phase contrast capabilities." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000222 — Achroplan 63x/0.75 korr Ph2
+  def: def: "A microscope objective lens manufactured by Zeiss featuring 63x magnificaiton, a 0.75 numerical aperture and phase contrast capabilities." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000223 — Knop medium
+  BEFORE: def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
+  AFTER:  def: "A solution designed for the growth of plant cell, tissue and organ culture. " [PECO:0001074]
+
+[MANUAL] DPBO:1000224 — phenotyping
+  def: def: "The activity or process of determining, analyzing, or predicting all or part of an organism's phenotype." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000225 — Zeiss Axioplan 2
+  def: def: "Axioplan series, imaging fluorescence microscope" []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000226 — student helper
+  BEFORE: def: "A role of a student in a research project which is acknowledged in papers." []
+  AFTER:  def: "A role of a student in a research project which is acknowledged in papers." [AGRO:00000374]
+
+[MANUAL] DPBO:1000227 — plant work helper
+  def: def: "A person that helps at various steps of the plant growth cycle e.g. sowing seeds, separating plants at the correct age or collecting seeds." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000228 — biolistic transformation
+  def: def: "A method for physical delivery of DNA (likely also RNA) into cells. Gold or tungsten particles are coated with DNA and shot with a gene gun / particle gun on tissue like leaves, seedlings, callus or other types of tissue and cells. Often, in plant sciences, this method is used as a transient transformation method in protein or protein-protein interaction localization studies using binary vectors. Co-transformation of multiple vectors is possible." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000229 — bioimaging protocol
+  def: def: "A protocol describing the method of a bioimaging technique. Bioimaging is a biological imaging method causing as minimal interference to living processes as possible or getting a 3-D structure from the outside without physical interference e.g. of cells, tissues or other living matter. Usually, the method is non-invasive but also fixed biological material is covered by a wider definition. (adapted from https://cab.ku.dk/what_is_bioimaging/)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000230 — transformation protocol
+  def: def: "A protocol describing a transformation method of cell, tissues or organisms." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000231 — Zeiss Axio Observer Z1
+  def: def: "Inverted fluorescence microscope" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000232 — Zeiss Imager M1
+  def: def: "Upright fluorescence microscope" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000233 — MG-RAST accession number field
+  def: def: "A data field which describes the MG-RAST identifier linking raw read data, methodological metadata and quality control metrics submitted to the MG-RAST metagenomics analysis server." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000234 — assembly software
+  def: def: "Tool/Software used for assembly." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000235 — assembly parameters
+  def: def: "Parameters used for assembly." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000236 — genome assembly quality
+  def: def: "The assembly quality category is based on sets of criteria outlined for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities with a consensus error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Low Quality Draft:Many fragments with little to no review of assembly other than reporting of standard assembly statistics. Assembly statistics include, but are not limited to total assembly size, number of contigs, contig N50/L50, and maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence per replicon without gaps or ambiguities, with extensive manual review and editing to annotate putative gene functions and transcriptional units. High-quality draft genome: One or multiple fragments, totaling 90% of the expected genome or replicon sequence or predicted complete. Genome fragment(s): One or multiple fragments, totalling < 90% of the expected genome or replicon sequence, or for which no genome size could be estimated." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000237 — binning software
+  def: def: "Tool(s) used for the extraction of genomes from metagenomic datasets, where possible include a product ID (PID) of the tool(s) used." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000238 — binning parameters
+  def: def: "The parameters that have been applied during the extraction of genomes from metagenomic datasets." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000239 — taxonomic identity marker
+  def: def: "The phylogenetic marker(s) used to assign an organism name to the SAG or MAG." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000240 — completeness software
+  def: def: "Tools used for completion estimate, i.e. checkm, anvi'o, busco." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000241 — completeness score
+  def: def: "Completeness score is typically based on either the fraction of markers found as compared to a database or the percent of a genome found as compared to a closely related reference genome. High Quality Draft: >90%, Medium Quality Draft: >50%, and Low Quality Draft: < 50% should have the indicated completeness scores." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000242 — contamination score
+  def: def: "The contamination score is based on the fraction of single-copy genes that are observed more than once in a query genome. The following scores are acceptable for; High Quality Draft: < 5%, Medium Quality Draft: < 10%, Low Quality Draft: < 10%. Contamination must be below 5% for a SAG or MAG to be deposited into any of the public databases" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000243 — ENA accession field
+  def: def: "A data field which describes the ENA experiment accession assigned to the sequencing data." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000244 — IonQuant
+  def: def: "IonQuant is a software tool for MS1 precursor intensity-based quantification for timsTOF PASEF DDA and non-timsTOF (e.g., Orbitrap) data. It enables label-free quantification with false discovery (FDR) controlled match-between-runs (MBR). It can also be used for quantification in labelling-based experiments such as those involving SILAC, dimethyl, or similar labelling strategies. IonQuant is available as a stand-alone tool or it can be run within [FragPipe] (http://fragpipe.nesvilab.org/) computational platform." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000245 — MSBooster
+  def: def: "MSBooster is a tool for incorporating spectral libary predictions into peptide-spectrum match (PSM) rescoring in bottom-up tandem liquid chromatography mass spectrometry proteomics data. It is incorporated into [FragPipe] (https://fragpipe.nesvilab.org/)" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000246 — infection
+  def: def: "To implant pathogenic microbes or infective materials. Special case of NCIT_C68774" []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000247 — days post infection
+  def: def: "Abbreviated dpi or DPI. Unit to describe the length of the period after an infection or inoculation treatment." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000248 — apoplast extraction
+  def: def: "Extraction of the soluble apoplast constituents, in particular, apoplastic proteins." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000249 — apoplast extraction solution
+  def: def: "Solution used to extract apoplast proteins. Examples are ultra pure water, sorbitol or NaCl solutions." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000250 — plant phenotyping protocol
+  def: def: "A protocol that provides instructions for phenotyping a plant sample." []
+  → No source could be inferred. Needs manual review.
+
+[FIXED]  DPBO:1000251 — data steward
+  BEFORE: def: "Provide guidance and help curate research data to ensure it aligns with best practices." []
+  AFTER:  def: "Provide guidance and help curate research data to ensure it aligns with best practices." [T4FS:0000178]
+
+[MANUAL] DPBO:1000252 — LI-6800
+  def: def: "A portable photosynthesis system produced by LI-COR Biosciences to measure gas exchange and chlorophyll flourescence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000253 — CIRAS-4
+  def: def: "A portable photosynthesis instrument produced by PP Systems that measures gas exchange and cholorophll flourescence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000254 — LCpro T
+  def: def: "A portable photosynthesis instrument produced by ADC BioScientific that measures gas exchange and cholorophll flourescence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000255 — CI-340
+  def: def: "A handheld photosynthesis system produced by CID Bio-Science to measure gas exchange and chlorophyll flourescence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000256 — GFS-3000
+  def: def: "Portable photosynthesis system produced by WALZ photosynthesis instruments to measure gas exchange and chlorophyll flourescence." []
+  → No source could be inferred. Needs manual review.
+
+[MANUAL] DPBO:1000257 — Oxford Nanopore Flongle
+  def: def: "A single-use, disposable flow cell adapter manufactured by Oxford Nanopore Technologies, compatible with the MinION and GridION sequencers, that enables lower-throughput nanopore sequencing runs an adapter that provides pipette-free sample application." []
+  → No source could be inferred. Needs manual review.
