@@ -586,25 +586,25 @@ def: "The parameters of the read alignment software (DPBO:0000002)." []
 id: DPBO:0000005
 name: humidity day
 def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" [PECO:0007197]
-comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
+is_a: PECO:0007197 ! humidity exposure
 
 [Term]
 id: DPBO:0000006
 name: humidity night
 def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" [PECO:0007197]
-comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
+is_a: PECO:0007197 ! humidity exposure
 
 [Term]
 id: DPBO:0000007
 name: temperature day
 def: "This term defines the air temperature at daytime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" [ENVO:09200001]
-comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
+is_a: ENVO:09200001 ! temperature of air
 
 [Term]
 id: DPBO:0000008
 name: temperature night
 def: "This term defines the air temperature at nighttime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" [ENVO:09200001]
-comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
+is_a: ENVO:09200001 ! temperature of air
 
 [Term]
 id: DPBO:0000009
