@@ -3,7 +3,7 @@ name: generate_OWL
 on:
   push:
     paths:
-      - 'dpbo.obo'          # trigger on OBO changes, NOT owl
+      - 'dpbo.obo'
   workflow_dispatch:
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
             --output DPBO.owl
 
       - name: Commit OWL
-        uses: mikeal/publish-to-github-action@master   # keep same action for now
+        uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: main
+          BRANCH_NAME: ${{ github.ref_name }}
