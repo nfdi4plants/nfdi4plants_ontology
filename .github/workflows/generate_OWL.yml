@@ -1,0 +1,30 @@
+name: generate_OWL
+
+on:
+  push:
+    paths:
+      - 'dpbo.obo'          # trigger on OBO changes, NOT owl
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ROBOT
+        run: |
+          curl -L https://github.com/ontodev/robot/releases/latest/download/robot.jar \
+            -o robot.jar
+
+      - name: Convert OBO to OWL
+        run: |
+          java -jar robot.jar convert \
+            --input dpbo.obo \
+            --output DPBO.owl
+
+      - name: Commit OWL
+        uses: mikeal/publish-to-github-action@master   # keep same action for now
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: main
