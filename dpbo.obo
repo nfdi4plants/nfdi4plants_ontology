@@ -3,6 +3,7 @@ data-version: init/2020-12-01
 saved-by: muehlhaus
 default-namespace: DPBO
 idspace: DPBO https://purl.org/nfdi4plants/ontology/dpbo/DPBO_ 
+idspace: REPR https://w3id.org/reproduceme# "Reproduce Me Ontology"
 treat-xrefs-as-equivalent: MIAPPE
 treat-xrefs-as-equivalent: NCBITaxon
 treat-xrefs-as-equivalent: NCIT
@@ -2239,6 +2240,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002000
 
 [Term]
 id: DPBO:1000039
@@ -2248,6 +2250,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002022
 
 [Term]
 id: DPBO:1000040
@@ -2257,6 +2260,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0003386
 
 [Term]
 id: DPBO:1000041
@@ -2834,6 +2838,7 @@ comment: term is redundant, please use REPR:Well
 xref: OME:Well
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: REPR:Well
 
 [Term]
 id: DPBO:1000102
@@ -2853,6 +2858,7 @@ comment: term is redundant, please use data:0990
 xref: EDAM:data_0990
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EDAM:data_0990
 
 [Term]
 id: DPBO:1000105
@@ -2862,6 +2868,7 @@ comment: term is redundant, please use data:1086
 xref: data:1086
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: data:1086
 
 [Term]
 id: DPBO:1000106
@@ -3072,6 +3079,7 @@ comment: use OME:objective
 xref: OME:Objective
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: REPR:Objective
 
 [Term]
 id: DPBO:1000143
