@@ -561,7 +561,7 @@ is_a: CHMO:0001586 ! solid-phase micro-extraction
 [Term]
 id: DPBO:0000001
 name: growth plot design
-def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" []
+def: "A plan specification that states how treatments are allocated to the experimental units. It refers to the conceptual framework within which the experiment is conducted" [AGRO:00000343]
 synonym: "Experimental Randomisation" RELATED []
 xref: AGRO:00000343
 disjoint_from: DPBO:0000002 ! read alignment software
@@ -569,7 +569,7 @@ disjoint_from: DPBO:0000002 ! read alignment software
 [Term]
 id: DPBO:0000002
 name: read alignment software
-def: "The software used for read alignment i.e http://edamontology.org/operation_3198 or http://purl.obolibrary.org/obo/OBI_0002478" []
+def: "The software used for read alignment i.e http://edamontology.org/operation_3198 or http://purl.obolibrary.org/obo/OBI_0002478" [OBI:0002478]
 comment: “We might need to add the relationship with the class referenced above”
 
 [Term]
@@ -585,26 +585,26 @@ def: "The parameters of the read alignment software (DPBO:0000002)." []
 [Term]
 id: DPBO:0000005
 name: humidity day
-def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" []
-comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
+def: "This term defines the relative humidity of the air at daytime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" [PECO:0007197]
+is_a: PECO:0007197 ! humidity exposure
 
 [Term]
 id: DPBO:0000006
 name: humidity night
-def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" []
-comment: "is_a: http://purl.obolibrary.org/obo/PECO_0007197"
+def: "This term defines the relative humidity of the air at nighttime, it is a specialised concept of humidity exposure (http://purl.obolibrary.org/obo/PECO_0007197)" [PECO:0007197]
+is_a: PECO:0007197 ! humidity exposure
 
 [Term]
 id: DPBO:0000007
 name: temperature day
-def: "This term defines the air temperature at daytime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" []
-comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
+def: "This term defines the air temperature at daytime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" [ENVO:09200001]
+is_a: ENVO:09200001 ! temperature of air
 
 [Term]
 id: DPBO:0000008
 name: temperature night
-def: "This term defines the air temperature at nighttime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" []
-comment: “is_a: http://purl.obolibrary.org/obo/ENVO_09200001”
+def: "This term defines the air temperature at nighttime, it is a specialised concept of temperature of air (http://purl.obolibrary.org/obo/ENVO_09200001)" [ENVO:09200001]
+is_a: ENVO:09200001 ! temperature of air
 
 [Term]
 id: DPBO:0000009
@@ -709,7 +709,7 @@ comment: “”
 [Term]
 id: DPBO:0000026
 name: genome reference sequence
-def: "Name and version of the genome reference.”" []
+def: "Name and version of the genome reference.”" [MS:1002644, NCIT:C16438]
 comment: “See also http://purl.obolibrary.org/obo/NCIT_C164388 and http://purl.obolibrary.org/obo/MS_1002644”
 xref: MS:1002644
 xref: NCIT:C16438
@@ -745,13 +745,13 @@ def: "The haploid chromosome count of a eukaryote" []
 [Term]
 id: DPBO:0000032
 name: estimated genome size
-def: "The estimated size of the genome prior to sequencing" []
+def: "The estimated size of the genome prior to sequencing" [MIXS:0000024]
 comment: adapted from MIXS:0000024
 
 [Term]
 id: DPBO:0000033
 name: plant age
-def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." []
+def: "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting)." [EFO:0000246]
 comment: “This is a specialization of age (http://www.ebi.ac.uk/efo/EFO_0000246)"
 
 [Term]
@@ -769,11 +769,12 @@ is_obsolete: true
 [Term]
 id: DPBO:0000036
 name: obsolete_library selection
-def: "The method used to select for or against, enrich, or screen the material being sequenced." []
+def: "The method used to select for or against, enrich, or screen the material being sequenced." [GENEPIO:0001940]
 comment: term is redundant, please use GENEPIO:0001940
 xref: GENEPIO:0001940
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: GENEPIO:0001940
 
 [Term]
 id: DPBO:0000037
@@ -783,7 +784,7 @@ def: "Determination of the taxonomic ranking that is below species level i.e. va
 [Term]
 id: DPBO:0000038
 name: rooting medium pH
-def: "pH measurement of the culture rooting medium" []
+def: "pH measurement of the culture rooting medium" [PATO:0001428]
 comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checklist
 xref: PATO:0001428
 
@@ -796,13 +797,13 @@ comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checkli
 [Term]
 id: DPBO:0000040
 name: next generation sequencing instrument model
-def: "Model name or number of next generation sequencing instrument" []
+def: "Model name or number of next generation sequencing instrument" [EFO:0003739]
 xref: EFO:0003739
 
 [Term]
 id: DPBO:0000041
 name: growth day length
-def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" []
+def: "The time (e.g. hours of light) of the light regime in a growth experiment (e.g. 12hr light /12hr dark, 12/12, short day, long day)" [EO:0007153, PECO:0007078, ZECO:0000147]
 comment: “Adapted from 'light quantity exposure' http://purl.obolibrary.org/obo/PECO_0007078"
 synonym: "light duration" EXACT []
 xref: EO:0007153
@@ -812,7 +813,7 @@ xref: ZECO:0000147
 [Term]
 id: DPBO:0000042
 name: biological replicate identifier
-def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')" []
+def: "Indicates the biological replication during experiment design (e.g. 'rep1', 'rep2')" [MS:1001809]
 xref: MS:1001809
 
 [Term]
@@ -853,26 +854,26 @@ def: "Company name, and name or serial number of the chromatography guard column
 [Term]
 id: DPBO:0000050
 name: extraction buffer
-def: "Chemical buffer, solvent or solution used to extract a component from a biological sample." []
+def: "Chemical buffer, solvent or solution used to extract a component from a biological sample." [OBI:0302884]
 comment: “related to extraction (http://purl.obolibrary.org/obo/OBI_0302884). DB"
 
 [Term]
 id: DPBO:0000051
 name: extraction buffer volume
-def: "Volume of the buffer (DPBO:0000050) used during extraction." []
+def: "Volume of the buffer (DPBO:0000050) used during extraction." [OBI:0302884]
 comment: “related to extraction (http://purl.obolibrary.org/obo/OBI_0302884)"
 
 [Term]
 id: DPBO:0000052
 name: MS derivatization
-def: "Derivatization for metabolomics mass spectrometry." []
+def: "Derivatization for metabolomics mass spectrometry." [CHMO:0001485]
 xref: CHMO:0001485
 is_a: OBI:0000094 ! material processing
 
 [Term]
 id: DPBO:0000053
 name: chromatography column type
-def: "Type of chromatography column (DPBO:0000048)" []
+def: "Type of chromatography column (DPBO:0000048)" [CHMO:0001000]
 xref: CHMO:0001000
 
 [Term]
@@ -896,7 +897,7 @@ comment: “"
 [Term]
 id: DPBO:0000057
 name: next generation sequencing platform
-def: "Name of the company that produces next generation sequencing instruments" []
+def: "Name of the company that produces next generation sequencing instruments" [GENEPIO:0000071]
 xref: GENEPIO:0000071
 
 [Term]
@@ -908,7 +909,7 @@ comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checkli
 [Term]
 id: DPBO:0000059
 name: sequence assembly method
-def: "Strategy that was used to assemble reads into contigs" []
+def: "Strategy that was used to assemble reads into contigs" [GENEPIO:0000090]
 comment: “Just two options should be possible: de-novo assembly or mapping"
 xref: GENEPIO:0000090
 
@@ -932,14 +933,14 @@ def: "Measure of RNA quality after RNA extraction. Typically RNA integrity numbe
 [Term]
 id: DPBO:0000063
 name: BioProject accession number
-def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345." []
+def: "The accession number of the BioProject(s) to which the BioSample belongs. If the BioSample belongs to more than one BioProject, enter multiple bioproject_accession columns. A valid BioProject accession has prefix PRJN, PRJE or PRJD, e.g., PRJNA12345." [NCIT:C175890]
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C175890
 
 [Term]
 id: DPBO:0000064
 name: sample type
-def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly" []
+def: "Sample type, such as cell culture, mixed culture, tissue sample, whole organism, single cell, metagenomic assembly" [NCIT:C70713]
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C70713
 
@@ -964,7 +965,7 @@ comment: adapted from the ENA (European Nucleotide Archive) Plant Sample Checkli
 [Term]
 id: DPBO:0000068
 name: obsolete_cell line
-def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " []
+def: "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] " [NCIT:C16403]
 comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
 xref: NCIT:C16403
 is_a: ObsoleteClass ! Obsolete Class
@@ -998,14 +999,14 @@ def: "Stage of plant disease at the time of sampling." []
 [Term]
 id: DPBO:0000073
 name: phenotype
-def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601" []
+def: "Phenotype of sampled organism. For Phenotypic quality Ontology (PATO) (v1.269) terms, please see http://bioportal.bioontology.org/visualize/44601" [NCIT:C16977]
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C16977
 
 [Term]
 id: DPBO:0000074
 name: geographic area
-def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg 'Canada: Vancouver' or 'Germany: halfway down Zugspitze, Alps'" []
+def: "Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg 'Canada: Vancouver' or 'Germany: halfway down Zugspitze, Alps'" [NCIT:C16632]
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C16632
 
@@ -1030,7 +1031,7 @@ comment: “[Definition Source: https://www.ebi.ac.uk/metabolights/guides/MAF/Ti
 [Term]
 id: DPBO:0000078
 name: BioSample accession number
-def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" []
+def: "BioSample accession as required by NCBI repositories. Typically of the form SAMN[number]. NOT SUB[number]!" [NCIT:C175889]
 comment: “[Definition Source: taken from a template at https://www.ncbi.nlm.nih.gov/biosample/]"
 xref: NCIT:C175889
 
@@ -1221,11 +1222,12 @@ created_by: Stella Eggels
 [Term]
 id: DPBO:0000110
 name: obsolete_infrared gas analyzer
-def: "Analyzer that measures the concentration of gases in air based on their absorption of infrared radiation." []
+def: "Analyzer that measures the concentration of gases in air based on their absorption of infrared radiation." [OBI:0003708]
 comment: Term has been accepted by an 'external to DataPLANT' ontology, please use OBI:0003708
 created_by: Stella Eggels
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: OBI:0003708
 
 [Term]
 id: DPBO:0000111
@@ -1241,7 +1243,7 @@ comment: adapted from FBcv:0003046
 [Term]
 id: DPBO:0000113
 name: sampling depth
-def: "The vertical distance below local surface at which the sample was taken. For sediment or soil samples depth is measured from sediment or soil surface, respectively." []
+def: "The vertical distance below local surface at which the sample was taken. For sediment or soil samples depth is measured from sediment or soil surface, respectively." [MIXS:0000018]
 comment: adapted from MIXS:0000018
 
 [Term]
@@ -1258,31 +1260,33 @@ is_a: DPBO:0000037 ! subspecific taxonomic rank
 [Term]
 id: DPBO:0000116
 name: Infinite M200 plate reader (Tecan)
-def: "A microtiter plate reader by the brand Tecan." []
+def: "A microtiter plate reader by the brand Tecan." [BAO:0150076]
 xref: BAO:0150076
 is_a: OBI:0001058 ! microplate reader
 
 [Term]
 id: DPBO:0000117
 name: obsolete_buffer volume
-def: "Volume of the buffer in which the sample is diluted." []
+def: "Volume of the buffer in which the sample is diluted." [EFO:0920056]
 comment: Term has been accepted by an 'external to DataPLANT' ontology, please use EFO:0920056. Suggested by Lukas Weil | 0000-0003-1945-6342; term is redundant, please use EFO:0920056
 xref: EFO:0920056
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0920056
 
 [Term]
 id: DPBO:0000118
 name: obsolete_mortar and pestle
-def: "Combination of two tools used for grinding or shearing substances to a fine paste or powder." []
+def: "Combination of two tools used for grinding or shearing substances to a fine paste or powder." [OBI:0003707]
 comment: Term has been accepted by an 'external to DataPLANT' ontology, please use OBI:0003707. Suggested by Lukas Weil | 0000-0003-1945-6342
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: OBI:0003707
 
 [Term]
 id: DPBO:0000119
 name: grinding device
-def: "Device used for the mechanical reduction of the particle size of a solid sample." []
+def: "Device used for the mechanical reduction of the particle size of a solid sample." [CHMO:0001652]
 comment: definition adapted from CHMO:0001652
 
 [Term]
@@ -1302,7 +1306,7 @@ is_a: OBI:0000079 ! culture medium
 [Term]
 id: DPBO:0000122
 name: imaging signal mechanism
-def: "Mechanism by which the imaging signal is generated by the sample, e.g. fluorescent protein, fluorescent dye, antibody." []
+def: "Mechanism by which the imaging signal is generated by the sample, e.g. fluorescent protein, fluorescent dye, antibody." [SHARELOC:000004]
 xref: SHARELOC:000004
 
 [Term]
@@ -1325,14 +1329,14 @@ is_a: GENEPIO:0001973 ! library strategy
 [Term]
 id: DPBO:0000126
 name: single cell genomic source
-def: "Genomic DNA that can be traced to a single cell of origin." []
+def: "Genomic DNA that can be traced to a single cell of origin." [OBI:0002631]
 comment: adapted from http://purl.obolibrary.org/obo/OBI_0002631
 is_a: GENEPIO:0001965 ! library source
 
 [Term]
 id: DPBO:0000127
 name: single cell transcriptomic source
-def: "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries) that can be traced to a single cell of origin." []
+def: "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries) that can be traced to a single cell of origin." [OBI:0002631]
 comment: adapted from http://purl.obolibrary.org/obo/OBI_0002631 and the ENA (European Nucleotide Archive) Read submission permitted values
 is_a: GENEPIO:0001965 ! library source
 
@@ -1346,7 +1350,7 @@ is_a: GENEPIO:0001940 ! library selection
 [Term]
 id: DPBO:0000129
 name: oligo-dT selection
-def: "Enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT." []
+def: "Enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT." [FBcv:0003203]
 comment: from the ENA (European Nucleotide Archive) Read submission permitted values
 xref: FBcv:0003203
 is_a: GENEPIO:0001940 ! library selection
@@ -1368,19 +1372,19 @@ is_a: GENEPIO:0001940 ! library selection
 [Term]
 id: DPBO:0000132
 name: cell lysis approach
-def: "Name of the kit or standard protocol used for cell(s) lysis." []
+def: "Name of the kit or standard protocol used for cell(s) lysis." [MIXS:0000054]
 comment: adapted from the MIxS checklists, MIXS:0000054
 
 [Term]
 id: DPBO:0000133
 name: cell sorting technology
-def: "Method used to sort/isolate cells of interest." []
+def: "Method used to sort/isolate cells of interest." [MIXS:0000075]
 comment: adapted from the MIxS checklists, MIXS:0000075
 
 [Term]
 id: DPBO:0000134
 name: whole genome amplification approach
-def: "Method used to amplify genomic DNA in preparation for sequencing." []
+def: "Method used to amplify genomic DNA in preparation for sequencing." [MIXS:0000055]
 comment: adapted from the MIxS checklists, MIXS:0000055
 
 [Term]
@@ -1618,7 +1622,7 @@ def: "Description of the sample." []
 [Term]
 id: DPBO:0000176
 name: shaker type
-def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available." []
+def: "Type of laboratory device used to agitate or mix biological samples, typically in liquid form, to promote aeration, cell growth, or chemical reactions. Different types are available." [SNOMED:470694005]
 xref: SNOMED:470694005
 
 [Term]
@@ -1734,14 +1738,14 @@ def: "Nucleic Acid Sequence Report is the root element of all MIxS compliant rep
 [Term]
 id: DPBO:0002008
 name: environment (feature)
-def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " []
+def: "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. " [ENVO:01000813]
 comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: ENVO:01000813
 
 [Term]
 id: DPBO:0002009
 name: environment (material)
-def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. " []
+def: "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. " [ENVO:00010483]
 comment: EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO" []
 xref: ENVO:00010483
 
@@ -1770,7 +1774,7 @@ is_a: OBI:0000079 ! culture medium
 [Term]
 id: DPBO:0010000
 name: ENA
-def: "The European Nucleotide Archive (ENA) is an open, supported platform for the management, sharing, integration, archiving and dissemination of sequence data." []
+def: "The European Nucleotide Archive (ENA) is an open, supported platform for the management, sharing, integration, archiving and dissemination of sequence data." [ENSGLOSSARY:0000217]
 comment: https://www.ebi.ac.uk/ena/
 xref: ENSGLOSSARY:0000217
 is_a: DPBO:1000095 ! endpoint repository
@@ -1791,7 +1795,7 @@ created_by: Dominik Brilhaus
 [Term]
 id: DPBO:0010004
 name: BioProject
-def: "A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data types generated for that project." []
+def: "A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data types generated for that project." [GENEPIO:0001836]
 comment: https://www.ncbi.nlm.nih.gov/bioproject/
 xref: GENEPIO:0001836
 is_a: DPBO:1000095 ! endpoint repository
@@ -1802,7 +1806,7 @@ created_by: Dominik Brilhaus
 [Term]
 id: DPBO:0010005
 name: GenBank
-def: "GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences (Nucleic Acids Research, 2013 Jan;41(D1):D36-42). GenBank is part of the International Nucleotide Sequence Database Collaboration, which comprises the DNA DataBank of Japan (DDBJ), the European Nucleotide Archive (ENA), and GenBank at NCBI. These three organizations exchange data on a daily basis." []
+def: "GenBank is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences (Nucleic Acids Research, 2013 Jan;41(D1):D36-42). GenBank is part of the International Nucleotide Sequence Database Collaboration, which comprises the DNA DataBank of Japan (DDBJ), the European Nucleotide Archive (ENA), and GenBank at NCBI. These three organizations exchange data on a daily basis." [NCIT:C43818]
 comment: https://www.ncbi.nlm.nih.gov/genbank/
 xref: NCIT:C43818
 is_a: DPBO:1000095 ! endpoint repository
@@ -1869,7 +1873,7 @@ created_by: Dominik Brilhaus
 [Term]
 id: DPBO:0010012
 name: internal standard
-def: "Internal standard added in known amount to an analytical sample" []
+def: "Internal standard added in known amount to an analytical sample" [MSIO:0000005]
 comment: "Similar to http://purl.obolibrary.org/obo/MSIO_0000005
 xref: MSIO:0000005
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
@@ -1878,12 +1882,13 @@ created_by: Dominik Brilhaus
 [Term]
 id: DPBO:0010013
 name: obsolete_sample volume
-def: "Volume taken from the sample to be assayed (measured)." []
+def: "Volume taken from the sample to be assayed (measured)." [EFO:0920055]
 comment: term is redundant, please use EFO:0920055
 xref: EFO:0920055
 is_a: ObsoleteClass ! Obsolete Class
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 is_obsolete: true
+replaced_by: EFO:0920055
 created_by: Dominik Brilhaus
 
 [Term]
@@ -1897,7 +1902,7 @@ created_by: Dominik Brilhaus
 [Term]
 id: DPBO:0010015
 name: chromatography injection mode
-def: "This is to specify split / splitless runs during e.g. gas-chromatography." []
+def: "This is to specify split / splitless runs during e.g. gas-chromatography." [OBI:0000525]
 comment: "Compare to http://purl.obolibrary.org/obo/OBI_0000525
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9021-3197
 created_by: Dominik Brilhaus
@@ -1950,7 +1955,7 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 [Term]
 id: DPBO:1000008
 name: RNA-seq (RACE)
-def: "Rapid Amplification of cDNA Ends (RACE) is a library strategy for RNA-seq that is used to obtain the full length sequence of an RNA transcript found within a cell. RACE produces a cDNA copy of the RNA through reverse transcription which is amplified and sequenced." []
+def: "Rapid Amplification of cDNA Ends (RACE) is a library strategy for RNA-seq that is used to obtain the full length sequence of an RNA transcript found within a cell. RACE produces a cDNA copy of the RNA through reverse transcription which is amplified and sequenced." [EFO:0004182]
 comment: "Adapted from http://www.ebi.ac.uk/efo/EFO_0004182."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -2015,6 +2020,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 is_obsolete: true
+replaced_by: EFO:0003753
 
 [Term]
 id: DPBO:1000015
@@ -2049,7 +2055,7 @@ property_value: ER_target_term "PROTOCOLS_library strategy" xsd:string
 [Term]
 id: DPBO:1000018
 name: Tn-seq
-def: "A library strategy that is used to sequence transposons." []
+def: "A library strategy that is used to sequence transposons." [EFO:0008973]
 comment: "Adapted from http://www.ebi.ac.uk/efo/EFO_0008973."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -2068,7 +2074,7 @@ is_obsolete: true
 [Term]
 id: DPBO:1000020
 name: SELEX
-def: "A library strategy for high-througput sequencing that is based on Systematic evolution of ligands by exponential enrichment." []
+def: "A library strategy for high-througput sequencing that is based on Systematic evolution of ligands by exponential enrichment." [EFO:0008918]
 comment: "Adapted from http://www.ebi.ac.uk/efo/EFO_0008918."
 is_a: GENEPIO:0001973 ! library strategy
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -2260,6 +2266,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002001
 
 [Term]
 id: DPBO:1000042
@@ -2269,6 +2276,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002002
 
 [Term]
 id: DPBO:1000043
@@ -2278,6 +2286,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002048
 
 [Term]
 id: DPBO:1000044
@@ -2287,6 +2296,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002049
 
 [Term]
 id: DPBO:1000045
@@ -2296,6 +2306,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0009173
 
 [Term]
 id: DPBO:1000046
@@ -2305,6 +2316,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100128
 
 [Term]
 id: DPBO:1000047
@@ -2314,6 +2326,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100113
 
 [Term]
 id: DPBO:1000048
@@ -2323,6 +2336,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100112
 
 [Term]
 id: DPBO:1000049
@@ -2332,6 +2346,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100123
 
 [Term]
 id: DPBO:1000050
@@ -2341,6 +2356,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004205
 
 [Term]
 id: DPBO:1000051
@@ -2350,6 +2366,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100109
 
 [Term]
 id: DPBO:1000052
@@ -2359,6 +2376,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100124
 
 [Term]
 id: DPBO:1000053
@@ -2368,6 +2386,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100121
 
 [Term]
 id: DPBO:1000054
@@ -2386,6 +2405,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100148
 
 [Term]
 id: DPBO:1000056
@@ -2395,6 +2415,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100147
 
 [Term]
 id: DPBO:1000057
@@ -2404,6 +2425,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100150
 
 [Term]
 id: DPBO:1000058
@@ -2413,6 +2435,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100136
 
 [Term]
 id: DPBO:1000059
@@ -2422,6 +2445,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100137
 
 [Term]
 id: DPBO:1000060
@@ -2431,6 +2455,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100139
 
 [Term]
 id: DPBO:1000061
@@ -2440,6 +2465,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100138
 
 [Term]
 id: DPBO:1000062
@@ -2449,6 +2475,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100131
 
 [Term]
 id: DPBO:1000063
@@ -2458,6 +2485,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002012
 
 [Term]
 id: DPBO:1000064
@@ -2467,6 +2495,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100133
 
 [Term]
 id: DPBO:1000065
@@ -2476,6 +2505,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100134
 
 [Term]
 id: DPBO:1000066
@@ -2485,6 +2515,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0001932
 
 [Term]
 id: DPBO:1000067
@@ -2494,6 +2525,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004439
 
 [Term]
 id: DPBO:1000068
@@ -2503,6 +2535,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002007
 
 [Term]
 id: DPBO:1000069
@@ -2512,6 +2545,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004438
 
 [Term]
 id: DPBO:1000070
@@ -2521,6 +2555,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0001928
 
 [Term]
 id: DPBO:1000071
@@ -2530,6 +2565,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004437
 
 [Term]
 id: DPBO:1000072
@@ -2560,6 +2596,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004431
 
 [Term]
 id: DPBO:1000076
@@ -2569,6 +2606,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004206
 
 [Term]
 id: DPBO:1000077
@@ -2578,6 +2616,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004432
 
 [Term]
 id: DPBO:1000078
@@ -2594,6 +2633,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004434
 
 [Term]
 id: DPBO:1000080
@@ -2603,6 +2643,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004433
 
 [Term]
 id: DPBO:1000081
@@ -2621,6 +2662,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0000717
 
 [Term]
 id: DPBO:1000083
@@ -2630,6 +2672,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: GENEPIO:0100141
 
 [Term]
 id: DPBO:1000084
@@ -2639,6 +2682,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002750
 
 [Term]
 id: DPBO:1000085
@@ -2648,6 +2692,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: OBI:0002752
 
 [Term]
 id: DPBO:1000086
@@ -2658,6 +2703,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 is_obsolete: true
+replaced_by: DPBO:0000086
 
 [Term]
 id: DPBO:1000087
@@ -2671,12 +2717,13 @@ property_value: ER_target_term "RAW FILES_single or paired-end" xsd:string
 [Term]
 id: DPBO:1000088
 name: obsolete_total RNA
-def: "placeholder def of total RNA" []
+def: "placeholder def of total RNA" [EFO:0004964]
 comment: term is redundant, please use EFO:0004964
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 is_obsolete: true
+replaced_by: EFO:0004964
 
 [Term]
 id: DPBO:1000089
@@ -2700,7 +2747,7 @@ is_obsolete: true
 [Term]
 id: DPBO:1000091
 name: obsolete_nuclear RNA
-def: "placeholder def of nuclear RNA" []
+def: "placeholder def of nuclear RNA" [EFO:0030052]
 comment: Term is redundant. Please use EFO:0030052
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
@@ -2710,22 +2757,24 @@ is_obsolete: true
 [Term]
 id: DPBO:1000092
 name: obsolete_genomic DNA
-def: "placeholder def of genomic DNA" []
+def: "placeholder def of genomic DNA" [BAO:0000316]
 comment: Term is redundant, please use BAO:0000316
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 is_obsolete: true
+replaced_by: BAO:0000316
 
 [Term]
 id: DPBO:1000093
 name: obsolete_protein
-def: "placeholder def of protein" []
+def: "placeholder def of protein" [CHEBI:36080]
 comment: Term is redundant, please use CHEBI:36080
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 is_obsolete: true
+replaced_by: CHEBI:36080
 
 [Term]
 id: DPBO:1000094
@@ -2780,7 +2829,7 @@ is_a: DPBO:1000096 ! GEO
 [Term]
 id: DPBO:1000101
 name: obsolete_well
-def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." []
+def: "A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well." [OME:Well]
 comment: term is redundant, please use REPR:Well
 xref: OME:Well
 is_a: ObsoleteClass ! Obsolete Class
@@ -2799,7 +2848,7 @@ def: "The identifier of a siRNA from a reagent library." []
 [Term]
 id: DPBO:1000104
 name: obsolete_compound name
-def: "Unique name of a chemical compound." []
+def: "Unique name of a chemical compound." [EDAM:data_0990]
 comment: term is redundant, please use data:0990
 xref: EDAM:data_0990
 is_a: ObsoleteClass ! Obsolete Class
@@ -2808,7 +2857,7 @@ is_obsolete: true
 [Term]
 id: DPBO:1000105
 name: obsolete_compound identifier
-def: "Identifier of an entry from a database of chemicals." []
+def: "Identifier of an entry from a database of chemicals." [data:1086]
 comment: term is redundant, please use data:1086
 xref: data:1086
 is_a: ObsoleteClass ! Obsolete Class
@@ -2823,7 +2872,7 @@ comment: "Needed for imaging templates"
 [Term]
 id: DPBO:1000108
 name: obsolete_gene identifier
-def: "A unique gene name within a specific repository, database, or collection." []
+def: "A unique gene name within a specific repository, database, or collection." [NCIT:C48664]
 xref: NCIT:C48664
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
@@ -2843,7 +2892,7 @@ comment: "definition from BIA idr0000-screenA-library.xlxs from: https://idr.ope
 [Term]
 id: DPBO:1000111
 name: obsolete_control type
-def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." []
+def: "A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated." [NCIT:C49647]
 comment: term is redundant, please use NCIT:C49647
 xref: NCIT:C49647
 is_a: ObsoleteClass ! Obsolete Class
@@ -2876,7 +2925,7 @@ comment: "Needed for imaging templates"
 [Term]
 id: DPBO:1000117
 name: obsolete_antibody
-def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." []
+def: "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen." [NCIT:C16295]
 comment: term is redundant, please use NCIT:C16295
 xref: NCIT:C16295
 is_a: ObsoleteClass ! Obsolete Class
@@ -2885,7 +2934,7 @@ is_obsolete: true
 [Term]
 id: DPBO:1000118
 name: obsolete_cover slip
-def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." []
+def: "A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope." [NCIT:C126370]
 comment: use NCIT:C126370
 xref: NCIT:C126370
 is_a: ObsoleteClass ! Obsolete Class
@@ -2905,7 +2954,7 @@ comment: "Needed for imaging templates"
 [Term]
 id: DPBO:1000122
 name: obsolete_imaging software name
-def: "The name of the software program to capture and/or process imaging data." []
+def: "The name of the software program to capture and/or process imaging data." [NCIT:C175898]
 comment: false
 xref: NCIT:C175898
 is_a: ObsoleteClass ! Obsolete Class
@@ -2938,7 +2987,7 @@ xref: dwc:datasetName
 [Term]
 id: DPBO:1000127
 name: obsolete_assay name
-def: "The name of the assay." []
+def: "The name of the assay." [NCIT:C178857]
 xref: NCIT:C178857
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
@@ -3018,7 +3067,7 @@ comment: "Needed for imaging templates"
 [Term]
 id: DPBO:1000142
 name: obsolete_objective
-def: "The microscope's objective lens." []
+def: "The microscope's objective lens." [OME:Objective]
 comment: use OME:objective
 xref: OME:Objective
 is_a: ObsoleteClass ! Obsolete Class
@@ -3027,7 +3076,7 @@ is_obsolete: true
 [Term]
 id: DPBO:1000143
 name: microscopy sample preparation
-def: "How a sample was further prepared for microscopy." []
+def: "How a sample was further prepared for microscopy." [MS:1000831]
 xref: MS:1000831
 
 [Term]
@@ -3045,7 +3094,7 @@ comment: "Needed for imaging templates"
 [Term]
 id: DPBO:1000146
 name: obsolete_strain
-def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." []
+def: "A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics." [EFO:0005135]
 comment: use EFO:0005135
 xref: EFO:0005135
 is_a: ObsoleteClass ! Obsolete Class
@@ -3055,11 +3104,12 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 [Term]
 id: DPBO:1000147
 name: obsolete_container
-def: "A device that can be used to restrict the location of material entities over time" []
+def: "A device that can be used to restrict the location of material entities over time" [OBI:0000967]
 comment: term is redundant, please use OBI:0000967
 xref: OBI:0000967
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: OBI:0000967
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -3079,7 +3129,7 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 [Term]
 id: DPBO:1000150
 name: obsolete_contamination
-def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" []
+def: "The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]" [PATO:0015031]
 xref: PATO:0015031
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
@@ -3102,18 +3152,19 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 [Term]
 id: DPBO:1000153
 name: date
-def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." []
+def: "The day of the month or year as specified by a number.  According to ISO 8601-1 [ISO 8601-1] please use the format YYYY-MM-DD." [dc:date]
 xref: dc:date
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000154
 name: obsolete_volume
-def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" []
+def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies. [database_cross_reference: PATOC:GVG]" [PATO:0000918]
 comment: term is redundant, please use PATO:0000918
 xref: PATO:0000918
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: PATO:0000918
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -3126,17 +3177,18 @@ created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 [Term]
 id: DPBO:1000156
 name: obsolete_light
-def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." []
+def: "The photoperiod and type (e.g., natural, restricted wavelength) of light exposure." [EFO:0000568]
 comment: term is redundant, please use EFO:0000568
 xref: EFO:0000568
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0000568
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
 id: DPBO:1000157
 name: light quality
-def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" []
+def: "The spectral distribution of light (blue, green, red, far red and other light spectrums emitted from a light source)" [PECO:0007154]
 comment: "close to the term http://purl.obolibrary.org/obo/PECO_0007154"
 is_a: EFO:0000568 ! light
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
@@ -3148,6 +3200,7 @@ def: "A dimensionless ratio unit which, given a pair of quantities a and b, for 
 comment: term is redundant, please use UO:0010006
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: UO:0010006
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
 
 [Term]
@@ -3176,7 +3229,7 @@ created_by: Dominik Brilhaus
 [Term]
 id: DPBO:1000162
 name: obsolete_growth protocol
-def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." []
+def: "A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample." [EFO:0003789]
 comment: replaced term with EFO:0003789
 xref: EFO:0003789
 is_a: ObsoleteClass ! Obsolete Class
@@ -3221,21 +3274,23 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 [Term]
 id: DPBO:1000168
 name: obsolete_treatment protocol
-def: "A protocol that aims to treat sample or collection of samples, organism or group of organisms, for some experimental purpose." []
+def: "A protocol that aims to treat sample or collection of samples, organism or group of organisms, for some experimental purpose." [EFO:0003969]
 comment: definition from http://www.ebi.ac.uk/efo/EFO_0003969. Term is redundant, please use EFO:0003969
 xref: EFO:0003969
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0003969
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000169
 name: obsolete_sample collection protocol
-def: "A protocol that provides instructions on how a biological sample for an experiment was collected." []
+def: "A protocol that provides instructions on how a biological sample for an experiment was collected." [EFO:0005518]
 comment: definition from http://www.ebi.ac.uk/efo/EFO_0005518. Term is redundant, please use EFO:0005518
 xref: EFO:0005518
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0005518
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -3248,49 +3303,54 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 [Term]
 id: DPBO:1000171
 name: obsolete_extraction protocol
-def: "A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay" []
+def: "A protocol used to obtain something of experimental interest from a sample via chemical, physical or mechanical means. Often tailored to match the starting material as well as the end goals (resulting material, quality level, etc.) of the procedure required by the following assay" [EFO:0000490]
 comment: definition taken heavily from http://www.ebi.ac.uk/efo/EFO_0000490. Term is redundant, please use EFO:0000490
 xref: EFO:0000490
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0000490
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000172
 name: obsolete_DNA extraction protocol
-def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components." []
+def: "A protocol that describes how to remove and purify DNA from a sample. This requires physical and/or chemical methods in order to separate the DNA from cell membranes, proteins and other cellular components." [EFO:0022384]
 comment: definition taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425773/. Term is redundant, please use EFO:0022384.
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0022384
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000173
 name: obsolete_RNA extraction protocol
-def: "A protocol that describes the steps for removing and purifying DNA from a biological sample" []
+def: "A protocol that describes the steps for removing and purifying DNA from a biological sample" [EFO:0010959]
 comment: term is redundant, please use EFO:0010959
 xref: EFO:0010959
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0010959
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000174
 name: obsolete_protein extraction protocol
-def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample." []
+def: "A protocol that describes how to isolate protein from a tissue, cell culture or other biological sample." [EFO:0022383]
 comment: term is redundant, please use EFO:0022383
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0022383
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
 id: DPBO:1000175
 name: obsolete_metabolite extraction protocol
-def: "A protocol that describes the step by step process for removing metabolites from a biological sample." []
+def: "A protocol that describes the step by step process for removing metabolites from a biological sample." [EFO:0022981]
 comment: term is redundant, please use EFO:0022981
 xref: EFO:0022981
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: EFO:0022981
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 
 [Term]
@@ -3359,7 +3419,7 @@ created_by: Kevin Schneider | ORCID: 0000-0002-2198-526
 [Term]
 id: DPBO:1000185
 name: incubation time
-def: "The time that a sample should incubate (keep at a suitable temperature) during a experimental protocol to allow for a reaction or proces to occur. " []
+def: "The time that a sample should incubate (keep at a suitable temperature) during a experimental protocol to allow for a reaction or proces to occur. " [BAO:0002833]
 xref: BAO:0002833
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-401
 
@@ -3649,7 +3709,7 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 [Term]
 id: DPBO:1000223
 name: Knop medium
-def: "A solution designed for the growth of plant cell, tissue and organ culture. " []
+def: "A solution designed for the growth of plant cell, tissue and organ culture. " [PECO:0001074]
 synonym: "Knop ME" RELATED []
 synonym: "Knop solution" RELATED []
 xref: PECO:0001074
@@ -3674,7 +3734,7 @@ created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
 [Term]
 id: DPBO:1000226
 name: student helper
-def: "A role of a student in a research project which is acknowledged in papers." []
+def: "A role of a student in a research project which is acknowledged in papers." [AGRO:00000374]
 xref: AGRO:00000374
 created_by: Andrea Schrader | 0000-0002-3879-7057
 
@@ -3849,7 +3909,7 @@ created_by: Manuel Feser | ORCID: 0000-0001-6546-1818
 [Term]
 id: DPBO:1000251
 name: data steward
-def: "Provide guidance and help curate research data to ensure it aligns with best practices." []
+def: "Provide guidance and help curate research data to ensure it aligns with best practices." [T4FS:0000178]
 xref: T4FS:0000178
 is_a: BFO:0000023 ! role
 
@@ -5960,6 +6020,7 @@ comment: term is redundant, please use GENEPIO:0001973
 xref: GENEPIO:0001973
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: GENEPIO:0001973
 
 [Term]
 id: operation:3198
