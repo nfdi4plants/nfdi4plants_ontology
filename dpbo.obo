@@ -2400,6 +2400,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by: NCIT:C146812
 
 [Term]
 id: DPBO:1000055
@@ -2657,6 +2658,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "RAW FILES_instrument model" xsd:string
 is_obsolete: true
+replaced_by:  NCIT:C146815 
 
 [Term]
 id: DPBO:1000082
