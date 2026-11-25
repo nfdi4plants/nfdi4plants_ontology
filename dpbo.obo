@@ -971,14 +971,16 @@ comment: “[Definition Source: http://purl.obolibrary.org/obo/NCIT_C16403]"
 xref: NCIT:C16403
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C16403
 
 [Term]
 id: DPBO:0000069
 name: obsolete_cell type
-def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]" []
+def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]" [NCIT:C12508]
 comment: term is redundant, please use NCIT:C12508
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C12508
 
 [Term]
 id: DPBO:0000070
@@ -2743,12 +2745,13 @@ property_value: ER_target_term "SAMPLES_molecule" xsd:string
 [Term]
 id: DPBO:1000090
 name: obsolete_cytoplasmic RNA
-def: "placeholder def of cytoplasmic RNA" []
+def: "placeholder def of cytoplasmic RNA" [NCIT:C84512]
 comment: Term is redundant, please use NCIT:C84512
 is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 is_obsolete: true
+replaced_by: NCIT:C84512
 
 [Term]
 id: DPBO:1000091
@@ -2759,6 +2762,7 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: ER_target "GEO_RNASEQ" xsd:string
 property_value: ER_target_term "SAMPLES_molecule" xsd:string
 is_obsolete: true
+replaced_by: EFO:0030052
 
 [Term]
 id: DPBO:1000092
@@ -2885,6 +2889,7 @@ def: "A unique gene name within a specific repository, database, or collection."
 xref: NCIT:C48664
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C48664
 
 [Term]
 id: DPBO:1000109
@@ -2906,6 +2911,7 @@ comment: term is redundant, please use NCIT:C49647
 xref: NCIT:C49647
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C49647
 
 [Term]
 id: DPBO:1000112
@@ -2939,6 +2945,7 @@ comment: term is redundant, please use NCIT:C16295
 xref: NCIT:C16295
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C16295
 
 [Term]
 id: DPBO:1000118
@@ -2948,6 +2955,7 @@ comment: use NCIT:C126370
 xref: NCIT:C126370
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C126370
 
 [Term]
 id: DPBO:1000120
@@ -2968,6 +2976,7 @@ comment: false
 xref: NCIT:C175898
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C175898
 
 [Term]
 id: DPBO:1000123
@@ -3000,6 +3009,7 @@ def: "The name of the assay." [NCIT:C178857]
 xref: NCIT:C178857
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
+replaced_by: NCIT:C178857
 
 [Term]
 id: DPBO:1000128
@@ -3110,6 +3120,7 @@ xref: EFO:0005135
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+replaced_by: EFO:0005135
 
 [Term]
 id: DPBO:1000147
@@ -3144,6 +3155,7 @@ xref: PATO:0015031
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 created_by: \"Fabian Haas | ORCID:0000-0002-7711-5282\"
+replaced_by: PATO:0015031
 
 [Term]
 id: DPBO:1000151
@@ -3245,6 +3257,7 @@ xref: EFO:0003789
 is_a: ObsoleteClass ! Obsolete Class
 is_obsolete: true
 created_by: Kathryn Dumschott | ORCID: 0000-0002-9905-4011
+replaced_by: EFO:0003789
 
 [Term]
 id: DPBO:1000163
