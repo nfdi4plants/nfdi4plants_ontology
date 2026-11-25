@@ -8,6 +8,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:DPBO="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_"
+     xmlns:REPR="https://w3id.org/reproduceme#"
      xmlns:dpbo="http://purl.obolibrary.org/obo/dpbo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -5287,28 +5288,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/REPR_Objective -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REPR_Objective">
-        <obo:IAO_0000115>The microscope&apos;s objective lens.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>REPR:Objective</oboInOwl:id>
-        <rdfs:label>Objective</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/REPR_Well -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REPR_Well">
-        <obo:IAO_0000115>A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>REPR:Well</oboInOwl:id>
-        <rdfs:label>Well</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SCTID_71661000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SCTID_71661000">
@@ -6731,6 +6710,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space. [ NCI On-line Medical Dictionary ] </obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16403"/>
         <oboInOwl:hasDbXref>NCIT:C16403</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000068</oboInOwl:id>
@@ -6752,12 +6732,19 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12508"/>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:0000069</oboInOwl:id>
         <rdfs:comment>term is redundant, please use NCIT:C12508</rdfs:comment>
         <rdfs:label>obsolete_cell type</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_0000069"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid. [Definition Source: NCI]</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>NCIT:C12508</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -9271,6 +9258,7 @@
 
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0002000"/>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -9286,6 +9274,7 @@
 
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0002022"/>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -9301,6 +9290,7 @@
 
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0003386"/>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -9524,6 +9514,7 @@
 
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C146812"/>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -9943,6 +9934,7 @@
 
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C146815"/>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>RAW FILES_instrument model</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -10093,6 +10085,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of cytoplasmic RNA</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C84512"/>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -10101,6 +10094,12 @@
         <rdfs:label>obsolete_cytoplasmic RNA</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000090"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>placeholder def of cytoplasmic RNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>NCIT:C84512</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -10109,6 +10108,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>placeholder def of nuclear RNA</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/EFO_0030052"/>
         <dpbo:ER_target>GEO_RNASEQ</dpbo:ER_target>
         <dpbo:ER_target_term>SAMPLES_molecule</dpbo:ER_target_term>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -10269,6 +10269,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/reproduceme#Well"/>
         <oboInOwl:hasDbXref>OME:Well</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000101</oboInOwl:id>
@@ -10312,6 +10313,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>Unique name of a chemical compound.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/EDAM_#data_0990"/>
         <oboInOwl:hasDbXref>EDAM:data_0990</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000104</oboInOwl:id>
@@ -10333,6 +10335,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>Identifier of an entry from a database of chemicals.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/data_1086"/>
         <oboInOwl:hasDbXref>data:1086</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000105</oboInOwl:id>
@@ -10366,6 +10369,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A unique gene name within a specific repository, database, or collection.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48664"/>
         <oboInOwl:hasDbXref>NCIT:C48664</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000108</oboInOwl:id>
@@ -10410,6 +10414,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000111">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A characteristic of a treatment regimen employed as a comparator against which the study treatment is evaluated.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49647"/>
         <oboInOwl:hasDbXref>NCIT:C49647</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000111</oboInOwl:id>
@@ -10479,6 +10484,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16295"/>
         <oboInOwl:hasDbXref>NCIT:C16295</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000117</oboInOwl:id>
@@ -10500,6 +10506,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A thin flat piece of transparent material that is placed over a specimen for viewing with a microscope.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C126370"/>
         <oboInOwl:hasDbXref>NCIT:C126370</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000118</oboInOwl:id>
@@ -10544,6 +10551,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000122">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The name of the software program to capture and/or process imaging data.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C175898"/>
         <oboInOwl:hasDbXref>NCIT:C175898</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000122</oboInOwl:id>
@@ -10613,6 +10621,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The name of the assay.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178857"/>
         <oboInOwl:hasDbXref>NCIT:C178857</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000127</oboInOwl:id>
@@ -10777,6 +10786,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The microscope&apos;s objective lens.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="https://w3id.org/reproduceme#Objective"/>
         <oboInOwl:hasDbXref>OME:Objective</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000142</oboInOwl:id>
@@ -10840,6 +10850,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A population of organisms that is geneticaly different from others of the same species and possessing a set of defined characteristics.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/EFO_0005135"/>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasDbXref>EFO:0005135</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -10911,6 +10922,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>The presence of a constituent, impurity, or some other undesirable element that spoils, corrupts, infects, makes unfit, or makes inferior a material, physical body, natural environment, place of human occupancy, or other material entity. [database_cross_reference: https://en.wikipedia.org/wiki/Contamination][database_cross_reference: https://github.com/pato-ontology/pato/issues/420]</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PATO_0015031"/>
         <oboInOwl:created_by>&quot;Fabian Haas | ORCID:0000-0002-7711-5282&quot;</oboInOwl:created_by>
         <oboInOwl:hasDbXref>PATO:0015031</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -11119,6 +11131,7 @@
     <owl:Class rdf:about="https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000162">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/dpbo#ObsoleteClass"/>
         <obo:IAO_0000115>A protocol that provides instructions for the growth of a biological sample. Describes the conditions, materials and procedure used to grow and/or maintain the sample.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/EFO_0003789"/>
         <oboInOwl:created_by>Kathryn Dumschott | ORCID: 0000-0002-9905-4011</oboInOwl:created_by>
         <oboInOwl:hasDbXref>EFO:0003789</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
@@ -12508,6 +12521,28 @@
         <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DPBO:1000258</oboInOwl:id>
         <rdfs:label>Golden Promise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reproduceme#Objective -->
+
+    <owl:Class rdf:about="https://w3id.org/reproduceme#Objective">
+        <obo:IAO_0000115>The microscope&apos;s objective lens.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REPR:Objective</oboInOwl:id>
+        <rdfs:label>Objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/reproduceme#Well -->
+
+    <owl:Class rdf:about="https://w3id.org/reproduceme#Well">
+        <obo:IAO_0000115>A Well is a component of the Well/Plate/Screen construct to describe screening applications. A Well has a number of WellSample elements that link to the Images collected in this well.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>DPBO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>REPR:Well</oboInOwl:id>
+        <rdfs:label>Well</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
